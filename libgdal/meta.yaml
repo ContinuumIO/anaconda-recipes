@@ -18,8 +18,8 @@ requirements:
     - hdf5
     - libnetcdf
 
-tests:
-  - commands:
+test:
+  commands:
     - gdal_contour --help
     - gdal_grid --help
     - gdal_rasterize --help
