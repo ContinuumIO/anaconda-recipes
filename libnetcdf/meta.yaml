@@ -1,0 +1,31 @@
+package:
+  name: libnetcdf
+  version: "4.3.3.1"
+
+source:
+  git_url: git@github.com:Unidata/netcdf-c.git
+  git_tag: v4.3.3.1
+
+build:
+  number: 1    [unix]
+  number: 2    [win]
+
+requirements:
+  build:
+    - curl
+    - hdf5
+    - zlib
+  run:
+    - curl
+    - hdf5
+    - zlib
+
+test:
+  commands:
+    - ncdump    [unix]
+    - nc-config --help    [unix]
+
+about:
+  home: http://www.unidata.ucar.edu/software/netcdf/
+  license: MIT
+  summary: libraries and data formats that support array-oriented scientific data
