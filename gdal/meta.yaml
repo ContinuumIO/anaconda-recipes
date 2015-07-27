@@ -1,0 +1,39 @@
+package:
+  name: gdal
+  version: "2.0.0"
+
+source:
+  fn: GDAL-2.0.0.tar.gz
+  url: https://pypi.python.org/packages/source/G/GDAL/GDAL-2.0.0.tar.gz
+  md5: 03684d7aa3ef4527151c647b2330f0ac
+  patches:
+    - prepend-dll.patch    [win]
+    - clang.patch          [osx]
+    - install_scripts.patch
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - libgdal
+    - numpy
+    - hdf5
+    - libnetcdf
+  run:
+    - python
+    - libgdal
+    - numpy
+    - hdf5
+    - libnetcdf
+
+test:
+  imports:
+    - osgeo.ogr
+    - osgeo.gdal
+
+about:
+  home: https://pypi.python.org/pypi/GDAL/
+  license: MIT
+  summary: Geospatial Data Abstraction Library
