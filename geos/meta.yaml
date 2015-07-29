@@ -1,0 +1,15 @@
+package:
+  name: geos
+  version: "3.4.2"
+
+source:
+  fn: geos-3.4.2.tar.bz2
+  url: http://download.osgeo.org/geos/geos-3.4.2.tar.bz2
+
+build:
+  number: 2
+
+about:
+  home: http://trac.osgeo.org/geos/
+  license: LGPL
+  summary: GEOS (Geometry Engine - Open Source) is a C++ port of the  Java Topology Suite (JTS).
