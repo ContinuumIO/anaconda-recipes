@@ -17,14 +17,13 @@ msbuild projects\Win32\%VCVERSION%\xerces-all\xerces-all.sln /t:all /p:Configura
 if errorlevel 1 exit 1
 
 REM implib and DLL
-mkdir %PREFIX%\lib
-copy Build\%OUTDIR%\%VCVERSION%\Release\xerces-c_3.lib %PREFIX%\lib\
+copy Build\%OUTDIR%\%VCVERSION%\Release\xerces-c_3.lib %LIBRARY_LIB%
 if errorlevel 1 exit 1
-copy Build\%OUTDIR%\%VCVERSION%\Release\xerces-c_3_1.dll %PREFIX%\bin\
+copy Build\%OUTDIR%\%VCVERSION%\Release\xerces-c_3_1.dll %LIBRARY_BIN%
 if errorlevel 1 exit 1
 
 REM Headers. 
 echo .cpp > excludelist.txt
-mkdir %PREFIX%\include\xercesc
-xcopy /s /exclude:excludelist.txt src\xercesc %PREFIX%\include\xercesc
+mkdir %LIBRARY_INC%\xercesc
+xcopy /s /exclude:excludelist.txt src\xercesc %LIBRARY_INC%\xercesc
 if errorlevel 1 exit 1
