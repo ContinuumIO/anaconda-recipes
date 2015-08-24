@@ -1,0 +1,29 @@
+package:
+  name: pycrypto
+  version: "2.6.1"
+
+source:
+  fn: pycrypto-2.6.1.tar.gz
+  url: http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/pycrypto-2.6.1.tar.gz
+  md5: 55a61a054aa66812daf5161a0d5d7eda
+  patches:
+    - python3-windows.patch
+
+build:
+  number: 3            [win]
+
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - Crypto
+
+about:
+  home: http://www.pycrypto.org/
+  license: Public-Domain
+  summary: Cryptographic modules for Python.
