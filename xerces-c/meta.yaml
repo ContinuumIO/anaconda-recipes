@@ -10,9 +10,6 @@ source:
   md5: 9eb1048939e88d6a7232c67569b23985 [not win]
   md5: 2706ce8a720e24bea8296c595a65a7d0 [win]
 
-build:
-  number: 1
-
 about:
   home: http://xerces.apache.org/xerces-c/
   license: Apache 2.0
