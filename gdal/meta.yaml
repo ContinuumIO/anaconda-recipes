@@ -19,13 +19,21 @@ requirements:
     - python
     - libgdal
     - numpy
+    - hdf4
     - hdf5
+    - geos
+    - proj4
+    - xerces-c
     - libnetcdf
   run:
     - python
     - libgdal
     - numpy
+    - hdf4
     - hdf5
+    - geos
+    - proj4
+    - xerces-c
     - libnetcdf
 
 test:
