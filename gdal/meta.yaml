@@ -19,14 +19,10 @@ requirements:
     - python
     - libgdal
     - numpy
-    - hdf5
-    - libnetcdf
   run:
     - python
     - libgdal
     - numpy
-    - hdf5
-    - libnetcdf
 
 test:
   imports:
