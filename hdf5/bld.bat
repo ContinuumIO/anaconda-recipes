@@ -22,7 +22,7 @@ rm msvc*.dll
 rm Microsoft.VC90.CRT.manifest
 
 REM rename exeutable files to remove *dll suffix
-cd $LIBRARY_BIN$
+cd %LIBRARY_BIN%
 move gif2h5dll.exe gif2h5.exe
 move h52gifdll.exe h52gif.exe
 move h5copydll.exe h5copy.exe
