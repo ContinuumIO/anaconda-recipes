@@ -6,7 +6,7 @@ index 094a2f0..4252605 100644
                      linker[i] = self.compiler_cxx[i]
  
                  if sys.platform == 'darwin':
-+                    ld_args = ['-arch', @OSX_ARCH@] + ld_args
++                    ld_args = ['-m@OSX_ARCH@'] + ld_args
                      linker = _osx_support.compiler_fixup(linker, ld_args)
  
                  self.spawn(linker + ld_args)

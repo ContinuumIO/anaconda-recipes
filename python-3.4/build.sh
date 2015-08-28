@@ -1,13 +1,11 @@
 #!/bin/bash
 
-#rm -rf Lib/test Lib/*/test
-
 REPLACE=replace
 
 if [ `uname` == Darwin ]; then
     export CFLAGS="-I$PREFIX/include $CFLAGS"
-    export LDFLAGS="-L$PREFIX/lib $LDFLAGS"
-    $REPLACE "@OSX_ARCH@" "'$ARCH'" Lib/distutils/unixccompiler.py
+    export LDFLAGS="-L$PREFIX/lib -headerpad_max_install_names $LDFLAGS"
+    $REPLACE "@OSX_ARCH@" "$ARCH" Lib/distutils/unixccompiler.py
 fi
 
 PYTHON_BAK=$PYTHON
@@ -28,30 +26,24 @@ fi
 
 make
 make install
+ln -s $PREFIX/bin/python3.4 $PREFIX/bin/python
+ln -s $PREFIX/bin/pydoc3.4 $PREFIX/bin/pydoc
 export PYTHON=$PYTHON_BAK
 
 if [ `uname` == Darwin ]; then
     DYNLOAD_DIR=$STDLIB_DIR/lib-dynload
-    #rm $DYNLOAD_DIR/_hashlib_failed.so
-    #rm $DYNLOAD_DIR/_ssl_failed.so
-    #rm $DYNLOAD_DIR/_sqlite3_failed.so
-    #if [ $ARCH == 64 ]; then
-    #    rm $DYNLOAD_DIR/_tkinter_failed.so
-    #fi
     pushd Modules
     rm -rf build
     cp $RECIPE_DIR/setup_misc.py .
-    echo $PYTHON
     $PYTHON setup_misc.py build
-    cp build/lib.macosx-*/_hashlib.so \
-       build/lib.macosx-*/_ssl.so \
-       build/lib.macosx-*/_sqlite3.so \
-       build/lib.macosx-*/_tkinter.so \
+    cp $SRC_DIR/Modules/build/lib.macosx-*/_hashlib.so \
+       $SRC_DIR/Modules/build/lib.macosx-*/_ssl.so \
+       $SRC_DIR/Modules/build/lib.macosx-*/_sqlite3.so \
+       $SRC_DIR/Modules/build/lib.macosx-*/_tkinter.so \
            $DYNLOAD_DIR
     popd
     pushd $DYNLOAD_DIR
     mv readline_failed.so readline.so
-    mv _lzma_failed.so _lzma.so
     popd
 fi
 
@@ -66,6 +58,3 @@ $REPLACE '-Werror=declaration-after-statement' '' \
     $PREFIX/lib/python3.4/_sysconfigdata.py \
     $PREFIX/lib/python3.4/config-3.4m/Makefile
 
-cd $PREFIX/bin
-ln -s python3.4 python
-ln -s pydoc3.4 pydoc
