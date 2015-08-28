@@ -1,5 +1,5 @@
 package:
-  name: python34
+  name: python
   version: 3.4.3
 
 source:

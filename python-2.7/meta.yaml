@@ -1,5 +1,5 @@
 package:
-  name: python27
+  name: python
   version: "2.7.10"
 
 source:
