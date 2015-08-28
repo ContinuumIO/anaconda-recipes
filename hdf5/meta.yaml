@@ -8,8 +8,8 @@ source:
   md5: 4467c25ed9c0b126b194a4d9d66c29ac
 
 build:
-  number: 1     [unix]
-  number: 2     [win]
+  number: 2     [unix]
+  number: 3     [win]
 
 requirements:
   build:
