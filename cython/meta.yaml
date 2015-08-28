@@ -1,11 +1,11 @@
 package:
   name: cython
-  version: "0.22.1"
+  version: "0.23.1"
 
 source:
-  fn: Cython-0.22.1.tar.gz
-  url: https://pypi.python.org/packages/source/C/Cython/Cython-0.22.1.tar.gz
-  md5: b920f3c81ae767477a342807bf5e68e8
+  fn: Cython-0.23.1.tar.gz
+  url: https://pypi.python.org/packages/source/C/Cython/Cython-0.23.1.tar.gz
+  md5: db3c5b365e1c3f71c7cd90e96473a3ab
 
 build:
   entry_points:
