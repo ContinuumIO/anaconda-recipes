@@ -1,0 +1,12 @@
+diff --git fiona/__init__.py fiona/__init__.py
+index 5eac18c..85a4ebf 100644
+--- fiona/__init__.py
++++ fiona/__init__.py
+@@ -1,4 +1,7 @@
+ # -*- coding: utf-8 -*-
++import os
++import sys
++os.environ["PATH"] = r"%s\Library\bin;%s" % (sys.prefix, os.environ["PATH"])
+ 
+ """
+ Fiona is OGR's neat, nimble, no-nonsense API.

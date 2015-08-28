@@ -1,0 +1,46 @@
+package:
+  name: fiona
+  version: "1.6.1"
+
+source:
+  fn: Fiona-1.6.1.tar.gz
+  url: https://pypi.python.org/packages/source/F/Fiona/Fiona-1.6.1.tar.gz
+  md5: 1a8ff1a1b706af644b39ff77cab5b1c2
+  patches:
+    - prepend-bin.patch    [win]
+
+build:
+  entry_points:
+    - fio = fiona.fio:cli
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - cython
+    - libgdal
+    - six
+    - cligj
+    - ordereddict [py26]
+    - argparse    [py26]
+  run:
+    - python
+    - numpy
+    - setuptools
+    - libgdal
+    - six
+    - cligj
+    - argparse       [py26]
+    - ordereddict    [py26]
+
+test:
+  imports:
+    - fiona
+    - fiona._drivers
+    - fiona.ogrext
+    - fiona.fio
+
+about:
+  home: http://github.com/Toblerity/Fiona
+  license: BSD
+  summary: Read and write spatial data files
