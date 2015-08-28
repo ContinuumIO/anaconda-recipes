@@ -1,5 +1,5 @@
 package:
-  name: ipywidgets
+  name: static_ipywidgets
   version: "0.0.1"
 
 source:
