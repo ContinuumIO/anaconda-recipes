@@ -1,0 +1,14 @@
+package:
+  name: xz
+  version: 5.0.5
+
+source:
+  fn: xz-5.0.5.tar.gz
+  url: http://tukaani.org/xz/xz-5.0.5.tar.gz
+  md5: 19d924e066b6fff0bc9d1981b4e53196
+
+about:
+  home: http://tukaani.org/xz/
+  license: Public-Domain, GPL
+  #license_family: Public-Domain
+  summary: a free general-purpose data compression software with high compression ratio
