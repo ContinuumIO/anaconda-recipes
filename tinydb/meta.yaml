@@ -1,0 +1,23 @@
+package:
+  name: tinydb
+  version: "2.4"
+
+source:
+  fn: tinydb-2.4.zip
+  url: https://pypi.python.org/packages/source/t/tinydb/tinydb-2.4.zip
+  md5: f70669dd2c6572075de38d7e3add8487
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - tinydb
+
+about:
+  home: https://github.com/richardotis/pycalphad
+  license: MIT License
+  summary: 'CALPHAD tools for designing thermodynamic models, calculating phase diagrams and investigating phase equilibria.'
