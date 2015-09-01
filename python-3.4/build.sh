@@ -24,7 +24,21 @@ if [ `uname` == Linux ]; then
         LDFLAGS="-L$PREFIX/lib -Wl,-rpath=$PREFIX/lib,--no-as-needed"
 fi
 
-make
+#### PGO configuration
+EXCLUDE_TESTS="test_gdb test_subprocess test_faulthandler \
+    test_multiprocessing test_multiprocessing_fork \
+    test_multiprocessing_forkserver test_multiprocessing_spawn \
+    test_multiprocessing_main_handling test_signal \
+    test_concurrent_futures"
+PROFILE_TASK="-m test.regrtest -w -uall,-audio -x $EXCLUDE_TESTS"
+
+make build_all_generate_profile
+make run_profile_task PROFILE_TASK="$PROFILE_TASK" || true
+make clean
+make build_all_use_profile
+
+
+#make
 make install
 ln -s $PREFIX/bin/python3.4 $PREFIX/bin/python
 ln -s $PREFIX/bin/pydoc3.4 $PREFIX/bin/pydoc
