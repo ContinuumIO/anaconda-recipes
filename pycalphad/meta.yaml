@@ -1,0 +1,47 @@
+package:
+  name: pycalphad
+  version: "0.2"
+
+source:
+  fn: pycalphad-0.2.tar.gz
+  url: https://pypi.python.org/packages/source/p/pycalphad/pycalphad-0.2.tar.gz
+  md5: 361478f79e1422c740af5b5380108449
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - matplotlib
+    - pandas
+    - mock
+    - nose
+    - xray
+    - sympy
+    - pyparsing
+    - tinydb
+    - scipy
+    - numpy >=1.9
+
+  run:
+    - python
+    - matplotlib
+    - pandas
+    - xray
+    - sympy
+    - pyparsing
+    - tinydb
+    - scipy
+    - numpy >=1.9
+
+test:
+  imports:
+    - pycalphad
+    - pycalphad.core
+    - pycalphad.io
+    - pycalphad.plot
+    - pycalphad.plot.projections
+
+about:
+  home: https://github.com/richardotis/pycalphad
+  license: MIT License
+  summary: 'CALPHAD tools for designing thermodynamic models, calculating phase diagrams and investigating phase equilibria.'
