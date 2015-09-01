@@ -10,10 +10,6 @@ import gdalconst
 import ogr
 import osr
 
-cnt = ogr.GetDriverCount()
-for i in range(cnt):
-    print(ogr.GetDriver(i).GetName())
-
 driver = gdal.GetDriverByName("netCDF")
 assert driver is not None
 
