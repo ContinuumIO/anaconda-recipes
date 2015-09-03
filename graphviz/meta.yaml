@@ -1,0 +1,24 @@
+package:
+  name: graphviz
+  version: "2.38.0"
+
+source:
+  fn: graphviz-2.38.0.tar.gz
+  url: http://www.graphviz.org/pub/graphviz/stable/SOURCES/graphviz-2.38.0.tar.gz
+  md5: 5b6a829b2ac94efcd5fa3c223ed6d3ae
+
+build:
+  detect_binary_files_with_prefix: True
+
+requirements:
+  build:
+    - zlib
+    - libpng
+    - freetype   [unix]
+
+about:
+  home: http://www.graphviz.org/
+  license: EPL
+  summary: Open Source graph visualization software.
+
+
