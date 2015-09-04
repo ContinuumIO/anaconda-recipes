@@ -33,3 +33,12 @@ nmake /f makefile.vc devinstall ^
     NETCDF_INC_DIR=%LIBRARY_INC% ^
     NETCDF_SETTING=yes
 if errorlevel 1 exit 1
+
+
+set ACTIVATE_DIR=%PREFIX%\etc\conda\activate.d
+set DEACTIVATE_DIR=%PREFIX%\etc\conda\deactivate.d
+mkdir %ACTIVATE_DIR%
+mkdir %DEACTIVATE_DIR%
+
+copy %RECIPE_DIR%\scripts\activate.bat %ACTIVATE_DIR%\gdal-activate.bat
+copy %RECIPE_DIR%\scripts\deactivate.bat %DEACTIVATE_DIR%\gdal-deactivate.bat
