@@ -1,0 +1,47 @@
+package:
+  name: python
+  version: 3.5.0rc2
+
+source:
+  fn: Python-3.5.0rc2.tgz
+  url: https://www.python.org/ftp/python/3.5.0/Python-3.5.0rc2.tgz
+  md5: bfd6938e8072b768a277125837eb7aed
+  patches:
+    - version.patch
+    - osx-dist.patch        [osx]
+    - win-find_exe.patch    [win]
+
+build:
+  no_link: 
+    - bin/python
+  number: 1       [linux]
+
+requirements:
+  build:
+    - bzip2       [unix]
+    - zlib        [unix]
+    - sqlite      [unix]
+    - readline    [unix]
+    - tk          [unix]
+    - openssl     [unix]
+    - xz          [unix]
+  run:
+    - zlib        [unix]
+    - sqlite      [unix]
+    - readline    [unix]
+    - tk          [unix]
+    - openssl     [unix]
+    - xz          [unix]
+
+test:
+  commands:
+    - python -V               [unix]
+    - python3 -V              [unix]
+    - 2to3 -h
+    - pydoc -h
+    - python3-config --help   [unix]
+
+about:
+  home: http://www.python.org/
+  license: PSF
+  summary: general purpose programming language
