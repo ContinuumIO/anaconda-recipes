@@ -13,6 +13,7 @@ nmake /f makefile.vc ^
     LIBDIR=%LIBRARY_LIB% ^
     INCDIR=%LIBRARY_INC% ^
     DATADIR=%LIBRARY_PREFIX%\share\gdal ^
+    HTMLDIR=%LIBRARY_PREFIX%\share\doc\gdal ^
     HDF5_LIB=%LIBRARY_LIB%\hdf5.lib ^
     HDF5_DIR=%LIBRARY_PREFIX% ^
     NETCDF_LIB=%LIBRARY_LIB%\netcdf.lib ^
@@ -27,6 +28,7 @@ nmake /f makefile.vc devinstall ^
     LIBDIR=%LIBRARY_LIB% ^
     INCDIR=%LIBRARY_INC% ^
     DATADIR=%LIBRARY_PREFIX%\share\gdal ^
+    HTMLDIR=%LIBRARY_PREFIX%\share\doc\gdal ^
     HDF5_LIB=%LIBRARY_LIB%\hdf5.lib ^
     HDF5_DIR=%LIBRARY_PREFIX% ^
     NETCDF_LIB=%LIBRARY_LIB%\netcdf.lib ^
