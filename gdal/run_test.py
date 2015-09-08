@@ -10,6 +10,18 @@ import gdalconst
 import ogr
 import osr
 
+# Set GDAL_DATA. This is done normally done by the activate script,
+# but this doesn't happen in the testing environment
+import os
+if 'LIBRARY_PREFIX' in os.environ:
+    # Windows
+    gdalData = os.path.join(os.environ['LIBRARY_PREFIX'], 'data')
+else:
+    # Linux/OSX
+    gdalData = os.path.join(os.environ['PREFIX'], 'data')
+
+os.environ['GDAL_DATA'] = gdalData
+
 driver = gdal.GetDriverByName("netCDF")
 assert driver is not None
 
