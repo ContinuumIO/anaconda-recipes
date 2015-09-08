@@ -21,6 +21,8 @@ nmake /f makefile.vc ^
     NETCDF_SETTING=yes
 if errorlevel 1 exit 1
 
+mkdir -p %LIBRARY_PREFIX%\share\doc\gdal
+
 nmake /f makefile.vc devinstall ^
     %WIN64% ^
     GDAL_HOME=%LIBRARY_PREFIX% ^
