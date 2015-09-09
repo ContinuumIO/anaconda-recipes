@@ -16,13 +16,13 @@ build:
 
 requirements:
   build:
-    - zlib
-    - libpng
+    - zlib       [unix]
+    - libpng     [unix]
     - freetype   [unix]
   run:
     - freetype   [unix]
-    - libpng
-    - zlib
+    - libpng     [unix]
+    - zlib       [unix]
 
 test:
   commands:
