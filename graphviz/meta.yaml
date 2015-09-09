@@ -19,6 +19,14 @@ requirements:
     - zlib
     - libpng
     - freetype   [unix]
+  run:
+    - freetype   [unix]
+    - libpng
+    - zlib
+
+test:
+  commands:
+    - neato -?
 
 about:
   home: http://www.graphviz.org/
