@@ -1,14 +1,10 @@
 package:
   name: pydot-ng
-  version: "1.0.0"
+  version: "1.0.0.15"
 
 source:
-  fn: pydot_ng-1.0.0.tar.gz
-  url: https://pypi.python.org/packages/source/p/pydot-ng/pydot_ng-1.0.0.tar.gz
-  md5: 1b0b7028609fead4199a3f99d8527b3b
-
-build:
-  detect_binary_files_with_prefix: True
+  git_url: git@github.com:pydot/pydot-ng.git
+  git_tag: 4ab4b6a0f5af4b75b8bcd5c8969874428f8153d5
 
 requirements:
   build:
@@ -23,8 +19,8 @@ test:
     - pydot_ng
 
 about:
-  home: http://www.graphviz.org/
-  license: EPL
-  summary: Open Source graph visualization software.
+  home: https://github.com/pydot/pydot-ng
+  license: MIT
+  summary: Python interface to Graphviz's Dot
 
 
