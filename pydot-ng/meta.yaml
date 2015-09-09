@@ -17,11 +17,10 @@ requirements:
   run:
     - python
     - pyparsing
-    - graphviz
 
 test:
   imports:
-    - pyparsing
+    - pydot_ng
 
 about:
   home: http://www.graphviz.org/
