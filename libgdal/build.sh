@@ -11,8 +11,11 @@ export PYTHON=
 
 bash configure \
     --without-python \
+    --with-hdf4=$PREFIX \
     --with-hdf5=$PREFIX \
+    --with-xerces=$PREFIX \
     --with-netcdf=$PREFIX \
+    --with-geos=$PREFIX/bin/geos-config \
     --prefix=$PREFIX
 make
 make install

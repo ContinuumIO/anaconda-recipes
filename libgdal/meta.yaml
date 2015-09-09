@@ -8,14 +8,22 @@ source:
   md5: 2c5f8f12ed416febd2cbd7b63c48eb17
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
+    - hdf4
     - hdf5
+    - geos
+    - proj4
+    - xerces-c
     - libnetcdf
   run:
+    - hdf4
     - hdf5
+    - geos
+    - proj4
+    - xerces-c
     - libnetcdf
 
 test:
