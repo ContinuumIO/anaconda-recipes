@@ -1,0 +1,31 @@
+package:
+  name: pydot-ng
+  version: "1.0.0"
+
+source:
+  fn: pydot_ng-1.0.0.tar.gz
+  url: https://pypi.python.org/packages/source/p/pydot-ng/pydot_ng-1.0.0.tar.gz
+  md5: 1b0b7028609fead4199a3f99d8527b3b
+
+build:
+  detect_binary_files_with_prefix: True
+
+requirements:
+  build:
+    - python
+    - pyparsing
+  run:
+    - python
+    - pyparsing
+    - graphviz
+
+test:
+  imports:
+    - pyparsing
+
+about:
+  home: http://www.graphviz.org/
+  license: EPL
+  summary: Open Source graph visualization software.
+
+
