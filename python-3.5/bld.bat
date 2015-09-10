@@ -11,7 +11,7 @@ msbuild PCbuild\pcbuild.sln /t:python;pythoncore;pythonw;python3dll /p:Configura
 REM ========== add stuff from official python.org installer
 
 set MSI_DIR=\Pythons\3.5.0-%ARCH%
-for %%x in (DLLs Doc libs tcl Tools Scripts) do (
+for %%x in (DLLs Doc libs tcl Tools) do (
     xcopy /s /y %MSI_DIR%\%%x %PREFIX%\%%x\
     if errorlevel 1 exit 1
 )
