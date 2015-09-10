@@ -9,7 +9,6 @@ source:
 requirements:
   build:
     - hdf5
-    - cmake
   run:
     - hdf5
 
