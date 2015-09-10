@@ -31,6 +31,10 @@ assert driver is not None
 driver = gdal.GetDriverByName("HDF5")
 assert driver is not None
 
+# only available when libkea successfully linked in
+driver = gdal.GetDriverByName("KEA")
+assert driver is not None
+
 # only available when xerces-c++ successfully linked in
 driver = ogr.GetDriverByName("GML")
 assert driver is not None
