@@ -15,10 +15,10 @@ import osr
 import os
 if 'LIBRARY_PREFIX' in os.environ:
     # Windows
-    gdalData = os.path.join(os.environ['LIBRARY_PREFIX'], 'data')
+    gdalData = os.path.join(os.environ['LIBRARY_PREFIX'], 'share', 'gdal')
 else:
     # Linux/OSX
-    gdalData = os.path.join(os.environ['PREFIX'], 'data')
+    gdalData = os.path.join(os.environ['PREFIX'], 'share', 'gdal')
 
 os.environ['GDAL_DATA'] = gdalData
 
