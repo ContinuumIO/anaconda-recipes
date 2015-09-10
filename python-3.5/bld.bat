@@ -46,7 +46,7 @@ if errorlevel 1 exit 1
 
 REM ========== add scripts
 
-mkdir %SCRIPTS%
+IF NOT exist %SCRIPTS% (mkdir %SCRIPTS%)
 if errorlevel 1 exit 1
 
 for %%x in (idle pydoc) do (
