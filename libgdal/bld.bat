@@ -26,7 +26,9 @@ nmake /f makefile.vc ^
     HDF4_LIB="%LIBRARY_LIB%\hdf.lib %LIBRARY_LIB%\mfhdf.lib %LIBRARY_LIB%\xdr.lib" ^
     NETCDF_LIB=%LIBRARY_LIB%\netcdf.lib ^
     NETCDF_INC_DIR=%LIBRARY_INC% ^
-    NETCDF_SETTING=yes
+    NETCDF_SETTING=yes ^
+    KEA_CFLAGS="-I%LIBRARY_INC%" ^
+    KEA_LIB=%LIBRARY_LIB%\libkea.lib
 if errorlevel 1 exit 1
 
 mkdir -p %LIBRARY_PREFIX%\share\doc\gdal
@@ -51,7 +53,9 @@ nmake /f makefile.vc devinstall ^
     HDF4_LIB="%LIBRARY_LIB%\hdf.lib %LIBRARY_LIB%\mfhdf.lib %LIBRARY_LIB%\xdr.lib" ^
     NETCDF_LIB=%LIBRARY_LIB%\netcdf.lib ^
     NETCDF_INC_DIR=%LIBRARY_INC% ^
-    NETCDF_SETTING=yes
+    NETCDF_SETTING=yes ^
+    KEA_CFLAGS="-I%LIBRARY_INC%" ^
+    KEA_LIB=%LIBRARY_LIB%\libkea.lib
 if errorlevel 1 exit 1
 
 
