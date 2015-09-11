@@ -8,7 +8,7 @@ source:
   md5: 2c5f8f12ed416febd2cbd7b63c48eb17
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -18,6 +18,7 @@ requirements:
     - proj4
     - xerces-c
     - libnetcdf
+    - kealib
   run:
     - hdf4
     - hdf5
@@ -25,6 +26,7 @@ requirements:
     - proj4
     - xerces-c
     - libnetcdf
+    - kealib
 
 test:
   commands:

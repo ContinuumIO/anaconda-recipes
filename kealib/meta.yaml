@@ -1,0 +1,21 @@
+package:
+  name: kealib
+  version: "1.4.5"
+
+source:
+  hg_url: https://bitbucket.org/chchrsc/kealib/
+  hg_tag: kealib-1.4.5
+ 
+requirements:
+  build:
+    - hdf5
+  run:
+    - hdf5
+
+build:
+  number: 9
+
+about:
+  home: kealib.org
+  license: MIT
+  summary: The KEA format provides an implementation of the GDAL specification within the the HDF5 file format.
