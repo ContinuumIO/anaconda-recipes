@@ -15,6 +15,7 @@ for %%x in (DLLs Doc libs tcl Tools) do (
     xcopy /s /y %MSI_DIR%\%%x %PREFIX%\%%x\
     if errorlevel 1 exit 1
 )
+
 copy %MSI_DIR%\LICENSE.txt %PREFIX%\LICENSE_PYTHON.txt
 if errorlevel 1 exit 1
 
@@ -22,6 +23,7 @@ REM ========== add stuff from our own build
 
 xcopy /s /y %SRC_DIR%\Include %PREFIX%\include\
 if errorlevel 1 exit 1
+
 copy /Y %SRC_DIR%\PC\pyconfig.h %PREFIX%\include\
 if errorlevel 1 exit 1
 
@@ -31,6 +33,7 @@ for %%x in (python35.dll python.exe pythonw.exe) do (
 )
 copy /Y %SRC_DIR%\PCbuild\python35.lib %PREFIX%\libs\
 if errorlevel 1 exit 1
+
 del %PREFIX%\libs\libpython*.a
 
 xcopy /s /y %SRC_DIR%\Lib %PREFIX%\Lib\
