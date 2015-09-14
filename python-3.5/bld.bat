@@ -2,8 +2,10 @@ REM ========== actual compile step
 
 if "%ARCH%"=="64" (
    set PLATFORM=x64
+   set VC_PATH=x64
 ) else (
    set PLATFORM=Win32
+   set VC_PATH=x86
 )
 
 msbuild PCbuild\pcbuild.sln /t:python;pythoncore;pythonw;python3dll /p:Configuration=Release /p:Platform=%PLATFORM% /m /p:OutDir=%SRC_DIR%\PCBuild\
@@ -38,6 +40,10 @@ del %PREFIX%\libs\libpython*.a
 
 xcopy /s /y %SRC_DIR%\Lib %PREFIX%\Lib\
 if errorlevel 1 exit 1
+
+REM ========== add MS VC runtime dlls
+
+xcopy /s /y "C:\Program Files (x86)\Windows Kits\10\Redist\ucrt\DLLs\%VC_PATH%\*" %PREFIX%\
 
 REM ========== bytecode compile standard library
 
