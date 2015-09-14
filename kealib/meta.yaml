@@ -12,9 +12,6 @@ requirements:
   run:
     - hdf5
 
-build:
-  number: 9
-
 about:
   home: kealib.org
   license: MIT
