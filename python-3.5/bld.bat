@@ -42,8 +42,12 @@ xcopy /s /y %SRC_DIR%\Lib %PREFIX%\Lib\
 if errorlevel 1 exit 1
 
 REM ========== add MS VC runtime dlls
+REM ========== REQUIRES Win 10 SDK be installed, or files otherwise copied to location below!
 
 xcopy /s /y "C:\Program Files (x86)\Windows Kits\10\Redist\ucrt\DLLs\%VC_PATH%\*" %PREFIX%\
+
+REM ========== This one comes from visual studio
+xcopy /s /y "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\redist\%VC_PATH%\Microsoft.VC140.CRT\*.dll" %PREFIX%\
 
 REM ========== bytecode compile standard library
 
