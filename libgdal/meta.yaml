@@ -30,13 +30,13 @@ requirements:
 
 test:
   commands:
-    - gdal_grid --version
-    - gdal_rasterize --version
-    - gdal_translate --version
-    - gdaladdo --version
-    - gdalenhance --version
-    - gdalwarp --version
-    - gdalinfo --formats
+    - gdal_grid --version      [not win]
+    - gdal_rasterize --version [not win]
+    - gdal_translate --version [not win]
+    - gdaladdo --version       [not win]
+    - gdalenhance --version    [not win]
+    - gdalwarp --version       [not win]
+    - gdalinfo --formats       [not win]
 
 about:
   home: http://www.gdal.org/
