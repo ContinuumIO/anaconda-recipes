@@ -8,6 +8,10 @@ if errorlevel 1 exit 1
 
 nmake
 if errorlevel 1 exit 1
+
 nmake install
 if errorlevel 1 exit 1
 
+# need to move libkea.dll to bin
+move %LIBRARY_PREFIX%\lib\libkea.dll %LIBRARY_PREFIX%\bin
+if errorlevel 1 exit 1
