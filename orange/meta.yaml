@@ -1,0 +1,28 @@
+package:
+  name: orange
+  version: "2.7"
+
+source:
+  url: http://orange.biolab.si/download/files/orange-source-snapshot-hg-2015-09-15.zip
+  fn: orange-2015-09-15.zip
+
+
+build:
+  string: "20150915"
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy
+    - pyqt
+  run:
+    - python
+    - setuptools
+    - numpy
+    - pyqt
+
+about:
+  home: http://orange.biolab.si/
+  license: GPL
+  summary: A component-based data mining software
