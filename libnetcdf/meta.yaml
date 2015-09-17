@@ -8,7 +8,7 @@ source:
 
 build:
   number: 1    [unix]
-  number: 2    [win]
+  number: 3    [win]
 
 requirements:
   build:
