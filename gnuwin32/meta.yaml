@@ -3,3 +3,8 @@ package:
   version: "2015.08.18"
 
 
+about:
+  home: http://gnuwin32.sourceforge.net/
+  license: GPL
+  about: Native Win32 versions of common unix tools
+
