@@ -1,0 +1,31 @@
+package:
+  name: opencv
+  version: 3.0.0.372
+
+source:
+  git_url: https://github.com/Itseez/opencv.git
+  git_tag: d430e802f2cdb4a144caaad45199f3c222b31f69
+
+requirements:
+  build:
+    - cmake
+    - python
+    - numpy
+    - jpeg         [unix]
+    - zlib         [unix]
+    - libpng       [unix]
+  run:
+    - python
+    - numpy
+    - jpeg         [unix]
+    - zlib         [unix]
+    - libpng       [unix]
+
+test:
+  imports:
+    - cv2
+
+about:
+  home: http://opencv.org/
+  license: BSD
+  summary: a library of programming functions mainly aimed at real-time computer vision
