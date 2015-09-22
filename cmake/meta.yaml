@@ -15,6 +15,5 @@ test:
 
 about:
   home: http://www.cmake.org/
-  license:  3-clause BSD
-  license_family: BSD
+  license: BSD
   summary: CMake is an extensible, open-source system that manages the build process
