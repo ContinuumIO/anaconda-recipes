@@ -1,0 +1,18 @@
+package:
+  name: petl
+  version: "1.0.11"
+
+source:
+  git_url: https://github.com/alimanfoo/petl.git
+  git_tag: v1.0.11
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+about:
+  license: MIT
+  home: https://github.com/alimanfoo/petl
+  summary: A Python package for extracting, transforming and loading tables of data
