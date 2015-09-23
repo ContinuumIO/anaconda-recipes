@@ -1,0 +1,20 @@
+package:
+  name: filechunkio
+  version: "1.6"
+
+source:
+  url: https://pypi.python.org/packages/source/f/filechunkio/filechunkio-1.6.tar.gz
+  md5: c168a11ad94cd2ec42a219f0f8869a7b
+  fn: filechunkio-1.6.tar.gz
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+
+about:
+  home: http://bitbucket.org/fabian/filechunkio
+  license: MIT
+  summary: Represents a chunk of an OS-level file containing bytes data
