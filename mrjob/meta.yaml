@@ -1,0 +1,26 @@
+package:
+  name: mrjob
+  version: "0.4.5"
+
+source:
+  git_url: https://github.com/Yelp/mrjob.git
+  git_tag: v0.4.5
+
+requirements:
+  build:
+    - python
+    - pyyaml
+    - filechunkio
+    - boto >=2.35.0
+  run:
+    - python
+    - pyyaml
+    - boto >=2.35.0
+    - filechunkio
+
+about:
+  home: https://pythonhosted.org/mrjob/index.html
+  summary: Run MapReduce jobs on Hadoop or Amazon Web Services
+  license: Apache
+
+
