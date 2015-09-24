@@ -13,6 +13,10 @@ requirements:
   run:
     - python
 
+test:
+  imports:
+    - simplejson
+    - simplejson._speedups
 
 about:
   home: http://github.com/simplejson/simplejson
