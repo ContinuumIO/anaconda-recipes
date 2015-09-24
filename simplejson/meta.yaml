@@ -1,0 +1,20 @@
+package:
+  name: simplejson
+  version: "3.8.0"
+
+source:
+  git_url: https://github.com/simplejson/simplejson.git
+  git_rev: v3.8.0
+
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+
+about:
+  home: http://github.com/simplejson/simplejson
+  license: MIT
+  summary: Simple, fast, extensible JSON encoder/decoder for Python.
