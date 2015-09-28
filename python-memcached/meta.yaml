@@ -1,0 +1,28 @@
+package:
+  name: python-memcached
+  version: "1.57"
+
+source:
+  url: https://pypi.python.org/packages/source/p/python-memcached/python-memcached-1.57.tar.gz
+  md5: de21f64b42b2d961f3d4ad7beb5468a1
+  fn: python-memcached-1.57.tar.gz
+
+build:
+  noarch_python: True
+
+requirements:
+  build:
+    - six
+  run:
+    - python
+    - six
+
+test:
+  imports:
+    - memcache
+
+about:
+  home: http://www.tummy.com/software/python-memcached/
+  summary: Pure python memcached client
+  license: OSI
+
