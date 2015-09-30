@@ -1,0 +1,18 @@
+diff --git Modules/main.c Modules/main.c
+index ef9b245..08f5e3f 100644
+--- Modules/main.c
++++ Modules/main.c
+@@ -550,8 +550,12 @@ Py_Main(int argc, char **argv)
+         (command == NULL && filename == NULL && module == NULL && stdin_is_interactive)) {
+         fprintf(stderr, "Python %s on %s\n",
+             Py_GetVersion(), Py_GetPlatform());
+-        if (!Py_NoSiteFlag)
++        if (!Py_NoSiteFlag) {
+             fprintf(stderr, "%s\n", COPYRIGHT);
++            fprintf(stderr,
++                    "Anaconda is brought to you by Continuum Analytics.\n"
++                    "Please check out: http://continuum.io/thanks and https://anaconda.org\n");
++        }
+     }
+ 
+     if (command != NULL) {

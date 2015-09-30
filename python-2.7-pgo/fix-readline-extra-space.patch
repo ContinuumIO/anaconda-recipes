@@ -1,0 +1,37 @@
+--- setup.py.orig
++++ setup.py
+@@ -35,12 +35,16 @@ COMPILED_WITH_PYDEBUG = ('--with-pydebug
+ # This global variable is used to hold the list of modules to be disabled.
+ disabled_module_list = []
+ 
+-def add_dir_to_list(dirlist, dir):
+-    """Add the directory 'dir' to the list 'dirlist' (at the front) if
++def add_dir_to_list(dirlist, dir, append=False):
++    """Add the directory 'dir' to the list 'dirlist' (at the front, if
++    'append' is False or at the back, if 'append' is True) if
+     1) 'dir' is not already in 'dirlist'
+     2) 'dir' actually exists, and is a directory."""
+     if dir is not None and os.path.isdir(dir) and dir not in dirlist:
+-        dirlist.insert(0, dir)
++        if append:
++            dirlist.append(dir)
++        else:
++            dirlist.insert(0, dir)
+ 
+ def macosx_sdk_root():
+     """
+@@ -505,12 +509,12 @@ class PyBuildExt(build_ext):
+             for d in (
+                 '/usr/include',
+                 ):
+-                add_dir_to_list(inc_dirs, d)
++                add_dir_to_list(inc_dirs, d, append=True)
+             for d in (
+                 '/lib64', '/usr/lib64',
+                 '/lib', '/usr/lib',
+                 ):
+-                add_dir_to_list(lib_dirs, d)
++                add_dir_to_list(lib_dirs, d, append=True)
+         exts = []
+         missing = []
+ 

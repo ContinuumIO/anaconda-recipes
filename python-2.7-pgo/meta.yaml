@@ -1,0 +1,55 @@
+package:
+  name: python
+  version: "2.7.10"
+
+source:
+  fn: Python-2.7.10.tgz
+  md5: d7547558fd673bd9d38e2108c6b42521
+  url: https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tgz
+  patches:
+    - version.patch
+    - cprt.patch
+    - json-decode.patch
+    - linux-clear_history.patch       [linux]
+    - fix-readline-extra-space.patch  [linux]
+    #- osx-dist.patch                  [osx]
+    - osx-site.patch                  [osx]
+    - win-find_exe.patch              [win]
+    - win-cygwin.patch                [win]
+
+build:
+  no_link: 
+    - bin/python
+
+requirements:
+  build:
+    - bzip2      [unix and not armv6l]
+    - zlib       [unix and not armv6l]
+    - sqlite     [unix and not armv6l]
+    - readline   [unix]
+    - tk         [unix]
+    - openssl    [unix and not armv7l]
+    - system     [linux]
+    - gnuwin32   [win]
+  run:
+    - zlib       [unix and not armv6l]
+    - sqlite     [unix and not armv6l]
+    - readline   [unix]
+    - tk         [unix]
+    - openssl    [unix and not armv7l]
+    - system     [linux]
+
+test:
+  commands:
+    - python -V              [unix]
+    - 2to3 -h
+    - pydoc -h
+    - python-config --help   [unix]
+    - idle -h                [not osx]
+  files:
+    - hello.txt.gz
+
+about:
+  home: http://www.python.org/
+  summary: general purpose programming language
+  license: PSF
