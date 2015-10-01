@@ -7,11 +7,9 @@ source:
   md5: de21f64b42b2d961f3d4ad7beb5468a1
   fn: python-memcached-1.57.tar.gz
 
-build:
-  noarch_python: True
-
 requirements:
   build:
+    - python
     - six
   run:
     - python
