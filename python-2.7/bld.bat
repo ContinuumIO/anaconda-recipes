@@ -1,6 +1,14 @@
+if "%ARCH%" == "64" (
+    set PLATF=x64
+    cmd /c Tools\buildbot\external-amd64.bat
+) else (
+    set PLATF=Win32
+    cmd /c Tools\buildbot\external.bat
+)
+
 REM ========== actual compile step
 
-vcbuild PCbuild\pcbuild.sln "%RELEASE_TARGET%"
+vcbuild PCbuild\pcbuild.sln "Release|%PLATF%"
 
 if "%ARCH%"=="64" (
     copy PCbuild\amd64\* PCbuild\
