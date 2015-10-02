@@ -1,3 +1,5 @@
+set HOST_PYTHON=%PYTHON%
+
 if "%ARCH%" == "64" (
     set PLATF=x64
     cmd /c Tools\buildbot\external-amd64.bat
@@ -8,7 +10,6 @@ if "%ARCH%" == "64" (
 
 REM ========== actual compile step
 
-set HOST_PYTHON=%PYTHON%
 vcbuild PCbuild\pcbuild.sln "Release|%PLATF%"
 
 if "%ARCH%"=="64" (
