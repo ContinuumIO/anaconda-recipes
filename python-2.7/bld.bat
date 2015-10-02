@@ -8,6 +8,7 @@ if "%ARCH%" == "64" (
 
 REM ========== actual compile step
 
+set HOST_PYTHON=%PYTHON%
 vcbuild PCbuild\pcbuild.sln "Release|%PLATF%"
 
 if "%ARCH%"=="64" (
