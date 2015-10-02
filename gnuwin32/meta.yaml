@@ -6,5 +6,5 @@ package:
 about:
   home: http://gnuwin32.sourceforge.net/
   license: GPL
-  about: Native Win32 versions of common unix tools
+  summary: Native Win32 versions of common unix tools
 
