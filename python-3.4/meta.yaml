@@ -16,6 +16,8 @@ build:
   no_link: 
     - bin/python
   number: 1       [linux]
+  features:          [win]
+    - msvc10         [win]
 
 requirements:
   build:

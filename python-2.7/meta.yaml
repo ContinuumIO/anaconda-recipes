@@ -20,6 +20,8 @@ source:
 build:
   no_link: 
     - bin/python
+  features:          [win]
+    - msvc9          [win]
 
 requirements:
   build:
