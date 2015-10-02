@@ -1,0 +1,8 @@
+package:
+  name: msvc14
+  version: "1.0"
+
+
+build:
+  track_features:
+    - msvc14
