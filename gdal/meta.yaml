@@ -13,6 +13,10 @@ source:
 
 build:
   number: 1
+  features:     [win]
+    - msvc9     [win and py27]
+    - msvc10    [win and py34]
+    - msvc14    [win and py35]
 
 requirements:
   build:
