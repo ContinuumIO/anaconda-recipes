@@ -3,8 +3,6 @@
 rm -rf Lib/test Lib/*/test
 
 UCS=4
-REPLACE=replace
-OSX_ARCH=64
 
 if [ `uname` == Darwin ]; then
     ./configure --enable-shared --enable-ipv6 --enable-unicode=ucs$UCS $DOPT \
@@ -56,10 +54,10 @@ if [ `uname` == Linux ]; then
     mv python2.7-config python-config
     popd
     if [ $CC != "gcc" ]; then
-	$REPLACE $CC gcc \
+	sed 's/'$CC'/gcc/' \
             $STDLIB_DIR/_sysconfigdata.py \
             $STDLIB_DIR/config/Makefile
-	$REPLACE $CXX g++ \
+	sed 's/'$CXX'/g++/' \
             $STDLIB_DIR/_sysconfigdata.py \
             $STDLIB_DIR/config/Makefile
     fi

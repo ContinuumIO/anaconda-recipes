@@ -1,14 +1,3 @@
-REM ========== prepare source
-
-if "%ARCH%"=="64" (
-    set DMSW=-DMS_WIN64
-) else (
-    set DMSW=
-)
-
-%REPLACE% "@DMSW@" "%DMSW%" Lib\distutils\cygwinccompiler.py
-if errorlevel 1 exit 1
-
 REM ========== actual compile step
 
 vcbuild PCbuild\pcbuild.sln "%RELEASE_TARGET%"

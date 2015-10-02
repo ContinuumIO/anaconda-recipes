@@ -12,10 +12,9 @@ source:
     - json-decode.patch
     - linux-clear_history.patch       [linux]
     - fix-readline-extra-space.patch  [linux]
-    #- osx-dist.patch                  [osx]
+    - osx-dist.patch                  [osx]
     - osx-site.patch                  [osx]
     - win-find_exe.patch              [win]
-    - win-cygwin.patch                [win]
 
 build:
   no_link: 
@@ -32,6 +31,7 @@ requirements:
     - tk         [unix]
     - openssl    [unix and not armv7l]
     - system     [linux]
+    - gnuwin32   [win]
   run:
     - zlib       [unix and not armv6l]
     - sqlite     [unix and not armv6l]
