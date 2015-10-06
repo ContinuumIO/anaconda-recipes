@@ -18,6 +18,7 @@ build:
 
 requirements:
   build:
+    - cmake
     - zlib
   run:
     - zlib
