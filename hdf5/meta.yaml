@@ -10,6 +10,11 @@ source:
 build:
   number: 2     [unix]
   number: 3     [win]
+  
+  features:
+    - msvc9     [win and msvc9]
+    - msvc10    [win and msvc10]
+    - msvc14    [win and msvc14]
 
 requirements:
   build:
