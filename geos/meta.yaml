@@ -6,6 +6,11 @@ source:
   fn: geos-3.4.2.tar.bz2
   url: http://download.osgeo.org/geos/geos-3.4.2.tar.bz2
 
+build:
+  features:
+    - vc9  [win and py27]
+    - vc10 [win and py34]
+    - vc14 [win and py35]
 
 about:
   home: http://trac.osgeo.org/geos/
