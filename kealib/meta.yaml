@@ -5,6 +5,12 @@ package:
 source:
   hg_url: https://bitbucket.org/chchrsc/kealib/
   hg_tag: kealib-1.4.5
+
+build:
+  features:
+    - vc9    [win and py27]
+    - vc10   [win and py34]
+    - vc14   [win and py35]
  
 requirements:
   build:
