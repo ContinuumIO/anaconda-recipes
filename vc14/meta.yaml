@@ -1,8 +1,8 @@
 package:
-  name: msvc14
+  name: vc14
   version: "1.0"
 
 
 build:
   track_features:
-    - msvc14
+    - vc14

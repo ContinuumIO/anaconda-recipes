@@ -1,7 +1,7 @@
 package:
-  name: msvc10
+  name: vc10
   version: "1.0"  
 
 build:
   track_features:
-    - msvc10
+    - vc10

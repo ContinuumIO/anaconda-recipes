@@ -10,11 +10,10 @@ source:
 build:
   number: 2     [unix]
   number: 3     [win]
-  
   features:
-    - msvc9     [win and py27]
-    - msvc10    [win and py34]
-    - msvc14    [win and py35]
+    - vc9     [win and py27]
+    - vc10    [win and py34]
+    - vc14    [win and py35]
 
 requirements:
   build:
