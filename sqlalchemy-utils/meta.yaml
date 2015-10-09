@@ -18,5 +18,4 @@ requirements:
     - python
     - sqlalchemy >=1.0
     - six
-    - phonenumbers
 
