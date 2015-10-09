@@ -1,0 +1,22 @@
+package:
+  name: sqlalchemy-utils
+  version: "0.31.0"
+
+source:
+  git_url: https://github.com/kvesteri/sqlalchemy-utils.git
+  git_tag: 0.31.0
+  patches:
+    - deps.patch
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - sqlalchemy >=1.0
+    - six
+  run:
+    - python
+    - sqlalchemy >=1.0
+    - six
+    - phonenumbers
+

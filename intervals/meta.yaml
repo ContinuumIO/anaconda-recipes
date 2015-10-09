@@ -1,0 +1,29 @@
+package:
+  name: intervals
+  version: "0.3.1"
+
+source:
+  fn: intervals-0.3.1.tar.gz
+  url: https://pypi.python.org/packages/source/i/intervals/intervals-0.3.1.tar.gz
+  md5: bdd15698f8909d323a3d27471cc29fe7
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - infinity >=0.1.3
+    - six >=1.4.1
+
+  run:
+    - python
+    - infinity >=0.1.3
+    - six >=1.4.1
+
+test:
+  imports:
+    - intervals
+
+about:
+  home: https://github.com/kvesteri/intervals
+  license: BSD License
+  summary: 'Python tools for handling intervals (ranges of comparable objects).'

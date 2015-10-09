@@ -1,0 +1,30 @@
+package:
+  name: validators
+  version: "0.8"
+
+source:
+  fn: validators-0.8.tar.gz
+  url: https://pypi.python.org/packages/source/v/validators/validators-0.8.tar.gz
+  md5: 7bdd7de909ea77b40d8f603ae68dc4d0
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - six >=1.4.0
+    - decorator >=3.4.0
+
+  run:
+    - python
+    - six >=1.4.0
+    - decorator >=3.4.0
+
+test:
+  imports:
+    - validators
+    - validators.i18n
+
+about:
+  home: https://github.com/kvesteri/validators
+  license: BSD License
+  summary: 'Python Data Validation for Humans.'

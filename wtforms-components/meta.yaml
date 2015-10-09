@@ -1,0 +1,28 @@
+package:
+  name: wtforms-components
+  version: "0.9.8"
+
+source:
+  git_url: https://github.com/kvesteri/wtforms-components.git
+  git_tag: 0.9.8
+  patches:
+    - deps.patch
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - sqlalchemy >=0.8.0
+    - wtforms >=1.0.4
+    - sqlalchemy-utils >=0.23.0
+    - six >=1.4.1
+    - validators >=0.5.0
+    - intervals >=0.2.0
+  run:
+    - python
+    - sqlalchemy >=0.8.0
+    - wtforms >=1.0.4
+    - sqlalchemy-utils >=0.23.0
+    - six >=1.4.1
+    - validators >=0.5.0
+    - intervals >=0.2.0
