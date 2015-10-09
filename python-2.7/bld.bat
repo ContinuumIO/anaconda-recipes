@@ -11,6 +11,7 @@ if "%ARCH%" == "64" (
 
 
 REM ========== build external deps
+cd %SRC_DIR%\externals
 if not exist tcltk\bin\tcl85.dll (
     @rem all and install need to be separate invocations, otherwise nmakehlp is not found on install
     cd tcl-8.5.15.0\win
@@ -37,7 +38,7 @@ if not exist tcltk\lib\tix8.4.3\tix84.dll (
 
 
 REM ========== actual compile step
-
+cd %SRC_DIR%
 vcbuild PCbuild\pcbuild.sln "Release|%PLATF%"
 
 if "%ARCH%"=="64" (
