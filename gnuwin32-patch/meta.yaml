@@ -1,0 +1,14 @@
+package:
+  name: gnuwin32-patch
+  version: 2.5.9
+
+source:
+  url: http://skylineservers.dl.sourceforge.net/project/gnuwin32/patch/2.5.9-7/patch-2.5.9-7-bin.zip
+  fn: patch-2.5.9-7-bin.zip
+  md5: b9c8b31d62f4b2e4f1887bbb63e8a905
+
+about:
+  home: http://gnuwin32.sourceforge.net/
+  license: GPL
+  summary: Native Win32 versions of common unix tools
+
