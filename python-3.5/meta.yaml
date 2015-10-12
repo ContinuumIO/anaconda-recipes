@@ -15,8 +15,8 @@ build:
   no_link: 
     - bin/python
   number: 1       [linux]
-  features:
-    - msvc14      [win]
+  track_features:
+    - vc14      [win]
 
 requirements:
   build:

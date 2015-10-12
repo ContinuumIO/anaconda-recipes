@@ -10,14 +10,13 @@ source:
     - version.patch
     - osx-dist.patch        [osx]
     - win-find_exe.patch    [win]
-    - win-cygwin.patch      [win]
 
 build:
   no_link: 
     - bin/python
   number: 1       [linux]
-  features:          [win]
-    - msvc10         [win]
+  track_features:
+    - vc10         [win]
 
 requirements:
   build:
