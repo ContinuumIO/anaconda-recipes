@@ -16,6 +16,7 @@ build:
 
 requirements:
   build:
+    - python     [win]
     - hdf4
     - hdf5
     - geos

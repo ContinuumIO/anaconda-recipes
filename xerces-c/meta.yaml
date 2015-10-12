@@ -15,10 +15,6 @@ build:
     - vc9    [win and py27]
     - vc10   [win and py34]
     - vc14   [win and py35]
-  track_features:
-    - vc9    [win and py27]
-    - vc10   [win and py34]
-    - vc14   [win and py34]
 
 about:
   home: http://xerces.apache.org/xerces-c/

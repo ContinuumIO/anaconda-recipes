@@ -14,6 +14,7 @@ build:
  
 requirements:
   build:
+    - python     [win]
     - hdf5
   run:
     - hdf5
