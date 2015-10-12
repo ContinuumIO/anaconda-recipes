@@ -10,9 +10,15 @@ source:
 build:
   number: 2     [unix]
   number: 3     [win]
+  features:
+    - vc9     [win and py27]
+    - vc10    [win and py34]
+    - vc14    [win and py35]
 
 requirements:
   build:
+    - python     [win]
+    - cmake
     - zlib
   run:
     - zlib

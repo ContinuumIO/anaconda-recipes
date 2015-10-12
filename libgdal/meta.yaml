@@ -9,9 +9,14 @@ source:
 
 build:
   number: 1
+  features:
+    - vc9     [win and py27]
+    - vc10    [win and py34]
+    - vc14    [win and py35]
 
 requirements:
   build:
+    - python     [win]
     - hdf4
     - hdf5
     - geos

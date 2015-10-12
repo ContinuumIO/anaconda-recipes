@@ -1,17 +1,45 @@
-REM ========== prepare source
+set HOST_PYTHON=%PYTHON%
+cmd /c Tools\buildbot\external-common.bat
 
-if "%ARCH%"=="64" (
-    set DMSW=-DMS_WIN64
+if "%ARCH%" == "64" (
+    set PLATF=x64
+    set MACHINE=AMD64
 ) else (
-    set DMSW=
+    set PLATF=Win32
+    set MACHINE=IX86
 )
 
-%REPLACE% "@DMSW@" "%DMSW%" Lib\distutils\cygwinccompiler.py
-if errorlevel 1 exit 1
+
+REM ========== build external deps
+cd %SRC_DIR%\externals
+if not exist tcltk\bin\tcl85.dll (
+    @rem all and install need to be separate invocations, otherwise nmakehlp is not found on install
+    cd tcl-8.5.15.0\win
+    nmake -f makefile.vc MACHINE=%MACHINE% INSTALLDIR=..\..\tcltk clean all
+    nmake -f makefile.vc MACHINE=%MACHINE% INSTALLDIR=..\..\tcltk install
+    cd ..\..
+)
+
+if not exist tcltk\bin\tk85.dll (
+    cd tk-8.5.15.0\win
+    nmake -f makefile.vc MACHINE=%MACHINE% INSTALLDIR=..\..\tcltk TCLDIR=..\..\tcl-8.5.15.0 clean
+    nmake -f makefile.vc MACHINE=%MACHINE% INSTALLDIR=..\..\tcltk TCLDIR=..\..\tcl-8.5.15.0 all
+    nmake -f makefile.vc MACHINE=%MACHINE% INSTALLDIR=..\..\tcltk TCLDIR=..\..\tcl-8.5.15.0 install
+    cd ..\..
+)
+
+if not exist tcltk\lib\tix8.4.3\tix84.dll (
+    cd tix-8.4.3.5\win
+    nmake -f python.mak MACHINE=%MACHINE% TCL_DIR=..\..\tcl-8.5.15.0 TK_DIR=..\..\tk-8.5.15.0 INSTALL_DIR=..\..\tcltk clean
+    nmake -f python.mak MACHINE=%MACHINE% TCL_DIR=..\..\tcl-8.5.15.0 TK_DIR=..\..\tk-8.5.15.0 INSTALL_DIR=..\..\tcltk all
+    nmake -f python.mak MACHINE=%MACHINE% TCL_DIR=..\..\tcl-8.5.15.0 TK_DIR=..\..\tk-8.5.15.0 INSTALL_DIR=..\..\tcltk install
+    cd ..\..
+)
+
 
 REM ========== actual compile step
-
-vcbuild PCbuild\pcbuild.sln "%RELEASE_TARGET%"
+cd %SRC_DIR%
+vcbuild PCbuild\pcbuild.sln "Release|%PLATF%"
 
 if "%ARCH%"=="64" (
     copy PCbuild\amd64\* PCbuild\
