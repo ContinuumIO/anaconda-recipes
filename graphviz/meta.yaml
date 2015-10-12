@@ -12,6 +12,8 @@ source:
   md5: d028f49e047e2a25fdb7c0aa323a3945   [win]
 
 build:
+  number: 1
+
   detect_binary_files_with_prefix: True
 
 requirements:
