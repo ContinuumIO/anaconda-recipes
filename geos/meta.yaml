@@ -5,7 +5,14 @@ package:
 source:
   fn: geos-3.4.2.tar.bz2
   url: http://download.osgeo.org/geos/geos-3.4.2.tar.bz2
-
+  md5: fc5df2d926eb7e67f988a43a92683bae
+  patches:
+    - lineintersector.patch [win]
+    - wktwriter.patch [win]
+    - bufferopp.patch [win]
+    - offsetcurvebuilder.patch [win]
+    - offsetcurvesetbuilder.patch [win]
+    
 
 about:
   home: http://trac.osgeo.org/geos/

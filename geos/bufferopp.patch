@@ -1,0 +1,28 @@
+--- src\operation\buffer\BufferOp.cpp.orig	2015-11-13 12:18:57.302468000 +1000
++++ src\operation\buffer\BufferOp.cpp	2015-11-13 12:19:29.081764900 +1000
+@@ -17,7 +17,11 @@
+  * Last port: operation/buffer/BufferOp.java r378 (JTS-1.12)
+  *
+  **********************************************************************/
+-
++#if _MSC_VER >= 1900
++#include <algorithm>
++#define max(x, y) std::max(x, y)
++#define min(x, y) std::min(x, y)
++#endif
+ #include <algorithm>
+ #include <cmath>
+ 
+@@ -85,9 +89,9 @@
+ 	int maxPrecisionDigits)
+ {
+   const Envelope *env=g->getEnvelopeInternal();
+-  double envMax = std::max(
+-    std::max(fabs(env->getMaxX()), fabs(env->getMinX())),
+-    std::max(fabs(env->getMaxY()), fabs(env->getMinY()))
++  double envMax = max(
++    max(fabs(env->getMaxX()), fabs(env->getMinX())),
++    max(fabs(env->getMaxY()), fabs(env->getMinY()))
+   );
+ 
+   double expandByDistance = distance > 0.0 ? distance : 0.0;
