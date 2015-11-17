@@ -1,0 +1,14 @@
+--- src\operation\buffer\OffsetCurveBuilder.cpp.orig	2015-11-13 12:37:59.568957600 +1000
++++ src\operation\buffer\OffsetCurveBuilder.cpp	2015-11-13 12:18:31.159889900 +1000
+@@ -17,6 +17,11 @@
+  * Last port: operation/buffer/OffsetCurveBuilder.java r378 (JTS-1.12)
+  *
+  **********************************************************************/
++#if _MSC_VER >= 1900
++#include <algorithm>
++#define max(x, y) std::max(x, y)
++#define min(x, y) std::min(x, y)
++#endif
+ #include <cassert>
+ #include <cmath>
+ #include <vector>

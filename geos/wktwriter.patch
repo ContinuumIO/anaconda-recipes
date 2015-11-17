@@ -1,0 +1,14 @@
+--- src\io\WKTWriter.cpp.orig	2013-08-26 01:10:30.000000000 +1000
++++ src\io\WKTWriter.cpp	2015-11-13 12:15:42.758522700 +1000
+@@ -18,6 +18,11 @@
+  *
+  **********************************************************************/
+ 
++#if _MSC_VER >= 1900
++#include <algorithm>
++#define max(x, y) std::max(x, y)
++#define min(x, y) std::min(x, y)
++#endif
+ #include <geos/io/WKTWriter.h>
+ #include <geos/io/Writer.h>
+ #include <geos/io/CLocalizer.h>
