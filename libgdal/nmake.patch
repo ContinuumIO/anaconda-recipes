@@ -1,0 +1,11 @@
+--- nmake.opt.orig	2015-06-15 05:06:33.000000000 +1000
++++ nmake.opt	2015-11-19 16:31:36.978091100 +1000
+@@ -641,7 +641,7 @@
+ !ENDIF
+ 
+ !IFDEF ODBC_SUPPORTED
+-ODBCLIB = odbc32.lib odbccp32.lib user32.lib
++ODBCLIB = legacy_stdio_definitions.lib odbc32.lib odbccp32.lib user32.lib
+ !ENDIF
+ 
+ !IF DEFINED(MRSID_DIR) || DEFINED(MRSID_RASTER_DIR) || DEFINED(MRSID_LIDAR_DIR)
