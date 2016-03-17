@@ -1,0 +1,13 @@
+--- nmake.opt.orig	2015-06-15 05:06:33.000000000 +1000
++++ nmake.opt	2015-11-19 16:44:13.167544200 +1000
+@@ -641,7 +641,10 @@
+ !ENDIF
+ 
+ !IFDEF ODBC_SUPPORTED
++!IF "$(CONDA_PY)" != "35"
+ ODBCLIB = odbc32.lib odbccp32.lib user32.lib
++!ELSE
++ODBCLIB = legacy_stdio_definitions.lib odbc32.lib odbccp32.lib user32.lib
+ !ENDIF
+ 
+ !IF DEFINED(MRSID_DIR) || DEFINED(MRSID_RASTER_DIR) || DEFINED(MRSID_LIDAR_DIR)
