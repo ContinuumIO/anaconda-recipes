@@ -1,0 +1,31 @@
+package:
+  name: cherrypy
+  version: 3.8.0
+
+source:
+  fn: CherryPy-3.8.0.tar.gz
+  url: https://pypi.python.org/packages/source/C/CherryPy/CherryPy-3.8.0.tar.gz
+  md5: 542b96b2cd825e8120e8cd822bc18f4b
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  commands:
+    - cherryd -h
+  imports:
+    - cherrypy
+    - cherrypy.lib
+    - cherrypy.process
+    - cherrypy.scaffold
+    - cherrypy.test
+    - cherrypy.tutorial
+    - cherrypy.wsgiserver
+
+about:
+  home: http://www.cherrypy.org
+  license: BSD
+  summary: object-oriented HTTP framework

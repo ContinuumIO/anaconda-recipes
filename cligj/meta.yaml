@@ -1,0 +1,26 @@
+package:
+  name: cligj
+  version: 0.4.0
+
+source:
+  git_url: https://github.com/mapbox/cligj.git
+  git_tag: 0.4.0
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - click
+  run:
+    - python
+    - click >=4.0
+
+test:
+  imports:
+    - cligj
+
+about:
+  home: https://github.com/mapbox/cligj
+  license: MIT
+  license_file: LICENSE
+  summary: Click params for GeoJSON CLI.

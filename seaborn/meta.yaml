@@ -1,0 +1,30 @@
+package:
+  name: seaborn
+  version: 0.7.0
+
+source:
+  fn: seaborn-0.7.0.tar.gz
+  url: https://pypi.python.org/packages/source/s/seaborn/seaborn-0.7.0.tar.gz
+  md5: 764c030a9db60ec804b9a506d0a38cd2
+
+requirements:
+  build:
+    - python
+    - numpy
+    - matplotlib
+  run:
+    - python
+    - numpy
+    - matplotlib
+    - scipy
+    - pandas
+
+test:
+  imports:
+    - seaborn
+
+about:
+  home: http://stanford.edu/~mwaskom/software/seaborn/
+  license: BSD
+  license_file: LICENSE
+  summary: statistical data visualization

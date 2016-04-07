@@ -1,0 +1,27 @@
+package:
+  name: whoosh
+  version: 2.7.3
+
+source:
+  fn: Whoosh-2.7.3.zip
+  url: https://pypi.python.org/packages/source/W/Whoosh/Whoosh-2.7.3.zip
+  md5: 891edeba96cec53604c0cd176284c4cf
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - whoosh
+    - whoosh.fields
+    - whoosh.index
+
+about:
+  home: http://bitbucket.org/mchaput/whoosh
+  license: BSD
+  license_file: LICENSE.txt
+  summary: fast, pure-Python full text indexing, search, and spell checking library

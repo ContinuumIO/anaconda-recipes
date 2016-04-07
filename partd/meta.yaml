@@ -1,0 +1,31 @@
+package:
+  name: partd
+  version: 0.3.2
+
+source:
+  fn: partd-0.3.2.tar.gz
+  url: https://pypi.python.org/packages/source/p/partd/partd-0.3.2.tar.gz
+  md5: 6d533e499c785b5e5790774a4974bee9
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - locket
+  run:
+    - python
+    - locket
+    - toolz
+    - pandas
+
+test:
+  imports:
+    - partd
+
+about:
+  home: https://github.com/mrocklin/partd
+  license: BSD
+  summary: Appendable key-value byte store

@@ -1,0 +1,26 @@
+package:
+  version: 1.39.0
+  name: pango
+
+source:
+  url: http://ftp.gnome.org/pub/GNOME/sources/pango/1.39/pango-1.39.0.tar.xz
+  fn: pango-1.39.0.tar.xz
+
+requirements:
+  build:
+    - fontconfig 2.11.*   [unix]
+    - freetype  2.5.*     [unix]
+    - cairo   1.12.*    [unix]
+    - harfbuzz       [unix]
+    - glib    [unix]
+  run:
+    - fontconfig  2.11.*  [unix]
+    - freetype    2.5.*  [unix]
+    - cairo  1.12.*  [unix]
+    - harfbuzz   [unix]
+    - glib  [unix]
+about:
+  home: http://www.pango.org/
+  summary: Text layout and rendering engine
+  license: LGPL
+  license_file: COPYING

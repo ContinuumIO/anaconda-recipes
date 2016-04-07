@@ -1,0 +1,29 @@
+package:
+  name: jupyter_console
+  version: 4.1.1
+
+source:
+  fn: jupyter_console-4.1.1.tar.gz
+  url: https://pypi.python.org/packages/source/j/jupyter_console/jupyter_console-4.1.1.tar.gz
+  md5: a80bfb1b129fc3c8d6c33e3306af933c
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - ipython
+    - ipykernel
+    - jupyter_client
+    - pyreadline          [win]
+
+test:
+  commands:
+    - jupyter-console -h
+  imports:
+    - jupyter_console
+
+about:
+  home: http://jupyter.org
+  license: BSD
+  summary: Jupyter terminal console

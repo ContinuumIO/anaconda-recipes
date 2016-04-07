@@ -1,0 +1,31 @@
+package:
+  name: botocore
+  version: 1.4.9
+
+source:
+  fn: botocore-1.4.9.tar.gz
+  url: https://pypi.python.org/packages/source/b/botocore/botocore-1.4.9.tar.gz
+  md5: c76235a42df66df90b70830f1b5db455
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - python-dateutil >=2.1,<3.0.0
+    - docutils >=0.10
+    - jmespath >=0.7.1,<1.0.0
+  run:
+    - python
+    - python-dateutil >=2.1,<3.0.0
+    - docutils >=0.10
+    - jmespath >=0.7.1,<1.0.0
+
+test:
+  imports:
+    - botocore
+
+about:
+  home: https://github.com/boto/boto3
+  license: Apache
+  license_file: LICENSE.txt
+  summary: low-level, core functionality of boto3

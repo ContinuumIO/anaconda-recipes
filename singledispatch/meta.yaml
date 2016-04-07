@@ -1,0 +1,26 @@
+package:
+  name: singledispatch
+  version: 3.4.0.3
+
+source:
+  fn: singledispatch-3.4.0.3.tar.gz
+  url: https://pypi.python.org/packages/source/s/singledispatch/singledispatch-3.4.0.3.tar.gz
+  md5: af2fc6a3d6cc5a02d0bf54d909785fcb
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - six
+  run:
+    - python
+    - six
+
+test:
+  imports:
+    - singledispatch
+
+about:
+  home: http://docs.python.org/3/library/functools.html#functools.singledispatch
+  license: MIT
+  summary: brings functools.singledispatch from Python 3.4 to Python 2.6-3.3

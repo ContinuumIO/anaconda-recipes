@@ -1,0 +1,27 @@
+package:
+  name: cycler
+  version: 0.10.0
+
+source:
+  fn: cycler-0.10.0.tar.gz
+  url: https://pypi.python.org/packages/source/C/Cycler/cycler-0.10.0.tar.gz
+  md5: 4cb42917ac5007d1cdff6cccfe2d016b
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - six
+  run:
+    - python
+    - six
+
+test:
+  imports:
+    - cycler
+
+about:
+  home: http://matplotlib.org/cycler/
+  license: BSD
+  license_file: LICENSE
+  summary: Composable style cycles

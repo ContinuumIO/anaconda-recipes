@@ -1,0 +1,17 @@
+diff --git contrib/lang/Makefile contrib/lang/Makefile
+index 724b215..2aa41c8 100644
+--- contrib/lang/Makefile
++++ contrib/lang/Makefile
+@@ -9,10 +9,10 @@ RESOURCES = $(wildcard *.qrc)
+ PYRESOURCES = $(patsubst %.qrc,%_rc.py,$(RESOURCES))
+ 
+ ui_%.py: %.ui
+-	$(PYUIC) -x -o $@ $<
++	$(PYUIC) -x -o $@ $?
+ 
+ %_rc.py: %.qrc
+-	$(PYRCC) -o $@ $<
++	$(PYRCC) -o $@ $?
+ 
+ all: $(PYUIFILES) $(PYRESOURCES)
+ 

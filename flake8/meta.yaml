@@ -1,0 +1,44 @@
+package:
+  name: flake8
+  version: 2.5.1
+
+source:
+  fn: flake8-2.5.1.tar.gz
+  url: https://pypi.python.org/packages/source/f/flake8/flake8-2.5.1.tar.gz
+  md5: 2704676fd2d39c7441a09ad69f3296b3
+  patches:
+    - setup.patch
+
+build:
+  entry_points:
+    - flake8 = flake8.main:main
+  preserve_egg_dir: True
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - mccabe
+    - pep8
+    - pyflakes
+  run:
+    - python
+    - setuptools
+    - mccabe
+    - pep8
+    - pyflakes
+
+test:
+  files:
+    - test_file.py
+  commands:
+    - flake8 --version
+    - flake8 test_file.py
+  imports:
+    - flake8
+
+about:
+  home: http://bitbucket.org/tarek/flake8
+  license: MIT
+  license_file: LICENSE
+  summary: 'the modular source code checker: pep8, pyflakes and co'

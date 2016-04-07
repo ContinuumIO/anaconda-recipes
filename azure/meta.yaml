@@ -1,0 +1,31 @@
+package:
+  name: azure
+  version: 1.0.2
+
+source:
+  git_url: https://github.com/Azure/azure-sdk-for-python.git
+  git_tag: v1.0.2
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - setuptools
+    - requests
+
+test:
+  imports:
+    - azure
+    - azure.common
+    - azure.mgmt
+    - azure.servicebus
+    - azure.servicemanagement
+
+about:
+  home: https://github.com/Azure/azure-sdk-for-python
+  license: Apache License 2.0
+  license_family: Apache
+  license_file: LICENSE.txt
+  summary: easy to access the Microsoft Azure components

@@ -1,0 +1,26 @@
+package:
+  name: qtpy
+  version: 1.0
+
+source:
+  fn: QtPy-1.0.tar.gz
+  url: https://pypi.python.org/packages/source/Q/QtPy/QtPy-1.0.tar.gz
+  md5: 503e05c43feec2e2fd0fae5cc3272b5b
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  requires:
+    - pyqt
+  imports:
+    - qtpy
+
+about:
+  home: https://github.com/spyder-ide/qtpy
+  license: MIT
+  summary: Provides an uniform layer to support PyQt4, PyQt5 and PySide with a single codebase

@@ -1,0 +1,9 @@
+--------------------------------------------------------------
+mpi4py requires that Microsoft MPI 6 be installed on the host
+system. That is a systemwide installation that is currently
+not available through conda. In order to successfully use
+mpi4py you must install Microsoft MPI and then append the bin
+directory of the MPI installation to your PATH environment
+variable. To install Microsoft MPI see
+https://www.microsoft.com/en-us/download/details.aspx?id=47259
+--------------------------------------------------------------

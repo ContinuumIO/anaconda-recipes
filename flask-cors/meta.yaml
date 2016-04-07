@@ -1,0 +1,31 @@
+package:
+  name: flask-cors
+  version: 2.1.2
+
+source:
+  fn: Flask-Cors-2.1.2.tar.gz
+  url: https://pypi.python.org/packages/source/F/Flask-Cors/Flask-Cors-2.1.2.tar.gz
+  md5: 50274b36f1c885669234590009583c43
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - flask >=0.9
+    - six
+  run:
+    - python
+    - flask >=0.9
+    - six
+
+test:
+  requires:
+    - nose
+  imports:
+    - flask_cors
+
+about:
+  home: https://github.com/corydolphin/flask-cors
+  license: MIT
+  license_file: LICENSE
+  summary: flask extension adding a decorator for CORS support

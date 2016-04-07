@@ -1,0 +1,35 @@
+package:
+  name: babel
+  version: 2.2.0
+
+source:
+  fn: Babel-2.2.0.tar.gz
+  url: https://pypi.python.org/packages/source/B/Babel/Babel-2.2.0.tar.gz
+  md5: 1b69e4b2ab3795119266ccaa36b36f15
+
+build:
+  entry_points:
+    - pybabel = babel.messages.frontend:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pytz
+  run:
+    - python
+    - pytz
+
+test:
+  commands:
+    - pybabel -h          [not (win and py3k)]
+  imports:
+    - babel
+    - babel.messages      [not (win and py3k)]
+    - babel.localtime     [not (win and py3k)]
+
+about:
+  home: http://babel.pocoo.org/
+  license: BSD
+  license_file: LICENSE
+  summary: Internationalization utilities

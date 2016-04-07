@@ -1,0 +1,24 @@
+package:
+  name: snowballstemmer
+  version: 1.2.1
+
+source:
+  fn: snowballstemmer-1.2.1.tar.gz
+  url: https://pypi.python.org/packages/source/s/snowballstemmer/snowballstemmer-1.2.1.tar.gz
+  md5: 643b019667a708a922172e33a99bf2fa
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - snowballstemmer
+
+about:
+  home: https://github.com/shibukawa/snowball_py
+  license: BSD
+  license_file: LICENSE.rst
+  summary: provides 16 stemmer algorithms generated from Snowball algorithms

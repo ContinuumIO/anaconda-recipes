@@ -1,0 +1,23 @@
+package:
+  name: ply
+  version: "3.8"
+
+source:
+  fn: ply-3.8.tar.gz
+  url: http://www.dabeaz.com/ply/ply-3.8.tar.gz
+  md5: 94726411496c52c87c2b9429b12d5c50
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - ply
+
+about:
+  home: http://www.dabeaz.com/ply/
+  license: BSD
+  summary: Python Lex & Yacc

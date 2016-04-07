@@ -1,0 +1,32 @@
+package:
+  name: swig
+  version: 3.0.8
+
+source:
+  fn: swig-3.0.8.tar.gz   [unix]
+  url: http://prdownloads.sourceforge.net/swig/swig-3.0.8.tar.gz   [unix]
+  sha256: 58a475dbbd4a4d7075e5fe86d4e54c9edde39847cdb96a3053d87cb64a23a453[unix]
+  fn: swigwin-3.0.8.zip   [win]
+  url: http://prdownloads.sourceforge.net/swig/swigwin-3.0.8.zip   [win]
+  sha256: e5fe65ae9b145ea3c00172abdb527f2d3458e8cc928e25db984b2da1b00a2a04 [win]
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: True    [unix]
+
+requirements:
+  build:
+    - pcre      [unix]
+    - python    [unix]
+  run:
+    - pcre      [unix]
+
+test:
+  commands:
+    - swig -help
+
+about:
+  home: http://www.swig.org/
+  license: GPL3
+  license_file: LICENSE
+  summary: tool that connects programs written in C and C++ with high-level programming languages

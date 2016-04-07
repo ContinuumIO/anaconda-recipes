@@ -1,0 +1,36 @@
+package:
+  name: xlwings
+  version: 0.7.1
+
+source:
+  fn: xlwings-0.7.1.tar.gz
+  url: https://pypi.python.org/packages/source/x/xlwings/xlwings-0.7.1.tar.gz
+  md5: 29ae39159bfa61542ee05c43e3e9474f
+
+build:
+  entry_points:
+    - xlwings = xlwings.command_line:main
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - pytz
+    - comtypes           [win]
+    - pywin32            [win]
+    - psutil             [osx]
+    - appscript          [osx]
+
+test:
+  commands:
+    - xlwings -h         [win]
+  imports:
+    - xlwings
+
+about:
+  home: http://xlwings.org/
+  license: 3-clause BSD
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: Make Excel fly. Interact with Excel from Python and vice versa

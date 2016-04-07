@@ -1,0 +1,29 @@
+package:
+  name: sympy
+  version: "1.0"
+
+source:
+  fn: sympy-1.0.tar.gz
+  url: https://pypi.python.org/packages/source/s/sympy/sympy-1.0.tar.gz
+  md5: 43e797de799f00f9e8fd2307dba9fab1
+
+requirements:
+  build:
+    - python
+    - mpmath
+  run:
+    - python
+    - mpmath >=0.19
+
+test:
+  commands:
+    - isympy -help
+  imports:
+    - sympy
+
+about:
+  home: http://sympy.org
+  license: 3-clause BSD
+  license_family: BSD
+  license_file: LICENSE
+  summary: SymPy is a Python library for symbolic mathematics

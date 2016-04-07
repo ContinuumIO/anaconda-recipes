@@ -1,0 +1,31 @@
+package:
+  name: wheel
+  version: 0.29.0
+
+source:
+  fn: wheel-0.29.0.tar.gz
+  url: https://pypi.python.org/packages/source/w/wheel/wheel-0.29.0.tar.gz
+  md5: 555a67e4507cedee23a0deb9651e452f
+
+build:
+  entry_points:
+    - wheel = wheel.tool:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  commands:
+    - wheel -h
+  imports:
+    - wheel
+
+about:
+  home: http://bitbucket.org/pypa/wheel/
+  license: MIT
+  license_file: LICENSE.txt
+  summary: built-package format for Python

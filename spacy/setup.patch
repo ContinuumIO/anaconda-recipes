@@ -1,0 +1,13 @@
+diff --git setup.py setup.py
+index fa7b016..e6a5568 100644
+--- setup.py
++++ setup.py
+@@ -177,7 +177,7 @@ def run_setup(exts):
+         package_data=PACKAGE_DATA,
+         ext_modules=exts,
+         license="MIT",
+-        install_requires=['numpy', 'murmurhash', 'cymem == 1.30', 'preshed == 0.43',
++        install_requires=['numpy', 'murmurhash', 'cymem == 1.30', 'preshed',
+                           'thinc == 4.0.0', "text_unidecode", 'plac', 'six',
+                           'ujson', 'cloudpickle'],
+         setup_requires=["headers_workaround"],

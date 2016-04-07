@@ -1,0 +1,30 @@
+package:
+  name: trollius
+  version: "2.1"
+
+source:
+  fn: trollius-2.1.tar.gz
+  url: https://pypi.python.org/packages/source/t/trollius/trollius-2.1.tar.gz
+  md5: 0b36ff1057cb5a93befe7d8ef0edcbf8
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - six
+    - futures           [py2k]
+  run:
+    - python
+    - six
+    - futures           [py2k]
+
+test:
+  imports:
+    - trollius
+    - trollius._overlapped      [win]
+
+about:
+  home: https://github.com/haypo/trollius
+  license: Apache
+  license_file: COPYING
+  summary: port of the Tulip project (asyncio module, PEP 3156)

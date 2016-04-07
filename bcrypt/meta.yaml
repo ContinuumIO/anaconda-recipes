@@ -1,0 +1,31 @@
+package:
+  name: bcrypt
+  version: 2.0.0
+
+source:
+  fn: bcrypt-2.0.0.tar.gz
+  url: https://pypi.python.org/packages/source/b/bcrypt/bcrypt-2.0.0.tar.gz
+  md5: e7fb17be46904cdb2ae6a062859ee58c
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - cffi >=1.1
+    - six >=1.4.1
+  run:
+    - python
+    - cffi >=1.1
+    - six >=1.4.1
+
+test:
+  imports:
+    - bcrypt
+    - bcrypt._bcrypt
+
+about:
+  home: https://github.com/pyca/bcrypt/
+  license: Apache License, Version 2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: modern password hashing for your software and your servers

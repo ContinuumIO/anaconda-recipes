@@ -1,0 +1,30 @@
+package:
+  name: path.py
+  version: 8.1.2
+
+source:
+  fn: path.py-8.1.2.tar.gz
+  url: https://pypi.python.org/packages/source/p/path.py/path.py-8.1.2.tar.gz
+  md5: 31d07ac861284f8148a9041064852371
+  patches:
+    - setup.patch
+    - version.patch
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - path
+
+about:
+  home: http://github.com/jaraco/path.py
+  license: MIT
+  summary: module wrapper for os.path

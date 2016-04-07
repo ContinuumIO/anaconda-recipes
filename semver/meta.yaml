@@ -1,0 +1,23 @@
+package:
+  name: semver
+  version: 2.4.1
+
+source:
+  fn: semver-2.4.1.tar.gz
+  url: https://pypi.python.org/packages/source/s/semver/semver-2.4.1.tar.gz
+  md5: 3ece076185e3f67518f1957ff9f0ce53
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - semver
+
+about:
+  home: https://github.com/k-bx/python-semver
+  license: BSD
+  summary: Python package to work with Semantic Versioning

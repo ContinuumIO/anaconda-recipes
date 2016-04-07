@@ -1,0 +1,31 @@
+package:
+  name: pandas-datareader
+  version: "0.2.0"
+
+source:
+  fn: pandas-datareader-0.2.0.tar.gz
+  url: https://pypi.python.org/packages/source/p/pandas-datareader/pandas-datareader-0.2.0.tar.gz
+  md5: 25b40b0cd98f3956580a4f33aed2d56b
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pandas
+
+  run:
+    - python
+    - pandas
+
+test:
+  imports:
+    - pandas_datareader
+    - pandas_datareader.google
+    - pandas_datareader.io
+    - pandas_datareader.io.tests
+    - pandas_datareader.yahoo
+
+about:
+  home: https://github.com/pydata/pandas-datareader
+  license: BSD
+  summary: Data readers extracted from the pandas codebase, should be compatible with recent pandas versions

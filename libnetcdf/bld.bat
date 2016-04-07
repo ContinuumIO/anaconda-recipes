@@ -3,19 +3,10 @@ cd %SRC_DIR%\build
 
 set HDF5_DIR=%LIBRARY_PREFIX%\cmake
 
-if "%ARCH%" == "64" (
-  set CMAKE_GENERATOR="Visual Studio 10 2010 Win64"
-) else (
-  set CMAKE_GENERATOR="Visual Studio 10 2010"
-)
-
-cmake %SRC_DIR% -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX%  -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -DENABLE_TESTS=OFF -DCMAKE_PREFIX_PATH=%LIBRARY_PREFIX% -G %CMAKE_GENERATOR%
+cmake %SRC_DIR% -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX%  -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON -DENABLE_TESTS=OFF -DCMAKE_PREFIX_PATH=%LIBRARY_PREFIX% -G "NMake Makefiles"
 if errorlevel 1 exit 1
 
-cmake --build .
-if errorlevel 1 exit 1
-
-cmake --build . --target INSTALL
+cmake --build . --target INSTALL --config Release
 if errorlevel 1 exit 1
 
 REM remove msvc redist files

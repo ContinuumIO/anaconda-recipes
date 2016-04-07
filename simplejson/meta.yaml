@@ -1,15 +1,16 @@
 package:
   name: simplejson
-  version: "3.8.0"
+  version: 3.8.2
 
 source:
-  git_url: https://github.com/simplejson/simplejson.git
-  git_rev: v3.8.0
-
+  fn: simplejson-3.8.2.tar.gz
+  url: https://pypi.python.org/packages/source/s/simplejson/simplejson-3.8.2.tar.gz
+  md5: 53b1371bbf883b129a12d594a97e9a18
 
 requirements:
   build:
     - python
+    - setuptools
   run:
     - python
 
@@ -19,6 +20,7 @@ test:
     - simplejson._speedups
 
 about:
-  home: http://github.com/simplejson/simplejson
+  home: https://github.com/simplejson/simplejson
   license: MIT
-  summary: Simple, fast, extensible JSON encoder/decoder for Python.
+  license_file: LICENSE.txt
+  summary: Simple, fast, extensible JSON encoder/decoder for Python

@@ -1,0 +1,33 @@
+package:
+  name: chalmers
+  version: 0.8.0
+
+source:
+  git_url: https://github.com/Anaconda-Server/chalmers.git
+  git_tag: 0.8.0
+
+build:
+  entry_points:
+    - chalmers = chalmers.scripts.chalmers_main:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - psutil >=3
+    - pyyaml
+    - clyent
+    - pywin32                   [win]
+
+test:
+  commands:
+    - chalmers --help           [unix]
+  imports:
+    - chalmers
+
+about:
+  home: https://github.com/Anaconda-Server/chalmers
+  license: BSD
+  summary: Process control system.

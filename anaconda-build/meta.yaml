@@ -1,0 +1,39 @@
+package:
+  name: anaconda-build
+  version: 1.15.0
+
+source:
+  git_url: git@github.com:Anaconda-Server/anaconda-build.git
+  git_tag: 1.15.0
+
+build:
+  entry_points:
+    - anaconda-build = binstar_build_client.scripts.build:main
+    - conda-clean-build-dir = binstar_build_client.scripts.conda_clean_build_dir:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - anaconda-client
+    - jinja2
+    - psutil
+  run:
+    - python
+    - anaconda-client
+    - jinja2
+    - psutil
+    - pywin32                [win]
+
+test:
+  commands:
+    - anaconda-build --help
+    - conda-clean-build-dir --help
+  imports:
+    - binstar_build_client
+
+about:
+  home: https://github.com/Anaconda-Server/binstar-build
+  license: proprietary - Continuum Analytics, Inc.
+  license_family: Proprietary
+  summary: Anaconda build client library

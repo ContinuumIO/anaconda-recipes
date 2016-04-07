@@ -1,0 +1,8 @@
+package:
+  name: vs2008_runtime
+  version: "9.00.30729.1"
+
+about:
+  home: http://www.microsoft.com
+  license: Proprietary
+  summary: Bundles of the MSVC 9 (VS 2008) runtime

@@ -1,0 +1,25 @@
+package:
+  name: queuelib
+  version: 1.4.2
+
+source:
+  fn: queuelib-1.4.2.tar.gz
+  url: https://pypi.python.org/packages/source/q/queuelib/queuelib-1.4.2.tar.gz
+  md5: 41f13f7d328fa6d2d4b47a7e9e30af5f
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - queuelib
+
+about:
+  home: https://github.com/scrapy/queuelib
+  license: BSD
+  license_file: LICENSE
+  summary: Collection of persistent (disk-based) queues

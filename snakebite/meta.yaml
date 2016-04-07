@@ -1,0 +1,28 @@
+package:
+  name: snakebite
+  version: 2.7.2
+
+source:
+  fn: snakebite-2.7.2.tar.gz
+  url: https://pypi.python.org/packages/source/s/snakebite/snakebite-2.7.2.tar.gz
+  md5: 5a7275db9a6bf65af13bd57bc12ba547
+
+requirements:
+  build:
+    - python
+    - protobuf
+  run:
+    - python
+    - protobuf
+
+test:
+  imports:
+    - snakebite
+    - snakebite.protobuf
+
+about:
+  home: http://github.com/spotify/snakebite
+  license: Apache License 2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: Python HDFS client

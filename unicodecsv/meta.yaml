@@ -1,0 +1,26 @@
+package:
+  name: unicodecsv
+  version: 0.14.1
+
+source:
+  fn: unicodecsv-0.14.1.tar.gz
+  url: https://pypi.python.org/packages/source/u/unicodecsv/unicodecsv-0.14.1.tar.gz
+  md5: c18ffe8ded29a4f429224877b2b34252
+  patches:
+    - setup.patch
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - unicodecsv
+
+about:
+  home: https://github.com/jdunck/python-unicodecsv
+  license: BSD
+  summary: The unicodecsv file reads and decodes byte strings for you

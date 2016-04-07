@@ -1,0 +1,28 @@
+package:
+  name: bottlechest
+  version: 0.7.1
+
+source:
+  fn: Bottlechest-0.7.1.tar.gz
+  url: https://pypi.python.org/packages/source/B/Bottlechest/Bottlechest-0.7.1.tar.gz
+  md5: 272a8d9e65ee6e8b072d5da5656337e8
+
+requirements:
+  build:
+    - python
+    - numpy
+    - setuptools
+  run:
+    - python
+    - numpy
+    - scipy
+
+test:
+  imports:
+    - bottlechest
+
+about:
+  home: https://github.com/biolab/bottlechest
+  license: BSD
+  license_file: bottlechest/LICENSE
+  summary: fast NumPy array functions written in Cython

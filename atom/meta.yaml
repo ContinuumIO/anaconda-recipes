@@ -1,0 +1,26 @@
+package:
+  name: atom
+  version: 0.3.10
+
+source:
+  git_url: https://github.com/nucleic/atom.git
+  git_tag: 0.3.10
+
+requirements:
+  build:
+    - python
+    - distribute
+  run:
+    - python
+
+test:
+  imports:
+    - atom
+    - atom.catom
+    - atom.datastructures.sortedmap
+
+about:
+  home: https://github.com/nucleic/atom
+  license: BSD
+  license_file: COPYING.txt
+  summary: Memory efficient Python objects

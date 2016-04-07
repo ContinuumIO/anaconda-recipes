@@ -1,0 +1,28 @@
+package:
+  name: reportlab
+  version: 3.3.0
+
+source:
+  fn: reportlab-3.3.0.tar.gz
+  url: https://pypi.python.org/packages/source/r/reportlab/reportlab-3.3.0.tar.gz
+  md5: 8ad6181b69ec515d4f6d8bb894682d5d
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - pillow >=2.4.0
+
+test:
+  imports:
+    - reportlab
+    - reportlab.graphics._renderPM
+    - reportlab.lib._rl_accel
+    - reportlab.lib.pyHnj                [py27]
+
+about:
+  home: http://www.reportlab.com/
+  license: BSD
+  license_file: LICENSE.txt
+  summary: The ReportLab Toolkit

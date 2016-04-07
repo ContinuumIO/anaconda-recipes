@@ -1,0 +1,37 @@
+package:
+  name: pip
+  version: 8.1.1
+
+source:
+  fn: pip-8.1.1.tar.gz
+  url: https://pypi.python.org/packages/source/p/pip/pip-8.1.1.tar.gz
+  md5: 6b86f11841e89c8241d689956ba99ed7
+  patches:
+    - cio_conf.patch
+
+build:
+  number: 1
+  entry_points:
+    - pip = pip:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - setuptools
+    - wheel
+
+test:
+  commands:
+    - pip -h
+    - pip list
+  imports:
+    - pip
+
+about:
+  home: http://www.pip-installer.org/
+  license: MIT
+  license_file: LICENSE.txt
+  summary: PyPA recommended tool for installing Python packages

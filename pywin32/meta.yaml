@@ -1,0 +1,30 @@
+package:
+  name: pywin32
+  version: "220"
+
+source:
+  fn: pywin32-220.zip
+  url: http://downloads.sourceforge.net/sourceforge/pywin32/pywin32/Build%20220/pywin32-220.zip
+  sha256: 5f93adefdc1ab1da5ef23e832098c0decd65709f09b35f6343dfa378e2ede1cf
+  patches:
+    - scintilla_makefiles.patch
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - win32api
+    - pywintypes
+    - win32ui
+
+about:
+  home: http://sourceforge.net/projects/pywin32/
+  license: PSF
+  summary: Python extensions for Windows

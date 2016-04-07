@@ -1,0 +1,30 @@
+package:
+  name: colander
+  version: "1.2"
+
+source:
+  fn: colander-1.2.tar.gz
+  url: https://pypi.python.org/packages/source/c/colander/colander-1.2.tar.gz
+  md5: 83db21b07936a0726e588dae1914b9ed
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - iso8601
+    - translationstring
+  run:
+    - python
+    - translationstring
+    - iso8601
+
+test:
+  imports:
+    - colander
+
+about:
+  home: https://github.com/Pylons/colander
+  license: BSD-like (http://www.repoze.org/LICENSE.txt)
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: simple schema-based serialization and deserialization library

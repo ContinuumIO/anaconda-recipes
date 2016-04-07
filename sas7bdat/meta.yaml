@@ -1,0 +1,24 @@
+package:
+  name: sas7bdat
+  version: 2.0.6
+
+source:
+  fn: sas7bdat-2.0.6.tar.gz
+  url: https://pypi.python.org/packages/source/s/sas7bdat/sas7bdat-2.0.6.tar.gz
+  md5: e37e8cd0f64b7575ac172c9dd919987f
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - six
+
+test:
+  imports:
+    - sas7bdat
+
+about:
+  home: https://bitbucket.org/jaredhobbs/sas7bdat
+  license: MIT
+  summary: sas7bdat file reader for Python

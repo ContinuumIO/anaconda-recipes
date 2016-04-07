@@ -22,7 +22,7 @@ if errorlevel 1 exit 1
 copy Build\%OUTDIR%\%VCVERSION%\Release\xerces-c_3_1.dll %LIBRARY_BIN%
 if errorlevel 1 exit 1
 
-REM Headers. 
+REM Headers.
 echo .cpp > excludelist.txt
 mkdir %LIBRARY_INC%\xercesc
 xcopy /s /exclude:excludelist.txt src\xercesc %LIBRARY_INC%\xercesc

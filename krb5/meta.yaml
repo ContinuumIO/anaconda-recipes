@@ -1,0 +1,24 @@
+package:
+  name: krb5
+  version: 1.13.2
+
+source:
+  git_url: https://github.com/krb5/krb5
+  git_tag: krb5-1.13.2
+  patches:
+    - gawk.patch            [win]
+
+build:
+  features:
+    - vc9     [win and py27]
+    - vc10    [win and py34]
+    - vc14    [win and py35]
+
+requirements:
+  build:
+    - perl    [win]
+
+about:
+  home: http://web.mit.edu/kerberos/
+  license: MIT
+  summary: A network authentication protocol.

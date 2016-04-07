@@ -1,0 +1,25 @@
+package:
+  name: idna
+  version: 2.1
+
+source:
+  fn: idna-2.1.tar.gz
+  url: https://pypi.python.org/packages/source/i/idna/idna-2.1.tar.gz
+  md5: f6473caa9c5e0cc1ad3fd5d04c3c114b
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - idna
+
+about:
+  home: https://github.com/kjd/idna
+  license: BSD
+  license_file: LICENSE.rst
+  summary: Internationalized Domain Names in Applications

@@ -5,16 +5,20 @@ package:
 source:
   fn: geos-3.4.2.tar.bz2
   url: http://download.osgeo.org/geos/geos-3.4.2.tar.bz2
-  md5: fc5df2d926eb7e67f988a43a92683bae
-  patches:
-    - lineintersector.patch [win]
-    - wktwriter.patch [win]
-    - bufferopp.patch [win]
-    - offsetcurvebuilder.patch [win]
-    - offsetcurvesetbuilder.patch [win]
-    
+
+build:
+  features:
+    - vc9  [win and py27]
+    - vc10 [win and py34]
+    - vc14 [win and py35]
+
+requirements:
+  build:
+    - python     [win]
+    - cmake      [win]
 
 about:
   home: http://trac.osgeo.org/geos/
   license: LGPL
+  license_file: COPYING
   summary: GEOS (Geometry Engine - Open Source) is a C++ port of the  Java Topology Suite (JTS).

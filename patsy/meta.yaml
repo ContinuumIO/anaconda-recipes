@@ -1,0 +1,28 @@
+package:
+  name: patsy
+  version: 0.4.1
+
+source:
+  fn: patsy-0.4.1.zip
+  url: https://pypi.python.org/packages/source/p/patsy/patsy-0.4.1.zip
+  md5: 9445f29e3426d1ed30d683a1e1453f84
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy
+  run:
+    - python
+    - numpy
+    - six
+
+test:
+  imports:
+    - patsy
+
+about:
+  home: https://github.com/pydata/patsy
+  license: BSD
+  license_file: LICENSE.txt
+  summary: a library for describing statistical models and building design matrices.

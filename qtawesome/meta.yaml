@@ -1,0 +1,28 @@
+package:
+  name: qtawesome
+  version: 0.3.3
+
+source:
+  fn: QtAwesome-0.3.3.tar.gz
+  url: https://pypi.python.org/packages/source/Q/QtAwesome/QtAwesome-0.3.3.tar.gz
+  md5: 830677aa6ca4e7014e228147475183d3
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - qtpy
+    - six
+
+test:
+  requires:
+    - pyqt
+  imports:
+    - qtawesome
+
+about:
+  home: https://github.com/spyder-ide/qtawesome
+  license: MIT
+  summary: FontAwesome icons in PyQt and PySide applications

@@ -1,0 +1,10 @@
+{
+    "menu_name": "Anaconda${PY_VER} ${PLATFORM}",
+    "menu_items":[
+    {
+        "name": "Jupyter Notebook",
+        "pyscript": "${PYTHON_SCRIPTS}/jupyter-notebook-script.py",
+        "icon": "${MENU_DIR}/jupyter.ico"
+    }
+    ]
+}

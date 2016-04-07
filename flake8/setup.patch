@@ -1,0 +1,10 @@
+diff --git setup.py setup.py
+index d98428b..c48c2f5 100644
+--- setup.py
++++ setup.py
+@@ -54,4 +54,5 @@ setup(
+     ],
+     tests_require=['nose', 'mock'],
+     test_suite='nose.collector',
++    zip_safe=False,
+ )

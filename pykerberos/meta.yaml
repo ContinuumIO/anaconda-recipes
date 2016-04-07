@@ -1,0 +1,30 @@
+package:
+  name: pykerberos
+  version: 1.1.10
+
+source:
+  fn: pykerberos-1.1.10.tar.gz
+  url: https://pypi.python.org/packages/source/p/pykerberos/pykerberos-1.1.10.tar.gz
+  md5: 9f18109b73e3f42eba0b70c18073883f
+
+build:
+  number: 1           [osx]
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - krb5
+  run:
+    - python
+    - krb5
+
+test:
+  imports:
+    - kerberos
+
+about:
+  home: https://github.com/02strich/pykerberos
+  license: Apache
+  license_file: LICENSE
+  summary: high-level interface to Kerberos

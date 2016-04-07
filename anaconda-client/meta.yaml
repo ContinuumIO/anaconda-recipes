@@ -1,0 +1,45 @@
+package:
+  name: anaconda-client
+  version: 1.4.0
+
+source:
+  git_url: https://github.com/Anaconda-Server/anaconda-client.git
+  git_tag: 1.4.0
+
+build:
+  entry_points:
+    - anaconda = binstar_client.scripts.cli:main
+    # the following are deprecated:
+    - binstar = binstar_client.scripts.cli:main
+    - conda-server = binstar_client.scripts.cli:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - clyent
+    - requests
+    - pyyaml
+    - python-dateutil
+    - pytz
+  run:
+    - python
+    - setuptools
+    - clyent
+    - requests
+    - pyyaml
+    - python-dateutil
+    - pytz
+
+test:
+  commands:
+    - anaconda -h
+    - anaconda --version
+  imports:
+    - binstar_client
+    - binstar_client.scripts.cli
+
+about:
+  home: http://anaconda.org
+  license: BSD
+  summary: anaconda.org command line client library

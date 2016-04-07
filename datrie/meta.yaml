@@ -1,0 +1,28 @@
+package:
+  name: datrie
+  version: 0.7.1
+
+source:
+  fn: datrie-0.7.1.tar.gz
+  url: https://pypi.python.org/packages/source/d/datrie/datrie-0.7.1.tar.gz
+  md5: d61280eff0ead9cdf03d286ce4228057
+  patches:
+    - setup.patch
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - datrie
+
+about:
+  home: https://github.com/kmike/datrie/
+  license: LGPLv2
+  license_family: LGPL
+  license_file: COPYING
+  summary: Super-fast, efficiently stored Trie for Python

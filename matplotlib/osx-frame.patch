@@ -1,0 +1,18 @@
+diff --git src/_macosx.m src/_macosx.m
+index 58b78ac..45c2d71 100644
+--- src/_macosx.m
++++ src/_macosx.m
+@@ -6348,13 +6348,6 @@ void init_macosx(void)
+ 
+     NSApp = [NSApplication sharedApplication];
+ 
+-    if (!verify_framework())
+-#if PY3K
+-        return NULL;
+-#else
+-        return;
+-#endif
+-
+ #if PY3K
+     module = PyModule_Create(&moduledef);
+     if (module==NULL) return NULL;

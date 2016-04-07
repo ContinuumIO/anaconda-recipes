@@ -1,0 +1,26 @@
+package:
+  name: paramiko
+  version: 1.15.3
+
+source:
+  fn: paramiko-1.15.3.tar.gz
+  url: https://pypi.python.org/packages/source/p/paramiko/paramiko-1.15.3.tar.gz
+  md5: c959088669f8d951585aa6abc25c8ef6
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - pycrypto
+    - ecdsa
+
+test:
+  imports:
+    - paramiko
+
+about:
+  home: https://github.com/paramiko/paramiko/
+  license: LGPL
+  license_file: LICENSE
+  summary: SSH2 protocol library

@@ -1,11 +1,11 @@
 package:
   name: cython
-  version: "0.22.1"
+  version: "0.24"
 
 source:
-  fn: Cython-0.22.1.tar.gz
-  url: https://pypi.python.org/packages/source/C/Cython/Cython-0.22.1.tar.gz
-  md5: b920f3c81ae767477a342807bf5e68e8
+  fn: Cython-0.24.tar.gz
+  url: https://pypi.python.org/packages/source/C/Cython/Cython-0.24.tar.gz
+  md5: 14fbc970f4a856845e633cbc09e61048
 
 build:
   entry_points:
@@ -20,10 +20,6 @@ requirements:
   run:
     - python
 
-# We don't add libpython here because then it would be harder to use cython
-# without mingw (with MSVC).  When we test the full install, then libpython
-# is installed.
-
 test:
   commands:
     - cython --version
@@ -33,4 +29,5 @@ test:
 about:
   home: http://www.cython.org/
   license: Apache
+  license_file: LICENSE.txt
   summary: The Cython compiler for writing C extensions for the Python language

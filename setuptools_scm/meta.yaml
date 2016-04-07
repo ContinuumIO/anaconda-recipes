@@ -1,0 +1,26 @@
+package:
+  name: setuptools_scm
+  version: 1.9.0
+
+source:
+  fn: setuptools_scm-1.9.0.tar.gz
+  url: https://pypi.python.org/packages/source/s/setuptools_scm/setuptools_scm-1.9.0.tar.gz
+  md5: 020e097756c4fd67a0f4518cac0ff190
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - setuptools
+
+test:
+  imports:
+    - setuptools_scm
+
+about:
+  home: https://github.com/pypa/setuptools_scm
+  license: BSD
+  license_file: LICENSE
+  summary: the blessed package to manage your versions by scm tags

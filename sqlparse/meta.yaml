@@ -1,0 +1,25 @@
+package:
+  name: sqlparse
+  version: 0.1.19
+
+source:
+  fn: sqlparse-0.1.19.tar.gz
+  url: https://pypi.python.org/packages/source/s/sqlparse/sqlparse-0.1.19.tar.gz
+  md5: f200d8dea67b58bc15575bfa76e4e9dc
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - sqlparse
+
+about:
+  home: https://github.com/andialbrecht/sqlparse
+  license: BSD
+  license_file: COPYING
+  summary: A non-validating SQL parser module for Python

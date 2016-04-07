@@ -1,0 +1,24 @@
+package:
+  name: teradata
+  version: 15.10.0.11
+
+source:
+  git_url: https://github.com/Teradata/PyTd.git
+  git_tag: v15.10.00.11
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - teradata
+
+about:
+  home: http://github.com/teradata/PyTd
+  license: MIT
+  license_file: LICENSE.txt
+  summary: Teradata python module for DevOps enabled SQL scripting for Teradata UDA

@@ -1,0 +1,31 @@
+package:
+  name: ecos
+  version: "2.0.4"
+
+source:
+  fn: ecos-2.0.4.tar.gz
+  url: https://pypi.python.org/packages/source/e/ecos/ecos-2.0.4.tar.gz
+  md5: 39cc4c4a5598cc51ca4dc9aec810f41a
+  patches:
+    - win.patch       [win]
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy
+    - scipy
+  run:
+    - python
+    - numpy
+    - scipy
+
+test:
+  imports:
+    - ecos
+    - _ecos
+
+about:
+  home: http://github.com/embotech/ecos
+  license: GPL3
+  summary: 'Python package for ECOS: Embedded Cone Solver'

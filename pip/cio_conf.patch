@@ -1,0 +1,16 @@
+diff --git pip/baseparser.py pip/baseparser.py
+index ccbf36b..fb6bf60 100644
+--- pip/baseparser.py
++++ pip/baseparser.py
+@@ -186,6 +186,11 @@ class ConfigOptionParser(CustomOptionParser):
+             if os.path.exists(venv_config_file):
+                 files.append(venv_config_file)
+ 
++        # Continuum Analytics location highest property (if it exists)
++        cio_config_file = os.path.join(sys.prefix, 'etc', config_basename)
++        if os.path.isfile(cio_config_file):
++            files.append(cio_config_file)
++
+         return files
+ 
+     def check_default(self, option, key, val):

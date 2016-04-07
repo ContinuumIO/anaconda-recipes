@@ -3,22 +3,31 @@ package:
   version: "4.3.3.1"
 
 source:
-  git_url: git@github.com:Unidata/netcdf-c.git
+  git_url: https://github.com/Unidata/netcdf-c.git
   git_tag: v4.3.3.1
+  patches:
+    - vs_2015_snprintf_macro_redef.patch [win and py35]
 
 build:
-  number: 1    [unix]
-  number: 3    [win]
+  number: 3    [unix]
+  number: 5    [win]
+  features:
+    - vc9      [win and py27]
+    - vc10     [win and (py33 or py34)]
+    - vc14     [win and py35]
 
 requirements:
   build:
-    - curl
-    - hdf5
-    - zlib
+    - python   [win]
+    - cmake
+    - curl 7.45.*
+    - hdf5 1.8.15*
+    - zlib 1.2.*
+    - patch    [win and py35]
   run:
-    - curl
-    - hdf5
-    - zlib
+    - curl 7.45.*
+    - hdf5 1.8.15*
+    - zlib 1.2.*
 
 test:
   commands:

@@ -1,0 +1,30 @@
+package:
+  name: pep8
+  version: 1.7.0
+
+source:
+  fn: pep8-1.7.0.tar.gz
+  url: https://pypi.python.org/packages/source/p/pep8/pep8-1.7.0.tar.gz
+  md5: 2b03109b0618afe3b04b3e63b334ac9d
+
+build:
+  entry_points:
+    - pep8 = pep8:_main
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  commands:
+    - pep8 -h
+  imports:
+    - pep8
+
+about:
+  home: http://pep8.readthedocs.org/
+  license: MIT
+  summary: Python style guide checker

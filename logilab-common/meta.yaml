@@ -1,0 +1,30 @@
+package:
+  name: logilab-common
+  version: 1.0.2
+
+source:
+  fn: logilab-common-1.0.2.tar.gz
+  url: https://pypi.python.org/packages/source/l/logilab-common/logilab-common-1.0.2.tar.gz
+  md5: 7c9b10d171a8342c3629609ec214e4fe
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - six
+    - colorama        [win]
+  run:
+    - python
+    - setuptools
+    - six
+    - colorama        [win]
+
+test:
+  imports:
+    - logilab.common
+
+about:
+  home: http://www.logilab.org/project/logilab-common
+  license: LGPL
+  license_file: COPYING
+  summary: collection of low-level Python packages and modules used by Logilab projects

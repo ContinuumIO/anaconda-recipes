@@ -1,0 +1,24 @@
+package:
+  name: six
+  version: 1.10.0
+
+source:
+  fn: six-1.10.0.tar.gz
+  url: https://pypi.python.org/packages/source/s/six/six-1.10.0.tar.gz
+  md5: 34eed507548117b2ab523ab14b2f8b55
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - six
+
+about:
+  home: http://pypi.python.org/pypi/six/
+  license: MIT
+  license_file: LICENSE
+  summary: Python 2 and 3 compatibility utilities

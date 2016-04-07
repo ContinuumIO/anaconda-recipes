@@ -1,0 +1,32 @@
+package:
+  name: coverage
+  version: 4.0.3
+
+source:
+  fn: coverage-4.0.tar.gz
+  url: https://pypi.python.org/packages/source/c/coverage/coverage-4.0.3.tar.gz
+  md5: c7d3db1882484022c81bf619be7b6365
+
+build:
+  entry_points:
+    - coverage = coverage.cmdline:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  commands:
+    - coverage --version
+  imports:
+    - coverage
+    - coverage.tracer
+
+about:
+  home: http://nedbatchelder.com/code/coverage
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Code coverage measurement for Python

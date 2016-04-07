@@ -1,0 +1,31 @@
+package:
+  name: pandas
+  version: 0.18.0
+
+source:
+  git_url: https://github.com/pydata/pandas.git
+  git_tag: v0.18.0
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy x.x
+    - cython
+    - python-dateutil
+    - pytz
+  run:
+    - python
+    - numpy x.x
+    - python-dateutil
+    - pytz
+
+test:
+  imports:
+    - pandas
+
+about:
+  home: http://pandas.pydata.org/
+  license: BSD
+  license_file: LICENSE
+  summary: Powerful data structures for data analysis, time series,and statistics

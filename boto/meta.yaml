@@ -1,0 +1,27 @@
+package:
+  name: boto
+  version: 2.39.0
+
+source:
+  fn: boto-2.39.0.tar.gz
+  url: https://pypi.python.org/packages/source/b/boto/boto-2.39.0.tar.gz
+  md5: 503e6ffd7d56dcdffa38cb316bb119e9
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  commands:
+    - asadmin -h     [py2k]
+    - s3put -h       [py2k]
+    - taskadmin -h   [py2k]
+  imports:
+    - boto
+
+about:
+  home: https://github.com/boto/boto/
+  license: MIT
+  summary: Amazon Web Services Library

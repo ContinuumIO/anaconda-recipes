@@ -1,0 +1,32 @@
+package:
+  name: conda-manager
+  version: 0.3.1
+
+source:
+  git_url: https://github.com/spyder-ide/conda-manager.git
+  git_tag: v0.3.1
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - anaconda-client
+    - pyyaml
+    - qtawesome
+    - qtpy
+    - requests
+    - pip
+
+test:
+  requires:
+    - pyqt
+  imports:
+    - conda_manager
+
+about:
+  home: https://github.com/spyder-ide/conda-manager
+  license: MIT
+  license_file: LICENSE.txt
+  summary: Graphical conda package manager

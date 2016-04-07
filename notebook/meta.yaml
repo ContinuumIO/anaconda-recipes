@@ -1,0 +1,55 @@
+package:
+  name: notebook
+  version: 4.1.0
+
+source:
+  fn: notebook-4.1.0.tar.gz
+  url: https://pypi.python.org/packages/source/n/notebook/notebook-4.1.0.tar.gz
+  md5: d390cf1a0785a43711a2548c8f3c91b8
+
+build:
+  number: 1                 [linux]
+  number: 2                 [osx or win]
+  entry_points:
+    - jupyter-notebook = notebook.notebookapp:main
+    - jupyter-nbextension = notebook.nbextensions:main
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - jinja2
+    - tornado
+    - ipython_genutils
+    - traitlets
+    - jupyter_core
+    - jupyter_client
+    - nbformat
+    - nbconvert
+    - ipykernel
+    - terminado          [unix]
+
+app:
+  entry: jupyter-notebook                         [not osx]
+  entry: open ${PREFIX}/bin/jupyter_mac.command   [osx]
+  icon: jupyter.png
+  summary: Jupyter Notebook
+  type: web
+  cli_opts:
+    - name: port
+      args: --port %s
+      default: 8080
+      summary: Server port ...
+
+test:
+  commands:
+    - jupyter-notebook -h
+    - jupyter-nbextension -h
+  imports:
+    - notebook
+
+about:
+  home: http://jupyter.org
+  license: BSD
+  summary: a web-based notebook environment for interactive computing

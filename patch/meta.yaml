@@ -1,0 +1,24 @@
+package:
+  name: patch
+  version: 2.5.9
+
+build:
+  number: 1   [win]
+
+source:
+  url: http://downloads.sourceforge.net/sourceforge/gnuwin32/patch/2.5.9-7/patch-2.5.9-7-bin.zip
+  fn: patch-2.5.9-7-bin.zip
+  md5: b9c8b31d62f4b2e4f1887bbb63e8a905
+
+test:
+  commands:
+    - patch --help            [win]
+  files:
+    - testfile
+    - testfile2
+    - testfile.patch
+
+about:
+  home: http://gnuwin32.sourceforge.net/
+  license: GPL2
+  summary: Native Win32 versions of common unix tools

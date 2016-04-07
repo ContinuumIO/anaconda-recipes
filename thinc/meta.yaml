@@ -1,0 +1,35 @@
+package:
+  name: thinc
+  version: 5.0.6
+
+source:
+  fn: thinc-5.0.6.tar.gz
+  url: https://pypi.python.org/packages/source/t/thinc/thinc-5.0.6.tar.gz
+  md5: 22177b1e53e8d0c972e242dfb30e65dd
+
+build:
+  number: 1          [osx]
+
+requirements:
+  build:
+    - python
+    - cython
+    - headers_workaround
+    - murmurhash
+    - preshed
+  run:
+    - python
+    - numpy
+    - murmurhash >=0.26,<0.27
+    - cymem >=1.30,<1.32
+    - preshed >=0.46,<0.47
+
+test:
+  imports:
+    - thinc
+
+about:
+  home: http://github.com/syllog1sm/thinc
+  license: Commercial, GPLv2
+  license_family: GPL2
+  summary: Learn sparse linear models

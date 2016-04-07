@@ -1,0 +1,46 @@
+package:
+  name: luigi
+  version: 1.2.1
+
+source:
+  fn: luigi-1.2.1.tar.gz
+  url: https://pypi.python.org/packages/source/l/luigi/luigi-1.2.1.tar.gz
+  md5: a147bba0bb1999b5856f4910bf15a9c0
+
+build:
+  number: 1
+  entry_points:
+    - luigi = luigi.cmdline:luigi_run
+    - luigid = luigi.cmdline:luigid
+    - luigi-grep = luigi.tools.luigi_grep:main
+    - luigi-deps = luigi.tools.deps:main
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - setuptools
+    - cached-property
+    - pyparsing
+    - tornado
+    - python-daemon        [unix]
+
+test:
+  commands:
+    - luigi -h
+    - luigid -h
+    - luigi-grep -h
+    - luigi-deps -h
+  imports:
+    - luigi
+    - luigi.contrib
+    - luigi.contrib.hdfs
+    - luigi.tools
+
+about:
+  home: https://github.com/spotify/luigi
+  license: Apache Software License
+  license_family: Apache
+  license_file: LICENSE
+  summary: workflow mgmgt + task scheduling + dependency resolution

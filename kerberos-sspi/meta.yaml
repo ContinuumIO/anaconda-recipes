@@ -1,0 +1,26 @@
+package:
+  name: kerberos-sspi
+  version: "0.2"
+
+source:
+  fn: kerberos-sspi-0.2.tar.gz
+  url: https://pypi.python.org/packages/source/k/kerberos-sspi/kerberos-sspi-0.2.tar.gz
+  md5: 2244581f50ba2fb4c8987fb793fd7bd8
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pywin32
+  run:
+    - python
+    - pywin32
+
+test:
+  imports:
+    - kerberos_sspi
+
+about:
+  home: https://github.com/may-day/kerberos-sspi
+  license: Apache
+  summary: Kerberos high-level windows interface

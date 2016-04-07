@@ -1,0 +1,25 @@
+package:
+  name: lighttpd
+  version: 1.4.39
+
+source:
+  fn: lighttpd-1.4.39.tar.gz
+  url: http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.39.tar.gz
+  sha256: bc5f910f78b8cbae3e8fe1a1d8558259f09dbe50dd3907db771404bfab27bb2e
+
+build:
+  detect_binary_files_with_prefix: True
+
+test:
+  files:
+    - lighttpd.conf
+  commands:
+    - lighttpd -h
+    - lighttpd -v
+    - lighttpd -t -f lighttpd.conf
+
+about:
+  home: http://www.lighttpd.net/
+  license: BSD
+  license_file: COPYING
+  summary: light web server (httpd)

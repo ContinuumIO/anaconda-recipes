@@ -13,4 +13,3 @@ if errorlevel 1 exit 1
 
 del %LIBRARY_PREFIX%\bld.bat
 if errorlevel 1 exit 1
-

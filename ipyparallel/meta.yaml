@@ -1,0 +1,41 @@
+package:
+  name: ipyparallel
+  version: 5.0.1
+
+source:
+  fn: ipyparallel-5.0.1.tar.gz
+  url: https://pypi.python.org/packages/source/i/ipyparallel/ipyparallel-5.0.1.tar.gz
+  md5: e771add417b0d1b98d3ae92099becce5
+
+build:
+  entry_points:
+    - ipcluster = ipyparallel.apps.ipclusterapp:launch_new_instance
+    - ipcontroller = ipyparallel.apps.ipcontrollerapp:launch_new_instance
+    - ipengine = ipyparallel.apps.ipengineapp:launch_new_instance
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - ipython_genutils
+    - decorator
+    - pyzmq >=13.0
+    - ipython >=4.0
+    - jupyter_client
+    - ipykernel
+    - tornado >=4.0
+    - futures            [py27]
+
+test:
+  commands:
+    - ipcluster -h
+    - ipcontroller -h
+    - ipengine -h
+  imports:
+    - ipyparallel
+
+about:
+  home: https://ipyparallel.readthedocs.org/
+  license: BSD
+  summary: interactive Parallel Computing with IPython

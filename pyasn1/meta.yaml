@@ -1,0 +1,24 @@
+package:
+  name: pyasn1
+  version: 0.1.9
+
+source:
+  fn: pyasn1-0.1.9.tar.gz
+  url: https://pypi.python.org/packages/source/p/pyasn1/pyasn1-0.1.9.tar.gz
+  md5: f00a02a631d4016818659d1cc38d229a
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - pyasn1
+
+about:
+  home: http://sourceforge.net/projects/pyasn1/
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Offline IP address to Autonomous System Number lookup module

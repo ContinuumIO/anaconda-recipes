@@ -1,0 +1,26 @@
+package:
+  name: lazy-object-proxy
+  version: 1.2.1
+
+source:
+  fn: lazy-object-proxy-1.2.1.tar.gz
+  url: https://pypi.python.org/packages/source/l/lazy-object-proxy/lazy-object-proxy-1.2.1.tar.gz
+  md5: ad33e3e06d24786f708b72cc23350afa
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+
+test:
+  imports:
+    - lazy_object_proxy
+
+about:
+  home: https://github.com/ionelmc/python-lazy-object-proxy
+  license: BSD
+  license_file: LICENSE
+  summary: fast and thorough lazy object proxy

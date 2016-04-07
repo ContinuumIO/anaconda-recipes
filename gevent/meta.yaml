@@ -1,0 +1,27 @@
+package:
+  name: gevent
+  version: 1.1.1
+
+source:
+  fn: gevent-1.1.1.tar.gz
+  url: https://pypi.python.org/packages/source/g/gevent/gevent-1.1.1.tar.gz
+  md5: 1532f5396ab4d07a231f1935483be7c3
+
+requirements:
+  build:
+    - python
+    - setuptools            [win]
+    - greenlet >=0.4.9
+  run:
+    - python
+    - greenlet >=0.4.9
+
+test:
+  imports:
+    - gevent
+
+about:
+  home: http://www.gevent.org/
+  license: MIT
+  license_file: LICENSE
+  summary: Coroutine-based network library

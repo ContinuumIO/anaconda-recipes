@@ -1,0 +1,24 @@
+package:
+  name: future
+  version: 0.15.2
+
+source:
+  fn: future-0.15.2.tar.gz
+  url: https://pypi.python.org/packages/source/f/future/future-0.15.2.tar.gz
+  md5: a68eb3c90b3b76714c5ceb8c09ea3a06
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - future
+
+about:
+  home: https://github.com/PythonCharmers/python-future
+  license: MIT
+  license_file: LICENSE.txt
+  summary: Clean single-source support for Python 3 and 2

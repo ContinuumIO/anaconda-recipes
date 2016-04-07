@@ -1,0 +1,31 @@
+package:
+  name: requests-kerberos
+  version: 0.8.0
+
+source:
+  fn: requests-kerberos-0.8.0.tar.gz
+  url: https://pypi.python.org/packages/source/r/requests-kerberos/requests-kerberos-0.8.0.tar.gz
+  md5: ff763a1cd59d95500802213f0eeba70b
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - requests >=1.1.0
+    - kerberos-sspi >=0.2         [win]
+    - pykerberos >=1.1.8,<2.0.0   [not win]
+  run:
+    - python
+    - requests >=1.1.0
+    - kerberos-sspi >=0.2         [win]
+    - pykerberos >=1.1.8,<2.0.0   [not win]
+
+test:
+  imports:
+    - requests_kerberos
+
+about:
+  home: https://github.com/requests/requests-kerberos
+  license: Other
+  license_file: LICENSE
+  summary: Kerberos authentication handler for python-requests

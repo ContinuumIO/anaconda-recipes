@@ -1,0 +1,26 @@
+package:
+  name: traitlets
+  version: 4.2.1
+
+source:
+  fn: traitlets-4.2.1.tar.gz
+  url: https://pypi.python.org/packages/source/t/traitlets/traitlets-4.2.1.tar.gz
+  md5: f9cc1ad00a793a65d7bc88d69ee65920
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - ipython_genutils
+    - decorator
+
+test:
+  imports:
+    - traitlets
+    - traitlets.traitlets
+
+about:
+  home: http://ipython.org/
+  license: BSD
+  summary: configuration system for Python applications

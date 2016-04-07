@@ -1,0 +1,20 @@
+package:
+  name: comtypes
+  version: 1.1.2
+
+source:
+  git_url: https://github.com/enthought/comtypes.git
+  git_tag: 1.1.2
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+about:
+  home: http://starship.python.net/crew/theller/comtypes/
+  license: MIT
+  license_file: LICENSE.txt
+  summary: pure Python COM package

@@ -1,0 +1,28 @@
+package:
+  name: btrees
+  version: 4.2.0
+
+source:
+  fn: BTrees-4.2.0.tar.gz
+  url: https://pypi.python.org/packages/source/B/BTrees/BTrees-4.2.0.tar.gz
+  md5: da7d8a0e21594c4225de91465deae8e8
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - persistent
+  run:
+    - python
+    - persistent
+
+test:
+  imports:
+    - BTrees
+
+about:
+  home: http://packages.python.org/BTrees
+  license: ZPL 2.1
+  license_family: Other
+  license_file: LICENSE.txt
+  summary: scalable persistent object containers

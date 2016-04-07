@@ -1,0 +1,24 @@
+package:
+  name: libffi
+  version: 3.0.13
+
+source:
+  git_url: https://github.com/atgreen/libffi.git
+  git_tag: v3.0.13
+
+build:
+  features:
+    - vc9     [win and py27]
+    - vc10    [win and py34]
+    - vc14    [win and py35]
+
+requirements:
+  build:
+    - cmake       [win]
+    - python
+
+about:
+  home: https://github.com/atgreen/libffi
+  license: MIT
+  license_file: LICENSE
+  summary: A portable foreign-function interface library

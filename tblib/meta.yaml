@@ -1,0 +1,28 @@
+package:
+  name: tblib
+  version: 1.2.0
+
+source:
+  fn: tblib-1.2.0.tar.gz
+  url: https://pypi.python.org/packages/source/t/tblib/tblib-1.2.0.tar.gz
+  md5: 804aed92abafcffa7439b0ce4e5dbc95
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - tblib
+
+about:
+  home: https://github.com/ionelmc/python-tblib
+  license: BSD
+  license_file: LICENSE
+  summary: braceback fiddling library for Python

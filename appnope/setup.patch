@@ -1,0 +1,11 @@
+--- setup.py.old	2015-09-21 18:53:39.784611190 -0500
++++ setup.py	2015-09-21 19:01:16.800594515 -0500
+@@ -16,7 +16,7 @@
+ if sys.platform != 'darwin':
+     raise ValueError("Only meant for install on OS X >= 10.9")
+ elif V(platform.mac_ver()[0]) < V('10.9'):
+-    print("Only meant for install on OS X >= 10.9", file=sys.stderr)
++    print("Only meant for install on OS X >= 10.9")
+ 
+ with open('appnope/__init__.py') as f:
+     for line in f:

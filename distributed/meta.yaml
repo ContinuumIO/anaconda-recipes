@@ -1,0 +1,67 @@
+package:
+  name: distributed
+  version: 1.9.1
+
+source:
+  fn: distributed-1.9.1.tar.gz
+  url: https://pypi.python.org/packages/source/d/distributed/distributed-1.9.1.tar.gz
+  md5: c59ebe21942ad35e8d8753410c786051
+
+build:
+  entry_points:
+    - dcenter = distributed.cli.dcenter:go
+    - dscheduler = distributed.cli.dscheduler:go
+    - dcluster = distributed.cli.dcluster:start
+    - dworker = distributed.cli.dworker:go
+  preserve_egg_dir: True
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - tornado >=4.2
+    - toolz
+    - msgpack-python
+    - cloudpickle
+    - dask
+    - click
+    - boto3
+    - locket
+    - six
+    - tblib
+    - futures              [py < 30]
+    - locket               [py < 30]
+    - singledispatch       [py < 34]
+  run:
+    - python
+    - setuptools
+    - tornado >=4.2
+    - toolz
+    - cloudpickle
+    - dask
+    - click
+    - boto3
+    - locket
+    - six
+    - tblib
+    - futures              [py < 30]
+    - locket
+    - singledispatch
+
+test:
+  commands:
+    - dcenter --help
+    - dscheduler --help
+    - dcluster --help
+    - dworker --help
+  imports:
+    - distributed
+    - distributed.cli
+    - distributed.diagnostics
+    - distributed.http
+
+about:
+  home: http://distributed.readthedocs.org/en/latest/
+  license: BSD
+  license_file: LICENSE.txt
+  summary: distributed computing

@@ -1,0 +1,24 @@
+package:
+  name: pyreadline
+  version: "2.1"
+
+source:
+  fn: pyreadline-2.1.zip
+  url: https://pypi.python.org/packages/source/p/pyreadline/pyreadline-2.1.zip
+  md5: c389f357ff598f3f82749372d58f2f95
+
+requirements:
+  build:
+    - python
+    - sphinx
+  run:
+    - python
+
+test:
+  imports:
+    - pyreadline
+
+about:
+  home: http://ipython.org/pyreadline.html
+  license: BSD
+  summary: A python implmementation of GNU readline.

@@ -1,0 +1,28 @@
+package:
+  name: ssh
+  version: 1.8.0
+
+source:
+  fn: ssh-1.8.0.tar.gz
+  url: http://pypi.python.org/packages/source/s/ssh/ssh-1.8.0.tar.gz
+  md5: bc4dd59ec0c7bdf78a3840652cac824e
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - pycrypto >=2.1
+
+test:
+  imports:
+    - ssh
+
+about:
+  home: https://github.com/bitprophet/ssh/
+  license: LGPL
+  license_file: LICENSE
+  summary: SSH2 protocol library

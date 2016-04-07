@@ -1,0 +1,18 @@
+package:
+  name: jbig
+  version: "2.1"
+
+source:
+  fn: jbigkit-2.1.tar.gz
+  url: https://www.cl.cam.ac.uk/~mgk25/jbigkit/download/jbigkit-2.1.tar.gz
+  md5: ebcf09bed9f14d7fa188d3bd57349522
+
+  patches:
+    # Remove -Wno-unused-result (for compatibility with old gcc),
+    # and add -fPIC (to allow shared libraries to use this build).
+    - Makefile.patch
+
+about:
+  home: https://www.cl.cam.ac.uk/~mgk25/jbigkit
+  license: GPL2
+  summary: implementation of the JBIG1 data compression standard

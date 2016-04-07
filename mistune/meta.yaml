@@ -1,0 +1,29 @@
+package:
+  name: mistune
+  version: 0.7.2
+
+source:
+  fn: mistune-0.7.2.tar.gz
+  url: https://pypi.python.org/packages/source/m/mistune/mistune-0.7.2.tar.gz
+  md5: ed9ac03c99261bd1803e44ddaa4f87cb
+
+build:
+  number: 1           [osx]
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - cython
+  run:
+    - python
+
+test:
+  imports:
+    - mistune
+
+about:
+  home: https://github.com/lepture/mistune
+  license: BSD
+  license_file: LICENSE
+  summary: The fastest markdown parser in pure Python with renderer feature

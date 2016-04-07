@@ -1,0 +1,29 @@
+package:
+  name: python-daemon
+  version: 2.1.1
+
+source:
+  fn: python-daemon-2.1.1.tar.gz
+  url: https://pypi.python.org/packages/source/p/python-daemon/python-daemon-2.1.1.tar.gz
+  md5: 72e2acf2c3d69c7fa75a6625d06adfd0
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - docutils
+    - lockfile >=0.10
+  run:
+    - python
+    - lockfile >=0.10
+
+test:
+  imports:
+    - daemon
+
+about:
+  home: https://alioth.debian.org/projects/python-daemon/
+  license: Apache Software License
+  license_family: GPL3
+  license_file: LICENSE.GPL-3
+  summary: library to implement a well-behaved Unix daemon process

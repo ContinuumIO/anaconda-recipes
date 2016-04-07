@@ -1,0 +1,12 @@
+diff --git setup.py setup.py
+index d84c09d..b876999 100755
+--- setup.py
++++ setup.py
+@@ -53,6 +53,4 @@ setup(name="datrie",
+               'src/stdio_ext.c'
+           ], include_dirs=[LIBDATRIE_DIR])
+       ],
+-
+-      setup_requires=["pytest-runner"],
+-      tests_require=["pytest", "hypothesis"])
++)

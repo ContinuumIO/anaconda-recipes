@@ -1,0 +1,41 @@
+package:
+  name: scikit-rf
+  version: 0.14.1
+
+source:
+  fn: scikit-rf-0.14.1.tar.gz
+  url: https://pypi.python.org/packages/source/s/scikit-rf/scikit-rf-0.14.1.tar.gz
+  md5: aa8dffdc9b7fefe9d44b33ab8604dcd9
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - ipython
+    - numpy
+    - scipy
+    - matplotlib
+    - mock
+    - nose
+  run:
+    - python
+    - ipython
+    - scipy
+    - matplotlib
+
+test:
+  imports:
+    - apps
+    - skrf
+    - skrf.calibration
+    - skrf.data
+    - skrf.io
+    - skrf.media
+#    - skrf.src
+    - skrf.vi
+
+about:
+  home: http://scikit-rf.org
+  license: new BSD
+  license_family: BSD
+  summary: 'Object Oriented Microwave Engineering'

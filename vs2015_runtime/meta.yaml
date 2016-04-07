@@ -1,0 +1,8 @@
+package:
+  name: vs2015_runtime
+  version: "14.00.23026.0"
+
+about:
+  home: http://www.microsoft.com
+  license: Proprietary
+  summary: Bundles of the MSVC 14 (VS 2015) runtime

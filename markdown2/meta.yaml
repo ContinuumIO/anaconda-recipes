@@ -1,0 +1,30 @@
+package:
+  name: markdown2
+  version: 2.3.1
+
+source:
+  fn: markdown2-2.3.1.zip
+  url: https://pypi.python.org/packages/source/m/markdown2/markdown2-2.3.1.zip
+  md5: fcc71b4657e5ad778ac1439f37bd823d
+
+build:
+  entry_points:
+    - markdown2 = markdown2:main
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  commands:
+    - markdown2 --help
+  imports:
+    - markdown2
+
+about:
+  home: http://packages.python.org/Markdown/
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Python implementation of Markdown

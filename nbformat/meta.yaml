@@ -1,0 +1,29 @@
+package:
+  name: nbformat
+  version: 4.0.1
+
+source:
+  fn: nbformat-4.0.1.tar.gz
+  url: https://pypi.python.org/packages/source/n/nbformat/nbformat-4.0.1.tar.gz
+  md5: 684c4dc3c6fd8036fd1ae1c908003e23
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - ipython_genutils
+    - traitlets
+    - jsonschema
+    - jupyter_core
+
+test:
+  commands:
+    - jupyter-trust -h
+  imports:
+    - nbformat
+
+about:
+  home: http://jupyter.org
+  license: BSD
+  summary: the base implementation of the Jupyter Notebook format

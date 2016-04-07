@@ -1,0 +1,27 @@
+package:
+  name: cachecontrol
+  version: 0.11.6
+
+source:
+  fn: CacheControl-0.11.6.tar.gz
+  url: https://pypi.python.org/packages/source/C/CacheControl/CacheControl-0.11.6.tar.gz
+  md5: d3bd8200f56102f93749eee4296aef84
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - requests
+  run:
+    - python
+    - requests
+
+test:
+  imports:
+    - cachecontrol
+
+about:
+  home: https://github.com/ionrock/cachecontrol
+  license: Apache
+  license_file: LICENSE.txt
+  summary: httplib2 caching for requests

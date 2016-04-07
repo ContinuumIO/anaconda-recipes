@@ -1,0 +1,29 @@
+package:
+  name: routes
+  version: "2.2"
+
+source:
+  fn: Routes-2.2.tar.gz
+  url: https://pypi.python.org/packages/source/R/Routes/Routes-2.2.tar.gz
+  md5: d62bb225ba7919b5470095528932648b
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - repoze.lru
+    - six
+  run:
+    - python
+    - repoze.lru
+    - six
+
+test:
+  imports:
+    - routes
+
+about:
+  home: https://pypi.python.org/pypi/Routes
+  license: MIT
+  license_file: LICENSE.txt
+  summary: Routing Recognition and Generation Tools

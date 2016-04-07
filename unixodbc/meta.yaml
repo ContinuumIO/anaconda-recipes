@@ -1,0 +1,15 @@
+package:
+  name: unixodbc
+  version: 2.3.4
+
+source:
+  fn: unixODBC-2.3.4.tar.gz
+  url: ftp://ftp.unixodbc.org/pub/unixODBC/unixODBC-2.3.4.tar.gz
+  md5: bd25d261ca1808c947cb687e2034be81
+
+about:
+  home: http://www.unixodbc.org/
+  license: LGPLv2
+  license_family: LGPL
+  license_file: COPYING
+  summary: ODBC (Open Database Connectivity) implementation for Unix

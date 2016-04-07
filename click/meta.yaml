@@ -1,0 +1,25 @@
+package:
+  name: click
+  version: 6.6
+
+source:
+  fn: click-6.6.tar.gz
+  url: https://pypi.python.org/packages/source/c/click/click-6.6.tar.gz
+  md5: d0b09582123605220ad6977175f3e51d
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - click
+
+about:
+  home: http://github.com/mitsuhiko/click
+  license: BSD
+  license_file: LICENSE
+  summary: A simple wrapper around optparse for powerful command line utilities.

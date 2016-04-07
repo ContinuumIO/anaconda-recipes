@@ -1,0 +1,33 @@
+package:
+  name: cornice
+  version: 1.2.0
+
+source:
+  fn: cornice-1.2.0.tar.gz
+  url: https://pypi.python.org/packages/source/c/cornice/cornice-1.2.0.tar.gz
+  md5: e5cc305a33ae16971fab51dd4a5139ba
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pyramid
+    - simplejson
+  run:
+    - python
+    - colander
+    - pyramid
+    - webob
+    - venusian
+    - simplejson
+
+test:
+  imports:
+    - cornice
+
+about:
+  home: https://github.com/mozilla-services/cornice
+  license: MPL 2.0
+  license_family: Other
+  license_file: LICENSE
+  summary: define Web Services in Pyramid

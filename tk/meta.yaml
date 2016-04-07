@@ -1,0 +1,22 @@
+package:
+  name: tk
+  version: 8.5.18
+
+build:
+  features:
+    - vc9     [win and py27]
+    - vc10    [win and py34]
+    - vc14    [win and py35]
+
+requirements:
+  build:
+    # HACK: this is here to get Windows features (vc??) to work.
+    - python         [win]
+    - curl   7.45.*  [win]
+    - 7za            [win]
+
+about:
+  home: http://www.tcl.tk/
+  license: BSD-like
+  license_family: BSD
+  summary: dynamic programming language with GUI elements

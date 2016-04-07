@@ -1,0 +1,24 @@
+package:
+  name: clyent
+  version: 1.2.2
+
+source:
+  git_url: git@github.com:Anaconda-Server/clyent.git
+  git_tag: 1.2.2
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - setuptools
+
+test:
+  imports:
+    - clyent
+
+about:
+  home: https://github.com/binstar/clyent
+  license: BSD
+  summary: Command line client Library for windows and posix

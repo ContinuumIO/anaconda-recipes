@@ -1,0 +1,41 @@
+package:
+  name: pyqt
+  version: 4.11.4
+
+source:
+  fn: PyQt-mac-gpl-4.11.4.tar.gz                                                                 [osx]
+  url: http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.4/PyQt-mac-gpl-4.11.4.tar.gz   [osx]
+  md5: 73e711bfd6c825a04e9999915426735f                                                          [osx]
+  fn: PyQt-x11-gpl-4.11.4.tar.gz                                                                 [linux]
+  url: http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.4/PyQt-x11-gpl-4.11.4.tar.gz   [linux]
+  md5: 2fe8265b2ae2fc593241c2c84d09d481                                                          [linux]
+  fn: PyQt-win-gpl-4.11.4.zip                                                                    [win]
+  url: http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.4/PyQt-win-gpl-4.11.4.zip      [win]
+  md5:  cc3f9a88900c95b599afa69d869d8095                                                         [win]
+  patches:
+    - configure.patch
+
+build:
+  number:      1       [unix]
+  number:      5       [win]
+
+requirements:
+  build:
+    - python
+    - qt         >=4.8.7
+    - sip        >=4.16.4
+  run:
+    - python
+    - qt         >=4.8.7
+    - sip        >=4.16.4
+
+test:
+  imports:
+    - PyQt4
+
+about:
+  home: http://www.riverbankcomputing.co.uk/software/pyqt
+  license: Commercial, GPLv2, GPLv3
+  license_family: GPL3
+  license_file: LICENSE
+  summary: PyQt is a Python binding of the cross-platform GUI toolkit Qt

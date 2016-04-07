@@ -1,0 +1,25 @@
+package:
+  name: werkzeug
+  version: 0.11.5
+
+source:
+  fn: Werkzeug-0.11.5.tar.gz
+  url: https://pypi.python.org/packages/source/W/Werkzeug/Werkzeug-0.11.5.tar.gz
+  md5: daf443a939459e12f14fd2e4658a26df
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - werkzeug
+
+about:
+  home: http://werkzeug.pocoo.org/
+  license: BSD
+  license_file: LICENSE
+  summary: The Swiss Army knife of Python web development

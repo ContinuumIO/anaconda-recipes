@@ -1,0 +1,28 @@
+package:
+  name: openpyxl
+  version: 2.3.2
+
+source:
+  fn: openpyxl-2.3.2.tar.gz
+  url: https://pypi.python.org/packages/source/o/openpyxl/openpyxl-2.3.2.tar.gz
+  md5: 87501a881d30489833670de337cad02e
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - jdcal
+    - et_xmlfile
+  run:
+    - python
+    - jdcal
+    - et_xmlfile
+
+test:
+  imports:
+    - openpyxl
+
+about:
+  home: http://openpyxl.readthedocs.org
+  license: MIT
+  summary: A Python library to read/write Excel 2007 xlsx/xlsm files

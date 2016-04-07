@@ -1,0 +1,35 @@
+package:
+  name: gensim
+  version: 0.12.4
+
+source:
+  fn: gensim-0.12.4.tar.gz
+  url: https://pypi.python.org/packages/source/g/gensim/gensim-0.12.4.tar.gz
+  md5: 7369a2d1f50904320e60b5ef490c1ca6
+
+requirements:
+  build:
+    - python
+    - cython
+    - setuptools
+    - numpy x.x
+    - scipy
+    - six
+  run:
+    - python
+    - numpy x.x
+    - scipy
+    - six
+    - smart_open
+
+test:
+  imports:
+    - gensim
+    - gensim.models.doc2vec_inner
+    - gensim.models.word2vec_inner
+
+about:
+  home: http://radimrehurek.com/gensim
+  license: LGPL
+  license_file: COPYING
+  summary: Python framework for fast Vector Space Modelling

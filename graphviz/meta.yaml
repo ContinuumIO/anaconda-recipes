@@ -12,19 +12,18 @@ source:
   md5: d028f49e047e2a25fdb7c0aa323a3945   [win]
 
 build:
-  number: 1
-
   detect_binary_files_with_prefix: True
+  number: 1  [linux]
 
 requirements:
   build:
-    - zlib       [unix]
-    - libpng     [unix]
-    - freetype   [unix]
+    - zlib         1.2.*         [unix]
+    - freetype     2.5.*         [unix]
+    - pango  >=1.39.0            [linux]
   run:
-    - freetype   [unix]
-    - libpng     [unix]
-    - zlib       [unix]
+    - freetype     2.5.*         [unix]
+    - zlib         1.2.*         [unix]
+    - pango  >=1.39.0            [linux]
 
 test:
   commands:
@@ -33,6 +32,5 @@ test:
 about:
   home: http://www.graphviz.org/
   license: EPL
+  license_family: Other
   summary: Open Source graph visualization software.
-
-

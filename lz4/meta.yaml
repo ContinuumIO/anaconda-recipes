@@ -1,0 +1,27 @@
+package:
+  name: lz4
+  version: 0.7.0
+
+source:
+  fn: lz4-0.7.0.tar.gz
+  url: https://pypi.python.org/packages/source/l/lz4/lz4-0.7.0.tar.gz
+  md5: e32842a49d5254f6918567197a704492
+  patches:
+    - win.patch          [win]
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - nose
+  run:
+    - python
+
+test:
+  imports:
+    - lz4
+
+about:
+  home: https://github.com/steeve/python-lz4
+  license: BSD
+  summary: LZ4 Bindings for Python

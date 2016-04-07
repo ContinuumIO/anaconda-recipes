@@ -1,0 +1,25 @@
+package:
+  name: wrapt
+  version: 1.10.6
+
+source:
+  fn: wrapt-1.10.6.tar.gz
+  url: https://pypi.python.org/packages/source/w/wrapt/wrapt-1.10.6.tar.gz
+  md5: e29294a8949ff4dc74d6fcd800f6f23d
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+test:
+  imports:
+    - wrapt
+
+about:
+  home: https://github.com/GrahamDumpleton/wrapt
+  license: BSD
+  license_file: LICENSE
+  summary: module for decorators, wrappers and monkey patching

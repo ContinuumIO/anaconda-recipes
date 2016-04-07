@@ -1,0 +1,30 @@
+package:
+  name: twisted
+  version: 16.1.0
+
+source:
+  fn: Twisted-16.1.0.tar.bz2
+  url: https://pypi.python.org/packages/source/T/Twisted/Twisted-16.1.0.tar.bz2
+  md5: 30c68dc16dab90fc8eba6f3fc5de6611
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - zope.interface
+  run:
+    - python
+    - zope.interface
+
+test:
+  imports:
+    - twisted
+    - twisted.test.raiser           [py2k]
+    - twisted.python.sendmsg        [unix and py2k]
+    - twisted.runner.portmap        [unix and py2k]
+
+about:
+  home: http://twistedmatrix.com/
+  license: MIT
+  license_file: LICENSE
+  summary: event-driven networking engine for Python

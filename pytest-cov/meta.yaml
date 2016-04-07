@@ -1,0 +1,29 @@
+package:
+  name: pytest-cov
+  version: 2.2.1
+
+source:
+  fn: pytest-cov-2.2.1.tar.gz
+  url: https://pypi.python.org/packages/source/p/pytest-cov/pytest-cov-2.2.1.tar.gz
+  md5: d4c65c5561343e6c6a583d5fd29e6a63
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pytest >=2.6.0
+    - coverage >=3.7.1
+  run:
+    - python
+    - pytest >=2.6.0
+    - coverage >=3.7.1
+
+test:
+  imports:
+    - pytest_cov
+
+about:
+  home: https://github.com/pytest-dev/pytest-cov
+  license: BSD
+  license_file: LICENSE
+  summary: 'Pytest plugin for measuring coverage.'

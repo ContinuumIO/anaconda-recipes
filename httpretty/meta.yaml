@@ -1,0 +1,26 @@
+package:
+  name: httpretty
+  version: 0.8.14
+
+source:
+  fn: httpretty-0.8.14.tar.gz
+  url: https://pypi.python.org/packages/source/h/httpretty/httpretty-0.8.14.tar.gz
+  md5: 2a6bbf270fafc77647b0479d95d0544c
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - httpretty
+    - httpretty.utils
+
+about:
+  home: http://github.com/gabrielfalcao/httpretty
+  license: MIT
+  license_file: COPYING
+  summary: HTTP client mock for Python

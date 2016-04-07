@@ -1,0 +1,31 @@
+package:
+  name: mercurial
+  version: 3.7.3
+
+source:
+  fn: mercurial-3.7.3.tar.gz
+  url: https://pypi.python.org/packages/source/M/Mercurial/mercurial-3.7.3.tar.gz
+  md5: f47c9c76b7bf429dafecb71fa81c01b4
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  commands:
+    - hg --version
+  imports:
+    - mercurial.base85
+    - mercurial.bdiff
+    - mercurial.diffhelpers
+    - mercurial.mpatch
+    - mercurial.osutil
+    - mercurial.parsers
+
+about:
+  home: http://mercurial.selenic.com/
+  license: GPL2
+  license_file: COPYING
+  summary: Fast scalable distributed SCM (revision control, version control) system

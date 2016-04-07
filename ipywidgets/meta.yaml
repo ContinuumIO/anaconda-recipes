@@ -1,0 +1,27 @@
+package:
+  name: ipywidgets
+  version: 4.1.1
+
+source:
+  fn: ipywidgets-4.1.1.tar.gz
+  url: https://pypi.python.org/packages/source/i/ipywidgets/ipywidgets-4.1.1.tar.gz
+  md5: 491affdef8e0586eeeb299226ff634aa
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - ipython
+    - ipykernel
+    - traitlets
+    - notebook
+
+test:
+  imports:
+    - ipywidgets
+
+about:
+  home: http://github.com/jakevdp/ipywidgets
+  license: BSD
+  summary: IPython Static Widgets

@@ -1,0 +1,41 @@
+package:
+  name: astropy
+  version: 1.1.2
+
+source:
+  fn: astropy-1.1.2.tar.gz
+  url: https://pypi.python.org/packages/source/a/astropy/astropy-1.1.2.tar.gz
+  md5: cbe32023b5b1177d1e2498a0d00cda51
+
+build:
+  entry_points:
+    - fits2bitmap = astropy.visualization.scripts.fits2bitmap:main
+    - fitscheck = astropy.io.fits.scripts.fitscheck:main
+    - fitsdiff = astropy.io.fits.scripts.fitsdiff:main
+    - fitsheader = astropy.io.fits.scripts.fitsheader:main
+    - samp_hub = astropy.vo.samp.hub_script:hub_script
+    - volint = astropy.io.votable.volint:main
+    - wcslint = astropy.wcs.wcslint:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy x.x
+  run:
+    - python
+    - numpy x.x
+    - argparse          [py26]
+
+test:
+  commands:
+    - fitscheck --help
+    - fitsdiff --help
+    - volint --help
+  imports:
+    - astropy
+
+about:
+  home: http://www.astropy.org/
+  license: BSD
+  summary: Community-developed python astronomy tools

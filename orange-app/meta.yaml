@@ -1,0 +1,25 @@
+package:
+  name: orange-app
+  version: "1.0"
+
+requirements:
+  run:
+    - python
+    - orange         [py27]
+    - orange3        [py35]
+
+app:
+  entry: orange-canvas
+  icon: orange-logo.png
+  summary: data visualization and data analysis tool
+
+test:
+  commands:
+    - orange-canvas --help
+  imports:
+    - Orange
+
+about:
+  home: http://orange.biolab.si/
+  license: GPL3
+  summary: component-based data mining framework

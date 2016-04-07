@@ -1,0 +1,28 @@
+package:
+  name: jupyter_client
+  version: 4.2.2
+
+source:
+  fn: jupyter_client-4.2.2.tar.gz
+  url: https://pypi.python.org/packages/source/j/jupyter_client/jupyter_client-4.2.2.tar.gz
+  md5: f887b2c076297ed8216d89b17a2000ea
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - jupyter_core
+    - pyzmq
+    - traitlets
+
+test:
+  commands:
+    - jupyter-kernelspec -h
+  imports:
+    - jupyter_client
+
+about:
+  home: http://jupyter.org
+  license: BSD
+  summary: Jupyter protocol implementation and client libraries

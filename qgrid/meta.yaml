@@ -1,0 +1,32 @@
+package:
+  name: qgrid
+  version: 0.3.1
+
+source:
+  fn: qgrid-0.3.1.tar.gz
+  url: https://pypi.python.org/packages/source/q/qgrid/qgrid-0.3.1.tar.gz
+  md5: ac09dccfd17b5449061f93ebd5fe5e04
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - notebook >=4.1.0
+    - pandas >=0.17.1
+    - ipywidgets >=4.1.1
+  run:
+    - python
+    - notebook >=4.1.0
+    - pandas >=0.17.1
+    - ipywidgets >=4.1.1
+
+test:
+  imports:
+    - qgrid
+    - qgrid.qgridjs
+
+about:
+  home: https://github.com/quantopian/qgrid
+  license: Apache
+  license_file: LICENSE
+  summary: a Pandas DataFrame viewer for IPython Notebook

@@ -1,0 +1,12 @@
+diff --git setup.py setup.py
+index e0b1bc5..bbf14d3 100644
+--- setup.py
++++ setup.py
+@@ -36,7 +36,6 @@ setup_params = dict(
+         'Topic :: Software Development :: Libraries :: Python Modules'
+     ],
+     setup_requires=[
+-        'setuptools_scm',
+     ] + sphinx_req + pytest_runner,
+     tests_require=['pytest', 'appdirs'],
+     extras_require={

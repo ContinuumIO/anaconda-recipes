@@ -1,0 +1,35 @@
+package:
+  name: setuptools
+  version: 20.6.7
+
+source:
+  fn: setuptools-20.6.7.tar.gz
+  url: https://pypi.python.org/packages/source/s/setuptools/setuptools-20.6.7.tar.gz
+  md5: 45d6110f3ec14924e44c33411db64fe6
+  patches:
+    - nodownload.patch
+    - setup.patch
+
+build:
+  entry_points:
+    - easy_install = setuptools.command.easy_install:main
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  commands:
+    - easy_install --help
+  imports:
+    - setuptools
+    - easy_install
+    - pkg_resources
+
+about:
+  home: https://pypi.python.org/pypi/setuptools
+  license: PSF or ZPL
+  license_family: PSF
+  summary: Easily download, build, install, upgrade, and uninstall Python packages

@@ -1,0 +1,23 @@
+diff --git a/config.h.cmake.in b/config.h.cmake.in
+index ec27617..d977a7b 100644
+--- config.h.cmake.in
++++ config.h.cmake.in
+@@ -30,6 +30,8 @@ are set when opening a binary file on Windows. */
+ #ifdef _WIN32
+ 	#ifndef strcasecmp
+   		#define strcasecmp _stricmp
++	#endif
++	#if _MSC_VER < 1900
+ 		#define snprintf _snprintf
+   	#endif
+ #endif
+@@ -38,7 +40,9 @@ are set when opening a binary file on Windows. */
+   #define strdup _strdup
+   #define fdopen _fdopen
+   #define write _write
+-  #define snprintf _snprintf
++  #if _MSC_VER < 1900
++  	#define snprintf _snprintf
++  #endif
+   #define strtoll _strtoi64
+ #endif

@@ -1,0 +1,36 @@
+package:
+  name: dask
+  version: 0.8.1
+
+source:
+  fn: dask-0.8.1.tar.gz
+  url: https://pypi.python.org/packages/source/d/dask/dask-0.8.1.tar.gz
+  md5: 5dd8e3a3823b3bc62c9a6d192e2cb5b4
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - bokeh
+    - chest
+    - cloudpickle
+    - numpy
+    - pandas
+    - partd
+    - psutil
+    - toolz
+
+test:
+  imports:
+    - dask          [not win]
+    - dask.core     [not win]
+    - dask.array    [not win]
+    - dask.bag      [not win]
+
+about:
+  home: http://dask.pydata.org/en/latest/
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Task scheduling and blocked algorithms for parallel processing

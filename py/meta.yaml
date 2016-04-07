@@ -1,0 +1,25 @@
+package:
+  name: py
+  version: 1.4.31
+
+source:
+  fn: py-1.4.31.tar.gz
+  url: https://pypi.python.org/packages/source/p/py/py-1.4.31.tar.gz
+  md5: 5d2c63c56dc3f2115ec35c066ecd582b
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - py
+
+about:
+  home: http://pylib.readthedocs.org/
+  license: MIT
+  license_file: LICENSE
+  summary: library with cross-python path, ini-parsing, io, code, log facilities

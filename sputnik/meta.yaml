@@ -1,0 +1,33 @@
+package:
+  name: sputnik
+  version: 0.9.3
+
+source:
+  fn: sputnik-0.9.3.tar.gz
+  url: https://pypi.python.org/packages/source/s/sputnik/sputnik-0.9.3.tar.gz
+  md5: 1e3285f5fe0aeeb390f1a219fedb059f
+
+build:
+  entry_points:
+    - sputnik = sputnik.__main__:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - semver
+  run:
+    - python
+    - semver
+
+test:
+  imports:
+    - sputnik
+    - sputnik.tests
+  commands:
+    - sputnik --help
+
+about:
+  home: https://github.com/spacy-io/sputnik
+  license: MIT
+  summary: data package manager library

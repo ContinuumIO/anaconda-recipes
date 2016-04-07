@@ -1,0 +1,25 @@
+package:
+  name: et_xmlfile
+  version: 1.0.1
+
+source:
+  fn: et_xmlfile-1.0.1.tar.gz
+  url: https://pypi.python.org/packages/source/e/et_xmlfile/et_xmlfile-1.0.1.tar.gz
+  md5: f47940fd9d556375420b2e276476cfaf
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - et_xmlfile
+    - et_xmlfile.tests
+
+about:
+  home: https://bitbucket.org/openpyxl/et_xmlfile
+  license: MIT
+  summary: implementation of lxml.xmlfile for the standard library

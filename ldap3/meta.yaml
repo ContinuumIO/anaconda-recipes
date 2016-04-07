@@ -1,0 +1,28 @@
+package:
+  name: ldap3
+  version: 1.0.4
+
+source:
+  fn: ldap3-1.0.4.tar.gz
+  url: https://pypi.python.org/packages/source/l/ldap3/ldap3-1.0.4.tar.gz
+  md5: 11cd8afb191517a5dc67b02b925d078a
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pyasn1
+  run:
+    - python
+    - pyasn1 >=0.1.8
+
+test:
+  imports:
+    - ldap3
+
+about:
+  home: https://github.com/cannatag/ldap3
+  license: LGPLv3
+  license_family: LGPL
+  license_file: LICENSE.txt
+  summary: strictly RFC 4511 conforming LDAP V3 pure Python client

@@ -1,0 +1,29 @@
+package:
+  name: service_identity
+  version: 16.0.0
+
+source:
+  fn: service_identity-16.0.0.tar.gz
+  url: https://pypi.python.org/packages/source/s/service_identity/service_identity-16.0.0.tar.gz
+  md5: d52392597b9c44a740abf322bfdb21e6
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - attrs
+    - pyasn1
+    - pyasn1-modules
+    - pyopenssl >=0.12
+
+test:
+  imports:
+    - service_identity
+
+about:
+  home: https://github.com/pyca/service_identity
+  license: MIT
+  license_file: LICENSE
+  summary: service identity verification for pyOpenSSL

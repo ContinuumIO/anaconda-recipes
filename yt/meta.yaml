@@ -1,0 +1,41 @@
+package:
+  name: yt
+  version: 3.2.3
+
+source:
+  fn: yt-3.2.3.tar.gz
+  url: https://pypi.python.org/packages/source/y/yt/yt-3.2.3.tar.gz
+  md5: b81757057ae08360afc6ca2e74e1a3a8
+
+build:
+  entry_points:
+    - yt = yt.utilities.command_line:run_main
+
+requirements:
+  build:
+    - python
+    - numpy
+    - cython
+    - setuptools
+    - libpython   [win]
+    - mingw       [win]
+  run:
+    - python
+    - numpy
+    - h5py
+    - sympy
+    - matplotlib
+
+test:
+  requires:
+    - nose
+  commands:
+    - yt -h
+  imports:
+    - yt
+
+about:
+  home: http://yt-project.org/
+  license: BSD
+  license_file: COPYING.txt
+  summary: An analysis and visualization toolkit for Astrophysical simulations

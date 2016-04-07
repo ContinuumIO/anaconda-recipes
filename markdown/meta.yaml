@@ -1,0 +1,25 @@
+package:
+  name: markdown
+  version: 2.6.6
+
+source:
+  fn: Markdown-2.6.6.tar.gz
+  url: https://pypi.python.org/packages/source/M/Markdown/Markdown-2.6.6.tar.gz
+  md5: d6737edcdb9a9aceaef0bf28455673be
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  commands:
+    - markdown_py -h
+  imports:
+    - markdown
+
+about:
+  home: http://packages.python.org/Markdown/
+  license: BSD
+  summary: Python implementation of Markdown

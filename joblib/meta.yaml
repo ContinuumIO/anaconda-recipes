@@ -1,0 +1,23 @@
+package:
+  name: joblib
+  version: 0.9.4
+
+source:
+  fn: joblib-0.9.4.tar.gz
+  url: https://pypi.python.org/packages/source/j/joblib/joblib-0.9.4.tar.gz
+  md5: 31d29b22fcf00cd1a1358828ba67376f
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - joblib
+
+about:
+  home: http://packages.python.org/joblib/
+  license: BSD
+  summary: using Python functions as pipeline jobs

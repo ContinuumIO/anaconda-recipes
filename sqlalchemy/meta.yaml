@@ -1,0 +1,27 @@
+package:
+  name: sqlalchemy
+  version: 1.0.12
+
+source:
+  fn: SQLAlchemy-1.0.12.tar.gz
+  url: https://pypi.python.org/packages/source/S/SQLAlchemy/SQLAlchemy-1.0.12.tar.gz
+  md5: 6d19ef29883bbebdcac6613cf391cac4
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - sqlalchemy
+    - sqlalchemy.cprocessors
+    - sqlalchemy.cresultproxy
+    - sqlalchemy.cutils
+
+about:
+  home: http://www.sqlalchemy.org/
+  license: MIT
+  license_file: LICENSE
+  summary: Database Abstraction Library

@@ -1,0 +1,22 @@
+package:
+  name: jpeg
+  version: 8d
+
+source:
+  fn: jpegsrc.v8d.tar.gz
+  url: http://jpegclub.org/support/files/jpegsrc.v8d1.tar.gz
+  md5: 964d0dc8b4789acd32ec1431ca85171d
+
+build:
+  number: 1             [osx]
+  features:
+    - vc9     [win and py27]
+    - vc10    [win and py34]
+    - vc14    [win and py35]
+
+
+about:
+  home: http://www.ijg.org/
+  license: Custom free software license
+  license_family: Other
+  summary: read/write jpeg COM, EXIF, IPTC medata
