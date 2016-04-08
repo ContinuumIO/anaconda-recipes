@@ -1,11 +1,11 @@
 package:
   name: cornice
-  version: 1.2.0
+  version: 1.2.1
 
 source:
-  fn: cornice-1.2.0.tar.gz
-  url: https://pypi.python.org/packages/source/c/cornice/cornice-1.2.0.tar.gz
-  md5: e5cc305a33ae16971fab51dd4a5139ba
+  fn: cornice-1.2.1.tar.gz
+  url: https://pypi.python.org/packages/source/c/cornice/cornice-1.2.1.tar.gz
+  md5: b53eb7561148459659762b029efbd04c
 
 requirements:
   build:

@@ -1,11 +1,11 @@
 package:
   name: pygments
-  version: 2.1.1
+  version: 2.1.3
 
 source:
-  fn: Pygments-2.1.1.tar.gz
-  url: https://pypi.python.org/packages/source/P/Pygments/Pygments-2.1.1.tar.gz
-  md5: 0d2f8e74b8a0966bb434e5825682704b
+  fn: Pygments-2.1.3.tar.gz
+  url: https://pypi.python.org/packages/source/P/Pygments/Pygments-2.1.3.tar.gz
+  md5: ed3fba2467c8afcda4d317e4ef2c6150
 
 build:
   entry_points:
