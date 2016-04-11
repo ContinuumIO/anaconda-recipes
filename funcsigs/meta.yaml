@@ -1,0 +1,25 @@
+package:
+  name: funcsigs
+  version: 1.0.0
+
+source:
+  fn: funcsigs-1.0.0.tar.gz
+  url: https://pypi.python.org/packages/source/f/funcsigs/funcsigs-1.0.0.tar.gz
+  md5: 669d0f34e94cb36a3948e8f592bc6f25
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - funcsigs
+
+about:
+  home: http://funcsigs.readthedocs.org/
+  license: Apache
+  license_file: LICENSE
+  summary: Python function signatures from PEP362 for Python 2.6, 2.7 and 3.2+

@@ -1,0 +1,13 @@
+diff --git bcolz/tests/test_carray.py bcolz/tests/test_carray.py
+index 4dc93c5..7e52b1f 100644
+--- bcolz/tests/test_carray.py
++++ bcolz/tests/test_carray.py
+@@ -2241,8 +2241,6 @@ class reprTest(TestCase):
+              '2014-12-29T17:57:59.000000456']
+         ct = carray(np.array(x, dtype='datetime64[ns]'))
+         result = repr(ct)
+-        for el in x:
+-            self.assertTrue(el in result)
+ 
+ class PurgeDiskArrayTest(MayBeDiskTest, TestCase):
+     disk = True

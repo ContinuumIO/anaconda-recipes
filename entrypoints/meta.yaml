@@ -1,0 +1,23 @@
+package:
+  name: entrypoints
+  version: 0.2
+
+source:
+  git_url: https://github.com/takluyver/entrypoints.git
+  git_tag: 0.2
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - configparser
+
+test:
+  imports:
+    - entrypoints
+
+about:
+  home: https://github.com/takluyver/entrypoints
+  license: MIT
+  license_file: LICENSE

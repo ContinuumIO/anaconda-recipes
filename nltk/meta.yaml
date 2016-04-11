@@ -1,11 +1,11 @@
 package:
   name: nltk
-  version: "3.2"
+  version: 3.2.1
 
 source:
-  fn: nltk-3.2.tar.gz
-  url: https://pypi.python.org/packages/source/n/nltk/nltk-3.2.tar.gz
-  md5: cec19785ffd176fa6d18ef41a29eb227
+  fn: nltk-3.2.1.tar.gz
+  url: https://pypi.python.org/packages/source/n/nltk/nltk-3.2.1.tar.gz
+  md5: 27d84d2d11449d709ccd1deac18deb05
 
 requirements:
   build:

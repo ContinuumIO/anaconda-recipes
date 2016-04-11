@@ -1,0 +1,33 @@
+package:
+  name: bcolz
+  version: 1.0.0
+
+source:
+  fn: bcolz-1.0.0.tar.gz
+  url: https://pypi.python.org/packages/source/b/bcolz/bcolz-1.0.0.tar.gz
+  md5: 5cb296938db4f26ee28729db2dd6547b
+  patches:
+    - test.patch
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - setuptools_scm
+    - cython
+    - numpy
+  run:
+    - python
+    - numpy
+
+test:
+  requires:
+    - mock             [py >= 27]
+  imports:
+    - bcolz
+    - bcolz.carray_ext
+
+about:
+  home: https://github.com/Blosc/bcolz
+  license: BSD
+  summary: columnar and compressed data containers

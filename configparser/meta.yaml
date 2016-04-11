@@ -1,0 +1,25 @@
+package:
+  name: configparser
+  version: 3.5.0b2
+
+source:
+  fn: configparser-3.5.0b2.tar.gz
+  url: https://pypi.python.org/packages/source/c/configparser/configparser-3.5.0b2.tar.gz
+  md5: ad2a71db8bd9a017ed4735eac7acfa07
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - backports
+    - backports.configparser
+
+about:
+  home: http://docs.python.org/3/library/configparser.html
+  license: MIT
+  summary: brings the updated configparser from Python 3.5 to Python 2.6-3.5

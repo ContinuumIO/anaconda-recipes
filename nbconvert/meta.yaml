@@ -1,0 +1,32 @@
+package:
+  name: nbconvert
+  version: 4.2.0
+
+source:
+  fn: nbconvert-4.2.0.tar.gz
+  url: https://pypi.python.org/packages/source/n/nbconvert/nbconvert-4.2.0.tar.gz
+  md5: 710e356c4effcfddd29a3c10f1d8c3e6
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - mistune
+    - jinja2
+    - pygments
+    - traitlets
+    - jupyter_core
+    - nbformat
+    - entrypoints
+
+test:
+  commands:
+    - jupyter-nbconvert -h
+  imports:
+    - nbconvert
+
+about:
+  home: http://jupyter.org
+  license: BSD
+  summary: converts notebooks to various other formats via Jinja templates

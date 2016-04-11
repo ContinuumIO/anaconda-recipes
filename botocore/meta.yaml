@@ -1,11 +1,11 @@
 package:
   name: botocore
-  version: 1.4.9
+  version: 1.4.10
 
 source:
-  fn: botocore-1.4.9.tar.gz
-  url: https://pypi.python.org/packages/source/b/botocore/botocore-1.4.9.tar.gz
-  md5: c76235a42df66df90b70830f1b5db455
+  fn: botocore-1.4.10.tar.gz
+  url: https://pypi.python.org/packages/source/b/botocore/botocore-1.4.10.tar.gz
+  md5: 36e001f9e3a67d9336b9b4c90c3b5926
 
 requirements:
   build:
