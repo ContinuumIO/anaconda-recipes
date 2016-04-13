@@ -1,0 +1,26 @@
+package:
+  name: webob
+  version: 1.6.0
+
+source:
+  fn: WebOb-1.6.0.tar.gz
+  url: https://pypi.python.org/packages/source/W/WebOb/WebOb-1.6.0.tar.gz
+  md5: 089d7fc6745f175737800237c7287802
+  patches:
+    - setup.patch
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - webob
+
+about:
+  home: http://webob.org/
+  license: MIT
+  summary: WSGI request and response object

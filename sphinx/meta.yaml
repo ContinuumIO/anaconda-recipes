@@ -1,11 +1,11 @@
 package:
   name: sphinx
-  version: 1.3.5
+  version: 1.4.1
 
 source:
-  fn: Sphinx-1.3.5.tar.gz
-  url: https://pypi.python.org/packages/source/S/Sphinx/Sphinx-1.3.5.tar.gz
-  md5: 14bc6413d9863e36fd7204770bd6fcfe
+  fn: Sphinx-1.4.1.tar.gz
+  url: https://pypi.python.org/packages/source/S/Sphinx/Sphinx-1.4.1.tar.gz
+  md5: 4c4988e0306a04cef8dccc384281e585
 
 build:
   entry_points:
@@ -27,6 +27,7 @@ requirements:
     - babel
     - alabaster
     - sphinx_rtd_theme
+    - imagesize
     - colorama                      [win]
   run:
     - python
@@ -38,6 +39,7 @@ requirements:
     - babel >=1.3,!=2.0
     - alabaster >=0.7,<0.8
     - sphinx_rtd_theme >=0.1,<2.0
+    - imagesize
     - colorama >=0.3.5              [win]
 
 test:

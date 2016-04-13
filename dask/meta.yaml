@@ -1,11 +1,11 @@
 package:
   name: dask
-  version: 0.8.1
+  version: 0.8.2
 
 source:
-  fn: dask-0.8.1.tar.gz
-  url: https://pypi.python.org/packages/source/d/dask/dask-0.8.1.tar.gz
-  md5: 5dd8e3a3823b3bc62c9a6d192e2cb5b4
+  fn: dask-0.8.2.tar.gz
+  url: https://pypi.python.org/packages/source/d/dask/dask-0.8.2.tar.gz
+  md5: ef30c00d7941d0fb7fb36de32fb9eaec
 
 requirements:
   build:
@@ -24,10 +24,10 @@ requirements:
 
 test:
   imports:
-    - dask          [not win]
-    - dask.core     [not win]
-    - dask.array    [not win]
-    - dask.bag      [not win]
+    - dask
+    - dask.core
+    - dask.array
+    - dask.bag
 
 about:
   home: http://dask.pydata.org/en/latest/

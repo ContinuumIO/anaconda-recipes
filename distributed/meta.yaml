@@ -1,11 +1,11 @@
 package:
   name: distributed
-  version: 1.9.1
+  version: 1.9.2
 
 source:
-  fn: distributed-1.9.1.tar.gz
-  url: https://pypi.python.org/packages/source/d/distributed/distributed-1.9.1.tar.gz
-  md5: c59ebe21942ad35e8d8753410c786051
+  fn: distributed-1.9.2.tar.gz
+  url: https://pypi.python.org/packages/source/d/distributed/distributed-1.9.2.tar.gz
+  md5: 82a5d4c876eb7ee090394647f2bea735
 
 build:
   entry_points:
@@ -26,9 +26,11 @@ requirements:
     - dask
     - click
     - boto3
+    - s3fs
     - locket
     - six
     - tblib
+    - psutil
     - futures              [py < 30]
     - locket               [py < 30]
     - singledispatch       [py < 34]
@@ -37,16 +39,19 @@ requirements:
     - setuptools
     - tornado >=4.2
     - toolz
+    - msgpack-python
     - cloudpickle
     - dask
     - click
     - boto3
+    - s3fs
     - locket
     - six
     - tblib
+    - psutil
     - futures              [py < 30]
-    - locket
-    - singledispatch
+    - locket               [py < 30]
+    - singledispatch       [py < 34]
 
 test:
   commands:

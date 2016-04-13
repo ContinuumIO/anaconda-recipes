@@ -1,4 +1,5 @@
 #!/bin/bash
 
-mkdir $SP_DIR/backports
-touch $SP_DIR/backports/__init__.py
+BP=$SP_DIR/backports
+mkdir $BP
+cp $RECIPE_DIR/__init__.py $BP/

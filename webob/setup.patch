@@ -1,0 +1,13 @@
+diff --git setup.py setup.py
+index abb65c4..ca62480 100644
+--- setup.py
++++ setup.py
+@@ -51,7 +51,7 @@ You may install the `in-development version of WebOb
+     url='http://webob.org/',
+     license='MIT',
+     packages=['webob'],
+-    zip_safe=True,
++    zip_safe=False,
+     test_suite='nose.collector',
+     tests_require=['nose'],
+     extras_require = {

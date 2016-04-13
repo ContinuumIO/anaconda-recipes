@@ -1,11 +1,11 @@
 package:
   name: babel
-  version: 2.2.0
+  version: 2.3.3
 
 source:
-  fn: Babel-2.2.0.tar.gz
-  url: https://pypi.python.org/packages/source/B/Babel/Babel-2.2.0.tar.gz
-  md5: 1b69e4b2ab3795119266ccaa36b36f15
+  fn: Babel-2.3.3.tar.gz
+  url: https://pypi.python.org/packages/source/B/Babel/Babel-2.3.3.tar.gz
+  md5: 7385ea5b37005f4b2015f971044431f6
 
 build:
   entry_points:
@@ -22,11 +22,11 @@ requirements:
 
 test:
   commands:
-    - pybabel -h          [not (win and py3k)]
+    - pybabel -h
   imports:
     - babel
-    - babel.messages      [not (win and py3k)]
-    - babel.localtime     [not (win and py3k)]
+    - babel.messages
+    - babel.localtime
 
 about:
   home: http://babel.pocoo.org/

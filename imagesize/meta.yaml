@@ -1,0 +1,24 @@
+package:
+  name: imagesize
+  version: 0.7.0
+
+source:
+  fn: imagesize-0.7.0.tar.gz
+  url: https://pypi.python.org/packages/source/i/imagesize/imagesize-0.7.0.tar.gz
+  md5: 23cb4b0b5ec76fb26942d6cc0b1cf31c
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - imagesize
+
+about:
+  home: https://github.com/shibukawa/imagesize_py
+  license: MIT
+  summary: getting image size from png/jpeg/jpeg2000/gif file

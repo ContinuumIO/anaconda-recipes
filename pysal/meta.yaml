@@ -1,11 +1,11 @@
 package:
   name: pysal
-  version: 1.11.0
+  version: 1.11.1
 
 source:
-  fn: PySAL-1.11.0.tar.gz
-  url: https://pypi.python.org/packages/source/P/PySAL/PySAL-1.11.0.tar.gz
-  md5: d20bad4b1f1d2351f537ec916c573203
+  fn: PySAL-1.11.1.tar.gz
+  url: https://pypi.python.org/packages/source/P/PySAL/PySAL-1.11.1.tar.gz
+  md5: 4d8d066014605860167f673a070c5ed6
 
 requirements:
   build:
@@ -16,6 +16,7 @@ requirements:
     - python
     - numpy
     - scipy
+    - six
 
 test:
   imports:
@@ -26,4 +27,4 @@ about:
   license: 3-clause BSD
   license_family: BSD
   license_file: LICENSE.txt
-  summary: A library of spatial analysis functions.
+  summary: library of spatial analysis functions
