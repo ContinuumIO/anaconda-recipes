@@ -1,0 +1,34 @@
+package:
+  name: fabric
+  version: 1.11.1
+
+source:
+  fn: Fabric-1.11.1.tar.gz
+  url: https://pypi.python.org/packages/source/F/Fabric/Fabric-1.11.1.tar.gz
+  md5: e9ec969802d3e9427111ffc5c3ea142c
+
+build:
+  entry_points:
+    - fab = fabric.main:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - paramiko
+  run:
+    - python
+    - paramiko >=1.10,<2.0
+
+test:
+  commands:
+    - fab --help
+  imports:
+    - fabric
+    - fabric.api
+
+about:
+  home: http://fabfile.org
+  license: BSD
+  license_file: LICENSE
+  summary: Fabric is a simple, Pythonic tool for remote execution and deployment

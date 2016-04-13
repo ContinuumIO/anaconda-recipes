@@ -1,0 +1,28 @@
+package:
+  name: ssl_match_hostname
+  version: 3.4.0.2
+
+source:
+  fn: backports.ssl_match_hostname-3.4.0.2.tar.gz
+  url: https://pypi.python.org/packages/source/b/backports.ssl_match_hostname/backports.ssl_match_hostname-3.4.0.2.tar.gz
+  md5: 788214f20214c64631f0859dc79f23c6
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - backports
+
+test:
+  imports:
+    - backports.ssl_match_hostname
+
+about:
+  home: http://bitbucket.org/brandon/backports.ssl_match_hostname
+  license: PSF
+  summary: The ssl.match_hostname() function from Python 3.4

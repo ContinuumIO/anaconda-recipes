@@ -1,11 +1,11 @@
 package:
   name: twisted
-  version: 16.1.0
+  version: 16.1.1
 
 source:
-  fn: Twisted-16.1.0.tar.bz2
-  url: https://pypi.python.org/packages/source/T/Twisted/Twisted-16.1.0.tar.bz2
-  md5: 30c68dc16dab90fc8eba6f3fc5de6611
+  fn: Twisted-16.1.1.tar.bz2
+  url: https://pypi.python.org/packages/source/T/Twisted/Twisted-16.1.1.tar.bz2
+  md5: 266a085f5ce3fbc060818bd00bd6a888
 
 requirements:
   build:

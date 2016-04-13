@@ -1,11 +1,11 @@
 package:
   name: paramiko
-  version: 1.15.3
+  version: 1.16.0
 
 source:
-  fn: paramiko-1.15.3.tar.gz
-  url: https://pypi.python.org/packages/source/p/paramiko/paramiko-1.15.3.tar.gz
-  md5: c959088669f8d951585aa6abc25c8ef6
+  fn: paramiko-1.16.0.tar.gz
+  url: https://pypi.python.org/packages/source/p/paramiko/paramiko-1.16.0.tar.gz
+  md5: 7e1203f5ffeb7d2bc2bffc4feb804216
 
 requirements:
   build:
@@ -13,7 +13,7 @@ requirements:
   run:
     - python
     - pycrypto
-    - ecdsa
+    - ecdsa >=0.11
 
 test:
   imports:

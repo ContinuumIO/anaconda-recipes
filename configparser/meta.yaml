@@ -7,12 +7,16 @@ source:
   url: https://pypi.python.org/packages/source/c/configparser/configparser-3.5.0b2.tar.gz
   md5: ad2a71db8bd9a017ed4735eac7acfa07
 
+build:
+  number: 1
+
 requirements:
   build:
     - python
     - setuptools
   run:
     - python
+    - backports
 
 test:
   imports:

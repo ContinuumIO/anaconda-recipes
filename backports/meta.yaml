@@ -1,0 +1,16 @@
+package:
+  name: backports
+  version: 1.0
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - backports
+
+about:
+  license: BSD

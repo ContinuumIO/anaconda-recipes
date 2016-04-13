@@ -1,0 +1,26 @@
+package:
+  name: w3lib
+  version: 1.14.2
+
+source:
+  fn: w3lib-1.14.2.tar.gz
+  url: https://pypi.python.org/packages/source/w/w3lib/w3lib-1.14.2.tar.gz
+  md5: 6d1df7b8998fcb68a516da83983b5b98
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - six
+  run:
+    - python
+    - six
+
+test:
+  imports:
+    - w3lib
+
+about:
+  home: https://github.com/scrapy/w3lib
+  license: BSD
+  summary: Library of web-related functions
