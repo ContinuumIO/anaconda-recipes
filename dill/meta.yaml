@@ -1,0 +1,25 @@
+package:
+  name: dill
+  version: 0.2.5
+
+source:
+  fn: dill-0.2.5.tgz
+  url: https://pypi.python.org/packages/source/d/dill/dill-0.2.5.tgz
+  md5: 5b0c312f034914be2e230457747d9b6c
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - dill
+
+about:
+  home: http://www.cacr.caltech.edu/~mmckerns/dill.htm
+  license: 3-clause BSD
+  license_family: BSD
+  license_file: LICENSE
+  summary: Serialize all of python (almost)

@@ -1,0 +1,28 @@
+package:
+  name: requests-file
+  version: 1.4
+
+source:
+  fn: requests-file-1.4.tar.gz
+  url: https://pypi.python.org/packages/source/r/requests-file/requests-file-1.4.tar.gz
+  md5: fe475905d26986ee5fe77d9bcae3efcb
+
+requirements:
+  build:
+    - python
+    - requests
+    - six
+  run:
+    - python
+    - requests
+    - six
+
+test:
+  imports:
+    - requests_file
+
+about:
+  home: http://github.com/dashea/requests-file
+  license: Apache
+  license_file: LICENSE
+  summary: file transport adapter for Requests

@@ -1,10 +1,11 @@
 package:
   name: libffi
-  version: 3.0.13
+  version: 3.2.1
 
 source:
-  git_url: https://github.com/atgreen/libffi.git
-  git_tag: v3.0.13
+  fn: libffi-3.2.1.tar.gz
+  url: ftp://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz
+  md5: 83b89587607e3eb65c70d361f13bab43
 
 build:
   features:
@@ -21,4 +22,4 @@ about:
   home: https://github.com/atgreen/libffi
   license: MIT
   license_file: LICENSE
-  summary: A portable foreign-function interface library
+  summary: portable foreign-function interface library

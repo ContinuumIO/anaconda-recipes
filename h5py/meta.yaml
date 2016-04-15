@@ -1,0 +1,33 @@
+package:
+  name: h5py
+  version: 2.6.0
+
+source:
+  git_url: https://github.com/h5py/h5py.git
+  git_tag: 2.6.0
+  patches:
+    - hdf5_win.patch      [win]
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy x.x
+    - hdf5  1.8.*
+    - cython >=0.19
+    - pkgconfig
+    - six
+  run:
+    - python
+    - numpy x.x
+    - six
+    - hdf5 1.8.*
+
+about:
+  home: http://code.google.com/p/h5py/
+  license: 3-clause BSD (http://opensource.org/licenses/bsd-license.php)
+  license_family: BSD
+  summary: read and write HDF5 files from Python
