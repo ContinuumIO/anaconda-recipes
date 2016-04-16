@@ -18,7 +18,12 @@ test:
     - colorama
 
 about:
-  home: http://code.google.com/p/colorama/
+  home: https://github.com/tartley/colorama
   license: BSD
   license_file: LICENSE.txt
-  summary: Cross-platform colored terminal text.
+  summary: Cross-platform colored terminal text in Python
+  description: |
+    Makes ANSI escape character sequences (for producing colored terminal
+    text and cursor positioning) work under MS Windows.
+  doc_url: http://pypi.python.org/pypi/colorama
+  dev_url: https://github.com/tartley/colorama

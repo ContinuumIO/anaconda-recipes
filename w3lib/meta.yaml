@@ -24,3 +24,5 @@ about:
   home: https://github.com/scrapy/w3lib
   license: BSD
   summary: Library of web-related functions
+  doc_url: http://w3lib.readthedocs.org/en/latest/
+  dev_url: https://github.com/scrapy/w3lib

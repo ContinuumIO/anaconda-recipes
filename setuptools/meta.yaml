@@ -32,4 +32,9 @@ about:
   home: https://pypi.python.org/pypi/setuptools
   license: PSF or ZPL
   license_family: PSF
-  summary: Easily download, build, install, upgrade, and uninstall Python packages
+  summary: Download, build, install, upgrade, and uninstall Python packages
+  description: |
+    Setuptools is a fully-featured, actively-maintained, and stable library
+    designed to facilitate packaging Python projects.
+  doc_url: http://pythonhosted.org/setuptools/
+  dev_url: https://github.com/pypa/setuptools

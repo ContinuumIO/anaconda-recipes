@@ -18,3 +18,9 @@ about:
   license: MIT
   license_file: LICENSE.txt
   summary: pure Python COM package
+  description: |
+    comtypes is a pure Python COM package based on the ctypes ffi foreign
+    function library. The comtypes package makes it easy to access and
+    implement both custom and dispatch based COM interfaces.
+  doc_url: http://starship.python.net/crew/theller/comtypes/
+  dev_url: https://sourceforge.net/projects/comtypes/

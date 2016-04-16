@@ -21,4 +21,14 @@ about:
   home: http://github.com/teradata/PyTd
   license: MIT
   license_file: LICENSE.txt
-  summary: Teradata python module for DevOps enabled SQL scripting for Teradata UDA
+  summary: Script powerful interactions with Teradata Database
+  description: |
+    The Teradata Python Module is a freely available, open source, library for
+    the Python programming language, whose aim is to make it easy to script
+    powerful interactions with Teradata Database. It adopts the philosophy of
+    udaSQL, providing a DevOps focused SQL Execution Engine that allows
+    developers to focus on their SQL and procedural logic without worrying
+    about Operational requirements such as external configuration, query
+    banding, and logging.
+  doc_url: https://developer.teradata.com/tools/reference/teradata-python-module
+  dev_url: https://github.com/teradata/PyTd

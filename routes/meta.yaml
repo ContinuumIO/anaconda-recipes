@@ -27,3 +27,10 @@ about:
   license: MIT
   license_file: LICENSE.txt
   summary: Routing Recognition and Generation Tools
+  description: |
+    Routes is a Python re-implementation of the Rails routes system for
+    mapping URL's to Controllers/Actions and generating URL's. Routes makes
+    it easy to create pretty and concise URL's that are RESTful with little
+    effort.
+  doc_url: https://routes.readthedocs.org/en/latest/
+  dev_url: https://github.com/bbangert/routes

@@ -24,4 +24,6 @@ test:
 about:
   home: https://github.com/steeve/python-lz4
   license: BSD
-  summary: LZ4 Bindings for Python
+  summary: Bindings for the lz4 compression library
+  doc_url: https://pypi.python.org/pypi/lz4
+  dev_url: https://github.com/steeve/python-lz4

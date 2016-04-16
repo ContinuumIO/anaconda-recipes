@@ -27,3 +27,10 @@ about:
   license: BSD
   license_file: LICENSE.txt
   summary: A Python mocking and patching library for testing
+  description: |
+    mock is a library for testing in Python. It allows you to replace parts of
+    your system under test with mock objects and make assertions about how they
+    have been used.
+  doc_url: https://docs.python.org/dev/library/unittest.mock.html
+  dev_url: https://github.com/testing-cabal/mock
+

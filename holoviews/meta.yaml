@@ -30,4 +30,10 @@ about:
   home: http://holoviews.org/
   license: BSD
   license_file: LICENSE.txt
-  summary: composable, declarative data structures for building complex visualizations
+  summary: Analyze and visualize scientific or engineering data
+  description: |
+    HoloViews is a Python library that makes analyzing and visualizing
+    scientific or engineering data much simpler, more intuitive, and more
+    easily reproducible.
+  doc_url: http://holoviews.org/
+  dev_url: https://github.com/ioam/holoviews

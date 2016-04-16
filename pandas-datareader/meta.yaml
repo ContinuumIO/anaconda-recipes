@@ -33,3 +33,8 @@ about:
   license: BSD
   license_file: LICENSE.md
   summary: data readers extracted from the pandas codebase
+  description: |
+    Up to date remote data access for pandas, works for multiple versions
+    of pandas.
+  doc_url: http://pandas-datareader.readthedocs.org/en/latest/
+  dev_url: https://github.com/pydata/pandas-datareader

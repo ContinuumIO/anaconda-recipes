@@ -42,3 +42,8 @@ about:
   license: GPL3
   license_file: LICENSE
   summary: component-based data mining framework
+  description: |
+    Open source data visualization and data analysis for novice and expert.
+    Interactive workflows with a large toolbox.
+  doc_url: http://orange.biolab.si/docs/
+  dev_url: https://github.com/biolab/orange

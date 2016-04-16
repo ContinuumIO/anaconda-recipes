@@ -30,3 +30,9 @@ about:
   home: http://jupyter.org
   license: BSD
   summary: converts notebooks to various other formats via Jinja templates
+  description: |
+    The nbconvert tool, jupyter nbconvert, converts notebooks to various other
+    formats via Jinja templates. The nbconvert tool allows you to convert an
+    .ipynb notebook file into various static formats.
+  doc_url: http://nbconvert.readthedocs.org/
+  dev_url: https://github.com/jupyter/nbconvert

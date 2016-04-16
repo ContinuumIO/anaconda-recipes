@@ -21,6 +21,12 @@ test:
     - traitlets.traitlets
 
 about:
-  home: http://ipython.org/
+  home: https://github.com/ipython/traitlets
   license: BSD
-  summary: configuration system for Python applications
+  summary: Configuration system for Python applications
+  description: |
+    Traitlets is a framework that lets Python classes have attributes with
+    type checking, dynamically calculated default values, and "on change"
+    callbacks.
+  doc_url: http://traitlets.readthedocs.org/en/stable/
+  dev_url: https://github.com/ipython/traitlets

@@ -21,4 +21,9 @@ about:
   home: https://github.com/shibukawa/snowball_py
   license: BSD
   license_file: LICENSE.rst
-  summary: provides 16 stemmer algorithms generated from Snowball algorithms
+  summary: Snowball stemming library collection for Python
+  description: |
+    Snowball stemmer provides 16 stemmer algorithms generated from
+    Snowball algorithms.
+  doc_url: https://pypi.python.org/pypi/snowballstemmer
+  dev_url: https://github.com/shibukawa/snowball_py

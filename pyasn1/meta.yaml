@@ -18,7 +18,12 @@ test:
     - pyasn1
 
 about:
-  home: http://sourceforge.net/projects/pyasn1/
+  home: http://pyasn1.sourceforge.net/
   license: BSD
   license_file: LICENSE.txt
   summary: Offline IP address to Autonomous System Number lookup module
+  description: |
+    ASN.1 types and codecs (BER, CER, DER) implementation in Python programming
+    language.
+  doc_url: http://pyasn1.sourceforge.net/
+  dev_url: https://github.com/etingof/pyasn1

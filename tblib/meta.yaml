@@ -22,4 +22,10 @@ about:
   home: https://github.com/ionelmc/python-tblib
   license: BSD
   license_file: LICENSE
-  summary: braceback fiddling library for Python
+  summary: Traceback fiddling library for Python
+  description: |
+    A traceback serialization library allowing you to Pickle tracebacks and
+    raise exceptions with pickled tracebacks in different processes. This
+    allows better error handling when running code over multiple processes.
+  doc_url: https://readthedocs.org/projects/python-tblib/
+  dev_url: https://github.com/ionelmc/python-tblib

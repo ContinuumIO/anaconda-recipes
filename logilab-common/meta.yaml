@@ -27,4 +27,11 @@ about:
   home: http://www.logilab.org/project/logilab-common
   license: LGPL
   license_file: COPYING
-  summary: collection of low-level Python packages and modules used by Logilab projects
+  summary: collection of Python packages and modules used by Logilab projects
+  description: |
+    This package contains some modules used by different Logilab projects.
+    It is designed to ease handling command line options and configuration
+    files, writing interactive command line tools, manipulation of files and
+    character strings, and more.
+  doc_url: https://www.logilab.org/project/logilab-common
+  dev_url: http://hg.logilab.org/review/logilab/common/

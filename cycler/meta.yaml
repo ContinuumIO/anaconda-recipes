@@ -25,3 +25,7 @@ about:
   license: BSD
   license_file: LICENSE
   summary: Composable style cycles
+  description: |
+    Cycler is a package used to create composable style cycles.
+  doc_url: http://matplotlib.org/cycler/
+  dev_url: https://github.com/matplotlib/cycler

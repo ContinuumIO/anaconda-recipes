@@ -26,3 +26,6 @@ about:
   home: http://bitbucket.org/brandon/backports.ssl_match_hostname
   license: PSF
   summary: The ssl.match_hostname() function from Python 3.4
+  doc_url: https://pypi.python.org/pypi/backports.ssl_match_hostname
+  dev_url: http://bitbucket.org/brandon/backports.ssl_match_hostname
+

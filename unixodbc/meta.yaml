@@ -13,3 +13,7 @@ about:
   license_family: LGPL
   license_file: COPYING
   summary: ODBC (Open Database Connectivity) implementation for Unix
+  description: |
+    The unixODBC Project goals are to develop and promote unixODBC to be the
+    definitive standard for ODBC on non MS Windows platforms. This is to
+    include GUI support for both KDE and GNOME.

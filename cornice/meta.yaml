@@ -26,8 +26,14 @@ test:
     - cornice
 
 about:
-  home: https://github.com/mozilla-services/cornice
+  home: http://cornice.readthedocs.org/
   license: MPL 2.0
   license_family: Other
   license_file: LICENSE
-  summary: define Web Services in Pyramid
+  summary: build and document Web Services with Pyramid
+  description: |
+    Cornice provides helpers to build & document REST-ish Web Services with
+    Pyramid, with decent default behaviors. It takes care of following the
+    HTTP specification in an automated way where possible.
+  doc_url: http://cornice.readthedocs.org
+  dev_url: https://github.com/mozilla-services/cornice

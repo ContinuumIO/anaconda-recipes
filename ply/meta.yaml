@@ -20,4 +20,9 @@ test:
 about:
   home: http://www.dabeaz.com/ply/
   license: BSD
-  summary: Python Lex & Yacc
+  summary: Implementation of Lex and Yacc
+  description: |
+    In a nutshell, PLY is nothing more than a straightforward lex/yacc
+    implementation.
+  doc_url: http://www.dabeaz.com/ply
+  dev_url: https://github.com/dabeaz/ply

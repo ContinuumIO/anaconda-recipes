@@ -25,4 +25,10 @@ test:
 about:
   home: http://openpyxl.readthedocs.org
   license: MIT
-  summary: A Python library to read/write Excel 2007 xlsx/xlsm files
+  summary: A Python library to read/write Excel 2010 xlsx/xlsm files
+  description: |
+    Openpyxl is a Python library for reading and writing Excel 2010
+    xlsx/xlsm/xltx/xltm files. It was born from lack of existing library to
+    read/write natively from Python the Office Open XML format.
+  doc_url: http://openpyxl.readthedocs.org
+  dev_url: https://bitbucket.org/openpyxl/openpyxl/src

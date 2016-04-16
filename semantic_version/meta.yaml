@@ -23,3 +23,7 @@ about:
   license: BSD
   license_file: LICENSE
   summary: A library implementing the 'SemVer' scheme.
+  description: |
+    This small python library provides a few tools to handle SemVer in Python.
+  doc_url: https://python-semanticversion.readthedocs.org/en/latest/
+  dev_url: https://github.com/rbarrois/python-semanticversion

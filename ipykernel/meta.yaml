@@ -25,3 +25,5 @@ about:
   home: http://ipython.org
   license: BSD
   summary: IPython Kernel for Jupyter
+  doc_url: http://ipython.readthedocs.org/
+  dev_url: https://github.com/ipython/ipython

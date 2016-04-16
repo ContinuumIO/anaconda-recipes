@@ -28,6 +28,12 @@ test:
     - bcolz.carray_ext
 
 about:
-  home: https://github.com/Blosc/bcolz
+  home: http://bcolz.blosc.org/
   license: BSD
-  summary: columnar and compressed data containers
+  summary: provides columnar, chunked and compressable data containers.
+  description: |
+    bcolz provides columnar, chunked data containers that can be
+    compressed in-memory or on-disk. It is based in NumPy but also comes with
+    support for HDF5/PyTables tables and Pandas dataframes.
+  doc_url: http://bcolz.blosc.org/
+  dev_url: https://github.com/Blosc/bcolz

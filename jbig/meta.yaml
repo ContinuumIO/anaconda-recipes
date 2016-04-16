@@ -15,4 +15,9 @@ source:
 about:
   home: https://www.cl.cam.ac.uk/~mgk25/jbigkit
   license: GPL2
-  summary: implementation of the JBIG1 data compression standard
+  summary: Implementation of the JBIG1 data compression standard
+  description: |
+    JBIG-KIT provides a portable library of compression and decompression
+    functions with a documented interface that you can include very easily
+    into your image or document processing software.
+  dev_url: https://www.cl.cam.ac.uk/~mgk25/git/jbigkit/

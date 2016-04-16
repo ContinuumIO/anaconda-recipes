@@ -22,4 +22,13 @@ about:
   home: http://nltk.org/
   license: Apache
   license_file: LICENSE.txt
-  summary: Natural Language Toolkit
+  summary: Build Python programs to work with human language data
+  description: |
+    NLTK is a leading platform for building Python programs to work with human
+    language data. It provides easy-to-use interfaces to over 50 corpora and
+    lexical resources such as WordNet, along with a suite of text processing
+    libraries for classification, tokenization, stemming, tagging, parsing,
+    and semantic reasoning, wrappers for industrial-strength NLP libraries,
+    and an active discussion forum.
+  doc_url: http://www.nltk.org/
+  dev_url: https://github.com/nltk/nltk

@@ -23,4 +23,9 @@ test:
 about:
   home: http://www.quandl.com/
   license: MIT
-  summary: Package for Quandl API access
+  summary: High quality financial and economic data
+  description: |
+    Quandl helps data analysts save time, effort and money by delivering
+    high-quality financial and economic data in the precise format they need.
+  doc_url: https://www.quandl.com/docs/api
+  dev_url: https://github.com/quandl

@@ -33,4 +33,9 @@ about:
   license: 3-clause BSD
   license_family: BSD
   license_file: LICENSE.txt
-  summary: Make Excel fly. Interact with Excel from Python and vice versa
+  summary: Interact with Excel from Python and vice versa
+  description: |
+     Replace your VBA code with Python, a powerful yet easy-to-use programming
+     language that is highly suited for numerical analysis.
+  doc_url: http://docs.xlwings.org/en/stable/index.html
+  dev_url: https://github.com/ZoomerAnalytics/xlwings

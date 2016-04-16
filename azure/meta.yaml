@@ -28,4 +28,9 @@ about:
   license: Apache License 2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: easy to access the Microsoft Azure components
+  summary: Microsoft Azure SDK for Python
+  description: |
+   Azure provides Python packages that make it easy to access Microsoft
+   Azure components.
+  doc_url: https://azure.microsoft.com/en-us/documentation
+  dev_url: https://github.com/Azure

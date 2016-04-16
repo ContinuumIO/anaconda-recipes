@@ -31,7 +31,9 @@ test:
     - pip
 
 about:
-  home: http://www.pip-installer.org/
+  home: https://pip.pypa.io/en/stable/
   license: MIT
   license_file: LICENSE.txt
   summary: PyPA recommended tool for installing Python packages
+  doc_url: https://pip.pypa.io/en/stable/
+  dev_url: https://github.com/pypa/pip

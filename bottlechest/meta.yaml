@@ -25,4 +25,9 @@ about:
   home: https://github.com/biolab/bottlechest
   license: BSD
   license_file: bottlechest/LICENSE
-  summary: fast NumPy array functions written in Cython
+  summary: fast NumPy array functions specialized for use in Orange
+  description: |
+    Bottlechest is a fork of Bottleneck, a collection of fast NumPy array
+    functions written in Cython. It is specialized for use in Orange.
+  doc_url: https://pypi.python.org/pypi/Bottlechest
+  dev_url: https://github.com/biolab/bottlechest

@@ -25,3 +25,9 @@ about:
   home: https://github.com/boto/boto/
   license: MIT
   summary: Amazon Web Services Library
+  description: |
+    Boto aims to support the full breadth and depth of Amazon Web Services.
+    NOTE: Boto3, the next version of Boto, is stable and recommended for
+    general use.
+  doc_url: http://docs.pythonboto.org/
+  dev_url: https://github.com/boto/boto/

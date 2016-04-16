@@ -37,4 +37,10 @@ test:
 about:
   home: http://www.unidata.ucar.edu/software/netcdf/
   license: MIT
-  summary: libraries and data formats that support array-oriented scientific data
+  summary: Support for array-oriented scientific data
+  description: |
+    NetCDF is a set of software libraries and self-describing, machine-
+    independent data formats that support the creation, access, and sharing
+    of array-oriented scientific data.
+  doc_url: http://www.unidata.ucar.edu/software/netcdf/docs/
+  dev_url: http://www.unidata.ucar.edu/software/netcdf/#developers

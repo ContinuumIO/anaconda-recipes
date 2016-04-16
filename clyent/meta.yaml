@@ -19,6 +19,11 @@ test:
     - clyent
 
 about:
-  home: https://github.com/binstar/clyent
+  home: https://github.com/Anaconda-Server/clyent
   license: BSD
-  summary: Command line client Library for windows and posix
+  summary: Command line client library for windows and posix
+  description: |
+    Clyent is a python command line utility library for binstar,
+    binstar-build, and chalmers.
+  doc_url: https://pypi.python.org/pypi/clyent
+  dev_url: https://github.com/Anaconda-Server/clyent

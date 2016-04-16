@@ -31,4 +31,9 @@ test:
 about:
   home: https://github.com/piskvorky/smart_open
   license: MIT
-  summary: utils for streaming large files (S3, HDFS, gzip, bz2...)
+  summary: Utils for streaming large files
+  description: |
+    smart_open is a Python 2 & Python 3 library for efficient streaming of
+    very large files from/to S3, HDFS, WebHDFS or local (compressed) files.
+  doc_url: https://pypi.python.org/pypi/smart_open
+  dev_url: https://github.com/piskvorky/smart_open

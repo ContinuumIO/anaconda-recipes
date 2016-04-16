@@ -26,3 +26,11 @@ about:
   license: BSD
   license_file: LICENSE.txt
   summary: The ReportLab Toolkit
+  description: |
+    The ReportLab toolkit is a collection of open source Python language
+    modules organised and supported by ReportLab. The modules are primarily
+    concerned with automating methods for generating Portable Document Format
+    (PDF) files, but there is also a cross-platform vector graphics library
+    able to generate bitmap and vector charts and drawings.
+  doc_url: http://www.reportlab.com/documentation/
+  dev_url: https://bitbucket.org/rptlab/reportlab

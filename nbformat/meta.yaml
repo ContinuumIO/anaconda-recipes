@@ -26,4 +26,9 @@ test:
 about:
   home: http://jupyter.org
   license: BSD
-  summary: the base implementation of the Jupyter Notebook format
+  summary: The reference implementation of the Jupyter Notebook format
+  description: |
+    nbformat contains the reference implementation of the Jupyter Notebook
+    format, and Python APIs for working with notebooks.
+  doc_url: http://nbformat.readthedocs.org
+  dev_url: https://github.com/jupyter/nbformat

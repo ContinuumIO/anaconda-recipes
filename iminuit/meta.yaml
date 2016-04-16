@@ -19,8 +19,14 @@ test:
     - iminuit._libiminuit
 
 about:
-  home: http://iminuit.github.io/iminuit/
+  home: https://github.com/iminuit/iminuit
   license: GNU General Public License (GPL) or MIT License
   license_family: GPL2
   license_file: LICENSE
   summary: Interactive Minimization Tools based on MINUIT
+  description: |
+    iminuit is an interactive IPython-friendly mimizer based on SEAL Minuit.
+    iminuit is designed from ground up to be fast, interactive and cython
+    friendly.
+  doc_url: http://iminuit.readthedocs.org/
+  dev_url: https://github.com/iminuit/iminuit

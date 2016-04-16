@@ -33,7 +33,12 @@ test:
     - binstar_build_client
 
 about:
-  home: https://github.com/Anaconda-Server/binstar-build
+  home: https://github.com/Anaconda-Server/anaconda-build
   license: proprietary - Continuum Analytics, Inc.
   license_family: Proprietary
   summary: Anaconda build client library
+  description: |
+    Anaconda Build is a command line client that provides an
+    interface to the Anaconda Cloud build system.
+  doc_url: https://anaconda.org/anaconda/anaconda-build
+  dev_url: https://github.com/Anaconda-Server/anaconda-build

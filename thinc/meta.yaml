@@ -32,4 +32,8 @@ about:
   home: http://github.com/syllog1sm/thinc
   license: Commercial, GPLv2
   license_family: GPL2
-  summary: Learn sparse linear models
+  summary: Super sparse multi-class machine learning
+  description: |
+    thinc is a Cython library for learning models with millions of parameters
+    and dozens of classes.
+  dev_url: https://github.com/syllog1sm/thinc

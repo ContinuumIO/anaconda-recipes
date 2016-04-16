@@ -21,4 +21,10 @@ about:
   home: http://semanchuk.com/philip/posix_ipc/
   license: BSD
   license_file: LICENSE
-  summary: POSIX IPC primitives (semaphores, shared memory and message queues) for Python
+  summary: POSIX IPC for Python
+  description: |
+    The Python extension module posix_ipc gives Python access to POSIX
+    inter-process semaphores, shared memory and message queues on systems that
+    support the POSIX Realtime Extensions.
+  doc_url: http://semanchuk.com/philip/posix_ipc/
+  dev_url: https://bitbucket.org/philip_semanchuk/posix_ipc

@@ -26,3 +26,10 @@ about:
   license_family: Apache
   license_file: LICENSE
   summary: Python HDFS client
+  description: |
+    Snakebite is a python library that provides a pure python HDFS client and
+    a wrapper around Hadoops minicluster. The client uses protobuf for
+    communicating with the NameNode and comes in the form of a library and a
+    command line interface.
+  doc_url: http://snakebite.readthedocs.org/en/latest/
+  dev_url: https://github.com/spotify/snakebite

@@ -22,4 +22,12 @@ about:
   home: http://www.lighttpd.net/
   license: BSD
   license_file: COPYING
-  summary: light web server (httpd)
+  summary: Light, fast web server
+  description: |
+    Lighttpd is rapidly redefining the efficiency of a webserver. It is
+    designed and optimized for high performance environments. With a small
+    memory footprint compared to other web-servers, effective management of
+    the cpu-load, and an advanced feature set, lighttpd is the perfect
+    solution for every server that is suffering load problems.
+  doc_url: http://redmine.lighttpd.net/projects/lighttpd/wiki
+  dev_url: https://github.com/lighttpd

@@ -22,3 +22,10 @@ about:
   license: MIT
   license_file: LICENSE
   summary: Python 2 and 3 compatibility utilities
+  description: |
+    Six provides simple utilities for wrapping over differences between
+    Python 2 and Python 3. It is intended to support codebases that work on
+    both Python 2 and 3 without modification. six consists of only one Python
+    file, so it is painless to copy into a project.
+  doc_url: http://pythonhosted.org/six/
+  dev_url: https://bitbucket.org/gutworth/six

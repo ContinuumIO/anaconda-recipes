@@ -22,3 +22,10 @@ about:
   license: BSD
   license_file: LICENSE.txt
   summary: A Python module for creating Excel XLSX files
+  description: |
+    XlsxWriter is a Python module for writing files in the Excel 2007+ XLSX
+    file format. XlsxWriter can be used to write text, numbers, formulas and
+    hyperlinks to multiple worksheets and it supports features such as
+    formatting and more.
+  doc_url: https://xlsxwriter.readthedocs.org/
+  dev_url: https://github.com/jmcnamara/XlsxWriter

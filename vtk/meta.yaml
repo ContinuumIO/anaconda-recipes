@@ -38,4 +38,11 @@ test:
 about:
   home: http://www.vtk.org/
   license: BSD
-  summary: VTK is an open-source, freely available software system for 3D computer graphics
+  summary: 3D computer graphics, image processing, and visualization
+  description: |
+    The Visualization Toolkit (VTK) is an open-source, freely available
+    software system for 3D computer graphics, image processing, and
+    visualization. It consists of a C++ class library and several interpreted
+    interface layers including Tcl/Tk, Java, and Python.
+  doc_url: http://www.vtk.org/documentation/
+  dev_url: https://gitlab.kitware.com/vtk/vtk

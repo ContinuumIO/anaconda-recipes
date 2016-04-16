@@ -26,3 +26,9 @@ about:
   home: http://jupyter.org
   license: BSD
   summary: Jupyter protocol implementation and client libraries
+  description: |
+    jupyter_client contains the reference implementation of the Jupyter
+    protocol. It also provides client and kernel management APIs for working
+    with kernels.
+  doc_url: http://jupyter-client.readthedocs.org/
+  dev_url: https://github.com/jupyter/jupyter_client

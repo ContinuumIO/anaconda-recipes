@@ -23,4 +23,6 @@ about:
   home: https://github.com/ionelmc/python-lazy-object-proxy
   license: BSD
   license_file: LICENSE
-  summary: fast and thorough lazy object proxy
+  summary: Fast and thorough lazy object proxy
+  doc_url: https://python-lazy-object-proxy.readthedocs.org
+  dev_url: https://github.com/ionelmc/python-lazy-object-proxy

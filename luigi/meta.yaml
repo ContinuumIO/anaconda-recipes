@@ -43,4 +43,11 @@ about:
   license: Apache Software License
   license_family: Apache
   license_file: LICENSE
-  summary: workflow mgmgt + task scheduling + dependency resolution
+  summary: Build complex pipelines of batch jobs
+  description: |
+    Luigi is a Python module that helps you build complex pipelines of batch
+    jobs. It handles dependency resolution, workflow management, visualization,
+    handling failures, command line integration, and much more. It also comes
+    with Hadoop support built in.
+  doc_url: http://luigi.readthedocs.org/
+  dev_url: https://github.com/spotify/luigi

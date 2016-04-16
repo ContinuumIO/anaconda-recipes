@@ -27,4 +27,9 @@ about:
   home: http://twistedmatrix.com/
   license: MIT
   license_file: LICENSE
-  summary: event-driven networking engine for Python
+  summary: Event-driven networking engine
+  description: |
+    Twisted is an event-based framework for internet applications, supporting
+    Python 2.7 and Python 3.3+. It includes modules for many different purposes.
+  doc_url: http://twistedmatrix.com/documents/current/
+  dev_url: https://github.com/twisted/twisted

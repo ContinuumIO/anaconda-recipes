@@ -18,7 +18,13 @@ test:
     - greenlet
 
 about:
-  home: http://pypi.python.org/pypi/greenlet/
+  home: https://github.com/python-greenlet/greenlet
   license: MIT
   license_file: LICENSE
-  summary: lightweight in-process concurrent programming
+  summary: Lightweight in-process concurrent programming
+  description: |
+    A "greenlet" is a still more primitive notion of micro-thread with no
+    implicit scheduling; coroutines, in other words. This is useful when you
+    want to control exactly when your code runs.
+  doc_url: http://greenlet.readthedocs.org/en/latest/
+  dev_url: https://github.com/python-greenlet/greenlet

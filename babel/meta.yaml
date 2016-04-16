@@ -32,4 +32,10 @@ about:
   home: http://babel.pocoo.org/
   license: BSD
   license_file: LICENSE
-  summary: Internationalization utilities
+  summary: Utilities to internationalize and localize Python applications
+  description: |
+    Babel is an integrated collection of utilities that assist in
+    internationalizing and localizing Python applications, with an emphasis
+    on web-base applications.
+  doc_url: http://babel.pocoo.org/en/latest/#user-documentation
+  dev_url: https://github.com/python-babel/babel

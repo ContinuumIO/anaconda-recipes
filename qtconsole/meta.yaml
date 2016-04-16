@@ -33,3 +33,12 @@ about:
   home: http://jupyter.org
   license: BSD
   summary: Jupyter Qt Console
+  description: |
+    A rich Qt-based console for working with Jupyter kernels, supporting rich
+    media output, session export, and more. The Qt console is a very
+    lightweight application that largely feels like a terminal, but provides
+    a number of enhancements only possible in a GUI, such as inline figures,
+    proper multiline editing with syntax highlighting, graphical calltips, and
+    more.
+  doc_url: https://qtconsole.readthedocs.org/en/stable/
+  dev_url: https://github.com/jupyter/qtconsole

@@ -23,4 +23,10 @@ about:
   home: https://github.com/nucleic/atom
   license: BSD
   license_file: COPYING.txt
-  summary: Memory efficient Python objects
+  summary:  Framework for creating memory efficient Python objects
+  description: |
+    Atom is a framework for creating memory efficient Python objects
+    with enhanced features such as dynamic initialization, validation, and
+    change notification for object attributes.
+  doc_url: https://pypi.python.org/pypi/atom/0.3.10
+  dev_url: https://github.com/nucleic/atom

@@ -26,4 +26,10 @@ requirements:
 about:
   home: http://kealib.org
   license: MIT
-  summary: The KEA format provides an implementation of the GDAL specification within the the HDF5 file format.
+  summary: An implementation of the GDAL data model
+  description: |
+    KEALib provides an implementation of the GDAL data model. The format
+    supports raster attribute tables, image pyramids, meta-data and in-built
+    statistics while also handling very large files and compression throughout.
+  doc_url: http://kealib.org/
+  dev_url: https://bitbucket.org/chchrsc/kealib

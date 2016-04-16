@@ -17,7 +17,16 @@ requirements:
     - zlib   1.2.*
 
 about:
-  home: http://www.hdfgroup.org/HDF4/
-  license: BSD-style (http://www.hdfgroup.org/ftp/HDF/current/src/unpacked/COPYING)
+  home: https://www.hdfgroup.org/products/hdf4/
+  license: BSD-style
   license_family: BSD
   license_file: COPYING
+  summary: Manipulate, view, and analyze data in HDF files
+  description: |
+    At its lowest level, HDF is a physical file format for storing scientific
+    data. At its highest level, HDF is a collection of utilities and
+    applications for manipulating, viewing, and analyzing data in HDF files.
+    Between these levels, HDF is a software library that provides high-level
+    APIs and a low-level data interface.
+  doc_url: https://www.hdfgroup.org/release4/doc.html
+  dev_url: https://www.hdfgroup.org/ftp/HDF/HDF_Current/

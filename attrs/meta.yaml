@@ -22,4 +22,9 @@ about:
   home: https://attrs.readthedocs.org/
   license: MIT
   license_file: LICENSE
-  summary: attributes without boilerplate
+  summary: Implement attribute-related object protocols without boilerplate
+  description: |
+    Attrs eases the chores of implementing the most common
+    attribute-related object protocols.
+  doc_url: https://attrs.readthedocs.org
+  dev_url: https://github.com/hynek/attrs

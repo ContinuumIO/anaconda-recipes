@@ -22,7 +22,12 @@ test:
     - ssh
 
 about:
-  home: https://github.com/bitprophet/ssh/
+  home: http://www.paramiko.org/
   license: LGPL
   license_file: LICENSE
   summary: SSH2 protocol library
+  description: |
+    Module for Python 2.6+ that implements the SSH2 protocol for secure
+    (encrypted and authenticated) connections to remote machines.
+  doc_url: http://docs.paramiko.org/
+  dev_url: https://github.com/paramiko/paramiko

@@ -26,6 +26,10 @@ test:
     - partd
 
 about:
-  home: https://github.com/mrocklin/partd
+  home: https://github.com/dask/partd
   license: BSD
   summary: Appendable key-value byte store
+  description: |
+    Key-value byte store with appendable values. Partd excels at shuffling
+    operations.
+  dev_url: https://github.com/dask/partd

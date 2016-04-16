@@ -28,3 +28,4 @@ about:
   home: http://sourceforge.net/projects/pywin32/
   license: PSF
   summary: Python extensions for Windows
+  doc_url: https://pypi.python.org/pypi/pywin32

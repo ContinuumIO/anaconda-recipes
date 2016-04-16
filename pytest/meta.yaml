@@ -34,4 +34,9 @@ about:
   home: http://pytest.org/
   license: MIT
   license_file: LICENSE
-  summary: simple powerful testing with Python
+  summary: Simple and powerful testing with Python
+  description: |
+    The pytest framework makes it easy to write small tests, yet scales to
+    support complex functional testing for applications and libraries.
+  doc_url: http://pytest.org/latest/contents.html#toc
+  dev_url: https://github.com/pytest-dev/pytest/

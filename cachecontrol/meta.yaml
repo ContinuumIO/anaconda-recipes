@@ -24,4 +24,9 @@ about:
   home: https://github.com/ionrock/cachecontrol
   license: Apache
   license_file: LICENSE.txt
-  summary: httplib2 caching for requests
+  summary: httplib2 caching algorithms for use with requests
+  description: |
+    CacheControl is a port of the caching algortihms in httplib2
+    for use with requests session object.
+  doc_url: http://cachecontrol.readthedocs.org
+  dev_url: https://github.com/ionrock/cachecontrol

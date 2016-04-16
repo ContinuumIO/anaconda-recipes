@@ -21,4 +21,9 @@ test:
 about:
   home: http://pythonpaste.org/tempita/
   license: MIT
-  summary: very small text templating language
+  summary: A small templating language
+  description: |
+    tempita is a small templating language. This language implements
+    if/elif/else, for/continue/break, expressions, and blocks of Python code.
+  doc_url: http://pythonpaste.org/tempita/
+  dev_url: https://bitbucket.org/ianb/tempita

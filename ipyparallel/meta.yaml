@@ -36,6 +36,11 @@ test:
     - ipyparallel
 
 about:
-  home: https://ipyparallel.readthedocs.org/
+  home: http://jupyter.org
   license: BSD
-  summary: interactive Parallel Computing with IPython
+  summary: Interactive Parallel Computing in Python
+  description: |
+    IPython enables all types of parallel applications to be developed,
+    executed, debugged and monitored interactively.
+  doc_url: http://ipyparallel.readthedocs.org/
+  dev_url: https://github.com/ipython/ipyparallel

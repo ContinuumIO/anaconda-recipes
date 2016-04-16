@@ -27,7 +27,12 @@ test:
     - snakeviz
 
 about:
-  home: https://github.com/jiffyclub/snakeviz
+  home: https://jiffyclub.github.io/snakeviz/
   license: BSD
   license_file: LICENSE.txt
-  summary: web-based viewer for Python profiler output
+  summary: Web-based viewer for Python profiler output
+  description: |
+    SnakeViz is a browser based graphical viewer for the output of Python's
+    cProfile module.
+  doc_url: http://jiffyclub.github.io/snakeviz/
+  dev_url: https://github.com/jiffyclub/snakeviz

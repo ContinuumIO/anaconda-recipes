@@ -29,4 +29,12 @@ about:
   home: http://www.swig.org/
   license: GPL3
   license_file: LICENSE
-  summary: tool that connects programs written in C and C++ with high-level programming languages
+  summary: A compiler that integrates C and C++ with a variety of languages
+  description: |
+    SWIG is an interface compiler that connects programs written in C and C++
+    with scripting languages such as Perl, Python, Ruby, and Tcl. It works by
+    taking the declarations found in C/C++ header files and using them to
+    generate the wrapper code that scripting languages need to access the
+    underlying C/C++ code.
+  doc_url: http://www.swig.org/doc.html
+  dev_url: https://github.com/swig/swig

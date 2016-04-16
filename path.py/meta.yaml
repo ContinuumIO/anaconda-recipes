@@ -23,4 +23,9 @@ test:
 about:
   home: http://github.com/jaraco/path.py
   license: MIT
-  summary: module wrapper for os.path
+  summary: Module wrapper for os.path
+  description: |
+    path.py implements a path objects as first-class entities, allowing common
+    operations on files to be invoked on those path objects directly.
+  doc_url: https://pythonhosted.org/path.py/
+  dev_url: https://github.com/jaraco/path.py

@@ -20,4 +20,10 @@ about:
   home: http://networkx.lanl.gov/
   license: BSD
   license_file: LICENSE.txt
-  summary: Python package for creating and manipulating graphs and networks
+  summary: Python package for creating and manipulating complex networks
+  description: |
+    NetworkX is a Python language software package for the creation,
+    manipulation, and study of the structure, dynamics, and functions of complex
+    networks.
+  doc_url: http://networkx.github.io/documentation.html
+  dev_url: https://github.com/networkx/

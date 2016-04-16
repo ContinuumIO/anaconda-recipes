@@ -25,3 +25,6 @@ about:
   home: http://github.com/jakevdp/ipywidgets
   license: BSD
   summary: IPython Static Widgets
+  description: |
+    Note that this package is no longer supported; instead, use IPython's
+    built-in interactive tools

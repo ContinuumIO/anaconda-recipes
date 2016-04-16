@@ -38,4 +38,10 @@ about:
   home: http://scikit-rf.org
   license: new BSD
   license_family: BSD
-  summary: 'Object Oriented Microwave Engineering'
+  summary: Object Oriented RF/Microwave Engineering
+  description: |
+    scikit-rf is an Open Source, BSD-licensed package for RF/Microwave
+    engineering implemented in the Python programming language. It provides
+    a modern, object-oriented library which is both flexible and scalable.
+  doc_url: http://scikit-rf.readthedocs.org/en/latest/
+  dev_url: https://github.com/scikit-rf/scikit-rf

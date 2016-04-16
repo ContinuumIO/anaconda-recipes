@@ -26,4 +26,10 @@ about:
   license: 3-clause BSD
   license_family: BSD
   license_file: LICENSE
-  summary: SymPy is a Python library for symbolic mathematics
+  summary: Python library for symbolic mathematics
+  description: |
+    SymPy is a Python library for symbolic mathematics. It aims to become a
+    full-featured computer algebra system (CAS) while keeping the code as
+    simple as possible in order to be comprehensible and easily extensible.
+  doc_url: http://docs.sympy.org/latest/index.html
+  dev_url: https://github.com/sympy/sympy

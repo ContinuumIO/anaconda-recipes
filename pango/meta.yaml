@@ -21,6 +21,14 @@ requirements:
     - glib  [unix]
 about:
   home: http://www.pango.org/
-  summary: Text layout and rendering engine
   license: LGPL
   license_file: COPYING
+  summary: Text layout and rendering engine
+  description: |
+    Pango is a library for laying out and rendering of text, with an emphasis
+    on internationalization. Pango can be used anywhere that text layout is
+    needed, though most of the work on Pango so far has been done in the
+    context of the GTK+ widget toolkit. Pango forms the core of text and font
+    handling for GTK+-2.x.
+  doc_url: http://www.pango.org/
+  dev_url: https://github.com/phuang/pango

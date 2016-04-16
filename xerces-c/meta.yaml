@@ -21,4 +21,10 @@ about:
   license: Apache 2.0
   license_family: Apache
   license_file: LICENSE
-  summary: Xerces-C++ is a validating XML parser written in a portable subset of C++
+  summary: A validating XML parser written in a portable subset of C++
+  description: |
+    Xerces-C++ is a validating XML parser written in a portable subset of C++.
+    Xerces-C++ makes it easy to give your application the ability to read and
+    write XML data.
+  doc_url: http://xerces.apache.org/xerces-c/api-3.html
+  dev_url: https://github.com/apache/xerces-c

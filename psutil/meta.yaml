@@ -28,4 +28,12 @@ about:
   home: https://github.com/giampaolo/psutil
   license: BSD
   license_file: LICENSE
-  summary: cross-platform process and system utilities module for Python
+  summary: A cross-platform process and system utilities module for Python
+  description: |
+    psutil (process and system utilities) is a cross-platform library for
+    retrieving information on running processes and system utilization (CPU,
+    memory, disks, network) in Python. It is useful mainly for system
+    monitoring, profiling and limiting process resources and management of
+    running processes.
+  doc_url: http://pythonhosted.org/psutil/
+  dev_url: https://github.com/giampaolo/psutil

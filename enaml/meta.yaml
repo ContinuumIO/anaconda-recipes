@@ -46,3 +46,11 @@ about:
   license: BSD
   license_file: COPYING.txt
   summary: Declarative DSL for building rich user interfaces in Python
+  description: |
+    Enaml is a programming language and framework for creating professional
+    quality user interfaces with minimal effort. Enaml combines a domain
+    specific declarative language with a constraints based layout system to
+    allow users to easily define rich UIs with complex and flexible layouts.
+    Enaml applications can be run on any platform which supports Python and Qt.
+  doc_url: http://nucleic.github.io/enaml/docs/
+  dev_url: https://github.com/nucleic/enaml

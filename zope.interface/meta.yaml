@@ -27,3 +27,9 @@ about:
   license_family: Other
   license_file: LICENSE.txt
   summary: Interfaces for Python
+  description: |
+    Provides an implementation of "object interfaces" for Python. Interfaces
+    are a mechanism for labeling objects as conforming to a given API or
+    contract.
+  doc_url: http://docs.zope.org/zope.interface/
+  dev_url: https://github.com/zopefoundation/zope.interface

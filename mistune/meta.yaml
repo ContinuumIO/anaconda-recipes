@@ -27,3 +27,7 @@ about:
   license: BSD
   license_file: LICENSE
   summary: The fastest markdown parser in pure Python with renderer feature
+  description: |
+    Mistune is a pure Python markdown parser inspired by marked.
+  doc_url: http://mistune.readthedocs.org/
+  dev_url: https://github.com/lepture/mistune

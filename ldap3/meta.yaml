@@ -26,3 +26,8 @@ about:
   license_family: LGPL
   license_file: LICENSE.txt
   summary: strictly RFC 4511 conforming LDAP V3 pure Python client
+  description: |
+    ldap3 is a strictly RFC 4510 conforming LDAP V3 pure Python client library.
+    The same codebase works with Python 2, Python 3, PyPy, PyPy3 and Nuikta.
+  doc_url: http://ldap3.readthedocs.org/
+  dev_url: https://github.com/cannatag/ldap3

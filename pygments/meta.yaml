@@ -32,4 +32,9 @@ about:
   home: http://pygments.org/
   license: BSD
   license_file: LICENSE
-  summary: Pygments is a syntax highlighting package written in Python
+  summary: Generic syntax highlighting package
+  description: |
+    Pygments is a generic syntax highlighter suitable for use in code hosting,
+    forums, wikis or other applications that need to prettify source code.
+  doc_url: http://pygments.org/docs/
+  dev_url: https://bitbucket.org/birkenfeld/pygments-main

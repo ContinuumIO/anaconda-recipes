@@ -28,7 +28,12 @@ test:
     - mako.template
 
 about:
-  home: http://www.makotemplates.org/docs/
+  home: http://www.makotemplates.org
   license: MIT
   license_file: LICENSE
-  summary: templating language
+  summary: Template library written in Python
+  description: |
+    Mako is a template library written in Python. It provides a familiar,
+    non-XML syntax which compiles into Python modules for maximum performance.
+  doc_url: http://docs.makotemplates.org/en/latest/
+  dev_url: https://bitbucket.org/zzzeek/mako/

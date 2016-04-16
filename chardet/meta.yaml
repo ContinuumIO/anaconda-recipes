@@ -29,4 +29,8 @@ about:
   license: GNU Library or Lesser General Public License
   license_family: GPL2
   license_file: LICENSE
-  summary: universal encoding detector for Python 2 and 3
+  summary: Universal character encoding detector
+  description: |
+    Chardet is the Universal Character Encoding Detector for Python 2 and 3.
+  doc_url: http://chardet.readthedocs.org/
+  dev_url: https://github.com/chardet/chardet

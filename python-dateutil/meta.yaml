@@ -26,3 +26,8 @@ about:
   license: BSD
   license_file: LICENSE
   summary: Extensions to the standard Python datetime module
+  description: |
+    The dateutil module provides powerful extensions to the standard datetime
+    module, available in Python.
+  doc_url: https://dateutil.readthedocs.org/en/latest/
+  dev_url: https://github.com/dateutil/dateutil/

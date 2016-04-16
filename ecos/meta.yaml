@@ -26,6 +26,11 @@ test:
     - _ecos
 
 about:
-  home: http://github.com/embotech/ecos
+  home: https://www.embotech.com/ECOS
   license: GPL3
-  summary: 'Python package for ECOS: Embedded Cone Solver'
+  summary: Embedded Conic Solver (ECOS)
+  description: |
+    ECOS is a numerical software for solving convex second-order cone programs
+    (SOCPs).
+  doc_url: https://www.embotech.com/ECOS
+  dev_url: https://github.com/embotech/ecos

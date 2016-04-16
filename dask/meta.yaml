@@ -34,3 +34,12 @@ about:
   license: BSD
   license_file: LICENSE.txt
   summary: Task scheduling and blocked algorithms for parallel processing
+  description: |
+    Dask is a simple task scheduling system that uses directed acylcic graphs
+    (DAGS) of tasks to break up large computations into many small ones. Dask
+    enables parallel computing through task scheduling and blocked algorithms.
+    This allows developers to write complex parallel algorithms and execute
+    them in parallel either on a modern multi-core machine or on a distributed
+    cluster.
+  doc_url: http://dask.pydata.org
+  dev_url: https://github.com/dask/dask

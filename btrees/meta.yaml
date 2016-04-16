@@ -26,3 +26,10 @@ about:
   license_family: Other
   license_file: LICENSE.txt
   summary: scalable persistent object containers
+  description: |
+    BTrees contains a set of persistent object containers built around a
+    modified BTree data structure. The trees are optimized for use inside
+    ZODB's "optimistic currency" paradigm, and include explicit resolution of
+    conflicts detected by that mechanism.
+  doc_url: http://pythonhosted.org/BTrees
+  dev_url: https://github.com/zopefoundation/BTrees

@@ -32,4 +32,10 @@ about:
   home: http://radimrehurek.com/gensim
   license: LGPL
   license_file: COPYING
-  summary: Python framework for fast Vector Space Modelling
+  summary: Topic Modelling in Python
+  description: |
+    Gensim is a Python library for topic modelling, document indexing and
+    similarity retrieval with large corpora. Target audience is the natural
+    language processing (NLP) and information retrieval (IR) community.
+  doc_url: http://radimrehurek.com/gensim/tutorial.html
+  dev_url: https://github.com/piskvorky/gensim

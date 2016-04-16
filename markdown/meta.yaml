@@ -23,3 +23,9 @@ about:
   home: http://packages.python.org/Markdown/
   license: BSD
   summary: Python implementation of Markdown
+  description: |
+    A Python implementation of John Gruber's Markdown. It is almost completely
+    compliant with the reference implementation, though there are a few known
+    issues.
+  doc_url: https://pythonhosted.org/Markdown/
+  dev_url: https://github.com/waylan/Python-Markdown

@@ -27,7 +27,16 @@ requirements:
     - hdf5 1.8.*
 
 about:
-  home: http://code.google.com/p/h5py/
+  home: http://www.h5py.org/
   license: 3-clause BSD (http://opensource.org/licenses/bsd-license.php)
   license_family: BSD
-  summary: read and write HDF5 files from Python
+  summary: Pythonic interface to the HDF5 binary data format
+  description: |
+    The h5py package is a Pythonic interface to the HDF5 binary data format.
+    It lets you store huge amounts of numerical data, and easily manipulate
+    that data from NumPy. For example, you can slice into multi-terabyte
+    datasets stored on disk, as if they were real NumPy arrays. Thousands of
+    datasets can be stored in a single file, categorized and tagged however
+    you want.
+  doc_url: http://docs.h5py.org
+  dev_url: https://github.com/h5py/h5py

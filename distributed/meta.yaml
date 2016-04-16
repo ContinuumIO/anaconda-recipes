@@ -69,4 +69,12 @@ about:
   home: http://distributed.readthedocs.org/en/latest/
   license: BSD
   license_file: LICENSE.txt
-  summary: distributed computing
+  summary: Lightweight library for distributed computing in Python
+  description: |
+    Distributed is a ightweight library for distributed computing in Python.
+    It extends both the concurrent.futures and dask APIs to moderate sized
+    clusters.  Distributed provides data-local computation by keeping data on
+    worker nodes, running computations where data lives, and by managing complex
+    data dependencies between tasks.
+  doc_url: http://distributed.readthedocs.org
+  dev_url: https://github.com/dask/distributed

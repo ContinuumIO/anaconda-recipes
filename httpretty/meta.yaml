@@ -23,4 +23,9 @@ about:
   home: http://github.com/gabrielfalcao/httpretty
   license: MIT
   license_file: COPYING
-  summary: HTTP client mock for Python
+  summary: HTTP client mocking tool for Python
+  description: |
+    HTTPretty is a HTTP client mock library for Python 100% inspired on
+    Ruby's FakeWeb.
+  doc_url: http://httpretty.readthedocs.org/
+  dev_url: https://github.com/gabrielfalcao/httpretty

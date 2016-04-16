@@ -22,4 +22,9 @@ about:
   home: http://www.crummy.com/software/BeautifulSoup/
   license: MIT
   license_file: COPYING.txt
-  summary: screen-scraping library
+  summary: Python library designed for screen-scraping
+  description: |
+    Beautiful Soup is a library for pulling data out of HTML and XML files.
+    It provides ways of navigating, searching, and modifying parse trees.
+  doc_url: http://www.crummy.com/software/BeautifulSoup/bs4/doc/
+  dev_url: https://code.launchpad.net/beautifulsoup

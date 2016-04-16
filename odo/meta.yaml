@@ -33,4 +33,9 @@ about:
   home: http://odo.pydata.org/en/latest/
   license: BSD
   license_file: LICENSE.txt
-  summary: Data Migration for Blaze Project
+  summary: Shapeshifting for your data
+  description: |
+    Odo is data migration for the Blaze Project. t efficiently migrates data
+    from the source to the target through a network of conversions.
+  doc_url: http://odo.readthedocs.org/en/latest/
+  dev_url: https://github.com/blaze/odo

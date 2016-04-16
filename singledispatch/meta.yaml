@@ -23,4 +23,8 @@ test:
 about:
   home: http://docs.python.org/3/library/functools.html#functools.singledispatch
   license: MIT
-  summary: brings functools.singledispatch from Python 3.4 to Python 2.6-3.3
+  summary: Transforms a function into a single-dispatch generic function
+  description: |
+    This library brings functools.singledispatch from Python 3.4 to Python
+    2.6-3.3.
+  doc_url: http://docs.python.org/3/library/functools.html#functools.singledispatch

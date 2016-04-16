@@ -28,5 +28,11 @@ test:
 about:
   home: https://github.com/quantopian/qgrid
   license: Apache
-  license_file: LICENSE
-  summary: a Pandas DataFrame viewer for IPython Notebook
+  summary: Pandas DataFrame viewer for IPython Notebook
+  description: |
+    Qgrid is an IPython widget which uses SlickGrid to render pandas
+    DataFrames within a Jupyter notebook. This allows you to explore your
+    DataFrames with intuitive scrolling, sorting, and filtering controls, as
+    well as edit your DataFrames by double clicking a cell.
+  doc_url: http://qgrid.readthedocs.org/en/latest/
+  dev_url: https://github.com/quantopian/qgrid

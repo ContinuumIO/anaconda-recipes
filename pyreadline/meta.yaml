@@ -21,4 +21,12 @@ test:
 about:
   home: http://ipython.org/pyreadline.html
   license: BSD
-  summary: A python implmementation of GNU readline.
+  summary: A ctypes-based readline for Windows
+  description: |
+    The pyreadline package is a python implementation of GNU readline
+    functionality it is based on the ctypes based UNC readline package. It
+    is not complete. It has been tested for use with Windows 2000 and Windows
+    XP.
+  doc_url: http://ipython.org/pyreadline.html#pyreadline
+  dev_url: https://github.com/pyreadline/pyreadline
+

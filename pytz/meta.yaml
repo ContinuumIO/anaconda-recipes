@@ -22,3 +22,10 @@ about:
   license: MIT
   license_file: LICENSE.txt
   summary: World timezone definitions, modern and historical
+  description: |
+    pytz brings the Olson tz database into Python. This library allows
+    accurate and cross platform timezone calculations using Python 2.4 or
+    higher. It also solves the issue of ambiguous times at the end of daylight
+    saving time.
+  doc_url: http://pytz.sourceforge.net/
+  dev_url: https://github.com/newvem/pytz

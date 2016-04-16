@@ -24,3 +24,8 @@ about:
   license_family: Other
   license_file: LICENSE
   summary: Pexpect allows easy control of interactive console applications
+  description: |
+    Pexpect is a pure Python module for spawning child applications;
+    controlling them; and responding to expected patterns in their output.
+  doc_url: http://pexpect.readthedocs.org/
+  dev_url: https://github.com/pexpect/pexpect

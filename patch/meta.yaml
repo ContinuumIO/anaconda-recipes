@@ -19,6 +19,11 @@ test:
     - testfile.patch
 
 about:
-  home: http://gnuwin32.sourceforge.net/
+  home: http://savannah.gnu.org/projects/patch/
   license: GPL2
   summary: Native Win32 versions of common unix tools
+  description: |
+    Patch takes a patch file containing a difference listing produced by the
+    diff program and applies those differences to one or more original files,
+    producing patched versions.
+  dev_url: http://git.savannah.gnu.org/cgit/patch.git

@@ -19,4 +19,11 @@ about:
   home: http://www.tcl.tk/
   license: BSD-like
   license_family: BSD
-  summary: dynamic programming language with GUI elements
+  summary: Dynamic programming language with GUI elements
+  description: |
+    Tcl (Tool Command Language) is a very powerful but easy to learn dynamic
+    programming language, suitable for a very wide range of uses, including
+    web and desktop applications, networking, administration, testing and many
+    more.
+  doc_url: http://www.tcl.tk/doc/
+  dev_url: http://core.tcl.tk/

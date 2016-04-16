@@ -18,7 +18,12 @@ test:
     - jmespath
 
 about:
-  home: https://github.com/boto/boto3
+  home: http://jmespath.org/
   license: MIT
   license_file: LICENSE.txt
-  summary: JSON Matching Expressions
+  summary: Query language for JSON
+  description: |
+    JMESPath allows you to declaratively specify how to extract elements from
+    a JSON document.
+  doc_url: http://jmespath.org/examples.html
+  dev_url: https://github.com/jmespath/jmespath.py

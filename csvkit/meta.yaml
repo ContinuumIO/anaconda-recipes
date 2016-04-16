@@ -69,3 +69,8 @@ about:
   home: http://csvkit.rtfd.org/
   license: MIT
   summary: utilities for working with CSV, the king of tabular file formats
+  description: |
+    Csvkit is a suite of utilities for converting to and working with CSV,
+    the king of tabular file formats.
+  doc_url: http://csvkit.rtfd.org/
+  dev_url: https://github.com/onyxfish/csvkit

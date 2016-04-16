@@ -30,4 +30,10 @@ test:
 about:
   home: https://github.com/Anaconda-Server/chalmers
   license: BSD
-  summary: Process control system.
+  summary: Monitor and control a number of processes on any operating system
+  description: |
+    Chalmers allows you to monitor and control a number of processes. This
+    includes process control, system init, keeping your programs alive, and
+    logging.
+  doc_url: https://pypi.python.org/pypi/chalmers
+  dev_url: https://github.com/Anaconda-Server/chalmers

@@ -23,4 +23,10 @@ test:
 about:
   home: http://mdp-toolkit.sourceforge.net/
   license: BSD
-  summary: a Python data processing framework.
+  summary: A Python data processing framework.
+  description: |
+    MDP is a collection of supervised and unsupervised learning algorithms and
+    other data processing units that can be combined into data processing
+    sequences and more complex feed-forward network architectures.
+  doc_url: http://mdp-toolkit.sourceforge.net/documentation.html
+  dev_url: https://github.com/mdp-toolkit

@@ -40,4 +40,6 @@ about:
   license: LGPL 2.1, MPL 1.1
   license_family: LGPL
   license_file: COPYING
-  summary: Pycairo is a set of Python bindings for the cairo graphics library
+  summary: A set of Python bindings for the cairo graphics library
+  doc_url: http://cairographics.org/pycairo/
+  dev_url: https://github.com/atizo/pycairo

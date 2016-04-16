@@ -31,4 +31,10 @@ about:
   home: http://fabfile.org
   license: BSD
   license_file: LICENSE
-  summary: Fabric is a simple, Pythonic tool for remote execution and deployment
+  summary: A  simple, Pythonic tool for remote execution and deployment
+  description: |
+    Fabric is a Python ibrary and command-line tool for streamlining the use
+    of SSH for application deployment or systems administration tasks.
+  doc_url: http://docs.fabfile.org/en/1.10/
+  dev_url: https://github.com/fabric/fabric
+

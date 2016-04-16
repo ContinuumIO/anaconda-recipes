@@ -27,4 +27,9 @@ test:
 about:
   home: https://github.com/ContinuumIO/menuinst
   license: BSD
-  summary: cross platform install of menu items
+  summary: cross platform menu item installation
+  description: |
+    This application is used by Conda to create shortcuts on a wide variety of
+    systems.
+  doc_url: https://pypi.python.org/pypi/menuinst/
+  dev_url: https://github.com/ContinuumIO/menuinst

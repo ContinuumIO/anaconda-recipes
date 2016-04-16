@@ -26,4 +26,9 @@ about:
   home: https://github.com/pyca/service_identity
   license: MIT
   license_file: LICENSE
-  summary: service identity verification for pyOpenSSL
+  summary: Service identity verification for pyOpenSSL
+  description: |
+    service_identity aspires to give you all the tools you need for verifying
+    whether a certificate is valid for the intended purposes.
+  doc_url: https://service-identity.readthedocs.org/en/stable/
+  dev_url: https://github.com/pyca/service_identity

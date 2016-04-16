@@ -23,4 +23,10 @@ about:
   home: https://github.com/pypa/setuptools_scm
   license: BSD
   license_file: LICENSE
-  summary: the blessed package to manage your versions by scm tags
+  summary: Manage your versions by scm tags
+  description: |
+    setuptools_scm handles managing your python package versions in scm
+    metadata instead of declaring them as the version argument or in a scm
+    managed file.
+  doc_url: https://pypi.python.org/pypi/setuptools_scm/1.0.0
+  dev_url: https://github.com/pypa/setuptools_scm

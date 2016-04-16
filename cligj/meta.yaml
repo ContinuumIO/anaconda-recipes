@@ -23,4 +23,10 @@ about:
   home: https://github.com/mapbox/cligj
   license: MIT
   license_file: LICENSE
-  summary: Click params for GeoJSON CLI.
+  summary: Click-based argument and option decorators
+  description:  |
+   Cligj is for Python developers who create command line interfaces for
+   geospatial data. Cligj allows you to quickly build consistent, well-tested
+   and interoperable CLIs for handling GeoJSON.
+  doc_url: https://pypi.python.org/pypi/cligj/0.4.0
+  dev_url: https://github.com/mapbox/cligj

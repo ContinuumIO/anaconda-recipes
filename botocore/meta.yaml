@@ -25,7 +25,11 @@ test:
     - botocore
 
 about:
-  home: https://github.com/boto/boto3
+  home: http://aws.amazon.com/sdk-for-python/
   license: Apache
   license_file: LICENSE.txt
   summary: low-level, core functionality of boto3
+  description: Provides the core functionality of Boto3, the AWS SDK for Python
+  doc_url: https://boto3.readthedocs.org
+  dev_url: https://github.com/boto/boto3
+

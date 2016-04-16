@@ -56,4 +56,9 @@ about:
   home: http://sphinx-doc.org
   license: BSD
   license_file: LICENSE
-  summary: Python documentation generator
+  summary: Documentation generator
+  description: |
+    Sphinx is a tool that makes it easy to create intelligent and beautiful
+    documentation.
+  doc_url: http://www.sphinx-doc.org/en/stable/contents.html
+  dev_url: https://github.com/sphinx-doc/sphinx/

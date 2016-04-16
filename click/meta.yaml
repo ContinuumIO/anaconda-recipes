@@ -19,7 +19,13 @@ test:
     - click
 
 about:
-  home: http://github.com/mitsuhiko/click
+  home: http://click.pocoo.org/
   license: BSD
   license_file: LICENSE
-  summary: A simple wrapper around optparse for powerful command line utilities.
+  summary: Command line interface creation kit
+  description: |
+    Click is a Python package for creating beautiful command line interfaces
+    in a composable way with as little code as necessary. It aims to make
+    the process of writing command line tools quick and fun.
+  doc_url: http://click.pocoo.org/
+  dev_url: https://github.com/mitsuhiko/click

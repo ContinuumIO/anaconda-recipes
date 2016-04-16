@@ -19,4 +19,8 @@ about:
   home: http://www.ijg.org/
   license: Custom free software license
   license_family: Other
-  summary: read/write jpeg COM, EXIF, IPTC medata
+  summary: Read and write jpeg COM, EXIF, IPTC medata
+  description: |
+    IJG is an informal group that writes and distributes a widely used free
+    library for JPEG image compression.
+  doc_url: http://www.ijg.org/files

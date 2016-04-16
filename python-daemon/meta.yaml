@@ -26,4 +26,8 @@ about:
   license: Apache Software License
   license_family: GPL3
   license_file: LICENSE.GPL-3
-  summary: library to implement a well-behaved Unix daemon process
+  summary: Library to implement a well-behaved Unix daemon process
+  description: |
+    Python-daemon implements the well-behaved daemon specification of PEP
+    3143, "Standard daemon process library".
+  doc_url: https://pypi.python.org/pypi/python-daemon/

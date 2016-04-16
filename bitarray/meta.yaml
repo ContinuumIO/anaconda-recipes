@@ -24,4 +24,10 @@ about:
   home: https://github.com/ilanschnell/bitarray
   license: PSF
   license_file: LICENSE
-  summary: efficient arrays of booleans -- C extension
+  summary: efficient representation of arrays of booleans -- C extension
+  description: |
+    Bitarray provides an object type which efficiently represents an array of
+    booleans. Bitarrays are sequence types that behave very similarly
+    to usual lists. All functionality is implemented in C.
+  doc_url: https://pypi.python.org/pypi/bitarray/0.8.1
+  dev_url: https://github.com/ilanschnell/bitarray

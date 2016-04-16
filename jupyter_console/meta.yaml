@@ -27,3 +27,7 @@ about:
   home: http://jupyter.org
   license: BSD
   summary: Jupyter terminal console
+  description: |
+    A terminal-based console frontend for Jupyter kernels.
+  doc_url: http://jupyter-console.readthedocs.org/
+  dev_url: https://github.com/jupyter/jupyter_console

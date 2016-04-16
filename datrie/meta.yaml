@@ -25,4 +25,6 @@ about:
   license: LGPLv2
   license_family: LGPL
   license_file: COPYING
-  summary: Super-fast, efficiently stored Trie for Python
+  summary: Super-fast, efficiently stored Trie for Python, uses libdatrie
+  doc_url: https://pypi.python.org/pypi/datrie/0.1.1
+  dev_url: https://github.com/kmike/datrie/

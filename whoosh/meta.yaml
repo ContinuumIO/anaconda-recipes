@@ -24,4 +24,11 @@ about:
   home: http://bitbucket.org/mchaput/whoosh
   license: BSD
   license_file: LICENSE.txt
-  summary: fast, pure-Python full text indexing, search, and spell checking library
+  summary: Full-text indexing and searching library
+  description: |
+    Whoosh is a fast, featureful full-text indexing and searching library
+    implemented in pure Python. Programmers can use it to easily add search
+    functionality to their applications and websites. Every part of how Whoosh
+    works can be extended or replaced to meet your needs exactly.
+  doc_url: http://whoosh.readthedocs.org/en/latest/
+  dev_url: https://bitbucket.org/mchaput/whoosh/wiki/Home

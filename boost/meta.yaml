@@ -31,3 +31,9 @@ about:
   license: Boost license (http://www.boost.org/users/license.html)
   license_family: Other
   summary: Boost provides free peer-reviewed portable C++ source libraries.
+  description: |
+    Boost contains free C++ source libraries that work well with the C++
+    standard library. The libraries are intended to be widely useful across
+    a broad spectrum of applications.
+  doc_url: http://www.boost.org/doc/
+  dev_url: http://www.boost.org/development/

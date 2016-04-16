@@ -16,7 +16,11 @@ build:
     - vc14               [win and py35]
 
 about:
-  home: http://cgit.freedesktop.org/pixman/
+  home: http://www.pixman.org/
   license: MIT
   license_file: COPYING
   summary: A low-level software library for pixel manipulation
+  description: |
+    Pixman is a low-level software library for pixel manipulation, providing
+    features such as image compositing and trapezoid rasterization.
+  dev_url: https://cgit.freedesktop.org/pixman/

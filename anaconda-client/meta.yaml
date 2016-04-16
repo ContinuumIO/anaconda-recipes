@@ -43,3 +43,8 @@ about:
   home: http://anaconda.org
   license: BSD
   summary: anaconda.org command line client library
+  description: |
+    Anaconda Client is a command line client that provides an
+    interface to Anaconda cloud.
+  doc_url: https://anaconda.org/anaconda/anaconda-client
+  dev_url: https://github.com/Anaconda-Server/anaconda-client

@@ -17,4 +17,10 @@ about:
   license: Public-Domain, GPL
   license_family: GPL2
   license_file: COPYING
-  summary: data compression software with high compression ratio
+  summary: Data compression software with high compression ratio
+  description: |
+    XZ Utils is free general-purpose data compression software with a high
+    compression ratio. XZ Utils were written for POSIX-like systems, but also
+    work on some not-so-POSIX systems.
+  doc_url: http://tukaani.org/xz/
+  dev_url: http://git.tukaani.org/
