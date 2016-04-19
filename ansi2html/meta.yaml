@@ -1,0 +1,43 @@
+package:
+  name: ansi2html
+  version: 1.1.1
+
+source:
+  fn: ansi2html-1.1.1.tar.gz
+  url: https://pypi.python.org/packages/source/a/ansi2html/ansi2html-1.1.1.tar.gz
+  md5: 39c0454667def0f7e22d91d1001d8fc4
+
+build:
+  entry_points:
+    - ansi2html = ansi2html.converter:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - setuptools
+    - six
+    - ordereddict [py26]
+
+test:
+  requires:
+    - nose
+    - mock
+  commands:
+    - ansi2html --help
+  imports:
+    - ansi2html
+
+about:
+  home: https://pypi.python.org/pypi/ansi2html
+  license: GPLv3+
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Convert text with ANSI color codes to HTML or to LaTeX.
+  description: |
+    ansi2html allows users to convert text with ANSI color codes
+    to HTML or to Latex.
+  doc_url: https://pypi.python.org/pypi/ansi2html/
+  dev_url: https://github.com/ralphbean/ansi2html/
