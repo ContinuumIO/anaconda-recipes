@@ -1,11 +1,11 @@
 package:
   name: xlsxwriter
-  version: 0.8.4
+  version: 0.8.5
 
 source:
-  fn: XlsxWriter-0.8.4.tar.gz
-  url: https://pypi.python.org/packages/source/X/XlsxWriter/XlsxWriter-0.8.4.tar.gz
-  md5: df43f261e541485904d7c91c1a2d6751
+  fn: XlsxWriter-0.8.5.tar.gz
+  url: https://pypi.python.org/packages/source/X/XlsxWriter/XlsxWriter-0.8.5.tar.gz
+  md5: c8b56ac5805f3b53a0e7fbcb7c4bfde1
 
 requirements:
   build:

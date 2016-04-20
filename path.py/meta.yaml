@@ -1,11 +1,11 @@
 package:
   name: path.py
-  version: 8.2
+  version: 8.2.1
 
 source:
-  fn: path.py-8.2.tar.gz
-  url: https://pypi.python.org/packages/source/p/path.py/path.py-8.2.tar.gz
-  md5: 750cf1ea7a257cfa76ed41096912cf79
+  fn: path.py-8.2.1.tar.gz
+  url: https://pypi.python.org/packages/source/p/path.py/path.py-8.2.1.tar.gz
+  md5: 7334796c9ed6036cb89bcd30d8409f91
   patches:
     - setup.patch
 

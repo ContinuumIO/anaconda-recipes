@@ -1,11 +1,11 @@
 package:
   name: botocore
-  version: 1.4.10
+  version: 1.4.11
 
 source:
-  fn: botocore-1.4.10.tar.gz
-  url: https://pypi.python.org/packages/source/b/botocore/botocore-1.4.10.tar.gz
-  md5: 36e001f9e3a67d9336b9b4c90c3b5926
+  fn: botocore-1.4.11.tar.gz
+  url: https://pypi.python.org/packages/source/b/botocore/botocore-1.4.11.tar.gz
+  md5: dcd09f4f79973bb1dbe9afb144ff24fa
 
 requirements:
   build:
@@ -29,7 +29,7 @@ about:
   license: Apache
   license_file: LICENSE.txt
   summary: low-level, core functionality of boto3
-  description: Provides the core functionality of Boto3, the AWS SDK for Python
+  description: |
+    Provides the core functionality of Boto3, the AWS SDK for Python
   doc_url: https://boto3.readthedocs.org
   dev_url: https://github.com/boto/boto3
-
