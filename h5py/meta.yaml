@@ -16,7 +16,7 @@ requirements:
     - python
     - setuptools
     - numpy x.x
-    - hdf5  1.8.*
+    - hdf5 1.8.16
     - cython >=0.19
     - pkgconfig
     - six
@@ -24,7 +24,7 @@ requirements:
     - python
     - numpy x.x
     - six
-    - hdf5 1.8.*
+    - hdf5 1.8.16
 
 about:
   home: http://www.h5py.org/

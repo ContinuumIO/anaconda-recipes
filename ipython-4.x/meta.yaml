@@ -1,15 +1,13 @@
 package:
   name: ipython
-  version: 4.1.2
+  version: 4.2.0
 
 source:
-  fn: ipython-4.1.2.tar.gz
-  url: https://pypi.python.org/packages/source/i/ipython/ipython-4.1.2.tar.gz
-  md5: 28c9ebd1abfb9b4a07cb87005f285edd
+  fn: ipython-4.2.0.tar.gz
+  url: https://pypi.python.org/packages/4e/c7/519b95112dba6f3ae91530bcb8564454c575fcb1fdb323b2b0ee9eff1227/ipython-4.2.0.tar.gz
+  md5: 9c7c28eddbc39eb874d2c22025772d63
 
 build:
-  number: 1            [not osx]
-  number: 2            [osx]
   entry_points:
     - ipython = IPython:start_ipython
     - ipython2 = IPython:start_ipython   [py2k]
@@ -24,15 +22,16 @@ requirements:
     - pickleshare
     - simplegeneric >0.8
     - traitlets
-    - pexpect                [unix]
-    - appnope                [osx]
-    - pyreadline             [win]
+    - get_terminal_size
+    - pexpect                            [unix]
+    - appnope                            [osx]
+    - pyreadline                         [win]
 
 test:
   commands:
     - ipython -h
-    - ipython2 -h            [py2k]
-    - ipython3 -h            [py3k]
+    - ipython2 -h                        [py2k]
+    - ipython3 -h                        [py3k]
   imports:
     - IPython
 
