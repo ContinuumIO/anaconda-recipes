@@ -1,10 +1,10 @@
 package:
   name: odo
-  version: 0.4.2
+  version: 0.5.0
 
 source:
   git_url: https://github.com/blaze/odo.git
-  git_tag: 0.4.2
+  git_tag: 0.5.0
 
 requirements:
   build:
@@ -18,11 +18,11 @@ requirements:
     - networkx
   run:
     - python
-    - datashape
-    - numpy
-    - pandas
-    - toolz
-    - multipledispatch
+    - datashape >=0.5
+    - numpy >=1.7
+    - pandas >=0.15
+    - toolz >=0.7.3
+    - multipledispatch >=0.4.7
     - networkx
 
 test:

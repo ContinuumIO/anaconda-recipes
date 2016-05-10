@@ -1,16 +1,15 @@
 package:
   name: werkzeug
-  version: 0.11.8
+  version: 0.11.9
 
 source:
-  fn: Werkzeug-0.11.8.tar.gz
-  url: https://pypi.python.org/packages/source/W/Werkzeug/Werkzeug-0.11.8.tar.gz
-  md5: 7ffc339ac66eec241278aa81ed40c4de
+  fn: Werkzeug-0.11.9.tar.gz
+  url: https://pypi.python.org/packages/0f/7c/b316cd9779817173e93f5cebc8fb387db33cc8dc526f3db5e61f2c008d5b/Werkzeug-0.11.9.tar.gz
+  md5: e4dbeb6302ce74babc0d7c21fc3d8291
 
 requirements:
   build:
     - python
-    - setuptools
   run:
     - python
 

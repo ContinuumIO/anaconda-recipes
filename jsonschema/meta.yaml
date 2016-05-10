@@ -1,0 +1,36 @@
+package:
+  name: jsonschema
+  version: 2.5.1
+
+source:
+  fn: jsonschema-2.5.1.tar.gz
+  url: https://pypi.python.org/packages/58/0d/c816f5ea5adaf1293a1d81d32e4cdfdaf8496973aa5049786d7fdb14e7e7/jsonschema-2.5.1.tar.gz
+  md5: 374e848fdb69a3ce8b7e778b47c30640
+
+build:
+  entry_points:
+    - jsonschema = jsonschema.cli:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - vcversioner
+    - functools32    [py27]
+  run:
+    - python
+    - functools32    [py27]
+
+test:
+  commands:
+    - jsonschema -h
+  imports:
+    - jsonschema
+
+about:
+  home: https://python-jsonschema.readthedocs.orga
+  license: MIT
+  license_file: COPYING
+  summary: An implementation of JSON Schema validation for Python
+  doc_url: https://python-jsonschema.readthedocs.org
+  dev_url: https://github.com/Julian/jsonschema/

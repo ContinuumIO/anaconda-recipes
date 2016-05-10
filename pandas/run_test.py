@@ -19,4 +19,4 @@ if sys.version_info >= (2, 7):
 import pandas
 print("pandas.__version__ = %r" % pandas.__version__)
 
-print("pandas OK")
+pandas.test()

@@ -1,10 +1,10 @@
 package:
   name: pandas
-  version: 0.18.0
+  version: 0.18.1
 
 source:
   git_url: https://github.com/pydata/pandas.git
-  git_tag: v0.18.0
+  git_tag: v0.18.1
 
 requirements:
   build:
@@ -21,6 +21,8 @@ requirements:
     - pytz
 
 test:
+  requires:
+    - nose >=1.0.0
   imports:
     - pandas
 

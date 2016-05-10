@@ -1,11 +1,11 @@
 package:
   name: boto
-  version: 2.39.0
+  version: 2.40.0
 
 source:
-  fn: boto-2.39.0.tar.gz
-  url: https://pypi.python.org/packages/source/b/boto/boto-2.39.0.tar.gz
-  md5: 503e6ffd7d56dcdffa38cb316bb119e9
+  fn: boto-2.40.0.tar.gz
+  url: https://pypi.python.org/packages/6f/ce/3447e2136c629ae895611d946879b43c19346c54876dea614316306b17dd/boto-2.40.0.tar.gz
+  md5: 5a3438341f7cd4b1aa46023ec0ae05ee
 
 requirements:
   build:

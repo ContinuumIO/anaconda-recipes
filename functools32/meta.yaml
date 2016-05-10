@@ -1,0 +1,30 @@
+package:
+  name: functools32
+  version: "3.2.3.2"
+
+source:
+  fn: functools32-3.2.3-2.tar.gz
+  url: https://pypi.python.org/packages/source/f/functools32/functools32-3.2.3-2.tar.gz
+  md5: 09f24ffd9af9f6cd0f63cb9f4e23d4b2
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - functools32
+
+about:
+  home: https://github.com/MiCHiLU/python-functools32
+  license: PSF
+  license_file: LICENSE
+  summary: backport of the functools module from Python 3.2.3 for use on 2.7
+  description: |
+    Functools32 is a backport of the Python 3.2 functools module for use on
+    Python versions 2.7 and PyPy. It includes new features lru_cache
+    (Least-recently-used cache decorator).
+  doc_url: http://docs.python.org/3.2/library/functools.html
+  dev_url: https://github.com/MiCHiLU/python-functools32
