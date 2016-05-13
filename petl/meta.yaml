@@ -1,0 +1,33 @@
+package:
+  name: petl
+  version: 1.1.0
+
+source:
+  git_url: https://github.com/alimanfoo/petl
+  git_tag: v1.1.0
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  #requires:
+  #  - nose
+  commands:
+    - petl --help
+  imports:
+    - petl
+    - petl.io
+    - petl.transform
+    - petl.util
+    - petl.test
+    - petl.test.io
+    - petl.test.transform
+    - petl.test.util
+
+about:
+  home: https://github.com/alimanfoo/petl
+  license: MIT
+  license_file: LICENSE.txt

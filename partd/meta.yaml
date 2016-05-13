@@ -1,20 +1,18 @@
 package:
   name: partd
-  version: 0.3.2
+  version: 0.3.3
 
 source:
-  fn: partd-0.3.2.tar.gz
-  url: https://pypi.python.org/packages/source/p/partd/partd-0.3.2.tar.gz
-  md5: 6d533e499c785b5e5790774a4974bee9
-
-build:
-  number: 1
+  fn: partd-0.3.3.tar.gz
+  url: https://pypi.python.org/packages/88/05/b11b71cfb41657c91f1c1f23a00a0c63d9eb7720ae664025a68bbbf0a21b/partd-0.3.3.tar.gz
+  md5: 175d738ebc5feaabd72e927eb632e817
 
 requirements:
   build:
     - python
     - setuptools
     - locket
+    - toolz
   run:
     - python
     - locket

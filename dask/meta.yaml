@@ -1,11 +1,11 @@
 package:
   name: dask
-  version: 0.8.2
+  version: 0.9.0
 
 source:
-  fn: dask-0.8.2.tar.gz
-  url: https://pypi.python.org/packages/source/d/dask/dask-0.8.2.tar.gz
-  md5: ef30c00d7941d0fb7fb36de32fb9eaec
+  fn: dask-0.9.0.tar.gz
+  url: https://pypi.python.org/packages/24/1b/2bf6d9bde3ba8783ec9f559a55c564384af224dbcfec9c3ee639e365baab/dask-0.9.0.tar.gz
+  md5: f111b837ae969a690cf23cd75add92e2
 
 requirements:
   build:
@@ -15,12 +15,11 @@ requirements:
     - python
     - bokeh
     - chest
-    - cloudpickle
+    - cloudpickle >=0.2.1
     - numpy
     - pandas
-    - partd
-    - psutil
-    - toolz
+    - partd >=0.3.3
+    - toolz >=0.7.2
 
 test:
   imports:

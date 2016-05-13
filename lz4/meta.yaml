@@ -1,11 +1,11 @@
 package:
   name: lz4
-  version: 0.7.0
+  version: 0.8.2
 
 source:
-  fn: lz4-0.7.0.tar.gz
-  url: https://pypi.python.org/packages/source/l/lz4/lz4-0.7.0.tar.gz
-  md5: e32842a49d5254f6918567197a704492
+  fn: lz4-0.8.2.tar.gz
+  url: https://pypi.python.org/packages/b5/f0/e1de2bb7feb54011f3c4dcf35b7cca3536e19526764db051b50ea26b58e7/lz4-0.8.2.tar.gz
+  md5: 50dc6c2cb99c43ce6ed95cf6ae965f0e
   patches:
     - win.patch          [win]
 

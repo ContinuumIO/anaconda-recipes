@@ -1,11 +1,11 @@
 package:
   name: distributed
-  version: 1.9.5
+  version: 1.10.0
 
 source:
-  fn: distributed-1.9.5.tar.gz
-  url: https://pypi.python.org/packages/96/0e/b83e83b5440f350bda98d6dd708534d87a084bbecebe0db4b89b674224e7/distributed-1.9.5.tar.gz
-  md5: 5687e7d7c1a8b544dbd770cdf378e24c
+  fn: distributed-1.10.0.tar.gz
+  url: https://pypi.python.org/packages/e6/d3/92b296445822f0250853d56bbaf6190fab2aa34652ac67df309acfe06b7d/distributed-1.10.0.tar.gz
+  md5: 1f804273dd039223f4f94c4ac8e1b1ee
 
 build:
   entry_points:
@@ -23,7 +23,7 @@ requirements:
     - toolz
     - msgpack-python
     - cloudpickle >=0.2.1
-    - dask
+    - dask >=0.9
     - click
     - boto3
     - s3fs
@@ -40,7 +40,7 @@ requirements:
     - toolz
     - msgpack-python
     - cloudpickle >=0.2.1
-    - dask
+    - dask >=0.9
     - click
     - boto3
     - s3fs

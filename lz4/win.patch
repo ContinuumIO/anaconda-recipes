@@ -1,17 +1,22 @@
 diff --git setup.py setup.py
-index 51e8d02..ff6451e 100644
+index 9d252d9..853de48 100644
 --- setup.py
 +++ setup.py
-@@ -21,12 +21,6 @@ setup(
-             'src/lz4hc.c',
-             'src/python-lz4.c'
-         ], extra_compile_args=[
--            "-std=c99",
--            "-O3",
--            "-Wall",
--            "-W",
--            "-Wundef",
--            "-DLZ4_VERSION=\"r119\"",
-         ])
-     ],
-     setup_requires=["nose>=1.0"],
+@@ -31,7 +31,7 @@ if liblz4_found:
+         extra_compile_args = ["/Ot", "/Wall"]
+         define_macros = [("VERSION","\\\"%s\\\"" % VERSION_STR),]
+     else:
+-        extra_compile_args = ["-std=c99",]
++        extra_compile_args = []
+         define_macros = [("VERSION","\"%s\"" % VERSION_STR),]
+ 
+     lz4mod = Extension('lz4',
+@@ -50,7 +50,7 @@ else:
+         extra_compile_args = ["/Ot", "/Wall"]
+         define_macros = [("VERSION","\\\"%s\\\"" % VERSION_STR), ("LZ4_VERSION","\\\"%s\\\"" % LZ4_VERSION)]
+     else:
+-        extra_compile_args = ["-std=c99","-O3","-Wall","-W","-Wundef"]
++        extra_compile_args = []
+         define_macros = [("VERSION","\"%s\"" % VERSION_STR), ("LZ4_VERSION","\"%s\"" % LZ4_VERSION)]
+ 
+     lz4mod = Extension('lz4',
