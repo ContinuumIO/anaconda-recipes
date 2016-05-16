@@ -10,7 +10,7 @@ recipes are as follows:
 Linux:
   * we use sepatate 32 and 64-bit machines
   * CentOS release 5.11 (Final)
-  * gcc 4.4.7 (yum install gcc44, /usr/bin/gcc linked to gcc44)
+  * gcc 4.4.7 (`yum install gcc44`, link `/usr/bin/gcc` to `gcc44`)
   * GNU Fortran (GCC) 4.4.7
 
 Mac OS X (64-bit):
@@ -21,3 +21,4 @@ Mac OS X (64-bit):
 Windows:
   * 64-bit Windows 10
   * VS 2008, 2010, 2015 installed
+  * ifort
