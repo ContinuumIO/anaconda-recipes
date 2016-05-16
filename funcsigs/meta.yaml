@@ -1,11 +1,11 @@
 package:
   name: funcsigs
-  version: 1.0.0
+  version: 1.0.2
 
 source:
-  fn: funcsigs-1.0.0.tar.gz
-  url: https://pypi.python.org/packages/source/f/funcsigs/funcsigs-1.0.0.tar.gz
-  md5: 669d0f34e94cb36a3948e8f592bc6f25
+  fn: funcsigs-1.0.2.tar.gz
+  url: https://pypi.python.org/packages/94/4a/db842e7a0545de1cdb0439bb80e6e42dfe82aaeaadd4072f2263a4fbed23/funcsigs-1.0.2.tar.gz
+  md5: 7e583285b1fb8a76305d6d68f4ccc14e
 
 requirements:
   build:
