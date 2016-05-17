@@ -1,11 +1,11 @@
 package:
   name: mercurial
-  version: 3.7.3
+  version: 3.8.2
 
 source:
-  fn: mercurial-3.7.3.tar.gz
-  url: https://pypi.python.org/packages/source/M/Mercurial/mercurial-3.7.3.tar.gz
-  md5: f47c9c76b7bf429dafecb71fa81c01b4
+  fn: mercurial-3.8.2.tar.gz
+  url: https://pypi.python.org/packages/9a/80/94f453072fa98d9756a263747dac49351714a1a9bbd3108384d129d81c47/mercurial-3.8.2.tar.gz
+  md5: c38daa0cbe264fc621dc3bb05933b0b3
 
 requirements:
   build:
