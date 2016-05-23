@@ -8,10 +8,12 @@ source:
   md5: 9c7c28eddbc39eb874d2c22025772d63
 
 build:
+  number: 1                              [osx]
   entry_points:
     - ipython = IPython:start_ipython
     - ipython2 = IPython:start_ipython   [py2k]
     - ipython3 = IPython:start_ipython   [py3k]
+  osx_is_app: True
 
 requirements:
   build:
@@ -26,6 +28,7 @@ requirements:
     - pexpect                            [unix]
     - appnope                            [osx]
     - pyreadline                         [win]
+    - python.app                         [osx]
 
 test:
   commands:

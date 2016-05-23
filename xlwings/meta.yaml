@@ -1,11 +1,11 @@
 package:
   name: xlwings
-  version: 0.7.1
+  version: 0.7.2
 
 source:
-  fn: xlwings-0.7.1.tar.gz
-  url: https://pypi.python.org/packages/source/x/xlwings/xlwings-0.7.1.tar.gz
-  md5: 29ae39159bfa61542ee05c43e3e9474f
+  fn: xlwings-0.7.2.tar.gz
+  url: https://pypi.python.org/packages/21/77/825904bb2db7cd79beaa505e2bf4a77da6772a7fd6b7467c348819ffc8b0/xlwings-0.7.2.tar.gz
+  md5: 541db4ff498b0684a9acc3c0836e5e3b
 
 build:
   entry_points:

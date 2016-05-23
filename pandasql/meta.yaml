@@ -1,0 +1,37 @@
+package:
+  name: pandasql
+  version: 0.7.3
+
+source:
+  fn: pandasql-0.7.3.tar.gz
+  url: https://pypi.python.org/packages/6b/c4/ee4096ffa2eeeca0c749b26f0371bd26aa5c8b611c43de99a4f86d3de0a7/pandasql-0.7.3.tar.gz
+  md5: 6bfca10a075d587d0da0c3ada496d613
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pandas
+    - sqlalchemy
+  run:
+    - python
+    - pandas
+    - sqlalchemy
+
+test:
+  requires:
+    - pytest
+  imports:
+    - pandasql
+
+about:
+  home: https://github.com/yhat/pandasql
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Sqldf for pandas
+  description: |
+    pandasql allows you to query pandas DataFrames using SQL syntax. It works
+    similarly to sqldf in R. pandasql seeks to provide a more familiar way
+    of manipulating and cleaning data for people new to Python or pandas.
+  doc_url: https://pypi.python.org/pypi/pandasql
+  dev_url: https://github.com/yhat/pandasql

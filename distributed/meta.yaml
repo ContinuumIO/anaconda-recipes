@@ -1,11 +1,11 @@
 package:
   name: distributed
-  version: 1.10.0
+  version: 1.10.2
 
 source:
-  fn: distributed-1.10.0.tar.gz
-  url: https://pypi.python.org/packages/e6/d3/92b296445822f0250853d56bbaf6190fab2aa34652ac67df309acfe06b7d/distributed-1.10.0.tar.gz
-  md5: 1f804273dd039223f4f94c4ac8e1b1ee
+  fn: distributed-1.10.2.tar.gz
+  url: https://pypi.python.org/packages/56/8f/77111cbedf1a38eb5a369de2e05f540fce039010c7a5ade10d97c13cf20c/distributed-1.10.2.tar.gz
+  md5: 71339192ed317b2989a061dc81657fbe
 
 build:
   entry_points:
@@ -31,6 +31,8 @@ requirements:
     - six
     - tblib
     - psutil
+    - bokeh
+    - lz4                  [unix]
     - futures              [py < 30]
     - singledispatch       [py < 34]
   run:
@@ -48,6 +50,8 @@ requirements:
     - six
     - tblib
     - psutil
+    - bokeh
+    - lz4                  [unix]
     - futures              [py < 30]
     - singledispatch       [py < 34]
 

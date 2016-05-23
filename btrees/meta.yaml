@@ -1,11 +1,11 @@
 package:
   name: btrees
-  version: 4.3.0
+  version: 4.3.1
 
 source:
-  fn: BTrees-4.3.0.tar.gz
-  url: https://pypi.python.org/packages/fe/58/d1f471c862d82954a43f00be250a3852d3627648af4d119505c64671a854/BTrees-4.3.0.tar.gz
-  md5: 19bb93e021bafaa0c856fdefdc169238
+  fn: BTrees-4.3.1.tar.gz
+  url: https://pypi.python.org/packages/24/76/cd6f225f2180c22af5cdb6656f51aec5fca45e45bdc4fa75c0a32f161a61/BTrees-4.3.1.tar.gz
+  md5: cf6a994b54df253de2a74e05904534c9
 
 requirements:
   build:
