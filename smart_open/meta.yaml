@@ -1,26 +1,22 @@
 package:
   name: smart_open
-  version: 1.3.2
+  version: 1.3.3
 
 source:
-  fn: smart_open-1.3.2.tar.gz
-  url: https://pypi.python.org/packages/source/s/smart_open/smart_open-1.3.2.tar.gz
-  md5: 616e154b4d6e4c9826639a762541817a
-  patches:
-    - setup.patch
+  fn: smart_open-1.3.3.tar.gz
+  url: https://pypi.python.org/packages/29/9b/a49e646d1ab4b7e7d1005ce5cf7089ad97f80587db438279eb9bedb9c071/smart_open-1.3.3.tar.gz
+  md5: 7e836c504ad49ce29f260d8fd562ea12
 
 requirements:
   build:
     - python
     - setuptools
     - boto >=2.32
-    - httpretty
     - bz2file
     - requests
   run:
     - python
     - boto >=2.32
-    - httpretty
     - bz2file
     - requests
 

@@ -2,6 +2,9 @@ package:
   name: vs2010_runtime
   version: "10.00.40219.1"
 
+build:
+  number: 1
+
 about:
   home: http://www.microsoft.com
   license: Proprietary

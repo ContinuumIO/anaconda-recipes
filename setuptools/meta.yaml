@@ -1,11 +1,11 @@
 package:
   name: setuptools
-  version: 20.7.0
+  version: 21.2.1
 
 source:
-  fn: setuptools-20.7.0.tar.gz
-  url: https://pypi.python.org/packages/source/s/setuptools/setuptools-20.7.0.tar.gz
-  md5: 5d12b39bf3e75e80fdce54e44b255615
+  fn: setuptools-21.2.1.tar.gz
+  url: https://pypi.python.org/packages/13/e8/35d9c7528b3c266a17e888bea1e02eb061e9ab6cdabc7107dfb7da83a1d2/setuptools-21.2.1.tar.gz
+  md5: b6f59b1987fe9642874448e54ee33315
   patches:
     - nodownload.patch
     - setup.patch

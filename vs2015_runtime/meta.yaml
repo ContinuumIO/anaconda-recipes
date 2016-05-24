@@ -2,6 +2,9 @@ package:
   name: vs2015_runtime
   version: "14.00.23026.0"
 
+build:
+  number: 1
+
 about:
   home: http://www.microsoft.com
   license: Proprietary
