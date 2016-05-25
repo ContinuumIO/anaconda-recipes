@@ -1,0 +1,40 @@
+package:
+  name: markupsafe
+  version: 0.23
+
+source:
+  fn: MarkupSafe-0.23.tar.gz
+  url: https://pypi.python.org/packages/source/M/MarkupSafe/MarkupSafe-0.23.tar.gz
+  md5: f5ab3deee4c37cd6a922fb81e730da6e
+
+build:
+  number: 2
+  # Windows has issues updating stuff if conda is using files itself
+  no_link:
+    - .*/.(pyd|dll)                   [win]
+    - .*/markupsafe/.(pyd|dll)        [win]
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - markupsafe
+    - markupsafe._speedups
+
+about:
+  home: http://www.pocoo.org/projects/markupsafe/#markupsafe
+  license: BSD
+  license_file: LICENSE
+  summary: Implements a XML/HTML/XHTML Markup safe string for Python
+  description: |
+    MarkupSafe is a library for Python that implements a unicode string that
+    is aware of HTML escaping rules and can be used to implement automatic
+    string escaping. It is used by Jinja 2, the Mako templating engine, the
+    Pylons web framework and many more.
+  doc_url: https://pypi.python.org/pypi/MarkupSafe
+  dev_url: https://github.com/pallets/markupsafe

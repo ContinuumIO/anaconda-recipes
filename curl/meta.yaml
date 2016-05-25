@@ -1,0 +1,43 @@
+package:
+  name: curl
+  version: 7.49.0
+
+source:
+  fn: curl-7.49.0.tar.gz
+  url: https://curl.haxx.se/download/curl-7.49.0.tar.gz
+  md5: a50a3b683d7a785e3035e5ce611160e2
+
+build:
+  detect_binary_files_with_prefix: True
+  features:
+    - vc9       [win and py27]
+    - vc10      [win and py34]
+    - vc14      [win and py35]
+
+requirements:
+  build:
+    - python          [win]
+    - pkg-config      [unix]
+    - openssl         [unix]
+    - zlib
+  run:
+    - openssl 1.0.2*  [unix]
+    - zlib 1.2.*
+
+test:
+  commands:
+    - curl --help
+    - curl-config --features       [unix]
+    - curl-config --protocols      [unix]
+
+about:
+  home: http://curl.haxx.se/
+  license: MIT/X derivate (http://curl.haxx.se/docs/copyright.html)
+  license_family: MIT
+  license_file: COPYING
+  summary: Tool and library for transferring data with URL syntax
+  description: |
+    Curl is an open source command line tool and library for transferring data
+    with URL syntax. It is used in command lines or scripts to transfer data.
+  doc_url: https://curl.haxx.se/docs/
+  dev_url: https://github.com/curl/curl

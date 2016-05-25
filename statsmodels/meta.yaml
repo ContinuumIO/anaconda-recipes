@@ -1,0 +1,50 @@
+package:
+  name: statsmodels
+  version: 0.6.1
+
+source:
+  fn: statsmodels-0.6.1.tar.gz
+  url: https://pypi.python.org/packages/source/s/statsmodels/statsmodels-0.6.1.tar.gz
+  md5: f7580ebf7d2a2c9b87abfad190dcb9a3
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy x.x
+    - cython
+    - scipy
+    - pandas
+    - patsy
+  run:
+    - python
+    - numpy x.x
+    - scipy
+    - pandas
+    - patsy
+
+test:
+  imports:
+    - statsmodels
+    - statsmodels.nonparametric._smoothers_lowess
+    - statsmodels.nonparametric.linbin
+    - statsmodels.tsa.kalmanf.kalman_loglike
+
+about:
+  home: http://statsmodels.sourceforge.net/
+  license: 3-clause BSD
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: Statistical computations and models
+  description: |
+    Statsmodels is a Python module that allows users to explore data, estimate
+    statistical models, and perform statistical tests. An extensive list of
+    descriptive statistics, statistical tests, plotting functions, and result
+    statistics are available for different types of data and each estimator.
+    Researchers across fields may find that statsmodels fully meets their
+    needs for statistical computing and data analysis in Python.
+  doc_url: http://statsmodels.sourceforge.net/documentation.html
+  dev_url: https://github.com/statsmodels/statsmodels/

@@ -1,0 +1,21 @@
+package:
+  name: libsodium
+  version: 1.0.10
+
+source:
+  fn: libsodium-1.0.10.tar.gz
+  url: https://download.libsodium.org/libsodium/releases/libsodium-1.0.10.tar.gz
+  md5: ea89dcbbda0b2b6ff6a1c476231870dd
+
+about:
+  home: http://libsodium.org
+  license: MIT
+  license_file: LICENSE
+  summary: A library for encryption, signatures, password hashing, etc.
+  description: |
+    Sodium is a modern, easy-to-use software library for encryption,
+    decryption, signatures, password hashing and more. It is a portable,
+    cross-compilable, installable fork of NaCl. Its goal is to provide all of
+    the core operations needed to build higher-level cryptographic tools.
+  doc_url: http://libsodium.org
+  dev_url: https://github.com/jedisct1/libsodium

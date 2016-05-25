@@ -1,0 +1,38 @@
+package:
+  name: tornado
+  version: 4.3
+
+source:
+  fn: tornado-4.3.tar.gz
+  url: https://pypi.python.org/packages/source/t/tornado/tornado-4.3.tar.gz
+  md5: d13a99dc0b60ba69f5f8ec1235e5b232
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - ssl_match_hostname    [py2k]
+    - singledispatch        [py < 34]
+    - backports_abc         [py < 35]
+
+test:
+  imports:
+    - tornado
+    - tornado.netutil
+    - tornado.speedups      [unix]
+
+about:
+  home: http://www.tornadoweb.org/
+  license: Apache
+  summary: A Python web framework and asynchronous networking library
+  description: |
+    Tornado is a Python web framework and asynchronous networking library.
+    By using non-blocking network I/O, Tornado can scale to tens of thousands
+    of open connections, making it ideal for long polling, WebSockets, and
+    other applications that require a long-lived connection to each user.
+  doc_url: http://www.tornadoweb.org/en/stable/
+  dev_url: https://github.com/tornadoweb/tornado

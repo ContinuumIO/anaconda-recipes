@@ -1,0 +1,32 @@
+package:
+  name: locket
+  version: 0.2.0
+
+source:
+  fn: locket-0.2.0.tar.gz
+  url: https://pypi.python.org/packages/source/l/locket/locket-0.2.0.tar.gz
+  md5: fe870949c513d8f7079ba352463833ca
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - locket
+
+about:
+  home: http://github.com/mwilliamson/locket.py
+  license: BSD
+  license_file: LICENSE
+  summary: File based locks for Python for Linux and Windows
+  description: |
+    Locket implements a lock that can be used by multiple processes provided
+    they use the same path.
+  doc_url: https://github.com/mwilliamson/locket.py
+  dev_url: https://github.com/mwilliamson/locket.py

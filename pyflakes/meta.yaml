@@ -1,11 +1,11 @@
 package:
   name: pyflakes
-  version: 1.2.2
+  version: 1.2.3
 
 source:
-  fn: pyflakes-1.2.2.tar.gz
-  url: https://pypi.python.org/packages/af/6e/6f8cb1d6dfb08b08c2f4c11fdb478b8d63f51f03d1d1bd61d4e154922cc2/pyflakes-1.2.2.tar.gz
-  md5: fd33b46e16db7d926e71d5a056680137
+  fn: pyflakes-1.2.3.tar.gz
+  url: https://pypi.python.org/packages/54/80/6a641f832eb6c6a8f7e151e7087aff7a7c04dd8b4aa6134817942cdda1b6/pyflakes-1.2.3.tar.gz
+  md5: 995747589e97c75055cf5b4e1e031e0b
 
 build:
   entry_points:

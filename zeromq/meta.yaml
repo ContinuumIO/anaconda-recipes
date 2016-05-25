@@ -1,0 +1,25 @@
+package:
+  name: zeromq
+  version: 4.1.4
+
+source:
+  fn: zeromq-4.1.4.tar.gz
+  url: http://download.zeromq.org/zeromq-4.1.4.tar.gz
+  md5: a611ecc93fffeb6d058c0e6edf4ad4fb
+
+requirements:
+  build:
+    - libsodium 1.0.*  [linux]
+  run:
+    - libsodium 1.0.*  [linux]
+
+about:
+  home: http://zeromq.org
+  license: LGPL
+  license_file: COPYING
+  summary: Distributed messaging
+  description: |
+    ZeroMQ s a high-performance asynchronous messaging library, aimed at use
+    in distributed or concurrent applications.
+  doc_url: http://zeromq.org/intro:read-the-manual
+  dev_url: https://github.com/zeromq
