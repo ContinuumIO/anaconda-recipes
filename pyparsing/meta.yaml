@@ -1,11 +1,11 @@
 package:
   name: pyparsing
-  version: 2.1.1
+  version: 2.1.4
 
 source:
-  fn: pyparsing-2.1.1.tar.gz
-  url: https://pypi.python.org/packages/source/p/pyparsing/pyparsing-2.1.1.tar.gz
-  md5: 5ce9096d94f553e2bc1fd366fba65558
+  fn: pyparsing-2.1.4.tar.gz
+  url: https://pypi.python.org/packages/ae/0c/b6ce7eea7ccf020ae68db1119bacaa07ad91fedaefaf8f3265e8dd156813/pyparsing-2.1.4.tar.gz
+  md5: 322059c57f0c9f11da1c6c06a2ba2197
 
 requirements:
   build:

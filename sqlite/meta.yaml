@@ -1,0 +1,38 @@
+package:
+  name: sqlite
+  version: 3.13.0
+
+source:
+  fn: sqlite-autoconf-3130000.tar.gz
+  url: https://www.sqlite.org/2016/sqlite-autoconf-3130000.tar.gz
+  sha1: f6f76e310389e3f510b23826f805850449ae8653
+
+build:
+  features:
+    - vc9     [win and py27]
+    - vc10    [win and py34]
+    - vc14    [win and py35]
+
+requirements:
+  build:
+    # python is for lining up vc feature (runtime)
+    - python         [win]
+
+test:
+  requires:
+    - python 2.7*    [win and py27]
+    - python 3.4*    [win and py34]
+    - python 3.5*    [win and py35]
+  commands:
+    - sqlite3 --version
+
+about:
+  home: http://www.sqlite.org/
+  license: Public-Domain (http://www.sqlite.org/copyright.html)
+  license_family: Public-Domain
+  summary: Self-contained, zero-configuration, SQL database engine
+  description: |
+    SQLite is a software library that implements a self-contained, serverless,
+    zero-configuration, transactional SQL database engine.
+  doc_url: http://www.sqlite.org/docs.html
+  dev_url: https://github.com/mackyle/sqlite

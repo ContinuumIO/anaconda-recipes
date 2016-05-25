@@ -1,0 +1,30 @@
+package:
+  name: zlib
+  version: 1.2.8
+
+source:
+  fn: zlib-1.2.8.tar.gz
+  url: http://zlib.net/zlib-1.2.8.tar.gz
+  md5: 44d667c142d7cda120332623eab69f40
+
+build:
+  number: 3
+  features:
+    - vc9        [win and py27]
+    - vc10       [win and py34]
+    - vc14       [win and py35]
+
+requirements:
+  build:
+    - cmake      [win]
+
+about:
+  home: http://zlib.net/
+  license: zlib (http://zlib.net/zlib_license.html)
+  license_family: Other
+  summary: Unobtrusive compression library
+  description: |
+    zlib is designed to be a free, general-purpose, lossless data-compression
+    library for use on virtually any computer hardware and operating system.
+  doc_url: http://zlib.net/manual.html
+  dev_url: https://github.com/madler/zlib
