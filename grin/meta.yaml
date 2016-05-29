@@ -1,0 +1,41 @@
+package:
+  name: grin
+  version: 1.2.1
+
+source:
+  fn: grin-1.2.1.tar.gz
+  url: https://pypi.python.org/packages/source/g/grin/grin-1.2.1.tar.gz
+  md5: d894426dfbf70bc105388c2a51348199
+  patches:
+    - no_setuptools.patch
+
+build:
+  number: 3
+  entry_points:
+    - grin = grin:grin_main
+    - grind = grin:grind_main
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - argparse     [py == 26]
+
+test:
+  commands:
+    - grin -h
+    - grind -h
+  imports:
+    - grin
+
+about:
+  home: http://pypi.python.org/pypi/grin
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Enhanced grep-like tool
+  description: |
+    Grin is Robert Kern's enhanced grep-like tool analagous to ack(-grep)
+    (perl), rak (ruby), and ag (C).
+  doc_url: https://pypi.python.org/pypi/grin
+  dev_url: https://github.com/while0pass/grin

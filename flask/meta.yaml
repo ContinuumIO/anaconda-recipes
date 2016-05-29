@@ -1,0 +1,38 @@
+package:
+  name: flask
+  version: 0.10.1
+
+source:
+  fn: Flask-0.10.1.tar.gz
+  url: http://pypi.python.org/packages/source/F/Flask/Flask-0.10.1.tar.gz
+  md5: 378670fe456957eb3c27ddaef60b2b24
+  patches:
+    - no_setuptools.patch
+
+build:
+  number: 2
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - werkzeug >=0.7
+    - jinja2 >=2.4
+    - itsdangerous >=0.21
+
+test:
+  imports:
+    - flask
+
+about:
+  home: http://flask.pocoo.org/
+  license: BSD
+  license_file: LICENSE
+  summary: A microframework based on Werkzeug, Jinja2 and good intentions
+  description: |
+    Flask is a microframework for Python based on Werkzeug and Jinja2. It's
+    intended for getting started very quickly and was developed with best
+    intentions in mind.
+  doc_url: http://flask.pocoo.org/docs/0.10/
+  dev_url: https://github.com/mitsuhiko/flask

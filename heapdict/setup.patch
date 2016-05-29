@@ -1,0 +1,18 @@
+diff --git setup.py setup.py
+index bc40719..986bbd1 100644
+--- setup.py
++++ setup.py
+@@ -1,12 +1,6 @@
+ #!/usr/bin/env
+ 
+-import sys
+-if sys.version_info[0] <= 2:
+-    import ez_setup
+-    ez_setup.use_setuptools()
+-    from setuptools import setup, Extension
+-else:
+-    from distutils.core import setup, Extension
++from distutils.core import setup, Extension
+ 
+ setup(name='HeapDict',
+       version='1.0.0',

@@ -1,0 +1,30 @@
+package:
+  name: itsdangerous
+  version: 0.24
+
+source:
+  fn: itsdangerous-0.24.tar.gz
+  url: https://pypi.python.org/packages/source/i/itsdangerous/itsdangerous-0.24.tar.gz
+  md5: a3d55aa79369aef5345c036a8a26307f
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - itsdangerous
+
+about:
+  home: https://pythonhosted.org/itsdangerous/
+  license: BSD
+  license_file: LICENSE
+  summary: Various helpers to pass trusted data to untrusted environments
+  description: |
+    Sometimes you just want to send some data to untrusted environments. But how to do this safely? The trick involves signing. Given a key only you know, you can cryptographically sign your data and hand it over to
+    someone else. When you get the data back you can easily ensure that nobody
+    tampered with it.
+  doc_url: https://pythonhosted.org/itsdangerous/
+  dev_url: https://github.com/pallets/itsdangerous

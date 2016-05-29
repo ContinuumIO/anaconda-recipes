@@ -1,0 +1,32 @@
+package:
+  name: cdecimal
+  version: 2.3
+
+source:
+  fn: cdecimal-2.3.tar.gz
+  url: http://www.bytereef.org/software/mpdecimal/releases/cdecimal-2.3.tar.gz
+  md5: 655f9fd72f7a21688f903900ebea6f56
+
+build:
+  number: 2
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - cdecimal
+
+about:
+  home: http://www.bytereef.org/mpdecimal/index.html
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Fast drop-in replacement for decimal.py
+  description: |
+    Cdecimal is a fast drop-in replacement for the decimal module in
+    Python's standard library. Typical performance gains are between 30x
+    for I/O heavy benchmarks and 80x for numerical programs.
+  doc_url: http://www.bytereef.org/mpdecimal/doc/cdecimal/index.html

@@ -25,6 +25,7 @@ test:
     - easy_install --help
   imports:
     - setuptools
+    - setuptools.version
     - easy_install
     - pkg_resources
 

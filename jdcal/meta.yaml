@@ -1,0 +1,32 @@
+package:
+  name: jdcal
+  version: 1.2
+
+source:
+  fn: jdcal-1.2.tar.gz
+  url: https://pypi.python.org/packages/source/j/jdcal/jdcal-1.2.tar.gz
+  md5: ab8d5ba300fd1eb01514f363d19b1eb9
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - jdcal
+
+about:
+  home: http://github.com/phn/jdcal
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Julian dates from proleptic Gregorian and Julian calendars.
+  description: |
+    jdcal contains functions for converting between Julian dates and calendar
+    dates.
+  dev_url: https://github.com/phn/jdcal
+

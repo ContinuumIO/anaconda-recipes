@@ -1,0 +1,34 @@
+package:
+  name: heapdict
+  version: 1.0.0
+
+source:
+  fn: HeapDict-1.0.0.tar.gz
+  url: https://pypi.python.org/packages/source/H/HeapDict/HeapDict-1.0.0.tar.gz
+  md5: 47320e136156593c84072d09e770800f
+  patches:
+    - setup.patch
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - heapdict
+
+about:
+  home: http://stutzbachenterprises.com/
+  license: BSD
+  license_file: LICENSE
+  summary: A heap with decrease-key and increase-key operations
+  description: |
+    heapdict implements the MutableMapping ABC, meaning it works pretty much
+    like a regular Python dict. It's designed to be used as a priority queue.
+  doc_url: https://pypi.python.org/pypi/HeapDict
+  dev_url: https://github.com/DanielStutzbach/heapdict

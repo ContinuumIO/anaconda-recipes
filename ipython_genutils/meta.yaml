@@ -1,0 +1,24 @@
+package:
+  name: ipython_genutils
+  version: 0.1.0
+
+source:
+  fn: ipython_genutils-0.1.0.tar.gz
+  url: https://pypi.python.org/packages/source/i/ipython_genutils/ipython_genutils-0.1.0.tar.gz
+  md5: 9a8afbe0978adbcbfcb3b35b2d015a56
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - ipython_genutils
+
+about:
+  home: http://jupyter.org
+  license: BSD
+  license_file: COPYING.md
+  summary: vestigial utilities from IPython
