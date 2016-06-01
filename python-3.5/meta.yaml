@@ -1,0 +1,61 @@
+package:
+  name: python
+  version: 3.5.1
+
+source:
+  fn: Python-3.5.1.tgz
+  url: https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tgz
+  md5: be78e48cdfc1a7ad90efff146dce6cfe
+  patches:
+    - version.patch
+    - osx64-dist.patch      [osx and x86_64]
+    - win-find_exe.patch    [win]
+    - win-library_bin.patch [win]
+
+build:
+  number: 5
+  no_link:
+    - bin/python            [unix]
+    - DLLs/_ctypes.pyd      [win]
+  track_features:
+    - vc14                  [win]
+
+requirements:
+  build:
+    - bzip2                 [unix]
+    - zlib 1.2.*            [unix]
+    - sqlite 3.13.*         [unix]
+    - readline 6.2          [unix and x86]
+    - tk 8.5.18             [unix and x86]
+    - openssl 1.0.2*        [unix]
+    - xz 5.2.*              [unix]
+  run:
+    - zlib 1.2.*            [unix]
+    - sqlite 3.13.*         [unix]
+    - readline 6.2          [unix and x86]
+    - tk 8.5.18             [unix and x86]
+    - openssl 1.0.2*        [unix]
+    - xz 5.2.*              [unix]
+    - vs2015_runtime        [win]
+
+test:
+  commands:
+    - python -V               [unix]
+    - python3 -V              [unix]
+    - pydoc -h
+    - python3-config --help   [unix]
+
+about:
+  home: http://www.python.org/
+  license: PSF
+  license_file: LICENSE
+  summary: general purpose programming language
+  description: |
+    Python is a widely used high-level, general-purpose, interpreted, dynamic
+    programming language. Its design philosophy emphasizes code
+    readability, and its syntax allows programmers to express concepts in
+    fewer lines of code than would be possible in languages such as C++ or
+    Java. The language provides constructs intended to enable clear programs
+    on both a small and large scale.
+  doc_url: https://www.python.org/doc/versions/
+  dev_url: https://docs.python.org/devguide/

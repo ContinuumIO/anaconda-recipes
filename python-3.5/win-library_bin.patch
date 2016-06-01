@@ -1,0 +1,14 @@
+diff --git Lib/site.py Lib/site.py
+index 6f66c07..384bb32 100644
+--- Lib/site.py
++++ Lib/site.py
+@@ -554,6 +554,9 @@ def main():
+     execsitecustomize()
+     if ENABLE_USER_SITE:
+         execusercustomize()
++    if sys.platform == 'win32':
++        os.environ["PATH"] = r"%s\Library\bin;%s" % (sys.prefix,
++                                                     os.environ["PATH"])
+ 
+ # Prevent edition of sys.path when python was started with -S and
+ # site is imported later.
