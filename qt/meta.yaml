@@ -14,8 +14,9 @@ source:
     - vs2015_int_fix.patch             [win and py >= 35]
 
 build:
-  number: 1   [linux64 or osx]
-  number: 7   [win]
+  number: 1   [linux32]
+  number: 2   [linux64 or osx]
+  number: 8   [win]
   features:
     - vc9     [win and py27]
     - vc10    [win and py34]

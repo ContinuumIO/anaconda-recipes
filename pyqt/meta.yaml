@@ -14,10 +14,11 @@ source:
   md5:  cc3f9a88900c95b599afa69d869d8095                                                         [win]
   patches:
     - configure.patch
+    - find-qmake.patch [win]
 
 build:
-  number:      1       [unix]
-  number:      5       [win]
+  number:      2       [unix]
+  number:      6       [win]
 
 requirements:
   build:
