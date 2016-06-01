@@ -1,0 +1,43 @@
+package:
+  name: numexpr
+  version: 2.6.0
+
+source:
+  git_url: https://github.com/pydata/numexpr.git
+  git_tag: v2.6.0
+
+build:
+  number: 0
+  features:
+    - nomkl                   [nomkl]
+
+requirements:
+  build:
+    - python
+    - numpy x.x
+    - mkl-devel 11.3.3        [not nomkl]
+    - cio-bt                  [win]
+  run:
+    - python
+    - numpy x.x
+    - mkl 11.3.3              [not nomkl]
+
+test:
+  requires:
+    - setuptools
+    - cio-bt
+  imports:
+    - numexpr
+    - numexpr.interpreter
+
+about:
+  home: https://github.com/pydata/numexpr
+  license: MIT
+  license_file: LICENSE.txt
+  summary: Fast numerical expression evaluator for NumPy
+  description: |
+    Numexpr is a fast numerical expression evaluator for NumPy. With it,
+    expressions that operate on arrays (like "3*a+4*b") are accelerated and use
+    less memory than doing the same calculation in Python.
+  doc_url: https://github.com/pydata/numexpr/wiki/Numexpr-Users-Guide
+  dev_url: https://github.com/pydata/numexpr
