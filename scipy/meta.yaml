@@ -1,0 +1,46 @@
+package:
+  name: scipy
+  version: 0.17.1
+
+source:
+  fn: scipy-0.17.1.tar.gz
+  url: https://pypi.python.org/packages/05/5e/973bf71cfa865d962a68893e35e366a0a7ac0b713bc398b4e584c1bed982/scipy-0.17.1.tar.gz
+  md5: 8987b9a3e3cd79218a0a423b21c8e4de
+
+build:
+  number: 1
+  features:
+    - nomkl                   [nomkl]
+
+requirements:
+  build:
+    - python
+    - numpy x.x
+    - mkl-devel 11.3.3        [not nomkl]
+    - openblas 0.2.14         [linux and nomkl and (not ppc64le)]
+    - cio-bt                  [unix]
+  run:
+    - python
+    - numpy x.x
+    - mkl 11.3.3              [not nomkl]
+    - openblas 0.2.14         [linux and nomkl and (not ppc64le)]
+    - libgfortran 3.0.0       [linux]
+    - vs2010_runtime          [win and py27]
+
+test:
+  requires:
+    - nose
+    - cio-bt
+  imports:
+    - scipy
+
+about:
+  home: http://www.scipy.org/
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Scientific Library for Python
+  description: |
+    SciPy is a Python-based ecosystem of open-source software for mathematics,
+    science, and engineering.
+  doc_url: http://www.scipy.org/docs.html
+  dev_url: https://github.com/scipy/scipy
