@@ -1,0 +1,70 @@
+package:
+  name: python
+  version: 2.7.11
+
+source:
+  fn: Python-2.7.11.tgz
+  url: https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tgz
+  md5: 6b6076ec9e93f05dd63e47eb9c15728b
+  patches:
+    - version.patch
+    - cprt.patch
+    - linux-clear_history.patch       [linux]
+    - fix-readline-extra-space.patch  [linux]
+    - osx-dist.patch                  [osx and x86_64]
+    - osx-site.patch                  [osx]
+    - win-find_exe.patch              [win]
+    - win-cygwin.patch                [win]
+    - win-library_bin.patch           [win]
+
+build:
+  number: 5
+  no_link:
+    - bin/python                      [unix]
+    - DLLs/_ctypes.pyd                [win]
+  features:
+    - debug                           [debug]
+  track_features:
+    - vc9                             [win]
+
+requirements:
+  build:
+    - 7za                             [win]
+    - curl                            [win]
+    - bzip2                           [unix]
+    - zlib 1.2.*                      [unix]
+    - sqlite 3.13.*                   [unix]
+    - readline 6.2                    [unix and x86]
+    - tk 8.5.18                       [unix and x86]
+    - openssl 1.0.2*                  [unix]
+  run:
+    - zlib 1.2.*                      [unix]
+    - sqlite 3.13.*                   [unix]
+    - readline 6.2                    [unix and x86]
+    - tk 8.5.18                       [unix and x86]
+    - openssl 1.0.2*                  [unix]
+    - vs2008_runtime                  [win]
+
+test:
+  commands:
+    - python -V                       [unix]
+    - pydoc -h
+    - python-config --help            [unix]
+    - idle -h                         [x86]
+  files:
+    - hello.txt.gz
+
+about:
+  home: http://www.python.org/
+  license: PSF
+  license_file: LICENSE
+  summary: general purpose programming language
+  description: |
+    Python is a widely used high-level, general-purpose, interpreted, dynamic
+    programming language. Its design philosophy emphasizes code
+    readability, and its syntax allows programmers to express concepts in
+    fewer lines of code than would be possible in languages such as C++ or
+    Java. The language provides constructs intended to enable clear programs
+    on both a small and large scale.
+  doc_url: https://www.python.org/doc/versions/
+  dev_url: https://docs.python.org/devguide/
