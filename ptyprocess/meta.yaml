@@ -1,0 +1,28 @@
+package:
+  name: ptyprocess
+  version: 0.5.1
+
+source:
+  fn: ptyprocess-0.5.1.tar.gz
+  url: https://pypi.python.org/packages/db/d7/b465161910f3d1cef593c5e002bff67e0384898f597f1a7fdc8db4c02bf6/ptyprocess-0.5.1.tar.gz
+  md5: 94e537122914cc9ec9c1eadcd36e73a1
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - ptyprocess
+
+about:
+  home: https://github.com/pexpect/ptyprocess
+  license: ISC
+  license_family: Other
+  summary: Run a subprocess in a pseudo terminal
+  description: |
+    Ptyprocess allows you to launch a subprocess in a pseudo terminal (pty),
+    and interact with both the process and its pty.
+  dev_url: https://github.com/pexpect/ptyprocess

@@ -1,0 +1,35 @@
+package:
+  name: pickleshare
+  version: 0.7.2
+
+source:
+  fn: pickleshare-0.7.2.tar.gz
+  url: https://pypi.python.org/packages/ad/69/bcf0c55ded3779e6e1c9460c69854678d4b78f08482449caaf8e82d5f8eb/pickleshare-0.7.2.tar.gz
+  md5: 29d74cde0255546b6b2e1b48a0b31a54
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - path.py
+  run:
+    - python
+    - path.py
+    - pathlib2     [py < 34]
+
+test:
+  imports:
+    - pickleshare
+
+about:
+  home: https://github.com/vivainio/pickleshare
+  license: MIT
+  summary: File system based database that uses Python pickles
+  description: |
+    PickleShare is a small "shelve" like datastore with concurrency support.
+    Like shelve, a PickleShareDB object acts like a normal dictionary. Unlike
+    shelve, many processes can access the database simultaneously. Changing a
+    value in database is immediately visible to other processes accessing the
+    same database.
+  doc_url: https://pypi.python.org/pypi/pickleshare
+  dev_url: https://github.com/pickleshare/pickleshare

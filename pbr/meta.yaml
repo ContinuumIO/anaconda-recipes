@@ -1,0 +1,33 @@
+package:
+  name: pbr
+  version: 1.10.0
+
+source:
+  fn: pbr-1.10.0.tar.gz
+  url: https://pypi.python.org/packages/c3/2c/63275fab26a0fd8cadafca71a3623e4d0f0ee8ed7124a5bb128853d178a7/pbr-1.10.0.tar.gz
+  md5: 8e4968c587268f030e38329feb9c8f17
+
+requirements:
+  build:
+    - python
+    - pip
+  run:
+    - python
+    - pip
+
+test:
+  commands:
+    - pbr -h
+  imports:
+    - pbr
+
+about:
+  home: https://launchpad.net/pbr
+  license: Apache
+  license_file: LICENSE
+  summary: Python Build Reasonableness
+  description: |
+    PBR is a library to automatically do a bunch of standard things you want
+    in your setup.py without you having to repeat them every time.
+  doc_url: http://docs.openstack.org/developer/pbr/
+  dev_url: http://git.openstack.org/cgit/openstack-dev/pbr
