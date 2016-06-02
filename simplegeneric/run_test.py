@@ -1,0 +1,1 @@
+from simplegeneric import generic

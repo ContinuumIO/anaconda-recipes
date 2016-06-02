@@ -1,11 +1,11 @@
 package:
   name: alabaster
-  version: 0.7.7
+  version: 0.7.8
 
 source:
-  fn: alabaster-0.7.7.tar.gz
-  url: https://pypi.python.org/packages/source/a/alabaster/alabaster-0.7.7.tar.gz
-  md5: 957c665d7126dea8121f98038debcba7
+  fn: alabaster-0.7.8.tar.gz
+  url: https://pypi.python.org/packages/46/01/3539c406b47b0e44464a2b6c7b51871300d815b9d7b07c98309c9270bd50/alabaster-0.7.8.tar.gz
+  md5: 346a71e8a6d51dff2e02086fdd9c5ffe
 
 requirements:
   build:
