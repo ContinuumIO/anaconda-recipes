@@ -1,0 +1,30 @@
+package:
+  name: terminado
+  version: 0.6
+
+source:
+  fn: terminado-0.6.tar.gz
+  url: https://pypi.python.org/packages/58/59/aabe84fce2f45da10165435cec204d982863e176f6849a4a4fe2652a20a8/terminado-0.6.tar.gz
+  md5: 5b6c65da27fe1ed07a9f80f0588cdaba
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - tornado >=4.0
+    - ptyprocess
+
+test:
+  imports:
+    - terminado
+
+about:
+  home: https://github.com/takluyver/terminado
+  license: BSD
+  summary: Terminals served to term.js using Tornado websockets
+  description: |
+    Terminado is a Tornado websocket backend for the term.js Javascript
+    terminal emulator library.
+  doc_url: http://terminado.readthedocs.org/en/latest/
+  dev_url: https://github.com/takluyver/terminado

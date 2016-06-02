@@ -1,0 +1,37 @@
+package:
+  name: pyyaml
+  version: 3.11
+
+source:
+  fn: PyYAML-3.11.tar.gz
+  url: https://pypi.python.org/packages/source/P/PyYAML/PyYAML-3.11.tar.gz
+  md5: f50e08ef0fe55178479d3a618efe21db
+
+build:
+  number: 4
+  no_link: .*\.(pyd|dll)        [win]
+
+requirements:
+  build:
+    - python
+    - yaml 0.1.6
+  run:
+    - python
+    - yaml 0.1.6                [unix]
+
+test:
+  imports:
+    - yaml
+    - _yaml                     [not (win and py3k)]
+
+about:
+  home: http://pyyaml.org/wiki/PyYAML
+  license: MIT
+  license_file: LICENSE
+  summary: YAML parser and emitter for Python
+  description: |
+    PyYAML is a YAML parser and emitter for Python. YAML is a data
+    serialization format designed for human readability and interaction with
+    scripting languages.
+  doc_url: http://pyyaml.org/
+  dev_url: http://pyyaml.org/browser
