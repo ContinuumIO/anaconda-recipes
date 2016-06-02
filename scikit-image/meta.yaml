@@ -1,0 +1,49 @@
+package:
+  name: scikit-image
+  version: 0.12.3
+
+source:
+  fn: scikit-image-0.12.3.tar.gz
+  url: https://pypi.python.org/packages/source/s/scikit-image/scikit-image-0.12.3.tar.gz
+  md5: 04ea833383e0b6ad5f65da21292c25e1
+
+build:
+  number: 1
+  entry_points:
+    - skivi = skimage.scripts.skivi:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - cython
+    - numpy x.x
+    - scipy
+    - six
+    - matplotlib
+    - networkx
+    - pillow
+  run:
+    - python
+    - numpy x.x
+    - scipy
+    - six >=1.7.3
+    - matplotlib >=1.3.1
+    - networkx >=1.8
+    - pillow >=2.1
+
+test:
+  imports:
+    - skimage
+
+about:
+  home: http://scikit-image.org/
+  license: 3-clause BSD
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: Image processing routines for SciPy
+  description: |
+    The scikit-image SciKit (toolkit for SciPy) extends scipy.ndimage to
+    provide a versatile set of image processing routines.
+  doc_url: http://scikit-image.org/docs/dev/
+  dev_url: https://github.com/scikit-image/scikit-image
