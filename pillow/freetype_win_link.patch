@@ -1,0 +1,14 @@
+diff --git setup.py setup.py
+index 0f74a40..fa9acc7 100644
+--- setup.py
++++ setup.py
+@@ -555,7 +555,8 @@ class pil_build_ext(build_ext):
+         if feature.freetype:
+             exts.append(Extension("PIL._imagingft",
+                                   ["_imagingft.c"],
+-                                  libraries=["freetype"]))
++                                  libraries=["freetype", 
++                                             "bzip2", "zlib", "libpng"]))
+ 
+         if os.path.isfile("_imagingcms.c") and feature.lcms:
+             extra = []

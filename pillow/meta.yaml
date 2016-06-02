@@ -1,0 +1,54 @@
+package:
+  name: pillow
+  version: 3.2.0
+
+source:
+  fn: Pillow-3.2.0.tar.gz
+  url: https://pypi.python.org/packages/source/P/Pillow/Pillow-3.2.0.tar.gz
+  md5: 7cfd093c11205d9e2ebe3c51dfcad510
+  patches:
+    - freetype_win_link.patch   [win]
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - zlib 1.2.*
+    - libpng
+    - libtiff 4.0.6
+    - jpeg 8d
+    - freetype 2.5.*
+    - setuptools
+    - bzip2 1.0.6        [win]
+  run:
+    - python
+    - jpeg 8d
+    - zlib 1.2.*
+    - freetype 2.5.*
+    - libtiff 4.0.*
+    - bzip2 1.0.6        [win]
+
+test:
+  imports:
+    - PIL
+    - PIL.Image
+    - PIL._imaging
+    - PIL._imagingft
+    - PIL._imagingmath
+    - PIL._imagingmorph
+    - PIL._imagingtk     [linux and not (arm or ppc64le)]
+
+about:
+  home: http://python-pillow.github.io/
+  license: PIL license
+  license_family: Other
+  license_file: LICENSE
+  summary: The friendly Python Imaging Library(PIL) fork
+  description: |
+    Pillow is he friendly PIL fork. PIL is the Python Imaging Library. If you
+    have ever worried or wondered about the future of PIL, please stop. We're
+    here to save the day.
+  doc_url: http://pillow.readthedocs.org/en/3.2.x/
+  dev_url: https://github.com/python-pillow/Pillow
