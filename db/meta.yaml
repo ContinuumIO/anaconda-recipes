@@ -1,0 +1,24 @@
+package:
+  name: db
+  version: 5.3.28
+
+source:
+  fn: db-5.3.28.tar.gz
+  url: http://repo.continuum.io/pkgs/misc/src/db-5.3.28.tar.gz
+  md5: b99454564d5b4479750567031d66fe24
+
+build:
+  number: 1
+
+about:
+  home: http://www.oracle.com/us/products/database/berkeley-db/index.html
+  license: AGPLv3
+  license_family: AGPL
+  license_file: LICENSE
+  summary: Embeddable Databases
+  description: |
+    Oracle Berkeley DB provides the best open source embeddable databases
+    allowing developers the choice of SQL, Key/Value, XML/XQuery, or Java
+    Object storage for their data model. At its core is a fast, scalable
+    transactional database engine with proven reliability and availability.
+  doc_url: http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/documentation/index.htmlx

@@ -1,0 +1,35 @@
+package:
+  name: bsddb
+  version: 1.0
+
+source:
+  fn: Python-2.7.11.tgz
+  url: https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tgz
+  md5: 6b6076ec9e93f05dd63e47eb9c15728b
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - db 5.3.28
+  run:
+    - python
+    - db 5.3.28
+
+test:
+  imports:
+    - bsddb
+    - _bsddb
+
+about:
+  home: https://docs.python.org/2/library/bsddb.html
+  license: PSF
+  license_file: LICENSE
+  summary: The bsddb module provides an interface to the Berkeley DB library
+  description: |
+    Bsddb provides an interface to the Berekeley DB library. Users can create
+    hash, btree, or record based library files. Bsddb objects behave
+    generally like dictionaries.
+  doc_url: http://www.jcea.es/programacion/pybsddb.htm
