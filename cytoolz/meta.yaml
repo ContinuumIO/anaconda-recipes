@@ -6,13 +6,12 @@ source:
   fn: cytoolz-0.8.0.tar.gz
   url: https://pypi.python.org/packages/a3/68/c7f07c9087ec7c0c18fc1a7c6e253f2d4fc7acdd01aac4138f3e68b1e132/cytoolz-0.8.0.tar.gz
   md5: 432f0a17e04223942ebb5312d8f895ad
-#  patches:
-#    - setup_module.patch
+  patches:
+    - setup.patch
 
 requirements:
   build:
     - python
-    - setuptools
     - cython
     - toolz >=0.8.0
   run:

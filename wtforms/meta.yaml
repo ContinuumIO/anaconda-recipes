@@ -1,0 +1,27 @@
+package:
+  name: wtforms
+  version: 2.1
+
+source:
+  fn: WTForms-2.1.zip
+  url: https://pypi.python.org/packages/bf/91/2e553b86c55e9cf2f33265de50e052441fb753af46f5f20477fe9c61280e/WTForms-2.1.zip
+  md5: 6938a541fafd1a1ae2f6b9b88588eef2
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - wtforms
+
+about:
+  home: http://wtforms.simplecodes.com/
+  license: BSD
+  license_file: LICENSE.txt
+  summary: A flexible forms validation and rendering library for Python
+  doc_url: http://wtforms.readthedocs.org/en/stable/
+  dev_url: https://github.com/wtforms/wtforms
