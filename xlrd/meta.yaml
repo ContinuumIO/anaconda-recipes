@@ -1,0 +1,29 @@
+package:
+  name: xlrd
+  version: 1.0.0
+
+source:
+  fn: xlrd-1.0.0.tar.gz
+  url: https://pypi.python.org/packages/42/85/25caf967c2d496067489e0bb32df069a8361e1fd96a7e9f35408e56b3aab/xlrd-1.0.0.tar.gz
+  md5: 9a91b688cd4945477ac28187a54f9a3b
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - xlrd
+
+about:
+  home: http://www.lexicon.net/sjmachin/xlrd.htm
+  license: BSD
+  summary: Extract data from Microsoft Excel spreadsheet files
+  description: |
+    Xlrd provides a library or developers to use to extract information from
+    Microsoft Excel (tm) spreadsheet files
+  doc_url: https://pypi.python.org/pypi/xlrd
+  dev_url: https://github.com/python-excel/xlrd

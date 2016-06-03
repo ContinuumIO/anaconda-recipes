@@ -1,0 +1,17 @@
+diff --git setup.py setup.py
+index d7c1e87..3be15a0 100644
+--- setup.py
++++ setup.py
+@@ -56,9 +56,11 @@ else:
+ 
+ ext_modules = []
+ for modname in ['dicttoolz', 'functoolz', 'itertoolz',
+-                'curried/exceptions', 'recipes', 'utils']:
++                'recipes', 'utils']:
+     ext_modules.append(Extension('cytoolz.' + modname,
+                                  ['cytoolz/' + modname + suffix]))
++ext_modules.append(Extension('cytoolz.curried.exceptions',
++                             ['cytoolz/curried/exceptions' + suffix]))
+ 
+ if use_cython:
+     ext_modules = cythonize(ext_modules)

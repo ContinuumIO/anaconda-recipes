@@ -1,0 +1,32 @@
+package:
+  name: toolz
+  version: 0.8.0
+
+source:
+  fn: toolz-0.8.0.tar.gz
+  url: https://pypi.python.org/packages/9e/b0/47e994b3b370087d388d2bb9dfc97c7e901b801265ccd1e8e9fd16eda1b8/toolz-0.8.0.tar.gz
+  md5: 21e051717a14766a4533b6c36bd54575
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - toolz
+
+about:
+  home: http://toolz.readthedocs.org/en/latest/
+  license: BSD
+  summary: List processing tools and functional utilities
+  description: |
+    Toolz provides a set of utility functions for iterators, functions, and
+    dictionaries. These functions interoperate well and form the building
+    blocks of common data analytic operations. They extend the standard
+    libraries itertools and functools and borrow heavily from the standard
+    libraries of contemporary functional languages.
+  doc_url: http://toolz.readthedocs.org/en/latest/
+  dev_url: https://github.com/pytoolz/toolz

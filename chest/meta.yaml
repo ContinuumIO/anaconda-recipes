@@ -1,0 +1,33 @@
+package:
+  name: chest
+  version: 0.2.3
+
+source:
+  fn: chest-0.2.3.tar.gz
+  url: https://pypi.python.org/packages/source/c/chest/chest-0.2.3.tar.gz
+  md5: 1f5fc22d0caad0fc63e6bd68cc3ca873
+  patches:
+    - setup.patch
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - heapdict
+
+test:
+  imports:
+    - chest
+
+about:
+  home: https://github.com/ContinuumIO/chest
+  license: BSD
+  license_file: LICENSE.txt
+  summary: A dictionary that writes its contents to disk
+  description: |
+    Chest acts like a dictionary, but it can write its contents to disk.
+    This is useful because Chest can then hold datasets that are larger than
+    memory, and Chest persists and so can be saved and loaded for later use.
+  doc_url: https://pypi.python.org/pypi/chest/
+  dev_url: https://github.com/blaze/chest

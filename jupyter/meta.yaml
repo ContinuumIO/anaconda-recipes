@@ -1,0 +1,36 @@
+package:
+  name: jupyter
+  version: 1.0.0
+
+source:
+  fn: jupyter-1.0.0.tar.gz
+  url: https://pypi.python.org/packages/source/j/jupyter/jupyter-1.0.0.tar.gz
+  md5: c6030444c7eb6c05a4d7b1768c72aed7
+
+build:
+  number: 3
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - notebook
+    - qtconsole
+    - jupyter_console
+    - nbconvert
+    - ipykernel
+    - ipywidgets
+
+about:
+  home: http://jupyter.org
+  license: BSD
+  license_file: LICENSE
+  summary: Open source, interactive data science and scientific computing
+  description: |
+    The Jupyter Notebook is a web application that allows you to create and
+    share documents that contain live code, equations, visualizations and
+    explanatory text. Uses include: data cleaning and transformation,
+    numerical simulation, statistical modeling, machine learning and much more.
+  doc_url: http://jupyter.readthedocs.org/
+  dev_url: https://github.com/jupyter/jupyter

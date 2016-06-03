@@ -1,0 +1,29 @@
+package:
+  name: xlwt
+  version: 1.1.1
+
+source:
+  fn: xlwt-1.1.1.tar.gz
+  url: https://pypi.python.org/packages/fe/eb/ba569c5411ebcd7ff509833b17f280ba2ec19daa95ae5c9f8f4a39dfdbf7/xlwt-1.1.1.tar.gz
+  md5: 607ce162869ac9b4c5dc423e3e0323b8
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - xlwt
+
+about:
+  home: http://www.python-excel.org/
+  license: BSD
+  summary: Writing data and formatting information to Excel files
+  description: |
+    Xlwt is a library for developers to use to generate spreadsheet files
+    compatible with Microsoft Excel versions 95 to 2003.
+  doc_url: http://xlwt.readthedocs.org/en/latest/
+  dev_url: https://github.com/python-excel/xlwt

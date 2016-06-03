@@ -1,0 +1,29 @@
+package:
+  name: conda-env
+  version: 2.4.5
+
+source:
+  git_url: https://github.com/conda/conda-env.git
+  git_tag: v2.4.5
+
+build:
+  entry_points:
+    - conda-env = conda_env.cli.main:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+about:
+  home: https://github.com/conda/conda-env/
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Provides a unified interface to dealing with Conda environments
+  description: |
+    Provides the conda env interface to Conda environments. All of the usage
+    is documented via the --help flag.
+  doc_url: http://conda.pydata.org/docs/
+  dev_url: https://github.com/conda/conda-env/

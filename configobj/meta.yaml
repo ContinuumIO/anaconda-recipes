@@ -1,0 +1,32 @@
+package:
+  name: configobj
+  version: 5.0.6
+
+source:
+  fn: configobj-5.0.6.tar.gz
+  url: https://pypi.python.org/packages/source/c/configobj/configobj-5.0.6.tar.gz
+  md5: e472a3a1c2a67bb0ec9b5d54c13a47d6
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - six
+
+test:
+  imports:
+    - configobj
+
+about:
+  home: http://www.voidspace.org.uk/python/configobj.html
+  license: BSD
+  summary: Config file reading, writing and validation
+  description: |
+    ConfigObj is a simple but powerful config file reader and writer. Its main
+    feature is that it is very easy to use, with a straightforward
+    programmer's interface and a simple syntax for config files. It has many
+    other useful features, including nested sections, list values, multiple
+    line values, string interpolation, and much more.
+  doc_url: https://configobj.readthedocs.org
+  dev_url: https://github.com/DiffSK/configobj
