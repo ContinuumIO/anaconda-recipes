@@ -1,0 +1,13 @@
+diff --git setup.py setup.py
+index ec0cc9a..003b3c0 100644
+--- setup.py
++++ setup.py
+@@ -15,7 +15,7 @@ automatically use Cython unless disabled via a command line argument.
+ """
+ import os.path
+ import sys
+-from setuptools import setup, Extension
++from distutils.core import setup, Extension
+ 
+ info = {}
+ filename = os.path.join('cytoolz', '_version.py')
