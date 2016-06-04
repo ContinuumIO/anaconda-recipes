@@ -1,0 +1,32 @@
+package:
+  name: appscript
+  version: 1.0.1
+
+source:
+  fn: appscript-1.0.1.tar.gz
+  url: https://pypi.python.org/packages/source/a/appscript/appscript-1.0.1.tar.gz
+  md5: 6447b3bef966613bb5ddaedfe32c4558
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - aem
+    - appscript
+    - mactypes
+    - osax
+    - aem.ae
+
+about:
+  home: http://appscript.sourceforge.net/
+  license: Public-Domain
+  summary: Control AppleScriptable applications from Python
+  description: |
+    Appscript is a user-friendly Apple event bridge that allows
+    users to control Applescriptable Mac OS X applications from Python. This allows
+    Python to be a serious alternative to using Apple's AppleScript language.
+  doc_url: https://pypi.python.org/pypi/appscript
