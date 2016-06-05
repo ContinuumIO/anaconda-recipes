@@ -1,0 +1,32 @@
+package:
+  name: bottleneck
+  version: 1.0.0
+
+source:
+  fn: Bottleneck-1.0.0.tar.gz
+  url: https://pypi.python.org/packages/source/B/Bottleneck/Bottleneck-1.0.0.tar.gz
+  md5: 380fa6f275bd24f27e7cf0e0d752f5d2
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy x.x
+  run:
+    - python
+    - numpy x.x
+
+about:
+  home: http://berkeleyanalytics.com/bottleneck
+  license: Simplified BSD
+  license_family: BSD
+  license_file: bottleneck/LICENSE
+  summary: Fast NumPy array functions written in Cython.
+  description: |
+    Bottleneck is a collection of fast NumPy array functions written in
+    Cython.
+  doc_url: http://berkeleyanalytics.com/bottleneck
+  dev_url: https://github.com/kwgoodman/bottleneck

@@ -1,0 +1,30 @@
+package:
+  name: multipledispatch
+  version: 0.4.8
+
+source:
+  fn: multipledispatch-0.4.8.tar.gz
+  url: https://pypi.python.org/packages/source/m/multipledispatch/multipledispatch-0.4.8.tar.gz
+  md5: f0eb0c527cdbe788ca7dcd1511bc49a9
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - multipledispatch
+
+about:
+  home: http://github.com/mrocklin/multipledispatch/
+  license: BSD
+  summary: Multiple dispatch in Python
+  description: |
+    This implementation of multiple dispatch is efficient, mostly complete,
+    performs static analysis to avoid conflicts, and provides optional
+    namespace support.
+  doc_url: http://multiple-dispatch.readthedocs.org/
+  dev_url: https://github.com/mrocklin/multipledispatch/
