@@ -1,0 +1,33 @@
+package:
+  name: chameleon
+  version: 2.24
+
+source:
+  fn: Chameleon-2.24.tar.gz
+  url: https://pypi.python.org/packages/5a/9e/637379ffa13c5172b5c0e704833ffea6bf51cec7567f93fd6e903d53ed74/Chameleon-2.24.tar.gz
+  md5: 1b01f1f6533a8a11d0d2f2366dec5342
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - setuptools
+
+test:
+  imports:
+    - chameleon
+    - chameleon.utils
+
+about:
+  home: https://chameleon.readthedocs.org
+  license: BSD-like
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: HTML/XML template engine for Python
+  description: |
+    Chameleon is an HTML/XML template engine for Python designed to generate
+    the document output of a web application, typically HTML markup or XML.
+  doc_url: https://chameleon.readthedocs.org
+  dev_url: https://github.com/malthe/chameleon

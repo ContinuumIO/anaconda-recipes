@@ -1,0 +1,26 @@
+package:
+  name: redis-py
+  version: 2.10.5
+
+source:
+  git_url: https://github.com/andymccurdy/redis-py.git
+  git_tag: 2.10.5
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - redis
+
+about:
+  home: https://github.com/andymccurdy/redis-py/
+  license: MIT (https://github.com/andymccurdy/redis-py/blob/master/LICENSE)
+  license_family: MIT
+  license_file: LICENSE
+  summary: Redis Python Client
+  description: |
+    The Python interface to the Redis key-value store. Requires a running
+    Redis server.
+  doc_url: https://pypi.python.org/pypi/redis
+  dev_url: https://github.com/andymccurdy/redis-py/

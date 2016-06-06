@@ -1,0 +1,30 @@
+package:
+  name: rope
+  version: 0.10.3
+
+source:
+  fn: rope-0.10.3.tar.gz
+  url: https://pypi.python.org/packages/e1/5e/fe00383d52d0a1e0be42e6f1ee98d53902bfffb6b2835616c0fceca45597/rope-0.10.3.tar.gz
+  md5: 2fd498b64fe5390946167494eff13642
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - rope
+    - rope.base
+    - rope.contrib
+    - rope.refactor
+
+about:
+  home: https://github.com/python-rope/rope
+  license: GPL
+  license_family: GPL2
+  license_file: COPYING
+  summary: A Python refactoring library
+  doc_url: https://github.com/python-rope/rope
+  dev_url: https://github.com/python-rope/rope
