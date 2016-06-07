@@ -1,0 +1,27 @@
+package:
+  name: vcversioner
+  version: 2.16.0.0
+
+source:
+  fn: vcversioner-2.16.0.0.tar.gz
+  url: https://pypi.python.org/packages/c5/cc/33162c0a7b28a4d8c83da07bc2b12cee58c120b4a9e8bba31c41c8d35a16/vcversioner-2.16.0.0.tar.gz
+  md5: aab6ef5e0cf8614a1b1140ed5b7f107d
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - vcversioner
+
+about:
+  home: https://github.com/habnabit/vcversioner
+  license: ISC
+  license_family: Other
+  summary: take version numbers from version control
+  doc_url: https://github.com/habnabit/vcversioner
+  dev_url: https://github.com/habnabit/vcversioner
