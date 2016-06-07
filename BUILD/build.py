@@ -1,6 +1,8 @@
 import os
+import sys
 import json
 import yaml
+import subprocess
 from os.path import isfile, join
 
 
@@ -27,6 +29,24 @@ def get_recipes(filter):
                 yield recipe_dir
 
 
+def build(recipe_dir):
+    if sys.platform == 'win32':
+        cmd = [sys.executable,
+               join(sys.prefix, 'Scripts', 'conda-build-script.py')]
+    else:
+        cmd = [sys.executable, join(sys.prefix, 'bin', 'conda-build')]
+    cmd.extend(['--python', '27',
+                '--numpy', '111',
+                recipe_dir])
+    print ' '.join(cmd)
+
+    env = dict(os.environ)
+    env['FEATURE_NOMKL'] = '0'
+    env['FEATURE_DEBUG'] = '0'
+    subprocess.check_call(cmd, env=env)
+
+
 if __name__ == '__main__':
     for recipe_dir in get_recipes('osx-64:py27'):
         print recipe_dir
+        build(recipe_dir)
