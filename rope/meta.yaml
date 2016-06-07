@@ -1,11 +1,17 @@
 package:
   name: rope
-  version: 0.10.3
+  version: 0.9.4
 
 source:
-  fn: rope-0.10.3.tar.gz
-  url: https://pypi.python.org/packages/e1/5e/fe00383d52d0a1e0be42e6f1ee98d53902bfffb6b2835616c0fceca45597/rope-0.10.3.tar.gz
-  md5: 2fd498b64fe5390946167494eff13642
+  fn: rope-0.9.4.tar.gz                                                              [py2k]
+  url: http://pypi.python.org/packages/source/r/rope/rope-0.9.4.tar.gz               [py2k]
+  md5: 6c654c6892f78008e04e2d65f9f859bb                                              [py2k]
+  fn: rope_py3k-0.9.4-1.tar.gz                                                       [py3k]
+  url: https://pypi.python.org/packages/source/r/rope_py3k/rope_py3k-0.9.4-1.tar.gz  [py3k]
+  md5: f421a1ba3e57d4fcebe3640c39b0f9f0                                              [py3k]
+
+build:
+  number: 1
 
 requirements:
   build:

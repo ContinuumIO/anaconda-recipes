@@ -1,0 +1,36 @@
+package:
+  name: transaction
+  version: 1.6.0
+
+source:
+  fn: transaction-1.6.0.tar.gz
+  url: https://pypi.python.org/packages/da/2a/8ecce8abd6a361b937d488c53fd69302533bb7a56015304c0cd8645e0eb2/transaction-1.6.0.tar.gz
+  md5: eb4d2a5b5d6c9d1ba44c4afaa625faa3
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - zope.interface
+  run:
+    - python
+    - zope.interface
+
+test:
+  imports:
+    - transaction
+
+about:
+  home: http://zodb.readthedocs.org/en/latest/transactions.html
+  license: ZPL 2.1
+  license_family: Other
+  license_file: LICENSE.txt
+  summary: Transaction management for Python
+  description: |
+    A transaction consists of one or more operations that we want to perform
+    as a single action. It's an all or nothing proposition: either all the
+    operations that are part of the transaction are completed successfully or
+    none of them have any effect. In the transaction package, a transaction
+    object represents a running transaction that can be committed or aborted
+    in the end.
+  doc_url: http://zodb.readthedocs.org/en/latest/transactions.html

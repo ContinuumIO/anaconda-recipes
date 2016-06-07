@@ -1,11 +1,11 @@
 package:
   name: setuptools
-  version: 21.2.1
+  version: 22.0.5
 
 source:
-  fn: setuptools-21.2.1.tar.gz
-  url: https://pypi.python.org/packages/13/e8/35d9c7528b3c266a17e888bea1e02eb061e9ab6cdabc7107dfb7da83a1d2/setuptools-21.2.1.tar.gz
-  md5: b6f59b1987fe9642874448e54ee33315
+  fn: setuptools-22.0.5.tar.gz
+  url: https://pypi.python.org/packages/90/7a/b64d5804b6d1aebed1892e4df1c21bcb4f8480095ba8004e48999601119d/setuptools-22.0.5.tar.gz
+  md5: 869f3029dcc66a64ba39875e2a2f044a
   patches:
     - nodownload.patch
     - setup.patch

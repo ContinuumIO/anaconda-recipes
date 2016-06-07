@@ -1,0 +1,31 @@
+package:
+  name: certifi
+  version: 2016.2.28
+
+source:
+  url: https://pypi.python.org/packages/5c/f8/f6c54727c74579c6bbe5926f5deb9677c5810a33e11da58d1a4e2d09d041/certifi-2016.2.28.tar.gz
+  fn: certifi-2016.2.28.tar.gz
+  md5: 5d672aa766e1f773c75cfeccd02d3650
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - certifi
+
+about:
+  home: https://certifi.io
+  license: ISC
+  license_family: Other
+  license_file: LICENSE
+  summary: Python package for providing Mozilla's CA Bundle.
+  description: |
+   Certifi is a curated collection of Root Certificates for validating the
+   trustworthiness of SSL certificates while verifying the identity of TLS
+   hosts.
+  doc_url: https://pypi.python.org/pypi/certifi

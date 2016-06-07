@@ -1,0 +1,47 @@
+package:
+  name: fontconfig
+  version: 2.11.1
+
+source:
+  fn: fontconfig-2.11.1.tar.bz2
+  url: http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.1.tar.bz2
+  md5: 824d000eb737af6e16c826dd3b2d6c90
+  patches:
+    - fc-cache.patch        [linux]
+    - fcf.patch             [linux]
+
+build:
+  number: 6
+  detect_binary_files_with_prefix: True
+
+requirements:
+  build:
+    - freetype 2.5.*
+    - libxml2 2.9.*
+    - libpng 1.6.*
+  run:
+    - freetype 2.5.*
+    - libxml2 2.9.*
+    - libpng 1.6.*
+
+test:
+  commands:
+    - fc-cache --help
+    - fc-cat --help
+    - fc-list --help
+    - fc-match --help
+    - fc-pattern --help
+    - fc-query --help
+    - fc-scan --help
+    - fc-validate --help
+
+about:
+  home: http://www.freedesktop.org/wiki/Software/fontconfig/
+  license: BSD
+  license_file: COPYING
+  summary: A library for configuring and customizing font access
+  description: |
+    Fontconfig is a library designed to provide system-wide font configuration,
+    customization and application access.
+  doc_url: https://www.freedesktop.org/software/fontconfig/fontconfig-user.html
+  dev_url: https://cgit.freedesktop.org/fontconfig/

@@ -1,6 +1,6 @@
 --- setuptools/package_index.py
 +++ setuptools/package_index.py
-@@ -282,6 +282,10 @@ class PackageIndex(Environment):
+@@ -285,6 +285,10 @@ class PackageIndex(Environment):
  
      def process_url(self, url, retrieve=False):
          """Evaluate a URL as a possible download, and maybe retrieve it"""

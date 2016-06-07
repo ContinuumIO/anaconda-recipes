@@ -1,11 +1,11 @@
 package:
   name: notebook
-  version: 4.2.0
+  version: 4.2.1
 
 source:
-  fn: notebook-4.2.0.tar.gz
-  url: https://pypi.python.org/packages/source/n/notebook/notebook-4.2.0.tar.gz
-  md5: 3a72bb93f6f01caec69e5e65718f5f7f
+  fn: notebook-4.2.1.tar.gz
+  url: https://pypi.python.org/packages/07/3c/d48c93d72846f37671bcb15aecfdd5f7c38cd1d629706e3086bde8e380fa/notebook-4.2.1.tar.gz
+  md5: 09e727ba598ab1848327d211fd2ad057
 
 build:
   entry_points:
