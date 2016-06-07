@@ -22,11 +22,11 @@ def get_recipes(filter):
             continue
         sl = supported[name]
         if sl == 'all':
-            yield recipe_dir
+            yield recipe_dir, name
         else:
             assert isinstance(sl, list)
             if filter in sl:
-                yield recipe_dir
+                yield recipe_dir, name
 
 
 def build(recipe_dir):
@@ -47,6 +47,12 @@ def build(recipe_dir):
 
 
 if __name__ == '__main__':
-    for recipe_dir in get_recipes('osx-64:py27'):
+    for recipe_dir, name in get_recipes('osx-64:py27'):
         print recipe_dir
-        build(recipe_dir)
+        try:
+            build(recipe_dir)
+            result = 'OK'
+        except subprocess.CalledProcessError:
+            result = 'FAILED'
+        with open('result.txt', 'a') as f:
+            f.write('%-20s %s\n' % (name, result))
