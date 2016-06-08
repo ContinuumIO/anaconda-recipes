@@ -42,7 +42,7 @@ def build(recipe_dir, py_ver='27'):
     cmd.extend(['--python', py_ver,
                 '--numpy', '111',
                 recipe_dir])
-    print ' '.join(cmd)
+    print(' '.join(cmd))
 
     env = dict(os.environ)
     env['FEATURE_NOMKL'] = '0'
@@ -70,7 +70,7 @@ def main():
                                                        PY_ALLOWED))
 
     filter = '%s:py%s' % (subdir, opts.py)
-    print 'filter: %s' % filter
+    print('filter: %s' % filter)
 
     for recipe_dir, name in get_recipes(filter):
         try:
