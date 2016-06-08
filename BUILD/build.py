@@ -29,13 +29,13 @@ def get_recipes(filter):
                 yield recipe_dir, name
 
 
-def build(recipe_dir):
+def build(recipe_dir, py_ver='27'):
     if sys.platform == 'win32':
         cmd = [sys.executable,
                join(sys.prefix, 'Scripts', 'conda-build-script.py')]
     else:
         cmd = [sys.executable, join(sys.prefix, 'bin', 'conda-build')]
-    cmd.extend(['--python', '27',
+    cmd.extend(['--python', py_ver,
                 '--numpy', '111',
                 recipe_dir])
     print ' '.join(cmd)
@@ -46,13 +46,22 @@ def build(recipe_dir):
     subprocess.check_call(cmd, env=env)
 
 
-if __name__ == '__main__':
-    for recipe_dir, name in get_recipes('osx-64:py27'):
-        print recipe_dir
+def main():
+    from conda.config import subdir
+
+    py_ver = '27'
+    filter = '%s:py%s' % (subdir, py_ver)
+    print 'filter: %s' % filter
+
+    for recipe_dir, name in get_recipes(filter):
         try:
-            build(recipe_dir)
+            build(recipe_dir, py_ver)
             result = 'OK'
         except subprocess.CalledProcessError:
             result = 'FAILED'
         with open('result.txt', 'a') as f:
             f.write('%-20s %s\n' % (name, result))
+
+
+if __name__ == '__main__':
+    main()
