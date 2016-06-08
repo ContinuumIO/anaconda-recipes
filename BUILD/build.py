@@ -4,6 +4,10 @@ import json
 import yaml
 import subprocess
 from os.path import isfile, join
+from optparse import OptionParser
+
+
+PY_ALLOWED = ('27', '35')
 
 
 def get_recipes(filter):
@@ -49,13 +53,28 @@ def build(recipe_dir, py_ver='27'):
 def main():
     from conda.config import subdir
 
-    py_ver = '27'
-    filter = '%s:py%s' % (subdir, py_ver)
+    p = OptionParser(
+        usage="usage: %prog [options]",
+        description="runs conda-build on recipes")
+
+    p.add_option("--py",
+                 action="store",
+                 default="27",
+                 help="Python version to build against, defaults to %default")
+
+    opts, args = p.parse_args()
+    if args:
+        p.error("No arguments expected")
+    if opts.py not in PY_ALLOWED:
+        p.error("Did not expect --py=%s not in: %s" % (opts.py,
+                                                       PY_ALLOWED))
+
+    filter = '%s:py%s' % (subdir, opts.py)
     print 'filter: %s' % filter
 
     for recipe_dir, name in get_recipes(filter):
         try:
-            build(recipe_dir, py_ver)
+            build(recipe_dir, opts.py)
             result = 'OK'
         except subprocess.CalledProcessError:
             result = 'FAILED'
