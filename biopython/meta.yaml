@@ -1,0 +1,34 @@
+package:
+  name: biopython
+  version: 1.67
+
+source:
+  fn: biopython-1.67.tar.gz
+  url: https://pypi.python.org/packages/f4/35/67d779f52870770c228f9edd0c9d1d1b9bc11afad794e220295d7b88a804/biopython-1.67.tar.gz
+  md5: 542699cc310588c1997806681ee1f65e
+
+requirements:
+  build:
+    - python
+    - numpy x.x
+  run:
+    - python
+    - numpy x.x
+
+test:
+  imports:
+    - Bio
+    - BioSQL
+
+about:
+  home: http://biopython.org/
+  license: BSD-like
+  license_family: BSD
+  license_file: LICENSE
+  summary: Freely available tools for biological computation
+  description: |
+    Biopython is a set of freely available Python tools for computational
+    molecular biology. Biopython makes it easy to use Python for bionformatics
+    with high-quality, reusable modules and classes.
+  doc_url: http://biopython.org/wiki/Documentation
+  dev_url: https://github.com/biopython/biopython

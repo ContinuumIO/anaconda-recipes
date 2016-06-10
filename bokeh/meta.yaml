@@ -4,8 +4,8 @@ package:
 
 source:
   fn: bokeh-0.11.0.tar.gz
-  url: https://pypi.python.org/packages/source/b/bokeh/bokeh-0.11.0.tar.gz
-  md5: 16064e126b7c0ca4cce03506dd1b4d30
+  url: https://pypi.python.org/packages/53/45/b3e7df7aeae95f827fa99bba50dfb4546b0ad8b06472b768c615f824a0ce/bokeh-0.11.1.tar.gz
+  md5: b90e4889668732cf0d960415f89263ae
 
 requirements:
   build:
