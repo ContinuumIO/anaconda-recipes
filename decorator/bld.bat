@@ -1,4 +1,2 @@
-python setup.py install
+"%PYTHON%" setup.py install --old-and-unmanageable
 if errorlevel 1 exit 1
-
-rd /s /q %PREFIX%\Lib\lib2to3
