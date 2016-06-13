@@ -1,13 +1,13 @@
 package:
   name: numba
-  version: {{ GIT_DESCRIBE_TAG }}
+  version: 0.26.0
 
 source:
   git_url: https://github.com/numba/numba
   git_tag: 0.26.0
 
 build:
-  number: {{ GIT_DESCRIBE_NUMBER|int }}
+  number: 0
   entry_points:
     - pycc = numba.pycc:main
     - numba = numba.numba_entry:main
