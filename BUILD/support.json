@@ -423,6 +423,12 @@
   "qtpy": "all", 
   "quandl": "all", 
   "queuelib": "all", 
+  "readline": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "redis": [
     "linux-64:py27", 
     "linux-64:py35", 
