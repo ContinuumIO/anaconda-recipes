@@ -1,11 +1,11 @@
 package:
   name: xlwt
-  version: 1.1.1
+  version: 1.1.2
 
 source:
-  fn: xlwt-1.1.1.tar.gz
-  url: https://pypi.python.org/packages/fe/eb/ba569c5411ebcd7ff509833b17f280ba2ec19daa95ae5c9f8f4a39dfdbf7/xlwt-1.1.1.tar.gz
-  md5: 607ce162869ac9b4c5dc423e3e0323b8
+  fn: xlwt-1.1.2.tar.gz
+  url: https://pypi.python.org/packages/0b/69/644313df86e6375ec2c6b34ec8ac544b9cc7803b7d943223d32811860f3d/xlwt-1.1.2.tar.gz
+  md5: fadf8d1be8c5f071561c4145ed5f5b89
 
 requirements:
   build:

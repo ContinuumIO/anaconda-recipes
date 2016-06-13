@@ -1,11 +1,11 @@
 package:
   name: pytest
-  version: 2.9.1
+  version: 2.9.2
 
 source:
-  fn: pytest-2.9.1.tar.gz
-  url: https://pypi.python.org/packages/source/p/pytest/pytest-2.9.1.tar.gz
-  md5: 05165740ea50928e4e971378630163ec
+  fn: pytest-2.9.2.tar.gz
+  url: https://pypi.python.org/packages/f0/ee/6e2522c968339dca7d9abfd5e71312abeeb5ee902e09b4daf44f07b2f907/pytest-2.9.2.tar.gz
+  md5: b65c2944dfaa0efb62c0239afb424f5b
 
 build:
   entry_points:
@@ -20,7 +20,7 @@ requirements:
     - colorama          [win]
   run:
     - python
-    - py
+    - py >=1.4.29
     - argparse          [py26]
     - colorama          [win]
 
