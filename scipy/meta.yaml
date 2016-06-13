@@ -15,6 +15,7 @@ build:
 requirements:
   build:
     - python
+    - setuptools              [win]
     - numpy x.x
     - mkl-devel 11.3.3        [not nomkl]
     - openblas 0.2.14         [linux and nomkl and (not ppc64le)]
@@ -25,7 +26,9 @@ requirements:
     - mkl 11.3.3              [not nomkl]
     - openblas 0.2.14         [linux and nomkl and (not ppc64le)]
     - libgfortran 3.0.0       [linux]
-    - vs2010_runtime          [win and py27]
+    - vs2015_runtime          [win and py35]
+    - vs2010_runtime          [win and py34]
+    - vs2008_runtime          [win and py27]
 
 test:
   requires:

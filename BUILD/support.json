@@ -261,6 +261,7 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "llvmlite": "all", 
   "locket": "all", 
   "logilab-common": "all", 
   "luigi": "all", 
@@ -300,6 +301,7 @@
   "nltk": "all", 
   "nose": "all", 
   "notebook": "all", 
+  "numba": "all", 
   "numexpr": "all", 
   "numpy": "all", 
   "odo": "all", 
