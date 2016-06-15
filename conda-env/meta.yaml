@@ -1,10 +1,10 @@
 package:
   name: conda-env
-  version: 2.4.5
+  version: 2.5.0
 
 source:
   git_url: https://github.com/conda/conda-env.git
-  git_tag: v2.4.5
+  git_tag: v2.5.0
 
 build:
   entry_points:
@@ -13,9 +13,14 @@ build:
 requirements:
   build:
     - python
-    - setuptools
   run:
     - python
+
+#test:
+#  requires:
+#    - conda
+#  imports:
+#    - conda_env
 
 about:
   home: https://github.com/conda/conda-env/
