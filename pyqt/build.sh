@@ -5,7 +5,7 @@ if [ `uname` == Linux ]; then
 
     # Add qt.conf to the right place in $SRC_DIR so that
     # configure.py can run correctly
-    cp $PREFIX/lib/qt4/bin/qt.conf $SRC_DIR
+    cp $PREFIX/bin/qt.conf $SRC_DIR
 fi
 
 if [ `uname` == Darwin ]; then
@@ -15,8 +15,10 @@ if [ `uname` == Darwin ]; then
     # configure.py can run correctly
     QTCONF_PLACE=$SRC_DIR/qtdirs.app/Contents/Resources
     mkdir -p $QTCONF_PLACE
-    cp $PREFIX/lib/qt4/bin/qt.conf $QTCONF_PLACE
+    cp $PREFIX/bin/qt.conf $QTCONF_PLACE
 fi
+
+cp $PREFIX/bin/moc-qt4 $PREFIX/bin/moc
 
 $PYTHON configure.py \
           --verbose \
@@ -27,3 +29,5 @@ $PYTHON configure.py \
 
 make
 make install
+
+rm -f $PREFIX/bin/moc

@@ -2,6 +2,9 @@ package:
   name: pyqt
   version: 4.11.4
 
+#external:
+#  channel: https://conda.anaconda.org/ccordoba12/
+
 source:
   fn: PyQt-mac-gpl-4.11.4.tar.gz                                                                 [osx]
   url: http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.4/PyQt-mac-gpl-4.11.4.tar.gz   [osx]
@@ -17,7 +20,7 @@ source:
     - find-qmake.patch [win]
 
 build:
-  number:      2       [unix]
+  number:      3       [unix]
   number:      6       [win]
 
 requirements:

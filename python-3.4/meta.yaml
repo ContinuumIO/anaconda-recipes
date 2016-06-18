@@ -8,6 +8,7 @@ source:
   md5: e80a0c1c71763ff6b5a81f8cc9bb3d50
   patches:
     - version.patch
+    - site.patch
     - osx64-dist.patch      [osx and x86_64]
     - win-find_exe.patch    [win]
     - win-cygwin.patch      [win]

@@ -1,0 +1,32 @@
+package:
+  name: contextlib2
+  version: 0.5.3
+
+source:
+  fn: contextlib2-0.5.3.tar.gz
+  url: https://pypi.python.org/packages/69/05/72b6adf92157a3d686f04a0a797efc3212808a6abd6aa96fef13358e1b0d/contextlib2-0.5.3.tar.gz
+  md5: 26ad6b6e4d60aa36cb4ecee4747cddd4
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - contextlib
+
+about:
+  home: http://contextlib2.readthedocs.org/
+  license: PSF
+  license_file: LICENSE.txt
+  summary: backports and enhancements for the contextlib module
+  description: |
+    Contextlib2 provides backports of features in the latest version of the
+    standard library's contextlib module to earlier Python versions. It also
+    serves as a real world proving ground for potential future enhancements
+    to that module.
+  doc_url: http://contextlib2.readthedocs.org/
+  dev_url: https://bitbucket.org/ncoghlan/contextlib2

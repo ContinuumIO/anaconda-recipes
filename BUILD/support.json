@@ -79,7 +79,6 @@
   "conda": "all", 
   "conda-build": "all", 
   "conda-env": "all", 
-  "conda-manager": "all", 
   "configobj": "all", 
   "configparser": [
     "linux-64:py27", 
@@ -91,6 +90,7 @@
     "win-64:py35"
   ], 
   "constructor": "all", 
+  "contextlib2": "all", 
   "cornice": "all", 
   "coverage": "all", 
   "cryptography": "all", 
@@ -389,6 +389,7 @@
   ], 
   "pyopenssl": "all", 
   "pyparsing": "all", 
+  "pyqt": "all", 
   "pyqtgraph": "all", 
   "pyreadline": [
     "win-64:py27", 
@@ -420,7 +421,6 @@
   "pyyaml": "all", 
   "pyzmq": "all", 
   "qgrid": "all", 
-  "qtawesome": "all", 
   "qtconsole": "all", 
   "qtpy": "all", 
   "quandl": "all", 

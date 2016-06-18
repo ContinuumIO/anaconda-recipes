@@ -1,11 +1,11 @@
 package:
   name: greenlet
-  version: 0.4.9
+  version: 0.4.10
 
 source:
-  fn: greenlet-0.4.9.tar.gz
-  url: https://pypi.python.org/packages/source/g/greenlet/greenlet-0.4.9.tar.gz
-  md5: 00bb1822d8511cc85f052e89d1fd919b
+  fn: greenlet-0.4.10.tar.gz
+  url: https://pypi.python.org/packages/f2/3f/09412b656067f280cf017ce5b6465e6339089129212425111117be5557d9/greenlet-0.4.10.tar.gz
+  md5: 5351f8ac5196a00d835c2cb1faf75270
 
 requirements:
   build:

@@ -1,9 +1,11 @@
 package:
   name: vs2015_runtime
-  version: "14.00.23026.0"
+  # version is the update version reported from the registry
+  version: "14.0.25123"
 
 build:
-  number: 1
+  number: 0
+  msvc_compiler: 14.0
 
 about:
   home: http://www.microsoft.com

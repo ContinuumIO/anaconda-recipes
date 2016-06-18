@@ -5,12 +5,18 @@ if "%ARCH%"=="64" (
 
 set MSC_VER=14
 
-REM Do a quick version check to make sure that we are packaging the DLLs that we say we are
-curl -LO https://download.sysinternals.com/files/Sigcheck.zip
-7za x Sigcheck.zip
-FOR /F "tokens=* skip=1 delims=" %%A in ('sigcheck.exe -q -n -vt "C:\Program Files (x86)\Microsoft Visual Studio %MSC_VER%.0\VC\redist\%VC_PATH%\Microsoft.VC%MSC_VER%0.CRT\msvcr%MSC_VER%0.dll"') do (
-    if not "%%A" == "%PKG_VERSION%" exit 1
+:: This should always be present for VC installed with VS.  Not sure about VC installed with Visual C++ Build Tools 2015
+FOR /F "usebackq tokens=3*" %%A IN (`REG QUERY "HKEY_LOCAL_MACHINE\Software\Microsoft\DevDiv\VC\Servicing\14.0\IDE.x64" /v UpdateVersion`) DO (
+    set SP=%%A
+    )
+
+if not "%SP%" == "%PKG_VERSION%" (
+   echo "Version detected from registry: %SP%"
+   echo    "does not match version of package being built (%PKG_VERSION%)"
+   echo "Do you have current updates for VS 2015 installed?"
+   exit 1
 )
+
 
 REM ========== REQUIRES Win 10 SDK be installed, or files otherwise copied to location below!
 robocopy "C:\Program Files (x86)\Windows Kits\10\Redist\ucrt\DLLs\%VC_PATH%"  "%LIBRARY_BIN%" *.dll /E

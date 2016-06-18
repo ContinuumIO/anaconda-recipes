@@ -3,7 +3,8 @@ package:
   version: "10.00.40219.1"
 
 build:
-  number: 1
+  number: 2
+  msvc_compiler: 10.0
 
 about:
   home: http://www.microsoft.com

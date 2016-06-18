@@ -12,7 +12,8 @@ source:
     - march.patch          [unix]
 
 build:
-  number: 4
+  number: 4                [unix]
+  number: 2                [win]
   entry_points:
     - pt2to3 = tables.scripts.pt2to3:main
     - ptdump = tables.scripts.ptdump:main

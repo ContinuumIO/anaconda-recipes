@@ -1,0 +1,15 @@
+diff --git Lib/site.py Lib/site.py
+index 3c8584b..afa8217 100644
+--- Lib/site.py
++++ Lib/site.py
+@@ -557,6 +557,10 @@ def main():
+     execsitecustomize()
+     if ENABLE_USER_SITE:
+         execusercustomize()
++    try:
++        import anaconda_decrypt
++    except ImportError:
++        pass
+ 
+ # Prevent edition of sys.path when python was started with -S and
+ # site is imported later.
