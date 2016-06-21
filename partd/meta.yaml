@@ -1,11 +1,11 @@
 package:
   name: partd
-  version: 0.3.3
+  version: 0.3.4
 
 source:
-  fn: partd-0.3.3.tar.gz
-  url: https://pypi.python.org/packages/88/05/b11b71cfb41657c91f1c1f23a00a0c63d9eb7720ae664025a68bbbf0a21b/partd-0.3.3.tar.gz
-  md5: 175d738ebc5feaabd72e927eb632e817
+  fn: partd-0.3.4.tar.gz
+  url: https://pypi.python.org/packages/81/0b/e69d4e325a7b2d0cd5b6a7ff8f9c620c78c21d0f20d95718ff0caad71435/partd-0.3.4.tar.gz
+  md5: 6581f265299ceaf1df86422fc8c0a754
 
 requirements:
   build:
@@ -17,7 +17,6 @@ requirements:
     - python
     - locket
     - toolz
-    - pandas
 
 test:
   imports:

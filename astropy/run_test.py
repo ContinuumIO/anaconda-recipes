@@ -9,6 +9,7 @@ import astropy.io.ascii.cparser
 import astropy.io.fits.compression
 import astropy.io.votable.tablewriter
 import astropy.modeling._projections
+import astropy.stats.lombscargle.implementations.cython_impl
 import astropy.table._column_mixins
 import astropy.table._np_utils
 import astropy.utils._compiler
