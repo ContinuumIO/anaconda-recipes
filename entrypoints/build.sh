@@ -1,3 +1,5 @@
 #!/bin/bash
 
-cp entrypoints.py $SP_DIR/
+mv entrypoints.py $SP_DIR/
+
+$PYTHON -c 'import entrypoints'

@@ -6,7 +6,7 @@ if [ `uname` == Darwin ]; then
 fi
 
 ./configure --prefix=$PREFIX \
---disable-static
+    --disable-static
 
 make
 make install
