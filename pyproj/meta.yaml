@@ -5,8 +5,6 @@ package:
 source:
   git_url: https://github.com/jswhit/pyproj.git
   git_tag: v1.9.5.1rel
-  patches:
-    - proj_i.patch        [win]
 
 requirements:
   build:
@@ -14,16 +12,13 @@ requirements:
     - setuptools
     - cython
     - numpy
-    - proj4 4.9.*
   run:
     - python
     - setuptools
-    - proj4 4.9.*
 
 test:
   imports:
     - pyproj
-    - pyproj._proj
 
 about:
   home: http://jswhit.github.io/pyproj/
