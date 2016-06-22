@@ -1,0 +1,38 @@
+package:
+  name: pyproj
+  version: 1.9.5.1
+
+source:
+  git_url: https://github.com/jswhit/pyproj.git
+  git_tag: v1.9.5.1rel
+  patches:
+    - proj_i.patch        [win]
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - cython
+    - numpy
+    - proj4 4.9.*
+  run:
+    - python
+    - setuptools
+    - proj4 4.9.*
+
+test:
+  imports:
+    - pyproj
+    - pyproj._proj
+
+about:
+  home: http://jswhit.github.io/pyproj/
+  license: MIT
+  license_file: LICENSE
+  summary: Python interface to PROJ4 library for cartographic transformations
+  description: |
+    Pyproj is a Cython wrapper to provide python interfaces to PROJ.4
+    functions. It performs cartographic transformations and geodetic
+    computations.
+  doc_url: http://jswhit.github.io/pyproj/
+  dev_url: https://github.com/jswhit/pyproj

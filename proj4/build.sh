@@ -5,8 +5,7 @@ if [ `uname` == Darwin ]; then
         export CXX=clang++
 fi
 
-./configure --prefix=$PREFIX \
-    --disable-static
+./configure --disable-static --prefix=$PREFIX
 
 make
 make install

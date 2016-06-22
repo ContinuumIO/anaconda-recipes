@@ -389,6 +389,7 @@
   ], 
   "pyopenssl": "all", 
   "pyparsing": "all", 
+  "pyproj": "all", 
   "pyqt": "all", 
   "pyqtgraph": "all", 
   "pyreadline": [
