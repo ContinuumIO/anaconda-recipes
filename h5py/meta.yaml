@@ -9,7 +9,8 @@ source:
     - hdf5_win.patch      [win]
 
 build:
-  number: 1
+  number: 1               [unix]
+  number: 0               [win]
 
 requirements:
   build:

@@ -1,0 +1,19 @@
+package:
+  name: yaml
+  version: 0.1.6
+
+source:
+  fn: yaml-0.1.6.tar.gz
+  url: http://pyyaml.org/download/libyaml/yaml-0.1.6.tar.gz
+  md5: 5fe00cda18ca5daeb43762b80c38e06e
+
+about:
+  home: http://www.yaml.org/
+  license: MIT
+  license_file: LICENSE
+  summary: A human friendly data serialization standard
+  description: |
+    YAML (YAML Ain't Markup Language) is a human friendly data serialization
+    standard for all programming languages.
+  doc_url: http://yaml.org/
+  dev_url: https://github.com/yaml
