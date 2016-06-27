@@ -28,4 +28,5 @@ test:
 about:
   home: http://llvm.org/
   license: Open Source (http://llvm.org/releases/3.7.0/LICENSE.TXT)
+  license_family: Other
   summary: Development headers and libraries for LLVM

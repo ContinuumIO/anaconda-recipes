@@ -27,4 +27,5 @@ test:
 about:
   home: https://github.com/numba/llvmlite
   license: New BSD License
+  license_family: BSD
   summary: A lightweight LLVM python binding for writing JIT compilers
