@@ -1,5 +1,4 @@
 import sys
-import os
 import tables
 import tables._comp_bzip2
 # We don't build this one on Windows.
@@ -18,10 +17,12 @@ if sys.platform.startswith('linux'):
     lzo_ver = tables.which_lib_version("lzo")[1]
     assert lzo_ver == '2.06', lzo_ver
 
-
-if __name__ == "__main__":
-    # skip tests on python 3 for windows
-    if not (os.name == "nt" and sys.version_info[0] == 3):
-        from multiprocessing import freeze_support
-        freeze_support()
-        tables.test()
+if sys.platform == 'win32' and sys.version_info[0] == 3:
+    print("""
+Skipping tables.test() on Windows and Py3k.
+There is currently one test failure, and we have to look into this.
+""")
+else:
+    from multiprocessing import freeze_support
+    freeze_support()
+    tables.test()
