@@ -14,7 +14,6 @@ build:
     - vc10    [win and py34]
     - vc14    [win and py35]
 
-
 about:
   home: http://www.ijg.org/
   license: Custom free software license

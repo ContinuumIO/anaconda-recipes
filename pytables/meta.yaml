@@ -12,8 +12,7 @@ source:
     - march.patch          [unix]
 
 build:
-  number: 4                [unix]
-  number: 2                [win]
+  number: 4
   entry_points:
     - pt2to3 = tables.scripts.pt2to3:main
     - ptdump = tables.scripts.ptdump:main
@@ -30,7 +29,8 @@ requirements:
     - lzo 2.06                 [linux]
     - bzip2 1.0.6
     - numexpr
-    - hdf5 1.8.16
+    - hdf5 1.8.16              [unix]
+    - hdf5 1.8.15.1            [win]
     # building blosc is done internally.
     # this is an old version, though.
     # would be better to link against new version externally.
@@ -40,7 +40,8 @@ requirements:
     - python
     - numpy x.x
     - numexpr
-    - hdf5 1.8.16
+    - hdf5 1.8.16              [unix]
+    - hdf5 1.8.15.1            [win]
     - zlib 1.2.*
     - bzip2                    [win]
     # building blosc is done internally.

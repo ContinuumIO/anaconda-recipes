@@ -23,4 +23,4 @@ test:
 about:
   home: https://github.com/spyder-ide/qtpy
   license: MIT
-  summary: Provides an uniform layer to support PyQt4, PyQt5 and PySide with a single codebase
+  summary: uniform layer to support PyQt4, PyQt5 and PySide with a single codebase

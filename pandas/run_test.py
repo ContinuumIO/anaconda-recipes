@@ -12,6 +12,7 @@ import pandas.msgpack._unpacker
 import pandas.parser
 import pandas.tslib
 
+import os
 import sys
 if sys.version_info >= (2, 7):
     import pandas.io.excel
@@ -19,4 +20,5 @@ if sys.version_info >= (2, 7):
 import pandas
 print("pandas.__version__ = %r" % pandas.__version__)
 
-pandas.test()
+if int(os.getenv('GUI_TEST', 0)):
+    pandas.test()
