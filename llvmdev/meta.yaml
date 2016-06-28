@@ -8,7 +8,7 @@ source:
   sha1: 5dbdcafac105273dcbff94c68837a66c6dd78cef
   patches:
     # From http://reviews.llvm.org/D6052
-    - ../llvm-elf-relocation.patch
+    # FIXME: - ../llvm-elf-relocation.patch
 
 build:
   number: 2
