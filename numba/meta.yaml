@@ -43,4 +43,4 @@ test:
     - python -m numba.runtests -m -b 
 
 about:
-  license_family: BSD
+  license: BSD
