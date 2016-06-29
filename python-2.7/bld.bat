@@ -73,8 +73,8 @@ if errorlevel 1 exit 1
 
 REM ========== add scripts
 
-mkdir %SCRIPTS%
-if errorlevel 1 exit 1
+:: mkdir %SCRIPTS%
+:: if errorlevel 1 exit 1
 for %%x in (idle 2to3 pydoc) do (
     copy %SRC_DIR%\Tools\scripts\%%x %SCRIPTS%
     if errorlevel 1 exit 1

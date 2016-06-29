@@ -1,5 +1,5 @@
 diff --git Include/pythonrun.h Include/pythonrun.h
-index 6bfc175..c428f54 100644
+index cfb02b0..904a24d 100644
 --- Include/pythonrun.h
 +++ Include/pythonrun.h
 @@ -106,6 +106,7 @@ PyAPI_FUNC(char *) Py_GetExecPrefix(void);
@@ -11,17 +11,17 @@ index 6bfc175..c428f54 100644
  PyAPI_FUNC(const char *) Py_GetPlatform(void);
  PyAPI_FUNC(const char *) Py_GetCopyright(void);
 diff --git Lib/platform.py Lib/platform.py
-index df2af83..3253c50 100755
+index 63455ce..0d429c6 100755
 --- Lib/platform.py
 +++ Lib/platform.py
 @@ -1315,6 +1315,7 @@ def processor():
  
  _sys_version_parser = re.compile(
-     r'([\w.+]+)\s*'
-+    '(?:\|[^|]*\|)?\s*' # version extra
-     '\(#?([^,]+),\s*([\w ]+),\s*([\w :]+)\)\s*'
-     '\[([^\]]+)\]?')
- 
+     r'([\w.+]+)\s*'  # "version<space>"
++    r'(?:\|[^|]*\|)?\s*' # version extra
+     r'\(#?([^,]+)'  # "(#buildno"
+     r'(?:,\s*([\w ]*)'  # ", builddate"
+     r'(?:,\s*([\w :]*))?)?\)\s*'  # ", buildtime)<space>"
 diff --git Modules/main.c Modules/main.c
 index ef9b245..caece2b 100644
 --- Modules/main.c

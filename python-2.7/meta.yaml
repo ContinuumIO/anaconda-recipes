@@ -1,11 +1,11 @@
 package:
   name: python
-  version: 2.7.11
+  version: 2.7.12
 
 source:
-  fn: Python-2.7.11.tgz
-  url: https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tgz
-  md5: 6b6076ec9e93f05dd63e47eb9c15728b
+  fn: Python-2.7.12.tgz
+  url: https://www.python.org/ftp/python/2.7.12/Python-2.7.12.tgz
+  md5: 88d61f82e3616a4be952828b3694109d
   patches:
     - version.patch
     - site.patch
@@ -19,7 +19,7 @@ source:
     - win-library_bin.patch           [win]
 
 build:
-  number: 5
+  number: 0
   no_link:
     - bin/python                      [unix]
     - DLLs/_ctypes.pyd                [win]
