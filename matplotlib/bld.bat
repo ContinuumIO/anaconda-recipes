@@ -4,7 +4,7 @@ if errorlevel 1 exit 1
 set INCLUDE=%LIBRARY_INC%;%LIBRARY_INC%\freetype2
 REM %INCLUDE%
 
-python setup.py install --old-and-unmanageable
+%PYTHON% setup.py install --old-and-unmanageable
 if errorlevel 1 exit 1
 
 del %SP_DIR%\*.pth

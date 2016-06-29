@@ -8,7 +8,7 @@ set INCLUDE=%LIBRARY_INC%
 REM --old-and-unmanageable is a flag that disables egg installation.
 REM    If you remove this, Pillow gets installed as an egg and the build
 REM    system complains.
-python setup.py build_ext install --old-and-unmanageable
+%PYTHON% setup.py build_ext install --old-and-unmanageable
 if errorlevel 1 exit 1
 
 rd /s /q %SP_DIR%\__pycache__

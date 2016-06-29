@@ -1,4 +1,4 @@
-python setup.py install
+%PYTHON% setup.py install
 
 REM Remove markup_py.bat from scripts directory
 del %SCRIPTS%\markdown_py.bat

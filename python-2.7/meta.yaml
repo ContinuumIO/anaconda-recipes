@@ -21,7 +21,7 @@ source:
 build:
   number: 0
   no_link:
-    - bin/python                      [unix]
+    - bin/python2.7                   [unix]
     - DLLs/_ctypes.pyd                [win]
   features:
     - debug                           [debug]

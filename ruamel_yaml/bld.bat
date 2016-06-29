@@ -5,7 +5,7 @@ set LIB=%LIBRARY_LIB%
 bash %RECIPE_DIR%\prepare.bash /cygdrive/c/anaconda/packages/ruamel_yaml /cygdrive/c/Minonda/conda-bld/work
 if errorlevel 1 exit 1
 
-python setup.py install
+%PYTHON% setup.py install
 if errorlevel 1 exit 1
 
 copy %LIBRARY_BIN%\yaml.dll %SP_DIR%\ruamel_yaml\ext\

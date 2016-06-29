@@ -3,6 +3,7 @@
   "alabaster": "all", 
   "anaconda-build": "all", 
   "anaconda-client": "all", 
+  "anaconda-verify": "all", 
   "ansi2html": "all", 
   "appnope": [
     "osx-64:py27", 
@@ -33,6 +34,7 @@
   "beautifulsoup4": "all", 
   "biopython": "all", 
   "bitarray": "all", 
+  "blaze": "all", 
   "bokeh": "all", 
   "boost": "all", 
   "boto": "all", 

@@ -6,7 +6,7 @@ copy %RECIPE_DIR%\menu-windows.json %MENU_DIR%\ipython.json
 if errorlevel 1 exit 1
 
 
-python setup.py install
+%PYTHON% setup.py install
 if errorlevel 1 exit 1
 
 rd /s /q %SCRIPTS%

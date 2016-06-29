@@ -1,4 +1,4 @@
-python setup.py install
+%PYTHON% setup.py install
 if errorlevel 1 exit 1
 
 REM rd /s /q %SP_DIR%\distribute-%PKG_VERSION%-py%PY_VER%.egg\EGG-INFO
