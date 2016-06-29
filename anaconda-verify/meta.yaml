@@ -1,0 +1,27 @@
+package:
+  name: anaconda-verify
+  version: 1.0.0
+
+source:
+  git_url: https://github.com/ContinuumIO/anaconda-verify.git
+#  git_tag: 1.0.0
+
+build:
+  entry_points:
+    - anaconda-verify = anaconda_verify.main:main
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - pyyaml
+
+test:
+  commands:
+    - anaconda-verify
+  imports:
+    - anaconda_verify
+
+about:
+  license: BSD
