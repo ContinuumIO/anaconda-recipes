@@ -1,0 +1,60 @@
+package:
+  name: blaze
+  version: 0.10.1
+
+source:
+  git_url: https://github.com/ContinuumIO/blaze.git
+  git_tag: 0.10.1
+
+build:
+  entry_points:
+    - blaze-server = blaze.server.spider:_main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - flask
+    - flask-cors
+    - odo
+    - psutil
+    - sqlalchemy
+    - toolz
+    - contextlib2       [py2k]
+  run:
+    - python
+    - cytoolz
+    - dask
+    - flask
+    - flask-cors
+    - h5py
+    - numba
+    - odo >=0.4
+    - psutil
+    - pytables >=3.0.0
+    - pyyaml
+    - requests
+    - sqlalchemy >=0.8
+    - contextlib2       [py2k]
+
+test:
+  imports:
+    - blaze
+  requires:
+    - bcolz    [not win]
+    - psycopg2 [unix]
+#    - pymongo >=2.8,<3  [not py35]
+    - pymysql
+#    - sqlite   [win]
+
+about:
+  home: http://blaze.pydata.org
+  license: BSD
+  license_file: LICENSE.txt
+  summary: NumPy and Pandas interface to big data
+  description: |
+     The Blaze Ecosystem provides high-level access to efficient computation
+     on large data. It contains a set of libraries that help users store,
+     describe, query, and process data.
+  doc_url: http://blaze.readthedocs.org/
+  dev_url: https://github.com/blaze

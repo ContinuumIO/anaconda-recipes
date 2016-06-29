@@ -1,19 +1,17 @@
 package:
   name: distributed
-  version: 1.10.2
+  version: 1.11.0
 
 source:
-  fn: distributed-1.10.2.tar.gz
-  url: https://pypi.python.org/packages/56/8f/77111cbedf1a38eb5a369de2e05f540fce039010c7a5ade10d97c13cf20c/distributed-1.10.2.tar.gz
-  md5: 71339192ed317b2989a061dc81657fbe
+  fn: distributed-1.11.0.tar.gz
+  url: https://pypi.python.org/packages/45/62/07e5a8f34962d697fb437573ba770c10b5335bad8e8b94b0876e69cd498c/distributed-1.11.0.tar.gz
+  md5: 567479ac0cc13ee3a7f45a1af19d346f
 
 build:
   entry_points:
-    - dcenter = distributed.cli.dcenter:go
-    - dscheduler = distributed.cli.dscheduler:go
-    - dcluster = distributed.cli.dcluster:start
-    - dworker = distributed.cli.dworker:go
-  preserve_egg_dir: True
+    - dask-ssh = distributed.cli.dask_ssh:go
+    - dask-scheduler = distributed.cli.dask_scheduler:go
+    - dask-worker = distributed.cli.dask_worker:go
 
 requirements:
   build:
@@ -23,7 +21,7 @@ requirements:
     - toolz
     - msgpack-python
     - cloudpickle >=0.2.1
-    - dask >=0.9
+    - dask >=0.10.0
     - click
     - boto3
     - s3fs
@@ -31,7 +29,6 @@ requirements:
     - six
     - tblib
     - psutil
-    - bokeh
     - lz4                  [unix]
     - futures              [py < 30]
     - singledispatch       [py < 34]
@@ -42,7 +39,7 @@ requirements:
     - toolz
     - msgpack-python
     - cloudpickle >=0.2.1
-    - dask >=0.9
+    - dask >=0.10.0
     - click
     - boto3
     - s3fs
@@ -50,17 +47,15 @@ requirements:
     - six
     - tblib
     - psutil
-    - bokeh
     - lz4                  [unix]
     - futures              [py < 30]
     - singledispatch       [py < 34]
 
 test:
   commands:
-    - dcenter --help
-    - dscheduler --help
-    - dcluster --help
-    - dworker --help
+    - dask-ssh --help
+    - dask-scheduler --help
+    - dask-worker --help
   imports:
     - distributed
     - distributed.cli

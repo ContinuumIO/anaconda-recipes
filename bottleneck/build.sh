@@ -1,1 +1,3 @@
-$PYTHON setup.py install --single-version-externally-managed --root=/
+#!/bin/bash
+
+$PYTHON setup.py install --old-and-unmanageable

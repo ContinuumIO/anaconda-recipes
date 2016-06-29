@@ -1,14 +1,11 @@
 package:
   name: bottleneck
-  version: 1.0.0
+  version: 1.1.0
 
 source:
-  fn: Bottleneck-1.0.0.tar.gz
-  url: https://pypi.python.org/packages/source/B/Bottleneck/Bottleneck-1.0.0.tar.gz
-  md5: 380fa6f275bd24f27e7cf0e0d752f5d2
-
-build:
-  number: 1
+  fn: Bottleneck-1.1.0.tar.gz
+  url: https://pypi.python.org/packages/ee/03/87184554866dcbf9265782860047031b65cac807773903cf2d33d6f7348f/Bottleneck-1.1.0.tar.gz
+  md5: 0709af81bc0ef46276ee7bdcbf375659
 
 requirements:
   build:
@@ -18,6 +15,10 @@ requirements:
   run:
     - python
     - numpy x.x
+
+test:
+  imports:
+    - bottleneck
 
 about:
   home: http://berkeleyanalytics.com/bottleneck
