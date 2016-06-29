@@ -29,7 +29,7 @@ requirements:
 
 about:
   home: http://www.h5py.org/
-  license: 3-clause BSD (http://opensource.org/licenses/bsd-license.php)
+  license: 3-clause BSD
   license_family: BSD
   summary: Pythonic interface to the HDF5 binary data format
   description: |

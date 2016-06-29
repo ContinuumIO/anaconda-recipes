@@ -32,7 +32,8 @@ test:
 
 about:
   home: http://curl.haxx.se/
-  license: MIT/X derivate (http://curl.haxx.se/docs/copyright.html)
+  license: MIT/X derivate
+  license_url: http://curl.haxx.se/docs/copyright.html
   license_family: MIT
   license_file: COPYING
   summary: Tool and library for transferring data with URL syntax

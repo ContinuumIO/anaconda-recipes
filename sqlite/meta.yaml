@@ -31,7 +31,8 @@ test:
 
 about:
   home: http://www.sqlite.org/
-  license: Public-Domain (http://www.sqlite.org/copyright.html)
+  license: Public-Domain
+  license_url: http://www.sqlite.org/copyright.html
   license_family: Public-Domain
   summary: Self-contained, zero-configuration, SQL database engine
   description: |

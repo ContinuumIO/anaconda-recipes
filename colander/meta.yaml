@@ -1,6 +1,6 @@
 package:
   name: colander
-  version: "1.2"
+  version: 1.2
 
 source:
   fn: colander-1.2.tar.gz
@@ -24,8 +24,9 @@ test:
 
 about:
   home: https://github.com/Pylons/colander
-  license: BSD-like (http://www.repoze.org/LICENSE.txt)
+  license: BSD-like
   license_family: BSD
+  license_url: http://www.repoze.org/LICENSE.txt
   license_file: LICENSE.txt
   summary: A serialization, deserialization, and validation library
   description: |

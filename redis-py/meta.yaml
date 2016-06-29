@@ -15,7 +15,8 @@ requirements:
 
 about:
   home: https://github.com/andymccurdy/redis-py/
-  license: MIT (https://github.com/andymccurdy/redis-py/blob/master/LICENSE)
+  license: MIT
+  license_url: https://github.com/andymccurdy/redis-py/blob/master/LICENSE
   license_family: MIT
   license_file: LICENSE
   summary: Redis Python Client

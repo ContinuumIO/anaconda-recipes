@@ -28,7 +28,8 @@ requirements:
 
 about:
   home: http://www.boost.org/
-  license: Boost license (http://www.boost.org/users/license.html)
+  license: Boost license
+  license_url: http://www.boost.org/users/license.html
   license_family: Other
   summary: Boost provides free peer-reviewed portable C++ source libraries.
   description: |

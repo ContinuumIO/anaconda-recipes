@@ -20,7 +20,8 @@ requirements:
 
 about:
   home: http://zlib.net/
-  license: zlib (http://zlib.net/zlib_license.html)
+  license: zlib
+  license_url: http://zlib.net/zlib_license.html
   license_family: Other
   summary: Unobtrusive compression library
   description: |

@@ -30,7 +30,8 @@ requirements:
 
 about:
   home: http://www.libtiff.org/
-  license: BSD-like (http://www.libtiff.org/misc.html)
+  license: BSD-like
+  license_url: http://www.libtiff.org/misc.html
   license_family: BSD
   summary: Support for Tag Image File Format (TIFF)
   description: |

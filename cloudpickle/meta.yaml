@@ -19,7 +19,8 @@ test:
 
 about:
   home: https://github.com/cloudpipe/cloudpickle
-  license: as-is (https://github.com/cloudpipe/cloudpickle/blob/master/LICENSE)
+  license: as-is
+  license_url: https://github.com/cloudpipe/cloudpickle/blob/master/LICENSE
   license_family: Other
   license_file: LICENSE
   summary: Extended pickling support for Python objects

@@ -58,7 +58,8 @@ test:
 
 about:
   home: http://matplotlib.org/
-  license: PSF-based (http://matplotlib.sourceforge.net/users/license.html)
+  license: PSF-based
+  license_url: http://matplotlib.sourceforge.net/users/license.html
   license_family: PSF
   license_file: LICENSE/LICENSE
   summary: Python 2D plotting library

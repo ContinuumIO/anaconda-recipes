@@ -28,7 +28,8 @@ requirements:
 
 about:
   home: http://freetype.sourceforge.net/index2.html
-  license: FreeType License (http://freetype.sourceforge.net/FTL.TXT)
+  license: FreeType License
+  license_url: http://freetype.sourceforge.net/FTL.TXT
   license_family: Other
   summary: A Free, High-Quality, and Portable Font Engine
   description: |

@@ -22,7 +22,8 @@ requirements:
 
 about:
   home: http://www.libpng.org/pub/png/libpng.html
-  license: libpng license (http://www.libpng.org/pub/png/src/libpng-LICENSE.txt)
+  license: libpng license
+  license_url: http://www.libpng.org/pub/png/src/libpng-LICENSE.txt
   license_family: Other
   license_file: LICENSE
   summary: The official PNG reference library
