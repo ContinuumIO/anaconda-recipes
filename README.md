@@ -22,3 +22,10 @@ Windows:
   * 64-bit Windows 10
   * VS 2008, 2010, 2015 installed
   * ifort
+
+Relationship to other recipe repos
+==================================
+
+These recipes are mirrors of the recipes maintained internally by ContinuumIO.  Community users are welcome to submit PRs here, and we will incorporate mutually agreed upon changes as time allows.
+
+Conda-recipes is somewhat deprecated at this point.  Feel free to continue using it, but you should prefer conda-forge as a community-driven recipe repo, as well as supporting packages outside of the set supported by defaults.  Conda-forge is used as a reference for updating and fixing recipes in defaults - so submit changes there first, and then submit a PR to anaconda-recipes, showing that your changes work.
