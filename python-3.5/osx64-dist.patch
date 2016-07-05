@@ -2,7 +2,7 @@ diff --git Lib/distutils/unixccompiler.py Lib/distutils/unixccompiler.py
 index 094a2f0..4252605 100644
 --- Lib/distutils/unixccompiler.py
 +++ Lib/distutils/unixccompiler.py
-@@ -189,6 +189,7 @@ class UnixCCompiler(CCompiler):
+@@ -191,6 +191,7 @@ class UnixCCompiler(CCompiler):
                      linker[i] = self.compiler_cxx[i]
  
                  if sys.platform == 'darwin':

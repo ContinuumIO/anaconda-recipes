@@ -1,0 +1,3 @@
+from anaconda_verify.package import CondaPackageCheck
+
+assert CondaPackageCheck.no_easy_install_script

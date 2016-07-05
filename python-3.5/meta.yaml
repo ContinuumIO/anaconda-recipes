@@ -1,11 +1,11 @@
 package:
   name: python
-  version: 3.5.1
+  version: 3.5.2
 
 source:
-  fn: Python-3.5.1.tgz
-  url: https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tgz
-  md5: be78e48cdfc1a7ad90efff146dce6cfe
+  fn: Python-3.5.2.tgz
+  url: https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz
+  md5: 3fe8434643a78630c61c6464fe2e7e72
   patches:
     - version.patch
     - site.patch
@@ -14,9 +14,9 @@ source:
     - win-library_bin.patch [win]
 
 build:
-  number: 5
+  number: 0
   no_link:
-    - bin/python            [unix]
+    - bin/python3.5         [unix]
     - DLLs/_ctypes.pyd      [win]
   track_features:
     - vc14                  [win]

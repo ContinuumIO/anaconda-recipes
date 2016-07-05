@@ -12,7 +12,7 @@ msbuild PCbuild\pcbuild.sln /t:python;pythoncore;pythonw;python3dll /p:Configura
 
 REM ========== add stuff from official python.org installer
 
-set MSI_DIR=\Pythons\3.5.1-%ARCH%
+set MSI_DIR=\Pythons\%PKG_VERSION%-%ARCH%
 for %%x in (DLLs Doc libs tcl Tools) do (
     xcopy /s /y %MSI_DIR%\%%x %PREFIX%\%%x\
     if errorlevel 1 exit 1
@@ -48,7 +48,7 @@ if errorlevel 1 exit 1
 
 REM ========== add scripts
 
-IF NOT exist %SCRIPTS% (mkdir %SCRIPTS%)
+if not exist %SCRIPTS% (mkdir %SCRIPTS%)
 if errorlevel 1 exit 1
 
 for %%x in (idle pydoc) do (

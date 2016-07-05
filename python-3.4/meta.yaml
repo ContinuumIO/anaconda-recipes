@@ -1,11 +1,11 @@
 package:
   name: python
-  version: 3.4.4
+  version: 3.4.5
 
 source:
-  fn: Python-3.4.4.tgz
-  url: https://www.python.org/ftp/python/3.4.4/Python-3.4.4.tgz
-  md5: e80a0c1c71763ff6b5a81f8cc9bb3d50
+  fn: Python-3.4.5.tgz
+  url: https://www.python.org/ftp/python/3.4.5/Python-3.4.5.tgz
+  md5: 5f2ef90b1adef35a64df14d4bb7af733
   patches:
     - version.patch
     - site.patch
@@ -15,9 +15,9 @@ source:
     - win-library_bin.patch [win]
 
 build:
-  number: 5
+  number: 0
   no_link:
-    - bin/python            [unix]
+    - bin/python3.4         [unix]
     - DLLs/_ctypes.pyd      [win]
   track_features:
     - vc10                  [win]

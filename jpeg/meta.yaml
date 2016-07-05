@@ -8,11 +8,11 @@ source:
   md5: 964d0dc8b4789acd32ec1431ca85171d
 
 build:
-  number: 1             [osx]
+  number: 1         [unix]
   features:
-    - vc9     [win and py27]
-    - vc10    [win and py34]
-    - vc14    [win and py35]
+    - vc9           [win and py27]
+    - vc10          [win and py34]
+    - vc14          [win and py35]
 
 about:
   home: http://www.ijg.org/
