@@ -9,6 +9,7 @@ source:
 
 build:
   number: 1
+  ignore_prefix_files: True   [win]
   features:
     - nomkl                   [nomkl]
 
