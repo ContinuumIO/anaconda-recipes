@@ -1,12 +1,10 @@
 package:
   name: orange3
-  version: 3.3.1
+  version: 3.3.6
 
 source:
   git_url: https://github.com/biolab/orange3.git
-  git_tag: 3.3.1
-  patches:
-    - pkg_res.patch
+  git_tag: 3.3.6
 
 build:
   entry_points:
@@ -26,6 +24,7 @@ requirements:
     - bottlechest
     - chardet
     - docutils
+    - joblib
     - xlrd >=0.9.2
     - pyqt
     - pyqtgraph
