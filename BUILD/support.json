@@ -54,8 +54,7 @@
   "cachecontrol": "all", 
   "cached-property": "all", 
   "cairo": [
-    "linux-64:py27", 
-    "linux-64:py35"
+    "linux-64:py27"
   ], 
   "cdecimal": [
     "linux-64:py27", 
@@ -175,11 +174,6 @@
   "get_terminal_size": "all", 
   "gevent": "all", 
   "git": "all", 
-  "glib": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
-  "graphviz": "all", 
   "greenlet": "all", 
   "grin": [
     "linux-64:py27", 
@@ -187,10 +181,6 @@
     "win-64:py27"
   ], 
   "h5py": "all", 
-  "harfbuzz": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
   "hdf4": "all", 
   "hdf5": "all", 
   "heapdict": "all", 
@@ -243,6 +233,7 @@
   ], 
   "lazy-object-proxy": "all", 
   "ldap3": "all", 
+  "libconda": "all", 
   "libffi": [
     "linux-64:py27", 
     "linux-64:py35"
@@ -318,10 +309,6 @@
   "pandas": "all", 
   "pandas-datareader": "all", 
   "pandasql": "all", 
-  "pango": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
   "paramiko": "all", 
   "partd": "all", 
   "patch": [
@@ -336,6 +323,12 @@
   "pathlib2": "all", 
   "patsy": "all", 
   "pbr": "all", 
+  "pcre": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "pep8": "all", 
   "petl": [
     "linux-64:py27", 
@@ -354,8 +347,7 @@
   "pip": "all", 
   "pivottablejs": "all", 
   "pixman": [
-    "linux-64:py27", 
-    "linux-64:py35"
+    "linux-64:py27"
   ], 
   "ply": "all", 
   "posix_ipc": [

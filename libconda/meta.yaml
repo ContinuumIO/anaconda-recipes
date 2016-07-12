@@ -1,0 +1,27 @@
+package:
+  name: libconda
+  version: 4.0.0
+
+source:
+  git_url: https://github.com/ilanschnell/libconda.git
+  git_tag: 4.0.0
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - pyyaml
+    - requests
+
+test:
+  requires:
+    - pycosat
+  imports:
+    - libconda
+
+about:
+  home: https://github.com/ilanschnell/libconda
+  license: BSD
+  license_file: LICENSE.txt
+  summary: conda 4.0 based library

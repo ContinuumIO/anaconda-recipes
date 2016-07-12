@@ -1,16 +1,16 @@
 package:
   name: pillow
-  version: 3.2.0
+  version: 3.3.0
 
 source:
-  fn: Pillow-3.2.0.tar.gz
-  url: https://pypi.python.org/packages/source/P/Pillow/Pillow-3.2.0.tar.gz
-  md5: 7cfd093c11205d9e2ebe3c51dfcad510
+  fn: Pillow-3.3.0.tar.gz
+  url: https://pypi.python.org/packages/e0/27/f61098a12f14690689924de93ffdd101463083a80bf8ff3e0c218addf05b/Pillow-3.3.0.tar.gz
+  md5: b5a15b03bf402fe254636c015fcf04da
   patches:
     - freetype_win_link.patch   [win]
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:

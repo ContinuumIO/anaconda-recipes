@@ -1,12 +1,12 @@
 package:
   name: orange-app
-  version: "1.0"
+  version: 1.0.1
 
 requirements:
   run:
     - python
-    - orange         [py27]
-    - orange3        [py35]
+    - orange               [py27]
+    - orange3 >=3.3.6      [py35]
 
 app:
   entry: orange-canvas
