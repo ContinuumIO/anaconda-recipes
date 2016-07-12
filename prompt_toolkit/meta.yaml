@@ -1,0 +1,28 @@
+package:
+  name: prompt_toolkit
+  version: 1.0.3
+
+source:
+  fn: prompt_toolkit-1.0.3.tar.gz
+  url: https://files.pythonhosted.org/packages/8d/de/412f23919929c01e6b55183e124623f705e4b91796d3d2dce2cb53d595ad/prompt_toolkit-1.0.3.tar.gz
+  md5: 6c4133d099603f496c761491043bf0ef
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - six >=1.9.0
+    - wcwidth
+  run:
+    - python
+    - six >=1.9.0
+    - wcwidth
+
+test:
+  imports:
+    - prompt_toolkit
+
+about:
+  home: https://github.com/jonathanslenders/python-prompt-toolkit
+  license: BSD
+  summary: library for building powerful interactive command lines in Python

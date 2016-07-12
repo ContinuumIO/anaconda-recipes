@@ -357,6 +357,7 @@
     "osx-64:py35"
   ], 
   "proj4": "all", 
+  "prompt_toolkit": "all", 
   "psutil": "all", 
   "ptyprocess": [
     "linux-64:py27", 
@@ -560,10 +561,15 @@
     "win-64:py27"
   ], 
   "w3lib": "all", 
+  "wcwidth": "all", 
   "webob": "all", 
   "werkzeug": "all", 
   "wheel": "all", 
   "whoosh": "all", 
+  "win_unicode_console": [
+    "win-64:py27", 
+    "win-64:py35"
+  ], 
   "wrapt": "all", 
   "wtforms": "all", 
   "xarray": "all", 

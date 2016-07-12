@@ -1,0 +1,24 @@
+package:
+  name: wcwidth
+  version: 0.1.7
+
+source:
+  fn: wcwidth-0.1.7.tar.gz
+  url: https://files.pythonhosted.org/packages/55/11/e4a2bb08bb450fdbd42cc709dd40de4ed2c472cf0ccb9e64af22279c5495/wcwidth-0.1.7.tar.gz
+  md5: b3b6a0a08f0c8a34d1de8cf44150a4ad
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - wcwidth
+
+about:
+  home: https://github.com/jquast/wcwidth
+  license: MIT
+  summary: measures number of Terminal column cells of wide-character codes

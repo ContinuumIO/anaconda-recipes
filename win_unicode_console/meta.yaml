@@ -1,0 +1,24 @@
+package:
+  name: win_unicode_console
+  version: 0.5
+
+source:
+  fn: win_unicode_console-0.5.zip
+  url: https://files.pythonhosted.org/packages/89/8d/7aad74930380c8972ab282304a2ff45f3d4927108bb6693cabcc9fc6a099/win_unicode_console-0.5.zip
+  md5: 535f9eb4cac37679cfa5b0b4da0b624d
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - win_unicode_console
+
+about:
+  home: https://github.com/Drekin/win-unicode-console
+  license: MIT
+  summary: enable Unicode input and display when running Python from Windows console

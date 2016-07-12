@@ -1,0 +1,54 @@
+package:
+  name: ipython
+  version: 5.0.0
+
+source:
+  fn: ipython-5.0.0.tar.gz
+  url: https://pypi.python.org/packages/09/2e/870d1058768f5240062beb0bd2ff789ac689923501b0dd6b480fb83314fc/ipython-5.0.0.tar.gz
+  md5: 9c00df2f7e2e2636aba02671f45eea6b
+
+build:
+  entry_points:
+    - ipython = IPython:start_ipython
+    - ipython2 = IPython:start_ipython   [py2k]
+    - ipython3 = IPython:start_ipython   [py3k]
+  osx_is_app: True
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - decorator
+    - pickleshare
+    - simplegeneric >0.8
+    - traitlets >=4.2
+    - prompt_toolkit >=1.0.3,<2.0.0
+    - pygments
+    - get_terminal_size                  [py27]
+    - pathlib2                           [py27]
+    - pexpect                            [unix]
+    - appnope                            [osx]
+    - colorama                           [win]
+    - win_unicode_console >=0.5          [win]
+    - python.app                         [osx]
+
+test:
+  commands:
+    - ipython -h
+    - ipython2 -h                        [py2k]
+    - ipython3 -h                        [py3k]
+  imports:
+    - IPython
+
+about:
+  home: http://ipython.org/
+  license: BSD
+  license_file: COPYING.rst
+  summary: Productive Interactive Computing
+  description: |
+    IPython provides a rich architecture for interactive computing with
+    a powerful interactive shell, a kernel for Jupyter, high performance
+    tools for parallel computing, and more.
+  doc_url: http://ipython.org/documentation.html
+  dev_url: https://github.com/ipython/ipython
