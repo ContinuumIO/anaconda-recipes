@@ -18,16 +18,14 @@ if [ `uname` == Darwin ]; then
     cp $PREFIX/bin/qt.conf $QTCONF_PLACE
 fi
 
-cp $PREFIX/bin/moc-qt4 $PREFIX/bin/moc
-
 $PYTHON configure.py \
           --verbose \
           --confirm-license \
           --bindir=$PREFIX/bin \
           --destdir=$SP_DIR \
-          --qmake=$PREFIX/bin/qmake-qt4
+          --qmake=$PREFIX/bin/qmake
 
 make
 make install
 
-rm -f $PREFIX/bin/moc
+rm -rf $SP_DIR/__pycache__

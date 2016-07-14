@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/bin/bash
 
 ./autogen.sh
 ./configure --prefix=$PREFIX

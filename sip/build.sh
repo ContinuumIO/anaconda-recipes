@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ `uname` == Darwin ]; then
     pythonw configure.py
 else

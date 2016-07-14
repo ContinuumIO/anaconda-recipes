@@ -3,7 +3,7 @@ package:
   version: 4.11.4
 
 #external:
-#  channel: https://conda.anaconda.org/ccordoba12/
+#  channel: https://conda.anaconda.org/qttesting/
 
 source:
   fn: PyQt-mac-gpl-4.11.4.tar.gz                                                                 [osx]
@@ -17,20 +17,20 @@ source:
   md5:  cc3f9a88900c95b599afa69d869d8095                                                         [win]
   patches:
     - configure.patch
-    - find-qmake.patch [win]
 
 build:
-  number:      3       [unix]
-  number:      6       [win]
+  number:      4            [unix]
+  number:      7            [win]
 
 requirements:
   build:
     - python
-    - qt         >=4.8.7
+    - qt         4.8.*
     - sip        >=4.16.4
+    - jom                   [win]
   run:
     - python
-    - qt         >=4.8.7
+    - qt         4.8.*
     - sip        >=4.16.4
 
 test:

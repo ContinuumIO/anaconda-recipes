@@ -7,9 +7,9 @@ source:
   url: http://optimate.dl.sourceforge.net/project/freeimage/Source%20Distribution/3.17.0/FreeImage3170.zip
   md5: 459e15f0ec75d6efa3c7bd63277ead86
   patches:
-    - Makefile.osx.patch  # [osx]
-    - vs2010_omp.patch    # [win and py3k]
-    - vs_snprintf.patch   # [win and py>=3.5]
+    - Makefile.osx.patch   [osx]
+    - vs2010_omp.patch     [win and py3k]
+    - vs_snprintf.patch    [win and py>=3.5]
 
 build:
   number:       1

@@ -1,21 +1,22 @@
 package:
   name: jupyter_console
-  version: 4.1.1
+  version: 5.0.0
 
 source:
-  fn: jupyter_console-4.1.1.tar.gz
-  url: https://pypi.python.org/packages/source/j/jupyter_console/jupyter_console-4.1.1.tar.gz
-  md5: a80bfb1b129fc3c8d6c33e3306af933c
+  fn: jupyter_console-5.0.0.tar.gz
+  url: https://pypi.python.org/packages/05/d6/64a59934c7fb8bf46e8b42bf6b21015643d9dd02e52234c7c8bc929dec5e/jupyter_console-5.0.0.tar.gz
+  md5: 65d86429f41cc374a144f22526fe5048
 
 requirements:
   build:
     - python
   run:
     - python
+    - jupyter_client
     - ipython
     - ipykernel
-    - jupyter_client
-    - pyreadline          [win]
+    - prompt_toolkit >=1.0,<2.0
+    - pygments
 
 test:
   commands:

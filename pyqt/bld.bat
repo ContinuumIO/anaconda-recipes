@@ -1,12 +1,9 @@
 :: This mkspec is an artificial one that we create (by copying) in the qt recipe.
 :: This PyQt recipe depends on the new vc features specification, or else
 :: this makespec will be wrong (or simply missing)
-set QMAKESPEC=%LIBRARY_LIB%\qt4\mkspecs\win32-msvc-default
+set QMAKESPEC=%LIBRARY_PREFIX%\mkspecs\win32-msvc-default
 
 copy "%LIBRARY_BIN%\qt.conf" "%PREFIX%\qt.conf"
-if errorlevel 1 exit 1
-
-copy "%LIBRARY_BIN%\moc-qt4.exe" "%LIBRARY_BIN%\moc.exe"
 if errorlevel 1 exit 1
 
 %PYTHON% configure-ng.py --verbose ^
@@ -30,21 +27,7 @@ moc.exe -o moc_translator.cpp translator.h
 if errorlevel 1 exit 1
 popd
 
-nmake
+jom
 if errorlevel 1 exit 1
-nmake install
+jom install
 if errorlevel 1 exit 1
-
-IF NOT EXIST "%PREFIX%\Scripts" (
-   mkdir %PREFIX%\Scripts
-)
-
-@echo off
-echo @echo off > %PREFIX%\Scripts\pyuic.bat
-echo "%%~dp0\..\python.exe" "%%~dp0\..\Lib\site-packages\PyQt4\uic\pyuic.py" %%* >> %PREFIX%\Scripts\pyuic.bat
-
-echo @echo off > %PREFIX%\Scripts\pyrcc4.bat
-echo "%%~dp0\..\Lib\site-packages\PyQt4\pyrcc4" %%* >> %PREFIX%\Scripts\pyrcc4.bat
-@echo on
-
-del "%LIBRARY_BIN%\moc.exe"

@@ -3,7 +3,6 @@
 if [ `uname` == Darwin ]
 then
     export LDFLAGS="-headerpad_max_install_names $LDFLAGS"
-    export MACOSX_DEPLOYMENT_TARGET=10.5
     ZMQ=bundled
 else
     export LD_LIBRARY_PATH="$PREFIX/lib:$LD_LIBRARY_PATH"

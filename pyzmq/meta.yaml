@@ -1,14 +1,11 @@
 package:
   name: pyzmq
-  version: 15.2.0
+  version: 15.3.0
 
 source:
-  fn: pyzmq-15.2.0.tar.gz
-  url: https://pypi.python.org/packages/source/p/pyzmq/pyzmq-15.2.0.tar.gz
-  md5: 9722046c27475441d47ac17a98c665bb
-
-build:
-  number: 1            [unix]
+  fn: pyzmq-15.3.0.tar.gz
+  url: https://pypi.python.org/packages/75/24/8e16b3e9be12502269d73abb5355c66830e435e7def3922edfb5e34344cd/pyzmq-15.3.0.tar.gz
+  md5: 6402a68c119c0943c973c2ee7620db4b
 
 requirements:
   build:
@@ -19,13 +16,8 @@ requirements:
     - zeromq 4.1.*     [linux]
 
 test:
-  requires:
-    - nose
   imports:
     - zmq
-    - zmq.backend.cython.socket
-    - zmq.backend.cython.utils
-    - zmq.devices.monitoredqueue
 
 about:
   home: https://github.com/zeromq/pyzmq

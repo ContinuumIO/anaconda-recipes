@@ -1,11 +1,11 @@
 package:
   name: distributed
-  version: 1.11.0
+  version: 1.11.2
 
 source:
-  fn: distributed-1.11.0.tar.gz
-  url: https://pypi.python.org/packages/45/62/07e5a8f34962d697fb437573ba770c10b5335bad8e8b94b0876e69cd498c/distributed-1.11.0.tar.gz
-  md5: 567479ac0cc13ee3a7f45a1af19d346f
+  fn: distributed-1.11.2.tar.gz
+  url: https://pypi.python.org/packages/f2/bd/a91d4d8a69733dd4bccea93145425bbe077889103dbdfdc601f6ed28a710/distributed-1.11.2.tar.gz
+  md5: be934c98e4281e6f20390043f22ed40b
 
 build:
   entry_points:
@@ -18,13 +18,13 @@ requirements:
     - python
     - setuptools
     - tornado >=4.2
-    - toolz
+    - toolz >=0.7.4
     - msgpack-python
     - cloudpickle >=0.2.1
     - dask >=0.10.0
     - click
     - boto3
-    - s3fs
+    - s3fs >=0.0.6
     - locket
     - six
     - tblib
@@ -36,13 +36,13 @@ requirements:
     - python
     - setuptools
     - tornado >=4.2
-    - toolz
+    - toolz >=0.7.4
     - msgpack-python
     - cloudpickle >=0.2.1
     - dask >=0.10.0
     - click
     - boto3
-    - s3fs
+    - s3fs >=0.0.6
     - locket
     - six
     - tblib
