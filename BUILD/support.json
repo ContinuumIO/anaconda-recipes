@@ -97,6 +97,13 @@
   "cornice": "all", 
   "coverage": "all", 
   "cryptography": "all", 
+  "cssselect": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35", 
+    "win-64:py27"
+  ], 
   "csvkit": "all", 
   "cubes": "all", 
   "curl": "all", 
@@ -146,6 +153,8 @@
   "flake8": "all", 
   "flask": "all", 
   "flask-cors": "all", 
+  "flask-login": "all", 
+  "flask-wtf": "all", 
   "fontconfig": [
     "linux-64:py27", 
     "linux-64:py35"
@@ -368,6 +377,7 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "plac": "all", 
   "ply": "all", 
   "posix_ipc": [
     "linux-64:py27", 
@@ -412,6 +422,12 @@
     "win-64:py35"
   ], 
   "pysal": "all", 
+  "pysnmp": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "pystan": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -566,6 +582,7 @@
   "transaction": "all", 
   "trollius": "all", 
   "twisted": "all", 
+  "ujson": "all", 
   "unicodecsv": "all", 
   "unidecode": "all", 
   "unixodbc": [

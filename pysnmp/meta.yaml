@@ -1,0 +1,40 @@
+package:
+  name: pysnmp
+  version: 4.3.2
+
+source:
+  fn: pysnmp-4.3.2.tar.gz
+  url: https://pypi.python.org/packages/9e/77/795fcc9d9a01adcb6175a3bf6532132addb8904922afd7877a9930d89f2f/pysnmp-4.3.2.tar.gz
+  md5: 9a4d23c4c1edea1c77faed72c469d8e8
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - pyasn1 >=0.1.8
+    - pycrypto >=2.4.1         [unix]
+
+test:
+  imports:
+    - pysnmp
+    - pysnmp.smi
+    - pysnmp.carrier
+    - pysnmp.entity
+    - pysnmp.hlapi
+    - pysnmp.proto
+
+about:
+  home: http://pysnmp.sourceforge.net/
+  license: BSD
+  license_url: http://pysnmp.sourceforge.net/license.html
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: A pure-Python SNMPv1/v2c/v3 library
+  description: |
+    PySNMP is a cross-platform, pure-Python SNMP engine implementation. It
+    features fully-functional SNMP engine capable to act in Agent/Manager/Proxy
+    roles, talking SNMP v1/v2c/v3 protocol versions over IPv4/IPv6 and other
+    network transports.
+  doc_url: http://pysnmp.sourceforge.net/docs/tutorial.html
+  dev_url: https://github.com/etingof/pysnmp

@@ -1,0 +1,27 @@
+package:
+  name: plac
+  version: 0.9.6
+
+source:
+  fn: plac-0.9.6.tar.gz
+  url: https://pypi.python.org/packages/6c/9b/9e9d461a646d1c874043e105e46cc458c16e5f76f2119c8e670ff5a8db97/plac-0.9.6.tar.gz
+  md5: c007c0371275c6acb50b16f978735bd0
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - plac
+    - plac_core
+
+about:
+  home: http://code.google.com/p/plac/
+  license: BSD
+  summary: smart command line arguments parser
+  description: |
+    Plac is a tool to write command-line interfaces for Python applications.
+  doc_url: https://pypi.python.org/pypi/plac

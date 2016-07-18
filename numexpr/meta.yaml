@@ -1,10 +1,10 @@
 package:
   name: numexpr
-  version: 2.6.0
+  version: 2.6.1
 
 source:
   git_url: https://github.com/pydata/numexpr.git
-  git_tag: v2.6.0
+  git_tag: v2.6.1
 
 build:
   number: 0

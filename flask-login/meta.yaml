@@ -1,0 +1,33 @@
+package:
+  name: flask-login
+  version: 0.3.2
+
+source:
+  fn: Flask-Login-0.3.2.tar.gz
+  url: https://pypi.python.org/packages/06/e6/61ed90ed8ce6752b745ed13fac3ba407dc9db95dfa2906edc8dd55dde454/Flask-Login-0.3.2.tar.gz
+  md5: d95c2275d3e1c755145910077366dc45
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - flask
+  run:
+    - python
+    - flask
+
+test:
+  imports:
+    - flask_login
+
+about:
+  home: https://github.com/maxcountryman/flask-login
+  license: MIT
+  license_file: LICENSE
+  summary: User session management for Flask
+  description: |
+    Flask-Login provides user session management for Flask. It handles the
+    common tasks  of logging in, logging out, and remembering your users'
+    sessions over extended periods of time.
+  doc_url: http://flask-login.readthedocs.org/en/latest/
+  dev_url: https://github.com/maxcountryman/flask-login

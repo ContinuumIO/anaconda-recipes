@@ -1,11 +1,11 @@
 package:
   name: mercurial
-  version: 3.8.2
+  version: 3.8.4
 
 source:
-  fn: mercurial-3.8.2.tar.gz
-  url: https://pypi.python.org/packages/9a/80/94f453072fa98d9756a263747dac49351714a1a9bbd3108384d129d81c47/mercurial-3.8.2.tar.gz
-  md5: c38daa0cbe264fc621dc3bb05933b0b3
+  fn: mercurial-3.8.4.tar.gz
+  url: https://pypi.python.org/packages/bc/16/b66eef0b70ee2b4ebb8e76622fe21bbed834606dd8c1bd30d6936ebf6f45/mercurial-3.8.4.tar.gz
+  md5: cec2c3db688cb87142809089c6ae13e9
 
 requirements:
   build:

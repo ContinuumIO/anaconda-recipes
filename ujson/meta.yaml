@@ -1,0 +1,28 @@
+package:
+  name: ujson
+  version: 1.35
+
+source:
+  fn: ujson-1.35.tar.gz
+  url: https://pypi.python.org/packages/source/u/ujson/ujson-1.35.tar.gz
+  md5: 42f77b0cce686dfa4da2e68480b1dd24
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - ujson
+
+about:
+  home: http://www.esn.me/
+  license: BSD
+  summary: Ultra fast JSON encoder and decoder for Python
+  description: |
+    UltraJSON is an ultra fast JSON encoder and decoder written in pure C
+    with bindings for Python 2.5+ and 3.
+  doc_url: https://pypi.python.org/pypi/ujson
+  dev_url: https://github.com/esnme/ultrajson
