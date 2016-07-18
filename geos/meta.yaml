@@ -1,16 +1,17 @@
 package:
   name: geos
-  version: 3.4.2
+  version: 3.5.0
 
 source:
-  fn: geos-3.4.2.tar.bz2
-  url: http://download.osgeo.org/geos/geos-3.4.2.tar.bz2
+  fn: geos-3.5.0.tar.bz2
+  url: http://download.osgeo.org/geos/geos-3.5.0.tar.bz2
+  md5: 136842690be7f504fba46b3c539438dd
 
 build:
   features:
-    - vc9  [win and py27]
-    - vc10 [win and py34]
-    - vc14 [win and py35]
+    - vc9        [win and py27]
+    - vc10       [win and py34]
+    - vc14       [win and py35]
 
 requirements:
   build:

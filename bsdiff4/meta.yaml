@@ -1,0 +1,33 @@
+package:
+  name: bsdiff4
+  version: 1.1.4
+
+source:
+  git_url: https://github.com/ilanschnell/bsdiff4.git
+  git_tag: 1.1.4
+
+build:
+  number: 1            [win]
+  entry_points:
+    - bsdiff4 = bsdiff4.cli:main_bsdiff4
+    - bspatch4 = bsdiff4.cli:main_bspatch4
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  commands:
+    - bsdiff4 -h
+    - bspatch4 -h
+  imports:
+    - bsdiff4
+    - bsdiff4.core
+
+about:
+  home: https://github.com/ilanschnell/bsdiff4
+  license: BSD
+  summary: binary diff and patch using the BSDIFF4-format
+  dev_url: https://github.com/ilanschnell/bsdiff4

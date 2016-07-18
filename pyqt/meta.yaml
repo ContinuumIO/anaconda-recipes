@@ -26,12 +26,12 @@ requirements:
   build:
     - python
     - qt         4.8.*
-    - sip        >=4.16.4
+    - sip        4.18
     - jom                   [win]
   run:
     - python
     - qt         4.8.*
-    - sip        >=4.16.4
+    - sip        4.18
 
 test:
   imports:

@@ -1,22 +1,19 @@
 package:
   name: sip
-  version: 4.16.9
+  version: 4.18
 
 source:
-  fn: sip-4.16.9.tar.gz                                                             [unix]
-  url: http://sourceforge.net/projects/pyqt/files/sip/sip-4.16.9/sip-4.16.9.tar.gz  [unix]
-  sha1: c0a09aa63523293c5ca39444746b1cef1253a0c5                                    [unix]
-  fn: sip-4.16.9.zip                                                                [win]
-  url: http://sourceforge.net/projects/pyqt/files/sip/sip-4.16.9/sip-4.16.9.zip     [win]
-  sha1: 6c93ae3e40755c566d4466529c2f35a81663fe0f                                    [win]
-
-build:
-  number: 2        [win]
+  fn: sip-4.18.tar.gz                                           [unix]
+  url: http://sourceforge.net/projects/pyqt/files/sip/sip-4.18/sip-4.18.tar.gz  [unix]
+  md5: 78724bf2a79878201c3bc81a1d8248ea                         [unix]
+  fn: sip-4.18.zip                                              [win]
+  url: http://sourceforge.net/projects/pyqt/files/sip/sip-4.18/sip-4.18.zip     [win]
+  md5: e860d06782962fa02f81aeecba3d82a7                         [win]
 
 requirements:
   build:
     - python
-    - python.app   [osx]
+    - python.app    [osx]
   run:
     - python
 

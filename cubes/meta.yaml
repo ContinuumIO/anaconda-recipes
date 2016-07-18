@@ -1,0 +1,44 @@
+package:
+  name: cubes
+  version: 1.1
+
+source:
+  fn: cubes-1.1.tar.gz
+  url: https://pypi.python.org/packages/91/78/cefca0763d3042ddfa0cd463cb7464dad11b75aefdf9fca6c6bb0dce9416/cubes-1.1.tar.gz
+  md5: a7e222f168336306fa43503dadd301c6
+
+build:
+  entry_points:
+    - slicer = cubes.slicer.commands:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - jsonschema
+    - python-dateutil
+    - expressions >=0.2.3
+  run:
+    - python
+    - click
+    - flask
+    - setuptools
+    - jsonschema
+    - python-dateutil
+    - expressions >=0.2.3
+
+test:
+  commands:
+    - slicer --help
+  imports:
+    - cubes
+
+about:
+  home: http://cubes.databrewery.org/
+  license: MIT
+  summary: A light-weight Python OLAP framework for data warehouses
+  description: Cubes is a light-weight Python framework and set of tools for
+    Online Analytical Processing (OLAP), multidimensional analysis, and
+    browsing of aggregated data.
+  doc_url: http://cubes.databrewery.org/documentation.html
+  dev_url: https://github.com/DataBrewery/cubes

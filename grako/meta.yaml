@@ -1,0 +1,34 @@
+package:
+  name: grako
+  version: 3.10.0
+
+source:
+  fn: grako-3.10.0.tar.gz
+  url: https://files.pythonhosted.org/packages/9d/aa/e3f2c55066a32facacc6cfa673acdc3cf8669cddc0acbe988dc91d0272b8/grako-3.10.0.tar.gz
+  md5: cfdffa30d0a84ad6f43749c2b3c1c03c
+
+build:
+  entry_points:
+    - grako = grako:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - cython
+  run:
+    - python
+
+test:
+  commands:
+    - grako --help
+  imports:
+    - grako
+    - grako.codegen
+    - grako.test
+
+about:
+  home: http://bitbucket.org/apalala/grako
+  license: BSD
+  license_file: LICENSE.txt
+  summary: takes variation of EBNF as input, and outputs parser in Python

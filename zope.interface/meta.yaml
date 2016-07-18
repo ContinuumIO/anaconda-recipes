@@ -9,11 +9,16 @@ source:
   patches:
     - setup.patch
 
+build:
+  number: 1
+
 requirements:
   build:
     - python
+    - zope
   run:
     - python
+    - zope
 
 test:
   imports:

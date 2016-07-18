@@ -1,11 +1,11 @@
 package:
   name: cython
-  version: "0.24"
+  version: 0.24.1
 
 source:
-  fn: Cython-0.24.tar.gz
-  url: https://pypi.python.org/packages/source/C/Cython/Cython-0.24.tar.gz
-  md5: 14fbc970f4a856845e633cbc09e61048
+  fn: Cython-0.24.1.tar.gz
+  url: https://pypi.python.org/packages/c6/fe/97319581905de40f1be7015a0ea1bd336a756f6249914b148a17eefa75dc/Cython-0.24.1.tar.gz
+  md5: 890b494a12951f1d6228c416a5789554
 
 build:
   entry_points:

@@ -1,0 +1,26 @@
+package:
+  name: expressions
+  version: 0.2.3
+
+source:
+  fn: expressions-0.2.3.tar.gz
+  url: https://files.pythonhosted.org/packages/88/92/0c83b5d642a387ffef2696c7a4eeb54e5f8e6eea1d25a07c0309579a308c/expressions-0.2.3.tar.gz
+  md5: e0affe4bcb515e22310ddc4b78042ae1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - grako >=3.9.3
+  run:
+    - python
+    - grako >=3.9.3
+
+test:
+  imports:
+    - expressions
+
+about:
+  home: http://databrewery.org
+  license: MIT
+  summary: extensible arithmetic expression parser and compiler

@@ -1,0 +1,45 @@
+package:
+  name: supervisor
+  version: 3.3.0
+
+source:
+  fn: supervisor-3.3.0.tar.gz
+  url: https://pypi.python.org/packages/44/80/d28047d120bfcc8158b4e41127706731ee6a3419c661e0a858fb0e7c4b2d/supervisor-3.3.0.tar.gz
+  md5: 46bac00378d1eddb616752b990c67416
+
+build:
+  entry_points:
+    - supervisord = supervisor.supervisord:main
+    - supervisorctl = supervisor.supervisorctl:main
+    - echo_supervisord_conf = supervisor.confecho:main
+    - pidproxy = supervisor.pidproxy:main
+  preserve_egg_dir: True
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - setuptools
+    - meld3 >=0.6.5
+
+test:
+  commands:
+    - supervisord -h
+    - supervisorctl -h
+    - echo_supervisord_conf -h
+  imports:
+    - supervisor
+
+about:
+  home: http://supervisord.org/
+  license: BSD-derived
+  license_url: http://www.repoze.org/LICENSE.txt
+  license_family: BSD
+  summary: A system for controlling process state under UNIX
+  description: |
+    Supervisor is a client/server system that allows its users to monitor and
+    control a number of processes on UNIX-like operating systems.
+  doc_url: http://supervisord.org/
+  dev_url: https://github.com/Supervisor/supervisor

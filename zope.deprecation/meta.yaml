@@ -1,0 +1,36 @@
+package:
+  name: zope.deprecation
+  version: 4.1.2
+
+source:
+  fn: zope.deprecation-4.1.2.tar.gz
+  url: https://pypi.python.org/packages/source/z/zope.deprecation/zope.deprecation-4.1.2.tar.gz
+  md5: e9a663ded58f4f9f7881beb56cae2782
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - zope
+  run:
+    - python
+    - zope
+
+test:
+  imports:
+    - zope.deprecation
+
+about:
+  home: http://pypi.python.org/pypi/zope.deprecation
+  license: ZPL 2.1
+  license_family: Other
+  license_file: LICENSE.txt
+  summary: Zope Deprecation Infrastructure
+  description: |
+    Provides a simple function called deprecated(names, reason) to mark
+    deprecated modules, classes, functions, methods and properties.
+  doc_url: http://docs.zope.org/zope.deprecation/
+  dev_url: https://github.com/zopefoundation/zope.deprecation
