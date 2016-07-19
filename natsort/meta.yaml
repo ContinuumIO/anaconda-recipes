@@ -1,0 +1,35 @@
+package:
+  name: natsort
+  version: 5.0.1
+
+source:
+  fn: natsort-5.0.1.tar.gz
+  url: https://pypi.python.org/packages/e1/33/b988f1035160cbc7d4fdd05f7aa6ffebb501926a32b527338218106a72e4/natsort-5.0.1.tar.gz
+  md5: e82b8f60b07c6906c2983c40790c6f46
+
+build:
+  entry_points:
+    - natsort = natsort.__main__:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - natsort
+
+about:
+  home: https://github.com/SethMMorton/natsort
+  license: MIT
+  license_file: LICENSE
+  summary: Sort lists naturally
+  description: |
+    natsort provides a function natsorted that helps sort lists "naturally",
+    either as real numbers (i.e. signed/unsigned floats or ints), or as
+    versions.
+  doc_url: http://pythonhosted.org/natsort/
+  dev_url: https://github.com/SethMMorton/natsort

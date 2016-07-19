@@ -67,6 +67,11 @@
   "chalmers": "all", 
   "chameleon": "all", 
   "chardet": "all", 
+  "cheetah": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
   "cherrypy": "all", 
   "chest": "all", 
   "click": "all", 
@@ -97,13 +102,7 @@
   "cornice": "all", 
   "coverage": "all", 
   "cryptography": "all", 
-  "cssselect": [
-    "linux-64:py27", 
-    "linux-64:py35", 
-    "osx-64:py27", 
-    "osx-64:py35", 
-    "win-64:py27"
-  ], 
+  "cssselect": "all", 
   "csvkit": "all", 
   "cubes": "all", 
   "curl": "all", 
@@ -135,6 +134,12 @@
     "linux-64:py27", 
     "osx-64:py27", 
     "win-64:py27"
+  ], 
+  "ephem": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
   ], 
   "et_xmlfile": "all", 
   "expat": [
@@ -311,6 +316,7 @@
   "mpi4py": "all", 
   "mpmath": "all", 
   "multipledispatch": "all", 
+  "natsort": "all", 
   "nbconvert": "all", 
   "nbformat": "all", 
   "networkx": "all", 
@@ -335,7 +341,9 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "param": "all", 
   "paramiko": "all", 
+  "parsel": "all", 
   "partd": "all", 
   "patch": [
     "win-64:py27", 
@@ -404,6 +412,7 @@
   "pycparser": "all", 
   "pycrypto": "all", 
   "pycurl": "all", 
+  "pydispatcher": "all", 
   "pyflakes": "all", 
   "pygments": "all", 
   "pykerberos": [
@@ -476,6 +485,7 @@
     "osx-64:py35"
   ], 
   "reportlab": "all", 
+  "repoze.lru": "all", 
   "requests": "all", 
   "requests-file": "all", 
   "requests-kerberos": "all", 
@@ -492,6 +502,7 @@
   "scikit-learn": "all", 
   "scikit-rf": "all", 
   "scipy": "all", 
+  "scrapy": "all", 
   "seaborn": "all", 
   "semantic_version": "all", 
   "semver": [
@@ -522,6 +533,7 @@
     "osx-64:py35"
   ], 
   "snowballstemmer": "all", 
+  "snuggs": "all", 
   "sockjs-tornado": "all", 
   "spacy": [
     "linux-64:py27", 
@@ -580,6 +592,7 @@
   "tornado": "all", 
   "traitlets": "all", 
   "transaction": "all", 
+  "translationstring": "all", 
   "trollius": "all", 
   "twisted": "all", 
   "ujson": "all", 
@@ -620,6 +633,7 @@
   "xerces-c": "all", 
   "xlrd": "all", 
   "xlsxwriter": "all", 
+  "xlutils": "all", 
   "xlwings": [
     "osx-64:py27", 
     "osx-64:py35", 

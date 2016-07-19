@@ -1,0 +1,36 @@
+package:
+  name: cheetah
+  version: 2.4.4
+
+source:
+  fn: Cheetah-2.4.4.tar.gz
+  url: https://pypi.python.org/packages/source/C/Cheetah/Cheetah-2.4.4.tar.gz
+  md5: 853917116e731afbc8c8a43c37e6ddba
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  commands:
+    - cheetah -h
+    - cheetah-compile -h
+  imports:
+    - Cheetah
+    - Cheetah._namemapper
+    - Cheetah.Template
+
+about:
+  home: http://www.cheetahtemplate.org/
+  license: MIT
+  license_file: LICENSE
+  summary: Cheetah is a template engine and code generation tool.
+  description: |
+    Cheetah is a Python-Powered template engine and code generation tool.
+    It can be used standalone or combined with other tools and frameworks.
+    Its principle use is web development, but Cheetah can also be used to
+    generate C++ game code, Java, SQL, form emails, and Python code.
+  doc_url: http://www.cheetahtemplate.org/learn.html
+  dev_url: https://github.com/cheetahtemplate/cheetah

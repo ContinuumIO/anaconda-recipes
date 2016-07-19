@@ -1,0 +1,18 @@
+diff --git repoze/__init__.py repoze/__init__.py
+index de40ea7..e69de29 100644
+--- repoze/__init__.py
++++ repoze/__init__.py
+@@ -1 +0,0 @@
+-__import__('pkg_resources').declare_namespace(__name__)
+diff --git setup.py setup.py
+index 031e79e..d5e5ae9 100644
+--- setup.py
++++ setup.py
+@@ -48,7 +48,6 @@ setup(name='repoze.lru',
+       license="BSD-derived (http://www.repoze.org/LICENSE.txt)",
+       packages=find_packages(),
+       include_package_data=True,
+-      namespace_packages=['repoze'],
+       zip_safe=False,
+       tests_require = [],
+       install_requires = [],

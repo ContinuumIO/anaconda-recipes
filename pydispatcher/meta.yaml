@@ -1,0 +1,24 @@
+package:
+  name: pydispatcher
+  version: 2.0.5
+
+source:
+  fn: PyDispatcher-2.0.5.tar.gz
+  url: https://files.pythonhosted.org/packages/cd/37/39aca520918ce1935bea9c356bcbb7ed7e52ad4e31bff9b943dfc8e7115b/PyDispatcher-2.0.5.tar.gz
+  md5: 1b9c2ca33580c2770577add7130b0b28
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - pydispatch
+
+about:
+  home: http://pydispatcher.sourceforge.net
+  license: BSD
+  license_file: license.txt
+  summary: multi-producer-multi-consumer signal dispatching mechanism

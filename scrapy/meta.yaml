@@ -1,0 +1,47 @@
+package:
+  name: scrapy
+  version: 1.1.1
+
+source:
+  fn: Scrapy-1.1.1.tar.gz
+  url: https://pypi.python.org/packages/cd/75/cafb247a6abc6717c9c39888dd81585d9aaacbaf40dff65ed55fa1aa1e11/Scrapy-1.1.1.tar.gz
+  md5: 7869351461570c0df1730bffb3c400de
+
+build:
+  entry_points:
+    - scrapy = scrapy.cmdline:execute
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - setuptools
+    - twisted >=10.0.0
+    - w3lib >=1.14.2
+    - queuelib
+    - lxml
+    - pyopenssl
+    - cssselect >=0.9
+    - six >=1.5.2
+    - parsel >=0.9.3
+    - pydispatcher >=2.0.5
+    - service_identity
+
+test:
+  commands:
+    - scrapy --help
+  imports:
+    - scrapy
+
+about:
+  home: http://scrapy.org/
+  license: BSD
+  license_file: LICENSE
+  summary: A high-level Python Screen Scraping framework
+  description: |
+    Scrapy is an open source and collaborative framework for extracting the
+    data you need from websites in a fast, simple, yet extensible way.
+  doc_url: http://scrapy.org/doc/
+  dev_url: https://github.com/scrapy/scrapy

@@ -1,0 +1,32 @@
+package:
+  name: snuggs
+  version: 1.4.0
+
+source:
+  git_url: https://github.com/mapbox/snuggs.git
+  git_tag: 1.4.0
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - click
+    - pyparsing
+    - numpy
+  run:
+    - python
+    - click
+    - pyparsing
+    - numpy
+
+test:
+  imports:
+    - snuggs
+
+about:
+  home: https://github.com/mapbox/snuggs
+  license: MIT
+  license_file: LICENSE
+  summary: S-expressions for NumPy
+  doc_url: https://pypi.python.org/pypi/snuggs
+  dev_url: https://github.com/mapbox/snuggs
