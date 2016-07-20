@@ -182,13 +182,10 @@
     "osx-64:py27", 
     "win-64:py27"
   ], 
+  "gdal": "all", 
   "gensim": "all", 
-  "geos": [
-    "linux-64:py27", 
-    "linux-64:py35", 
-    "osx-64:py27", 
-    "osx-64:py35"
-  ], 
+  "geos": "all", 
+  "geotiff": "all", 
   "get_terminal_size": "all", 
   "gevent": "all", 
   "git": "all", 
@@ -265,6 +262,7 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "libgdal": "all", 
   "libgfortran": [
     "linux-64:py27", 
     "linux-64:py35"
@@ -319,6 +317,7 @@
   "natsort": "all", 
   "nbconvert": "all", 
   "nbformat": "all", 
+  "netcdf4": "all", 
   "networkx": "all", 
   "nltk": "all", 
   "nose": "all", 

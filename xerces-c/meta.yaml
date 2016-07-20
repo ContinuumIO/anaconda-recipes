@@ -1,20 +1,17 @@
 package:
   name: xerces-c
-  version: "3.1.2"
+  version: 3.1.4
 
 source:
-  fn: xerces-c-3.1.2.tar.gz [not win]
-  fn: xerces-c-3.1.2.zip [win]
-  url: http://mirrors.ibiblio.org/apache/xerces/c/3/sources/xerces-c-3.1.2.tar.gz [not win]
-  url: http://mirrors.ibiblio.org/apache/xerces/c/3/sources/xerces-c-3.1.2.zip [win]
-  md5: 9eb1048939e88d6a7232c67569b23985 [not win]
-  md5: 2706ce8a720e24bea8296c595a65a7d0 [win]
+  fn: xerces-c-3.1.4.tar.gz
+  url: http://apache.uberglobalmirror.com//xerces/c/3/sources/xerces-c-3.1.4.tar.gz
+  md5: 21bb097b711a513275379b59757cba4c
 
 build:
   features:
-    - vc9    [win and py27]
-    - vc10   [win and py34]
-    - vc14   [win and py35]
+    - vc9           [win and py27]
+    - vc10          [win and py34]
+    - vc14          [win and py35]
 
 about:
   home: http://xerces.apache.org/xerces-c/

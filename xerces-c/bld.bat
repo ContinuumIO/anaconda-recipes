@@ -1,4 +1,3 @@
-
 if %ARCH% == 64 (
     set PLATF=x64
     set OUTDIR=Win64

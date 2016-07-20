@@ -1,0 +1,25 @@
+diff --git libdap2/dceparselex.h libdap2/dceparselex.h
+index 612814f..29890c7 100644
+--- libdap2/dceparselex.h
++++ libdap2/dceparselex.h
+@@ -8,7 +8,6 @@
+ 
+ /* Forward */
+ struct DCEparsestate;
+-typedef struct DCEparsestate DCEparsestate;
+ 
+ #include "dcetab.h"
+ 
+diff --git libdap2/dcetab.h libdap2/dcetab.h
+index b399b64..ad6d4db 100644
+--- libdap2/dcetab.h
++++ libdap2/dcetab.h
+@@ -58,8 +58,4 @@ typedef int YYSTYPE;
+ # define YYSTYPE_IS_DECLARED 1
+ #endif
+ 
+-
+-
+-int dceparse (DCEparsestate* parsestate);
+-
+ #endif /* !YY_DCE_DCE_TAB_H_INCLUDED  */

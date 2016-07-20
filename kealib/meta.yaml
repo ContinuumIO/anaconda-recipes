@@ -1,10 +1,11 @@
 package:
   name: kealib
-  version: 1.4.5
+  version: 1.4.6
 
 source:
-  hg_url: https://bitbucket.org/chchrsc/kealib/
-  hg_tag: kealib-1.4.5
+  fn: kealib-1.4.6.tar.gz
+  url: https://bitbucket.org/chchrsc/kealib/downloads/kealib-1.4.6.tar.gz
+  md5: 789174bd519736ac1e726613b6eb7672
 
 build:
   features:
@@ -14,14 +15,10 @@ build:
 
 requirements:
   build:
-    # this recipe implicitly requires that the root environment have hg installed.
-    # You can't use conda's mercurial recipe with Py3K.
-    # You can, however, install mercurial separately with their installer.
     - cmake
-    - python     [win]
-    - hdf5       1.8.15*
+    - hdf5       1.8.16
   run:
-    - hdf5       1.8.15.*
+    - hdf5       1.8.16
 
 about:
   home: http://kealib.org

@@ -13,11 +13,11 @@ else
 fi
 
 chmod +x configure
-
 #    --enable-linux-lfs \
 
 ./configure \
     --disable-static \
+    --enable-shared \
     --with-ssl \
     --with-zlib \
     --disable-netcdf \
@@ -26,3 +26,5 @@ chmod +x configure
 
 make
 make install
+
+rm -rf $PREFIX/examples
