@@ -1,0 +1,38 @@
+package:
+  name: astroid
+  version: 1.4.7
+
+source:
+  fn: astroid-1.4.7.tar.gz
+  url: https://pypi.python.org/packages/ac/bf/4d536d9fd3017eefb4cdef6f69d1253ee9a52309a8f325ab52c2fbc1ba94/astroid-1.4.7.tar.gz
+  md5: 40de5e153f7be37cd640bce6303d1754
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - six
+    - wrapt
+    - lazy-object-proxy
+  run:
+    - python
+    - six
+    - wrapt
+    - lazy-object-proxy
+
+test:
+  imports:
+    - astroid
+
+about:
+  home: https://www.astroid.org/
+  license: LGPL
+  license_file: COPYING
+  summary: abstract syntax tree for Python with inference support
+  description: |
+    Asteroid provides a common base representation of Python
+    source code for various projects. It provides a compatible representation
+    which comes from the _ast module. It includes support for static inference
+    and local name scopes.
+  doc_url: https://pypi.python.org/pypi/astroid/1.4.7
+  dev_url: https://github.com/pycqa/astroid

@@ -1,22 +1,22 @@
 package:
   name: hdf5
-  version: 1.8.16
+  version: 1.8.17
 
 source:
-  fn: hdf5-1.8.16.tar.gz
-  url: http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.16.tar.gz
-  md5: b8ed9a36ae142317f88b0c7ef4b9c618
+  fn: hdf5-1.8.17.tar.gz
+  url: http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.17.tar.gz
+  md5: 7d572f8f3b798a628b8245af0391a0ca
 
 build:
   features:
-    - vc9     [win and py27]
-    - vc10    [win and py34]
-    - vc14    [win and py35]
+    - vc9        [win and py27]
+    - vc10       [win and py34]
+    - vc14       [win and py35]
 
 requirements:
   build:
     - python     [win]
-    - cmake
+    - cmake      [win]
     - zlib 1.2.*
   run:
     - zlib 1.2.*

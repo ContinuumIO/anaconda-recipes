@@ -1,0 +1,29 @@
+diff --git setup.py setup.py
+index 85d8799..6caae6a 100644
+--- setup.py
++++ setup.py
+@@ -262,7 +262,7 @@ if HAVE_NUMPY:
+     py_modules.append('gdalnumeric')
+ 
+ packages = ["osgeo",]
+-
++scripts = glob("./scripts/*.py")
+ readme = str(open('README.txt','rb').read())
+ 
+ name = 'GDAL'
+@@ -311,6 +311,7 @@ if HAVE_SETUPTOOLS:
+            classifiers = classifiers,
+            py_modules = py_modules,
+            packages = packages,
++           scripts = scripts,
+            url=url,
+            data_files = data_files,
+            zip_safe = False,
+@@ -331,6 +332,7 @@ else:
+            classifiers = classifiers,
+            py_modules = py_modules,
+            packages = packages,
++           scripts = scripts,
+            data_files = data_files,
+            url=url,
+            cmdclass={'build_ext':gdal_ext,

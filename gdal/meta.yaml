@@ -1,0 +1,42 @@
+package:
+  name: gdal
+  version: 2.1.0
+
+source:
+  fn: GDAL-2.1.0.tar.gz
+  url: https://pypi.python.org/packages/d1/98/27fff31ad298f3ec50db19dc3adfd8387279e158b1c6331c531c5fc7d830/GDAL-2.1.0.tar.gz
+  md5: 64084a5f114b4dffc53280e28d2ba4f3
+  patches:
+    - install_scripts.patch
+    - clang.patch                  [osx]
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - numpy
+    - libgdal 2.1.0
+  run:
+    - python
+    - numpy
+    - libgdal 2.1.0
+
+test:
+  imports:
+    - osgeo.ogr
+    - osgeo.gdal
+
+about:
+  home: http://www.gdal.org/
+  license: MIT
+  summary: Geospatial Data Abstraction Library
+  description: |
+    GDAL is a translator library for raster and vector geospatial data formats
+    that is released under an X/MIT style Open Source license by the Open
+    Source Geospatial Foundation. As a library, it presents a single raster
+    abstract data model and vector abstract data model to the calling
+    application for all supported formats.
+  doc_url: http://trac.osgeo.org/gdal/
+  dev_url: https://github.com/OSGeo/gdal

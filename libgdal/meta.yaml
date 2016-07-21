@@ -1,0 +1,64 @@
+package:
+  name: libgdal
+  version: 2.1.0
+
+source:
+  url: http://download.osgeo.org/gdal/2.1.0/gdal-2.1.0.tar.gz
+  fn: libgdal-2.1.0.tar.gz
+  md5: 0fc165cd947c54b132204233dfb243f1
+
+build:
+  features:
+    - vc9     [win and py27]
+    - vc10    [win and py34]
+    - vc14    [win and py35]
+
+requirements:
+  build:
+    - python              [win]
+    - hdf4 4.2.12
+    - hdf5 1.8.17         [unix]
+    - hdf5 1.8.15.1       [win]
+    - geos 3.5.*
+    - proj4 4.9.2
+    - xerces-c 3.1.4
+    - libnetcdf 4.4.1     [unix]
+    - libnetcdf 4.3.3.1   [win]
+    - kealib 1.4.6
+    - libtiff 4.0.*
+    - geotiff 1.4.*       [unix]
+  run:
+    - hdf4 4.2.12
+    - hdf5 1.8.17         [unix]
+    - hdf5 1.8.15.1       [win]
+    - geos 3.5.*
+    - proj4 4.9.2
+    - xerces-c 3.1.4
+    - libnetcdf 4.4.1     [unix]
+    - libnetcdf 4.3.3.1   [win]
+    - kealib 1.4.6
+    - libtiff 4.0.*
+    - geotiff 1.4.*       [unix]
+
+test:
+  commands:
+    - gdal_grid --version      [not win]
+    - gdal_rasterize --version [not win]
+    - gdal_translate --version [not win]
+    - gdaladdo --version       [not win]
+    - gdalenhance --version    [not win]
+    - gdalwarp --version       [not win]
+    - gdalinfo --formats       [not win]
+
+about:
+  home: http://www.gdal.org/
+  license: MIT
+  summary: Geospatial Data Abstraction Library
+  description: |
+    GDAL is a translator library for raster and vector geospatial data formats.
+    As a library, it presents a single raster abstract data model and vector
+    abstract data model to the calling application for all supported formats.
+    It also comes with a variety of useful command line utilities for data
+    translation and processing.
+  doc_url: http://www.gdal.org/
+  dev_url: https://github.com/OSGeo/gdal

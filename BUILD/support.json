@@ -14,6 +14,7 @@
     "osx-64:py35"
   ], 
   "apr": "all", 
+  "astroid": "all", 
   "astropy": "all", 
   "atom": [
     "linux-64:py27", 
@@ -35,6 +36,7 @@
   "biopython": "all", 
   "bitarray": "all", 
   "blaze": "all", 
+  "blist": "all", 
   "bokeh": "all", 
   "boost": "all", 
   "boto": "all", 
@@ -182,10 +184,27 @@
     "osx-64:py27", 
     "win-64:py27"
   ], 
-  "gdal": "all", 
+  "gdal": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35", 
+    "win-64:py27"
+  ], 
   "gensim": "all", 
-  "geos": "all", 
-  "geotiff": "all", 
+  "geos": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35", 
+    "win-64:py27"
+  ], 
+  "geotiff": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "get_terminal_size": "all", 
   "gevent": "all", 
   "git": "all", 
@@ -262,7 +281,13 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
-  "libgdal": "all", 
+  "libgdal": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35", 
+    "win-64:py27"
+  ], 
   "libgfortran": [
     "linux-64:py27", 
     "linux-64:py35"
@@ -274,6 +299,18 @@
     "linux-64:py35"
   ], 
   "libtiff": "all", 
+  "libxml2": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
+  "libxslt": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "lighttpd": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -282,7 +319,6 @@
   ], 
   "llvmlite": "all", 
   "locket": "all", 
-  "logilab-common": "all", 
   "luigi": "all", 
   "lz4": [
     "linux-64:py27", 
@@ -313,6 +349,7 @@
   "mock": "all", 
   "mpi4py": "all", 
   "mpmath": "all", 
+  "msgpack-python": "all", 
   "multipledispatch": "all", 
   "natsort": "all", 
   "nbconvert": "all", 
@@ -445,6 +482,7 @@
   "pytables": "all", 
   "pytest": "all", 
   "pytest-cov": "all", 
+  "pytest-timeout": "all", 
   "python": "all", 
   "python-daemon": [
     "linux-64:py27", 

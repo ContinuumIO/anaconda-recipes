@@ -1,0 +1,54 @@
+package:
+  name: netcdf4
+  version: 1.2.4
+source:
+  fn: netCDF4-1.2.4.tar.gz
+  url: https://pypi.python.org/packages/b2/a3/8ddc328fd9067e98f03884fb7de5900c43cbe609eb75b3fd516c211a1012/netCDF4-1.2.4.tar.gz
+  md5: fb8083a17644bd559887b026fddd18a8
+
+build:
+  number: 1             [osx]
+  entry_points:
+    - ncinfo = netCDF4.utils:ncinfo
+    - nc4tonc3 = netCDF4.utils:nc4tonc3
+    - nc3tonc4 = netCDF4.utils:nc3tonc4
+
+requirements:
+  build:
+    - python
+    - cython
+    - numpy x.x
+    - hdf5 1.8.17         [unix]
+    - hdf5 1.8.15.1       [win]
+    - libnetcdf 4.4.1     [unix]
+    - libnetcdf 4.3.3.1   [win]
+    - zlib 1.2.*
+  run:
+    - python
+    - numpy x.x
+    - hdf5 1.8.17         [unix]
+    - hdf5 1.8.15.1       [win]
+    - libnetcdf 4.4.1     [unix]
+    - libnetcdf 4.3.3.1   [win]
+    - zlib 1.2.*
+
+test:
+  commands:
+    - ncinfo -h
+    - nc4tonc3 -h
+    - nc3tonc4 -h
+  imports:
+    - netCDF4
+    - netcdftime
+    - netCDF4._netCDF4
+    - netcdftime._datetime
+
+about:
+  home: http://unidata.github.io/netcdf4-python/
+  license: MIT
+  license_file: COPYING
+  summary: Python/numpy interface to netCDF library
+  description: |
+    netcdf4-python is a Python interface to the netCDF C library.
+  doc_url: http://unidata.github.io/netcdf4-python/
+  dev_url: https://github.com/Unidata/netcdf4-python

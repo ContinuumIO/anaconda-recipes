@@ -1,18 +1,17 @@
 package:
   name: pytables
-  version: 3.2.2
+  version: 3.2.3.1
 
 source:
   git_url: https://github.com/PyTables/PyTables.git
-  git_tag: v.3.2.2
+  git_tag: v.3.2.3.1
   patches:
-    - setup.patch          [win]
-    - blosc_macro.patch
+    - setup.patch
+    - win-c.patch          [win]
     - tables_init.patch    [win]
-    - march.patch          [unix]
 
 build:
-  number: 4
+  number: 0
   entry_points:
     - pt2to3 = tables.scripts.pt2to3:main
     - ptdump = tables.scripts.ptdump:main
@@ -25,30 +24,18 @@ requirements:
     - setuptools
     - numpy x.x
     - cython
-    - zlib 1.2.*               [win]
     - lzo 2.06                 [linux]
     - bzip2 1.0.6
     - numexpr
-    - hdf5 1.8.16              [unix]
-    - hdf5 1.8.15.1            [win]
-    # building blosc is done internally.
-    # this is an old version, though.
-    # would be better to link against new version externally.
-    # See https://github.com/PyTables/PyTables/issues/451
-    # - blosc                  [win]
+    - hdf5 1.8.17
+    - zlib 1.2.*               [win]
   run:
     - python
     - numpy x.x
     - numexpr
-    - hdf5 1.8.16              [unix]
-    - hdf5 1.8.15.1            [win]
+    - hdf5 1.8.17
     - zlib 1.2.*
     - bzip2                    [win]
-    # building blosc is done internally.
-    # this is an old version, though.
-    # would be better to link against new version externally.
-    # See https://github.com/PyTables/PyTables/issues/451
-    # - blosc                    [win]
 
 test:
   commands:

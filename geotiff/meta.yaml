@@ -1,0 +1,21 @@
+package:
+  name: geotiff
+  version: 1.4.1
+
+source:
+  fn: libgeotiff-1.4.1.tar.gz
+  url: http://download.osgeo.org/geotiff/libgeotiff/libgeotiff-1.4.1.tar.gz
+  md5: 48bdf817e6e7a37671cc1f41b01e10fc
+
+requirements:
+  build:
+    - libtiff 4.0.*
+    - proj4 4.9.2
+  run:
+    - libtiff 4.0.*
+    - proj4 4.9.2
+
+about:
+  home: http://trac.osgeo.org/geotiff
+  license: MIT
+  license_file: COPYING

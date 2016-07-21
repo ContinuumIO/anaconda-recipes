@@ -16,15 +16,17 @@ build:
 
 requirements:
   build:
-    - cmake
-    - curl 7.45.*
+    - cmake               [win]
+    # Hack, not sure why we need this here anymore
+    - python              [win]
+    - curl 7.49.*
     - hdf4 4.2.*
-    - hdf5 1.8.16
+    - hdf5 1.8.17
     - zlib 1.2.*
   run:
-    - curl 7.45.*
+    - curl 7.49.*
     - hdf4 4.2.*
-    - hdf5 1.8.16
+    - hdf5 1.8.17
     - zlib 1.2.*
 
 test:

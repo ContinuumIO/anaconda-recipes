@@ -9,23 +9,23 @@ source:
     - hdf5_win.patch      [win]
 
 build:
-  number: 1               [unix]
-  number: 0               [win]
+  number: 2               [unix]
+  number: 1               [win]
 
 requirements:
   build:
     - python
     - setuptools
     - numpy x.x
-    - hdf5 1.8.16
-    - cython >=0.19
+    - hdf5 1.8.17
+    - cython
     - pkgconfig
     - six
   run:
     - python
     - numpy x.x
+    - hdf5 1.8.17
     - six
-    - hdf5 1.8.16
 
 about:
   home: http://www.h5py.org/

@@ -15,10 +15,13 @@ build:
 
 requirements:
   build:
+    - python              [win]
     - cmake
-    - hdf5       1.8.16
+    - hdf5 1.8.17         [unix]
+    - hdf5 1.8.15.1       [win]
   run:
-    - hdf5       1.8.16
+    - hdf5 1.8.17         [unix]
+    - hdf5 1.8.15.1       [win]
 
 about:
   home: http://kealib.org

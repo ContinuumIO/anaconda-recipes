@@ -1,0 +1,26 @@
+package:
+  name: pytest-timeout
+  version: 1.0.0
+
+source:
+  fn: pytest-timeout-1.0.0.tar.gz
+  url: https://files.pythonhosted.org/packages/cf/92/ab29b9baa54d47dfd50e43be35577de9af4e7ebf27d29f546ddeb6c3b6f5/pytest-timeout-1.0.0.tar.gz
+  md5: f9f162bd079689980b5614673ddfdae4
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pytest >=2.8.0
+  run:
+    - python
+    - pytest >=2.8.0
+
+test:
+  imports:
+    - pytest_timeout
+
+about:
+  home: http://bitbucket.org/pytest-dev/pytest-timeout/
+  license: MIT
+  summary: py.test plugin to abort hanging tests
