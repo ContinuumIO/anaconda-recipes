@@ -73,7 +73,6 @@ Alternatively, the image can act as a black box that we never have to interact w
 
 In order to build certain conda packages, do the following in the Docker container: 
  * conda install mercurial
- * set CIO_TEST=2
  * Ensure conda and conda-build are up to date
  *In addition, in the home directory there should be a .condarc file. If not, create one. The .condarc file should contain: 
 
@@ -92,7 +91,6 @@ Use a Windows VM with the following specifications:
   * ifort
 
 Then,
- * Run “set CIO_TEST=2”
  * Run “conda install mercurial”
  * Ensure that conda and conda-build are up to date
  * Modify/create .condarc in the home directory and write: 
@@ -111,7 +109,6 @@ Use a OSX VM with the following specifications:
   * GNU Fortran (GCC) 4.2.3
 
 Then, 
- * Run “set CIO_TEST=2”
  * Run “conda install mercurial”
  * Ensure that conda and conda-build are up to date
  * Modify/create .condarc in the home directory and write: 
