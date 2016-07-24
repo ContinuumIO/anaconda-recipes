@@ -1,0 +1,24 @@
+package:
+  name: munch
+  version: 2.0.4
+
+source:
+  fn: munch-2.0.4.tar.gz
+  url: https://files.pythonhosted.org/packages/06/df/f8c11e662c80741240e48b701c6ee81723ecc6a4f81db63c664428d6f4da/munch-2.0.4.tar.gz
+  md5: 6fd6f748f5698c756e143f2be847d449
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - munch
+
+about:
+  home: http://github.com/Infinidat/munch
+  license: MIT
+  summary: dot-accessible dictionary (a la JavaScript objects).

@@ -1,0 +1,38 @@
+package:
+  name: line_profiler
+  version: 1.0
+
+source:
+  fn: line_profiler-1.0.tar.gz
+  url: https://pypi.python.org/packages/source/l/line_profiler/line_profiler-1.0.tar.gz
+  md5: 2f8352acfedf83f701a564583db5e14d
+
+build:
+  number: 1
+  entry_points:
+    - kernprof = kernprof:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  commands:
+    - kernprof -h
+  imports:
+    - line_profiler
+    - _line_profiler
+    - kernprof
+
+about:
+  home: https://github.com/rkern/line_profiler
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Line-by-line profiling for Python
+  description: |
+    line_profiler is a module for doing line-by-line profiling of functions.
+  doc_url: https://pypi.python.org/pypi/line_profiler
+  dev_url: https://github.com/rkern/line_profiler
