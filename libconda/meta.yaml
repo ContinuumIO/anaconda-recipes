@@ -3,7 +3,7 @@ package:
   version: 4.0.0
 
 source:
-  git_url: https://github.com/ilanschnell/libconda.git
+  git_url: https://github.com/conda/libconda.git
   git_tag: 4.0.0
 
 requirements:
@@ -21,7 +21,7 @@ test:
     - libconda
 
 about:
-  home: https://github.com/ilanschnell/libconda
+  home: https://github.com/conda/libconda
   license: BSD
   license_file: LICENSE.txt
   summary: conda 4.0 based library

@@ -1,8 +1,8 @@
 #!/bin/bash -eu
 
 env | sort
-RECIPE_DIR=${1-RECIPE_DIR}
-SRC_DIR=${2-SRC_DIR}
+RECIPE_DIR=${1-$RECIPE_DIR}
+SRC_DIR=${2-$SRC_DIR}
 
 VERSION=$(python $SRC_DIR/setup.py --version)
 echo "VERSION=$VERSION"

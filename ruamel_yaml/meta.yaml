@@ -1,14 +1,14 @@
 package:
   name: ruamel_yaml
-  version: 0.11.7
+  version: 0.11.14
 
 build:
   number: 0
   no_link: .*\.(pyd|dll)                       [win]
 
 source:
-  hg_url: https://kalefranz@bitbucket.org/ruamel/yaml
-  hg_tag: 1cbc6a8
+  hg_url: https://bitbucket.org/ruamel/yaml
+  hg_tag: 0.11.14
 
 requirements:
   build:

@@ -1,0 +1,26 @@
+package:
+  name: m4
+  version: 1.4.17
+
+source:
+  fn: m4-1.4.17.tar.gz
+  url: http://ftp.gnu.org/gnu/m4/m4-1.4.17.tar.gz
+
+test:
+  commands:
+    - m4 --help
+    - m4 --version
+
+about:
+  home: http://www.gnu.org/software/m4/
+  license: GPL3
+  license_file: COPYING
+  summary: Implementation of the traditional Unix macro processo
+  description: |
+    GNU M4 is an implementation of the traditional Unix macro processor. It is
+    mostly SVR4 compatible although it has some extensions (for example,
+    handling more than 9 positional parameters to macros). GNU M4 also has
+    built-in functions for including files, running shell commands, doing
+    arithmetic, etc.
+  doc_url: http://www.gnu.org/software/m4/manual/index.html
+  dev_url: http://git.savannah.gnu.org/gitweb/?p=m4.git
