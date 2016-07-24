@@ -1,0 +1,35 @@
+package:
+  name: phantomjs
+  version: 2.1.1
+
+# this one is a BEAR to build from source.  It has its own special fork of Qt.  Better to repackage binaries.
+source:
+  fn: phantomjs-2.1.1-windows.zip                                                            [win]
+  url: https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-windows.zip           [win]
+  sha256: d9fb05623d6b26d3654d008eab3adafd1f6350433dfd16138c46161f42c7dcc8                   [win]
+  fn: phantomjs-2.1.1-macosx.zip                                                             [osx]
+  url: https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-macosx.zip            [osx]
+  sha256: 538cf488219ab27e309eafc629e2bcee9976990fe90b1ec334f541779150f8c1                   [osx]
+  fn: phantomjs-2.1.1-linux-i686.tar.bz2                                                     [linux32]
+  url: https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-1686.tar.bz2    [linux32]
+  sha256: 80e03cfeb22cc4dfe4e73b68ab81c9fdd7c78968cfd5358e6af33960464f15e3                   [linux32]
+  fn: phantomjs-2.1.1-linux-x86_64.tar.bz2                                                   [linux64]
+  url: https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2  [linux64]
+  sha256: 86dd9a4bf4aee45f1a84c9f61cf1947c1d6dce9b9e8d2a907105da7852460d2f                   [linux64]
+
+test:
+    commands:
+        - phantomjs -v
+
+about:
+  home: http://phantomjs.org/
+  license: BSD
+  summary: A headless WebKit scriptable with a JavaScript API
+  description: |
+    PhantomJS is a headless WebKit scriptable with a JavaScript API. It has
+    fast and native support for various web standards: DOM handling, CSS
+    selector, JSON, Canvas, and SVG.
+  doc_url: http://phantomjs.org/documentation/
+  dev_url: https://github.com/ariya/phantomjs
+
+# vim:set ts=8 sw=2 sts=2 tw=78 et:

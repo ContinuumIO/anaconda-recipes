@@ -1,0 +1,18 @@
+package:
+  name: libprotobuf
+  version: 2.5.0
+
+source:
+  fn: protobuf-2.5.0.tar.gz
+  url: https://github.com/google/protobuf/releases/download/v2.5.0/protobuf-2.5.0.tar.gz
+  md5: b751f772bdeb2812a2a8e7202bf1dae8
+
+test:
+  commands:
+    - protoc --help
+
+about:
+  home: https://github.com/google/protobuf
+  license: BSD
+  license_file: COPYING.txt
+  summary: Protocol Buffers - Google's data interchange format
