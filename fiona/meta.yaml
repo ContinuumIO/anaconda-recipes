@@ -1,0 +1,50 @@
+package:
+  name: fiona
+  version: 1.7.0
+
+source:
+  git_url: https://github.com/Toblerity/Fiona.git
+  git_tag: 1.7.0
+
+build:
+  entry_points:
+    - fio = fiona.fio.main:main_group
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - cython
+    - libgdal 2.1.0
+  run:
+    - python
+    - numpy
+    - setuptools
+    - libgdal 2.1.0
+    - six
+    - cligj
+    - munch
+    - click-plugins
+
+test:
+  commands:
+    - fio --help
+  imports:
+    - fiona
+    - fiona.fio
+
+about:
+  home: http://github.com/Toblerity/Fiona
+  license: BSD
+  license_file: LICENSE.txt
+  summary: OGR's neat, nimble, no-nonsense API for Python programmers
+  description: |
+    Fiona is designed to be simple and dependable. It focuses on reading and
+    writing data in standard Python IO style and relies upon familiar Python
+    types and protocols such as files, dictionaries, mappings, and iterators
+    instead of classes specific to OGR.  Fiona can read and write real-world
+    data using multi-layered GIS formats and zipped virtual file systems and
+    integrates readily with other Python GIS packages such as pyproj, Rtree,
+    and Shapely.
+  doc_url: http://toblerity.org/fiona/
+  dev_url: https://github.com/Toblerity/Fiona

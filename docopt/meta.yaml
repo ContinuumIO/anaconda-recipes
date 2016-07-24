@@ -1,0 +1,30 @@
+package:
+  name: docopt
+  version: 0.6.2
+
+source:
+  fn: docopt-0.6.2.tar.gz
+  url: https://pypi.python.org/packages/source/d/docopt/docopt-0.6.2.tar.gz
+  md5: 4bc74561b37fad5d3e7d037f82a4c3b1
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - docopt
+
+about:
+  home: http://docopt.org/
+  license: MIT
+  summary: Command-line interface description language
+  description: |
+    Docopt helps you create beautiful command-line interfaces easily. Docopt
+    will help you define interface for your command-line app and automatically
+    generate a parser for it.
+  doc_url: https://pypi.python.org/pypi/docopt
+  dev_url: https://github.com/docopt/docopt

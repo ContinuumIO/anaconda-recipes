@@ -1,0 +1,30 @@
+package:
+  name: feedparser
+  version: 5.2.1
+
+source:
+  fn: feedparser-5.2.1.tar.bz2
+  url: https://pypi.python.org/packages/source/f/feedparser/feedparser-5.2.1.tar.bz2
+  md5: ee8bd99535a4261b8e26976984dd6b26
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - feedparser
+
+about:
+  home: https://github.com/kurtmckee/feedparser
+  license: MIT
+  license_file: LICENSE
+  summary: parse feeds in Python
+  description: |
+    Feedparser is a Universal Feed Parser for Python. It is used to download
+    and parse syndicated feeds.
+  doc_url: https://pythonhosted.org/feedparser/
+  dev_url: https://github.com/kurtmckee/feedparser

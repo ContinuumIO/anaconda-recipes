@@ -1,0 +1,26 @@
+package:
+  name: click-plugins
+  version: 1.0.3
+
+source:
+  fn: click-plugins-1.0.3.tar.gz
+  url: https://files.pythonhosted.org/packages/77/05/da5c9e19457f20cadfe22c397cd3852577066066f63e40f2baa0831b1693/click-plugins-1.0.3.tar.gz
+  md5: ddc85a5c51399713f801ae6b63fcac5b
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - click >=3.0
+  run:
+    - python
+    - click >=3.0
+
+test:
+  imports:
+    - click_plugins
+
+about:
+  home: https://github.com/click-contrib/click-plugins
+  license: BSD
+  summary: extension module for click to enable registering CLI commands

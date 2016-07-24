@@ -1,0 +1,26 @@
+package:
+  name: hdfs3
+  version: 0.1.1
+
+source:
+  git_url: https://github.com/dask/hdfs3.git
+  git_tag: 0.1.1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - libhdfs3
+  run:
+    - python
+    - libhdfs3
+
+test:
+  imports:
+    - hdfs3
+
+about:
+  home: https://github.com/dask/hdfs3
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Python wrapper for libhdfs3
