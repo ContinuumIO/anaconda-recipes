@@ -1,0 +1,15 @@
+package:
+  name: libuuid
+  version: 1.0.3
+
+source:
+  fn: libuuid-1.0.3.tar.gz
+  url: http://bremen/src/libuuid-1.0.3.tar.gz
+  md5: d44d866d06286c08ba0846aba1086d68
+
+about:
+  home: https://sourceforge.net/projects/libuuid/files/
+  license: Modified BSD
+  license_family: BSD
+  license_file: COPYING
+  summary: portable uuid C library

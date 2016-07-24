@@ -1,0 +1,29 @@
+package:
+  name: responses
+  version: 0.5.1
+
+source:
+  fn: responses-0.5.1.tar.gz
+  url: https://files.pythonhosted.org/packages/09/e4/ae639e37d9d35903fdeda416d7f9c9e3a0331895d574b4fe6632a27c9190/responses-0.5.1.tar.gz
+  md5: f1962b295b18128c522e83901556deac
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - requests >=2.0
+    - cookies
+    - six
+
+test:
+  imports:
+    - responses
+
+about:
+  home: https://github.com/getsentry/responses
+  license: Apache 2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: utility library for mocking out the 'requests' Python library
