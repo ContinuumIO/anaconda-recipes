@@ -1,0 +1,38 @@
+package:
+  name: shapely
+  version: 1.5.16
+
+source:
+  git_url: git@github.com:Toblerity/Shapely.git
+  git_tag: 1.5.16
+  patches:
+    - osx-geos.patch        [osx]
+
+requirements:
+  build:
+    - python
+    - cython
+    - numpy
+    - geos >=3.3
+  run:
+    - python
+    - geos >=3.3
+
+test:
+  requires:
+    - numpy
+  imports:
+    - shapely
+    - shapely.speedups._speedups
+    - shapely.vectorized._vectorized
+
+about:
+  home: https://github.com/Toblerity/Shapely
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Geometric objects, predicates, and operations
+  description: |
+    Shapely is a Python package for manipulation and analysis of geometric
+    objects in the Cartesian plane.
+  doc_url: http://toblerity.org/shapely/
+  dev_url: https://github.com/Toblerity/Shapely

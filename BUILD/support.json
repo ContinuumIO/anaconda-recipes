@@ -50,6 +50,7 @@
   ], 
   "bsdiff4": "all", 
   "btrees": "all", 
+  "bz2file": "all", 
   "bzip2": [
     "win-64:py27", 
     "win-64:py35"
@@ -221,6 +222,11 @@
   ], 
   "get_terminal_size": "all", 
   "gevent": "all", 
+  "gevent-websocket": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
   "git": "all", 
   "glib": [
     "linux-64:py27", 
@@ -403,6 +409,10 @@
   "numexpr": "all", 
   "numpy": "all", 
   "odo": "all", 
+  "openblas": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "openpyxl": "all", 
   "orange-app": "all", 
   "orange3": [
@@ -599,6 +609,12 @@
   "service_identity": "all", 
   "setuptools": "all", 
   "setuptools_scm": "all", 
+  "shapely": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "simplegeneric": "all", 
   "simplejson": "all", 
   "singledispatch": "all", 

@@ -1,6 +1,6 @@
 package:
   name: uuid
-  version: 1.30
+  version: "1.30"
 
 source:
   fn: uuid-1.30.tar.gz

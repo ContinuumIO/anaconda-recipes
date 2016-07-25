@@ -1,0 +1,34 @@
+package:
+  name: gevent-websocket
+  version: 0.9.5
+
+source:
+  fn: gevent-websocket-0.9.5.tar.gz
+  url: https://pypi.python.org/packages/source/g/gevent-websocket/gevent-websocket-0.9.5.tar.gz
+  md5: 03a8473b9a61426b0ef6094319141389
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - gevent
+  run:
+    - python
+    - gevent
+
+test:
+  imports:
+    - geventwebsocket
+
+about:
+  home: https://bitbucket.org/noppo/gevent-websocket
+  license: Apache
+  license_file: LICENSE
+  summary: A WebSocket library for the gevent networking library
+  description: |
+    Gevent-websocket is a WebSocket library for the gevent networking library.
+  doc_url: https://pypi.python.org/pypi/gevent-websocket/
+  dev_url: https://bitbucket.org/noppo/gevent-websocket

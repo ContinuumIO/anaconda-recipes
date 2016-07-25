@@ -1,9 +1,9 @@
 package:
   name: pyopenssl
-  version: 0.16.0
+  version: 16.0.0
 
 source:
-  fn: pyOpenSSL-0.16.0.tar.gz
+  fn: pyOpenSSL-16.0.0.tar.gz
   url: https://pypi.python.org/packages/77/f2/bccec75ca4280a9fa762a90a1b8b152a22eac5d9c726d7da1fcbfe0a20e6/pyOpenSSL-16.0.0.tar.gz
   md5: 9587d813dcf656e9f2760e41a3682dc3
 
