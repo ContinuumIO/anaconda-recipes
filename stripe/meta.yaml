@@ -1,0 +1,27 @@
+package:
+  name: stripe
+  version: 1.37.0
+
+source:
+  fn: stripe-1.37.0.tar.gz
+  url: https://pypi.python.org/packages/29/ae/5b3a43719cddb43b8b4007d9522e7c2784217aa9cd79715e1bc57496de42/stripe-1.37.0.tar.gz
+  md5: 9294a7146c1ab8b1c05e21c23f030d90
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - requests
+
+test:
+  imports:
+    - stripe
+
+about:
+  home: https://github.com/stripe/stripe-python
+  license: MIT
+  license_file: LICENSE
+  summary: Stripe python bindings
+  doc_url: https://stripe.com/docs/api/python#intro
+  dev_url: https://github.com/stripe/stripe-python

@@ -1,13 +1,11 @@
 package:
   name: webob
-  version: 1.6.0
+  version: 1.6.1
 
 source:
-  fn: WebOb-1.6.0.tar.gz
-  url: https://pypi.python.org/packages/source/W/WebOb/WebOb-1.6.0.tar.gz
-  md5: 089d7fc6745f175737800237c7287802
-  patches:
-    - setup.patch
+  fn: WebOb-1.6.1.tar.gz
+  url: https://pypi.python.org/packages/5d/c7/7c1565b188d8d32bf3657a24b9d71621e35ba20ec4179a0a7f9803511099/WebOb-1.6.1.tar.gz
+  md5: 04049d82e9d12dd91f6f46f54cc826aa
 
 requirements:
   build:

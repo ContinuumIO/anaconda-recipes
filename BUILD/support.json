@@ -116,6 +116,12 @@
   "cubes": "all", 
   "curl": "all", 
   "cvxcanon": "all", 
+  "cvxopt": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "cycler": "all", 
   "cython": "all", 
   "cytoolz": "all", 
@@ -232,6 +238,7 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "glueviz": "all", 
   "grako": "all", 
   "greenlet": "all", 
   "grin": [
@@ -664,6 +671,7 @@
     "win-64:py27"
   ], 
   "statsmodels": "all", 
+  "stripe": "all", 
   "suds-jurko": "all", 
   "supervisor": [
     "linux-64:py27", 
@@ -723,10 +731,15 @@
     "win-64:py27"
   ], 
   "w3lib": "all", 
+  "waitress": "all", 
   "wcwidth": "all", 
   "webob": "all", 
+  "webtest": "all", 
   "werkzeug": "all", 
   "wheel": "all", 
+  "whisper": [
+    "linux-64:py27"
+  ], 
   "whoosh": "all", 
   "win_unicode_console": [
     "win-64:py27", 

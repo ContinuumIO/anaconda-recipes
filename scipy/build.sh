@@ -7,8 +7,8 @@ if [ `uname` == Darwin ]
 then
     if [ $NOMKL == 0 ]; then
         export ATLAS=1
-        export LDFLAGS="-headerpad_max_install_names $LDFLAGS"
     fi
+    export LDFLAGS="-headerpad_max_install_names $LDFLAGS"
 
     FCFLAGS=$CFLAGS
     # link statically against the fortran libraries
@@ -16,4 +16,4 @@ then
     LDFLAGS="-undefined dynamic_lookup -bundle -Wl,-search_paths_first -L$(pwd) $LDFLAGS"
 fi
 
-$PYTHON setup.py install
+$PYTHON setup.py install --old-and-unmanageable

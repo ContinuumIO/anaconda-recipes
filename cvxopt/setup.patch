@@ -1,0 +1,21 @@
+diff --git setup.py setup.py
+index 031ad53..9a9b90d 100644
+--- setup.py
++++ setup.py
+@@ -6,12 +6,12 @@ from glob import glob
+ import os
+ 
+ # Modifiy this if BLAS and LAPACK libraries are not in /usr/lib.
+-BLAS_LIB_DIR = '/usr/lib'
++#BLAS_LIB_DIR = '/usr/lib'
+ 
+ # Default names of BLAS and LAPACK libraries
+-BLAS_LIB = ['blas']
+-LAPACK_LIB = ['lapack']
+-BLAS_EXTRA_LINK_ARGS = []
++#BLAS_LIB = ['blas']
++#LAPACK_LIB = ['lapack']
++#BLAS_EXTRA_LINK_ARGS = []
+ 
+ # Set environment variable BLAS_NOUNDERSCORES=1 if your BLAS/LAPACK do
+ # not use trailing underscores

@@ -1,0 +1,53 @@
+package:
+  name: cvxopt
+  version: 1.1.8
+
+source:
+  fn: cvxopt-1.1.8.tar.gz
+  url: https://pypi.python.org/packages/source/c/cvxopt/cvxopt-1.1.8.tar.gz
+  md5: d4ff0a0e51aba93f838a70302a088eea
+  patches:
+    - setup.patch
+
+build:
+  number: 3
+  features:
+    - nomkl                   [nomkl]
+
+requirements:
+  build:
+    - python
+    - mkl-devel 11.3.3
+    - libpython               [win]
+  run:
+    - python
+    - mkl 11.3.3
+
+test:
+  requires:
+    - cio-bt
+  imports:
+    - cvxopt
+    - cvxopt.base
+    - cvxopt.blas
+    - cvxopt.cholmod
+    - cvxopt.lapack
+    - cvxopt.misc_solvers
+    - cvxopt.umfpack
+
+about:
+  home: http://cvxopt.org/
+  license: GPL
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Library for convex optimization
+  description: |
+    CVXOPT is a free software package for convex optimization based on Python.
+    It can be used with the interactive Python interpreter, on the command line
+    by executing Python scripts, or integrated in other software via Python
+    extension modules. Its main purpose is to make the development of software
+    for convex optimization applications straightforward by building on Python's
+    extensive standard library and on the strengths of Python as a high-level
+    programming language.
+  doc_url: http://cvxopt.org/documentation/index.html
+  dev_url: https://github.com/cvxopt/cvxopt

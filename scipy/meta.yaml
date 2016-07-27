@@ -1,14 +1,14 @@
 package:
   name: scipy
-  version: 0.17.1
+  version: 0.18.0
 
 source:
-  fn: scipy-0.17.1.tar.gz
-  url: https://pypi.python.org/packages/05/5e/973bf71cfa865d962a68893e35e366a0a7ac0b713bc398b4e584c1bed982/scipy-0.17.1.tar.gz
-  md5: 8987b9a3e3cd79218a0a423b21c8e4de
+  fn: scipy-0.18.0.tar.gz
+  url: https://pypi.python.org/packages/01/a1/dce70d47377d662aa4b0895df8431aee92cea6faefaab9dae21b0f901ded/scipy-0.18.0.tar.gz
+  md5: d70e7f533622ab705bc016dac328d93e
 
 build:
-  number: 1
+  number: 0
   ignore_prefix_files: True   [win]
   features:
     - nomkl                   [nomkl]
@@ -16,7 +16,7 @@ build:
 requirements:
   build:
     - python
-    - setuptools              [win]
+    - setuptools
     - numpy x.x
     - mkl-devel 11.3.3        [not nomkl]
     - openblas 0.2.14         [linux and nomkl and (not ppc64le)]

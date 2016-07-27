@@ -21,7 +21,6 @@ requirements:
 
 test:
   requires:
-    - python
     - pytest
   imports:
     - ruamel_yaml

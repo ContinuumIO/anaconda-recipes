@@ -1,14 +1,14 @@
 package:
   name: tornado
-  version: 4.3
+  version: 4.4.1
 
 source:
-  fn: tornado-4.3.tar.gz
-  url: https://pypi.python.org/packages/source/t/tornado/tornado-4.3.tar.gz
-  md5: d13a99dc0b60ba69f5f8ec1235e5b232
+  fn: tornado-4.4.1.tar.gz
+  url: https://pypi.python.org/packages/96/5d/ff472313e8f337d5acda5d56e6ea79a43583cc8771b34c85a1f458e197c3/tornado-4.4.1.tar.gz
+  md5: fff8a7d7f580b04bacc2ffe7ddf41133
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -23,7 +23,7 @@ test:
   imports:
     - tornado
     - tornado.netutil
-    - tornado.speedups      [unix]
+    - tornado.speedups
 
 about:
   home: http://www.tornadoweb.org/

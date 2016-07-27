@@ -1,0 +1,37 @@
+package:
+  name: webtest
+  version: 2.0.23
+
+source:
+  fn: WebTest-2.0.23.tar.gz
+  url: https://pypi.python.org/packages/e7/d8/23d3f73976fb9ccba29f04565d1ddbd0300cf9c09db57e252718700d1203/WebTest-2.0.23.tar.gz
+  md5: b824dd81ba9fd50e138c5017e22eb3c7
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - beautifulsoup4
+    - waitress >=0.8.5
+    - webob >=1.2
+    - six
+  run:
+    - python
+    - beautifulsoup4
+    - waitress >=0.8.5
+    - webob >=1.2
+    - six
+
+test:
+  imports:
+    - webtest
+
+about:
+  home: http://webtest.pythonpaste.org/
+  license: MIT
+  summary: helper to test WSGI applications
+  description: |
+    Webtest wraps any WSGI application and makes it easy to send test requests
+    to that application, without starting up an HTTP server.
+  doc_url: http://webtest.pythonpaste.org/
+  dev_url: https://github.com/Pylons/webtest
