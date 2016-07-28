@@ -1,11 +1,11 @@
 package:
   name: bokeh
-  version: 0.12.0
+  version: 0.12.1
 
 source:
-  fn: bokeh-0.12.0.tar.gz
-  url: https://pypi.python.org/packages/45/c7/c0738637a16e4174ab7ec5f7f487786b9217846f1f2245358e368633682e/bokeh-0.12.0.tar.gz
-  md5: 7c50e4a4afc42c240a04184587344078
+  fn: bokeh-0.12.1.tar.gz
+  url: https://pypi.python.org/packages/15/78/4b036e5b04c29fd2fdc50f5c3f3c3e47ad7457f3fbc275a8296db0c38a94/bokeh-0.12.1.tar.gz
+  md5: 5fa0aafde570263ba586b3f0f081e91e
 
 requirements:
   build:
@@ -27,6 +27,7 @@ test:
     - pytest
     - beautifulsoup4
     - pandas
+    - nbformat
   commands:
     - bokeh -h
     - bokeh-server

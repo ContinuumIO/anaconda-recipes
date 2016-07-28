@@ -2,8 +2,9 @@ set TIFF_ROOT=%LIBRARY_PREFIX%
 set JPEG_ROOT=%LIBRARY_PREFIX%
 set ZLIB_ROOT=%LIBRARY_PREFIX%
 set FREETYPE2_ROOT=%LIBRARY_PREFIX%
-set LIB=%LIBRARY_LIB%
-set INCLUDE=%LIBRARY_INC%
+set LIB=%LIBRARY_LIB%;%LIB%
+set LIBPATH=%LIBRARY_LIB%;%LIBPATH%
+set INCLUDE=%LIBRARY_INC%;%INCLUDE%
 
 REM --old-and-unmanageable is a flag that disables egg installation.
 REM    If you remove this, Pillow gets installed as an egg and the build

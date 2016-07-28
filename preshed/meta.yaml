@@ -1,0 +1,32 @@
+package:
+  name: preshed
+  version: 0.46.4
+
+source:
+  fn: preshed-0.46.4.tar.gz
+  url: https://pypi.python.org/packages/ed/f8/96cdfd0badba82b589f5913565e67a0db4d93282a86e0cb2dd786fdd69be/preshed-0.46.4.tar.gz
+  md5: 1044e5cf3460fe6a813f0606059ea92d
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - cymem >=1.30,<1.32.0
+
+test:
+  imports:
+    - preshed
+    - preshed.counter
+    - preshed.maps
+
+about:
+  home: https://github.com/syllog1sm/preshed
+  license: MIT
+  license_file: LICENSE
+  summary: Cython hash table that trusts the keys are pre-hashed
+  description: |
+    Simple but high performance Cython hash table mapping pre-randomized keys
+    to void* values.
+  doc_url: https://pypi.python.org/pypi/preshed
+  dev_url: https://github.com/spacy-io/preshed

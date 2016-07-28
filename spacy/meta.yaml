@@ -1,14 +1,11 @@
 package:
   name: spacy
-  version: 0.100.6
+  version: 0.101.0
 
 source:
-  fn: spacy-0.100.6.tar.gz
-  url: https://pypi.python.org/packages/source/s/spacy/spacy-0.100.6.tar.gz
-  md5: 890ff5a1855511b38084838bbbd2bcd1
-
-build:
-  number: 1      [osx]
+  fn: spacy-0.101.0.tar.gz
+  url: https://pypi.python.org/packages/4c/e7/efb7268aceca6d1bf50fc2b6b433d3f4bbe222a8b26616d5f2ddfc2c7c43/spacy-0.101.0.tar.gz
+  md5: 5a51a8519c4eaa9f907445be42f5fe93
 
 requirements:
   build:
@@ -33,6 +30,7 @@ test:
 about:
   home: https://spacy.io/
   license: MIT
+  license_file: LICENSE
   summary: Industrial-strength Natural Language Processing
   description: |
     spaCy is a library for advanced natural language processing in Python and

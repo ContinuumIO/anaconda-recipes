@@ -12,8 +12,11 @@ import spacy.serialize.packer
 import spacy.strings
 import spacy.symbols
 import spacy.syntax._parse_features
+import spacy.syntax._state
 import spacy.syntax.arc_eager
+import spacy.syntax.iterators
 import spacy.syntax.ner
+import spacy.syntax.nonproj
 import spacy.syntax.parser
 import spacy.syntax.stateclass
 import spacy.syntax.transition_system

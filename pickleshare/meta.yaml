@@ -1,17 +1,16 @@
 package:
   name: pickleshare
-  version: 0.7.2
+  version: 0.7.3
 
 source:
-  fn: pickleshare-0.7.2.tar.gz
-  url: https://pypi.python.org/packages/ad/69/bcf0c55ded3779e6e1c9460c69854678d4b78f08482449caaf8e82d5f8eb/pickleshare-0.7.2.tar.gz
-  md5: 29d74cde0255546b6b2e1b48a0b31a54
+  fn: pickleshare-0.7.3.tar.gz
+  url: https://pypi.python.org/packages/5d/29/5f3eb419067a98fe98d78a7e309fef03abceb2dc3e3587c88e2ca704ba20/pickleshare-0.7.3.tar.gz
+  md5: 0ccdd8e65737a92eec47888dae61ff95
 
 requirements:
   build:
     - python
     - setuptools
-    - path.py
   run:
     - python
     - path.py

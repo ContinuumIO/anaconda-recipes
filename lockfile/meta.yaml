@@ -1,0 +1,30 @@
+package:
+  name: lockfile
+  version: 0.12.2
+
+source:
+  fn: lockfile-0.12.2.tar.gz
+  url: https://pypi.python.org/packages/source/l/lockfile/lockfile-0.12.2.tar.gz
+  md5: a6a1a82957a23afdf44cfdd039b65ff9
+
+requirements:
+  build:
+    - python
+    - pbr
+  run:
+    - python
+
+test:
+  imports:
+    - lockfile
+
+about:
+  home: http://launchpad.net/pylockfile
+  license: MIT
+  license_file: LICENSE
+  summary: Platform-independent file locking module
+  description: |
+    Warning: This package is deprecated. It is highly preferred that instead of
+    using this code base (where appropriate) that instead fasteners is used
+    instead.
+  doc_url: http://docs.openstack.org/developer/pylockfile/

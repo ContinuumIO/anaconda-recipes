@@ -1,0 +1,31 @@
+package:
+  name: cymem
+  version: 1.31.2
+
+source:
+  fn: cymem-1.31.2.tar.gz
+  url: https://pypi.python.org/packages/f8/9e/273fbea507de99166c11cd0cb3fde1ac01b5bc724d9a407a2f927ede91a1/cymem-1.31.2.tar.gz
+  md5: 310e54a8408a25775cd3d58c9379518f
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - cymem
+    - cymem.cymem
+
+about:
+  home: http://github.com/syllog1sm/cymem
+  license: MIT
+  license_file: LICENSE
+  summary: Manage calls to malloc/free through Cython
+  description: |
+    Cymem provides two small memory-management helpers for Cython. They make it
+    easy to tie memory to a Python object's life-cycle, so that the memory is
+    freed when the object is garbage collected.
+  doc_url: https://pypi.python.org/pypi/cymem
+  dev_url: http://github.com/syllog1sm/cymem

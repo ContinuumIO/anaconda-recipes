@@ -1,22 +1,16 @@
 package:
   name: thinc
-  version: 5.0.6
+  version: 5.0.8
 
 source:
-  fn: thinc-5.0.6.tar.gz
-  url: https://pypi.python.org/packages/source/t/thinc/thinc-5.0.6.tar.gz
-  md5: 22177b1e53e8d0c972e242dfb30e65dd
-
-build:
-  number: 1          [osx]
+  fn: thinc-5.0.8.tar.gz
+  url: https://pypi.python.org/packages/d3/1e/15cdaf6b7e93f1b6d1b008960520ede5efe31f843c45feff31700c625c8f/thinc-5.0.8.tar.gz
+  md5: df1a9231b7849336496a91afb56aff26
 
 requirements:
   build:
     - python
     - cython
-    - headers_workaround
-    - murmurhash
-    - preshed
   run:
     - python
     - numpy
@@ -30,9 +24,9 @@ test:
 
 about:
   home: http://github.com/syllog1sm/thinc
-  license: Commercial, GPLv2
-  license_family: GPL2
-  summary: Super sparse multi-class machine learning
+  license: MIT
+  license_file: LICENSE
+  summary: super sparse multi-class machine learning
   description: |
     thinc is a Cython library for learning models with millions of parameters
     and dozens of classes.

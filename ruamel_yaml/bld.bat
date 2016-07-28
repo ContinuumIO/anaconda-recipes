@@ -1,8 +1,11 @@
-set INCLUDE=%LIBRARY_INC%
-set LIBPATH=%LIBRARY_LIB%
-set LIB=%LIBRARY_LIB%
+set INCLUDE=%LIBRARY_INC%;%INCLUDE%
+set LIBPATH=%LIBRARY_LIB%;%LIBPATH%
+set LIB=%LIBRARY_LIB%;%LIB%
 
-bash %RECIPE_DIR%\prepare.bash /cygdrive/c/anaconda/packages/ruamel_yaml /cygdrive/c/Minonda/conda-bld/work
+FOR /F "delims=" %%i IN ('cygpath.exe -u %SRC_DIR%') DO set "SRC_DIRU=%%i"
+FOR /F "delims=" %%i IN ('cygpath.exe -u %RECIPE_DIR%') DO set "RECIPE_DIRU=%%i"
+
+bash %RECIPE_DIR%\prepare.bash %RECIPE_DIRU% %SRC_DIRU%
 if errorlevel 1 exit 1
 
 %PYTHON% setup.py install
