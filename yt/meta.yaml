@@ -3,9 +3,9 @@ package:
   version: 3.2.3
 
 source:
-  fn: yt-3.2.3.tar.gz
-  url: https://pypi.python.org/packages/source/y/yt/yt-3.2.3.tar.gz
-  md5: b81757057ae08360afc6ca2e74e1a3a8
+  fn: yt-3.3.1.tar.gz
+  url: https://files.pythonhosted.org/packages/source/y/yt/yt-3.3.1.tar.gz
+  sha256: 01e3b3398d43b8eab698d55ba37ef3d701ea026b899c0940a1ee34b215e25a31
 
 build:
   entry_points:
@@ -15,11 +15,10 @@ requirements:
   build:
     - python
     - numpy
-    - cython
-    - setuptools
-    - libpython   [win]
-    - mingw       [win]
+    - cython >=0.24.0
+    - setuptools >=19.6
   run:
+    - setuptools
     - python
     - numpy
     - h5py
@@ -27,8 +26,6 @@ requirements:
     - matplotlib
 
 test:
-  requires:
-    - nose
   commands:
     - yt -h
   imports:
@@ -36,9 +33,9 @@ test:
 
 about:
   home: http://yt-project.org/
-  license: BSD
+  license: BSD 3-clause
   license_file: COPYING.txt
-  summary: An analysis and visualization toolkit for Astrophysical simulations
+  summary: An analysis and visualization toolkit for volumetric data
   description: |
     yt is a python package for analyzing and visualizing volumetric,
     multi-resolution data from astrophysical simulations, radio telescopes,
