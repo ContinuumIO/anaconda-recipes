@@ -1,0 +1,33 @@
+package:
+  name: casuarius
+  version: 1.1
+
+source:
+  fn: casuarius-1.1.tar.gz
+  url: https://pypi.python.org/packages/source/c/casuarius/casuarius-1.1.tar.gz
+  md5: 8f62b1c920a7ab862b0615395d5e4c78
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - cython
+  run:
+    - python
+
+test:
+  imports:
+    - casuarius
+
+about:
+  home: https://github.com/enthought/casuarius
+  license: LGPL
+  license_file: LICENSE
+  summary: Cython bindings for the Cassowary Constraint Solving Toolkit
+  description: |
+    Casuarius is a Cython wrapper for the Cassowary incremental constraint
+    solver.
+  doc_url: https://pypi.python.org/pypi/casuarius/1.1
+  dev_url: https://github.com/enthought/casuarius

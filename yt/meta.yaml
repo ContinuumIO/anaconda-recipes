@@ -1,6 +1,6 @@
 package:
   name: yt
-  version: 3.2.3
+  version: 3.3.1
 
 source:
   fn: yt-3.3.1.tar.gz
@@ -18,8 +18,8 @@ requirements:
     - cython >=0.24.0
     - setuptools >=19.6
   run:
-    - setuptools
     - python
+    - setuptools
     - numpy
     - h5py
     - sympy
@@ -34,6 +34,7 @@ test:
 about:
   home: http://yt-project.org/
   license: BSD 3-clause
+  license_family: BSD
   license_file: COPYING.txt
   summary: An analysis and visualization toolkit for volumetric data
   description: |

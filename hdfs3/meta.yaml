@@ -12,7 +12,7 @@ requirements:
     - setuptools
   run:
     - python
-    - libhdfs3
+    - libhdfs3 2.2.31
 
 test:
   imports:

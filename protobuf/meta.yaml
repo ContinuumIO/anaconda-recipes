@@ -1,31 +1,30 @@
 package:
-  name: libprotobuf
+  name: protobuf
   version: 3.0.0
 
 source:
   git_url: https://github.com/google/protobuf.git
   git_tag: v3.0.0
 
-build:
-  features:
-    - vc9                 [win and py27]
-    - vc10                [win and py34]
-    - vc14                [win and py35]
-
 requirements:
   build:
-    - cmake               [win]
-    - autoconf            [unix]
-    - automake            [unix]
-    - libtool             [unix]
-    - pkg-config          [unix]
-    - zlib 1.2.*
+    - python
+    - setuptools
+    - libprotobuf 3.0.0
+    - six
   run:
-    - zlib 1.2.*
+    - python
+    - libprotobuf 3.0.0
+    - six
 
 test:
   commands:
     - protoc --help
+  imports:
+    - google
+    - google.protobuf
+    - google.protobuf.internal
+    - google.protobuf.pyext
 
 about:
   home: https://developers.google.com/protocol-buffers/

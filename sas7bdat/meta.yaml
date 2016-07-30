@@ -1,11 +1,11 @@
 package:
   name: sas7bdat
-  version: 2.0.6
+  version: 2.0.7
 
 source:
-  fn: sas7bdat-2.0.6.tar.gz
-  url: https://pypi.python.org/packages/source/s/sas7bdat/sas7bdat-2.0.6.tar.gz
-  md5: e37e8cd0f64b7575ac172c9dd919987f
+  fn: sas7bdat-2.0.7.tar.gz
+  url: https://pypi.python.org/packages/e9/7b/9155933263085d2d32feea36d9ed53d527df4a416a4e25d6af8630a218a6/sas7bdat-2.0.7.tar.gz
+  md5: 514f15969a7b5e3485344eb2ef5fc13b
 
 requirements:
   build:

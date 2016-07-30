@@ -6,26 +6,29 @@ source:
   git_url: https://github.com/PivotalRD/libhdfs3.git
   git_tag: v2.2.31
 
+build:
+  number: 1
+
 requirements:
   build:
-   - cmake
-   - libprotobuf
-   - libgsasl
-   - libntlm
-   - libuuid 1.0.*
-   - libxml2 2.9.*
-   - krb5 1.13*
-   - boost ==1.60
-   - zlib 1.2.*
+    - cmake
+    - libprotobuf 3.0.0
+    - libgsasl
+    - libntlm
+    - libuuid 1.0.*
+    - libxml2 2.9.*
+    - krb5 1.13*
+    - boost ==1.60
+    - zlib 1.2.*
   run:
-   - libprotobuf
-   - libgsasl
-   - libntlm
-   - libuuid 1.0.*
-   - libxml2 2.9.*
-   - krb5 1.13*
-   - boost ==1.60
-   - zlib 1.2.*
+    - libprotobuf 3.0.0
+    - libgsasl
+    - libntlm
+    - libuuid 1.0.*
+    - libxml2 2.9.*
+    - krb5 1.13*
+    - boost ==1.60
+    - zlib 1.2.*
 
 about:
   home: https://github.com/PivotalRD/libhdfs3

@@ -61,6 +61,11 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "casuarius": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
   "cdecimal": [
     "linux-64:py27", 
     "osx-64:py27", 
@@ -527,6 +532,10 @@
   ], 
   "proj4": "all", 
   "prompt_toolkit": "all", 
+  "protobuf": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "psutil": "all", 
   "ptyprocess": [
     "linux-64:py27", 
@@ -662,8 +671,7 @@
   "six": "all", 
   "smart_open": "all", 
   "snakebite": [
-    "linux-64:py27", 
-    "osx-64:py27"
+    "linux-64:py27"
   ], 
   "snakeviz": "all", 
   "snappy": [
