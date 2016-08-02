@@ -15,7 +15,7 @@ Machine and additional software:
  * gcc 4.4.7 (`yum install gcc44`, link `/usr/bin/gcc` to `gcc44`)
  * GNU Fortran (GCC) 4.4.7
 
-We use a Docker image, “conda-builder”, to build the packages.
+We use a Docker image, “conda_builder_linux”, to build the packages.
 
 Install Docker: 
  
@@ -27,16 +27,14 @@ Windows/Mac:
   * https://www.docker.com/products/docker-toolbox
   * Run Docker Quickstart Terminal
 
-Download the following files: 
+Download the following zip file containing docker: 
 
- * https://github.com/ContinuumIO/docker-images/blob/master/conda_builder_linux/docker_wrapper.sh
- * (64-bit) https://github.com/ContinuumIO/docker-images/blob/master/conda_builder_linux/start_cpp98.sh
- * (32-bit) https://github.com/ContinuumIO/docker-images/blob/master/conda_builder_linux/start_cpp98_32.sh
- * Note: Ensure the files are saved as they are stored in github. For example, if the the docker_wrapper.sh file is downloaded as docker_wrapper.sh.txt, then run: mv docker_wrapper.sh.txt  docker_wrapper.sh
+ * (64-bit) https://github.com/ContinuumIO/docker-images/blob/master/conda_builder_linux/build64.zip
+ * (32-bit) https://github.com/ContinuumIO/docker-images/blob/master/conda_builder_linux/build32.zip
 
-Make each downloaded file executable. Example: chmod +x docker_wrapper.sh
+This zip file contains two scripts: docker_wrapper.sh and start_cpp98.sh. Cpp98 indicates that the script sets the default C++ ABI to the older format. This does not preclude compiling C++11 or C++14 code, it only implies the older ABI.
 
-In the Docker Quickstart Terminal, in the directory containing your previously downloaded files, run ./start_cpp98.sh (64-bit) or ./start_cpp98_32.sh (32-bit)
+In the Docker Quickstart Terminal, in the directory containing your previously downloaded zip file, run ./start_cpp98.sh (64-bit) or ./start_cpp98_32.sh (32-bit)
 You should see the following output: 
 
     Welcome to the conda-builder image, brought to you by Continuum Analytics.
@@ -65,20 +63,30 @@ You should see the following output:
     anaconda_setup: clones anaconda repo and sets up continuum internal build system.
 
 We have successfully loaded the conda-builder image into our Docker container. 
-We want to have our recipes in the container. An example on how to do so : ./start_cpp98.sh -v /Users/rjain/cdf/staged-recipes:/home/dev/code
 
-This loads in our directory “staged-recipes” containing conda recipes into the docker container in /home/dev/code. We can then build our recipes simply by running: conda build <conda package> in the code directory
+There are two sections to the command line arguments for our start script. 
 
-Alternatively, the image can act as a black box that we never have to interact with. Instead, we can just use inputs and get outputs. EX: ./start_cpp98.sh -v /Users/rjain/cdf/staged-recipes:/home/dev/code -- conda build code/recipes/seaborn
+    ./start_cpp98.sh <arguments fed to docker run> -- <command/arguments to be run in docker container>
 
-In order to build certain conda packages, do the following in the Docker container: 
+The -- is the separator between the two. It is optional; if no command is specified, you are dropped at an interactive bash prompt.
+
+For example, if we want to have our recipes in the container and then be in an interactive bash prompt, we run: 
+    ./start_cpp98.sh -v /Users/staged-recipes:/home/dev/code
+
+This loads in our directory “staged-recipes” containing conda recipes into the docker container in /home/dev/code. We can then build our recipes simply by running: conda build <conda package> 
+
+Alternatively, the image can act as a black box. We can add arguements as inputs and recieve outputs.
+For example, we can run: 
+    ./start_cpp98.sh -v /Users/rjain/cdf/staged-recipes:/home/dev/code -- conda build code/recipes/seaborn
+
+This command goes ahead and builds seaborn without us having to enter the docker container. 
+
+NOTE: In order to build certain conda packages, do the following in the Docker container: 
  * conda install mercurial
- * Ensure conda and conda-build are up to date
- *In addition, in the home directory there should be a .condarc file. If not, create one. The .condarc file should contain: 
+ * In addition, in the home directory there should be a .condarc file. If not, create one. The .condarc file should contain: 
 
     channels:
     - defaults
-    - http://bremen/test-pkgs
     
    add_pip_as_python_dependency: False
 
@@ -87,17 +95,16 @@ In order to build certain conda packages, do the following in the Docker contain
 Use a Windows VM with the following specifications: 
 
   * 64-bit Windows 10
-  * VS 2008, 2010, 2015 installed
+  * VS 2008 (or VC compiler for Python 2.7), 2010 (or Windows 7.1 SDK) , 2015 installed
   * ifort
+  NOTE: For VS2008 Pro, you must explicitly enable the 64-bit compiler during setup. During VS 2015 setup, you must explicitly enable native build tools, or else you get no C++ compiler.
 
 Then,
  * Run “conda install mercurial”
- * Ensure that conda and conda-build are up to date
  * Modify/create .condarc in the home directory and write: 
  
     channels:
     - defaults
-    - http://bremen/test-pkgs
    
    add_pip_as_python_dependency: False
 
@@ -110,12 +117,10 @@ Use a OSX VM with the following specifications:
 
 Then, 
  * Run “conda install mercurial”
- * Ensure that conda and conda-build are up to date
  * Modify/create .condarc in the home directory and write: 
  
     channels:
     - defaults
-    - http://bremen/test-pkgs
     
     add_pip_as_python_dependency: False
 
