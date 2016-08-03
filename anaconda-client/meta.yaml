@@ -1,10 +1,10 @@
 package:
   name: anaconda-client
-  version: 1.4.0
+  version: 1.5.1
 
 source:
   git_url: https://github.com/Anaconda-Server/anaconda-client.git
-  git_tag: 1.4.0
+  git_tag: 1.5.1
 
 build:
   entry_points:
