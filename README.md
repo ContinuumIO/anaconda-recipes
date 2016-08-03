@@ -71,12 +71,14 @@ There are two sections to the command line arguments for our start script.
 The -- is the separator between the two. It is optional; if no command is specified, you are dropped at an interactive bash prompt.
 
 For example, if we want to have our recipes in the container and then be in an interactive bash prompt, we run: 
+
     ./start_cpp98.sh -v /Users/staged-recipes:/home/dev/code
 
 This loads in our directory “staged-recipes” containing conda recipes into the docker container in /home/dev/code. We can then build our recipes simply by running: conda build <conda package> 
 
 Alternatively, the image can act as a black box. We can add arguements as inputs and recieve outputs.
 For example, we can run: 
+
     ./start_cpp98.sh -v /Users/rjain/cdf/staged-recipes:/home/dev/code -- conda build code/recipes/seaborn
 
 This command goes ahead and builds seaborn without us having to enter the docker container. 
