@@ -1,10 +1,10 @@
 package:
   name: teradata
-  version: 15.10.0.11
+  version: 15.10.0.17
 
 source:
   git_url: https://github.com/Teradata/PyTd.git
-  git_tag: v15.10.00.11
+  git_tag: v15.10.00.17
 
 requirements:
   build:

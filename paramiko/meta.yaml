@@ -1,19 +1,20 @@
 package:
   name: paramiko
-  version: 1.16.0
+  version: 2.0.2
 
 source:
-  fn: paramiko-1.16.0.tar.gz
-  url: https://pypi.python.org/packages/source/p/paramiko/paramiko-1.16.0.tar.gz
-  md5: 7e1203f5ffeb7d2bc2bffc4feb804216
+  fn: paramiko-2.0.2.tar.gz
+  url: https://pypi.python.org/packages/6b/4e/971b8c917456a2ec9666311f7e695493002a64022397cd668150b5efd2a8/paramiko-2.0.2.tar.gz
+  md5: 6312aee79892801cf5a624eb4f8fd864
 
 requirements:
   build:
     - python
+    - setuptools
   run:
     - python
-    - pycrypto
-    - ecdsa >=0.11
+    - cryptography >=1.1
+    - pyasn1 >=0.1.7
 
 test:
   imports:

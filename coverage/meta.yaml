@@ -1,11 +1,11 @@
 package:
   name: coverage
-  version: 4.1
+  version: 4.2
 
 source:
-  fn: coverage-4.1.tar.gz
-  url: https://pypi.python.org/packages/2d/10/6136c8e10644c16906edf4d9f7c782c0f2e7ed47ff2f41f067384e432088/coverage-4.1.tar.gz
-  md5: 80e63edaf49f689d304898fafc1007a5
+  fn: coverage-4.2.tar.gz
+  url: https://pypi.python.org/packages/53/fe/9e0fbdbca15c2c1253379c3a694f4315a420555e7874445b06edeaeacaea/coverage-4.2.tar.gz
+  md5: 1e09362a3f35d589f942359441050a6e
 
 build:
   entry_points:

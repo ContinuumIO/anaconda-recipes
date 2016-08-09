@@ -1,11 +1,11 @@
 package:
   name: snakeviz
-  version: 0.4.0
+  version: 0.4.1
 
 source:
-  fn: snakeviz-0.4.0.tar.gz
-  url: https://pypi.python.org/packages/source/s/snakeviz/snakeviz-0.4.0.tar.gz
-  md5: a7f59cded288ac7dab683f718dd34727
+  fn: snakeviz-0.4.1.tar.gz
+  url: https://pypi.python.org/packages/66/64/878a27633fad02b9d6c2b4e951ff30fa311a62202f076bd736e11082a7df/snakeviz-0.4.1.tar.gz
+  md5: 8bdc5cc3c7d1cd33f69783f138f0b3dd
 
 build:
   entry_points:

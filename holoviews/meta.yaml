@@ -1,10 +1,10 @@
 package:
   name: holoviews
-  version: 1.6.0
+  version: 1.6.1
 
 source:
   git_url: https://github.com/ioam/holoviews.git
-  git_tag: v1.6.0
+  git_tag: v1.6.1
 
 requirements:
   build:

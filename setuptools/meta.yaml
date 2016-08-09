@@ -1,11 +1,11 @@
 package:
   name: setuptools
-  version: 23.0.0
+  version: 25.1.6
 
 source:
-  fn: setuptools-23.0.0.tar.gz
-  url: https://pypi.python.org/packages/45/5e/79ca67a0d6f2f42bfdd9e467ef97398d6ad87ee2fa9c8cdf7caf3ddcab1e/setuptools-23.0.0.tar.gz
-  md5: 100a90664040f8ff232fbac02a4c5652
+  fn: setuptools-25.1.6.tar.gz
+  url: https://pypi.python.org/packages/1f/7a/6b239a65d452b04ad8068193ae313b386e6fc745b92cd4584fccebecebf0/setuptools-25.1.6.tar.gz
+  md5: fa165d9e7f9b68378076fa0aa3df8abd
   patches:
     - nodownload.patch
     - setup.patch

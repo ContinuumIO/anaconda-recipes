@@ -1,0 +1,53 @@
+package:
+  name: rasterio
+  version: 0.36.0
+
+source:
+  fn: rasterio-0.36.0.tar.gz
+  url: https://pypi.python.org/packages/59/f7/040531ab12b4a4522b7fd99eec39258b78b82c67e3adcf81f25ee4a3e544/rasterio-0.36.0.tar.gz
+  md5: 579c3480334625b4495ba53310714394
+
+build:
+  entry_points:
+    - rio = rasterio.rio.main:main_group
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy x.x
+    - libgdal 2.1.0
+    - affine
+    - cligj
+    - snuggs
+    - enum34              [py < 34]
+  run:
+    - python
+    - numpy x.x
+    - setuptools
+    - libgdal 2.1.0
+    - affine
+    - cligj
+    - click-plugins
+    - snuggs
+    - enum34              [py < 34]
+
+test:
+  imports:
+    - rasterio
+    - rasterio.rio
+  commands:
+    - rio --help
+
+about:
+  home: https://github.com/mapbox/rasterio
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Read and write geospatial raster datasets
+  description: |
+    Rasterio employs GDAL under the hood for file I/O and raster formatting.
+    Its functions typically accept and return Numpy ndarrays. Rasterio is
+    designed to make working with geospatial raster data more productive and
+    more fun.
+  doc_url: https://github.com/mapbox/rasterio/tree/master/docs
+  dev_url: https://github.com/mapbox/rasterio

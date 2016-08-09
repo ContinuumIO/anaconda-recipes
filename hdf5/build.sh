@@ -6,7 +6,9 @@ fi
 
 ./configure $B --prefix=$PREFIX --disable-static \
     --enable-linux-lfs --with-zlib --with-ssl \
-    --with-pthread=yes --enable-production --enable-cxx
+    --enable-threadsafe --with-pthread=yes \
+    --enable-production --enable-cxx \
+    --enable-unsupported
 make
 make install
 

@@ -1,11 +1,11 @@
 package:
   name: xlwings
-  version: 0.7.2
+  version: 0.9.2
 
 source:
-  fn: xlwings-0.7.2.tar.gz
-  url: https://pypi.python.org/packages/21/77/825904bb2db7cd79beaa505e2bf4a77da6772a7fd6b7467c348819ffc8b0/xlwings-0.7.2.tar.gz
-  md5: 541db4ff498b0684a9acc3c0836e5e3b
+  fn: xlwings-0.9.2.tar.gz
+  url: https://pypi.python.org/packages/0d/d1/d7544bcf36d0a64b7a4a213be44ca19bf0eb8b7de232cf743eddceba7c8b/xlwings-0.9.2.tar.gz
+  md5: 251a68e46c3dd75097ccdea1ec3c7e30
 
 build:
   entry_points:
@@ -17,14 +17,14 @@ requirements:
   run:
     - python
     - pytz
-    - comtypes           [win]
-    - pywin32            [win]
-    - psutil             [osx]
-    - appscript          [osx]
+    - comtypes             [win]
+    - pywin32              [win]
+    - psutil >=2.0         [osx]
+    - appscript >=1.0.1    [osx]
 
 test:
   commands:
-    - xlwings -h         [win]
+    - xlwings -h           [win]
   imports:
     - xlwings
 
