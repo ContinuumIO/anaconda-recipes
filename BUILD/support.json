@@ -556,6 +556,7 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "pymysql": "all", 
   "pyopenssl": "all", 
   "pyparsing": "all", 
   "pyproj": "all", 

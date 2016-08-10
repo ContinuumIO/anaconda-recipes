@@ -1,0 +1,56 @@
+package:
+  name: conda
+  version: 4.2.2
+
+source:
+  git_url: https://github.com/conda/conda.git
+  git_tag: 4.2.2
+
+build:
+  # These are present when the new environment is created
+  # so we have to exempt them from the list of initial files
+  # for conda-build to realize they should be included.
+  always_include_files:
+    - bin/conda                 [unix]
+    - bin/activate              [unix]
+    - bin/deactivate            [unix]
+    - Scripts/activate.bat      [win]
+    - Scripts/deactivate.bat    [win]
+    - Scripts/activate          [win]
+    - Scripts/deactivate        [win]
+  entry_points:
+    - conda = conda.cli:main
+    - conda-env = conda_env.cli.main:main
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - conda-env >=2.6
+    - enum34               [py<34]
+    - menuinst             [win]
+    - pycosat >=0.6.1
+    - requests >=2.5.3
+    - ruamel_yaml >=0.11.14
+
+test:
+  imports:
+    - conda
+  commands:
+    - conda --version
+    - conda info
+
+about:
+  home: http://conda.pydata.org/
+  license: BSD
+  license_file: LICENSE.txt
+  summary: OS-agnostic, system-level binary package and environment manager.
+  description: |
+    Conda is an open source package management system and environment
+    management system for installing multiple versions of software packages
+    and their dependencies and switching easily between them. It works on
+    Linux, OS X and Windows, and was created for Python programs but can
+    package and distribute any software.
+  doc_url: http://conda.pydata.org/docs/
+  dev_url: https://github.com/conda/conda

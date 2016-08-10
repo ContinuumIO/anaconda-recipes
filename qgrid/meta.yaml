@@ -1,11 +1,11 @@
 package:
   name: qgrid
-  version: 0.3.1
+  version: 0.3.2
 
 source:
-  fn: qgrid-0.3.1.tar.gz
-  url: https://pypi.python.org/packages/source/q/qgrid/qgrid-0.3.1.tar.gz
-  md5: ac09dccfd17b5449061f93ebd5fe5e04
+  fn: qgrid-0.3.2.tar.gz
+  url: https://pypi.python.org/packages/80/ae/89dfb52b93a62ace8821172ffde518d480c3700648ee4a428ff45537de0f/qgrid-0.3.2.tar.gz
+  md5: d67be966d98b2aa9ef32fe37fd29c7ab
 
 requirements:
   build:

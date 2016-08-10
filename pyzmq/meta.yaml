@@ -1,11 +1,11 @@
 package:
   name: pyzmq
-  version: 15.3.0
+  version: 15.4.0
 
 source:
-  fn: pyzmq-15.3.0.tar.gz
-  url: https://pypi.python.org/packages/75/24/8e16b3e9be12502269d73abb5355c66830e435e7def3922edfb5e34344cd/pyzmq-15.3.0.tar.gz
-  md5: 6402a68c119c0943c973c2ee7620db4b
+  fn: pyzmq-15.4.0.tar.gz
+  url: https://pypi.python.org/packages/ab/3a/5826efd93ebbbdc33203f70c6ceebab1b58ac6cb1e1ab131cc6b990b4cfa/pyzmq-15.4.0.tar.gz
+  md5: d92fa329c20c72f4831a6aaca8057b2a
 
 requirements:
   build:

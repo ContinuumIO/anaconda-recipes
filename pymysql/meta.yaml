@@ -1,0 +1,31 @@
+package:
+  name: pymysql
+  version: 0.7.6
+
+source:
+  fn: PyMySQL-0.7.6.tar.gz
+  url: https://pypi.python.org/packages/f5/d9/976c885396294bb1c4ca3d013fd2046496cde2efbb168e4f41dd12552dd9/PyMySQL-0.7.6.tar.gz
+  md5: d1353d9ad6e6668c3c463603b12cadb0
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - pymysql
+
+about:
+  home: https://github.com/PyMySQL/PyMySQL/
+  license: MIT
+  license_file: LICENSE
+  summary: Pure-Python MySQL Driver
+  description: |
+    PyMySQL is a pure-Python MySQL client library. The goal of PyMySQL is to
+    be a drop-in replacement for MySQLdb and work on CPython, PyPy and
+    IronPython.
+  doc_url: https://pypi.python.org/pypi/PyMySQL/0.6.7
+  dev_url: https://github.com/PyMySQL/PyMySQL/
