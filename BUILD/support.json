@@ -171,6 +171,7 @@
     "osx-64:py35"
   ], 
   "et_xmlfile": "all", 
+  "execnet": "all", 
   "expat": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -253,6 +254,7 @@
   ], 
   "glueviz": "all", 
   "grako": "all", 
+  "graphviz": "all", 
   "greenlet": "all", 
   "grin": [
     "linux-64:py27", 
@@ -359,6 +361,10 @@
     "linux-64:py35"
   ], 
   "libtiff": "all", 
+  "libtool": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "libuuid": [
     "linux-64:py27", 
     "linux-64:py35"

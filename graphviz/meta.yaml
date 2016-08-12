@@ -1,42 +1,61 @@
 package:
   name: graphviz
-  version: "2.38.0"
+  version: 2.38.0
 
 source:
-  fn: graphviz-2.38.0.tar.gz    [unix]
+  fn:  graphviz-2.38.0.tar.gz             [unix]
   url: http://www.graphviz.org/pub/graphviz/stable/SOURCES/graphviz-2.38.0.tar.gz   [unix]
-  md5: 5b6a829b2ac94efcd5fa3c223ed6d3ae  [unix]
-
-  url: http://www.graphviz.org/pub/graphviz/stable/windows/graphviz-2.38.zip    [win]
-  fn: graphviz-2.38.zip   [win]
+  md5: 5b6a829b2ac94efcd5fa3c223ed6d3ae   [unix]
+  fn:  graphviz-2.38.zip                  [win]
+  url: http://www.graphviz.org/pub/graphviz/stable/windows/graphviz-2.38.zip   [win]
   md5: d028f49e047e2a25fdb7c0aa323a3945   [win]
+  patches:
+    # This patch was submitted upstream:
+    # http://www.graphviz.org/mantisbt/view.php?id=2448
+    - gvconfig_libdir.patch               [unix]
 
 build:
-  detect_binary_files_with_prefix: True
-  number: 1  [linux]
+  number: 2
+  detect_binary_files_with_prefix: True   [unix]
 
 requirements:
   build:
-    - zlib         1.2.*         [unix]
-    - freetype     2.5.*         [unix]
-    - pango  >=1.39.0            [linux]
+    - cairo                               [linux]
+    - expat                               [linux]
+    - libpng >=1.6.21,<1.7                [unix]
+    - libtiff 4.0.*                       [unix]
+    - libtool                             [linux]
+    - freetype 2.5.*                      [unix]
+    - jpeg 8*                             [unix]
+    - pango                               [linux]
+    - pkg-config                          [osx]
+    - zlib 1.2.*                          [unix]
   run:
-    - freetype     2.5.*         [unix]
-    - zlib         1.2.*         [unix]
-    - pango  >=1.39.0            [linux]
+    - cairo                               [linux]
+    - expat                               [linux]
+    - libpng >=1.6.21,<1.7                [unix]
+    - libtiff 4.0.*                       [unix]
+    - libtool                             [linux]
+    - freetype 2.5.*                      [unix]
+    - jpeg 8*                             [unix]
+    - pango                               [linux]
+    - zlib 1.2.*                          [unix]
 
 test:
   commands:
-    - neato -?  [unix]
+    - dot -V
+    - neato -?                            [unix]
+  files:
+    - sample.dot
 
 about:
   home: http://www.graphviz.org/
-  license: EPL
+  license: EPL v1.0
   license_family: Other
   summary: Open Source graph visualization software.
   description: |
-    Graphviz is open source graph visualization software. Graph visualization
-    is a way of representing structural information as diagrams of abstract
-    graphs and networks.
+    Graphviz is an open source graph visualization software.
+    Graph visualization is a way of representing structural information as
+    diagrams of abstract graphs and networks.
   doc_url: http://www.graphviz.org/Documentation.php
   dev_url: https://github.com/ellson/graphviz

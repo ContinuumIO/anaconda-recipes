@@ -8,6 +8,7 @@ source:
   md5: 92dd7de2621a6ab6861cc9b689e86c3e
 
 build:
+  number: 1
   entry_points:
     - glue = glue.main:main
     - glue-config = glue.config_gen:main
@@ -18,21 +19,29 @@ requirements:
   build:
     - python
     - setuptools
+    - numpy
     - pandas
     - astropy
     - matplotlib
   run:
     - python
     - numpy
-    - pandas
-    - astropy
+    - scipy
     - matplotlib
-    - python.app             [osx]
+    - astropy
+    - ipykernel
+    - h5py
+    - pandas
+    - pyqt
+    - qtconsole
+    - xlrd
+    - scikit-image
+    - python.app     [osx]
 
 app:
   entry: glue
   icon: logo.png
-  summary: link visualizations of scientific datasets
+  summary: Multi-dimensional linked data exploration
   type: desk
 
 test:
@@ -41,9 +50,10 @@ test:
 
 about:
   home: http://glueviz.org/
-  license: MIT
+  license: 3-clause BSD License
+  license_family: BSD
   license_file: LICENSE
-  summary: Multidimensional data exploration
+  summary: Multi-dimensional linked data exploration
   description: |
     Glue is a Python library to explore relationships within and among related
     datasets. Its main features include Linked Statistical Graphics, flexible

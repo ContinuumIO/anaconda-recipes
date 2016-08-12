@@ -1,0 +1,28 @@
+package:
+  name: libtool
+  version: 2.4.2
+
+source:
+  fn: libtool-2.4.2.tar.gz
+  url: http://ftpmirror.gnu.org/libtool/libtool-2.4.2.tar.gz
+
+requirements:
+  build:
+    - automake
+    - autoconf
+
+test:
+  commands:
+    - libtool --help
+
+about:
+  home: http://www.gnu.org/software/libtool/
+  license: GPL3
+  license_file: COPYING
+  summary: The GNU Portable Library Tool
+  description: |
+    GNU libtool is a generic library support script. Libtool hides the
+    complexity of using shared libraries behind a consistent, portable
+    interface.
+  doc_url: http://www.gnu.org/software/libtool/manual/
+  dev_url: http://git.savannah.gnu.org/cgit/libtool.git

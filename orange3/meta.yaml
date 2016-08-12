@@ -1,10 +1,10 @@
 package:
   name: orange3
-  version: 3.3.6
+  version: 3.3.7
 
 source:
   git_url: https://github.com/biolab/orange3.git
-  git_tag: 3.3.6
+  git_tag: 3.3.7
 
 build:
   entry_points:
@@ -21,6 +21,7 @@ requirements:
     - setuptools
     - scipy
     - scikit-learn
+    - bottleneck
     - bottlechest
     - chardet
     - docutils
