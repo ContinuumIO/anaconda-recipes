@@ -1,19 +1,19 @@
 package:
   name: ipykernel
-  version: 4.3.1
+  version: 4.4.1
 
 source:
-  fn: ipykernel-4.3.1.tar.gz
-  url: https://pypi.python.org/packages/source/i/ipykernel/ipykernel-4.3.1.tar.gz
-  md5: 0b1150602203af298631555509a809bd
+  fn: ipykernel-4.4.1.tar.gz
+  url: https://pypi.python.org/packages/05/db/376a9010085f5a9d23792f274441b8f7f6c3636b3323e2377693de1e7cae/ipykernel-4.4.1.tar.gz
+  md5: eb5c2587e4a77741b666f602032483a7
 
 requirements:
   build:
     - python
   run:
     - python
-    - ipython >=4.0
-    - traitlets
+    - ipython >=4.0.0
+    - traitlets >=4.1.0
     - jupyter_client
     - tornado >=4.0
 
