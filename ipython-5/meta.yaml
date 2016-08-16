@@ -1,11 +1,11 @@
 package:
   name: ipython
-  version: 5.0.0
+  version: 5.1.0
 
 source:
-  fn: ipython-5.0.0.tar.gz
-  url: https://pypi.python.org/packages/09/2e/870d1058768f5240062beb0bd2ff789ac689923501b0dd6b480fb83314fc/ipython-5.0.0.tar.gz
-  md5: 9c00df2f7e2e2636aba02671f45eea6b
+  fn: ipython-5.1.0.tar.gz
+  url: https://pypi.python.org/packages/89/63/a9292f7cd9d0090a0f995e1167f3f17d5889dcbc9a175261719c513b9848/ipython-5.1.0.tar.gz
+  md5: 47c8122420f65b58784cb4b9b4af35e3
 
 build:
   entry_points:

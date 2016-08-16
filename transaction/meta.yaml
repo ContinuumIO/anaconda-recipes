@@ -1,11 +1,11 @@
 package:
   name: transaction
-  version: 1.6.0
+  version: 1.6.1
 
 source:
-  fn: transaction-1.6.0.tar.gz
-  url: https://pypi.python.org/packages/da/2a/8ecce8abd6a361b937d488c53fd69302533bb7a56015304c0cd8645e0eb2/transaction-1.6.0.tar.gz
-  md5: eb4d2a5b5d6c9d1ba44c4afaa625faa3
+  fn: transaction-1.6.1.tar.gz
+  url: https://pypi.python.org/packages/b8/55/7dfb7a5701b25459dc9e0d2d21a965b59a2bd818b229fa35467b61c068da/transaction-1.6.1.tar.gz
+  md5: c4d06a981434735f6d750013a1cfa0c5
 
 requirements:
   build:

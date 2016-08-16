@@ -1,0 +1,11 @@
+diff --git setup.py setup.py
+index bc119fd..23032ce 100644
+--- setup.py
++++ setup.py
+@@ -1,6 +1,5 @@
+ import memory_profiler
+ from distutils.core import setup
+-import setuptools
+ 
+ CLASSIFIERS = """\
+ Development Status :: 5 - Production/Stable

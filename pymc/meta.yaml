@@ -1,0 +1,41 @@
+package:
+  name: pymc
+  version: 2.3.6
+
+source:
+  fn: pymc-2.3.6.tar.gz
+  url: https://pypi.python.org/packages/source/p/pymc/pymc-2.3.6.tar.gz
+  md5: 60d5c454a92d3e5c8a7b1204cba6731a
+
+build:
+  number: 2
+  features:
+    - nomkl                [nomkl]
+
+requirements:
+  build:
+    - python
+    - numpy x.x
+    - libgfortran 3.0.0    [linux]
+    - mkl-devel 11.3.3     [not nomkl]
+  run:
+    - python
+    - numpy x.x
+    - libgfortran 3.0.0    [linux]
+    - scipy
+
+test:
+  imports:
+    - pymc
+
+about:
+  home: https://github.com/pymc-devs/pymc
+  license: Academic Free License
+  license_family: Other
+  license_file: LICENSE
+  summary: Bayesian Stochastic Modelling in Python
+  description: |
+    PyMC is a python module that implements Bayesian statistical models and
+    fitting algorithms, including Markov chain Monte Carlo.
+  doc_url: http://pymc-devs.github.io/pymc/
+  dev_url: https://github.com/pymc-devs/pymc
