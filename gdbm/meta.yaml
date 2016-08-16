@@ -1,0 +1,20 @@
+package:
+  name: gdbm
+  version: 1.12
+
+source:
+  fn: gdbm-1.12.tar.gz
+  url: ftp://ftp.gnu.org/gnu/gdbm/gdbm-1.12.tar.gz
+  md5: 9ce96ff4c99e74295ea19040931c8fb9
+
+about:
+  home: http://www.gnu.org.ua/software/gdbm/
+  license: GPL3
+  license_file: COPYING
+  summary: Library of database functions
+  description: |
+    GDBM is a library of database functions that use extensible hashing and
+    work similar to the standard UNIX dbm. These routines are provided to a
+    programmer needing to create and manipulate a hashed database.
+  doc_url: http://www.gnu.org.ua/software/gdbm/manual.html
+  dev_url: https://github.com/Distrotech/gdbm

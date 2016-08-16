@@ -1,0 +1,36 @@
+package:
+  name: pyodbc
+  version: 3.0.10
+
+source:
+  fn: pyodbc-3.0.10.tar.gz
+  url: https://pypi.python.org/packages/source/p/pyodbc/pyodbc-3.0.10.tar.gz
+  md5: 3f6f205c979a0fe5dee05d37121a7b92
+  patches:
+    - linux.patch        [linux]
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - unixodbc 2.3.4     [linux]
+  run:
+    - python
+    - unixodbc 2.3.4     [linux]
+
+test:
+  imports:
+    - pyodbc
+
+about:
+  home: http://mkleehammer.github.io/pyodbc/
+  license: MIT
+  license_file: LICENSE.txt
+  summary: DB API Module for ODBC
+  description: |
+    pyodbc is a Python 2.x and 3.x module that allows you to use ODBC to
+    connect to almost any database from Windows, Linux, OS/X, and more.
+  doc_url: http://mkleehammer.github.io/pyodbc/
+  dev_url: https://github.com/mkleehammer/pyodbc

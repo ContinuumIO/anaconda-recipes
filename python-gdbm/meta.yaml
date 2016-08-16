@@ -1,0 +1,32 @@
+package:
+  name: python-gdbm
+  version: 1.1
+
+source:
+  fn: Python-2.7.12.tgz
+  url: https://www.python.org/ftp/python/2.7.12/Python-2.7.12.tgz
+  md5: 88d61f82e3616a4be952828b3694109d
+
+requirements:
+  build:
+    - python
+    - gdbm 1.12
+  run:
+    - python
+    - gdbm 1.12
+
+test:
+  imports:
+    - gdbm
+
+about:
+  home: https://docs.python.org/2/library/gdbm.html
+  license: PSF
+  license_file: LICENSE
+  summary: GNU's reinterpretation of dbm
+  description: |
+    The gdbm module provides an interface to the GNU DBM library. gdbm objects
+    behave like mappings (dictionaries), except that keys and values are
+    always strings.
+  doc_url: https://docs.python.org/2/library/gdbm.html
+  dev_url: http://git.gnu.org.ua/cgit/gdbm.git/

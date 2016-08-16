@@ -1,0 +1,32 @@
+package:
+  name: numpydoc
+  version: 0.6.0
+
+source:
+  fn: numpydoc-0.6.0.tar.gz
+  url: https://pypi.python.org/packages/9a/b0/f84d0d2521686e93c7ee86fdd79142250d1ea965283ef8b31733f8a2d5f7/numpydoc-0.6.0.tar.gz
+  md5: 5f1763c44e613850d56ba1b1cf1cb146
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - sphinx
+  run:
+    - python
+    - sphinx
+
+test:
+  imports:
+    - numpydoc
+
+about:
+  home: https://github.com/numpy/numpydoc
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Sphinx extension to support docstrings in Numpy format
+  description: |
+    Numpy's documentation uses several custom extensions to Sphinx. These are
+    shipped in this numpydoc package, in case you want to make use of them
+    in third-party projects.
+  dev_url: https://github.com/numpy/numpydoc

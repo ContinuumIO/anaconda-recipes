@@ -1,11 +1,11 @@
 package:
   name: bcrypt
-  version: 2.0.0
+  version: 3.1.0
 
 source:
-  fn: bcrypt-2.0.0.tar.gz
-  url: https://pypi.python.org/packages/source/b/bcrypt/bcrypt-2.0.0.tar.gz
-  md5: e7fb17be46904cdb2ae6a062859ee58c
+  fn: bcrypt-3.1.0.tar.gz
+  url: https://pypi.python.org/packages/9b/32/1ece045aa19069ca687d5ccd1241e03a70cae157ae908b6aa5b97789e6da/bcrypt-3.1.0.tar.gz
+  md5: 49d79e646dbf27a05b81e4f0c4f717c7
 
 requirements:
   build:

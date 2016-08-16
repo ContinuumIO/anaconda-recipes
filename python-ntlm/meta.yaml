@@ -1,0 +1,30 @@
+package:
+  name: python-ntlm
+  version: 1.1.0
+
+source:
+  fn: python-ntlm-1.1.0.tar.gz
+  url: https://pypi.python.org/packages/source/p/python-ntlm/python-ntlm-1.1.0.tar.gz
+  md5: c1b036401a29dd979ee56d48a2267686
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - ntlm
+
+about:
+  home: https://github.com/mullender/python-ntlm
+  license: LGPL
+  summary: Provides NTLM support
+  description: |
+    Python-nltm provides NTLM support, including an authentication handler for
+    urllib2.  This library allows you to retrieve content from (usually
+    corporate) servers protected with windows authentication (NTLM) using the
+    Python urllib2.
+  dev_url: https://github.com/mullender/python-ntlm
