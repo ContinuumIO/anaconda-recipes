@@ -435,6 +435,7 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "mysql-connector-python": "all", 
   "natsort": "all", 
   "nbconvert": "all", 
   "nbformat": "all", 
