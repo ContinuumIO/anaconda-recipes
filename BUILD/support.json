@@ -427,6 +427,11 @@
   "mpi4py": "all", 
   "mpmath": "all", 
   "msgpack-python": "all", 
+  "mtq": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
   "multipledispatch": "all", 
   "munch": "all", 
   "murmurhash": [

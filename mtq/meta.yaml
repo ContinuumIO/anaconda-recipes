@@ -1,0 +1,49 @@
+package:
+  name: mtq
+  version: 0.7.0
+
+source:
+  git_url: https://github.com/Anaconda-Platform/mtq.git
+  git_tag: 0.7.0
+
+build:
+  entry_points:
+    - mtq-worker = mtq.scripts.worker:main
+    - mtq-info = mtq.scripts.info:main
+    - mtq-tail = mtq.scripts.log:main
+    - mtq-scheduler = mtq.scripts.schedule:main
+    - mtq-ctrl = mtq.scripts.ctrl:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pytz
+    - python-dateutil
+    - pymongo
+  run:
+    - python
+    - pymongo
+    - python-dateutil
+    - pytz
+
+test:
+  imports:
+    - mtq
+  commands:
+    - mtq-worker --help
+    - mtq-info --help
+    - mtq-tail --help
+    - mtq-scheduler --help
+    - mtq-ctrl --help
+
+about:
+  home: https://github.com/Anaconda-Server/mtq
+  license: BSD
+  summary: Library for queuing jobs and processing them in background
+  description: |
+    mtq is a simple Python library for queueing jobs and processing them in
+    the background with workers. It is backed by Mongodb and it is designed
+    to have a low barrier to entry. It should be integrated in your web stack
+    easily.
+  dev_url: https://github.com/Anaconda-Server/mtq
