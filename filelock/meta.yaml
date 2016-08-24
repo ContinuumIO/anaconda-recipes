@@ -1,0 +1,23 @@
+package:
+  name: filelock
+  version: 2.0.6
+
+source:
+  fn: filelock-2.0.6.tar.gz
+  url: https://pypi.python.org/packages/4f/a2/77c853102454005ff1f95417ae7605b445836212ecd99b717a447c7fb668/filelock-2.0.6.tar.gz
+  md5: a4394e1198927d0c24ac172a822faddf
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - filelock
+
+about:
+  home: http://s3fs.readthedocs.org/en/latest/
+  license: Public-Domain
+  license_file: LICENSE.rst

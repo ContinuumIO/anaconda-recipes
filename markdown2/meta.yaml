@@ -25,7 +25,7 @@ test:
 
 about:
   home: http://packages.python.org/Markdown/
-  license: BSD
+  license: MIT
   license_file: LICENSE.txt
   summary: Python implementation of Markdown
   description: |

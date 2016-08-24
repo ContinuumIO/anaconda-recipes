@@ -1,11 +1,11 @@
 package:
   name: distributed
-  version: 1.11.3
+  version: 1.12.0
 
 source:
-  fn: distributed-1.11.3.tar.gz
-  url: https://pypi.python.org/packages/72/b3/a254eda2e56b608c37ee9ecb13fd0b17eac23b774538b2e2a23bc8c907af/distributed-1.11.3.tar.gz
-  md5: 4fca14c8556b7c54016b0f5222f9ac36
+  fn: distributed-1.12.0.tar.gz
+  url: https://pypi.python.org/packages/d6/17/bf291f074a5192a6d66f596042c5b4b5aa2fa050c3cf452a1ef21c5c41f7/distributed-1.12.0.tar.gz
+  md5: b56f05a7b17e427309a5afdf9e366b23
 
 build:
   entry_points:

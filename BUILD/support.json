@@ -181,6 +181,7 @@
   ], 
   "fastcache": "all", 
   "feedparser": "all", 
+  "filelock": "all", 
   "fiona": [
     "linux-64:py27", 
     "linux-64:py35", 

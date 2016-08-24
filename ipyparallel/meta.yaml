@@ -1,11 +1,11 @@
 package:
   name: ipyparallel
-  version: 5.1.1
+  version: 5.2.0
 
 source:
-  fn: ipyparallel-5.1.1.tar.gz
-  url: https://pypi.python.org/packages/1b/3b/91051680a4afbc3e53ecb8dd5e1019022bed6b9b09c0f7afac23403d3b4e/ipyparallel-5.1.1.tar.gz
-  md5: fc631323d68364565cb19afba25b6d21
+  fn: ipyparallel-5.2.0.tar.gz
+  url: https://pypi.python.org/packages/e7/2f/ca9d68d3d9cf3594e2c53cf11227e67491572acd6f22d2bc910ae26af953/ipyparallel-5.2.0.tar.gz
+  md5: 8e6f826d6e2b714137efd9b3af3dcdb4
 
 build:
   entry_points:
@@ -38,6 +38,7 @@ test:
 about:
   home: http://jupyter.org
   license: BSD
+  license_file: COPYING.md
   summary: Interactive Parallel Computing in Python
   description: |
     IPython enables all types of parallel applications to be developed,

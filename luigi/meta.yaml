@@ -1,37 +1,41 @@
 package:
   name: luigi
-  version: 1.2.1
+  version: 2.3.0
 
 source:
-  fn: luigi-1.2.1.tar.gz
-  url: https://pypi.python.org/packages/source/l/luigi/luigi-1.2.1.tar.gz
-  md5: a147bba0bb1999b5856f4910bf15a9c0
+  fn: luigi-2.3.0.tar.gz
+  url: https://pypi.python.org/packages/25/64/5383d94b5b44e9c1443c1a6b857210ace8205954359f8353a50c16deb664/luigi-2.3.0.tar.gz
+  md5: 3b7e0b4c8d684a168c97a4fb2d9340ca
 
 build:
-  number: 1
   entry_points:
     - luigi = luigi.cmdline:luigi_run
     - luigid = luigi.cmdline:luigid
     - luigi-grep = luigi.tools.luigi_grep:main
     - luigi-deps = luigi.tools.deps:main
+    - luigi-deps-tree = luigi.tools.deps_tree:main
+    - luigi-migrate = luigi.tools.migrate:main
 
 requirements:
   build:
     - python
+    - setuptools
+    - tornado >=4.0,<5
+    - python-daemon <3.0        [unix]
+    - docutils
   run:
     - python
     - setuptools
-    - cached-property
-    - pyparsing
-    - tornado
-    - python-daemon        [unix]
+    - tornado >=4.0,<5
+    - python-daemon <3.0        [unix]
 
 test:
   commands:
-    - luigi -h
+    - luigi --help
     - luigid -h
     - luigi-grep -h
-    - luigi-deps -h
+    - luigi-deps --help
+    - luigi-deps-tree --help
   imports:
     - luigi
     - luigi.contrib
