@@ -1,0 +1,31 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: essbasepy
+  version: 11.1.2012.0514
+
+source:
+  fn: Essbase-11.1.2012.0514.zip
+  md5: c3da8dfd086e42ebd00c81226d4ed994
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - Essbase          [unix]
+
+about:
+  home: http://sourceforge.net/projects/essbasepy/
+  license: MIT
+  summary: access to Oracle Essbase multi-dimensional databases using MaxL
+  description: |
+    The MaxL Python Module, Essbase.py, provides access to Hyperion Essbase
+    multi-dimensional databases from Python programs through MaxL. It is
+    similar in function and usage to the Perl module Essbase.pm.
+  doc_url: https://pypi.python.org/pypi/Essbase.Py/11.1.2012.0514
+  dev_url: https://github.com/jasonwjones/essbasepy

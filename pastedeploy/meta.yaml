@@ -1,0 +1,41 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: pastedeploy
+  version: 1.5.2
+
+source:
+  fn: PasteDeploy-1.5.2.tar.gz
+  url: https://pypi.python.org/packages/source/P/PasteDeploy/PasteDeploy-1.5.2.tar.gz
+  md5: 352b7205c78c8de4987578d19431af3b
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - setuptools
+
+test:
+  imports:
+    - paste.deploy
+
+about:
+  home: http://pythonpaste.org/deploy/
+  license: MIT
+  summary: Load, configure, and compose WSGI applications and servers
+  description: |
+    Paste Deployment is a system for finding and configuring WSGI applications
+    and servers. For WSGI application consumers it provides a single, simple
+    function (loadapp) for loading a WSGI application from a configuration file
+    or a Python Egg. For WSGI application providers it only asks for a single,
+    simple entry point to your application, so that application users don't
+    need to be exposed to the implementation details of your application.
+  doc_url: http://pythonpaste.org/deploy/
+  dev_url: https://bitbucket.org/ianb/pastedeploy
+

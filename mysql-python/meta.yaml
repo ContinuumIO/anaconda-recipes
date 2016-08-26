@@ -1,0 +1,38 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: mysql-python
+  version: 1.2.5
+
+source:
+  fn: MySQL-python-1.2.5.zip                      [unix]
+  md5: 654f75b302db6ed8dc5a898c625e030c           [unix]
+  fn: MySQL_python-1.2.5-cp26-none-win32.whl      [win32 and py26]
+  fn: MySQL_python-1.2.5-cp26-none-win_amd64.whl  [win64 and py26]
+  fn: MySQL_python-1.2.5-cp27-none-win32.whl      [win32 and py27]
+  fn: MySQL_python-1.2.5-cp27-none-win_amd64.whl  [win64 and py27]
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - mysql            [unix]
+  run:
+    - python
+
+test:
+  imports:
+    - _mysql
+    - MySQLdb
+
+about:
+  home: https://github.com/farcepest/MySQLdb1
+  license: GPL
+  license_family: GPL2
+  summary: MySQL database connector for Python (legacy version)
+  description: |
+    This is the legacy (1.x) version of MySQLdb. While it is still being
+    maintained, there will not be a lot of new feature development.
+  doc_url: https://sourceforge.net/projects/mysql-python/
+  dev_url: https://github.com/farcepest/MySQLdb1

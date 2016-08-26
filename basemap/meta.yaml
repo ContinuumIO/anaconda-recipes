@@ -1,0 +1,40 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: basemap
+  version: 1.0.7
+
+source:
+  fn: basemap-1.0.7.tar.gz                  [unix]
+  url: http://sourceforge.net/projects/matplotlib/files/matplotlib-toolkits/basemap-1.0.7/basemap-1.0.7.tar.gz/download    [unix]
+  md5: 48c0557ced9e2c6e440b28b3caff2de8     [unix]
+  fn: basemap-1.0.7.win32-py2.7.exe         [win32 and py27]
+  fn: basemap-1.0.7.win-amd64-py2.7.exe     [win64 and py27]
+
+requirements:
+  build:
+    - numpy
+    - matplotlib                       [unix]
+    - geos                             [unix]
+  run:
+    - python
+    - numpy
+    - matplotlib
+    - geos                             [unix]
+
+test:
+  imports:
+    - _geoslib
+    - mpl_toolkits.basemap
+    - mpl_toolkits.basemap._proj
+
+about:
+  home: http://matplotlib.org/basemap/
+  license: PSF
+  summary: Plot data on map projections with matplotlib
+  description: |
+    Basemap is a toolkit for matplotlib that allows you to plot 2D data on
+    maps in Python. Basemap is geared toward the needs of Earth
+    scientists, particularly oceanographers and meteorologists.
+  doc_url: http://matplotlib.org/basemap/

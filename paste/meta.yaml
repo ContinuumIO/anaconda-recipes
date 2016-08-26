@@ -1,0 +1,34 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: paste
+  version: 1.7.5.1
+
+source:
+  fn: Paste-1.7.5.1.tar.gz
+  url: https://pypi.python.org/packages/source/P/Paste/Paste-1.7.5.1.tar.gz
+  md5: 7ea5fabed7dca48eb46dc613c4b6c4ed
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - paste
+
+about:
+  home: http://pythonpaste.org/
+  license: MIT
+  summary: Tools for using a Web Server Gateway Interface stack.
+  description: |
+    Paste provides several pieces of "middleware" (or filters) that can be
+    nested to build web applications. Each piece of middleware uses the WSGI
+    (PEP 333) interface, and should be compatible with other middleware based
+    on those interfaces.
+  doc_url: http://pythonpaste.org/
+  dev_url: https://bitbucket.org/ianb/paste

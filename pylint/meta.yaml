@@ -1,0 +1,41 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: pylint
+  version: 1.5.4
+
+source:
+  fn: pylint-1.5.4.tar.gz
+  url: https://pypi.python.org/packages/source/p/pylint/pylint-1.5.4.tar.gz
+  md5: deb8fd3d01860e1487af22be594f40f7
+
+build:
+  compile_pyc: False
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - astroid
+
+test:
+  commands:
+    - pylint --help
+  imports:
+    - pylint
+
+about:
+  home: http://www.pylint.org/
+  license: GPL
+  license_family: GPL2
+  license_file: COPYING
+  summary: Python code static checker
+  description: |
+    Pylint is a tool that checks for errors in Python code, tries to enforce a
+    coding standard and looks for bad code smells. This is similar but
+    nevertheless different from what pychecker provides, especially since
+    pychecker explicitly does not bother with coding style.
+  doc_url: https://docs.pylint.org/
+  dev_url: https://github.com/PyCQA/pylint/

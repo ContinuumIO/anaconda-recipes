@@ -1,0 +1,25 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: libpython
+  version: 1.0
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - mingw
+    - python
+  run:
+    - mingw
+    - python
+
+test:
+  files:
+    - spam.c
+
+about:
+  license: Other
+  summary: Makes the mingw default distutils compiler (on Windows)

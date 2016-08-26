@@ -1,0 +1,39 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: pytest-cache
+  version: 1.0
+
+source:
+  fn: pytest-cache-1.0.tar.gz
+  url: https://pypi.python.org/packages/source/p/pytest-cache/pytest-cache-1.0.tar.gz
+  md5: e51ff62fec70a1fd456d975ce47977cd
+  patches:
+    - setup.patch
+
+build:
+  preserve_egg_dir: true
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pytest # >=2.2
+    - execnet # >=1.1.dev1
+  run:
+    - python
+    - pytest # >=2.2
+    - execnet # >=1.1.dev1
+    - setuptools
+
+about:
+  home: http://bitbucket.org/hpk42/pytest-cache/
+  license: MIT
+  license_file: LICENSE
+  summary: pytest plugin with mechanisms for caching across test runs
+  description: |
+    NOTE: pytest-cache is no longer maintained since its functionality was
+    integrated into pytest core starting with pytest-2.8.0.
+  doc_url: http://pythonhosted.org/pytest-cache/
+  dev_url: https://bitbucket.org/hpk42/pytest-cache/

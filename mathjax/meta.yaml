@@ -1,0 +1,26 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: mathjax
+  version: 2.2
+
+source:
+  fn: mathjax-MathJax-v2.2-8-g727332c.zip
+
+requirements:
+  run:
+    - python        [unix]
+
+about:
+  home: http://www.mathjax.org/
+  license: Apache
+  license_file: LICENSE
+  summary: A JavaScript display engine for mathematics
+  description: |
+    MathJax allows you to include mathematics in your web pages, either using
+    LaTeX, MathML, or AsciiMath notation, and the mathematics will be processed
+    using javascript to produce HTML, SVG or MathML equations for viewing in
+    any modern browser.
+  doc_url: http://docs.mathjax.org/
+  dev_url: https://github.com/mathjax

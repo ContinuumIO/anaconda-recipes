@@ -1,0 +1,32 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: googlecl
+  version: 0.9.12
+
+source:
+  fn: googlecl-0.9.12.tar.gz
+  url: http://pypi.python.org/packages/source/g/googlecl/googlecl-0.9.12.tar.gz
+  md5: 608af19d3fbe04e47c05632719233bb9
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - gdata
+
+test:
+  commands:
+    - google -h
+
+about:
+  home: http://code.google.com/p/googlecl/
+  license: Apache
+  summary: Brings Google services to the command line
+  description: |
+    8 June 2015: GoogleCL is currently broken due to the OAuth1 turndown, and
+    likely to remain so.
+  doc_url: https://code.google.com/archive/p/googlecl/wikis
+  dev_url: https://code.google.com/archive/p/googlecl/source/default/source

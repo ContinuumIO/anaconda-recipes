@@ -1,0 +1,32 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: cmake
+  version: 3.3.1
+
+source:
+  url: http://www.cmake.org/files/v3.3/cmake-3.3.1.tar.gz  [not win]
+  fn: cmake-3.3.1.tar.gz  [not win]
+  url: http://www.cmake.org/files/v3.3/cmake-3.3.1-win32-x86.zip [win]
+  fn: cmake-3.3.1-win32-x86.zip [win]
+
+build:
+  binary_relocation: False           [osx]
+
+test:
+  commands:
+    - cmake --version [not win]
+
+about:
+  home: http://www.cmake.org/
+  license:  3-clause BSD
+  license_family: BSD
+  summary: A family of tools designed to build, test, and package software
+  description: |
+   CMake is used to control the software compilation process using simple
+   platform and compiler independent configuration files, and generate native
+   makefiles and workspaces that can be used in the compiler environment of
+   your choice.
+  doc_url: https://cmake.org/documentation/
+  dev_url: https://github.com/Kitware/CMake

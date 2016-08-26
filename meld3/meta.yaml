@@ -1,0 +1,35 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: meld3
+  version: 1.0.2
+
+source:
+  fn: meld3-1.0.2.tar.gz
+  url: https://pypi.python.org/packages/source/m/meld3/meld3-1.0.2.tar.gz
+  md5: 3ccc78cd79cffd63a751ad7684c02c91
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - meld3
+
+about:
+  home: https://github.com/supervisor/meld3
+  license: BSD-derived
+  license_url: http://www.repoze.org/LICENSE.txt
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: An HTML/XML templating engine
+  description: |
+    meld3 is an HTML/XML templating system for Python which keeps template
+    markup and dynamic rendering logic separate from one another.
+  doc_url: https://pypi.python.org/pypi/meld3
+  dev_url: https://github.com/supervisor/meld3

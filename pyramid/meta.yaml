@@ -1,0 +1,75 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: pyramid
+  version: 1.5.7
+
+source:
+  fn: pyramid-1.5.7.tar.gz
+  url: https://pypi.python.org/packages/source/p/pyramid/pyramid-1.5.7.tar.gz
+  md5: 179437d1c331e720df50fb4e7428ed6b
+  patches:
+    - setup.patch
+
+build:
+  preserve_egg_dir: True
+  entry_points:
+    - pcreate = pyramid.scripts.pcreate:main
+    - pserve = pyramid.scripts.pserve:main
+    - pshell = pyramid.scripts.pshell:main
+    - proutes = pyramid.scripts.proutes:main
+    - pviews = pyramid.scripts.pviews:main
+    - ptweens = pyramid.scripts.ptweens:main
+    - prequest = pyramid.scripts.prequest:main
+    - pdistreport = pyramid.scripts.pdistreport:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - webob
+    - repoze.lru
+    - zope.interface
+    - zope.deprecation
+    - venusian
+    - translationstring
+    - pastedeploy
+  run:
+    - python
+    - webob
+    - repoze.lru
+    - zope.interface
+    - zope.deprecation
+    - venusian
+    - translationstring
+    - pastedeploy
+
+test:
+  commands:
+    - pcreate --help
+    - pcreate -s alchemy my_api_project
+    - pserve --help
+    - pshell --help
+    - proutes --help
+    - pviews --help
+    - ptweens --help
+    - prequest --help
+    - pdistreport --help
+  imports:
+    - pyramid
+
+about:
+  home: https://trypyramid.com//
+  license: BSD
+  license_file: LICENSE.txt
+  summary: The Pyramid Web Framework, a Pylons project
+  description: |
+    Pyramid is a very general open source Python web framework. As a framework,
+    its primary job is to make it easier for a developer to create an arbitrary
+    web application. The type of application being created isn't really
+    important; it could be a spreadsheet, a corporate intranet, or a social
+    networking platform. Pyramid is general enough that it can be used in a
+    wide variety of circumstances.
+  doc_url: http://docs.pylonsproject.org/en/latest/
+  dev_url: https://github.com/Pylons/pyramid

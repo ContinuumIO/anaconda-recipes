@@ -1,0 +1,39 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: ndg-httpsclient
+  version: 0.3.3
+
+source:
+  fn: ndg_httpsclient-0.3.3.tar.gz
+  url: https://pypi.python.org/packages/source/n/ndg-httpsclient/ndg_httpsclient-0.3.3.tar.gz
+  md5: c05794017dedee47b297185d82ef795e
+
+build:
+  entry_points:
+    - ndg_httpclient = ndg.httpsclient.utils:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pyopenssl
+  run:
+    - python
+    - pyopenssl
+
+test:
+  imports:
+    - ndg
+
+about:
+  home: https://github.com/cedadev/ndg_httpsclient/
+  license: BSD
+  summary: Enhanced HTTPS support for httplib and urllib2 using PyOpenSSL
+  description: |
+    A HTTPS client implementation for httplib and urllib2 based on PyOpenSSL.
+    PyOpenSSL provides a more fully featured SSL implementation over the default provided with Python and importantly enables full verification of the
+    SSL peer.
+  dev_url: https://github.com/cedadev/ndg_httpsclient/
+

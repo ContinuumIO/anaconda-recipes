@@ -1,0 +1,24 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: freeglut
+  version: 2.8.1
+
+source:
+  fn: freeglut-2.8.1.tar.gz
+  md5: 918ffbddcffbac83c218bc52355b6d5a
+
+about:
+  home: http://freeglut.sourceforge.net/
+  license: MIT
+  license_file: COPYING
+  summary: An alternative to the OpenGL Utility Toolkit (GLUT) library
+  description: |
+    FreeGLUT is a free-software/open-source alternative to the OpenGL Utility
+    Toolkit (GLUT) library. GLUT (and hence FreeGLUT) takes care of all the
+    system-specific chores required for creating windows, initializing OpenGL
+    contexts, and handling input events, to allow for trully portable OpenGL
+    programs.
+  doc_url: http://freeglut.sourceforge.net/docs/api.php
+  dev_url: https://github.com/dcnieho/FreeGLUT

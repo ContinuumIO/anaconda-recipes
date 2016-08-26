@@ -1,0 +1,33 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: passlib
+  version: 1.6.5
+
+source:
+  fn: passlib-1.6.5.tar.gz
+  url: https://pypi.python.org/packages/source/p/passlib/passlib-1.6.5.tar.gz
+  md5: d2edd6c42cde136a538b48d90a06ad67
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - passlib
+
+about:
+  home: https://bitbucket.org/ecollins/passlib/wiki/Home
+  license: BSD
+  license_file: LICENSE
+  summary: Password hashing library for Python 2 & 3
+  description: |
+    Passlib is a password hashing library for Python 2 & 3, which provides
+    cross-platform implementations of over 30 password hashing algorithms, as
+    well as a framework for managing existing password hashes.
+  doc_url: http://pythonhosted.org/passlib/
+  dev_url: https://bitbucket.org/ecollins/passlib/wiki/Home

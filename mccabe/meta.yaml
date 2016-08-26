@@ -1,0 +1,36 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: mccabe
+  version: 0.3.1
+
+source:
+  fn: mccabe-0.3.1.tar.gz
+  url: https://pypi.python.org/packages/source/m/mccabe/mccabe-0.3.1.tar.gz
+  md5: 9a1570c470ff5db678cc0c03d5c0c237
+
+build:
+  preserve_egg_dir: True
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - mccabe
+
+about:
+  home: https://github.com/PyCQA/mccabe
+  license: MIT
+  license_file: LICENSE
+  summary: McCabe complexity checker for Python
+  description: |
+    Script to check McCabe complexity. This module provides a plugin for
+    flake8, the Python code checker.
+  doc_url: https://pypi.python.org/pypi/mccabe
+  dev_url: https://github.com/PyCQA/mccabe

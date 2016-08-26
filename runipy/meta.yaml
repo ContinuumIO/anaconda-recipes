@@ -1,0 +1,44 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: runipy
+  version: 0.1.3
+
+source:
+  fn: runipy-0.1.3.tar.gz
+  url: https://pypi.python.org/packages/source/r/runipy/runipy-0.1.3.tar.gz
+  md5: 376d6f574bae9f485edae5ef40a3795c
+
+build:
+  entry_points:
+    - runipy = runipy.main:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - jinja2
+    - ipython
+    - pygments
+    - pyzmq
+  run:
+    - python
+    - notebook
+
+test:
+  commands:
+    - runipy -h
+  imports:
+    - runipy
+
+about:
+  home: https://github.com/paulgb/runipy
+  license: BSD
+  license_file: LICENSE
+  summary: Run IPython notebooks from the command line
+  description: |
+    runipy allows you to run IPython notebooks as command-line scripts,
+    generate HTML reports, and automate data pipelines.
+  doc_url: https://pypi.python.org/pypi/runipy
+  dev_url: https://github.com/paulgb/runipy

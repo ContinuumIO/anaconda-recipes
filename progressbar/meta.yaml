@@ -1,0 +1,32 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: progressbar
+  version: 2.3
+
+source:
+  fn: progressbar-2.3.tar.gz
+  sha1: aebb94b452990468c77090fb43b335cf0a724353
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - progressbar
+
+about:
+  home: http://code.google.com/p/python-progressbar/
+  license: LGPL
+  license_file: LICENSE.txt
+  summary: Text progress bar library for Python
+  description: |
+    Progressbar is a text progress bar library for Python. A text progress bar
+    is typically used to display the progress of a long running operation,
+    providing a visual cue that processing is underway.
+  dev_url: https://github.com/niltonvolpato/python-progressbar

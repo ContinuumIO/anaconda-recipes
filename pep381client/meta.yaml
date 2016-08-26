@@ -1,0 +1,32 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: pep381client
+  version: 1.5
+
+source:
+  fn: pep381client-1.5.tar.gz
+  url: https://pypi.python.org/packages/source/p/pep381client/pep381client-1.5.tar.gz
+  md5: 6a25b9a1a43699fee5e82978077edc3d
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  commands:
+    - pep381run -h
+    - processlogs -h
+    - pep381checkfiles -h
+  imports:
+    - pep381client
+
+about:
+  home: http://bitbucket.org/loewis/pep381client/
+  license: Academic Free License
+  license_family: Other
+  summary: Mirroring tool that implements the client (mirror) side of PEP 381
+  doc_url: https://bitbucket.org/loewis/pep381client/

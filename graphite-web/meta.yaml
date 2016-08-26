@@ -1,0 +1,35 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: graphite-web
+  version: 0.9.13
+
+source:
+  fn: graphite-web-0.9.13.tar.gz
+  url: https://pypi.python.org/packages/source/g/graphite-web/graphite-web-0.9.13.tar.gz
+  md5: ff95c60235ed7b4032f065739921663c
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - whisper
+    - pycairo
+    - django
+
+test:
+  imports:
+    - graphite
+
+about:
+  home: http://graphite.readthedocs.org/
+  license: Apache
+  license_file: LICENSE
+  summary: Enterprise scalable realtime graphing
+  description: |
+    Graphite-web is a highly scalable real-time graphing system. It is a
+    Django-based web application that renders graphs and dashboards.
+  doc_url: http://graphite.readthedocs.org/
+  dev_url: https://github.com/graphite-project/graphite-web

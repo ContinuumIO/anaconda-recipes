@@ -1,0 +1,46 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: orange
+  version: 2.7.8
+
+source:
+  fn: Orange-2.7.8.tar.gz                                                    [unix]
+  url: https://pypi.python.org/packages/source/O/Orange/Orange-2.7.8.tar.gz  [unix]
+  md5: 6dedb5ade572079bfa7063e1dd350b1a                                      [unix]
+  fn: Orange-2.7.8-cp27-none-win32.whl                                       [win32]
+  fn: Orange-2.7.8-cp27-none-win_amd64.whl                                   [win64]
+
+build:
+  number: 4
+  entry_points:
+    - orange-canvas = Orange.OrangeCanvas.main:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - scipy
+  run:
+    - python
+    - setuptools
+    - scipy
+    - pyqt 4.*
+
+test:
+  commands:
+    - orange-canvas --help
+  imports:
+    - Orange
+
+about:
+  home: http://orange.biolab.si/
+  license: GPL3
+  license_file: COPYING                                   [unix]
+  summary: Component-based data mining framework
+  description: |
+    Open source data visualization and data analysis for novice and expert.
+    Interactive workflows with a large toolbox.
+  doc_url: http://orange.biolab.si/docs/
+  dev_url: https://github.com/biolab/orange

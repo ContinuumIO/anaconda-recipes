@@ -1,0 +1,324 @@
+diff --git samtools/bam2bcf.c.pysam.c samtools/bam2bcf.c.pysam.c
+index ece837a..066af8b 100644
+--- samtools/bam2bcf.c.pysam.c
++++ samtools/bam2bcf.c.pysam.c
+@@ -43,6 +43,9 @@ int bcf_call_glfgen(int _n, const bam_pileup1_t *pl, int ref_base, bcf_callaux_t
+ {
+     static int *var_pos = NULL, nvar_pos = 0;
+ 	int i, n, ref4, is_indel, ori_depth = 0;
++    int alt_dp=0, read_len=0;
++    float mvd=0;
++    int j;
+ 	memset(r, 0, sizeof(bcf_callret1_t));
+ 	if (ref_base >= 0) {
+ 		ref4 = bam_nt16_nt4_table[ref_base];
+@@ -103,7 +106,6 @@ int bcf_call_glfgen(int _n, const bam_pileup1_t *pl, int ref_base, bcf_callaux_t
+         nvar_pos = _n;
+         var_pos = realloc(var_pos,sizeof(int)*nvar_pos);
+     }
+-    int alt_dp=0, read_len=0;
+     for (i=0; i<_n; i++) {
+         const bam_pileup1_t *p = pl + i;
+         if ( bam1_seqi(bam1_seq(p->b),p->qpos) == ref_base ) 
+@@ -116,8 +118,6 @@ int bcf_call_glfgen(int _n, const bam_pileup1_t *pl, int ref_base, bcf_callaux_t
+         alt_dp++;
+         read_len += p->b->core.l_qseq;
+     }
+-    float mvd=0;
+-    int j;
+     n=0;
+     for (i=0; i<alt_dp; i++) {
+         for (j=0; j<i; j++) {
+@@ -145,10 +145,10 @@ void calc_vdb(int n, const bcf_callret1_t *calls, bcf_call_t *call)
+         int mvd      = calls[i].mvd[0];
+         int dp       = calls[i].mvd[1];
+         int read_len = calls[i].mvd[2];
++        float prob = 0;
+ 
+         if ( dp<2 ) continue;
+ 
+-        float prob = 0;
+         if ( dp==2 )
+         {
+             // Exact formula
+@@ -162,12 +162,15 @@ void calc_vdb(int n, const bcf_callret1_t *calls, bcf_call_t *call)
+         }
+         else
+         {
++            float sigma2;
++            float norm;
++            float mu;
+             // Scaled gaussian curve, crude approximation, but behaves well. Using fixed depth for bigger depths.
+             if ( dp>5 )
+                 dp = 5;
+-            float sigma2 = (read_len/1.9/(dp+1)) * (read_len/1.9/(dp+1));
+-            float norm   = 1.125*sqrt(2*3.14*sigma2);
+-            float mu     = read_len/2.9;
++            sigma2 = (read_len/1.9/(dp+1)) * (read_len/1.9/(dp+1));
++            norm   = 1.125*sqrt(2*3.14*sigma2);
++            mu     = read_len/2.9;
+             if ( mvd < mu )
+                 prob = exp(-(mvd-mu)*(mvd-mu)/2/sigma2)/norm;
+             else
+diff --git samtools/bam2bcf_indel.c.pysam.c samtools/bam2bcf_indel.c.pysam.c
+index cf86ca3..2ff0f97 100644
+--- samtools/bam2bcf_indel.c.pysam.c
++++ samtools/bam2bcf_indel.c.pysam.c
+@@ -173,7 +173,7 @@ int bcf_call_gap_prep(int n, int *n_plp, bam_pileup1_t **plp, int pos, bcf_calla
+ 		if (n_types >= 64) {
+ 			free(aux);
+ 			if (bam_verbose >= 2) 
+-				fprintf(pysamerr, "[%s] excessive INDEL alleles at position %d. Skip the position.\n", __func__, pos + 1);
++				fprintf(pysamerr, "[%s] excessive INDEL alleles at position %d. Skip the position.\n", __FUNCTION__, pos + 1);
+ 			return -1;
+ 		}
+ 		types = (int*)calloc(n_types, sizeof(int));
+@@ -384,8 +384,8 @@ int bcf_call_gap_prep(int n, int *n_plp, bam_pileup1_t **plp, int pos, bcf_calla
+ 	free(ref2); free(query);
+ 	{ // compute indelQ
+ 		int *sc, tmp, *sumq;
+-		sc   = alloca(n_types * sizeof(int));
+-		sumq = alloca(n_types * sizeof(int));
++		sc   = _alloca(n_types * sizeof(int));
++		sumq = _alloca(n_types * sizeof(int));
+ 		memset(sumq, 0, sizeof(int) * n_types);
+ 		for (s = K = 0; s < n; ++s) {
+ 			for (i = 0; i < n_plp[s]; ++i, ++K) {
+diff --git samtools/bam_aux.c.pysam.c samtools/bam_aux.c.pysam.c
+index 14209cd..503037e 100644
+--- samtools/bam_aux.c.pysam.c
++++ samtools/bam_aux.c.pysam.c
+@@ -138,7 +138,7 @@ int bam_parse_region(bam_header_t *header, const char *str, int *ref_id, int *be
+ 		if (iter == kh_end(h)) { // cannot find the sequence name
+ 			iter = kh_get(s, h, str); // try str as the name
+ 			if (iter == kh_end(h)) {
+-				if (bam_verbose >= 2) fprintf(pysamerr, "[%s] fail to determine the sequence name.\n", __func__);
++				if (bam_verbose >= 2) fprintf(pysamerr, "[%s] fail to determine the sequence name.\n", __FUNCTION__);
+ 				free(s); return -1;
+ 			} else s[name_end] = ':', name_end = l;
+ 		}
+diff --git samtools/bam_cat.c.pysam.c samtools/bam_cat.c.pysam.c
+index a8a0478..14b5dfd 100644
+--- samtools/bam_cat.c.pysam.c
++++ samtools/bam_cat.c.pysam.c
+@@ -105,7 +105,7 @@ int bam_cat(int nfn, char * const *fn, const bam_header_t *h, const char* outbam
+ 		if (h == 0 && i == 0) bam_header_write(fp, old);
+         
+         if (in->block_offset < in->block_length) {
+-            bgzf_write(fp, in->uncompressed_block + in->block_offset, in->block_length - in->block_offset);
++            bgzf_write(fp, (char *)in->uncompressed_block + in->block_offset, (char *)in->block_length - in->block_offset);
+             bgzf_flush(fp);
+         }
+         
+diff --git samtools/bam_endian.h samtools/bam_endian.h
+index 0fc74a8..45a0302 100644
+--- samtools/bam_endian.h
++++ samtools/bam_endian.h
+@@ -29,9 +29,9 @@ static inline void *bam_swap_endian_4p(void *x)
+ }
+ static inline uint64_t bam_swap_endian_8(uint64_t v)
+ {
+-	v = ((v & 0x00000000FFFFFFFFLLU) << 32) | (v >> 32);
+-	v = ((v & 0x0000FFFF0000FFFFLLU) << 16) | ((v & 0xFFFF0000FFFF0000LLU) >> 16);
+-	return ((v & 0x00FF00FF00FF00FFLLU) << 8) | ((v & 0xFF00FF00FF00FF00LLU) >> 8);
++	v = ((v & 0x00000000FFFFFFFFULL) << 32) | (v >> 32);
++	v = ((v & 0x0000FFFF0000FFFFULL) << 16) | ((v & 0xFFFF0000FFFF0000ULL) >> 16);
++	return ((v & 0x00FF00FF00FF00FFULL) << 8) | ((v & 0xFF00FF00FF00FF00ULL) >> 8);
+ }
+ static inline void *bam_swap_endian_8p(void *x)
+ {
+diff --git samtools/bam_index.c.pysam.c samtools/bam_index.c.pysam.c
+index 6ae2ac3..1c9aeed 100644
+--- samtools/bam_index.c.pysam.c
++++ samtools/bam_index.c.pysam.c
+@@ -527,11 +527,11 @@ int bam_idxstats(int argc, char *argv[])
+ 		return 1;
+ 	}
+ 	fp = bam_open(argv[1], "r");
+-	if (fp == 0) { fprintf(pysamerr, "[%s] fail to open BAM.\n", __func__); return 1; }
++	if (fp == 0) { fprintf(pysamerr, "[%s] fail to open BAM.\n", __FUNCTION__); return 1; }
+ 	header = bam_header_read(fp);
+ 	bam_close(fp);
+ 	idx = bam_index_load(argv[1]);
+-	if (idx == 0) { fprintf(pysamerr, "[%s] fail to load the index.\n", __func__); return 1; }
++	if (idx == 0) { fprintf(pysamerr, "[%s] fail to load the index.\n", __FUNCTION__); return 1; }
+ 	for (i = 0; i < idx->n; ++i) {
+ 		khint_t k;
+ 		khash_t(i) *h = idx->index[i];
+diff --git samtools/bam_pileup.c.pysam.c samtools/bam_pileup.c.pysam.c
+index cca29d2..ecee987 100644
+--- samtools/bam_pileup.c.pysam.c
++++ samtools/bam_pileup.c.pysam.c
+@@ -219,7 +219,7 @@ const bam_pileup1_t *bam_plp_next(bam_plp_t iter, int *_tid, int *_pos, int *_n_
+ 		// update iter->tid and iter->pos
+ 		if (iter->head->next) {
+ 			if (iter->tid > iter->head->b.core.tid) {
+-				fprintf(pysamerr, "[%s] unsorted input. Pileup aborts.\n", __func__);
++				fprintf(pysamerr, "[%s] unsorted input. Pileup aborts.\n", __FUNCTION__);
+ 				iter->error = 1;
+ 				*_n_plp = -1;
+ 				return 0;
+diff --git samtools/bam_reheader.c.pysam.c samtools/bam_reheader.c.pysam.c
+index 35154d7..260a46e 100644
+--- samtools/bam_reheader.c.pysam.c
++++ samtools/bam_reheader.c.pysam.c
+@@ -1,5 +1,6 @@
+ #include "pysam.h"
+ 
++#include <unistd.h>
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include "bgzf.h"
+@@ -19,7 +20,7 @@ int bam_reheader(BGZF *in, const bam_header_t *h, int fd)
+ 	fp = bgzf_fdopen(fd, "w");
+ 	bam_header_write(fp, h);
+ 	if (in->block_offset < in->block_length) {
+-		bgzf_write(fp, in->uncompressed_block + in->block_offset, in->block_length - in->block_offset);
++		bgzf_write(fp, (char *)in->uncompressed_block + in->block_offset, (char *)in->block_length - in->block_offset);
+ 		bgzf_flush(fp);
+ 	}
+ #ifdef _USE_KNETFILE
+diff --git samtools/bam_tview.c.pysam.c samtools/bam_tview.c.pysam.c
+index 3709702..cebeb69 100644
+--- samtools/bam_tview.c.pysam.c
++++ samtools/bam_tview.c.pysam.c
+@@ -433,7 +433,9 @@ int bam_tview_main(int argc, char *argv[])
+ }
+ #else // #ifdef _HAVE_CURSES
+ #include <stdio.h>
++#ifndef _WIN32
+ #warning "No curses library is available; tview is disabled."
++#endif
+ int bam_tview_main(int argc, char *argv[])
+ {
+ 	fprintf(pysamerr, "[bam_tview_main] The ncurses library is unavailable; tview is not compiled.\n");
+diff --git samtools/bgzf.c.pysam.c samtools/bgzf.c.pysam.c
+index 067b89d..51e86ca 100644
+--- samtools/bgzf.c.pysam.c
++++ samtools/bgzf.c.pysam.c
+@@ -58,7 +58,7 @@ typedef int8_t bgzf_byte_t;
+ static const int DEFAULT_BLOCK_SIZE = 64 * 1024;
+ static const int MAX_BLOCK_SIZE = 64 * 1024;
+ 
+-static const int BLOCK_HEADER_LENGTH = 18;
++#define BLOCK_HEADER_LENGTH 18
+ static const int BLOCK_FOOTER_LENGTH = 8;
+ 
+ static const int GZIP_ID1 = 31;
+@@ -269,8 +269,12 @@ deflate_block(BGZF* fp, int block_length)
+     // Deflate the block in fp->uncompressed_block into fp->compressed_block.
+     // Also adds an extra field that stores the compressed block length.
+ 
++    uint32_t crc;
++    int input_length;
++    int compressed_length;
+     bgzf_byte_t* buffer = fp->compressed_block;
+     int buffer_size = fp->compressed_block_size;
++    int remaining;
+ 
+     // Init gzip header
+     buffer[0] = GZIP_ID1;
+@@ -293,9 +297,10 @@ deflate_block(BGZF* fp, int block_length)
+     buffer[17] = 0;
+ 
+     // loop to retry for blocks that do not compress enough
+-    int input_length = block_length;
+-    int compressed_length = 0;
++    input_length = block_length;
++    compressed_length = 0;
+     while (1) {
++        int status;
+         z_stream zs;
+         zs.zalloc = NULL;
+         zs.zfree = NULL;
+@@ -304,7 +309,7 @@ deflate_block(BGZF* fp, int block_length)
+         zs.next_out = (void*)&buffer[BLOCK_HEADER_LENGTH];
+         zs.avail_out = buffer_size - BLOCK_HEADER_LENGTH - BLOCK_FOOTER_LENGTH;
+ 
+-        int status = deflateInit2(&zs, fp->compress_level, Z_DEFLATED,
++        status = deflateInit2(&zs, fp->compress_level, Z_DEFLATED,
+                                   GZIP_WINDOW_BITS, Z_DEFAULT_MEM_LEVEL, Z_DEFAULT_STRATEGY);
+         if (status != Z_OK) {
+             report_error(fp, "deflate init failed");
+@@ -344,12 +349,12 @@ deflate_block(BGZF* fp, int block_length)
+     }
+ 
+     packInt16((uint8_t*)&buffer[16], compressed_length-1);
+-    uint32_t crc = crc32(0L, NULL, 0L);
++    crc = crc32(0L, NULL, 0L);
+     crc = crc32(crc, fp->uncompressed_block, input_length);
+     packInt32((uint8_t*)&buffer[compressed_length-8], crc);
+     packInt32((uint8_t*)&buffer[compressed_length-4], input_length);
+ 
+-    int remaining = block_length - input_length;
++    remaining = block_length - input_length;
+     if (remaining > 0) {
+         if (remaining > input_length) {
+             // should never happen (check so we can use memcpy)
+@@ -357,7 +362,7 @@ deflate_block(BGZF* fp, int block_length)
+             return -1;
+         }
+         memcpy(fp->uncompressed_block,
+-               fp->uncompressed_block + input_length,
++               (char *)fp->uncompressed_block + input_length,
+                remaining);
+     }
+     fp->block_offset = remaining;
+@@ -374,7 +379,7 @@ inflate_block(BGZF* fp, int block_length)
+ 	int status;
+     zs.zalloc = NULL;
+     zs.zfree = NULL;
+-    zs.next_in = fp->compressed_block + 18;
++    zs.next_in = (char *)fp->compressed_block + 18;
+     zs.avail_in = block_length - 16;
+     zs.next_out = fp->uncompressed_block;
+     zs.avail_out = fp->uncompressed_block_size;
+@@ -472,6 +477,7 @@ static void cache_block(BGZF *fp, int size)
+ int
+ bgzf_read_block(BGZF* fp)
+ {
++    bgzf_byte_t* compressed_block;
+     bgzf_byte_t header[BLOCK_HEADER_LENGTH];
+ 	int count, size = 0, block_length, remaining;
+ #ifdef _USE_KNETFILE
+@@ -497,7 +503,7 @@ bgzf_read_block(BGZF* fp)
+         return -1;
+     }
+     block_length = unpackInt16((uint8_t*)&header[16]) + 1;
+-    bgzf_byte_t* compressed_block = (bgzf_byte_t*) fp->compressed_block;
++    compressed_block = (bgzf_byte_t*) fp->compressed_block;
+     memcpy(compressed_block, header, BLOCK_HEADER_LENGTH);
+     remaining = block_length - BLOCK_HEADER_LENGTH;
+ #ifdef _USE_KNETFILE
+@@ -525,6 +531,8 @@ bgzf_read_block(BGZF* fp)
+ int
+ bgzf_read(BGZF* fp, void* data, int length)
+ {
++    int bytes_read;
++    bgzf_byte_t* output;
+     if (length <= 0) {
+         return 0;
+     }
+@@ -533,8 +541,8 @@ bgzf_read(BGZF* fp, void* data, int length)
+         return -1;
+     }
+ 
+-    int bytes_read = 0;
+-    bgzf_byte_t* output = data;
++    bytes_read = 0;
++    output = data;
+     while (bytes_read < length) {
+         int copy_length, available = fp->block_length - fp->block_offset;
+ 		bgzf_byte_t *buffer;
+diff --git samtools/errmod.c.pysam.c samtools/errmod.c.pysam.c
+index bf62418..171e366 100644
+--- samtools/errmod.c.pysam.c
++++ samtools/errmod.c.pysam.c
+@@ -1,6 +1,7 @@
+ #include "pysam.h"
+ 
+ #include <math.h>
++#include <unistd.h>
+ #include "errmod.h"
+ #include "ksort.h"
+ KSORT_INIT_GENERIC(uint16_t)

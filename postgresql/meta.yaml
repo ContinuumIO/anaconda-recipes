@@ -1,0 +1,33 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: postgresql
+  version: 9.1.4
+
+source:
+  fn: postgresql-9.1.4.tar.bz2
+  md5: a8035688dba988b782725ac1aec60186
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - openssl
+  run:
+    - openssl
+
+about:
+  home: http://www.postgresql.org/
+  license: PostgreSQL license
+  license_url: http://www.postgresql.org/about/licence/
+  license_family: Other
+  summary: A powerful, open source object-relational database system
+  description: |
+    PostgreSQL is a powerful, open source object-relational database system.
+    It has more than 15 years of active development and a proven architecture
+    that has earned it a strong reputation for reliability, data integrity,
+    and correctness.
+  doc_url: http://www.postgresql.org/docs/manuals/
+  dev_url: http://git.postgresql.org/gitweb/?p=postgresql.git

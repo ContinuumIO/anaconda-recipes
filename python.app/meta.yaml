@@ -1,0 +1,26 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: python.app
+  version: 1.2
+
+build:
+  number: 4
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  files:
+    - t.py
+  commands:
+    - python.app -V
+    - pythonw -V
+
+about:
+  license: BSD
+  summary: Proxy on OS X letting Python libraries hook into the gui event loop

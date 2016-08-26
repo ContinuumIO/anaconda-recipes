@@ -1,0 +1,32 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: pyaudio
+  version: 0.2.7
+
+source:
+  fn: pyaudio-0.2.7.tar.gz
+  url: http://people.csail.mit.edu/hubert/pyaudio/packages/pyaudio-0.2.7.tar.gz
+  md5: 41eaa5a027e2a68ac29237018985dfbb
+  patches:
+    - setup.patch
+
+requirements:
+  build:
+    - python
+    - portaudio
+  run:
+    - python
+
+about:
+  home: http://people.csail.mit.edu/hubert/pyaudio/
+  license: MIT
+  summary: Bindings for PortAudio v19, the cross-platform audio stream library
+  description: |
+    PyAudio provides Python bindings for PortAudio, the cross-platform audio
+    I/O library. With PyAudio, you can easily use Python to play and record
+    audio on a variety of platforms, such as GNU/Linux, Microsoft Windows, and
+    Apple Mac OS X.
+  doc_url: http://people.csail.mit.edu/hubert/pyaudio/docs/
+  dev_url: http://people.csail.mit.edu/hubert/git/?p=pyaudio.git

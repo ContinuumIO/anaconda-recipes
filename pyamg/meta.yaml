@@ -1,0 +1,34 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: pyamg
+  version: 2.2.1
+
+source:
+  fn: pyamg-2.2.1.tar.gz
+  url: https://pypi.python.org/packages/source/p/pyamg/pyamg-2.2.1.tar.gz
+  md5: 4058c5cd5a4384bc5d25a7f2b3b4e864
+
+requirements:
+  build:
+    - numpy
+  run:
+    - python
+    - numpy
+    - scipy
+
+test:
+  imports:
+    - pyamg
+    - pyamg.amg_core._amg_core
+
+about:
+  home: http://pyamg.org/
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Algebraic Multigrid Solvers in Python
+  description: |
+    PyAMG is a library of Algebraic Multigrid (AMG) solvers with a convenient
+    Python interface.
+  dev_url: https://github.com/pyamg/pyamg

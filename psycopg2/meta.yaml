@@ -1,0 +1,41 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: psycopg2
+  version: 2.6.1
+
+source:
+  fn: psycopg2-2.6.1.tar.gz
+  url: https://pypi.python.org/packages/source/p/psycopg2/psycopg2-2.6.1.tar.gz
+  md5: 842b44f8c95517ed5b792081a2370da1
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - postgresql
+  run:
+    - python
+    - openssl
+
+test:
+  imports:
+    - psycopg2
+    - psycopg2._psycopg
+
+about:
+  home: http://initd.org/psycopg/
+  license: LGPL, BSD-like, ZPL
+  license_family: LGPL
+  license_file: LICENSE
+  summary: Python-PostgreSQL Database Adapter
+  description: |
+    Psycopg is the most popular PostgreSQL adapter for the Python programming
+    language. At its core it fully implements the Python DB API 2.0
+    specifications. Several extensions allow access to many of the features
+    offered by PostgreSQL.
+  doc_url: http://initd.org/psycopg/docs/
+  dev_url: https://github.com/psycopg/psycopg2/

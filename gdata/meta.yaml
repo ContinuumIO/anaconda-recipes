@@ -1,0 +1,35 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: gdata
+  version: 2.0.18
+
+source:
+  fn: gdata-2.0.18.tar.gz
+  url: https://pypi.python.org/packages/source/g/gdata/gdata-2.0.18.tar.gz
+  md5: 13b6e6dd8f9e3e9a8e005e05a8329408
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+  conflicts:
+    - atom
+
+test:
+  imports:
+    - gdata
+    - gdata.service
+
+about:
+  home: https://github.com/google/gdata-python-client
+  license: Apache
+  summary: Python client library for Google data APIs
+  description: |
+    The Google data Python client library makes it easy to interact with
+    Google services through the Google Data APIs.
+  doc_url: http://pythonhosted.org/gdata/
+  dev_url: https://github.com/google/gdata-python-client
+

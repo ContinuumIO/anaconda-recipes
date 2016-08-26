@@ -1,0 +1,10 @@
+diff --git setup.py setup.py
+index cee2323..4e4631a 100644
+--- setup.py
++++ setup.py
+@@ -22,4 +22,5 @@ setup(
+             'Topic :: Utilities',
+             'Programming Language :: Python',
+             'Programming Language :: Python :: 3'],
++    zip_safe=False,
+ )

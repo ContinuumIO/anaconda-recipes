@@ -1,0 +1,32 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: sh
+  version: 1.11
+
+source:
+  fn: sh-1.11.tar.gz
+  url: https://pypi.python.org/packages/source/s/sh/sh-1.11.tar.gz
+  md5: 7af8df6c92d29ff927b6db0146bddec3
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - sh
+
+about:
+  home: http://amoffat.github.io/sh/
+  license: MIT
+  license_file: LICENSE.txt
+  summary: full-fledged subprocess replacement for Python
+  description: |
+    sh is a full-fledged subprocess interface for Python that allows you to
+    call any program as if it were a function.
+  doc_url: http://amoffat.github.io/sh/
+  dev_url: https://github.com/amoffat/sh

@@ -1,0 +1,22 @@
+diff --git setup.py setup.py
+index b55c6ac..b6d6d62 100644
+--- setup.py
++++ setup.py
+@@ -52,7 +52,7 @@ if "--static-link" in sys.argv:
+     STATIC_LINKING = True
+     sys.argv.remove("--static-link")
+ 
+-portaudio_path = os.environ.get("PORTAUDIO_PATH", "./portaudio-v19")
++portaudio_path = os.environ.get("PORTAUDIO_PATH")
+ mac_sysroot_path = os.environ.get("SYSROOT_PATH", None)
+ 
+ pyaudio_module_sources = ['src/_portaudiomodule.c']
+@@ -66,7 +66,7 @@ defines = []
+ 
+ if STATIC_LINKING:
+     extra_link_args = [
+-        os.path.join(portaudio_path, 'lib/.libs/libportaudio.a')
++        os.path.join(portaudio_path, 'lib/libportaudio.a')
+         ]
+     include_dirs = [os.path.join(portaudio_path, 'include/')]
+ else:

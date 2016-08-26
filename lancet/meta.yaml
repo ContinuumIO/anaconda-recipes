@@ -1,0 +1,36 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: lancet
+  version: 0.9.0
+
+source:
+  fn: lancet-ioam-0.9.0.tar.gz
+  url: https://pypi.python.org/packages/source/l/lancet-ioam/lancet-ioam-0.9.0.tar.gz
+  md5: 1a57ba2001ee3f87159713ef161e4a77
+
+requirements:
+  build:
+    - python
+    - param
+  run:
+    - python
+    - param
+
+test:
+  imports:
+    - lancet
+
+about:
+  home: http://ioam.github.com/lancet/
+  license: BSD
+  summary: Launch jobs, organize the output, and dissect the results
+  description: |
+    Lancet is designed to help you organize the output of your research tools,
+    store it, and dissect the data you have collected. The output of a single
+    simulation run or analysis rarely contains all the data you need; Lancet
+    helps you generate data from many runs and analyse it using your own
+    Python code.
+  doc_url: http://ioam.github.io/lancet/#documentation
+  dev_url: https://github.com/ioam/lancet

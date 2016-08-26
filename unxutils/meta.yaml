@@ -1,0 +1,20 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: unxutils
+  version: 14.04.03
+
+source:
+  fn: UnxUtils.zip
+  url: http://downloads.sourceforge.net/unxutils/UnxUtils.zip [win]
+
+test:
+  commands:
+    - uname
+
+about:
+  home: http://unxutils.sourceforge.net/
+  license: GPL3
+  summary: Ports of common GNU utilities to native Win32
+  dev_url: https://sourceforge.net/projects/unxutils/

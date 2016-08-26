@@ -14,6 +14,7 @@
     "osx-64:py35"
   ], 
   "apr": "all", 
+  "argcomplete": "all", 
   "astroid": "all", 
   "astropy": "all", 
   "atom": [
@@ -28,6 +29,13 @@
   "backports_abc": [
     "linux-64:py27", 
     "osx-64:py27", 
+    "win-64:py27"
+  ], 
+  "basemap": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35", 
     "win-64:py27"
   ], 
   "bcolz": "all", 
@@ -72,6 +80,7 @@
     "win-64:py27"
   ], 
   "certifi": "all", 
+  "cffi": "all", 
   "chalmers": "all", 
   "chameleon": "all", 
   "chardet": "all", 
@@ -86,11 +95,18 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "cio-bt": "all", 
   "click": "all", 
   "click-plugins": "all", 
   "cligj": "all", 
   "cloudpickle": "all", 
   "clyent": "all", 
+  "cmake": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "colander": "all", 
   "colorama": "all", 
   "comtypes": [
@@ -98,6 +114,7 @@
     "win-64:py35"
   ], 
   "conda": "all", 
+  "conda-api": "all", 
   "conda-build": "all", 
   "conda-env": "all", 
   "configobj": "all", 
@@ -152,6 +169,14 @@
   "dnspython": "all", 
   "docopt": "all", 
   "docutils": "all", 
+  "dynd-python": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35", 
+    "win-64:py35"
+  ], 
+  "ecdsa": "all", 
   "ecos": "all", 
   "entrypoints": "all", 
   "enum34": [
@@ -164,6 +189,11 @@
     "linux-64:py35", 
     "osx-64:py27", 
     "osx-64:py35"
+  ], 
+  "essbasepy": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
   ], 
   "et_xmlfile": "all", 
   "execnet": "all", 
@@ -197,6 +227,10 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "freeglut": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "freeimage": "all", 
   "freetype": "all", 
   "funcsigs": [
@@ -220,6 +254,11 @@
     "linux-64:py35", 
     "osx-64:py27", 
     "osx-64:py35", 
+    "win-64:py27"
+  ], 
+  "gdata": [
+    "linux-64:py27", 
+    "osx-64:py27", 
     "win-64:py27"
   ], 
   "gdbm": [
@@ -253,13 +292,27 @@
     "linux-64:py35"
   ], 
   "glueviz": "all", 
+  "googlecl": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
   "grako": "all", 
+  "graphite-web": [
+    "linux-64:py27"
+  ], 
   "graphviz": "all", 
   "greenlet": "all", 
   "grin": [
     "linux-64:py27", 
     "osx-64:py27", 
     "win-64:py27"
+  ], 
+  "gunicorn": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
   ], 
   "h5py": "all", 
   "harfbuzz": [
@@ -274,6 +327,17 @@
   ], 
   "heapdict": "all", 
   "holoviews": "all", 
+  "html5lib": "all", 
+  "hyde": [
+    "linux-64:py27", 
+    "osx-64:py27"
+  ], 
+  "icu": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "idna": "all", 
   "imagesize": "all", 
   "iminuit": [
@@ -315,15 +379,28 @@
     "win-64:py35"
   ], 
   "keyring": "all", 
+  "kiwisolver": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
   "krb5": [
     "linux-64:py27", 
     "linux-64:py35", 
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "lancet": "all", 
   "lazy-object-proxy": "all", 
   "ldap3": "all", 
   "libconda": "all", 
+  "libdynd": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35", 
+    "win-64:py35"
+  ], 
   "libffi": [
     "linux-64:py27", 
     "linux-64:py35"
@@ -356,6 +433,9 @@
   "libprotobuf": [
     "linux-64:py27", 
     "linux-64:py35"
+  ], 
+  "libpython": [
+    "win-64:py27"
   ], 
   "libsodium": [
     "linux-64:py27", 
@@ -393,6 +473,7 @@
   "locket": "all", 
   "lockfile": "all", 
   "luigi": "all", 
+  "lxml": "all", 
   "lz4": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -410,8 +491,11 @@
   "markdown": "all", 
   "markdown2": "all", 
   "markupsafe": "all", 
+  "mathjax": "all", 
   "matplotlib": "all", 
+  "mccabe": "all", 
   "mdp": "all", 
+  "meld3": "all", 
   "memory_profiler": "all", 
   "menuinst": [
     "win-64:py27", 
@@ -422,11 +506,19 @@
     "osx-64:py27", 
     "win-64:py27"
   ], 
+  "mingw": [
+    "win-64:py27", 
+    "win-64:py35"
+  ], 
   "mistune": "all", 
   "mkl": "all", 
   "mkl-service": "all", 
   "mock": "all", 
   "mpi4py": "all", 
+  "mpich2": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "mpmath": "all", 
   "msgpack-python": "all", 
   "mtq": [
@@ -443,9 +535,18 @@
     "osx-64:py35"
   ], 
   "mysql-connector-python": "all", 
+  "mysql-python": [
+    "linux-64:py27", 
+    "win-64:py27"
+  ], 
   "natsort": "all", 
   "nbconvert": "all", 
   "nbformat": "all", 
+  "ndg-httpsclient": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
   "netcdf4": "all", 
   "networkx": "all", 
   "nltk": "all", 
@@ -464,7 +565,17 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "openmpi": [
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "openpyxl": "all", 
+  "openssl": "all", 
+  "orange": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
   "orange-app": "all", 
   "orange3": [
     "linux-64:py35", 
@@ -482,6 +593,13 @@
   "paramiko": "all", 
   "parsel": "all", 
   "partd": "all", 
+  "passlib": "all", 
+  "paste": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
+  "pastedeploy": "all", 
   "patch": [
     "win-64:py27", 
     "win-64:py35"
@@ -499,6 +617,11 @@
     "linux-64:py35", 
     "osx-64:py27", 
     "osx-64:py35"
+  ], 
+  "pep381client": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
   ], 
   "pep8": "all", 
   "persistent": "all", 
@@ -536,11 +659,20 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "postgresql": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "preshed": [
     "linux-64:py27", 
     "linux-64:py35", 
     "osx-64:py27", 
     "osx-64:py35"
+  ], 
+  "progressbar": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
   ], 
   "proj4": "all", 
   "prompt_toolkit": "all", 
@@ -549,6 +681,12 @@
     "linux-64:py35"
   ], 
   "psutil": "all", 
+  "psycopg2": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "ptyprocess": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -556,8 +694,16 @@
     "osx-64:py35"
   ], 
   "py": "all", 
+  "pyamg": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
   "pyasn1": "all", 
   "pyasn1-modules": "all", 
+  "pyaudio": [
+    "osx-64:py27"
+  ], 
   "pycairo": [
     "linux-64:py27"
   ], 
@@ -574,20 +720,29 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "pylint": "all", 
   "pymc": "all", 
   "pymongo": "all", 
   "pymysql": "all", 
   "pyodbc": "all", 
+  "pyopengl": "all", 
+  "pyopengl-accelerate": "all", 
   "pyopenssl": "all", 
   "pyparsing": "all", 
   "pyproj": "all", 
   "pyqt": "all", 
   "pyqtgraph": "all", 
+  "pyramid": "all", 
   "pyreadline": [
     "win-64:py27", 
     "win-64:py35"
   ], 
   "pysal": "all", 
+  "pysam": [
+    "linux-64:py27", 
+    "osx-64:py27"
+  ], 
+  "pyserial": "all", 
   "pysnmp": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -602,7 +757,9 @@
   ], 
   "pytables": "all", 
   "pytest": "all", 
+  "pytest-cache": "all", 
   "pytest-cov": "all", 
+  "pytest-pep8": "all", 
   "pytest-timeout": "all", 
   "python": "all", 
   "python-daemon": [
@@ -621,7 +778,12 @@
     "osx-64:py27", 
     "win-64:py27"
   ], 
+  "python.app": [
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "pytz": "all", 
+  "pywget": "all", 
   "pywin32": [
     "win-64:py27", 
     "win-64:py35"
@@ -629,6 +791,7 @@
   "pyyaml": "all", 
   "pyzmq": "all", 
   "qgrid": "all", 
+  "qt": "all", 
   "qtconsole": "all", 
   "qtpy": "all", 
   "quandl": "all", 
@@ -666,6 +829,7 @@
   "rope": "all", 
   "routes": "all", 
   "ruamel_yaml": "all", 
+  "runipy": "all", 
   "s3fs": "all", 
   "sas7bdat": "all", 
   "scikit-bio": [
@@ -689,6 +853,12 @@
   "service_identity": "all", 
   "setuptools": "all", 
   "setuptools_scm": "all", 
+  "sh": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "shapely": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -782,12 +952,17 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "unxutils": [
+    "win-64:py27", 
+    "win-64:py35"
+  ], 
   "uuid": [
     "linux-64:py27", 
     "osx-64:py27", 
     "win-64:py27"
   ], 
   "vcversioner": "all", 
+  "venusian": "all", 
   "vs2008_runtime": [
     "win-64:py27"
   ], 
@@ -803,6 +978,11 @@
   "waitress": "all", 
   "wcwidth": "all", 
   "webob": "all", 
+  "websocket": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
   "webtest": "all", 
   "werkzeug": "all", 
   "wheel": "all", 

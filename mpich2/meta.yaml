@@ -1,0 +1,21 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: mpich2
+  version: 1.4.1p1
+
+source:
+  fn: mpich2-1.4.1p1.tar.gz
+  md5: b470666749bcb4a0449a072a18e2c204
+
+about:
+  home: http://www.mpich.org/
+  license: mpich license
+  license_family: Other
+  summary: A high performance widely portable implementation of the MPI standard
+  description: |
+    MPICH is a high performance and widely portable implementation of the
+    Message Passing Interface (MPI) standard.
+  doc_url: http://www.mpich.org/documentation/guides/
+  dev_url: https://wiki.mpich.org/mpich/index.php/Main_Page

@@ -1,0 +1,30 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: conda-api
+  version: 1.1.0
+
+source:
+  git_url: https://github.com/conda/conda-api.git
+  git_tag: 1.1.0
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - conda_api
+
+about:
+  home: https://github.com/conda/conda-api
+  license: BSD
+  summary: A light weight conda interface library
+  description: |
+    Conda-api documents a well-defined small and useful interface to conda,
+    which is stable across many conda versions. It also allows users to easily
+    interact conda from any environment.
+  dev_url: https://github.com/conda/conda-api

@@ -1,0 +1,34 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: html5lib
+  version: 0.999
+
+source:
+  fn: html5lib-0.999.tar.gz
+  url: https://pypi.python.org/packages/source/h/html5lib/html5lib-0.999.tar.gz
+  md5: acb8ba4d6db5637360a07859192eb7f8
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - six
+
+test:
+  imports:
+    - html5lib
+
+about:
+  home: https://github.com/html5lib/html5lib-python
+  license: MIT
+  license_file: LICENSE
+  summary: HTML parser based on the WHATWG HTML specifcation
+  description: |
+    html5lib is a pure-python library for parsing HTML. It is designed to
+    conform to the WHATWG HTML specification, as is implemented by all major
+    web browsers.
+  doc_url: http://html5lib.readthedocs.org/
+  dev_url: https://github.com/html5lib/html5lib-python

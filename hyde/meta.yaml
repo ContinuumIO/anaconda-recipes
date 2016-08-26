@@ -1,0 +1,42 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: hyde
+  version: 0.8.5
+
+source:
+  fn: hyde-0.8.5.tar.gz
+  url: http://pypi.python.org/packages/source/h/hyde/hyde-0.8.5.tar.gz
+  md5: 222631cfcc0dc52c2e5e746856475220
+
+build:
+  entry_points:
+    - hyde = hyde.main:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - jinja2
+    - markdown
+    - pygments
+    - pyyaml
+  run:
+    - python
+    - setuptools
+    - jinja2
+    - markdown
+    - pygments
+    - pyyaml
+
+test:
+  commands:
+    - hyde -h
+
+about:
+  home: http://hyde.github.io/
+  license: MIT
+  summary: A static website generator written in Python
+  doc_url: http://hyde.github.io/
+  dev_url: https://github.com/hyde/hyde
