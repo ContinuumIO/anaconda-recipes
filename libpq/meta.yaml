@@ -1,0 +1,46 @@
+package:
+    name: libpq
+    version: 9.5.4
+
+build:
+  number: 0
+  features:
+    - vc9               [win and py27]
+    - vc10              [win and py34]
+    - vc14              [win and py>34]
+  always_include_files:
+    - lib/libpq.so.5.8        [linux]
+    - lib/libpq.so.5          [linux]
+    - lib/libpq.so            [linux]
+    - lib/libpq.5.8.dylib     [osx]
+    - lib/libpq.5.dylib       [osx]
+    - lib/libpq.dylib         [osx]
+    - bin/pg_config           [unix]
+    - Library/bin/libpq.dll       [win]
+    - Library/bin/pg_config.exe   [win]
+
+requirements:
+  build:
+    - vc   9   [win and py27]
+    - vc  10   [win and py34]
+    - vc  14   [win and py>34]
+    - postgresql  9.5.4
+  run:
+    - vc   9   [win and py27]
+    - vc  10   [win and py34]
+    - vc  14   [win and py>34]
+
+test:
+  commands:
+    - pg_config
+
+about:
+  home: http://www.postgresql.org/
+  license: PostgreSQL license (http://www.postgresql.org/about/licence/)
+  license_family: Other
+  summary: The postgres runtime libraries and utilities (not the server itself)
+  description: |
+    PostgreSQL is a powerful, open source object-relational database system.
+    This is the runtime library, for use by psycopg2
+  doc_url: http://www.postgresql.org/docs/manuals/
+  dev_url: http://git.postgresql.org/gitweb/?p=postgresql.git

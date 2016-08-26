@@ -1,22 +1,48 @@
-# This is legacy recipe, which has not been tested using conda-build.
-# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
-
 package:
   name: postgresql
-  version: 9.1.4
+  version: 9.5.4
 
 source:
-  fn: postgresql-9.1.4.tar.bz2
-  md5: a8035688dba988b782725ac1aec60186
+  fn: postgresql-9.5.4.tar.bz2
+  url: https://ftp.postgresql.org/pub/source/v9.5.4/postgresql-9.5.4.tar.bz2
+  sha256: cf5e571164ad66028ecd7dd8819e3765470d45bcd440d258b686be7e69c76ed0
+  patches:
+    - fix_libraries_win.patch  [win]
+    - timezone.patch  [win and py35]
+    # https://www.postgresql.org/message-id/attachment/43919/0002-Support-parallel-build-with-MSBuild.patch
+    - symbol_tempfile.patch  [win]
 
 build:
-  number: 1
+  number: 0
+  features:
+    - vc9   [win and py27]
+    - vc10  [win and py34]
+    - vc14  [win and py>34]
 
 requirements:
   build:
-    - openssl
+#    - m2-bison         [win]
+#    - m2-diffutils     [win]
+#    - m2-flex          [win]
+    - openssl 1.0.*
+    - perl   >=5.20    [win]
+#    - posix    [win]
+    - python
+    - vc   9  [win and py27]
+    - vc  10  [win and py34]
+    - vc  14  [win and py>34]
+    - zlib 1.2.*
   run:
-    - openssl
+    - openssl 1.0.*
+    - vc   9  [win and py27]
+    - vc  10  [win and py34]
+    - vc  14  [win and py>34]
+    - zlib 1.2.*
+
+test:
+  commands:
+    - pg_config
+    - postgres --help
 
 about:
   home: http://www.postgresql.org/

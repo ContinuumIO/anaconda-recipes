@@ -1,0 +1,13 @@
+--- src\include\port.h.orig	2016-07-10 15:38:59.980023400 +1000
++++ src\include\port.h	2016-07-10 15:39:05.011273400 +1000
+@@ -214,8 +214,8 @@
+ 
+ /* Global variable holding time zone information. */
+ #ifndef __CYGWIN__
+-#define TIMEZONE_GLOBAL timezone
+-#define TZNAME_GLOBAL tzname
++#define TIMEZONE_GLOBAL _timezone
++#define TZNAME_GLOBAL _tzname
+ #else
+ #define TIMEZONE_GLOBAL _timezone
+ #define TZNAME_GLOBAL _tzname

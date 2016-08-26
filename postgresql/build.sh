@@ -1,13 +1,16 @@
 #!/bin/bash
 
-export CFLAGS="$CFLAGS -I$PREFIX/include"
-export LDFLAGS="-L$PREFIX/lib"
-
-if [ `uname` == Linux ]; then
-    COP="--with-openssl"
+if [ "$(uname)" == "Darwin" ]; then
+    LDFLAGS="-Wl,-rpath,$PREFIX/lib $LDFLAGS"
 fi
 
-./configure --without-readline $COP --prefix=$PREFIX
+./configure \
+    --prefix=$PREFIX \
+    --without-readline \
+    --with-libraries=$PREFIX/lib \
+    --with-includes=$PREFIX/include \
+    --enable-rpath \
+    --with-openssl
 
 make
 make install

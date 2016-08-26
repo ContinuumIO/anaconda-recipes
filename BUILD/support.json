@@ -430,6 +430,12 @@
     "linux-64:py35"
   ], 
   "libpng": "all", 
+  "libpq": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "libprotobuf": [
     "linux-64:py27", 
     "linux-64:py35"
