@@ -1,0 +1,27 @@
+package:
+  name: widgetsnbextension
+  version: 1.2.6
+
+source:
+  fn: widgetsnbextension-1.2.6.tar.gz
+  url: https://pypi.io/packages/source/w/widgetsnbextension/widgetsnbextension-1.2.6.tar.gz
+  md5: 0aa4e152c9ba2d704389dc2453f448c7
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - notebook >=4.2.0
+  run:
+    - python
+    - notebook >=4.2.0
+
+test:
+  imports:
+    - widgetsnbextension
+
+about:
+  home: http://ipython.org
+  license: BSD 3-clause
+  license_family: BSD
+  summary: IPython HTML widgets for Jupyter

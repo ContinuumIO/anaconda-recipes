@@ -314,6 +314,7 @@
     "win-64:py27", 
     "win-64:py35"
   ], 
+  "keyring": "all", 
   "krb5": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -809,6 +810,7 @@
     "linux-64:py27"
   ], 
   "whoosh": "all", 
+  "widgetsnbextension": "all", 
   "win_unicode_console": [
     "win-64:py27", 
     "win-64:py35"

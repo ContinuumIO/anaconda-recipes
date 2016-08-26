@@ -1,0 +1,36 @@
+package:
+  name: keyring
+  version: 9.3.1
+
+source:
+  fn: keyring-9.3.1.tar.gz
+  url: https://pypi.python.org/packages/7e/84/65816c2936cf7191bcb5b3e3dc4fb87def6f8a38be25b3a78131bbb08594/keyring-9.3.1.tar.gz
+  md5: 934aad9f3cdcc860029a0122fb5f67bb
+
+build:
+  entry_points:
+    - keyring = keyring.cli:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - setuptools_scm
+  run:
+    - python
+
+test:
+  commands:
+    - keyring -h
+  imports:
+    - keyring
+
+about:
+  home: https://github.com/jaraco/keyring
+  license: MIT
+  summary: store and access your passwords safely
+  description: |
+    The Python keyring lib provides a easy way to access the system keyring
+    service from python.  It can be used in any application that needs safe
+    password storage.
+  doc_url: http://pythonhosted.org/keyring/

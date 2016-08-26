@@ -1,11 +1,11 @@
 package:
   name: snakebite
-  version: 2.7.2
+  version: 2.11.0
 
 source:
-  fn: snakebite-2.7.2.tar.gz
-  url: https://pypi.python.org/packages/source/s/snakebite/snakebite-2.7.2.tar.gz
-  md5: 5a7275db9a6bf65af13bd57bc12ba547
+  fn: snakebite-2.11.0.tar.gz
+  url: https://pypi.python.org/packages/ed/44/d058b322004f7f0254e2848385dba8f180c3913bb833f16b5fffd784ef77/snakebite-2.11.0.tar.gz
+  md5: f841c561c0bdcc243ee8b821a4d4bda5
 
 requirements:
   build:
