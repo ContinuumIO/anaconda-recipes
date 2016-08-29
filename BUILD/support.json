@@ -430,12 +430,7 @@
     "linux-64:py35"
   ], 
   "libpng": "all", 
-  "libpq": [
-    "linux-64:py27", 
-    "linux-64:py35", 
-    "osx-64:py27", 
-    "osx-64:py35"
-  ], 
+  "libpq": "all", 
   "libprotobuf": [
     "linux-64:py27", 
     "linux-64:py35"
@@ -687,12 +682,7 @@
     "linux-64:py35"
   ], 
   "psutil": "all", 
-  "psycopg2": [
-    "linux-64:py27", 
-    "linux-64:py35", 
-    "osx-64:py27", 
-    "osx-64:py35"
-  ], 
+  "psycopg2": "all", 
   "ptyprocess": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -966,6 +956,10 @@
     "linux-64:py27", 
     "osx-64:py27", 
     "win-64:py27"
+  ], 
+  "vc": [
+    "win-64:py27", 
+    "win-64:py35"
   ], 
   "vcversioner": "all", 
   "venusian": "all", 

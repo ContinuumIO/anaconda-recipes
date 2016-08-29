@@ -1,0 +1,32 @@
+package:
+  name: vc
+  version: 9  [py27]
+  version: 10  [py34]
+  version: 14  [py>34]
+
+build:
+  number: 0
+  track_features:
+    - vc9  [py27]
+    - vc10  [py34]
+    - vc14  [py>34]
+
+requirements:
+  build:
+    # ensure that python is here to ensure that the selectors work right.
+    - python
+  run:
+    - vs2008_runtime  [py27]
+    - vs2010_runtime  [py34]
+    - vs2015_runtime  [py>34]
+
+about:
+  home: https://github.com/conda/conda/wiki/VC-features
+  license: Modified BSD License (3-clause)
+  license_family: BSD
+  summary: A meta-package to track VC features.
+  description: |
+      This metapackage is used to activate vc features without
+      depending on Python.
+  doc_url: https://github.com/conda/conda/wiki/VC-features
+  dev_url: https://github.com/conda/conda/wiki/VC-features
