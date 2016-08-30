@@ -15,13 +15,15 @@ requirements:
   run:
     - python
     - zope.interface >=4.0.2
+    - pywin32                  [win]
 
 test:
   imports:
     - twisted
-    - twisted.test.raiser           [py2k]
-    - twisted.python.sendmsg        [unix and py2k]
-    - twisted.runner.portmap        [unix and py2k]
+    - twisted.test.raiser
+    - twisted.python.sendmsg                     [unix and py2k]
+    - twisted.runner.portmap                     [unix and py2k]
+    - twisted.internet.iocpreactor.iocpsupport   [win]
 
 about:
   home: http://twistedmatrix.com/
