@@ -601,10 +601,6 @@
     "win-64:py27"
   ], 
   "pastedeploy": "all", 
-  "patch": [
-    "win-64:py27", 
-    "win-64:py35"
-  ], 
   "patchelf": [
     "linux-64:py27", 
     "linux-64:py35"

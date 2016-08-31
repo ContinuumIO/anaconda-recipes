@@ -1,11 +1,11 @@
 package:
   name: cryptography
-  version: 1.4
+  version: 1.5
 
 source:
-  fn: cryptography-1.4.tar.gz
-  url: https://pypi.python.org/packages/a9/5b/a383b3a778609fe8177bd51307b5ebeee369b353550675353f46cb99c6f0/cryptography-1.4.tar.gz
-  md5: a9763e3831cc7cdb402c028fac1ceb39
+  fn: cryptography-1.5.tar.gz
+  url: https://pypi.python.org/packages/6e/96/b8dab146e8be98061dae07e127f80cffa3061ab0e8da0d3d42f3308c6e91/cryptography-1.5.tar.gz
+  md5: d85a91af3e943c68fa5ff82a3ccdd5df
 
 requirements:
   build:
