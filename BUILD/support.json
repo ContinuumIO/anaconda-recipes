@@ -5,6 +5,7 @@
   "anaconda-client": "all", 
   "anaconda-verify": "all", 
   "ansi2html": "all", 
+  "appdirs": "all", 
   "appnope": [
     "osx-64:py27", 
     "osx-64:py35"
@@ -117,6 +118,7 @@
   "conda-api": "all", 
   "conda-build": "all", 
   "conda-env": "all", 
+  "configargparse": "all", 
   "configobj": "all", 
   "configparser": [
     "linux-64:py27", 

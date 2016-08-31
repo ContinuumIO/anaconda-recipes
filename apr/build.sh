@@ -6,9 +6,11 @@ API_VER=1.2.1
 
 # These three are built together because the builds depend on one another.
 
-curl http://www.interior-dsgn.com/apache/apr/apr-${APR_VER}.tar.bz2 -o apr.tar.bz2
-curl http://www.interior-dsgn.com/apache/apr/apr-util-${APU_VER}.tar.bz2 -o apr-util.tar.bz2
-curl http://www.interior-dsgn.com/apache/apr/apr-iconv-${API_VER}.tar.bz2 -o apr-iconv.tar.bz2
+MIRROR=http://www-us.apache.org/dist/
+
+curl $MIRROR/apr/apr-${APR_VER}.tar.bz2 -o apr.tar.bz2
+curl $MIRROR/apr/apr-util-${APU_VER}.tar.bz2 -o apr-util.tar.bz2
+curl $MIRROR/apr/apr-iconv-${API_VER}.tar.bz2 -o apr-iconv.tar.bz2
 
 tar -jxf apr.tar.bz2
 tar -jxf apr-util.tar.bz2

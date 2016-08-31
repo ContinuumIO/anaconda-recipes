@@ -3,7 +3,7 @@ package:
   version: 1.5.2
 
 build:
-  number:  1  [win]
+  number:  1
   features:
     - vc9     [win and py27]
     - vc10    [win and py34]

@@ -8,6 +8,7 @@ source:
   sha1: 1d45425ca324336ce2f4ae7d7b4cfbc5567c5446
 
 build:
+  number: 1  [unix]
   features:
     - vc9     [win and py27]
     - vc10    [win and py34]

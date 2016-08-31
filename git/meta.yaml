@@ -1,14 +1,17 @@
 package:
   name: git
-  version: 2.6.4
+  version: 2.9.3
 
 source:
-  fn: v2.6.4.tar.gz                                       [unix]
-  url: https://github.com/git/git/archive/v2.6.4.tar.gz   [unix]
-  sha256: 08e3ccdba87ca55140c8155a07e147f6c1cdd7b574690e960763b18474fd05ed  [unix]
-  fn: PortableGit-2.6.4-32-bit.7z.exe                     [win]
-  url: https://github.com/git-for-windows/git/releases/download/v2.6.4.windows.1/PortableGit-2.6.4-32-bit.7z.exe [win]
-  sha256: 5b0fcea5262db1a7676b5cd21df717cd02f1835a270d7f94d1537028462e61df  [win]
+  fn: v2.9.3.tar.xz                                       [unix]
+  url: https://www.kernel.org/pub/software/scm/git/git-2.9.3.tar.xz   [unix]
+  sha256: 9f1473350c1792310b51af03a9cb5cce841f68202f835b20d46312a30232fa63  [unix]
+  fn: PortableGit-2.9.3-32-bit.7z.exe                     [win32]
+  url: https://github.com/git-for-windows/git/releases/download/v2.9.3.windows.1/PortableGit-2.9.3-32-bit.7z.exe [win32]
+  sha256: cd142cbb124d7c3e3c3bf144785e57573afd2fc9c043447b7f5111ec044e6ced  [win32]
+  fn: PortableGit-2.9.3-64-bit.7z.exe                     [win64]
+  url: https://github.com/git-for-windows/git/releases/download/v2.9.3.windows.1/PortableGit-2.9.3-64-bit.7z.exe [win64]
+  sha256: 3423ea5c7e025a67903e05d1493680d6d5d6666429a9c400cc9e33beea5adb1b [win64]
 
 build:
   # git hardcodes paths to external utilities (e.g. curl)

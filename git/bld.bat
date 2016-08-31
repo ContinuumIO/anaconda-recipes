@@ -1,9 +1,10 @@
-7za x PortableGit-2.6.4-32-bit.7z.exe -o"%LIBRARY_PREFIX%\" -aoa
+7za x PortableGit-%PKG_VERSION%-%ARCH%-bit.7z.exe -o"%LIBRARY_PREFIX%\" -aoa
 cd %LIBRARY_PREFIX%
 call post-install.bat
-del git_bash.exe
-del git_cmd.exe
 del README.portable
+del git-bash.exe
+del git-cmd.exe
+MOVE LICENSE.txt %SRC_DIR%\COPYING
 del post-install.bat
 
 IF NOT EXIST %PREFIX%\Menu mkdir %PREFIX%\Menu

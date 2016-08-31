@@ -24,12 +24,12 @@ requirements:
     - python
     - setuptools
   run:
+    - python
     - conda >=4.1
     - filelock
     - jinja2
     - patchelf      [linux]
     - pycrypto
-    - python
     - pyyaml
 
 test:
