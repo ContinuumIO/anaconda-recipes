@@ -1,11 +1,11 @@
 package:
   name: ply
-  version: "3.8"
+  version: "3.9"
 
 source:
-  fn: ply-3.8.tar.gz
-  url: http://www.dabeaz.com/ply/ply-3.8.tar.gz
-  md5: 94726411496c52c87c2b9429b12d5c50
+  fn: ply-3.9.tar.gz
+  url: http://www.dabeaz.com/ply/ply-3.9.tar.gz
+  md5: c5c5767376eff902617fd9874f0c76b7
 
 requirements:
   build:

@@ -11,7 +11,6 @@ requirements:
   build:
     - python
     - setuptools
-
   run:
     - python
     - notebook
