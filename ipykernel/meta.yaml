@@ -1,11 +1,11 @@
 package:
   name: ipykernel
-  version: 4.4.1
+  version: 4.5.0
 
 source:
-  fn: ipykernel-4.4.1.tar.gz
-  url: https://pypi.python.org/packages/05/db/376a9010085f5a9d23792f274441b8f7f6c3636b3323e2377693de1e7cae/ipykernel-4.4.1.tar.gz
-  md5: eb5c2587e4a77741b666f602032483a7
+  fn: ipykernel-4.5.0.tar.gz
+  url: https://pypi.python.org/packages/94/f6/bcfffc99e3ae889a53724c68d2d2d3108e303874659815978b68b74791b3/ipykernel-4.5.0.tar.gz
+  md5: ddaa7b43d1680bc089d5616ab2b4163f
 
 requirements:
   build:
@@ -24,6 +24,7 @@ test:
 about:
   home: http://ipython.org
   license: BSD
+  license_file: COPYING.md
   summary: IPython Kernel for Jupyter
   doc_url: http://ipython.readthedocs.org/
   dev_url: https://github.com/ipython/ipython

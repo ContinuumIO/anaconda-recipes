@@ -1,11 +1,11 @@
 package:
   name: jupyter_client
-  version: 4.3.0
+  version: 4.4.0
 
 source:
-  fn: jupyter_client-4.3.0.tar.gz
-  url: https://pypi.python.org/packages/66/2d/5c1bd097ad63b4b1a66bb88e31ff146284ed5bb86bdd437765cd56acdf8c/jupyter_client-4.3.0.tar.gz
-  md5: 4ae3d5e04baea1e8fa8d3ec24c600c17
+  fn: jupyter_client-4.4.0.tar.gz
+  url: https://pypi.python.org/packages/88/03/d8e218721af0b084d4fda5e3bb89dc201505780f96ae060bf5e3e67c7707/jupyter_client-4.4.0.tar.gz
+  md5: 8a428a07cbcd4f2e4ca7c2f728b718ea
 
 requirements:
   build:
