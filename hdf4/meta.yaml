@@ -6,6 +6,8 @@ source:
   fn: hdf-4.2.12.tar.bz2
   url: http://www.hdfgroup.org/ftp/HDF/HDF_Current/src/hdf-4.2.12.tar.gz
   md5: 79fd1454c899c05e34a3da0456ab0c1c
+  patches:
+    - 0001-Win32-Disable-test_longfilename-due-to-MAX_PATH.patch
 
 build:
   features:
@@ -15,6 +17,9 @@ build:
 
 requirements:
   build:
+    - vc 9                [win and py27]
+    - vc 10               [win and py34]
+    - vc 14               [win and py35]
     - cmake               [win]
     - jpeg 8d
     - openssl 1.0.2*      [unix]

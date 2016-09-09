@@ -6,7 +6,7 @@ mkdir build
 cd build
 
 :: Configure step.
-cmake -G "NMake Makefiles" ^
+cmake -G "%CMAKE_GENERATOR%" ^
       -D CMAKE_BUILD_TYPE=Release ^
       -D HDF4_BUILD_HL_LIB=ON ^
       -D CMAKE_PREFIX_PATH=%LIBRARY_PREFIX% ^
@@ -18,17 +18,15 @@ cmake -G "NMake Makefiles" ^
       -D HDF4_ENABLE_NETCDF=NO ^
       -D BUILD_SHARED_LIBS:BOOL=ON ^
       -D CMAKE_INSTALL_PREFIX:PATH=%LIBRARY_PREFIX% ^
+      -D CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP=ON ^
+      -D CMAKE_TRY_COMPILE_CONFIGURATION=Release ^
       %SRC_DIR%
 if errorlevel 1 exit 1
 
 :: Build.
-nmake
+cmake --build . --config Release --target INSTALL
 if errorlevel 1 exit 1
 
 :: Test.
-ctest
-if errorlevel 1 exit 1
-
-:: Install.
-nmake install
+ctest -C Release
 if errorlevel 1 exit 1

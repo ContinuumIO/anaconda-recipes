@@ -1,32 +1,43 @@
-# This is legacy recipe, which has not been tested using conda-build.
-# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
-
 package:
   name: cmake
-  version: 3.3.1
+  version: 3.6.1
 
 source:
-  url: http://www.cmake.org/files/v3.3/cmake-3.3.1.tar.gz  [not win]
-  fn: cmake-3.3.1.tar.gz  [not win]
-  url: http://www.cmake.org/files/v3.3/cmake-3.3.1-win32-x86.zip [win]
-  fn: cmake-3.3.1-win32-x86.zip [win]
+  url: https://cmake.org/files/v3.6/cmake-3.6.1.tar.gz         [not win or win]
+  sha256: 28ee98ec40427d41a45673847db7a905b59ce9243bb866eaf59dce0f58aaef11                 [not win or win]
+  url: https://cmake.org/files/v3.6/cmake-3.6.1-win32-x86.zip  [False and win]
+  sha256: 60089b4e05a997edda49f40d4b6db883e0ce5bbe9fdedb5106739dbfe58a8055                 [False and win]
 
 build:
-  binary_relocation: False           [osx]
+  number: 0
+  detect_binary_files_with_prefix: true
+  features:
+    - vc9               [win and py27]
+    - vc10              [win and py34]
+    - vc14              [win and py35]
+
+requirements:
+  build:
+    - gcc               [unix]
+    - qt 5.6.*
+#    - m2-curl           [win]
+#    - m2-unzip          [win]
+    - jom               [win]
+    - vc   9            [win and py27]
+    - vc  10            [win and py34]
+    - vc  14            [win and py>34]
+  run:
+    - libgcc            [unix]
+    - qt 5.6.*
+    - vc   9            [win and py27]
+    - vc  10            [win and py34]
+    - vc  14            [win and py>34]
 
 test:
   commands:
-    - cmake --version [not win]
+    - cmake --help
 
 about:
   home: http://www.cmake.org/
-  license:  3-clause BSD
-  license_family: BSD
-  summary: A family of tools designed to build, test, and package software
-  description: |
-   CMake is used to control the software compilation process using simple
-   platform and compiler independent configuration files, and generate native
-   makefiles and workspaces that can be used in the compiler environment of
-   your choice.
-  doc_url: https://cmake.org/documentation/
-  dev_url: https://github.com/Kitware/CMake
+  license: BSD
+  summary: A cross-platform open-source make system

@@ -1,0 +1,15 @@
+--- hdf-4.2.12/mfhdf/test/tfile.c.orig	2016-06-29 14:23:17.000000000 +0100
++++ hdf-4.2.12/mfhdf/test/tfile.c	2016-09-09 11:47:55.953163100 +0100
+@@ -447,8 +447,12 @@
+        09/07/05 - BMR */
+     num_errs = num_errs + test_max_open_files();
+ 
++#if !defined(_WIN32)
++    /* Conda: Have had to disable this on Windows since we build and run
++     * tests in already very deep prefixes and this blows the 260 limit.  */
+     /* test the fix of bugzzila 1331. 01/16/09 - BMR */
+     num_errs = num_errs + test_longfilename();
++#endif
+ 
+     /* test the fix of JIRA HDFFR-1519. 06/06/16 - BMR */
+     num_errs = num_errs + test_fileformat();
