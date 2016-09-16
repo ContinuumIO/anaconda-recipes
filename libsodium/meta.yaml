@@ -9,7 +9,8 @@ source:
 
 about:
   home: http://libsodium.org
-  license: MIT
+  license: ISC
+  license_family: Other
   license_file: LICENSE
   summary: A library for encryption, signatures, password hashing, etc.
   description: |

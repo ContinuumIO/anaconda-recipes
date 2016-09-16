@@ -1,0 +1,29 @@
+package:
+  name: anaconda-clean
+  version: 1.0
+
+source:
+  git_url: https://github.com/ContinuumIO/anaconda-clean
+  git_tag: v1.0
+
+build:
+  entry_points:
+    - anaconda-clean = anaconda_clean:main
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  commands:
+    - anaconda-clean --help
+  imports:
+    - anaconda_clean
+
+about:
+  home: https://github.com/ContinuumIO/anaconda-clean
+  license: BSD
+  summary: Delete Anaconda configuration files 
+  dev_url: https://github.com/ContinuumIO/anaconda-clean

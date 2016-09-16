@@ -21,7 +21,7 @@ test:
 
 about:
   home: https://github.com/pypa/setuptools_scm
-  license: BSD
+  license: MIT
   license_file: LICENSE
   summary: Manage your versions by scm tags
   description: |

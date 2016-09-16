@@ -1,18 +1,16 @@
 package:
   name: matplotlib
-  version: 1.5.1
+  version: 1.5.3
 
 source:
-  fn: matplotlib-1.5.1.tar.gz
-  url: https://pypi.python.org/packages/source/m/matplotlib/matplotlib-1.5.1.tar.gz
-  md5: f51847d8692cb63df64cd0bd0304fd20
+  fn: matplotlib-1.5.3.tar.gz
+  url: https://pypi.python.org/packages/75/4e/2374eed18ac34421ccd7b4907080abd3009e112ca2c11b100c18961312e0/matplotlib-1.5.3.tar.gz
+  md5: ba993b06113040fee6628d74b80af0fd
   patches:
-    - setupext.patch
     - cfg.patch
     - cfg_notests.patch
     - cfg_qt4agg.patch    [not osx]
     - rctmp_pyside.patch  [not osx]
-    - osx-tk.patch        [osx]
     - osx-frame.patch     [osx]
     - win_library_path.patch [win]
     - omit_pep8.patch    [win]

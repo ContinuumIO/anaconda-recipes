@@ -1,11 +1,11 @@
 package:
   name: setuptools
-  version: 26.1.1
+  version: 27.2.0
 
 source:
-  fn: setuptools-26.1.1.tar.gz
-  url: https://pypi.python.org/packages/32/3c/e853a68b703f347f5ed86585c2dd2828a83252e1216c1201fa6f81270578/setuptools-26.1.1.tar.gz
-  md5: 0744ee90ad266fb117d59f94334185d0
+  fn: setuptools-27.2.0.tar.gz
+  url: https://pypi.python.org/packages/87/ba/54197971d107bc06f5f3fbdc0d728a7ae0b10cafca46acfddba65a0899d8/setuptools-27.2.0.tar.gz
+  md5: b39715612fdc0372dbfd7b3fcf5d4fe5
   patches:
     - nodownload.patch
     - setup.patch

@@ -1,6 +1,6 @@
 package:
   name: orange3
-  version: 3.3.7
+  version: 3.3.6
 
 source:
   git_url: https://github.com/biolab/orange3.git

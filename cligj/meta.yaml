@@ -21,7 +21,7 @@ test:
 
 about:
   home: https://github.com/mapbox/cligj
-  license: MIT
+  license: BSD
   license_file: LICENSE
   summary: Click-based argument and option decorators
   description:  |

@@ -24,7 +24,7 @@ test:
     - persistent.cPickleCache
 
 about:
-  home: http://www.zope.org/Products/ZODB
+  home: https://pypi.python.org/pypi/persistent
   license: ZPL 2.1
   license_family: Other
   license_file: LICENSE.txt

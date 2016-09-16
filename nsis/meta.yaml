@@ -1,0 +1,17 @@
+package:
+  name: nsis
+  version: 3.0
+
+about:
+  home: http://nsis.sourceforge.net/Main_Page
+  license: Common public License Version 1.0, zlib
+  license_file: COPYING
+  license_family: Other
+  summary: A professional open source system to create Windows installers
+  description: |
+    NSIS (Nullsoft Scriptable Install System) is a professional open source
+    system to create Windows installers. It is designed to be as small and
+    flexible as possible and is therefore very suitable for internet
+    distribution.
+  doc_url: http://nsis.sourceforge.net/Docs/
+  dev_url: https://github.com/NSIS-Dev

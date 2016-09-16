@@ -29,7 +29,7 @@ test:
 
 about:
   home: https://github.com/Anaconda-Server/chalmers
-  license: BSD
+  license: MIT
   summary: Monitor and control a number of processes on any operating system
   description: |
     Chalmers allows you to monitor and control a number of processes. This

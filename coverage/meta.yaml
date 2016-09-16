@@ -27,7 +27,8 @@ test:
 
 about:
   home: http://coverage.readthedocs.org
-  license: BSD
+  license: Apache 2.0
+  license_family: Apache
   license_file: LICENSE.txt
   summary: Code coverage measurement for Python
   description: |

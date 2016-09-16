@@ -1,11 +1,11 @@
 package:
   name: traitlets
-  version: 4.2.2
+  version: 4.3.0
 
 source:
-  fn: traitlets-4.2.2.tar.gz
-  url: https://pypi.python.org/packages/a4/07/9b7636322c152ab1dacae9d38131067523d6ce5ca926a656586f6f947e77/traitlets-4.2.2.tar.gz
-  md5: d0725f9818bd9e112a6531da26d433b8
+  fn: traitlets-4.3.0.tar.gz
+  url: https://pypi.python.org/packages/a7/47/bd149e0c9ed0b8b634d6df2eb6ff11d63886759fb379c60605653e6281c2/traitlets-4.3.0.tar.gz
+  md5: c26c7157d2e942b25071db490aea6a7d
 
 requirements:
   build:
@@ -14,6 +14,8 @@ requirements:
     - python
     - ipython_genutils
     - decorator
+    - six
+    - enum34               [py < 34]
 
 test:
   imports:

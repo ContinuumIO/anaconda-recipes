@@ -11,8 +11,8 @@ source:
 
 about:
   home: http://www.mpich.org/
-  license: mpich license
-  license_family: Other
+  license: BSD
+  license_file: COPYRIGHT
   summary: A high performance widely portable implementation of the MPI standard
   description: |
     MPICH is a high performance and widely portable implementation of the

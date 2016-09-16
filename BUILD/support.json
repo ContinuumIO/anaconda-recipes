@@ -2,6 +2,7 @@
   "affine": "all", 
   "alabaster": "all", 
   "anaconda-build": "all", 
+  "anaconda-clean": "all", 
   "anaconda-client": "all", 
   "anaconda-verify": "all", 
   "ansi2html": "all", 

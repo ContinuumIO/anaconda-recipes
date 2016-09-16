@@ -20,7 +20,8 @@ test:
 
 about:
   home: https://github.com/kurtmckee/feedparser
-  license: MIT
+  license: OSI Approved
+  license_family: Other
   license_file: LICENSE
   summary: parse feeds in Python
   description: |

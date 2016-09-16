@@ -1,8 +1,7 @@
 copy setup.cfg.template setup.cfg
 if errorlevel 1 exit 1
 
-set INCLUDE=%LIBRARY_INC%;%LIBRARY_INC%\freetype2
-REM %INCLUDE%
+set INCLUDE=%LIBRARY_INC%;%LIBRARY_INC%\freetype2;%INCLUDE%
 
 %PYTHON% setup.py install --old-and-unmanageable
 if errorlevel 1 exit 1
