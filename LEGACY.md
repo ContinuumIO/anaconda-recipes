@@ -28,3 +28,8 @@ differences:
     Most importantly `build/detect_binary_files_with_prefix`.
   * There are slight differences in how environment variables are set during
     the execution of `build.sh` and `bld.bat`.
+
+These legacy recipes (like all conda recipes), are meant to be build using
+the `conda-build` command, see: https://github.com/conda/conda-build
+However, it might be necessary to make some small changes in order to make the
+recipe work, as legacy recipes have not been tested to work with conda-build.
