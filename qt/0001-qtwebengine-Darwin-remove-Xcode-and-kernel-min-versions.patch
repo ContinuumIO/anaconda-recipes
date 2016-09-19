@@ -1,0 +1,24 @@
+diff -urN qt-everywhere-opensource-src-5.6.0.orig/qtwebengine/tools/qmake/mkspecs/features/functions.prf qt-everywhere-opensource-src-5.6.0/qtwebengine/tools/qmake/mkspecs/features/functions.prf
+--- qt-everywhere-opensource-src-5.6.0.orig/qtwebengine/tools/qmake/mkspecs/features/functions.prf	2016-07-20 13:01:12.000000000 +0100
++++ qt-everywhere-opensource-src-5.6.0/qtwebengine/tools/qmake/mkspecs/features/functions.prf	2016-07-20 14:09:44.000000000 +0100
+@@ -19,20 +19,6 @@
+       skipBuild("Qt WebEngine on Windows requires MSVC 2013 or MSVC 2015.")
+       return(false)
+     }
+-  } else:osx {
+-    lessThan(QMAKE_XCODE_VERSION, 5.1) {
+-      skipBuild("Using XCode version $$QMAKE_XCODE_VERSION, but at least version 5.1 is required to build Qt WebEngine.")
+-      return(false)
+-    }
+-    # We require OS X 10.9 (darwin version 13.0.0) or newer
+-    darwin_major_version = $$section(QMAKE_HOST.version, ., 0, 0)
+-    lessThan(darwin_major_version, 13) {
+-      skipBuild("Qt WebEngine requires OS X version 10.9 or newer.")
+-      return(false)
+-    }
+-  } else {
+-    skipBuild("Unknown platform. Qt WebEngine only supports Linux, Windows, and OS X.")
+-    return(false)
+   }
+ 
+   !contains(QT_CONFIG, c++11) {

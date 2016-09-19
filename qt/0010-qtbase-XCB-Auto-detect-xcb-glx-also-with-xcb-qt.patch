@@ -1,0 +1,31 @@
+From 2852a8b87e3a8ed95b72d26b0e180b7fd4491cf3 Mon Sep 17 00:00:00 2001
+From: Gabriel de Dietrich <gabriel.dedietrich@theqtcompany.com>
+Date: Fri, 26 Feb 2016 11:53:01 -0800
+Subject: [PATCH] XCB: Auto-detect xcb-glx also with xcb-qt
+
+Task-number: QTBUG-43784
+Change-Id: Iaa0388e34900f6241db8cd864caed4fb6fc32819
+Reviewed-by: Laszlo Agocs <laszlo.agocs@theqtcompany.com>
+---
+ configure | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/configure b/configure
+index ce5b9c2..a481981 100755
+--- qtbase/configure
++++ qtbase/configure
+@@ -5555,6 +5555,11 @@ if [ "$CFG_XCB" != "no" ]; then
+ 
+         if [ "$CFG_XCB" = "qt" ]; then
+             QT_CONFIG="$QT_CONFIG xcb-qt"
++
++            if compileTest qpa/xcb-glx "xcb-glx" $QMAKE_CFLAGS_XCB $QMAKE_LIBS_XCB; then
++                CFG_XCB_GLX=yes
++                QT_CONFIG="$QT_CONFIG xcb-glx"
++            fi
+         else
+             CFG_XCB="system"
+             if [ -n "$PKG_CONFIG" ] && $PKG_CONFIG --exists "xcb >= 1.5" 2>/dev/null; then
+-- 
+2.9.0
+

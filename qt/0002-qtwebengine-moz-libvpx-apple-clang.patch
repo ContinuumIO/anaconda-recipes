@@ -1,0 +1,14 @@
+--- qt-everywhere-opensource-src-5.6.0/qtwebengine/src/3rdparty/chromium/third_party/libvpx/source/libvpx/vp9/common/x86/vp9_subpixel_8t_intrin_avx2.c.orig	2016-03-03 14:48:36.000000000 +0000
++++ qt-everywhere-opensource-src-5.6.0/qtwebengine/src/3rdparty/chromium/third_party/libvpx/source/libvpx/vp9/common/x86/vp9_subpixel_8t_intrin_avx2.c	2016-07-21 13:53:36.000000000 +0100
+@@ -41,7 +41,10 @@
+ 
+ #if defined(__clang__)
+ # if __clang_major__ < 3 || (__clang_major__ == 3 && __clang_minor__ <= 3) || \
+-      (defined(__APPLE__) && __clang_major__ == 5 && __clang_minor__ == 0)
++      (defined(__APPLE__) && \
++          (__clang_major__ == 4 && __clang_minor__ >= 0 && \
++              __clang_minor__ <= 2) || \
++          (__clang_major__ == 5 && __clang_minor__ == 0))
+ #  define MM256_BROADCASTSI128_SI256(x) \
+        _mm_broadcastsi128_si256((__m128i const *)&(x))
+ # else  // clang > 3.3, and not 5.0 on macosx.

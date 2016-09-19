@@ -1,20 +1,48 @@
-# This is legacy recipe, which has not been tested using conda-build.
-# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
-
 package:
   name: icu
-  version: 54.1
+  version: 54.1    [unix]
+  version: 57.1    [win]
 
 source:
-  fn: icu4c-54_1-Win64-msvc10.zip                                                    # [win64]
-  url: http://download.icu-project.org/files/icu4c/54.1/icu4c-54_1-Win64-msvc10.zip  # [win64]
-  md5: 4d85e1817a5a59582517262b9396c7ba                                              # [win64]
-  fn: icu4c-54_1-Win32-msvc10.zip                                                    # [win32]
-  url: http://download.icu-project.org/files/icu4c/54.1/icu4c-54_1-Win32-msvc10.zip  # [win32]
-  md5: 2419927dae9f0ac2498b10de657ff6d3                                              # [win32]
-  fn: icu4c-54_1-src.tgz                                                             # [unix]
-  url: http://download.icu-project.org/files/icu4c/54.1/icu4c-54_1-src.tgz           # [unix]
-  md5: e844caed8f2ca24c088505b0d6271bc0                                              # [unix]
+  fn: icu4c-54_1-src.tgz    [unix]
+  url: http://download.icu-project.org/files/icu4c/54.1/icu4c-54_1-src.tgz   [unix]
+  md5: e844caed8f2ca24c088505b0d6271bc0   [unix]
+  fn:  icu4c-57_1-src.tgz   [win]
+  url: http://download.icu-project.org/files/icu4c/57.1/icu4c-57_1-src.tgz   [win]
+  sha256: ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581   [win]
+  patches:
+    - 0001-fix-icudat.res-race-condition.patch   [win]
+
+build:
+  number: 0
+  features:
+    - vc9     [win and py27]
+    - vc10    [win and py34]
+    - vc14    [win and py35]
+
+requirements:
+  build:
+#    - posix   [win]
+#    - m2w64-binutils   [win]
+#    - msinttypes    [win and py<34]
+
+test:
+  files:
+    # from http://source.icu-project.org/repos/icu/data/trunk/charset/data/ucm/gb-18030-2000.ucm
+    - gb-18030-2000.ucm
+    # from ICU's data folder
+    - de.txt
+  commands:
+    # CLI tests
+    - genbrk --help                [unix]
+    - gencfu --help                [unix]
+    - gencnval --help              [unix]
+    - gendict --help               [unix]
+    - icuinfo --help               [unix]
+    - icu-config --help            [unix]
+    - makeconv gb-18030-2000.ucm   [unix]
+
+    # TODO: Windows tests
 
 about:
     home: http://site.icu-project.org/

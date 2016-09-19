@@ -1,11 +1,11 @@
 package:
   name: babel
-  version: 2.3.3
+  version: 2.3.4
 
 source:
-  fn: Babel-2.3.3.tar.gz
-  url: https://pypi.python.org/packages/source/B/Babel/Babel-2.3.3.tar.gz
-  md5: 7385ea5b37005f4b2015f971044431f6
+  fn: Babel-2.3.4.tar.gz
+  url: https://pypi.python.org/packages/6e/96/ba2a2462ed25ca0e651fb7b66e7080f5315f91425a07ea5b34d7c870c114/Babel-2.3.4.tar.gz
+  md5: afa20bc55b0e991833030129ad498f35
 
 build:
   entry_points:

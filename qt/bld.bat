@@ -1,63 +1,171 @@
-set INCLUDE=%LIBRARY_INC%;%INCLUDE%
-set LIB=%LIBRARY_LIB%;%LIB%
+@echo on
+setlocal EnableDelayedExpansion
+set QMAKESPEC=win32-msvc%VS_YEAR%
+set SHORT_VERSION=%PKG_VERSION:~0,-2%
 
-cd qt-everywhere-opensource-src-%PKG_VERSION%
+:: conda-forge/obviousci's obvci_appveyor_python_build_env.cmd used
+:: so we shouldn't include it finally.  I use it to set the correct
+:: Windows SDK, but conda-build should take care of that probably??
+:: It requires TARGET_ARCH to be one of x64 or x86.  On conda-forge
+:: this script is run *before* bld.bat.
+if "%ARCH%" == "64" (
+  set TARGET_ARCH=x64
+) else (
+  set TARGET_ARCH=x86
+)
+call %RECIPE_DIR%\obvci_appveyor_python_build_env.cmd
 
-echo y | configure.exe -prefix %LIBRARY_LIB%\qt4 ^
-                       -libdir %LIBRARY_LIB% ^
-                       -bindir %LIBRARY_BIN% ^
-                       -headerdir %LIBRARY_INC%\qt4 ^
-                       -datadir %LIBRARY_LIB%\qt4 ^
-                       -release ^
-                       -shared ^
-                       -opensource ^
-                       -fast ^
-                       -no-qt3support ^
-                       -nomake examples ^
-                       -nomake demos ^
-                       -nomake docs ^
-                       -openssl ^
-                       -webkit ^
-                       -system-zlib ^
-                       -system-libpng ^
-                       -system-libtiff ^
-                       -system-libjpeg
+if "%DXSDK_DIR%" == "" (
+  echo You do not appear to have the DirectX SDK installed.  Please get it from
+  echo    https://www.microsoft.com/en-us/download/details.aspx?id=6812
+  echo and try this build again.  If you have installed it, and are still seeing
+  echo this message, please open a new console to refresh your environment variables.
+  exit /b 1
+)
 
-bin\qmake -r QT_BUILD_PARTS="libs tools"
+:: Webengine requires either working OpenGL drivers or
+:: Angle (therefore DirectX >= 11). This works on some
+:: VMs and not others.  Windows 7 VirtualBox instantly
+:: aborts when loading Spyder sSo we've had to disable
+:: it globally.
+:: Using Mesa from MSYS2 is mentioned as a workaround:
+::  http://wiki.qt.io/Cross-compiling-Mesa-for-Windows
+:: `set QT_OPENGL=software` forces Qt5 to use that but
+:: but when I tried it it was too buggy; Spyder crashed a
+:: little bit later, though it worked for Carlos.
+set AVOID_WEBENGINE=yes
+set WEBBACKEND=qtwebengine
+if %VS_MAJOR% LSS 14 (
+  set WEBBACKEND=qtwebkit
+)
+if "%AVOID_WEBENGINE%" == "yes" (
+  set WEBBACKEND=qtwebkit
+)
 
-jom -j%NUMBER_OF_PROCESSORS%
-if errorlevel 1 exit 1
-nmake install
-if errorlevel 1 exit 1
+:: Shorten our build path as much as possible
+set _BLDTMP=C:\qt5-%ARCH%-%CONDA_PY%
+if "%DIRTY%" == "" (
+  if "%WEBBACKEND%" == "qtwebkit" (
+    curl -LO "http://download.qt.io/community_releases/%SHORT_VERSION%/%PKG_VERSION%/qtwebkit-opensource-src-%PKG_VERSION%.tar.xz"
+    if errorlevel 1 exit 1
+    7za x -so qtwebkit-opensource-src-%PKG_VERSION%.tar.xz | 7za x -si -aoa -ttar > NUL 2>&1
+    if errorlevel 1 exit 1
+    move qtwebkit-opensource-src-%PKG_VERSION% qtwebkit
+  )
+  if exist %_BLDTMP% (
+    rmdir /s /q %_BLDTMP%
+  )
+  mkdir %_BLDTMP%
+  :: Copy all files except bld.bat, which needs to stay in place while script runs
+  robocopy %SRC_DIR%\ %_BLDTMP%\ *.* /E /NFL /NDL /xf bld.bat
+)
+pushd %_BLDTMP%
 
-rd /S /Q %LIBRARY_LIB%\qt4\phrasebooks
-rd /S /Q %LIBRARY_LIB%\qt4\bin
-rd /S /Q %LIBRARY_LIB%\qt4\tests
-del %LIBRARY_LIB%\qt4\q3porting.xml
+:: set path to find resources shipped with qt-5 (and also Ruby for qtwebkit)
+:: see http://doc-snapshot.qt-project.org/qt5-5.4/windows-building.html
+set "PATH=%CD%\qtbase\bin;%CD%\gnuwin32\bin;C:\Ruby23\bin;%PATH%"
 
-:: These are here to map cl.exe version numbers, which we use to figure out which
-:: compiler we are using, and which compiler consumers of Qt need to use, to MSVC
-:: year numbers, which is how qt identifies MSVC versions.
-:: Update this with any new MSVC compiler you might use.
-echo @echo 15=2008 >> msvc_versions.bat
-echo @echo 16=2010 >> msvc_versions.bat
-echo @echo 17=2012 >> msvc_versions.bat
-echo @echo 18=2013 >> msvc_versions.bat
-echo @echo 19=2015 >> msvc_versions.bat
+:: Install a custom python 27 environment for us, to use in building webengine, but avoid feature activation
+:: At present (5th July 2016) calling `conda create -y -n python27_qt5_build python=2.7` causes the build to
+:: fail immediately after, so I'm bodging around that by not doing it if it exists.  This means you must run
+:: the builds twice. Sorry. Time is not on my side here.
+if "%WEBBACKEND%" == "qtwebengine" (
+  if not exist %SYS_PREFIX%\envs\python27_qt5_build (
+    conda create -y -n python27_qt5_build python=2.7
+  )
+  set "PATH=%SYS_PREFIX%\envs\python27_qt5_build;%SYS_PREFIX%\envs\python27_qt5_build\Scripts;%SYS_PREFIX%\envs\python27_qt5_build\Library\bin;%PATH%"
+)
 
-for /f "delims=" %%A in ('cl /? 2^>^&1 ^| findstr /C:"Version"') do set "CL_TEXT=%%A"
-FOR /F "tokens=1,2 delims==" %%i IN ('msvc_versions.bat') DO echo %CL_TEXT% | findstr /C:"Version %%i" > nul && set VSTRING=%%j && goto FOUND
-EXIT 1
-:FOUND
+:: make sure we can find ICU and openssl:
+set "INCLUDE=%LIBRARY_INC%;%INCLUDE%"
+set "LIB=%LIBRARY_LIB%;%LIB%"
 
-mkdir %LIBRARY_LIB%\qt4\mkspecs\win32-msvc-default
-copy %LIBRARY_LIB%\qt4\mkspecs\win32-msvc%VSTRING:~0,4%\* %LIBRARY_LIB%\qt4\mkspecs\win32-msvc-default\
+:: WebEngine (Chromium) specific definitions.  Only build this with VS 2015 (no support for python < 3.5)
+if "%WEBBACKEND%" == "qtwebengine" (
+  set "WSDK8=C:\\Program\ Files\ (x86)\\Windows\ Kits\\8.1"
+  set "WDK=C:\\WinDDK\\7600.16385.1"
+  set "INCLUDE=%WSDK8%\Include;%WDK%\inc;%INCLUDE%"
+  if "%ARCH%"=="32" (
+    set "PATH=%WSDK8%\bin\x86;%WDK$%\bin\x86;%PATH%"
+    set "LIB=%LIB%;%WSDK8%\Lib\winv6.3\um\x86"
+  ) else (
+    set "PATH=%WSDK8%\bin\x64;%WDK$%\bin\amd64;%PATH%"
+    set "LIB=%LIB%;%WSDK8%\Lib\winv6.3\um\x64"
+  )
+  set "GYP_DEFINES=windows_sdk_path='%WSDK8%'"
+  set GYP_MSVS_VERSION=2015
+  set GYP_GENERATORS=ninja
+  set GYP_PARALLEL=1
+  set "WDK_DIR=%WDK%"
+  set "WindowsSDKDir=%WSDK8%"
+) else (
+  rmdir /s /q qtwebengine
+)
 
+:: Angle requires C++11 compilers so vc9 Qt5 must only use DesktopGL
+:: QT_OPENGL=software *may* work too given non-broken opengl32sw.dll
+if %VS_MAJOR% LSS 10 (
+  set OPENGLVER=desktop
+) else (
+  set OPENGLVER=dynamic
+)
+
+:: Make sure we can find sqlite3:
+set SQLITE3SRCDIR=%CD%\qtbase\src\3rdparty\sqlite
+
+:: Patch does not apply cleanly.  Copy file.
+:: https://codereview.qt-project.org/#/c/141019/
+copy %RECIPE_DIR%\tst_compiler.cpp qtbase\tests\auto\other\compiler\
+
+:: See http://doc-snapshot.qt-project.org/qt5-5.4/windows-requirements.html
+
+:: this needs to be CALLed due to an exit statement at the end of configure:
+call configure ^
+     -prefix %LIBRARY_PREFIX% ^
+     -libdir %LIBRARY_LIB% ^
+     -bindir %LIBRARY_BIN% ^
+     -headerdir %LIBRARY_INC%\qt ^
+     -archdatadir %LIBRARY_PREFIX% ^
+     -datadir %LIBRARY_PREFIX% ^
+     -L %LIBRARY_LIB% ^
+     -I %LIBRARY_INC% ^
+     -confirm-license ^
+     -fontconfig ^
+     -icu ^
+     -no-separate-debug-info ^
+     -no-warnings-are-errors ^
+     -nomake examples ^
+     -nomake tests ^
+     -no-warnings-are-errors ^
+     -opengl %OPENGLVER% ^
+     -opensource ^
+     -openssl ^
+     -platform win32-msvc%VS_YEAR% ^
+     -release ^
+     -shared ^
+     -system-libjpeg ^
+     -system-libpng ^
+     -system-zlib
+
+:: To get a much quicker turnaround you can add this: (remember also to add the hat symbol after -system-zlib)
+:: -skip %WEBBACKEND% -skip qtwebsockets -skip qtwebchannel -skip qtwayland -skip qtwinextras -skip qtsvg -skip qtsensors -skip qtcanvas3d -skip qtconnectivity -skip declarative -skip multimedia -skip qttools
+
+:: jom is nmake alternative with multicore support, uses all cores by default
+jom release
+if errorlevel 1 exit /b 1
+jom install
+if errorlevel 1 exit /b 1
+
+:: See above. At present `conda remove` also causes immediate build failure.
+rem if "%WEBBACKEND%" == "qtwebengine" (
+rem   conda remove -y -n python27_qt5_build --all
+rem )
+
+%PYTHON% %RECIPE_DIR%\patch_prefix_files.py %_BLDTMP%
+
+:: To rewrite qt.conf contents per conda environment
 copy "%RECIPE_DIR%\write_qtconf.bat" "%PREFIX%\Scripts\.qt-post-link.bat"
 
-:: Rename executables to avoid clashes with Qt5
-cd %LIBRARY_BIN%
-for /r "%LIBRARY_BIN%" %%f in (*.exe) do (
-    move %%~nf.exe %%~nf-qt4.exe
-    if errorlevel 1 exit 1
-)
+popd
+
+rmdir /S /Q %_BLDTMP%

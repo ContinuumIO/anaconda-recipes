@@ -1,0 +1,20 @@
+--- qtbase/mkspecs/features/qt_common.prf.orig	2016-07-03 13:38:38.292218828 +0100
++++ qtbase/mkspecs/features/qt_common.prf	2016-07-03 13:41:57.842224023 +0100
+@@ -12,7 +12,16 @@
+ QMAKE_DIR_REPLACE_SANE += DESTDIR
+ CONFIG -= debug_and_release_target
+ 
+-contains(QT_CONFIG, c++11): CONFIG += c++11 strict_c++
++# contains(QT_CONFIG, c++11): CONFIG += c++11 strict_c++
++# If __STRICT_ANSI__ is defined then CentOS 5.11 i686 does not define
++# __u64, __s64, __le64 or __be64, then qbenchmarkperfevents.cpp can't
++# be compiled.  If this causes any trouble then it may be possible to
++# pass the following on the configure command-line (for i686 *only*):
++# -D __u64="unsigned long long" \
++# -D __s64="__signed__ long long" \
++# -D __le64="unsigned long long" \
++# -D __be64="__signed__ long long"
++contains(QT_CONFIG, c++11): CONFIG += c++11
+ contains(QT_CONFIG, c++14): CONFIG += c++14
+ contains(QT_CONFIG, c++1z): CONFIG += c++1z
+ contains(TEMPLATE, .*lib) {

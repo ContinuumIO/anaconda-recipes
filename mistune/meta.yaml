@@ -1,11 +1,11 @@
 package:
   name: mistune
-  version: 0.7.2
+  version: 0.7.3
 
 source:
-  fn: mistune-0.7.2.tar.gz
-  url: https://pypi.python.org/packages/source/m/mistune/mistune-0.7.2.tar.gz
-  md5: ed9ac03c99261bd1803e44ddaa4f87cb
+  fn: mistune-0.7.3.tar.gz
+  url: https://pypi.python.org/packages/88/1e/be99791262b3a794332fda598a07c2749a433b9378586361ba9d8e824607/mistune-0.7.3.tar.gz
+  md5: 4eba50bd121b83716fa4be6a4049004b
 
 build:
   number: 1           [osx]

@@ -1,41 +1,31 @@
 package:
   name: pyqt
-  version: 4.11.4
-
-#external:
-#  channel: https://conda.anaconda.org/qttesting/
+  version: 5.6.0
 
 source:
-  fn: PyQt-mac-gpl-4.11.4.tar.gz                                                                 [osx]
-  url: http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.4/PyQt-mac-gpl-4.11.4.tar.gz   [osx]
-  md5: 73e711bfd6c825a04e9999915426735f                                                          [osx]
-  fn: PyQt-x11-gpl-4.11.4.tar.gz                                                                 [linux]
-  url: http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.4/PyQt-x11-gpl-4.11.4.tar.gz   [linux]
-  md5: 2fe8265b2ae2fc593241c2c84d09d481                                                          [linux]
-  fn: PyQt-win-gpl-4.11.4.zip                                                                    [win]
-  url: http://sourceforge.net/projects/pyqt/files/PyQt4/PyQt-4.11.4/PyQt-win-gpl-4.11.4.zip      [win]
-  md5:  cc3f9a88900c95b599afa69d869d8095                                                         [win]
-  patches:
-    - configure.patch
-
-build:
-  number:      4            [unix]
-  number:      7            [win]
+  fn:   PyQt5_gpl-5.6.zip    [win]
+  url:  http://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.6/PyQt5_gpl-5.6.zip   [win]
+  sha1: 63a03d0f6e7f6e2e9dc90311020fbb2a2edc8cf0  [win]
+  fn:   PyQt5_gpl-5.6.tar.gz   [unix]
+  url:  http://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.6/PyQt5_gpl-5.6.tar.gz   [unix]
+  sha1: 8920e4094470ff93f79e257c37c46f5cd0bff7ab  [unix]
 
 requirements:
   build:
+    - gcc    [linux]
+    - jom    [win]
     - python
-    - qt         4.8.*
-    - sip        4.18
-    - jom                   [win]
+    - qt 5.6.*
+    - sip >=4.18
   run:
+    - libgcc    [linux]
     - python
-    - qt         4.8.*
-    - sip        4.18
+    - qt 5.6.*
+    - sip >=4.18
 
 test:
   imports:
-    - PyQt4
+    - PyQt5.QtCore
 
 about:
   home: http://www.riverbankcomputing.co.uk/software/pyqt

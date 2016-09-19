@@ -1,0 +1,28 @@
+package:
+  name: dbus
+  version: 1.10.10
+
+source:
+  url: http://dbus.freedesktop.org/releases/dbus/dbus-1.10.10.tar.gz
+  md5: 495676d240eb982921b3ad1343526849
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+requirements:
+  build:
+    - expat
+    - python
+  run:
+    - expat
+
+test:
+  commands:
+    - dbus-daemon --version
+    - dbus-uuidgen
+
+about:
+  summary: message bus system, a simple way for applications to talk to one another
+  license: GPL2
+  home: http://www.freedesktop.org/wiki/Software/dbus/

@@ -1,7 +1,24 @@
 #!/bin/bash
 
 cd source
-chmod +x runConfigureICU configure install-sh
-./runConfigureICU Linux --prefix="$PREFIX"
-make
+chmod +x configure install-sh
+
+EXTRA_OPTS=""
+if [ "$(uname)" == "Darwin" ];
+then
+    EXTRA_OPTS="--enable-rpath"
+fi
+
+./configure --prefix="$PREFIX" \
+            --disable-samples \
+            --disable-extras \
+            --disable-layout \
+            --disable-tests \
+            --enable-static \
+	    "${EXTRA_OPTS}"
+
+make -j$CPU_COUNT
+make check
 make install
+
+rm -rf $PREFIX/sbin

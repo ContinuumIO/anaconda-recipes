@@ -1,0 +1,24 @@
+package:
+  name: libxcb
+  version: 1.12
+
+source:
+  fn:  libxcb-1.12.tar.bz2
+  url: http://xcb.freedesktop.org/dist/libxcb-1.12.tar.bz2
+  md5: 28e552bd78bc1050b6b26ca1db0e5bb6
+
+requirements:
+  build:
+    - python
+    - pthread-stubs
+    - xcb-proto
+
+test:
+  commands:
+    - test -f $PREFIX/lib/libxcb.so.1.1.0
+
+about:
+    home: http://xcb.freedesktop.org/
+    license: MIT
+    license_file: COPYING
+    summary: "This is the C-language Bindings package to the X Window System protocol"

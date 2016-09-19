@@ -10,10 +10,10 @@ set "FORWARD_SLASHED_PREFIX=%CD:\=/%"
 if not exist "%CD%\Library" mkdir "%CD%\Library"
 if not exist "%CD%\Library\bin" mkdir "%CD%\Library\bin"
 echo [Paths] > "%CD%\Library\bin\qt.conf"
-echo Prefix = %FORWARD_SLASHED_PREFIX%/Library/lib/qt4 >> "%CD%\Library\bin\qt.conf"
+echo Prefix = %FORWARD_SLASHED_PREFIX%/Library >> "%CD%\Library\bin\qt.conf"
 echo Binaries = %FORWARD_SLASHED_PREFIX%/Library/bin >> "%CD%\Library\bin\qt.conf"
 echo Libraries = %FORWARD_SLASHED_PREFIX%/Library/lib >> "%CD%\Library\bin\qt.conf"
-echo Headers = %FORWARD_SLASHED_PREFIX%/Library/include/qt4 >> "%CD%\Library\bin\qt.conf"
+echo Headers = %FORWARD_SLASHED_PREFIX%/Library/include/qt >> "%CD%\Library\bin\qt.conf"
 :: Some things go looking in the prefix root (pyqt, for example)
-COPY %CD%\Library\bin\qt.conf %CD%\qt.conf
+copy "%CD%\Library\bin\qt.conf" "%CD%\qt.conf"
 @echo on

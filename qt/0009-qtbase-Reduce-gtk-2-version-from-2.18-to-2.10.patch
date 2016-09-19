@@ -1,0 +1,29 @@
+From 84d6effd021c6bcbafd286b8e9d9fd9f579edc82 Mon Sep 17 00:00:00 2001
+From: Ray Donnelly <mingw.android@gmail.com>
+Date: Thu, 7 Jul 2016 21:16:54 +0100
+Subject: [PATCH 9/9] qtbase: Reduce gtk+2 version from 2.18 to 2.10
+
+It may be that instead of this I need to carefully revert:
+ebca7d2ea 2cce297b5 842a0b094
+
+Change-Id: Ia5f1baebccea80e5246f536a00c12b13ea4b4dc9
+---
+ configure | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/configure b/configure
+index d175ed3..59fd2c6 100755
+--- qtbase/configure
++++ qtbase/configure
+@@ -5132,7 +5132,7 @@ fi
+ # auto-detect GTK style support
+ if [ "$CFG_GLIB" = "yes" -a "$CFG_QGTKSTYLE" != "no" ]; then
+     if [ -n "$PKG_CONFIG" ]; then
+-        QT_CFLAGS_QGTK2=`$PKG_CONFIG --cflags gtk+-2.0 ">=" 2.18 atk 2>/dev/null`
++        QT_CFLAGS_QGTK2=`$PKG_CONFIG --cflags gtk+-2.0 ">=" 2.10 atk 2>/dev/null`
+         QT_LIBS_QGTK2=`$PKG_CONFIG --libs gtk+-2.0 2>/dev/null`
+         QT_LIBS_QGOBJECT=`$PKG_CONFIG --libs gobject-2.0 2>/dev/null`
+     fi
+-- 
+2.9.0
+

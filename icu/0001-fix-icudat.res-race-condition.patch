@@ -1,0 +1,11 @@
+--- source/data/Makefile.in.orig	2016-03-23 20:56:38.000000000 +0000
++++ source/data/Makefile.in	2016-05-28 21:31:29.776107600 +0100
+@@ -364,7 +364,7 @@
+ ifeq ($(ENABLE_SO_VERSION_DATA),1)
+ ifeq ($(PKGDATA_MODE),dll)
+ SO_VERSION_DATA = $(OUTTMPDIR)/icudata.res
+-$(SO_VERSION_DATA) : $(MISCSRCDIR)/icudata.rc
++$(SO_VERSION_DATA) : $(MISCSRCDIR)/icudata.rc $(OUTTMPDIR)
+ ifeq ($(MSYS_RC_MODE),1)
+ 	rc.exe -i$(srcdir)/../common -i$(top_builddir)/common -fo$@ $(CPPFLAGS) $<
+ else

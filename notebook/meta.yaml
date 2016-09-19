@@ -1,11 +1,11 @@
 package:
   name: notebook
-  version: 4.2.2
+  version: 4.2.3
 
 source:
-  fn: notebook-4.2.2.tar.gz
-  url: https://pypi.python.org/packages/10/81/6b015a84e4bfdf7908b1f6282de0adbc7e4b251f456f62290be5a953ab8e/notebook-4.2.2.tar.gz
-  md5: d951ac8776154eb56e041011aa093d0a
+  fn: notebook-4.2.3.tar.gz
+  url: https://pypi.python.org/packages/81/a1/20af1a3ea6090343b029d31f882c7e4c061133e0c25808835b1b59a187f8/notebook-4.2.3.tar.gz
+  md5: c3501e6edaacd957ec651db016a4ce13
 
 build:
   entry_points:
@@ -52,7 +52,7 @@ test:
 about:
   home: http://jupyter.org
   license: BSD
-  summary: A web-based notebook environment for interactive computing
+  summary: web-based notebook environment for interactive computing
   description: |
     The Jupyter Notebook is a web application that allows you to create and
     share documents that contain live code, equations, visualizations and

@@ -1,11 +1,17 @@
 package:
   name: jupyter_core
-  version: 4.1.1
+  version: 4.2.0
 
 source:
-  fn: jupyter_core-4.1.1.tar.gz
-  url: https://pypi.python.org/packages/32/b6/6460735cd566dcaf0faf7db26d0e7251510b7a76f14572702dcbf7933a92/jupyter_core-4.1.1.tar.gz
-  md5: 2b191b79f1f0cf854c9de7cfdde68f77
+  fn: jupyter_core-4.2.0.tar.gz
+  url: https://pypi.python.org/packages/56/41/6b29a0646af48ee7545b0b488b1b00aa3b01f6b4a8f19e3339640982a694/jupyter_core-4.2.0.tar.gz
+  md5: 3068bbc2b8275d08bf84787d4f0a3bd5
+
+build:
+  entry_points:
+    - jupyter = jupyter_core.command:main
+    - jupyter-migrate = jupyter_core.migrate:main
+    - jupyter-troubleshoot = jupyter_core.troubleshoot:main
 
 requirements:
   build:
@@ -18,6 +24,7 @@ test:
   commands:
     - jupyter -h
     - jupyter-migrate -h
+    - jupyter-troubleshoot -h
   imports:
     - jupyter_core
     - jupyter_core.utils
@@ -26,8 +33,8 @@ test:
 about:
   home: http://jupyter.org
   license: BSD
-  summary: Core Jupyter functionality
+  summary: core Jupyter functionality
   description: |
-    Core common functionality of Jupyter projects.
+    This package defines the core common functionality of Jupyter projects.
   doc_url: http://jupyter-core.readthedocs.org/
   dev_url: https://github.com/jupyter/jupyter_core

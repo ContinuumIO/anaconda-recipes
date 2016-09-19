@@ -165,6 +165,10 @@
     "osx-64:py27"
   ], 
   "dbf": "all", 
+  "dbus": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "decorator": "all", 
   "dill": "all", 
   "distributed": "all", 
@@ -311,6 +315,14 @@
     "osx-64:py27", 
     "win-64:py27"
   ], 
+  "gst-plugins-base": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
+  "gstreamer": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "gunicorn": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -335,12 +347,7 @@
     "linux-64:py27", 
     "osx-64:py27"
   ], 
-  "icu": [
-    "linux-64:py27", 
-    "linux-64:py35", 
-    "osx-64:py27", 
-    "osx-64:py35"
-  ], 
+  "icu": "all", 
   "idna": "all", 
   "imagesize": "all", 
   "iminuit": [
@@ -408,6 +415,10 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "libgcc": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "libgdal": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -451,6 +462,10 @@
     "linux-64:py35"
   ], 
   "libuuid": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
+  "libxcb": [
     "linux-64:py27", 
     "linux-64:py35"
   ], 
@@ -886,7 +901,6 @@
     "osx-64:py35"
   ], 
   "sphinx": "all", 
-  "sphinx_rtd_theme": "all", 
   "sputnik": [
     "linux-64:py27", 
     "linux-64:py35", 
