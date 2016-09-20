@@ -8,7 +8,6 @@ make
 make install
 popd
 
-CFLAGS="-I${PREFIX}/include"
 $PYTHON setup.py build_ext --include-dirs=${PREFIX}/include --library-dirs=${PREFIX}/lib
 $PYTHON setup.py install --single-version-externally-managed --record=record.txt
 
