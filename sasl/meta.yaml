@@ -9,24 +9,18 @@ source:
 
 requirements:
   build:
+    - cyrus-sasl ==2.1.26        [unix]
     - python
     - setuptools
     - six
 
   run:
+    - cyrus-sasl ==2.1.26        [unix]
     - python
     - six
-
-test:
-  imports:
-    - sasl
 
 about:
   home: http://github.com/toddlipcon/python-sasl
   license: UNKNOWN
   summary: 'Cyrus-SASL bindings for Python'
   license_family: Other
-
-# See
-# http://docs.continuum.io/conda/build.html for
-# more information about meta.yaml

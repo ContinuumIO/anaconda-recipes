@@ -11,9 +11,6 @@ requirements:
   build:
     - python
     - setuptools
-    - sasl >=0.2.1
-    - thrift          [py2k]
-    - thriftpy        [py3k]
 
   run:
     - python
@@ -21,16 +18,8 @@ requirements:
     - thrift          [py2k]
     - thriftpy        [py3k]
 
-test:
-  imports:
-    - thrift_sasl
-
 about:
   home: https://github.com/cloudera/thrift_sasl
   license: Apache License, Version 2.0
   summary: 'Thrift SASL Python module that implements SASL transports for Thrift (`TSaslClientTransport`).'
   license_family: Apache
-
-# See
-# http://docs.continuum.io/conda/build.html for
-# more information about meta.yaml
