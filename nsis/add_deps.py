@@ -10,7 +10,7 @@ DST_DIR = join(os.environ['PREFIX'], 'NSIS', 'Plugins', 'x86-ansi')
 
 for line in [
     '431e5b960aa15af5d153bae6ba6b7e87 UAC.dll',
-    '5fdab7428c16899954e28bb0d50798e3 untgz.dll',
+    '6f7a35da92ba3ebe04a4fc9abe9d6255 untgz.dll',
     '7178d69ded53b7683dd52cd1ca0a20ff elevate.exe',
     '7597202a271542d50e9d1e305a96e485 nsPython.dll',
     ]:

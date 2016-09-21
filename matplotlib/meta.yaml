@@ -41,7 +41,7 @@ requirements:
     - pytz
     - pyparsing
     - pycairo             [linux and py2k]
-    - pyqt
+    - pyqt 5.*
     - zlib 1.2.*          [win]
     - tk 8.5.*            [win]
     - libpng 1.6.*

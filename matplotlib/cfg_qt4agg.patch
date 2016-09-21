@@ -7,7 +7,7 @@ index 9d50b44..1725537 100644
  # by default.
  #
 -#backend = Agg
-+backend = Qt4Agg
++backend = Qt5Agg
  #
  
  [package_data]

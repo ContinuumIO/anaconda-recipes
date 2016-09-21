@@ -19,7 +19,7 @@ import pylab
 import mpl_toolkits
 
 if int(os.getenv('GUI_TEST', 0)):
-    assert matplotlib.rcParams['backend.qt4'] == 'PyQt4'
+    assert matplotlib.rcParams['backend.qt5'] == 'PyQt5'
 
     import matplotlib.pyplot as plt
     plt.ioff()

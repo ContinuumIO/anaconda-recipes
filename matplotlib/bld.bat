@@ -10,4 +10,4 @@ del %SP_DIR%\*.pth
 rd /s /q %SP_DIR%\dateutil
 rd /s /q %SP_DIR%\numpy
 rd /s /q %SP_DIR%\__pycache__
-rd /s /q %SP_DIR%\PyQt4
+rd /s /q %SP_DIR%\PyQt5

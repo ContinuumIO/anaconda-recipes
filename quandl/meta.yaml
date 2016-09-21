@@ -1,11 +1,11 @@
 package:
   name: quandl
-  version: 2.8.9
+  version: 3.0.1
 
 source:
-  fn: Quandl-2.8.9.tar.gz
-  url: https://pypi.python.org/packages/source/Q/Quandl/Quandl-2.8.9.tar.gz
-  md5: 7df17ae34272cad0b44e5ddb9ad48737
+  fn: Quandl-3.0.1.tar.gz
+  url: https://pypi.python.org/packages/98/f4/a3f6ad4de5579b4ae7efaecc821a9254f1c5c2d3f3500596c961ffc88eae/Quandl-3.0.1.tar.gz
+  md5: c25c7121299e9d7d75622c224f12fe89
 
 requirements:
   build:
@@ -15,10 +15,17 @@ requirements:
     - numpy
     - pandas
     - requests
+    - inflection
+    - python-dateutil
+    - six
+    - more-itertools
+    - pyopenssl              [py2k]
+    - ndg-httpsclient        [py2k]
+    - pyasn1                 [py2k]
 
 test:
   imports:
-    - Quandl
+    - quandl
 
 about:
   home: http://www.quandl.com/

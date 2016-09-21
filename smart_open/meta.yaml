@@ -1,11 +1,11 @@
 package:
   name: smart_open
-  version: 1.3.3
+  version: 1.3.4
 
 source:
-  fn: smart_open-1.3.3.tar.gz
-  url: https://pypi.python.org/packages/29/9b/a49e646d1ab4b7e7d1005ce5cf7089ad97f80587db438279eb9bedb9c071/smart_open-1.3.3.tar.gz
-  md5: 7e836c504ad49ce29f260d8fd562ea12
+  fn: smart_open-1.3.4.tar.gz
+  url: https://pypi.python.org/packages/f2/0a/8f5d4643f8c11935b5465d1418bcae47456857ba9ccad6032015b06cc343/smart_open-1.3.4.tar.gz
+  md5: 6639ac1464960a932aafbe1bed7a76b1
 
 requirements:
   build:

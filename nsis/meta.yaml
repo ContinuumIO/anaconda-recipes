@@ -2,6 +2,9 @@ package:
   name: nsis
   version: 3.0
 
+build:
+  number: 2
+
 about:
   home: http://nsis.sourceforge.net/Main_Page
   license: Common public License Version 1.0, zlib

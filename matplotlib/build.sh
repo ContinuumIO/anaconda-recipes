@@ -15,6 +15,6 @@ $SYS_PREFIX/bin/replace "/usr/local" "$PREFIX" setupext.py
 $PYTHON setup.py install --old-and-unmanageable
 
 rm -f $SP_DIR/*.pth
-rm -rf $SP_DIR/PyQt4
+rm -rf $SP_DIR/PyQt5
 rm -rf $SP_DIR/__pycache__
 rm -rf $PREFIX/bin/nose*

@@ -1,11 +1,11 @@
 package:
   name: scipy
-  version: 0.18.0
+  version: 0.18.1
 
 source:
-  fn: scipy-0.18.0.tar.gz
-  url: https://pypi.python.org/packages/01/a1/dce70d47377d662aa4b0895df8431aee92cea6faefaab9dae21b0f901ded/scipy-0.18.0.tar.gz
-  md5: d70e7f533622ab705bc016dac328d93e
+  fn: scipy-0.18.1.tar.gz
+  url: https://pypi.python.org/packages/22/41/b1538a75309ae4913cdbbdc8d1cc54cae6d37981d2759532c1aa37a41121/scipy-0.18.1.tar.gz
+  md5: 5fb5fb7ccb113ab3a039702b6c2f3327
 
 build:
   number: 0

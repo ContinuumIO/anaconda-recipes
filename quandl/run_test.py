@@ -1,4 +1,8 @@
-import Quandl
+import quandl
+import quandl.errors
+import quandl.model
+import quandl.operations
+import quandl.utils
 
-datasets = Quandl.search('OIL')
-print(datasets[0])
+#datasets = quandl.search('OIL')
+#print(datasets[0])

@@ -1,0 +1,25 @@
+package:
+  name: inflection
+  version: 0.3.1
+
+source:
+  fn: inflection-0.3.1.tar.gz
+  url: https://pypi.python.org/packages/d5/35/a6eb45b4e2356fe688b21570864d4aa0d0a880ce387defe9c589112077f8/inflection-0.3.1.tar.gz
+  md5: 7941165e9f148e0520023941c0886b40
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - inflection
+
+about:
+  home: http://github.com/jpvanhal/inflection
+  license: MIT
+  license_file: LICENSE
+  summary: port of Ruby on Rails inflector to Python

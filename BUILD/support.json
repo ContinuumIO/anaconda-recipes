@@ -354,6 +354,7 @@
     "linux-64:py27", 
     "osx-64:py27"
   ], 
+  "inflection": "all", 
   "ipaddress": [
     "linux-64:py27", 
     "osx-64:py27", 
@@ -533,6 +534,7 @@
   "mkl": "all", 
   "mkl-service": "all", 
   "mock": "all", 
+  "more-itertools": "all", 
   "mpi4py": "all", 
   "mpich2": [
     "linux-64:py27", 

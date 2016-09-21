@@ -1,0 +1,25 @@
+package:
+  name: more-itertools
+  version: 2.2
+
+source:
+  fn: more-itertools-2.2.tar.gz
+  url: https://pypi.python.org/packages/3d/4d/5900efaab46680e3c6c7a2fd87e4531f87e101ec35f6941621dc7f097e82/more-itertools-2.2.tar.gz
+  md5: b8d328a33f966bf40bb829bcf8da35ce
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - more_itertools
+
+about:
+  home: https://github.com/erikrose/more-itertools
+  license: MIT
+  license_file: LICENSE
+  summary: more routines for operating on iterables, beyond itertools
