@@ -9,8 +9,10 @@ source:
   patches:
     - nodownload.patch
     - setup.patch
+    - 0001-Rework-patch_func-to-avoid-use-of-__module__-and-__n.patch
 
 build:
+  number: 1                 [win]
   entry_points:
     - easy_install = setuptools.command.easy_install:main
 

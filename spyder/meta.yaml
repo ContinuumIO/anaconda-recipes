@@ -1,14 +1,16 @@
 package:
   name: spyder
-  version: 2.3.9
+  version: 3.0.0b7
 
 source:
-  fn: spyder-2.3.9.zip
-  url: https://pypi.python.org/packages/fb/37/09b789dbe321894afe1657f11f0026a5ea79987f1c30176b92ee648b3faa/spyder-2.3.9.zip
-  md5: dd01e07a77123c128ff79ba57b97c1d7
+  fn: spyder-3.0.0b7.tar.gz
+  url: https://pypi.python.org/packages/4a/84/0ca974c7cdffe77afa9c8a3212f895978db005899db73c7c2c8ec26ed9a9/spyder-3.0.0b7.tar.gz
+  md5: 04905e0b247bfa7ed6c1ed435f1a3eb3
 
 build:
-  number: 1
+  number: 0
+  entry_points:
+    - spyder = spyder.app.start:main
   osx_is_app: True
 
 requirements:
@@ -16,11 +18,13 @@ requirements:
     - python
   run:
     - python
-    - pyqt 4.*
+    - pyqt 5.*
+    - qtpy >=1.1
     - rope
     - pyflakes
     - jedi >=0.8
-    - qtconsole
+    - qtconsole >=4.2
+    - pickleshare
     - nbconvert
     - pygments
     - sphinx
@@ -38,7 +42,7 @@ test:
   commands:
     - spyder -h
   imports:
-    - spyderlib
+    - spyder
 
 about:
   home: https://github.com/spyder-ide/spyder
