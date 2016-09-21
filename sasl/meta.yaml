@@ -1,0 +1,26 @@
+package:
+  name: sasl
+  version: "0.2.1"
+
+source:
+  fn: sasl-0.2.1.tar.gz
+  url: https://pypi.python.org/packages/8e/2c/45dae93d666aea8492678499e0999269b4e55f1829b1e4de5b8204706ad9/sasl-0.2.1.tar.gz
+  md5: ca093d9a3d6f20b79b964a5e5add0202
+
+requirements:
+  build:
+    - cyrus-sasl ==2.1.26        [unix]
+    - python
+    - setuptools
+    - six
+
+  run:
+    - cyrus-sasl ==2.1.26        [unix]
+    - python
+    - six
+
+about:
+  home: http://github.com/toddlipcon/python-sasl
+  license: UNKNOWN
+  summary: 'Cyrus-SASL bindings for Python'
+  license_family: Other

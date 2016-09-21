@@ -1,0 +1,25 @@
+package:
+  name: thrift_sasl
+  version: "0.2.1"
+
+source:
+  fn: thrift_sasl-0.2.1.tar.gz
+  url: https://pypi.python.org/packages/80/36/16dfe92d32df63cc2b7b7be8d0e4a736617b7e52daaa7f83ae386a89d179/thrift_sasl-0.2.1.tar.gz
+  md5: 517e1b72d94f27a535eed901b0f96286
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+    - sasl >=0.2.1
+    - thrift          [py2k]
+    - thriftpy        [py3k]
+
+about:
+  home: https://github.com/cloudera/thrift_sasl
+  license: Apache License, Version 2.0
+  summary: 'Thrift SASL Python module that implements SASL transports for Thrift (`TSaslClientTransport`).'
+  license_family: Apache
