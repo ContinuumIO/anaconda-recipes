@@ -12,19 +12,12 @@ build:
 requirements:
   build:
     - cairo
-    - glib     >=2.33
+    - glib >=2.33
     - freetype
   run:
     - cairo
-    - glib   >=2.33
+    - glib >=2.33
     - freetype
-
-# harfbuzz has a cyclic dependency with freetype, so make
-# sure that this build was done linking to a freetype lib
-# that has been linked to a previous build of harfbuzz.
-test:
-  commands:
-    - nm ${PREFIX}/lib/libharfbuzz.so | grep hb_ft_face_create > /dev/null    [linux]
 
 about:
   home: http://www.freedesktop.org/wiki/Software/HarfBuzz/

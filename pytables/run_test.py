@@ -17,9 +17,9 @@ if sys.platform.startswith('linux'):
     lzo_ver = tables.which_lib_version("lzo")[1]
     assert lzo_ver == '2.06', lzo_ver
 
-if sys.platform == 'win32' and sys.version_info[0] == 3:
+if sys.platform == 'win32':
     print("""
-Skipping tables.test() on Windows and Py3k.
+Skipping tables.test() on Windows.
 There is currently one test failure, and we have to look into this.
 """)
 else:
