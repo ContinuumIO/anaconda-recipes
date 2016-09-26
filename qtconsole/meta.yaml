@@ -8,7 +8,10 @@ source:
   md5: c08ebebc7a60629ebadf685361ca0798
 
 build:
-  number: 1
+  number: 1          [unix]
+  number: 2          [win]
+  entry_points:
+    - jupyter-qtconsole = qtconsole.qtconsoleapp:main
 
 requirements:
   build:

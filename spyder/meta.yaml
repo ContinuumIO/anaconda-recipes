@@ -1,11 +1,11 @@
 package:
   name: spyder
-  version: 3.0.0b7
+  version: 3.0.0
 
 source:
-  fn: spyder-3.0.0b7.tar.gz
-  url: https://pypi.python.org/packages/4a/84/0ca974c7cdffe77afa9c8a3212f895978db005899db73c7c2c8ec26ed9a9/spyder-3.0.0b7.tar.gz
-  md5: 04905e0b247bfa7ed6c1ed435f1a3eb3
+  fn: spyder-3.0.0.tar.gz
+  url: https://pypi.io/packages/source/s/spyder/spyder-3.0.0.tar.gz
+  md5: 7f5ef3f62d4c6f2d6a0ee9ec305b8c6a
 
 build:
   number: 0
@@ -16,21 +16,25 @@ build:
 requirements:
   build:
     - python
+    - sphinx
   run:
     - python
     - pyqt 5.*
     - qtpy >=1.1
+    - qtawesome
     - rope
     - pyflakes
     - jedi >=0.8
     - qtconsole >=4.2
     - pickleshare
     - nbconvert
-    - pygments
+    - pygments >=2.0
     - sphinx
     - pep8
     - psutil
-    - python.app      [osx]
+    - pylint
+    - pyzmq
+    - python.app     [osx]
 
 app:
   entry: spyder

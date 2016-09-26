@@ -1,11 +1,11 @@
 package:
   name: mercurial
-  version: 3.9
+  version: 3.9.1
 
 source:
-  fn: mercurial-3.9.tar.gz
-  url: https://pypi.python.org/packages/22/73/e8ef24d3cb13e4fa2695417e13fd22effa1c8e28465eea91a9f84aa922cd/mercurial-3.9.tar.gz
-  md5: e2b355da744e94747daae3a5339d28a0
+  fn: mercurial-3.9.1.tar.gz
+  url: https://pypi.python.org/packages/b2/17/63d474eb22147af50d9879bf8afaf88ddbf1b826dd291004b7f92e68f671/mercurial-3.9.1.tar.gz
+  md5: 3759dd10edb8c1a6dfb8ff0ce82658ce
 
 requirements:
   build:
@@ -17,6 +17,7 @@ test:
   commands:
     - hg --version
   imports:
+    - hgext.fsmonitor.pywatchman.bser
     - mercurial.base85
     - mercurial.bdiff
     - mercurial.diffhelpers
