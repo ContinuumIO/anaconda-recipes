@@ -367,6 +367,7 @@
   "ipywidgets": "all", 
   "iso8601": "all", 
   "itsdangerous": "all", 
+  "javabridge": "all", 
   "jbig": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -568,6 +569,12 @@
     "osx-64:py27", 
     "win-64:py27"
   ], 
+  "neon": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "netcdf4": "all", 
   "networkx": "all", 
   "nltk": "all", 
@@ -657,6 +664,7 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "pkginfo": "all", 
   "plac": "all", 
   "ply": "all", 
   "posix_ipc": [
@@ -925,6 +933,10 @@
   "sympy": "all", 
   "tblib": "all", 
   "tempita": "all", 
+  "tensorflow": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "teradata": "all", 
   "terminado": [
     "linux-64:py27", 

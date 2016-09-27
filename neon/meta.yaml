@@ -1,0 +1,42 @@
+package:
+  name: neon
+  version: 1.5.4
+
+source:
+  url: https://github.com/NervanaSystems/neon/archive/v1.5.4.tar.gz
+  sha256: 82f597d2e846a734fc7b487617d7984971232b285650b4617f1f455fd3d04c59
+  patches:
+    # neutralizes import errors with missing pycuda/scikit-cuda
+    # submitted at https://github.com/NervanaSystems/neon/pull/291
+    - disable_gpu_tests.patch
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - appdirs
+    - bokeh
+    - configargparse
+    - future
+    - h5py
+    - jinja2
+    - numpy >=1.9
+    - pillow
+
+test:
+  commands:
+    - neon -h
+    - nvis -h
+
+about:
+  home: https://github.com/NervanaSystems/neon
+  summary: Nervana's Python-based Deep Learning framework
+  license: Apache 2.0
+  license_family: Apache
+  license_file: LICENSE
+  dev_url: https://github.com/NervanaSystems/neon
+  doc_url: https://github.com/NervanaSystems/neon

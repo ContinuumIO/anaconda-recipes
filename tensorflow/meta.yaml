@@ -1,0 +1,44 @@
+package:
+  name: tensorflow
+  version: 0.10.0rc0
+
+source:
+  url: https://github.com/tensorflow/tensorflow/archive/v0.10.0rc0.tar.gz
+  sha256: df28bbe5470171eb0199905423902a96fe370052f8458a28d40c294c662d614b
+
+build:
+  entry_points:
+    - tensorboard = tensorflow.tensorboard.tensorboard:main
+
+requirements:
+  build:
+    - bazel
+    - setuptools
+    - swig
+    - python
+    - perl
+    - pip
+    - numpy x.x
+    - six >=1.10.0
+    - zlib
+    - wheel ==0.29
+  run:
+    - python
+    - numpy x.x
+    - six >=1.10.0
+    - mock
+    - zlib
+
+test:
+  requires:
+    - scipy  >=0.15.1
+  imports:
+    - tensorflow
+
+about:
+  home: http://tensorflow.org/
+  license: Apache 2.0
+  license_family: Apache
+  summary: TensorFlow is a machine learning library
+  dev_url: https://github.com/tensorflow/tensorflow
+  doc_url: https://www.tensorflow.org/versions/r0.10/get_started/index.html

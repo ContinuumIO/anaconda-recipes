@@ -13,10 +13,6 @@ requirements:
     - pthread-stubs
     - xcb-proto
 
-test:
-  commands:
-    - test -f $PREFIX/lib/libxcb.so.1.1.0
-
 about:
     home: http://xcb.freedesktop.org/
     license: MIT

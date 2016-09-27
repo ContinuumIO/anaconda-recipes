@@ -116,4 +116,4 @@ if not (armv6l or armv7l or ppc64le):
 
 print('OPENSSL_VERSION:', ssl.OPENSSL_VERSION)
 if sys.platform != 'win32':
-    assert '1.0.2i' in ssl.OPENSSL_VERSION
+    assert '1.0.2j' in ssl.OPENSSL_VERSION
