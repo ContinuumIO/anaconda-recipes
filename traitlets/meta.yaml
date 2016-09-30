@@ -1,11 +1,11 @@
 package:
   name: traitlets
-  version: 4.3.0
+  version: 4.3.1
 
 source:
-  fn: traitlets-4.3.0.tar.gz
-  url: https://pypi.python.org/packages/a7/47/bd149e0c9ed0b8b634d6df2eb6ff11d63886759fb379c60605653e6281c2/traitlets-4.3.0.tar.gz
-  md5: c26c7157d2e942b25071db490aea6a7d
+  fn: traitlets-4.3.1.tar.gz
+  url: https://pypi.python.org/packages/b1/d6/5b5aa6d5c474691909b91493da1e8972e309c9f01ecfe4aeafd272eb3234/traitlets-4.3.1.tar.gz
+  md5: dd0b1b6e5d31ce446d55a4b5e5083c98
 
 requirements:
   build:

@@ -19,7 +19,7 @@ requirements:
     - sphinx
   run:
     - python
-    - pyqt 5.*
+    - pyqt
     - qtpy >=1.1
     - qtawesome
     - rope

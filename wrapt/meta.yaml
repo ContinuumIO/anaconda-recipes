@@ -1,22 +1,25 @@
 package:
   name: wrapt
-  version: 1.10.6
+  version: 1.10.8
 
 source:
-  fn: wrapt-1.10.6.tar.gz
-  url: https://pypi.python.org/packages/source/w/wrapt/wrapt-1.10.6.tar.gz
-  md5: e29294a8949ff4dc74d6fcd800f6f23d
+  fn: wrapt-1.10.8.tar.gz
+  url: https://pypi.python.org/packages/00/dd/dc22f8d06ee1f16788131954fc69bc4438f8d0125dd62419a43b86383458/wrapt-1.10.8.tar.gz
+  md5: 7c2a7e6262acc396ef6528b3d66bd047
+
+build:
+  script: python setup.py install
 
 requirements:
   build:
     - python
-
   run:
     - python
 
 test:
   imports:
     - wrapt
+    - wrapt._wrappers
 
 about:
   home: https://github.com/GrahamDumpleton/wrapt

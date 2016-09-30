@@ -1,12 +1,14 @@
 import sklearn
 
 print("sklearn.__version__: %s" % sklearn.__version__)
+assert sklearn.__version__ == '0.18'
 
 import sklearn.__check_build._check_build
 import sklearn._isotonic
 import sklearn.cluster._dbscan_inner
 import sklearn.cluster._hierarchical
 import sklearn.cluster._k_means
+import sklearn.cluster._k_means_elkan
 import sklearn.datasets._svmlight_format
 import sklearn.decomposition._online_lda
 import sklearn.decomposition.cdnmf_fast
