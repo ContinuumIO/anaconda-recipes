@@ -1,6 +1,8 @@
+import pandas._join
 import pandas._period
 import pandas._sparse
 import pandas._testing
+import pandas._window
 import pandas.algos
 import pandas.hashtable
 import pandas.index
@@ -11,6 +13,7 @@ import pandas.msgpack._packer
 import pandas.msgpack._unpacker
 import pandas.parser
 import pandas.tslib
+import pandas.util._move
 
 import os
 import sys
