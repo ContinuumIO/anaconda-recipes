@@ -841,6 +841,7 @@
   "ruamel_yaml": "all", 
   "runipy": "all", 
   "s3fs": "all", 
+  "s3transfer": "all", 
   "sas7bdat": "all", 
   "scikit-bio": [
     "linux-64:py35", 
@@ -1049,6 +1050,7 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "zict": "all", 
   "zlib": "all", 
   "zope": "all", 
   "zope.deprecation": "all", 

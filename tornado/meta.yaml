@@ -1,11 +1,11 @@
 package:
   name: tornado
-  version: 4.4.1
+  version: 4.4.2
 
 source:
-  fn: tornado-4.4.1.tar.gz
-  url: https://pypi.python.org/packages/96/5d/ff472313e8f337d5acda5d56e6ea79a43583cc8771b34c85a1f458e197c3/tornado-4.4.1.tar.gz
-  md5: fff8a7d7f580b04bacc2ffe7ddf41133
+  fn: tornado-4.4.2.tar.gz
+  url: https://pypi.python.org/packages/1e/7c/ea047f7bbd1ff22a7f69fe55e7561040e3e54d6f31da6267ef9748321f98/tornado-4.4.2.tar.gz
+  md5: b4816ea209118667ffc52ce9ff06ac85
 
 build:
   number: 0

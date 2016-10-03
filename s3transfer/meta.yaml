@@ -1,0 +1,30 @@
+package:
+  name: s3transfer
+  version: 0.1.5
+
+source:
+  fn: s3transfer-0.1.5.tar.gz
+  url: https://pypi.python.org/packages/04/92/7976f89bc162d62a6e3014497694ad2caed0f6f920bdc1b679fefedb9440/s3transfer-0.1.5.tar.gz
+  md5: af54e16bf8d167f04c0ebd91b79f9bc3
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - botocore >=1.3.0,<2.0.0
+    - futures >=2.2.0,<4.0.0          [py2k]
+  run:
+    - python
+    - botocore >=1.3.0,<2.0.0
+    - futures >=2.2.0,<4.0.0          [py2k]
+
+test:
+  imports:
+    - s3transfer
+
+about:
+  home: https://github.com/boto/s3transfer
+  license: Apache Software License
+  license_family: Apache
+  license_file: LICENSE.txt
+  summary: Amazon S3 Transfer Manager

@@ -8,44 +8,34 @@ source:
   md5: ebe3ea40a1d13e44a95249403929269c
 
 build:
-  number: 1
+  number: 2
   entry_points:
-    - dask-ssh = distributed.cli.dask_ssh:go
-    - dask-scheduler = distributed.cli.dask_scheduler:go
-    - dask-worker = distributed.cli.dask_worker:go
+    - dask-scheduler=distributed.cli.dask_scheduler:go
+    - dask-ssh=distributed.cli.dask_ssh:go
+    - dask-worker=distributed.cli.dask_worker:go
+    - dask-remote=distributed.cli.dask_remote:go
+    - dask-submit=distributed.cli.dask_submit:go
 
 requirements:
   build:
     - python
     - setuptools
-    - tornado >=4.2
-    - toolz >=0.7.4
-    - msgpack-python
-    - cloudpickle >=0.2.1
-    - dask >=0.11.0
-    - click
-    - six
-    - tblib
-    - psutil
-    - futures              [py < 30]
-    - locket               [py < 30]
-    - singledispatch       [py < 34]
   run:
     - python
-    - setuptools
-    - tornado >=4.2
-    - toolz >=0.7.4
-    - msgpack-python
+    - bokeh >=0.12.1
+    - boto3
+    - click
     - cloudpickle >=0.2.1
     - dask >=0.11.0
-    - click
+    - locket
+    - msgpack-python
+    - psutil
+    - s3fs >=0.0.6
     - six
     - tblib
-    - psutil
-    - futures              [py < 30]
-    - locket               [py < 30]
-    - singledispatch       [py < 34]
-    - s3fs >=0.0.6
+    - toolz >=0.7.4
+    - tornado >=4.2
+    - zict
 
 test:
   commands:
@@ -54,13 +44,17 @@ test:
     - dask-worker --help
   imports:
     - distributed
+    - distributed.bokeh
+    - distributed.bokeh.status
+    - distributed.bokeh.tasks
     - distributed.cli
     - distributed.diagnostics
     - distributed.http
 
 about:
   home: http://distributed.readthedocs.org/en/latest/
-  license: BSD
+  license: BSD 3-Clause
+  license_family: BSD
   license_file: LICENSE.txt
   summary: Lightweight library for distributed computing in Python
   description: |
