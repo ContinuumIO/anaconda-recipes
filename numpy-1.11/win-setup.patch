@@ -1,0 +1,21 @@
+diff --git setup.py setup.py
+index d09c09e..1ac08c9 100755
+--- setup.py
++++ setup.py
+@@ -22,6 +22,7 @@ import sys
+ import subprocess
+ import textwrap
+ 
++SRC_DIR = os.getenv('SRC_DIR', os.path.dirname(__file__))
+ 
+ if sys.version_info[:2] < (2, 6) or (3, 0) <= sys.version_info[0:2] < (3, 2):
+     raise RuntimeError("Python version 2.6, 2.7 or >= 3.2 required.")
+@@ -330,7 +331,7 @@ def parse_setuppy_commands():
+ 
+ 
+ def setup_package():
+-    src_path = os.path.dirname(os.path.abspath(sys.argv[0]))
++    src_path = SRC_DIR
+     old_path = os.getcwd()
+     os.chdir(src_path)
+     sys.path.insert(0, src_path)

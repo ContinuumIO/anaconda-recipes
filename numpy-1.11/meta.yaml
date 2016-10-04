@@ -1,20 +1,19 @@
 package:
   name: numpy
-  version: 1.11.1
+  version: 1.11.2
 
 source:
-  fn: numpy-1.11.1.tar.gz
-  url: https://pypi.python.org/packages/e0/4c/515d7c4ac424ff38cc919f7099bf293dd064ba9a600e1e3835b3edefdb18/numpy-1.11.1.tar.gz
-  md5: 2f44a895a8104ffac140c3a70edbd450
+  fn: numpy-1.11.2.tar.gz
+  url: https://pypi.python.org/packages/16/f5/b432f028134dd30cfbf6f21b8264a9938e5e0f75204e72453af08d67eb0b/numpy-1.11.2.tar.gz
+  md5: 03bd7927c314c43780271bf1ab795ebc
   patches:
     - dlopenflags.patch         [unix and not nomkl]
     - osx-dist.patch            [osx]
-    - win32-msvccompiler.patch  [win]
+    - win-setup.patch           [win]
+    - win-dist.patch            [win]
     - mklfft.patch
 
 build:
-  number: 1                   [win]
-  ignore_prefix_files: True   [win]
   features:
     - nomkl                   [x86 and nomkl]
 

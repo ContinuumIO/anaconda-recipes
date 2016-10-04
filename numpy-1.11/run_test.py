@@ -2,6 +2,8 @@ import os
 import sys
 import numpy
 
+assert numpy.__version__ == '1.11.2'
+
 has_mkl = not int(os.getenv('NOMKL', 0))
 print('HAS MKL: %r' % has_mkl)
 mkl_version = getattr(numpy, '__mkl_version__', None)

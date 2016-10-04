@@ -1,11 +1,11 @@
 package:
   name: markdown
-  version: 2.6.6
+  version: 2.6.7
 
 source:
-  fn: Markdown-2.6.6.tar.gz
-  url: https://pypi.python.org/packages/source/M/Markdown/Markdown-2.6.6.tar.gz
-  md5: d6737edcdb9a9aceaef0bf28455673be
+  fn: Markdown-2.6.7.tar.gz
+  url: https://pypi.python.org/packages/d4/32/642bd580c577af37b00a1eb59b0eaa996f2d11dfe394f3dd0c7a8a2de81a/Markdown-2.6.7.tar.gz
+  md5: a06f1c5d462b32e0e8da014e9eebb0d9
 
 requirements:
   build:
@@ -15,13 +15,15 @@ requirements:
 
 test:
   commands:
-    - markdown_py -h
+    - markdown_py -h                 [unix]
   imports:
     - markdown
+    - markdown.extensions
 
 about:
   home: http://packages.python.org/Markdown/
   license: BSD
+  license_file: LICENSE.md
   summary: Python implementation of Markdown
   description: |
     A Python implementation of John Gruber's Markdown. It is almost completely

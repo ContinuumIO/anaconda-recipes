@@ -1,11 +1,11 @@
 package:
   name: semantic_version
-  version: 2.5.0
+  version: 2.6.0
 
 source:
-  fn: semantic_version-2.5.0.tar.gz
-  url: https://pypi.python.org/packages/source/s/semantic_version/semantic_version-2.5.0.tar.gz
-  md5: 9a3f8e3ca00dcd2da16e30d55a4d4d99
+  fn: semantic_version-2.6.0.tar.gz
+  url: https://pypi.python.org/packages/72/83/f76958017f3094b072d8e3a72d25c3ed65f754cc607fdb6a7b33d84ab1d5/semantic_version-2.6.0.tar.gz
+  md5: 4388a5df93e4dbe7b48767b3694bb761
 
 requirements:
   build:
