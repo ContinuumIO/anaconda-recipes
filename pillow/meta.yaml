@@ -1,11 +1,11 @@
 package:
   name: pillow
-  version: 3.3.1
+  version: 3.4.1
 
 source:
-  fn: Pillow-3.3.1.tar.gz
-  url: https://pypi.python.org/packages/7b/32/e6978aed8fba6398c00eec25f12798fb57647a6cef4f85db1567e3d086ef/Pillow-3.3.1.tar.gz
-  md5: 3bc85204223b52e96ed05c9441507eed
+  fn: Pillow-3.4.1.tar.gz
+  url: https://pypi.python.org/packages/80/b5/359ac53b4986abbb5da766f809def82958bbbddf169139cdef8f0880522b/Pillow-3.4.1.tar.gz
+  md5: 31e4b16a246d585be7a1cb560b057f89
   patches:
     - freetype_win_link.patch   [win]
 
