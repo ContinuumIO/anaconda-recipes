@@ -1,31 +1,32 @@
 package:
   name: pytest
-  version: 2.9.2
+  version: 3.0.3
 
 source:
-  fn: pytest-2.9.2.tar.gz
-  url: https://pypi.python.org/packages/f0/ee/6e2522c968339dca7d9abfd5e71312abeeb5ee902e09b4daf44f07b2f907/pytest-2.9.2.tar.gz
-  md5: b65c2944dfaa0efb62c0239afb424f5b
+  fn: pytest-3.0.3.tar.gz
+  url: https://pypi.python.org/packages/a0/2f/076c816e2402c4911ccee4b93ba0475145b7cffd0320ca8efa0add7c469c/pytest-3.0.3.tar.gz
+  md5: b33b3b1f847d3745a78423762f6b7f6d
 
 build:
   entry_points:
-    - py.test = py.test:main
+    - pytest = pytest:main
+    - py.test = pytest:main
 
 requirements:
   build:
     - python
     - py
     - setuptools
-    - argparse          [py26]
     - colorama          [win]
   run:
     - python
+    - setuptools
     - py >=1.4.29
-    - argparse          [py26]
     - colorama          [win]
 
 test:
   commands:
+    - pytest -h
     - py.test -h
   imports:
     - pytest

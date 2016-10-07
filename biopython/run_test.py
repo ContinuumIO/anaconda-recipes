@@ -5,3 +5,8 @@ import Bio.cpairwise2
 import Bio.trie
 import Bio.KDTree._CKDTree
 import Bio.Cluster.cluster
+
+import Bio.Affy
+import Bio.Cluster
+import Bio.KDTree
+import Bio.phenotype

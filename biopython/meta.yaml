@@ -1,11 +1,11 @@
 package:
   name: biopython
-  version: 1.67
+  version: 1.68
 
 source:
-  fn: biopython-1.67.tar.gz
-  url: https://pypi.python.org/packages/f4/35/67d779f52870770c228f9edd0c9d1d1b9bc11afad794e220295d7b88a804/biopython-1.67.tar.gz
-  md5: 542699cc310588c1997806681ee1f65e
+  fn: biopython-1.68.tar.gz
+  url: https://pypi.python.org/packages/72/6c/e1e13b9df73f9c2539b67d12bc22be6b19779230cadbed04c24f3f3e5ef4/biopython-1.68.tar.gz
+  md5: 078e915185485a5327937029b7577ddc
 
 requirements:
   build:
