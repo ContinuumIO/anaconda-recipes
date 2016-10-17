@@ -1,15 +1,21 @@
 package:
   name: bokeh
-  version: 0.12.2
+  version: 0.12.3
 
 source:
-  fn: bokeh-0.12.2.tar.gz
-  url: https://pypi.python.org/packages/de/5d/88a95eacebbd863e77f78cc47152955c8afe28dc4ed1fe243fc3fb40ceb4/bokeh-0.12.2.tar.gz
-  md5: 2d1621bffe6e2ab9d42efbf733861c4f
+  fn: bokeh-0.12.3.tar.gz
+  url: https://pypi.python.org/packages/d4/2e/6fff9f6dd869127592a2d9f2d678aaa60bfe8cfcd57f132c0d2228d4cd6a/bokeh-0.12.3.tar.gz
+  md5: 8e3433e2d964c50e70e74880922bd3eb
+
+build:
+  number: 1                 [win]
+  entry_points:
+    - bokeh = bokeh.__main__:main
 
 requirements:
   build:
     - python
+    - setuptools             [win]
   run:
     - python
     - six >=1.5.2
@@ -30,7 +36,7 @@ test:
     - nbformat
   commands:
     - bokeh -h
-    - bokeh-server
+    - bokeh-server         [unix]
   imports:
     - bokeh
     - bokeh.application
