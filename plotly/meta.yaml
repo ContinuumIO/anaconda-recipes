@@ -1,0 +1,35 @@
+package:
+  name: plotly
+  version: 1.12.9
+
+source:
+  fn: plotly-1.12.9.tar.gz
+  url: https://pypi.python.org/packages/ce/4b/1b7c4bb89b7708d4127b4ebcb2b6e5961c9e1bc3847b4705d57fdc66212f/plotly-1.12.9.tar.gz
+  md5: b124b7f0198df5afcee010d2374757b6
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - requests
+    - six
+    - pytz
+  run:
+    - python
+    - setuptools
+    - requests
+    - six
+    - pytz
+
+test:
+  imports:
+    - plotly
+    - plotly.graph_objs
+    - plotly.grid_objs
+    - plotly.offline
+    - plotly.plotly
+
+about:
+  home: https://plot.ly/python/
+  license: MIT
+  summary: plotting library for collaborative, interactive, publication-quality graphs

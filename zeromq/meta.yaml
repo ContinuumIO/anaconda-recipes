@@ -1,17 +1,17 @@
 package:
   name: zeromq
-  version: 4.1.4
+  version: 4.1.5
 
 source:
-  fn: zeromq-4.1.4.tar.gz
-  url: http://download.zeromq.org/zeromq-4.1.4.tar.gz
-  md5: a611ecc93fffeb6d058c0e6edf4ad4fb
+  fn: zeromq-4.1.5.tar.gz
+  url: https://github.com/zeromq/zeromq4-1/releases/download/v4.1.5/zeromq-4.1.5.tar.gz
+  md5: e7adf4b7dbae09b28cfd10d26cd67fac
 
 requirements:
   build:
-    - libsodium 1.0.*  [linux]
+    - libsodium 1.0.*      [linux]
   run:
-    - libsodium 1.0.*  [linux]
+    - libsodium 1.0.*      [linux]
 
 about:
   home: http://zeromq.org

@@ -1,11 +1,11 @@
 package:
   name: multipledispatch
-  version: 0.4.8
+  version: 0.4.9
 
 source:
-  fn: multipledispatch-0.4.8.tar.gz
-  url: https://pypi.python.org/packages/source/m/multipledispatch/multipledispatch-0.4.8.tar.gz
-  md5: f0eb0c527cdbe788ca7dcd1511bc49a9
+  fn: multipledispatch-0.4.9.tar.gz
+  url: https://pypi.python.org/packages/ec/70/4f8fd16e32033a7c78446659dc0bdbc71bec6db322cba0e2c1c8ba85d4ba/multipledispatch-0.4.9.tar.gz
+  md5: 1fff336c53339fe9f1360fbddb3fc10d
 
 requirements:
   build:

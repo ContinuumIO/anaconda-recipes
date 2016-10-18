@@ -1,14 +1,14 @@
 package:
   name: distributed
-  version: 1.13.2
+  version: 1.13.3
 
 source:
-  fn: distributed-1.13.2.tar.gz
-  url: https://pypi.python.org/packages/4e/ab/19b20d9892c00272752dc3be6376218e3a860bc4ae0df13efeb03eab694b/distributed-1.13.2.tar.gz
-  md5: ebe3ea40a1d13e44a95249403929269c
+  fn: distributed-1.13.3.tar.gz
+  url: https://pypi.python.org/packages/29/68/7d67c4c7755f1bcbced02541685db40ee962a0ab643ab28f7fd630935885/distributed-1.13.3.tar.gz
+  md5: 7071d2d5e69ff4ef1b85020f755d2914
 
 build:
-  number: 2
+  number: 0
   entry_points:
     - dask-scheduler=distributed.cli.dask_scheduler:go
     - dask-ssh=distributed.cli.dask_ssh:go
@@ -23,8 +23,7 @@ requirements:
   run:
     - python
     - bokeh >=0.12.1
-    - boto3
-    - click
+    - click >=6.6
     - cloudpickle >=0.2.1
     - dask >=0.11.0
     - locket

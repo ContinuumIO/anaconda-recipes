@@ -141,3 +141,19 @@ popd > /dev/null
 
 # Add qt.conf file to the package to make it fully relocatable
 cp "${RECIPE_DIR}"/qt.conf "${PREFIX}"/bin/
+
+if [ `uname` == Darwin ]
+then
+    BIN=$PREFIX/bin
+
+    for name in Assistant Designer Linguist pixeltool qml
+    do
+        mv ${BIN}/${name}.app ${BIN}/${name}app
+    done
+
+    POST_LINK=$BIN/.qt-post-link.sh
+    PRE_UNLINK=$BIN/.qt-pre-unlink.sh
+    cp $RECIPE_DIR/osx-post.sh $POST_LINK
+    cp $RECIPE_DIR/osx-pre.sh $PRE_UNLINK
+    chmod +x $POST_LINK $PRE_UNLINK
+fi

@@ -666,6 +666,7 @@
   ], 
   "pkginfo": "all", 
   "plac": "all", 
+  "plotly": "all", 
   "ply": "all", 
   "posix_ipc": [
     "linux-64:py27", 
