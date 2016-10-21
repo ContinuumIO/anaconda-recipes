@@ -1,17 +1,16 @@
 package:
   name: anaconda-client
-  version: 1.5.1
+  version: 1.5.2
 
 source:
   git_url: https://github.com/Anaconda-Server/anaconda-client.git
-  git_tag: 1.5.1
+  git_tag: 1.5.2
+  patches:
+    - windows.patch
 
 build:
   entry_points:
     - anaconda = binstar_client.scripts.cli:main
-    # the following are deprecated:
-    - binstar = binstar_client.scripts.cli:main
-    - conda-server = binstar_client.scripts.cli:main
 
 requirements:
   build:
@@ -32,6 +31,8 @@ requirements:
     - pytz
 
 test:
+  requires:
+    - conda
   commands:
     - anaconda -h
     - anaconda --version

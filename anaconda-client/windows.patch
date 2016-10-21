@@ -1,0 +1,14 @@
+diff --git binstar_client/utils/conda.py binstar_client/utils/conda.py
+index f4437c1..7cb252c 100644
+--- binstar_client/utils/conda.py
++++ binstar_client/utils/conda.py
+@@ -5,7 +5,8 @@ import subprocess
+ 
+ CONDA_PREFIX = sys.prefix
+ BIN_DIR = 'Scripts' if sys.platform.startswith('win') else 'bin'
+-CONDA_EXE = join(CONDA_PREFIX, BIN_DIR, 'conda')
++CONDA_EXE = join(CONDA_PREFIX, BIN_DIR,
++                 'conda.exe' if sys.platform == 'win32' else 'conda')
+ 
+ 
+ def get_conda_root():
