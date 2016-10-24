@@ -1,11 +1,11 @@
 package:
   name: smart_open
-  version: 1.3.4
+  version: 1.3.5
 
 source:
-  fn: smart_open-1.3.4.tar.gz
-  url: https://pypi.python.org/packages/f2/0a/8f5d4643f8c11935b5465d1418bcae47456857ba9ccad6032015b06cc343/smart_open-1.3.4.tar.gz
-  md5: 6639ac1464960a932aafbe1bed7a76b1
+  fn: smart_open-1.3.5.tar.gz
+  url: https://pypi.python.org/packages/31/c6/8cd458232efffabc2b53c4f53beec04b02368d7d4724f6c88da27d1bbc91/smart_open-1.3.5.tar.gz
+  md5: 2d1fa810944f460771c18a4c5f9e9f9d
 
 requirements:
   build:
@@ -27,6 +27,7 @@ test:
 about:
   home: https://github.com/piskvorky/smart_open
   license: MIT
+  license_file: LICENSE
   summary: Utils for streaming large files
   description: |
     smart_open is a Python 2 & Python 3 library for efficient streaming of

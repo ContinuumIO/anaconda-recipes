@@ -1,14 +1,11 @@
 package:
   name: pycparser
-  version: 2.14
+  version: 2.16
 
 source:
-  fn: pycparser-2.14.tar.gz
-  url: https://pypi.python.org/packages/source/p/pycparser/pycparser-2.14.tar.gz
-  md5: a2bc8d28c923b4fe2b2c3b4b51a4f935
-
-build:
-  number: 1
+  fn: pycparser-2.16.tar.gz
+  url: https://pypi.python.org/packages/eb/83/00c55ff5cb773a78e9e47476ac1a0cd2f0fb71b34cb6e178572eaec22984/pycparser-2.16.tar.gz
+  md5: 983118bb558ba11754af25647573487c
 
 requirements:
   build:
