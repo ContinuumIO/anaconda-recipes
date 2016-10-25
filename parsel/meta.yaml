@@ -1,11 +1,13 @@
 package:
   name: parsel
-  version: 1.0.2
+  version: 1.0.3
 
 source:
-  fn: parsel-1.0.2.tar.gz
-  url: https://files.pythonhosted.org/packages/a8/32/d73ffeb16e47f6c9a6eb610624eb5f42ca9ac9ce298d30e0aef80f2055d2/parsel-1.0.2.tar.gz
-  md5: 5f85137075031832cf9c419f7cacc27c
+  fn: parsel-1.0.3.tar.gz
+  url: https://pypi.python.org/packages/48/26/c5166e36adb333e1abef31e301bdf346c57a7ed8a3418041306d5692def3/parsel-1.0.3.tar.gz
+  md5: 300ecfa4312496e447cada7abe9cc4ce
+  patches:
+    - setup.patch
 
 requirements:
   build:
@@ -25,4 +27,5 @@ test:
 about:
   home: https://github.com/scrapy/parsel
   license: BSD
+  license_file: LICENSE
   summary: library to extract data from HTML and XML using XPath and CSS selectors

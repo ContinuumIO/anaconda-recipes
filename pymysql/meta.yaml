@@ -1,11 +1,11 @@
 package:
   name: pymysql
-  version: 0.7.6
+  version: 0.7.9
 
 source:
-  fn: PyMySQL-0.7.6.tar.gz
-  url: https://pypi.python.org/packages/f5/d9/976c885396294bb1c4ca3d013fd2046496cde2efbb168e4f41dd12552dd9/PyMySQL-0.7.6.tar.gz
-  md5: d1353d9ad6e6668c3c463603b12cadb0
+  fn: PyMySQL-0.7.9.tar.gz
+  url: https://pypi.python.org/packages/a4/c4/c15457f261fda9839637de044eca9b6da8f55503183fe887523801b85701/PyMySQL-0.7.9.tar.gz
+  md5: bf82311ac2df4c43adad003a8c805b90
 
 requirements:
   build:
