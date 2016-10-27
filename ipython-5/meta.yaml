@@ -8,11 +8,11 @@ source:
   md5: 47c8122420f65b58784cb4b9b4af35e3
 
 build:
+  number: 1                              [osx]
   entry_points:
     - ipython = IPython:start_ipython
     - ipython2 = IPython:start_ipython   [py2k]
     - ipython3 = IPython:start_ipython   [py3k]
-  osx_is_app: False
 
 requirements:
   build:
@@ -31,7 +31,6 @@ requirements:
     - appnope                            [osx]
     - colorama                           [win]
     - win_unicode_console >=0.5          [win]
-    - python.app                         [osx]
 
 test:
   commands:

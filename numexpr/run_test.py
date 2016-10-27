@@ -26,6 +26,17 @@ def run_tests():
     numexpr.test()
 
 
+def issue53():
+    import numexpr, numpy as np
+    from numexpr import NumExpr, E
+    func = NumExpr((E.a + 2.0 * E.b) / (1 + E.a + 4 * E.b * E.b))
+    a = np.arange(10.0)
+    b = np.arange(10.0)*0.2
+    x = (a + 2 * b) / (1 + a + 4 * b * b)
+    y = func(a, b)
+
+
 if __name__ == "__main__":
     freeze_support()
     run_tests()
+    issue53()

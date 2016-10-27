@@ -17,12 +17,6 @@ if sys.platform.startswith('linux'):
     lzo_ver = tables.which_lib_version("lzo")[1]
     assert lzo_ver == '2.06', lzo_ver
 
-if sys.platform == 'win32':
-    print("""
-Skipping tables.test() on Windows.
-There is currently one test failure, and we have to look into this.
-""")
-else:
-    from multiprocessing import freeze_support
-    freeze_support()
-    tables.test()
+from multiprocessing import freeze_support
+freeze_support()
+tables.test()
