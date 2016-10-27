@@ -12,7 +12,7 @@ build:
     - ipython = IPython:start_ipython
     - ipython2 = IPython:start_ipython   [py2k]
     - ipython3 = IPython:start_ipython   [py3k]
-  osx_is_app: True
+  osx_is_app: False
 
 requirements:
   build:
