@@ -1,11 +1,11 @@
 package:
   name: boto
-  version: 2.42.0
+  version: 2.43.0
 
 source:
-  fn: boto-2.42.0.tar.gz
-  url: https://pypi.python.org/packages/c4/bb/28324652bedb4ea9ca77253b84567d1347b54df6231b51822eaaa296e6e0/boto-2.42.0.tar.gz
-  md5: 62b6ef1af3d18f8811f97e311b856dad
+  fn: boto-2.43.0.tar.gz
+  url: https://pypi.python.org/packages/68/4a/48b302989cbc3e6c64a16da5ec807bb7b36d8e8d3428579addde2eb1f671/boto-2.43.0.tar.gz
+  md5: 42dfaa490058c1e41bc8f76bd02caf83
 
 requirements:
   build:
@@ -15,9 +15,9 @@ requirements:
 
 test:
   commands:
-    - asadmin -h     [py2k]
-    - s3put -h       [py2k]
-    - taskadmin -h   [py2k]
+    - asadmin -h     [py2k and unix]
+    - s3put -h       [py2k and unix]
+    - taskadmin -h   [py2k and unix]
   imports:
     - boto
 

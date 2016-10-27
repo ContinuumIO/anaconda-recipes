@@ -1,2 +1,2 @@
-%PYTHON% setup.py install --single-version-externally-managed --root=/
+%PYTHON% setup.py install
 if errorlevel 1 exit 1

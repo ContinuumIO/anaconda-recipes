@@ -1,4 +1,3 @@
-import Cython
 import Cython.Compiler.Code
 import Cython.Compiler.FlowControl
 import Cython.Compiler.Lexicon
@@ -8,6 +7,7 @@ import Cython.Compiler.Visitor
 import Cython.Plex.Actions
 import Cython.Plex.Scanners
 import Cython.Runtime.refnanny
+import Cython.Tempita._tempita
 
 import sys
 import os

@@ -1,11 +1,11 @@
 package:
   name: psutil
-  version: 4.4.1
+  version: 4.4.2
 
 source:
-  fn: psutil-4.4.1.tar.gz
-  url: https://pypi.python.org/packages/e5/f3/b816daefa9a6757f867f81903f40849dcf0887f588793236b476e6a30ded/psutil-4.4.1.tar.gz
-  md5: 0f2f2a46834713dbed7d99285b939491
+  fn: psutil-4.4.2.tar.gz
+  url: https://pypi.python.org/packages/6c/49/0f784a247868e167389f6ac76b8699b2f3d6f4e8e85685dfec43e58d1ed1/psutil-4.4.2.tar.gz
+  md5: 189749a7b00813dffd6dac516a1166ef
 
 requirements:
   build:

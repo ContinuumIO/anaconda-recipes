@@ -15,6 +15,9 @@ source:
     - win_library_path.patch [win]
     - omit_pep8.patch    [win]
 
+build:
+  number: 1
+
 requirements:
   build:
     - python

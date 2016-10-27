@@ -1,11 +1,11 @@
 package:
   name: cython
-  version: 0.24.1
+  version: 0.25
 
 source:
-  fn: Cython-0.24.1.tar.gz
-  url: https://pypi.python.org/packages/c6/fe/97319581905de40f1be7015a0ea1bd336a756f6249914b148a17eefa75dc/Cython-0.24.1.tar.gz
-  md5: 890b494a12951f1d6228c416a5789554
+  fn: Cython-0.25.tar.gz
+  url: https://pypi.python.org/packages/f8/2e/5898046f8089205981447c23ebb8fe02cd9d66939cd74338aa4872853d8e/Cython-0.25.tar.gz
+  md5: 1b61433b8410ac382ac9b248b42466fd
 
 build:
   entry_points:
@@ -25,6 +25,8 @@ test:
     - cython --version
   files:
     - fib.pyx
+  imports:
+    - Cython
 
 about:
   home: http://www.cython.org/
