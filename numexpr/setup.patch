@@ -1,0 +1,13 @@
+diff --git setup.py setup.py
+index 57154c7..fc3fd25 100644
+--- setup.py
++++ setup.py
+@@ -39,8 +39,6 @@ def setup_package():
+                       url='https://github.com/pydata/numexpr',
+                       license='MIT',
+                       packages=['numexpr'],
+-                      install_requires=requirements,
+-                      setup_requires=requirements
+     )
+     if (len(sys.argv) >= 2 and
+         ('--help' in sys.argv[1:] or

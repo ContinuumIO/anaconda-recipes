@@ -5,9 +5,11 @@ package:
 source:
   git_url: https://github.com/pydata/numexpr.git
   git_tag: v2.6.1
+  patches:
+    - setup.patch
 
 build:
-  number: 0
+  number: 1
   ignore_prefix_files: True   [win]
   features:
     - nomkl                   [nomkl]
@@ -15,6 +17,7 @@ build:
 requirements:
   build:
     - python
+    - setuptools              [py3k]
     - numpy x.x
     - mkl-devel 11.3.3        [not nomkl]
     - cio-bt                  [win]
