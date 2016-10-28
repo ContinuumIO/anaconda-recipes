@@ -1,11 +1,11 @@
 package:
   name: python-daemon
-  version: 2.1.1
+  version: 2.1.2
 
 source:
-  fn: python-daemon-2.1.1.tar.gz
-  url: https://pypi.python.org/packages/source/p/python-daemon/python-daemon-2.1.1.tar.gz
-  md5: 72e2acf2c3d69c7fa75a6625d06adfd0
+  fn: python-daemon-2.1.2.tar.gz
+  url: https://pypi.python.org/packages/b2/fb/a280d65f81e9d69989c8d6c4e0bb18d7280cdcd6d406a2cc3f4eb47d4402/python-daemon-2.1.2.tar.gz
+  md5: 9c57343d81f2a96c51cffeab982b04d2
 
 requirements:
   build:

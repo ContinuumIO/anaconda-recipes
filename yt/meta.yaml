@@ -1,11 +1,11 @@
 package:
   name: yt
-  version: 3.3.1
+  version: 3.3.2
 
 source:
-  fn: yt-3.3.1.tar.gz
-  url: https://files.pythonhosted.org/packages/source/y/yt/yt-3.3.1.tar.gz
-  sha256: 01e3b3398d43b8eab698d55ba37ef3d701ea026b899c0940a1ee34b215e25a31
+  fn: yt-3.3.2.tar.gz
+  url: https://pypi.python.org/packages/98/b5/9285b3634d26841103f21fbdaec9dfd80c7a215dfbd7c9312ba710f13a2a/yt-3.3.2.tar.gz
+  md5: 405211ea89a0d40eb289363055a54291
 
 build:
   entry_points:
@@ -28,6 +28,7 @@ requirements:
 test:
   commands:
     - yt -h
+    - iyt -h
   imports:
     - yt
 

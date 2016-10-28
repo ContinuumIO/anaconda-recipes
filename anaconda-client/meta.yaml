@@ -1,12 +1,10 @@
 package:
   name: anaconda-client
-  version: 1.5.2
+  version: 1.5.3
 
 source:
   git_url: https://github.com/Anaconda-Server/anaconda-client.git
-  git_tag: 1.5.2
-  patches:
-    - windows.patch
+  git_tag: 1.5.3
 
 build:
   entry_points:
