@@ -1,0 +1,26 @@
+package:
+  name: incremental
+  version: 16.10.1
+
+source:
+  fn: incremental-16.10.1.tar.gz
+  url: https://pypi.python.org/packages/da/b0/32233c9e84b0d44b39015fba8fec03e88053723c1b455925081dc6ccd9e7/incremental-16.10.1.tar.gz
+  md5: 3fe6b3b1da1d26a48187fb27e969f072
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - incremental
+
+about:
+  home: https://github.com/hawkowl/incremental
+  license: MIT License
+  license_family: MIT
+  license_file: LICENSE
+  summary: library that versions your Python projects

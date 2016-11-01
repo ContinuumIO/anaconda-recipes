@@ -1,11 +1,11 @@
 package:
   name: glueviz
-  version: 0.9.0
+  version: 0.9.1
 
 source:
-  fn: glueviz-0.9.0.tar.gz
-  url: https://pypi.io/packages/source/g/glueviz/glueviz-0.9.0.tar.gz
-  md5: 34b4923e4e2441a95b1830ede26ddca2
+  fn: glueviz-0.9.1.tar.gz
+  url: https://pypi.python.org/packages/0e/6e/f48564217d464c8dbb7a57090e1446dab888fe23721dd6b8b806b2103403/glueviz-0.9.1.tar.gz
+  md5: 365887017580e243fb008d8109f2bc16
 
 build:
   entry_points:
@@ -15,45 +15,25 @@ build:
   osx_is_app: True
 
 requirements:
-
   build:
-
     - python
     - setuptools
-
     # The following dependencies are defined in install_requires
     # and need to be included here otherwise setuptools tries to
     # download them
     - numpy
     - pandas
-    - astropy >=1
+    - astropy
     - matplotlib
     - qtpy
-
   run:
-
-    # Required run-time dependencies
     - python
-    - numpy
-    - pandas
-    - astropy >=1
-    - matplotlib
-    - qtpy >=1.1.1
     - setuptools
-    - pyqt
-
-    # Optional dependencies (defined in ``extras_require``). These are
-    # technically optional code-wise, but significantly enhance the
-    # functionality of glue and should be included here.
-    - dill
-    - h5py
-    - scipy
-    - scikit-image
-    - ipython >=1
-    - ipykernel
-    - qtconsole
-    - plotly
-    - xlrd
+    - numpy
+    - pandas >=0.14
+    - astropy >=1.0
+    - matplotlib >=1.4
+    - qtpy >=1.1
 
     # The following is needed to make sure that the package works as a GUI
     # application (glue needs to be run with python.app, not python)

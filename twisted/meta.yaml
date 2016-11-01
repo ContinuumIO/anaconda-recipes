@@ -1,20 +1,23 @@
 package:
   name: twisted
-  version: 16.4.1
+  version: 16.5.0
 
 source:
-  fn: Twisted-16.4.1.tar.bz2
-  url: https://pypi.python.org/packages/6b/23/8dbe86fc83215015e221fbd861a545c6ec5c9e9cd7514af114d1f64084ab/Twisted-16.4.1.tar.bz2
-  md5: c6d09bdd681f538369659111f079c29d
+  fn: Twisted-16.5.0.tar.bz2
+  url: https://pypi.python.org/packages/ee/50/224854b4730f4daa941b8bcc4834a15bfee3012dad663fa760a89210df2c/Twisted-16.5.0.tar.bz2
+  md5: 79929fae9968c4b9daf518a5c0c075d7
 
 requirements:
   build:
     - python
     - setuptools
+    - incremental
     - zope.interface
   run:
     - python
     - zope.interface >=4.0.2
+    - constantly
+    - incremental
     - pywin32                  [win]
 
 test:
