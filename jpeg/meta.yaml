@@ -3,7 +3,7 @@ package:
   version: 8d
 
 source:
-  fn: jpegsrc.v8d.tar.gz
+  fn: jpegsrc.v8d1.tar.gz
   url: http://jpegclub.org/support/files/jpegsrc.v8d1.tar.gz
   md5: 964d0dc8b4789acd32ec1431ca85171d
 

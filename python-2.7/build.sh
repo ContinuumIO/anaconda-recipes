@@ -48,8 +48,8 @@ make
 #fi
 make install
 
+DYNLOAD_DIR=$PREFIX/lib/python2.7/lib-dynload
 if [ `uname` == Darwin ]; then
-    DYNLOAD_DIR=$STDLIB_DIR/lib-dynload
     mv $DYNLOAD_DIR/readline_failed.so $DYNLOAD_DIR/readline.so
     rm $DYNLOAD_DIR/_hashlib_failed.so
     rm $DYNLOAD_DIR/_ssl_failed.so
@@ -68,4 +68,8 @@ if [ `uname` == Linux ]; then
     rm python2-config python-config
     mv python2.7-config python-config
     popd
+fi
+
+if [ `uname -m` == ppc64le ]; then
+    cp $HOME/py27/readline.so $DYNLOAD_DIR/
 fi

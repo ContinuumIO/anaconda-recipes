@@ -4,7 +4,7 @@ package:
 
 source:
   fn: tiff-4.0.6.tar.gz
-  url: ftp://ftp.remotesensing.org/pub/libtiff/tiff-4.0.6.tar.gz
+  url: http://pkgs.fedoraproject.org/repo/pkgs/libtiff/tiff-4.0.6.tar.gz/d1d2e940dea0b5ad435f21f03d96dd72/tiff-4.0.6.tar.gz
   md5: d1d2e940dea0b5ad435f21f03d96dd72
   patches:
     - def_snprintf.patch

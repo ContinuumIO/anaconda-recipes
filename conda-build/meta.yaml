@@ -1,10 +1,10 @@
 package:
   name: conda-build
-  version: 2.0.6
+  version: 2.0.8
 
 source:
   git_url: https://github.com/conda/conda-build.git
-  git_tag: 2.0.6
+  git_tag: 2.0.8
 
 build:
   number: 0
@@ -32,20 +32,19 @@ requirements:
     - pycrypto
     - pyyaml
     - pkginfo
+    - contextlib2   [py2k]
 
 test:
   commands:
-    - conda build -h
-    - conda convert -h
-    - conda develop -h
-    - conda index -h
-    - conda inspect -h
-    - conda metapackage -h
-    - conda render -h
-    - conda sign -h
-    - conda skeleton -h
-    # test that conda sees entry points appropriately in help
-    - conda --help
+    - conda-build -h
+    - conda-convert -h
+    - conda-develop -h
+    - conda-index -h
+    - conda-inspect -h
+    - conda-metapackage -h
+    - conda-render -h
+    - conda-sign -h
+    - conda-skeleton -h
   imports:
     - conda_build
 

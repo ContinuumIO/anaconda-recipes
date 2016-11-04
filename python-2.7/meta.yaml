@@ -11,7 +11,7 @@ source:
     - site.patch
     - cprt.patch
     - linux-clear_history.patch       [linux]
-    - fix-readline-extra-space.patch  [linux]
+    - fix-readline-extra-space.patch  [linux and x86]
     - osx-dist.patch                  [osx and x86_64]
     - osx-site.patch                  [osx]
     - win-find_exe.patch              [win]

@@ -40,8 +40,8 @@ popd
 
 export PYTHON=$PYTHON_BAK
 
+DYNLOAD_DIR=$PREFIX/lib/python3.4/lib-dynload
 if [ `uname` == Darwin ]; then
-    DYNLOAD_DIR=$STDLIB_DIR/lib-dynload
     rm $DYNLOAD_DIR/_hashlib_failed.so
     rm $DYNLOAD_DIR/_ssl_failed.so
     pushd Modules
@@ -61,3 +61,7 @@ fi
 replace '-Werror=declaration-after-statement' '' \
     $PREFIX/lib/python3.4/_sysconfigdata.py \
     $PREFIX/lib/python3.4/config-3.4m/Makefile
+
+if [ `uname -m` == ppc64le ]; then
+    cp $HOME/py34/readline.so $DYNLOAD_DIR/
+fi

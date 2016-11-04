@@ -1,10 +1,10 @@
 package:
   name: pandas
-  version: 0.19.0
+  version: 0.19.1
 
 source:
   git_url: https://github.com/pydata/pandas.git
-  git_tag: v0.19.0
+  git_tag: v0.19.1
 
 requirements:
   build:

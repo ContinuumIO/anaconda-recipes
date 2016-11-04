@@ -1,11 +1,11 @@
 package:
   name: pip
-  version: 8.1.2
+  version: 9.0.0
 
 source:
-  fn: pip-8.1.2.tar.gz
-  url: https://pypi.python.org/packages/e7/a8/7556133689add8d1a54c0b14aeff0acb03c64707ce100ecd53934da1aa13/pip-8.1.2.tar.gz
-  md5: 87083c0b9867963b29f7aba3613e8f4a
+  fn: pip-9.0.0.tar.gz
+  url: https://pypi.python.org/packages/5e/53/eaef47e5e2f75677c9de0737acc84b659b78a71c4086f424f55346a341b5/pip-9.0.0.tar.gz
+  md5: def0a8e3db26f896c128d063591bd008
   patches:
     - cio_conf.patch
 

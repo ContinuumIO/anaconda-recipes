@@ -9,7 +9,7 @@ except:
 buf = BytesIO()
 
 c = pycurl.Curl()
-c.setopt(c.URL, 'http://repo.continuum.io/')
+c.setopt(c.URL, 'https://repo.continuum.io/')
 c.setopt(c.WRITEFUNCTION, buf.write)
 c.perform()
 
