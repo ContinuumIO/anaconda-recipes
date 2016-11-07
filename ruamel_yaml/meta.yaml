@@ -31,4 +31,5 @@ test:
 about:
   home: https://bitbucket.org/ruamel/yaml
   license: MIT
+  license_family: MIT
   license_file: LICENSE
