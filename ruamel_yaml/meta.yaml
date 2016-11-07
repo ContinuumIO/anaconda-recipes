@@ -2,13 +2,14 @@ package:
   name: ruamel_yaml
   version: 0.11.14
 
+source:
+  fn: ruamel_yaml-0.11.14.tar.gz
+  url: https://bitbucket.org/ruamel/yaml/get/0.11.14.tar.gz
+  sha256: b78d394e192b6d0911bd59f794ceea88143fac4e373b76ed7e48143a2a29b33c
+
 build:
   number: 0
   no_link: .*\.(pyd|dll)                       [win]
-
-source:
-  hg_url: https://bitbucket.org/ruamel/yaml
-  hg_tag: 0.11.14
 
 requirements:
   build:
