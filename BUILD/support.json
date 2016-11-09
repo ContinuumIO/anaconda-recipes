@@ -119,6 +119,7 @@
   "conda-api": "all", 
   "conda-build": "all", 
   "conda-env": "all", 
+  "conda-verify": "all", 
   "configargparse": "all", 
   "configobj": "all", 
   "configparser": [

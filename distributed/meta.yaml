@@ -1,11 +1,11 @@
 package:
   name: distributed
-  version: 1.13.3
+  version: 1.14.1
 
 source:
-  fn: distributed-1.13.3.tar.gz
-  url: https://pypi.python.org/packages/29/68/7d67c4c7755f1bcbced02541685db40ee962a0ab643ab28f7fd630935885/distributed-1.13.3.tar.gz
-  md5: 7071d2d5e69ff4ef1b85020f755d2914
+  fn: distributed-1.14.1.tar.gz
+  url: https://pypi.python.org/packages/a6/9a/96d4956bceee8090dc4ef49e3845a988ec7f632e7bfd093bd7334c6f34e2/distributed-1.14.1.tar.gz
+  md5: 48b366ef5df0541e7f2d82f0760e0d8f
 
 build:
   number: 0
@@ -22,19 +22,19 @@ requirements:
     - setuptools
   run:
     - python
-    - bokeh >=0.12.1
-    - click >=6.6
-    - cloudpickle >=0.2.1
-    - dask >=0.11.0
-    - locket
+    - tornado >=4.2
+    - toolz >=0.7.4
     - msgpack-python
-    - psutil
-    - s3fs >=0.0.6
+    - cloudpickle >=0.2.1
+    - dask >=0.12.0
+    - click >=6.6
     - six
     - tblib
-    - toolz >=0.7.4
-    - tornado >=4.2
-    - zict
+    - psutil
+    - locket
+    - zict >=0.1.0
+    - futures                     [py2k]
+    - singledispatch              [py < 34]
 
 test:
   commands:
@@ -60,7 +60,7 @@ about:
     Distributed is a ightweight library for distributed computing in Python.
     It extends both the concurrent.futures and dask APIs to moderate sized
     clusters.  Distributed provides data-local computation by keeping data on
-    worker nodes, running computations where data lives, and by managing complex
-    data dependencies between tasks.
+    worker nodes, running computations where data lives, and by managing
+    complex data dependencies between tasks.
   doc_url: http://distributed.readthedocs.org
   dev_url: https://github.com/dask/distributed

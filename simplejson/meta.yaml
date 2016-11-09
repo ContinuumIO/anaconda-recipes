@@ -1,11 +1,11 @@
 package:
   name: simplejson
-  version: 3.9.0
+  version: 3.10.0
 
 source:
-  fn: simplejson-3.9.0.tar.gz
-  url: https://pypi.python.org/packages/81/b6/9a4d0107b1a8929c77f88bb816c64da25aacba6ef1ac080d39e46d8f1307/simplejson-3.9.0.tar.gz
-  md5: 01db2db1b96bd8e59bcab45bca12639b
+  fn: simplejson-3.10.0.tar.gz
+  url: https://pypi.python.org/packages/40/ad/52c1f3a562df3b210e8f165e1aa243a178c454ead65476a39fa3ce1847b6/simplejson-3.10.0.tar.gz
+  md5: 426a9631d22851a7a970b1a677368b15
 
 requirements:
   build:

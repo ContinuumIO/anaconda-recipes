@@ -1,11 +1,11 @@
 package:
   name: s3transfer
-  version: 0.1.7
+  version: 0.1.9
 
 source:
-  fn: s3transfer-0.1.7.tar.gz
-  url: https://pypi.python.org/packages/e9/a5/c69e87e716c5ec1fb2c44db87dab969f86a9f122cfc8f986995a4d59c191/s3transfer-0.1.7.tar.gz
-  md5: 0d60e4ad635cad260d2145832adc5098
+  fn: s3transfer-0.1.9.tar.gz
+  url: https://pypi.python.org/packages/e6/e0/61bf352050b0d687755cd1a41ead378e6b1b48f8754076c413e816fcc1ee/s3transfer-0.1.9.tar.gz
+  md5: 036d467e77e0d4dfa65448d63a9208bc
 
 requirements:
   build:

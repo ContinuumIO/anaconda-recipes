@@ -30,3 +30,4 @@ about:
   home: https://bitbucket.org/ruamel/yaml
   license: MIT
   license_file: LICENSE
+  summary: patched copy of ruamel.yaml (a yaml parser)

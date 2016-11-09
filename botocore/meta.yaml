@@ -1,11 +1,11 @@
 package:
   name: botocore
-  version: 1.4.67
+  version: 1.4.70
 
 source:
-  fn: botocore-1.4.67.tar.gz
-  url: https://pypi.python.org/packages/42/2c/720bd569ebba3c322f684d529fa910c1a1481325a64b22c905dedff0dd8f/botocore-1.4.67.tar.gz
-  md5: 92fe8498cfc1f43f1de1b06f2f4be6aa
+  fn: botocore-1.4.70.tar.gz
+  url: https://pypi.python.org/packages/65/33/f14d2886dbae8445e847c65c817b8a66793f540b932fc13b59dabb4af3ea/botocore-1.4.70.tar.gz
+  md5: 4cec227cfdcc16c495e4187993258505
 
 requirements:
   build:
@@ -26,7 +26,9 @@ test:
 
 about:
   home: http://aws.amazon.com/sdk-for-python/
-  license: Apache
+  license: Apache License 2.0
+  license_url: http://aws.amazon.com/apache2.0/
+  license_family: Apache
   license_file: LICENSE.txt
   summary: low-level, core functionality of boto3
   description: |
