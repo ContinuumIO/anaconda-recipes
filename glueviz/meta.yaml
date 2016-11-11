@@ -34,6 +34,7 @@ requirements:
     - astropy >=1.0
     - matplotlib >=1.4
     - qtpy >=1.1
+    - pyqt
 
     # The following is needed to make sure that the package works as a GUI
     # application (glue needs to be run with python.app, not python)
