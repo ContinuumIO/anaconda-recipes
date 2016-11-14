@@ -1,10 +1,10 @@
 package:
   name: scikit-learn
-  version: 0.18
+  version: 0.18.1
 
 source:
   git_url: https://github.com/scikit-learn/scikit-learn.git
-  git_tag: 0.18
+  git_tag: 0.18.1
 
 build:
   features:
