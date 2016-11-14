@@ -1,0 +1,12 @@
+diff --git support/shobj-conf support/shobj-conf
+index d47bd80..fc8da1e 100644
+--- support/shobj-conf
++++ support/shobj-conf
+@@ -114,6 +114,7 @@ linux*-*|gnu*-*|k*bsd*-gnu-*|freebsd*-gentoo)
+ 	SHOBJ_LD='${CC}'
+ 	SHOBJ_LDFLAGS='-shared -Wl,-soname,$@'
+ 
++	SHLIB_LIBS='-lncurses'
+ 	SHLIB_XLDFLAGS='-Wl,-rpath,$(libdir) -Wl,-soname,`basename $@ $(SHLIB_MINOR)`'
+ 	SHLIB_LIBVERSION='$(SHLIB_LIBSUFF).$(SHLIB_MAJOR)$(SHLIB_MINOR)'
+ 	;;
