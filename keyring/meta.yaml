@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/7e/84/65816c2936cf7191bcb5b3e3dc4fb87def6f8a38be25b3a78131bbb08594/keyring-9.3.1.tar.gz
   md5: 934aad9f3cdcc860029a0122fb5f67bb
 
+  patches:
+    - platform-deps-fix.patch
+
 build:
   entry_points:
     - keyring = keyring.cli:main
@@ -15,13 +18,19 @@ requirements:
   build:
     - python
     - setuptools
-    - setuptools_scm
+    - setuptools_scm >=1.9
+    - pywin32        # [win]
   run:
     - python
+    - setuptools
+    - pywin32        # [win]
+    # - secretstorage  # [linux]
 
 test:
   commands:
     - keyring -h
+    - python -c "import pkg_resources as pr; pr.require('keyring')"
+
   imports:
     - keyring
 
