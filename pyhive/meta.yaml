@@ -1,0 +1,27 @@
+package:
+  name: pyhive
+  version: 0.2.1
+
+source:
+  git_url: https://github.com/dropbox/PyHive.git
+  git_tag: v0.2.1
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - future
+
+test:
+  imports:
+    - pyhive
+    - TCLIService
+
+about:
+  home: https://github.com/dropbox/PyHive
+  license: Apache License, Version 2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: Python interface to Hive and Presto.

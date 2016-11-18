@@ -1,11 +1,11 @@
 package:
   name: django
-  version: 1.10.2
+  version: 1.10.3
 
 source:
-  fn: Django-1.10.2.tar.gz
-  url: https://pypi.python.org/packages/57/9e/59444485f092b6ed4f1931e7d2e13b67fdab967c041d02f58a0d1dab8c23/Django-1.10.2.tar.gz
-  md5: 5342e77374b2acd2eafa86d2bb68f8c9
+  fn: Django-1.10.3.tar.gz
+  url: https://pypi.python.org/packages/4d/6b/cf3edad0526851d1fd6dd56c9cc94f2be090489c39d9666ca4ad980312e2/Django-1.10.3.tar.gz
+  md5: 70e4e0e6b2b38e782436e4eb7eb6ff39
 
 build:
   entry_points:

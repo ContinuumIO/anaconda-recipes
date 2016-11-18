@@ -1,11 +1,11 @@
 package:
   name: mako
-  version: 1.0.5
+  version: 1.0.6
 
 source:
-  fn: Mako-1.0.5.tar.gz
-  url: https://pypi.python.org/packages/20/ce/296b1037ed9b7803ed4e738b83ae244d2834e97e4ea24d52a6d46c12a884/Mako-1.0.5.tar.gz
-  md5: 0d0ce8b3fb0dd6834efe506c9fd7f2b8
+  fn: Mako-1.0.6.tar.gz
+  url: https://pypi.python.org/packages/56/4b/cb75836863a6382199aefb3d3809937e21fa4cb0db15a4f4ba0ecc2e7e8e/Mako-1.0.6.tar.gz
+  md5: a28e22a339080316b2acc352b9ee631c
 
 build:
   entry_points:
@@ -30,6 +30,7 @@ test:
 about:
   home: http://www.makotemplates.org
   license: MIT
+  license_family: MIT
   license_file: LICENSE
   summary: Template library written in Python
   description: |

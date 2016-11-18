@@ -1,21 +1,21 @@
 package:
   name: pyopenssl
-  version: 16.0.0
+  version: 16.2.0
 
 source:
-  fn: pyOpenSSL-16.0.0.tar.gz
-  url: https://pypi.python.org/packages/77/f2/bccec75ca4280a9fa762a90a1b8b152a22eac5d9c726d7da1fcbfe0a20e6/pyOpenSSL-16.0.0.tar.gz
-  md5: 9587d813dcf656e9f2760e41a3682dc3
+  fn: pyOpenSSL-16.2.0.tar.gz
+  url: https://pypi.python.org/packages/0c/d6/b1fe519846a21614fa4f8233361574eddb223e0bc36b182140d916acfb3b/pyOpenSSL-16.2.0.tar.gz
+  md5: 6635503758c65ea6f70d18d1b18e46d5
 
 requirements:
   build:
     - python
     - setuptools
-    - cryptography >=1.3
+    - cryptography >=1.3.4
     - six >=1.5.2
   run:
     - python
-    - cryptography >=1.3
+    - cryptography >=1.3.4
     - six >=1.5.2
 
 test:
@@ -27,7 +27,7 @@ test:
 
 about:
   home: https://github.com/pyca/pyopenssl
-  license: Apache License, Version 2.0
+  license: Apache Software License
   license_family: Apache
   license_file: LICENSE
   summary: Python wrapper module around the OpenSSL library

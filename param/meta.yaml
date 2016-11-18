@@ -1,11 +1,11 @@
 package:
   name: param
-  version: 1.4.1
+  version: 1.4.2
 
 source:
-  fn: param-1.4.1.zip
-  url: https://pypi.python.org/packages/f7/93/cb32092b25503e0d4a4efaa2d5015e03a8492d9dd308e848db6ecc99da5f/param-1.4.1.zip
-  md5: 40f1941cb2d38e45cf614b1979bd6906
+  fn: param-1.4.2.tar.gz
+  url: https://pypi.python.org/packages/db/c7/98030f92d18856982cd5a37e05cb286a0b9367b9bd9dfd691ec150efe358/param-1.4.2.tar.gz
+  md5: 2e613b665976d9bee36097ff09824a29
 
 requirements:
   build:

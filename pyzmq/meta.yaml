@@ -1,11 +1,11 @@
 package:
   name: pyzmq
-  version: 16.0.0
+  version: 16.0.1
 
 source:
-  fn: pyzmq-16.0.0.tar.gz
-  url: https://pypi.python.org/packages/12/b8/06a9c0769d1f8024f8ffc516e4150a959d05658fc27eaead5cc199d31194/pyzmq-16.0.0.tar.gz
-  md5: 1c6085e9338b5a1b185db922e26a6b75
+  fn: pyzmq-16.0.1.tar.gz
+  url: https://pypi.python.org/packages/45/a6/208eb616ab0221679944631d93f4d05651422a16dd7828fc71e40dead6a7/pyzmq-16.0.1.tar.gz
+  md5: 1f7b5aa2eb34db915f58b71453199768
 
 requirements:
   build:

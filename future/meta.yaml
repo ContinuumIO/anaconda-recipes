@@ -1,11 +1,11 @@
 package:
   name: future
-  version: 0.15.2
+  version: 0.16.0
 
 source:
-  fn: future-0.15.2.tar.gz
-  url: https://pypi.python.org/packages/source/f/future/future-0.15.2.tar.gz
-  md5: a68eb3c90b3b76714c5ceb8c09ea3a06
+  fn: future-0.16.0.tar.gz
+  url: https://pypi.python.org/packages/00/2b/8d082ddfed935f3608cc61140df6dcbf0edea1bc3ab52fb6c29ae3e81e85/future-0.16.0.tar.gz
+  md5: 3e8e88a2bda48d54b1da7634d04760d7
 
 requirements:
   build:

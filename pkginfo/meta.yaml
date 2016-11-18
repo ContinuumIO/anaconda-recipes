@@ -1,11 +1,11 @@
 package:
   name: pkginfo
-  version: 1.3.2
+  version: 1.4.1
 
 source:
-  fn: pkginfo-1.3.2.tar.gz
-  url: https://pypi.python.org/packages/bc/3e/046ec2439e233161f99d2f6cceb1ac49176612b6f6250cd6cb9919cda97a/pkginfo-1.3.2.tar.gz
-  md5: 8db6cbdf1d810c7270c88992d196951f
+  fn: pkginfo-1.4.1.tar.gz
+  url: https://pypi.python.org/packages/58/54/57f7c5638fecdf232a5b6b767da467b0ff31467d7f86a7364c252acf2321/pkginfo-1.4.1.tar.gz
+  md5: 3d093d5b51c7902e7dd1736100e0ce87
 
 build:
   entry_points:
@@ -26,4 +26,5 @@ test:
 about:
   home: https://pypi.python.org/pypi/pkginfo/
   license: PSF
+  license_file: LICENSE.txt
   summary: query metadatdata from sdists or bdists installed packages

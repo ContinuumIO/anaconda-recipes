@@ -1,11 +1,11 @@
 package:
   name: pycparser
-  version: 2.16
+  version: 2.17
 
 source:
-  fn: pycparser-2.16.tar.gz
-  url: https://pypi.python.org/packages/eb/83/00c55ff5cb773a78e9e47476ac1a0cd2f0fb71b34cb6e178572eaec22984/pycparser-2.16.tar.gz
-  md5: 983118bb558ba11754af25647573487c
+  fn: pycparser-2.17.tar.gz
+  url: https://pypi.python.org/packages/be/64/1bb257ffb17d01f4a38d7ce686809a736837ad4371bcc5c42ba7a715c3ac/pycparser-2.17.tar.gz
+  md5: ca98dcb50bc1276f230118f6af5a40c7
 
 requirements:
   build:
@@ -20,8 +20,9 @@ test:
 about:
   home: https://github.com/eliben/pycparser
   license: BSD
+  license_family: BSD
   license_file: LICENSE
-  summary: Complete C99 parser in pure Python
+  summary: complete C99 parser in pure Python
   description: |
     pycparser is a parser for the C language, written in pure Python. It is a
     module designed to be easily integrated into applications that need to

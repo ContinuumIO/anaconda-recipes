@@ -33,4 +33,4 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: A patched copy of ruamel.yaml.
+  summary: A patched copy of ruamel.yaml (a yaml parser).

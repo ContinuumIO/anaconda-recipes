@@ -38,7 +38,7 @@ source:
   md5: 14fbc25840874615a266954974b9a1ea    [win64 and py35]
 
 build:
-  number: 1          [linux]
+  number: 2          [linux]
   detect_binary_files_with_prefix: true
 
 requirements:
