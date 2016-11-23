@@ -17,6 +17,7 @@ source:
     - win-find_exe.patch              [win]
     - win-cygwin.patch                [win]
     - win-library_bin.patch           [win]
+    - fd_setsize.patch                [win]
 
 build:
   number: 1                           [unix]

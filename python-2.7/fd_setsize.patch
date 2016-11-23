@@ -1,0 +1,13 @@
+diff --git Modules/selectmodule.c Modules/selectmodule.c
+index 6ea308a..02bc2ca 100644
+--- Modules/selectmodule.c
++++ Modules/selectmodule.c
+@@ -23,7 +23,7 @@
+    FD_SETSIZE higher before this; e.g., via compiler /D switch.
+ */
+ #if defined(MS_WINDOWS) && !defined(FD_SETSIZE)
+-#define FD_SETSIZE 512
++#define FD_SETSIZE 2048
+ #endif
+ 
+ #if defined(HAVE_POLL_H)

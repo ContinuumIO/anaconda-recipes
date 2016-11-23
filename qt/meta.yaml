@@ -62,7 +62,7 @@ source:
     - v4l2.patch   [linux]
 
 build:
-  number: 0
+  number: 1        [linux]
   detect_binary_files_with_prefix: true   [unix]
   features:
     - vc9     [win and py27]
@@ -112,10 +112,12 @@ requirements:
     - libgcc    [linux]
 
 test:
+  files:
+    - test/hello.pro
+    - test/main.cpp
   requires:
     - gcc    [linux]
-#  files:
-#    - test   [unix]
+    - jom    [win]
 
 about:
     home: http://www.qt.io

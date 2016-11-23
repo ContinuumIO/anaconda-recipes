@@ -1,11 +1,11 @@
 package:
   name: spyder
-  version: 3.0.1
+  version: 3.0.2
 
 source:
-  fn: spyder-3.0.1.tar.gz
-  url: https://pypi.python.org/packages/c1/88/98e21184f0fcb23cd879cb37353695eef8caa6c1cf0cdfcb46ef1fd47705/spyder-3.0.1.tar.gz
-  md5: 69c88f86394bfd45a22037c798b26c47
+  fn: spyder-3.0.2.tar.gz
+  url: https://pypi.python.org/packages/2e/60/f37dbbfb3f1000f4a26a8be3acc1a0147921b8757ae2a90dc732da3f6318/spyder-3.0.2.tar.gz
+  md5: 2d2b7f7a207b02e24d79051064b1fce2
 
 build:
   number: 0

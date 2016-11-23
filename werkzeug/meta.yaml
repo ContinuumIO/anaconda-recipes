@@ -7,15 +7,21 @@ source:
   url: https://pypi.python.org/packages/43/2e/d822b4a4216804519ace92e0368dcfc4b0b2887462d852fdd476b253ecc9/Werkzeug-0.11.11.tar.gz
   md5: 1d34afa1f19abcef4c0da51ebc2c4ea7
 
+build:
+  number: 1
+
 requirements:
   build:
     - python
+    - setuptools
   run:
     - python
 
 test:
   imports:
     - werkzeug
+    - werkzeug.debug
+    - werkzeug.contrib
 
 about:
   home: http://werkzeug.pocoo.org/

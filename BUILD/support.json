@@ -73,10 +73,7 @@
   "bsdiff4": "all", 
   "btrees": "all", 
   "bz2file": "all", 
-  "bzip2": [
-    "win-64:py27", 
-    "win-64:py35"
-  ], 
+  "bzip2": "all", 
   "cachecontrol": "all", 
   "cached-property": "all", 
   "cairo": [
@@ -585,6 +582,12 @@
   "natsort": "all", 
   "nbconvert": "all", 
   "nbformat": "all", 
+  "ncurses": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "ndg-httpsclient": [
     "linux-64:py27", 
     "osx-64:py27", 
