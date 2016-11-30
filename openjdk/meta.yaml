@@ -1,0 +1,28 @@
+package:
+  name: openjdk
+  version: 8.17.0.3
+
+source:
+  url: http://cdn.azul.com/zulu/bin/zulu8.17.0.3-jdk8.0.102-win_x64.zip   [win]
+  md5: d065ed57cf8a3c1c2003f8342fd21a68   [win]
+  url: http://cdn.azul.com/zulu/bin/zulu8.17.0.3-jdk8.0.102-linux_x64.tar.gz   [linux]
+  md5: abd8b70fa1a743f74c43d21f0a9bea43   [linux]
+  url: http://cdn.azul.com/zulu/bin/zulu8.17.0.3-jdk8.0.102-macosx_x64.zip  [osx]
+  md5: 76005a608b947db910b1b162d8c6c1f3   [osx]
+
+build:
+  number: 1
+
+test:
+  commands:
+    - java -h
+    # - ${CONDA_PREFIX}/jre/bin/java -h  [not win]
+    # - %CONDA_PREFIX%\jre\bin\java -h   [win]
+
+about:
+  home: https://www.azul.com/products/zulu/
+  license: GPL2
+  license_file: LICENSE
+  summary: 'Zulu, by Azul systems, is an OpenJDK implementation'
+  dev_url: https://www.azul.com/products/zulu/
+  doc_url: https://www.azul.com/products/zulu/
