@@ -56,6 +56,8 @@ if [ `uname` == Linux ]; then
                 -dbus \
                 -no-linuxfb \
                 -no-libudev \
+                -no-avx \
+                -no-avx2 \
                 -D _X_INLINE=inline \
                 -D XK_dead_currency=0xfe6f \
                 -D XK_ISO_Level5_Lock=0xfe13 \

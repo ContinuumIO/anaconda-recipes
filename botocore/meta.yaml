@@ -1,11 +1,11 @@
 package:
   name: botocore
-  version: 1.4.74
+  version: 1.4.79
 
 source:
-  fn: botocore-1.4.74.tar.gz
-  url: https://pypi.python.org/packages/55/a4/0d87bedbc2d555e2f8b112a97c33b7c55313446c766ec0757cd97a5d62d7/botocore-1.4.74.tar.gz
-  md5: a0ef33ceed90fb17468581b5eb3916e1
+  fn: botocore-1.4.79.tar.gz
+  url: https://pypi.python.org/packages/00/66/65eea8f62c0fd42fba4d8abd81ebc181c1a9b81f6622018c1ede834622e2/botocore-1.4.79.tar.gz
+  md5: e652c01238d87f2c53df78894fef8caa
 
 requirements:
   build:

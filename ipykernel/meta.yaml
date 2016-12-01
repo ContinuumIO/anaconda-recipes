@@ -1,11 +1,11 @@
 package:
   name: ipykernel
-  version: 4.5.1
+  version: 4.5.2
 
 source:
-  fn: ipykernel-4.5.1.tar.gz
-  url: https://pypi.python.org/packages/23/7a/a82c599760efe61862154120fece1d877a18657cf9d9b5baf75da4931c8f/ipykernel-4.5.1.tar.gz
-  md5: 08cb3910312d5304d6a9f38957d14b4d
+  fn: ipykernel-4.5.2.tar.gz
+  url: https://pypi.python.org/packages/2d/1b/eee47b5cd8b2fcdde587cad1e8d3f7eae7bdfa1d36a94ad316fc5fbee833/ipykernel-4.5.2.tar.gz
+  md5: 4048987076b85814202cd29b1dd3fc7b
 
 requirements:
   build:

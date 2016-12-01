@@ -1,0 +1,36 @@
+package:
+  name: pyface
+  version: 5.1.0
+
+source:
+  git_url: https://github.com/enthought/pyface.git
+  git_tag: 5.1.0
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - traits
+    - pygments
+  run:
+    - python
+    - traits >=4.6
+    - pygments >=2.1
+
+test:
+  imports:
+    - pyface
+
+about:
+  home: https://github.com/enthought/pyface
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Traits-capable windowing framework
+  description: |
+    The pyface project contains a toolkit-independent GUI abstraction layer,
+    which is used to support the "visualization" features of the Traits
+    package. Thus, you can write code in terms of the Traits API (views,
+    items, editors, etc.), and let pyface and your selected toolkit and
+    back-end take care of the details of displaying them.
+  doc_url: http://docs.enthought.com/pyface/
+  dev_url: https://github.com/enthought/pyface

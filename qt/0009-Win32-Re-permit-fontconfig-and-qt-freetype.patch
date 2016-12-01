@@ -1,0 +1,24 @@
+diff --git qtbase/tools/configure/configureapp.cpp.orig qtbase/tools/configure/configureapp.cpp
+index 88dcd81..5f88535 100644
+--- qtbase/tools/configure/configureapp.cpp.orig
++++ qtbase/tools/configure/configureapp.cpp
+@@ -2732,16 +2732,10 @@ bool Configure::verifyConfiguration()
+     }
+ 
+     if ((dictionary["FONT_CONFIG"] == "yes") && (dictionary["FREETYPE_FROM"] == "commandline")) {
+-        if (dictionary["FREETYPE"] == "yes") {
+-            cout << "WARNING: Bundled FreeType can't be used."
+-                    "  FontConfig use requires system FreeType." << endl;
+-            dictionary["FREETYPE"] = "system";
+-            dictionary["FREETYPE_FROM"] = "override";
+-            prompt = true;
+-        } else if (dictionary["FREETYPE"] == "no") {
++         if (dictionary["FREETYPE"] == "no") {
+             cout << "WARNING: FreeType can't be disabled."
+-                    "  FontConfig use requires system FreeType." << endl;
+-            dictionary["FREETYPE"] = "system";
++                    "  FontConfig use requires bundled FreeType." << endl;
++            dictionary["FREETYPE"] = "yes";
+             dictionary["FREETYPE_FROM"] = "override";
+             prompt = true;
+         }

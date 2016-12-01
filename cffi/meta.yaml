@@ -3,17 +3,17 @@
 
 package:
   name: cffi
-  version: 1.8.3
+  version: 1.9.1
 
 source:
-  fn: cffi-1.8.3.tar.gz                                [unix]
-  md5: c8e877fe0426a99d0cf5872cf2f95b27                [unix]
-  fn: cffi-1.8.3-cp27-cp27m-win32.whl                  [py27 and win32]
-  fn: cffi-1.8.3-cp27-cp27m-win_amd64.whl              [py27 and win64]
-  fn: cffi-1.8.3-cp34-cp34m-win32.whl                  [py34 and win32]
-  fn: cffi-1.8.3-cp34-cp34m-win_amd64.whl              [py34 and win64]
-  fn: cffi-1.8.3-cp35-cp35m-win32.whl                  [py35 and win32]
-  fn: cffi-1.8.3-cp35-cp35m-win_amd64.whl              [py35 and win64]
+  fn: cffi-1.9.1.tar.gz                                [unix]
+  md5: b8fa7ccb87790531db3316ab17aa8244                [unix]
+  fn: cffi-1.9.1-cp27-cp27m-win32.whl                  [py27 and win32]
+  fn: cffi-1.9.1-cp27-cp27m-win_amd64.whl              [py27 and win64]
+  fn: cffi-1.9.1-cp34-cp34m-win32.whl                  [py34 and win32]
+  fn: cffi-1.9.1-cp34-cp34m-win_amd64.whl              [py34 and win64]
+  fn: cffi-1.9.1-cp35-cp35m-win32.whl                  [py35 and win32]
+  fn: cffi-1.9.1-cp35-cp35m-win_amd64.whl              [py35 and win64]
   patches:
     - setup-linux.patch    [linux]
 

@@ -1,17 +1,17 @@
-From 7d8b135a4d8a427b58caf2c9f2a015ff4baa0178 Mon Sep 17 00:00:00 2001
+From 2beb9fabfbd52abb3e90aabf62bb5f2d52e4d635 Mon Sep 17 00:00:00 2001
 From: Ray Donnelly <mingw.android@gmail.com>
 Date: Sun, 12 Jun 2016 18:42:25 +0100
-Subject: [PATCH 5/5] Remove unused include <sys/signalfd.h>
+Subject: [PATCH 5/9] Remove unused include <sys/signalfd.h>
 
 Change-Id: Ib62bf7c36713b8653c30cc47a4a57ac678cac94a
 ---
  src/platformsupport/fbconvenience/qfbvthandler.cpp | 1 -
  1 file changed, 1 deletion(-)
 
-diff --git a/qtbase/src/platformsupport/fbconvenience/qfbvthandler.cpp b/qtbase/src/platformsupport/fbconvenience/qfbvthandler.cpp
-index 5e062b3..5e12b2e 100644
---- a/qtbase/src/platformsupport/fbconvenience/qfbvthandler.cpp
-+++ b/qtbase/src/platformsupport/fbconvenience/qfbvthandler.cpp
+diff --git qtbase/src/platformsupport/fbconvenience/qfbvthandler.cpp qtbase/src/platformsupport/fbconvenience/qfbvthandler.cpp
+index bfe6b28..cffd497 100644
+--- qtbase/src/platformsupport/fbconvenience/qfbvthandler.cpp
++++ qtbase/src/platformsupport/fbconvenience/qfbvthandler.cpp
 @@ -43,7 +43,6 @@
  #include <signal.h>
  #include <errno.h>
@@ -21,5 +21,5 @@ index 5e062b3..5e12b2e 100644
  #include <linux/kd.h>
  
 -- 
-2.8.3
+2.10.2
 

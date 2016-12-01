@@ -1,31 +1,17 @@
 package:
   name: qt
-  version: 5.6.0
+  version: 5.6.2
 
 source:
-  fn:   qt-everywhere-opensource-src-5.6.0.tar.xz    [unix]
-  url:  http://download.qt.io/official_releases/qt/5.6/5.6.0/single/qt-everywhere-opensource-src-5.6.0.tar.xz   [unix]
-  sha256:  76a95cf6c1503290f75a641aa25079cd0c5a8fcd7cff07ddebff80a955b07de7   [unix]
-  fn:   qt-everywhere-opensource-src-5.6.0.zip   [win]
-  url:  http://download.qt.io/official_releases/qt/5.6/5.6.0/single/qt-everywhere-opensource-src-5.6.0.zip   [win]
-  sha256:  949ec2eebefe7e4a3580082d2d700e48713102bc017e640ed77a076cdbcce1f9   [win]
+  url:  http://download.qt.io/official_releases/qt/5.6/5.6.2/single/qt-everywhere-opensource-src-5.6.2.tar.xz   [unix]
+  md5:  5175fba2f221fd4c91e94771a57a5557   [unix]
+  url:  http://download.qt.io/official_releases/qt/5.6/5.6.2/single/qt-everywhere-opensource-src-5.6.2.zip   [win]
+  md5:  b684a2f37b1beebd421b3b7d1eca15dc   [win]
   patches:
     # Chromium is strangely set to look in a nonexistent path for win sdk libraries.  Fix it.
     - win8_sdk_path.patch           [win and py>=35]
     - issue1244883002_1.diff        [win and py>=35]
     - issue1228063005_1_10001.diff  [win and py>=35]
-
-    # VS 2015 update 2 fires C4334 warnings more than before, causing webengine to not build.
-    # This patch ignores those particular warnings.
-    # https://bugreports.qt.io/browse/QTBUG-52367
-    # https://codereview.qt-project.org/#/c/154777/
-    # This patch will not be necessary after Qt 5.6.1 or 5.7.
-    - vs2015_update2_warnings.patch   [win and py>=35]
-
-    # Attribute test also breaks VS 2015.  Hooray.  Another one that 5.6.1 or 5.7 should fix.
-    # https://codereview.qt-project.org/#/c/141019/
-    # https://codereview.qt-project.org/#/c/141019/3//ALL,unified
-    # - vs2015_tst_compiler.patch
 
     # qtbase patches:
     - 0001-angle-Split-DirectX-headers-and-libraries-out-from-c.patch   [win]
@@ -34,35 +20,24 @@ source:
     - 0004-VS2008-Add-typedefs-for-more-int-_t-and-define-_STDI.patch   [win]
     - 0005-Remove-unused-include-sys-signalfd.h.patch   [linux]
     - 0006-zlib_dependency-Add-EXTRA_INCLUDEPATH-for-system-zli.patch   [linux]
-    - 0007-qtbase-CentOS5-Do-not-use-strict_c++.patch   [linux]
-    - 0008-qtbase-Ubuntu-disable_overlay_scrollbars.patch   [linux]
+    - 0007-CentOS5-Do-not-use-strict_c-when-using-c-11.patch   [linux]
+    - 0008-disable-Ubuntu-overlay-scrollbars-as-they-don-t-play.patch   [linux]
+
     # This needs (lots) more work (in 2.10, the gtk color picker doesn't exist, Qt uses it)
     # .. the commits to revert: 842a0b094, 2cce297b5, ebca7d2ea and can configure -gtkstyle
     # - 0009-qtbase-Reduce-gtk-2-version-from-2.18-to-2.10.patch
-    # https://bugreports.qt.io/browse/QTBUG-43784
-    - 0010-qtbase-XCB-Auto-detect-xcb-glx-also-with-xcb-qt.patch   [linux]
 
     # qt3d patches:
     - 0001-Don-t-re-typedef-int-_t-if-_STDINT-is-defined.patch   [win]
     # qtwinextras patches:
     - 0001-shobjidl-Fix-compile-guard-around-SHARDAPPIDINFOLINK.patch   [win]
-    # Disable avx2 optimizations in Chromium's libvpx because not all processors support them
-    - avx.patch     [linux]
-    - avx1.patch    [linux]
-    - avx2.patch    [linux]
 
     # qtwebengine patches - these are to allow building with Clang 3.3 on OS X 10.7 but there
     # is a bit more work to do on that:
-    # - 0001-qtwebengine-Darwin-remove-Xcode-and-kernel-min-versions.patch   [osx]
-    # - 0002-qtwebengine-moz-libvpx-apple-clang.patch   [osx]
-    # - 0003-qtwebengine-builtin_bswap16-for-clang-4_3.patch   [osx]
-
-    # Fix errors when compiling WebEngine video components in RedHat/CentOS 6
-    # See https://bugreports.qt.io/browse/QTBUG-48298
-    - v4l2.patch   [linux]
+    # - 0001-Darwin-remove-Xcode-and-kernel-min-versions.patch   [osx]
+    # - 0002-builtin-bswap16-for-clang-4.3.patch   [osx]
 
 build:
-  number: 1        [linux]
   detect_binary_files_with_prefix: true   [unix]
   features:
     - vc9     [win and py27]
@@ -93,7 +68,7 @@ requirements:
 #    - m2-git      [win]
 #    - msinttypes   [win and py<34]
     - openssl 1.0*   [not osx]
-#    - perl >=5.20    [win]
+    - perl >=5.20    [win]
     - python
     - xz         [unix]
     - zlib 1.2*

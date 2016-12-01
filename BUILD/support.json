@@ -353,6 +353,10 @@
   ], 
   "heapdict": "all", 
   "holoviews": "all", 
+  "hs2client": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "html5lib": "all", 
   "hyde": [
     "linux-64:py27", 
@@ -455,6 +459,10 @@
     "linux-64:py35"
   ], 
   "libhdfs3": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
+  "libhs2client": [
     "linux-64:py27", 
     "linux-64:py35"
   ], 
@@ -746,6 +754,7 @@
   "pycrypto": "all", 
   "pycurl": "all", 
   "pydispatcher": "all", 
+  "pyface": "all", 
   "pyflakes": "all", 
   "pygments": "all", 
   "pyhive": [
@@ -984,6 +993,8 @@
   "toolz": "all", 
   "tornado": "all", 
   "traitlets": "all", 
+  "traits": "all", 
+  "traitsui": "all", 
   "transaction": "all", 
   "translationstring": "all", 
   "trollius": "all", 
