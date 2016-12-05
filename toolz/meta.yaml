@@ -1,11 +1,11 @@
 package:
   name: toolz
-  version: 0.8.0
+  version: 0.8.1
 
 source:
-  fn: toolz-0.8.0.tar.gz
-  url: https://pypi.python.org/packages/9e/b0/47e994b3b370087d388d2bb9dfc97c7e901b801265ccd1e8e9fd16eda1b8/toolz-0.8.0.tar.gz
-  md5: 21e051717a14766a4533b6c36bd54575
+  fn: toolz-0.8.1.tar.gz
+  url: https://pypi.python.org/packages/38/70/cf3187c8735d4d091990315faf4af2edb0a7271727cf92e10657e1bb3db9/toolz-0.8.1.tar.gz
+  md5: f3b60d62bd3906fe1881b748c9ee82a1
 
 requirements:
   build:

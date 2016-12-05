@@ -1,0 +1,33 @@
+package:
+  name: apptools
+  version: 4.4.0
+
+source:
+  git_url: https://github.com/enthought/apptools.git
+  git_tag: 4.4.0
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - configobj
+    - traitsui
+  run:
+    - python
+    - configobj
+    - traitsui >=5.1
+
+test:
+  imports:
+    - apptools
+
+about:
+  home: https://github.com/enthought/apptools
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Includes packages useful for creating applications
+  description: |
+    Apptools includes a set of useful packages that implement
+    commonly needed functionality for many applications.
+  doc_url: http://docs.enthought.com/apptools/
+  dev_url: https://github.com/enthought/apptools

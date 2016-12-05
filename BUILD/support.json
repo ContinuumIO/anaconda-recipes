@@ -15,6 +15,7 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "apptools": "all", 
   "apr": "all", 
   "argcomplete": "all", 
   "astroid": "all", 
@@ -540,6 +541,11 @@
   "markupsafe": "all", 
   "mathjax": "all", 
   "matplotlib": "all", 
+  "mayavi": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
   "mccabe": "all", 
   "mdp": "all", 
   "meld3": "all", 
