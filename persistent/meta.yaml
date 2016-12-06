@@ -1,11 +1,11 @@
 package:
   name: persistent
-  version: 4.2.1
+  version: 4.2.2
 
 source:
-  fn: persistent-4.2.1.tar.gz
-  url: https://pypi.python.org/packages/85/cc/ef995d2c270fd4174c391d304b0dbc2ea1a18f499091f37ced78041df0e0/persistent-4.2.1.tar.gz
-  md5: 851284f000855b693ff8e975a1ac5c24
+  fn: persistent-4.2.2.tar.gz
+  url: https://pypi.python.org/packages/3d/71/3302512282b606ec4d054e09be24c065915518903b29380b6573bff79c24/persistent-4.2.2.tar.gz
+  md5: 3d66070799c6422ffd8d44cef3c22985
 
 requirements:
   build:
