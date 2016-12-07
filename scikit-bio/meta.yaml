@@ -1,11 +1,11 @@
 package:
   name: scikit-bio
-  version: 0.5.0
+  version: 0.5.1
 
 source:
-  fn: scikit-bio-0.5.0.zip
-  url: https://pypi.python.org/packages/95/60/f4c269a6dfaf9d027adba6a81497e5d238cf5e604f53206b4ea50ed1145f/scikit-bio-0.5.0.zip
-  md5: 13efa76445ad1c87ebb088297f319c15
+  fn: scikit-bio-0.5.1.tar.gz
+  url: https://pypi.python.org/packages/e5/7e/cf03a7e53da18ae6a847894384838e9a36a98b48909a3f347ff6077c7304/scikit-bio-0.5.1.tar.gz
+  md5: efe59910e361be0a1aa98c474505f885
 
 requirements:
   build:
