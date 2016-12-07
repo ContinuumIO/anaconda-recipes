@@ -631,6 +631,7 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "openjdk": "all", 
   "openmpi": [
     "osx-64:py27", 
     "osx-64:py35"
