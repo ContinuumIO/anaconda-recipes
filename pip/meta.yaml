@@ -8,9 +8,10 @@ source:
   md5: 35f01da33009719497f01a4ba69d63c9
   patches:
     - cio_conf.patch
+    - ensure_easy_pth.patch
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - pip = pip:main
 
