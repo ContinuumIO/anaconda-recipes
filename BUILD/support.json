@@ -203,6 +203,7 @@
     "osx-64:py27", 
     "win-64:py27"
   ], 
+  "envisage": "all", 
   "ephem": [
     "linux-64:py27", 
     "linux-64:py35", 

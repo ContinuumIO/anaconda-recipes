@@ -27,6 +27,7 @@ requirements:
     - vtk
     - traitsui >=5.1
     - apptools >=4.4
+    - envisage >=4.5
     - pyqt 4.*
 
 test:
