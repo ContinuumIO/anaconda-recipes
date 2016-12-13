@@ -1,11 +1,11 @@
 package:
   name: cython
-  version: 0.25.1
+  version: 0.25.2
 
 source:
-  fn: Cython-0.25.1.tar.gz
-  url: https://pypi.python.org/packages/2f/ae/0bb6ca970b949d97ca622641532d4a26395322172adaf645149ebef664eb/Cython-0.25.1.tar.gz
-  md5: 3c1541c15ba511645684a4eaca2cec0f
+  fn: Cython-0.25.2.tar.gz
+  url: https://pypi.python.org/packages/b7/67/7e2a817f9e9c773ee3995c1e15204f5d01c8da71882016cac10342ef031b/Cython-0.25.2.tar.gz
+  md5: 642c81285e1bb833b14ab3f439964086
 
 build:
   entry_points:
@@ -30,7 +30,8 @@ test:
 
 about:
   home: http://www.cython.org/
-  license: Apache
+  license: Apache version 2.0
+  license_family: Apache
   license_file: LICENSE.txt
   summary: The Cython compiler for writing C extensions for the Python language
   description: |

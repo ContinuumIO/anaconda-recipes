@@ -1,11 +1,11 @@
 package:
   name: cytoolz
-  version: 0.8.1
+  version: 0.8.2
 
 source:
-  fn: cytoolz-0.8.1.tar.gz
-  url: https://pypi.python.org/packages/44/25/d1dd9cca6e34ff916d283b1c4be52961b4355ddae4ab9ed2ce8372a47b4e/cytoolz-0.8.1.tar.gz
-  md5: df6c1b6f9d4133732065f450dd670e2a
+  fn: cytoolz-0.8.2.tar.gz
+  url: https://pypi.python.org/packages/0f/e6/ccc124714dcc1bd511e64ddafb4d5d20ada2533b92e3173a4cf09e0d0831/cytoolz-0.8.2.tar.gz
+  md5: 06bd40dbb1257131094ca819054eb492
   patches:
     - setup.patch
 

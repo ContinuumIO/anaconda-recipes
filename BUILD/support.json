@@ -468,6 +468,12 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "libiconv": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "libnetcdf": "all", 
   "libntlm": [
     "linux-64:py27", 

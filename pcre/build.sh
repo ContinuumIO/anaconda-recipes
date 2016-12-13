@@ -5,7 +5,7 @@ export LDFLAGS="-L${PREFIX}/lib"
 
 mkdir -p $PREFIX/bin
 
-./configure --prefix=$PREFIX --enable-utf
+./configure --prefix=$PREFIX --enable-unicode-properties
 make
 make install
 

@@ -1,0 +1,36 @@
+package:
+  name: libiconv
+  version: 1.14
+
+source:
+  fn: libiconv-1.14.tar.gz
+  url: http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.14.tar.gz
+  md5: e34509b1623cec449dfeb73d7ce9c6c6
+  patches:
+    - glibc.patch            [linux]
+    - CMakeLists.txt.patch   [win]
+    - config.h.patch         [win]
+    - configure.cmake.patch  [win]
+
+build:
+  features:
+    - vc9     [win and py27]
+    - vc10    [win and py34]
+    - vc14    [win and py35]
+
+requirements:
+  build:
+    - python   [win]
+    - cmake    [win]
+
+test:
+  commands:
+    - iconv --help                                  [not win]
+    - env                                           [linux]
+    - conda inspect linkages -p ${PREFIX} libiconv  [linux]
+
+about:
+  home: https://www.gnu.org/software/libiconv/
+  license: GPL and LGPL
+  license_family: GPL2
+  summary: Provides iconv for systems which don't have one

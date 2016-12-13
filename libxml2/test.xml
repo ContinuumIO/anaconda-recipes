@@ -9,49 +9,26 @@
                 <H2>Overview
 </H2>
                 <UL>
-
         <LI>1.Intro</LI>
-
         <LI>2.History</LI>
-
         <LI>3.XSL Basics</LI>
-
         <LI>Lunch</LI>
-
         <LI>4.An XML Data Model</LI>
-
         <LI>5.XSL Patterns</LI>
-
         <LI>6.XSL Templates</LI>
-
         <LI>7.XSL Formatting Model
 </LI>
 
                 </UL>
-
-
-
-
-
-
                 <HR/>
                 <H2>Intro</H2>
                 <UL>
-
         <LI>Who am I?</LI>
-
         <LI>Who are you?</LI>
-
         <LI>Why are we here?
 </LI>
 
                 </UL>
-
-
-
-
-
-
                 <HR/>
                 <H2>History: XML and SGML</H2>
                 <UL>
@@ -65,29 +42,15 @@
 
                 </UL>
 
-
-
-
-
-
                 <HR/>
                 <H2>History: What are stylesheets?</H2>
                 <UL>
 
         <LI>Stylesheets specify the formatting of SGML/XML documents.</LI>
-
         <LI>Stylesheets put the &quot;style&quot; back into documents.</LI>
-
         <LI>New York Times content+NYT Stylesheet = NYT paper
 </LI>
-
                 </UL>
-
-
-
-
-
-
                 <HR/>
                 <H2>History: FOSI</H2>
                 <UL>
@@ -108,8 +71,4 @@
 </LI>
 
                 </UL>
-
-
-
-
 </HTML>

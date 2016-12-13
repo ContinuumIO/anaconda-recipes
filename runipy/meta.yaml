@@ -1,14 +1,11 @@
-# This is legacy recipe, which has not been tested using conda-build.
-# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
-
 package:
   name: runipy
-  version: 0.1.3
+  version: 0.1.5
 
 source:
-  fn: runipy-0.1.3.tar.gz
-  url: https://pypi.python.org/packages/source/r/runipy/runipy-0.1.3.tar.gz
-  md5: 376d6f574bae9f485edae5ef40a3795c
+  fn: runipy-0.1.5.tar.gz
+  url: https://pypi.python.org/packages/ab/b7/628258778b5b6da373dda3053241bf5f7d80ee65941ad3ad219fb3e9356f/runipy-0.1.5.tar.gz
+  md5: afef5be6b8103b9d7f5ba9d086f25d53
 
 build:
   entry_points:
@@ -18,13 +15,15 @@ requirements:
   build:
     - python
     - setuptools
-    - jinja2
-    - ipython
-    - pygments
-    - pyzmq
   run:
     - python
-    - notebook
+    - jinja2 >=2.7.2
+    - pygments >=1.6
+    - ipython >=4.0
+    - pyzmq >=14.1
+    - ipykernel >=4.0
+    - nbconvert >=4.0
+    - nbformat >=4.0
 
 test:
   commands:
@@ -34,7 +33,8 @@ test:
 
 about:
   home: https://github.com/paulgb/runipy
-  license: BSD
+  license: BSD 2-Clause
+  license_family: BSD
   license_file: LICENSE
   summary: Run IPython notebooks from the command line
   description: |

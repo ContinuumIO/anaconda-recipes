@@ -8,6 +8,13 @@ source:
   md5: 67948acb2ca081f23359d0256e9a271c
   patches:
     - tpn.patch
+    - stop-completion-from-appending-space.patch
+
+#requirements:
+#  build:
+#    - ncurses 5.9 10
+#  run:
+#    - ncurses 5.9 10
 
 build:
   number: 2
@@ -15,6 +22,7 @@ build:
 about:
   home: http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
   license: GPL3
+  license_family: GPL3
   license_file: COPYING
   summary: Line-editing for programs with a command-line interface
   description: |
@@ -25,4 +33,3 @@ about:
     command lines, to recall and perhaps reedit those lines, and perform
     csh-like history expansion on previous commands.
   doc_url: http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html#Documentation
-

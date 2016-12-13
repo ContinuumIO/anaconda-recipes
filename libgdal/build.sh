@@ -18,6 +18,8 @@ bash configure \
     --with-kea=$PREFIX/bin/kea-config \
     --with-libtiff=$PREFIX \
     --with-geotiff=$PREFIX \
+    --with-curl=$PREFIX \
+    --with-sqlite3=$PREFIX \
     --prefix=$PREFIX
 make
 make install
