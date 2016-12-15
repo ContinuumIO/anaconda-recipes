@@ -121,6 +121,7 @@
   ], 
   "colander": "all", 
   "colorama": "all", 
+  "colorcet": "all", 
   "comtypes": [
     "win-64:py27", 
     "win-64:py35"

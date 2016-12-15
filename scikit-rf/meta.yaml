@@ -1,11 +1,11 @@
 package:
   name: scikit-rf
-  version: 0.14.1
+  version: 0.14.3
 
 source:
-  fn: scikit-rf-0.14.1.tar.gz
-  url: https://pypi.python.org/packages/source/s/scikit-rf/scikit-rf-0.14.1.tar.gz
-  md5: aa8dffdc9b7fefe9d44b33ab8604dcd9
+  fn: scikit-rf-0.14.3.zip
+  url: https://pypi.python.org/packages/6f/af/d499b0a576e37ca08be21e271ab7a68b755a38c96e9cba3f38cfae41e5b9/scikit-rf-0.14.3.zip
+  md5: 3dc7e7aab5e0dd1f5ce692f32b053ec7
 
 requirements:
   build:
@@ -13,14 +13,14 @@ requirements:
     - setuptools
     - ipython
     - numpy
+    - pandas
     - scipy
     - matplotlib
-    - mock
-    - nose
   run:
     - python
     - ipython
     - scipy
+    - pandas
     - matplotlib
 
 test:

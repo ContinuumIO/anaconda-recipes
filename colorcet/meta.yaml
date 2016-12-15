@@ -1,0 +1,25 @@
+package:
+  name: colorcet
+  version: 0.9.1
+
+source:
+  git_url: https://github.com/bokeh/colorcet.git
+  git_tag: 0.9.1
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - colorcet
+
+about:
+  home: http://github.com/bokeh/colorcet
+  license: Creative Commons Attribution 4.0 International Public License
+  license_family: Other
+  license_file: LICENSE.txt
+  summary: collection of perceptually uniform colormaps

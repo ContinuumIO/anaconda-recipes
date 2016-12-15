@@ -1,11 +1,11 @@
 package:
   name: fabric
-  version: 1.11.1
+  version: 1.13.1
 
 source:
-  fn: Fabric-1.11.1.tar.gz
-  url: https://pypi.python.org/packages/source/F/Fabric/Fabric-1.11.1.tar.gz
-  md5: e9ec969802d3e9427111ffc5c3ea142c
+  fn: Fabric-1.13.1.tar.gz
+  url: https://pypi.python.org/packages/de/cd/ad1ebe31ea8143b4f1458283971a7806f7a6062ca26b01c956c6c176597a/Fabric-1.13.1.tar.gz
+  md5: 4c5795c6c27a3c97a71e25e38c096913
 
 build:
   entry_points:
@@ -18,7 +18,7 @@ requirements:
     - paramiko
   run:
     - python
-    - paramiko >=1.10,<2.0
+    - paramiko >=1.10,<3.0
 
 test:
   commands:

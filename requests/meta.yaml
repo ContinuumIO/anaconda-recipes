@@ -1,11 +1,11 @@
 package:
   name: requests
-  version: 2.12.3
+  version: 2.12.4
 
 source:
-  fn: requests-2.12.3.tar.gz
-  url: https://pypi.python.org/packages/d9/03/155b3e67fe35fe5b6f4227a8d9e96a14fda828b18199800d161bcefc1359/requests-2.12.3.tar.gz
-  md5: 0cafdecd95a46b081dd5fcfa4978db7a
+  fn: requests-2.12.4.tar.gz
+  url: https://pypi.python.org/packages/5b/0b/34be574b1ec997247796e5d516f3a6b6509c4e064f2885a96ed885ce7579/requests-2.12.4.tar.gz
+  md5: acdb48888a9d3c7309da12fc7f83fedb
 
 requirements:
   build:

@@ -1,11 +1,11 @@
 package:
   name: zope.interface
-  version: 4.3.2
+  version: 4.3.3
 
 source:
-  fn: zope.interface-4.3.2.tar.gz
-  url: https://pypi.python.org/packages/38/1b/d55c39f2cf442bd9fb2c59760ed058c84b57d25c680819c25f3aff741e1f/zope.interface-4.3.2.tar.gz
-  md5: 5f7e15a5bcdfa3c6c0e93ffe45caf87c
+  fn: zope.interface-4.3.3.tar.gz
+  url: https://pypi.python.org/packages/44/af/cea1e18bc0d3be0e0824762d3236f0e61088eeed75287e7b854d65ec9916/zope.interface-4.3.3.tar.gz
+  md5: ba3f32eacaea66094b7e2ae2788cec89
 
 requirements:
   build:
