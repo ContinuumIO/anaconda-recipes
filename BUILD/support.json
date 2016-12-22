@@ -59,6 +59,7 @@
   "biopython": "all", 
   "bitarray": "all", 
   "blaze": "all", 
+  "bleach": "all", 
   "blist": "all", 
   "bokeh": "all", 
   "boost": "all", 
@@ -189,13 +190,6 @@
   "dnspython": "all", 
   "docopt": "all", 
   "docutils": "all", 
-  "dynd-python": [
-    "linux-64:py27", 
-    "linux-64:py35", 
-    "osx-64:py27", 
-    "osx-64:py35", 
-    "win-64:py35"
-  ], 
   "ecdsa": "all", 
   "ecos": "all", 
   "entrypoints": "all", 
@@ -425,13 +419,6 @@
   "lazy-object-proxy": "all", 
   "ldap3": "all", 
   "libconda": "all", 
-  "libdynd": [
-    "linux-64:py27", 
-    "linux-64:py35", 
-    "osx-64:py27", 
-    "osx-64:py35", 
-    "win-64:py35"
-  ], 
   "libevent": [
     "linux-64:py27", 
     "linux-64:py35", 

@@ -6,6 +6,9 @@ source:
   git_url: https://github.com/google/protobuf.git
   git_tag: v3.0.0
 
+build:
+  number: 1
+
 requirements:
   build:
     - python

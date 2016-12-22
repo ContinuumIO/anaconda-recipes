@@ -2,7 +2,7 @@ diff --git Lib/distutils/spawn.py Lib/distutils/spawn.py
 index 7306099..7a2de5e 100644
 --- Lib/distutils/spawn.py
 +++ Lib/distutils/spawn.py
-@@ -183,17 +183,16 @@ def find_executable(executable, path=None):
+@@ -210,17 +210,16 @@ def find_executable(executable, path=None):
      if path is None:
          path = os.environ['PATH']
      paths = path.split(os.pathsep)

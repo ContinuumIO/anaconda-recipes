@@ -1,0 +1,29 @@
+package:
+  name: bleach
+  version: 1.5.0
+
+source:
+  fn: bleach-1.5.0.tar.gz
+  url: https://pypi.python.org/packages/99/00/25a8fce4de102bf6e3cc76bc4ea60685b2fee33bde1b34830c70cacc26a7/bleach-1.5.0.tar.gz
+  md5: b663300efdf421b3b727b19d7be9c7e7
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - six
+    - html5lib
+  run:
+    - python
+    - six
+    - html5lib >=0.999,!=0.9999,!=0.99999,<0.99999999
+
+test:
+  imports:
+    - bleach
+
+about:
+  home: http://github.com/mozilla/bleach
+  license: Apache Software License
+  license_family: Apache
+  summary: easy whitelist-based HTML-sanitizing tool

@@ -14,7 +14,7 @@ diff --git Lib/platform.py Lib/platform.py
 index 63455ce..0d429c6 100755
 --- Lib/platform.py
 +++ Lib/platform.py
-@@ -1315,6 +1315,7 @@ def processor():
+@@ -1317,6 +1317,7 @@ def processor():
  
  _sys_version_parser = re.compile(
      r'([\w.+]+)\s*'  # "version<space>"

@@ -76,9 +76,13 @@ REM ========== add scripts
 :: mkdir %SCRIPTS%
 :: if errorlevel 1 exit 1
 for %%x in (idle 2to3 pydoc) do (
-    copy %SRC_DIR%\Tools\scripts\%%x %SCRIPTS%
+    copy %SYS_PREFIX%\Lib\site-packages\conda_build\cli-%ARCH%.exe %SCRIPTS%\%%x.exe
+    if errorlevel 1 exit 1
+    copy %SRC_DIR%\Tools\scripts\%%x %SCRIPTS%\%%x-script.py
+    if errorlevel 1 exit 1
+    %SYS_PREFIX%\Scripts\replace.exe --nvd "#!" "#X" %SCRIPTS%\%%x-script.py
     if errorlevel 1 exit 1
 )
 
 REM ========== generate grammar files for 2to3
-%PYTHON% %SCRIPTS%\2to3 -l
+%PYTHON% %SCRIPTS%\2to3-script.py -l

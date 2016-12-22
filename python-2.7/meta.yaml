@@ -1,14 +1,13 @@
 package:
   name: python
-  version: 2.7.12
+  version: 2.7.13
 
 source:
-  fn: Python-2.7.12.tgz
-  url: https://www.python.org/ftp/python/2.7.12/Python-2.7.12.tgz
-  md5: 88d61f82e3616a4be952828b3694109d
+  fn: Python-2.7.13.tgz
+  url: https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz
+  md5: 17add4bf0ad0ec2f08e0cae6d205c700
   patches:
     - version.patch
-    - site.patch
     - cprt.patch
     - linux-clear_history.patch       [linux]
     - fix-readline-extra-space.patch  [linux and x86]
@@ -20,8 +19,8 @@ source:
     - fd_setsize.patch                [win]
 
 build:
-  number: 1                           [unix]
-  number: 0                           [win]
+  number: 0
+  detect_binary_files_with_prefix: False
   no_link:
     - bin/python2.7                   [unix]
     - DLLs/_ctypes.pyd                [win]

@@ -1,11 +1,11 @@
 package:
   name: semver
-  version: 2.7.2
+  version: 2.7.3
 
 source:
-  fn: semver-2.7.2.tar.gz
-  url: https://pypi.python.org/packages/f5/53/e54d47643e69c14260e89713e04e028b08d0a1a867b1e0bc818f0ca0d63a/semver-2.7.2.tar.gz
-  md5: 05e0f26ea1fdd95a9561fad42c1219f1
+  fn: semver-2.7.3.tar.gz
+  url: https://pypi.python.org/packages/39/cb/a83044494814018d647d3da1c49f9cf618be5445196482473d9c938a6086/semver-2.7.3.tar.gz
+  md5: 500ba5fd1382a2aa48c29c2acba343da
 
 requirements:
   build:

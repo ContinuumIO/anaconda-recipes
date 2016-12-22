@@ -18,11 +18,6 @@ if [ $DEBUG == 1 ]; then
     DOPT="--with-pydebug"
 fi
 
-#if [ $OPT == 1 ]; then
-#    export CFLAGS="-fprofile-generate"
-#    export LDFLAGS="-fprofile-generate"
-#fi
-
 if [ `uname` == Darwin ]; then
     ./configure --enable-shared --enable-ipv6 --enable-unicode=ucs2 $DOPT \
         --prefix=$PREFIX
@@ -39,13 +34,6 @@ if [ `uname` == Linux ]; then
 fi
 
 make
-#if [ $OPT == 1 ]; then
-#    make run_profile_task
-#    make clean
-#    export CFLAGS="-profile-use -profile-correction"
-#    export LDFLAGS="-profile-use -profile-correction"
-#    make
-#fi
 make install
 
 DYNLOAD_DIR=$PREFIX/lib/python2.7/lib-dynload

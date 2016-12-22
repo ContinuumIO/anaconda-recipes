@@ -1,10 +1,16 @@
 package:
   name: vs2008_runtime
-  version: "9.00.30729.1"
+  version: "9.00.30729.5054"
 
 build:
-  number: 2
+  number: 0
   msvc_compiler: 9.0
+
+
+test:
+  requires:
+    - curl
+    - 7za
 
 about:
   home: http://www.microsoft.com
