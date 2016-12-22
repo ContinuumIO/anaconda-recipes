@@ -1,0 +1,36 @@
+{% set version = "0.194" %}
+
+package:
+  name: python-leveldb
+  version: {{ version }}
+
+source:
+  fn: leveldb-{{ version }}.tar.gz
+  url: https://pypi.python.org/packages/ec/c1/ca3b4199bd4073e6430076f1edd8061f2f548e831eeddc3cbc077ebaa0ca/leveldb-0.194.tar.gz
+  md5: 3903f5880cf8d798a52c1accfd2e7b7e
+  patches:
+    - exclude_local_leveldb_source.patch
+
+build:
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
+
+requirements:
+  build:
+    - leveldb
+    - python
+    - setuptools
+
+  run:
+    - leveldb
+    - python
+
+test:
+  imports:
+    - leveldb
+
+about:
+  home: http://code.google.com/p/py-leveldb/
+  license: BSD 3-Clause
+  license_family: BSD
+  summary: Python bindings for leveldb database library

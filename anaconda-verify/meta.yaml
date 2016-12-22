@@ -1,10 +1,10 @@
 package:
   name: anaconda-verify
-  version: 1.3.0
+  version: 1.3.1
 
 source:
   git_url: https://github.com/ContinuumIO/anaconda-verify.git
-  git_tag: 1.3.0
+  git_tag: 1.3.1
 
 build:
   entry_points:

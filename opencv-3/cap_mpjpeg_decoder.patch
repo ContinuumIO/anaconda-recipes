@@ -1,0 +1,11 @@
+--- modules/videoio/src/cap_mjpeg_decoder.cpp
++++ modules/videoio/src/cap_mjpeg_decoder.cpp
+@@ -790,7 +790,7 @@
+     result.reserve(chunk.m_size);
+     result.resize(chunk.m_size);
+ 
+-    m_file_stream.read(result.data(), chunk.m_size);
++    m_file_stream.read(&result.front(), chunk.m_size);
+ 
+     return result;
+ }

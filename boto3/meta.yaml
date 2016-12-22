@@ -1,11 +1,11 @@
 package:
   name: boto3
-  version: 1.4.1
+  version: 1.4.3
 
 source:
-  fn: boto3-1.4.1.tar.gz
-  url: https://pypi.python.org/packages/8c/d8/1a8d499ab1e5dc50115db17ceacb0e33ec6a3a05d84169841a185ffcf906/boto3-1.4.1.tar.gz
-  md5: ff4d033bbb6932b140056337b1c3de85
+  fn: boto3-1.4.3.tar.gz
+  url: https://pypi.python.org/packages/90/fe/b941e83b5b9a0bdc6b1fd999302eeedd1bcb57c662927ab88427a6ed05cd/boto3-1.4.3.tar.gz
+  md5: 563f41c287a7ec83409280dc11222ac0
 
 requirements:
   build:

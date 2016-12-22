@@ -1,0 +1,11 @@
+--- opencv_contrib-3.1.0/modules/text/src/ocr_hmm_decoder.cpp
++++ opencv_contrib-3.1.0/modules/text/src/ocr_hmm_decoder.cpp
+@@ -982,7 +982,7 @@
+ 
+     nr_feature  = weights.rows;
+     nr_class    = weights.cols;
+-    patch_size  = (int)sqrt(kernels.cols);
++    patch_size  = (int)sqrt((float)kernels.cols);
+     // algorithm internal parameters
+     window_size = 32;
+     num_quads   = 25;

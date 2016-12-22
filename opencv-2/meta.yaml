@@ -1,0 +1,71 @@
+{% set version = "2.4.13.1" %}
+
+package:
+  name: opencv
+  version: {{ version }}
+
+source:
+  url: https://github.com/Itseez/opencv/archive/{{ version }}.tar.gz
+  sha256: 0d5ce5e0973e3a745f927d1ee097aaf909aae59f787be6d27a03d639e2d96bd7
+
+  patches:
+    - osx_rpath.patch  [osx]
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - openjdk
+    - cmake
+    - python
+    - numpy x.x
+    - eigen 3.*
+    - zlib 1.2*
+    - jpeg 8*
+    - libtiff 4.0.*
+    - libpng 1.6*
+
+  run:
+    - python
+    - numpy x.x
+    - zlib 1.2*
+    - jpeg 8*
+    - libtiff 4.0.*
+    - libpng 1.6*
+
+test:
+  imports:
+    - cv2
+    - cv2.cv
+  commands:
+    # Verify dynamic libraries.
+    {% set opencv_libs = [
+            "core",
+            "flann",
+            "imgproc",
+            "highgui",
+            "features2d",
+            "calib3d",
+            "ml",
+            "video",
+            "legacy",
+            "objdetect",
+            "photo",
+            "gpu",
+            "nonfree",
+            "contrib",
+            "stitching",
+            "superres",
+            "videostab"
+    ] %}
+    {% for each_opencv_lib in opencv_libs %}
+    - test -f $PREFIX/lib/libopencv_{{ each_opencv_lib }}.dylib   [osx]
+    - test -f $PREFIX/lib/libopencv_{{ each_opencv_lib }}.so      [linux]
+    {% endfor %}
+
+about:
+  home: http://opencv.org/
+  license: BSD 3-clause
+  license_family: BSD
+  summary: Computer vision and machine learning software library.

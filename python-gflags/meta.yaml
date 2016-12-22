@@ -1,0 +1,37 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: python-gflags
+  version: 2.0
+
+source:
+  fn: python-gflags-2.0.tar.gz
+  url: https://pypi.python.org/packages/source/p/python-gflags/python-gflags-2.0.tar.gz
+  md5: 23c9a793959a54971b1f094b0c6d03b1
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - gflags
+
+about:
+  home: https://github.com/gflags/python-gflags
+  license: BSD
+  license_file: COPYING
+  summary: the Python equivalent of gflags
+  description: |
+    Python-gflags is a Python implementation of the Google commandline flags
+    module. gflags defines a distributed command line system, replacing systems
+    like getopt(), optparse and manual argument processing. Rather than an
+    application having to define all flags in or near main(), each Python
+    module defines flags that are useful to it. When one python module imports
+    another, it gains access to the other's flags.
+  doc_url: https://github.com/gflags/python-gflags/blob/master/gflags.py
+  dev_url: https://github.com/gflags/python-gflags

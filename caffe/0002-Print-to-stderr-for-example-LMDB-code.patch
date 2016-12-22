@@ -1,0 +1,39 @@
+From 181efc8fe015449ad85659488afaba1a9d661d29 Mon Sep 17 00:00:00 2001
+From: Luke Yeager <luke.yeager@gmail.com>
+Date: Thu, 25 Feb 2016 20:02:25 -0800
+Subject: [PATCH 2/3] Print to stderr for example LMDB code
+
+---
+ examples/cifar10/convert_cifar_data.cpp | 2 ++
+ examples/mnist/convert_mnist_data.cpp   | 2 ++
+ 2 files changed, 4 insertions(+)
+
+diff --git a/examples/cifar10/convert_cifar_data.cpp b/examples/cifar10/convert_cifar_data.cpp
+index e1b89f42..7385a74a 100644
+--- a/examples/cifar10/convert_cifar_data.cpp
++++ b/examples/cifar10/convert_cifar_data.cpp
+@@ -91,6 +91,8 @@ void convert_dataset(const string& input_folder, const string& output_folder,
+ }
+ 
+ int main(int argc, char** argv) {
++  FLAGS_alsologtostderr = 1;
++
+   if (argc != 4) {
+     printf("This script converts the CIFAR dataset to the leveldb format used\n"
+            "by caffe to perform classification.\n"
+diff --git a/examples/mnist/convert_mnist_data.cpp b/examples/mnist/convert_mnist_data.cpp
+index 16d28093..32bee526 100644
+--- a/examples/mnist/convert_mnist_data.cpp
++++ b/examples/mnist/convert_mnist_data.cpp
+@@ -178,6 +178,8 @@ int main(int argc, char** argv) {
+   namespace gflags = google;
+ #endif
+ 
++  FLAGS_alsologtostderr = 1;
++
+   gflags::SetUsageMessage("This script converts the MNIST dataset to\n"
+         "the lmdb/leveldb format used by Caffe to load data.\n"
+         "Usage:\n"
+-- 
+2.11.0
+

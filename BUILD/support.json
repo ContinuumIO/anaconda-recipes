@@ -78,6 +78,10 @@
   "bzip2": "all", 
   "cachecontrol": "all", 
   "cached-property": "all", 
+  "caffe": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "cairo": [
     "linux-64:py27", 
     "linux-64:py35"
@@ -301,8 +305,16 @@
     "osx-64:py27", 
     "win-64:py27"
   ], 
+  "gflags": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "git": "all", 
   "glib": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
+  "glog": [
     "linux-64:py27", 
     "linux-64:py35"
   ], 
@@ -418,6 +430,10 @@
   "lancet": "all", 
   "lazy-object-proxy": "all", 
   "ldap3": "all", 
+  "leveldb": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "libconda": "all", 
   "libevent": [
     "linux-64:py27", 
@@ -513,6 +529,10 @@
   ], 
   "line_profiler": "all", 
   "llvmlite": "all", 
+  "lmdb": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "locket": "all", 
   "lockfile": "all", 
   "luigi": "all", 
@@ -623,6 +643,10 @@
   "numpydoc": "all", 
   "odo": "all", 
   "openblas": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
+  "opencv": [
     "linux-64:py27", 
     "linux-64:py35"
   ], 
@@ -821,6 +845,14 @@
   "python-gdbm": [
     "linux-64:py27", 
     "osx-64:py27"
+  ], 
+  "python-gflags": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
+  "python-leveldb": [
+    "linux-64:py27", 
+    "linux-64:py35"
   ], 
   "python-ntlm": [
     "linux-64:py27", 
