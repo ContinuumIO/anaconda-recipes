@@ -1,6 +1,6 @@
 package:
   name: javabridge
-  version: "1.0.14"
+  version: 1.0.14
 
 source:
   git_url: https://github.com/LeeKamentsky/python-javabridge.git
@@ -12,6 +12,7 @@ source:
     - 0004-OS-X-10.7-Look-for-the-jvm-dylib-in-more-files.patch
 
 build:
+  detect_binary_files_with_prefix: True
   preserve_egg_dir: True
 
 requirements:
@@ -30,7 +31,7 @@ test:
   imports:
     - javabridge
     - javabridge.tests
-
+    - javabridge._javabridge
   requires:
     - nose
 

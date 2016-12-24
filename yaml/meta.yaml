@@ -7,6 +7,9 @@ source:
   url: http://pyyaml.org/download/libyaml/yaml-0.1.6.tar.gz
   md5: 5fe00cda18ca5daeb43762b80c38e06e
 
+build:
+  detect_binary_files_with_prefix: False
+
 about:
   home: http://www.yaml.org/
   license: MIT

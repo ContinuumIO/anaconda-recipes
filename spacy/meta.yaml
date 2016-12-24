@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/4c/e7/efb7268aceca6d1bf50fc2b6b433d3f4bbe222a8b26616d5f2ddfc2c7c43/spacy-0.101.0.tar.gz
   md5: 5a51a8519c4eaa9f907445be42f5fe93
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/d3/1e/15cdaf6b7e93f1b6d1b008960520ede5efe31f843c45feff31700c625c8f/thinc-5.0.8.tar.gz
   md5: df1a9231b7849336496a91afb56aff26
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

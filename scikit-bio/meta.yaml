@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/e5/7e/cf03a7e53da18ae6a847894384838e9a36a98b48909a3f347ff6077c7304/scikit-bio-0.5.1.tar.gz
   md5: efe59910e361be0a1aa98c474505f885
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python
@@ -39,6 +42,7 @@ test:
     - skbio
     - skbio.alignment._ssw_wrapper
     - skbio.diversity._phylogenetic
+    - skbio.metadata._intersection
     - skbio.stats.__subsample
 
 about:

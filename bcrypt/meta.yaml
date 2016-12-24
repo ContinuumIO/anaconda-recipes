@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/dd/4c/907ff93ba2df00bc1c4a4e2a5b2ee0fe4715f4dbcc0de891fadba75a4f34/bcrypt-3.1.1.tar.gz
   md5: 7348b2c361e23cf205701bba7652d789
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

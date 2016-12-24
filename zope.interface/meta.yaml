@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/44/af/cea1e18bc0d3be0e0824762d3236f0e61088eeed75287e7b854d65ec9916/zope.interface-4.3.3.tar.gz
   md5: ba3f32eacaea66094b7e2ae2788cec89
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

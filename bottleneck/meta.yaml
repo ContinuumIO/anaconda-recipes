@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/ee/03/87184554866dcbf9265782860047031b65cac807773903cf2d33d6f7348f/Bottleneck-1.1.0.tar.gz
   md5: 0709af81bc0ef46276ee7bdcbf375659
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

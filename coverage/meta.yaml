@@ -8,6 +8,7 @@ source:
   md5: 1e09362a3f35d589f942359441050a6e
 
 build:
+  detect_binary_files_with_prefix: False
   entry_points:
     - coverage = coverage.cmdline:main
 

@@ -554,7 +554,6 @@
   "markdown": "all", 
   "markdown2": "all", 
   "markupsafe": "all", 
-  "mathjax": "all", 
   "matplotlib": "all", 
   "mayavi": [
     "linux-64:py27", 

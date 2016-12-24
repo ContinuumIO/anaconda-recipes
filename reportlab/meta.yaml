@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/source/r/reportlab/reportlab-3.3.0.tar.gz
   md5: 8ad6181b69ec515d4f6d8bb894682d5d
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

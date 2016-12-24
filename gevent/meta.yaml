@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/43/8f/cb3224a0e6ab663547f45c10d0651cfd52633fde4283bf68d627084df8cc/gevent-1.1.2.tar.gz
   md5: bb32a2f852a4997138014d5007215c6e
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

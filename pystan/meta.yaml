@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/source/p/pystan/pystan-2.8.0.0.tar.gz
   md5: f55b3fd43719b373930f3152be39ff12
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

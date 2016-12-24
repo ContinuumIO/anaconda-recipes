@@ -9,6 +9,7 @@ source:
 
 build:
   script: python setup.py install
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:

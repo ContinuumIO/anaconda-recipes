@@ -12,6 +12,7 @@ import matplotlib._tri
 import matplotlib.backends._backend_agg
 import matplotlib.ft2font
 import matplotlib.ttconv
+
 if sys.platform != 'win32':
     import matplotlib.backends._tkagg
 

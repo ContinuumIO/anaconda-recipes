@@ -1,5 +1,3 @@
-
-# test the import of each C extension
 import rasterio._base
 import rasterio._io
 import rasterio._copy

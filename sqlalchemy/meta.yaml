@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/ca/ca/c2436fdb7bb75d772d9fa17ba60c4cfded6284eed053a7274b2beb96596a/SQLAlchemy-1.1.4.tar.gz
   md5: be5af1bebe595206b71b513a14836e4f
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

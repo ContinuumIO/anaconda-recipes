@@ -8,6 +8,7 @@ source:
   md5: 642c81285e1bb833b14ab3f439964086
 
 build:
+  detect_binary_files_with_prefix: False
   entry_points:
     - cython = Cython.Compiler.Main:setuptools_main
     - cythonize = Cython.Build.Cythonize:main

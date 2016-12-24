@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/d7/a2/b90736c37fd720db425c5e48d69da75a6eff6609b22d2123762f1ae8c5f5/cryptography-1.6.tar.gz
   md5: 33ed393be75f04cd889a02a11acbab39
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

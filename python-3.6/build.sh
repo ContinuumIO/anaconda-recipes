@@ -12,6 +12,7 @@ rm -rf Lib/ensurepip
 if [ `uname` == Darwin ]; then
     export CFLAGS="-I$PREFIX/include $CFLAGS"
     export LDFLAGS="-L$PREFIX/lib $LDFLAGS"
+    export MACOSX_DEPLOYMENT_TARGET="10.9"
 fi
 
 PYTHON_BAK=$PYTHON
@@ -21,10 +22,10 @@ if [ `uname` == Darwin ]; then
     ./configure --enable-shared --enable-ipv6 --with-ensurepip=no \
         --prefix=$PREFIX
     # see https://bugs.python.org/issue24844
-    replace \
-        '#define HAVE_BUILTIN_ATOMIC 1' \
-        '/* #define HAVE_BUILTIN_ATOMIC 1 */' \
-        pyconfig.h
+#    replace \
+#        '#define HAVE_BUILTIN_ATOMIC 1' \
+#        '/* #define HAVE_BUILTIN_ATOMIC 1 */' \
+#        pyconfig.h
 fi
 if [ `uname` == Linux ]; then
     ./configure --enable-shared --enable-ipv6 --with-ensurepip=no \
@@ -45,8 +46,8 @@ popd
 
 export PYTHON=$PYTHON_BAK
 
+DYNLOAD_DIR=$PREFIX/lib/python3.6/lib-dynload
 if [ `uname` == Darwin ]; then
-    DYNLOAD_DIR=$STDLIB_DIR/lib-dynload
     rm $DYNLOAD_DIR/_hashlib.cpython-36m-darwin_failed.so
     rm $DYNLOAD_DIR/_ssl.cpython-36m-darwin_failed.so
     pushd Modules
@@ -61,8 +62,12 @@ if [ `uname` == Darwin ]; then
     mv readline.cpython-36m-darwin_failed.so readline.cpython-36m-darwin.so
     mv _lzma.cpython-36m-darwin_failed.so _lzma.cpython-36m-darwin.so
     popd
+    replace \
+	"'MACOSX_DEPLOYMENT_TARGET': '10.9'" \
+	"'MACOSX_DEPLOYMENT_TARGET': '10.7'" \
+	$PREFIX/lib/python3.6/_sysconfigdata_m_darwin_darwin.py
+    replace \
+	"MACOSX_DEPLOYMENT_TARGET=10.9" \
+	"MACOSX_DEPLOYMENT_TARGET=10.7" \
+	$PREFIX/lib/python3.6/config-3.6m-darwin/Makefile
 fi
-
-#replace '-Werror=declaration-after-statement' '' \
-#    $PREFIX/lib/python3.6/config-3.6m-*/Makefile \
-#    $PREFIX/lib/python3.6/config-3.6m-*/_sysconfigdata.py

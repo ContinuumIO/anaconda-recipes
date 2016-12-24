@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/f8/9e/273fbea507de99166c11cd0cb3fde1ac01b5bc724d9a407a2f927ede91a1/cymem-1.31.2.tar.gz
   md5: 310e54a8408a25775cd3d58c9379518f
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

@@ -8,6 +8,7 @@ source:
   md5: 405211ea89a0d40eb289363055a54291
 
 build:
+  detect_binary_files_with_prefix: False
   entry_points:
     - yt = yt.utilities.command_line:run_main
 

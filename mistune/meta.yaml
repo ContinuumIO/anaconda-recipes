@@ -8,6 +8,7 @@ source:
   md5: 4eba50bd121b83716fa4be6a4049004b
 
 build:
+  detect_binary_files_with_prefix: False
   number: 1           [osx]
 
 requirements:

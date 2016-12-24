@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/03/a6/8842d7215e1c54537eb5d0b8fd3e8562cc869b6d193317b11027ff7d8009/greenlet-0.4.11.tar.gz
   md5: e7ed64ab93a6bd9f618d54631c9b484c
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

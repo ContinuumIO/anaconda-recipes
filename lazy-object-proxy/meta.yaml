@@ -7,17 +7,20 @@ source:
   url: https://pypi.python.org/packages/source/l/lazy-object-proxy/lazy-object-proxy-1.2.1.tar.gz
   md5: ad33e3e06d24786f708b72cc23350afa
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python
     - setuptools
-
   run:
     - python
 
 test:
   imports:
     - lazy_object_proxy
+    - lazy_object_proxy.cext
 
 about:
   home: https://github.com/ionelmc/python-lazy-object-proxy

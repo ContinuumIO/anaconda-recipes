@@ -16,6 +16,7 @@ source:
     - omit_pep8.patch    [win]
 
 build:
+  detect_binary_files_with_prefix: False
   number: 1
 
 requirements:

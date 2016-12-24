@@ -9,6 +9,7 @@ source:
     - hdf5_win.patch      [win]
 
 build:
+  detect_binary_files_with_prefix: False
   number: 2
 
 requirements:

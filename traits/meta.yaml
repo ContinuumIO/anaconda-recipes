@@ -6,6 +6,9 @@ source:
   git_url: https://github.com/enthought/traits.git
   git_tag: 4.6.0
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

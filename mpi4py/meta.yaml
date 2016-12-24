@@ -39,7 +39,7 @@ source:
 
 build:
   number: 2          [linux]
-  detect_binary_files_with_prefix: true
+  detect_binary_files_with_prefix: True
 
 requirements:
   build:

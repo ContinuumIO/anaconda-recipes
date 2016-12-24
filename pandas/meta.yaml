@@ -6,6 +6,9 @@ source:
   git_url: https://github.com/pydata/pandas.git
   git_tag: v0.19.1
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

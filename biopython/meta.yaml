@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/72/6c/e1e13b9df73f9c2539b67d12bc22be6b19779230cadbed04c24f3f3e5ef4/biopython-1.68.tar.gz
   md5: 078e915185485a5327937029b7577ddc
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/dc/c0/a0114a6d7fa211c0904b0de931e8cafb5210ad824996cc6a9d67f3bae22c/Twisted-16.6.0.tar.bz2
   md5: 54a88ffe773d5a83c91fcfe86044b094
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

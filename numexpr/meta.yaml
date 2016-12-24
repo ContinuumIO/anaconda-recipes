@@ -10,6 +10,7 @@ source:
 
 build:
   number: 1
+  detect_binary_files_with_prefix: False
   ignore_prefix_files: True   [win]
   features:
     - nomkl                   [nomkl]

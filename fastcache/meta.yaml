@@ -9,6 +9,7 @@ source:
 
 build:
   number: 1
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:
@@ -19,6 +20,7 @@ requirements:
 test:
   imports:
     - fastcache
+    - fastcache._lrucache
 
 about:
   home: https://github.com/pbrady/fastcache
