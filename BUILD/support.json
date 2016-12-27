@@ -1,7 +1,6 @@
 {
   "affine": "all", 
   "alabaster": "all", 
-  "anaconda-build": "all", 
   "anaconda-clean": "all", 
   "anaconda-client": "all", 
   "anaconda-verify": "all", 
@@ -1037,7 +1036,9 @@
   "unidecode": "all", 
   "unixodbc": [
     "linux-64:py27", 
-    "linux-64:py35"
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
   ], 
   "unxutils": [
     "win-64:py27", 

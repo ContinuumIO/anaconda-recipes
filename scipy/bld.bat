@@ -3,11 +3,11 @@ set COMP_DIR=C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows
 set DISTUTILS_USE_SDK=1
 set MSSdk=1
 
-if %PY_VER%==3.5 (
+set VS=vs2010
+if %PY_VER%=="3.5" set VS=vs2015
+if %PY_VER%=="3.6" set VS=vs2015
+if VS==vs2015 (
     set "PY_VCRUNTIME_REDIST=%LIBRARY_BIN%\vcruntime140.dll"
-    set VS=vs2015
-) else (
-    set VS=vs2010
 )
 
 if "%ARCH%"=="64" (

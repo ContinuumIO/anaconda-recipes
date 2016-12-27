@@ -1,0 +1,13 @@
+diff --git setup.py setup.py
+index 2bef65c..c3b73b8 100755
+--- setup.py
++++ setup.py
+@@ -35,6 +35,8 @@ try:
+ except ImportError:
+     _CYTHON_INSTALLED = False
+ 
++assert _CYTHON_INSTALLED
++
+ try:
+     import pkg_resources
+     from setuptools import setup, Command

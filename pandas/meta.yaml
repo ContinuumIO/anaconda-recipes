@@ -1,10 +1,12 @@
 package:
   name: pandas
-  version: 0.19.1
+  version: 0.19.2
 
 source:
   git_url: https://github.com/pydata/pandas.git
-  git_tag: v0.19.1
+  git_tag: v0.19.2
+  patches:
+    - assert_cython.patch
 
 build:
   detect_binary_files_with_prefix: False
