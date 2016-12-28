@@ -7,6 +7,9 @@ source:
   url: http://tukaani.org/xz/xz-5.2.2.tar.xz
   sha256: f341b1906ebcdde291dd619399ae944600edc9193619dd0c0110a5f05bfcc89e
 
+build:
+  number: 1
+
 test:
   commands:
     - xz --help
@@ -16,7 +19,7 @@ about:
   home: http://tukaani.org/xz/
   license: Public-Domain, GPL
   license_family: GPL2
-  license_file: COPYING
+  license_file: all-licenses.txt
   summary: Data compression software with high compression ratio
   description: |
     XZ Utils is free general-purpose data compression software with a high
