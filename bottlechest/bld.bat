@@ -1,2 +1,2 @@
-"%PYTHON%" setup.py build_ext install --single-version-externally-managed --record=null
+"%PYTHON%" setup.py install --old-and-unmanageable
 if errorlevel 1 exit 1

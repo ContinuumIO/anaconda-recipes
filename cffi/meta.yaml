@@ -14,6 +14,8 @@ source:
   fn: cffi-1.9.1-cp34-cp34m-win_amd64.whl              [py34 and win64]
   fn: cffi-1.9.1-cp35-cp35m-win32.whl                  [py35 and win32]
   fn: cffi-1.9.1-cp35-cp35m-win_amd64.whl              [py35 and win64]
+  fn: cffi-1.9.1-cp36-cp36m-win32.whl                  [py36 and win32]
+  fn: cffi-1.9.1-cp36-cp36m-win_amd64.whl              [py36 and win64]
   patches:
     - setup-linux.patch    [linux]
 

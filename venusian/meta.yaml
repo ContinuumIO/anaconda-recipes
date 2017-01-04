@@ -1,6 +1,3 @@
-# This is legacy recipe, which has not been tested using conda-build.
-# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
-
 package:
   name: venusian
   version: 1.0

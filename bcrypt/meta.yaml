@@ -1,11 +1,11 @@
 package:
   name: bcrypt
-  version: 3.1.1
+  version: 3.1.2
 
 source:
-  fn: bcrypt-3.1.1.tar.gz
-  url: https://pypi.python.org/packages/dd/4c/907ff93ba2df00bc1c4a4e2a5b2ee0fe4715f4dbcc0de891fadba75a4f34/bcrypt-3.1.1.tar.gz
-  md5: 7348b2c361e23cf205701bba7652d789
+  fn: bcrypt-3.1.2.tar.gz
+  url: https://pypi.python.org/packages/4e/af/d276cf4ea4ea5ff1f1ee6382e5fd4193b18b834b206dd73ba6b5b0289a15/bcrypt-3.1.2.tar.gz
+  md5: c5a79004fc4ad589615e96a6fe45b664
 
 build:
   detect_binary_files_with_prefix: False

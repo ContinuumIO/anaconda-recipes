@@ -6,6 +6,9 @@ source:
   git_url: https://github.com/jswhit/pyproj.git
   git_tag: v1.9.5.1rel
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

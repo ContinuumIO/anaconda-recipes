@@ -23,12 +23,12 @@ requirements:
     - python
     - setuptools
     - mkl-devel 11.3.3        [not nomkl]
-    - openblas 0.2.14         [linux and nomkl and (not ppc64le)]
+    - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
     - cio-bt
   run:
     - python
     - mkl 11.3.3              [not nomkl]
-    - openblas 0.2.14         [linux and nomkl and (not ppc64le)]
+    - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
     - libgfortran 3.0.0       [linux and nomkl and (not ppc64le)]
 
 test:

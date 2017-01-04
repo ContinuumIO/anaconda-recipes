@@ -19,13 +19,13 @@ requirements:
     - numpy x.x
     - scipy
     - mkl-devel 11.3.3        [not nomkl]
-    - openblas 0.2.14         [linux and nomkl and (not ppc64le)]
+    - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
   run:
     - python
     - numpy x.x
     - scipy
     - mkl 11.3.3              [not nomkl]
-    - openblas 0.2.14         [linux and nomkl and (not ppc64le)]
+    - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
 
 test:
   requires:

@@ -20,13 +20,13 @@ requirements:
     - setuptools
     - numpy x.x
     - mkl-devel 11.3.3        [not nomkl]
-    - openblas 0.2.14         [linux and nomkl and (not ppc64le)]
+    - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
     - cio-bt                  [unix]
   run:
     - python
     - numpy x.x
     - mkl 11.3.3              [not nomkl]
-    - openblas 0.2.14         [linux and nomkl and (not ppc64le)]
+    - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
     - libgfortran 3.0.0       [linux]
     - vs2015_runtime          [win and py35]
     - vs2010_runtime          [win and py34]

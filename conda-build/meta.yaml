@@ -1,13 +1,12 @@
 package:
   name: conda-build
-  version: 2.0.12
+  version: 2.1.0
 
 source:
   git_url: https://github.com/conda/conda-build.git
-  git_tag: 2.0.12
+  git_tag: 2.1.0
 
 build:
-  number: 0
   entry_points:
     - conda-build = conda_build.cli.main_build:main
     - conda-convert = conda_build.cli.main_convert:main
@@ -28,6 +27,7 @@ requirements:
     - conda >=4.1
     - conda-verify
     - filelock
+    - futures       [py<3]
     - jinja2
     - patchelf      [linux]
     - pycrypto

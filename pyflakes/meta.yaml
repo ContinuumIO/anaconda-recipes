@@ -1,11 +1,11 @@
 package:
   name: pyflakes
-  version: 1.3.0
+  version: 1.4.0
 
 source:
-  fn: pyflakes-1.3.0.tar.gz
-  url: https://pypi.python.org/packages/9f/48/927b1bf3e15d3dadfcfafb505177a62cdabcb78cf7eac4f31f180d5b1e26/pyflakes-1.3.0.tar.gz
-  md5: d66478aaff1d003ddc7fc1759a74e1e2
+  fn: pyflakes-1.4.0.tar.gz
+  url: https://pypi.python.org/packages/74/b6/80853b2c3cec3cf1c85b4205ed0685b9ea6c25607554dbd5cb1b214af536/pyflakes-1.4.0.tar.gz
+  md5: bc97904de633868a1a43c36a3c538a44
 
 build:
   entry_points:

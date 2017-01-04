@@ -1,10 +1,12 @@
+diff --git setup.py setup.py
+index 5b7fc89..e2de184 100644
 --- setup.py
 +++ setup.py
-@@ -37,7 +37,6 @@ setup_params = dict(
+@@ -33,7 +33,6 @@ setup_params = dict(
          ':python_version=="2.6"': ['importlib'],
      },
      setup_requires=[
--        'setuptools_scm>=1.9',
-     ] + pytest_runner + sphinx + wheel,
-     tests_require=[
-         'pytest>=2.8',
+-        'setuptools_scm>=1.15.0',
+     ] + wheel,
+     classifiers=[
+         "Development Status :: 5 - Production/Stable",

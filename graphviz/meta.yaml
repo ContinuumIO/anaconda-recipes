@@ -15,30 +15,29 @@ source:
     - gvconfig_libdir.patch               [unix]
 
 build:
-  number: 2                               [not osx]
-  number: 3                               [osx]
+  number: 4
   detect_binary_files_with_prefix: True   [unix]
 
 requirements:
   build:
     - cairo                               [linux]
     - expat                               [linux]
-    - libpng >=1.6.21,<1.7                [unix]
+    - libpng 1.6.27                       [unix]
     - libtiff 4.0.*                       [unix]
     - libtool                             [linux]
     - freetype 2.5.*                      [unix]
-    - jpeg 8*                             [unix]
+    - jpeg 9b                             [unix]
     - pango                               [linux]
     - pkg-config                          [osx]
     - zlib 1.2.*                          [unix]
   run:
     - cairo                               [linux]
     - expat                               [linux]
-    - libpng >=1.6.21,<1.7                [unix]
+    - libpng >=1.6.23,<1.7                [unix]
     - libtiff 4.0.*                       [unix]
     - libtool                             [linux]
     - freetype 2.5.*                      [unix]
-    - jpeg 8*                             [unix]
+    - jpeg 9*                             [unix]
     - pango                               [linux]
     - zlib 1.2.*                          [unix]
 

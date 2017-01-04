@@ -1,11 +1,11 @@
 package:
   name: pillow
-  version: 3.4.2
+  version: 4.0.0
 
 source:
-  fn: Pillow-3.4.2.tar.gz
-  url: https://pypi.python.org/packages/46/4f/94f6165052774839b4a4af0c72071aa528d5dc8cb8bc6bb43e24a55c10cc/Pillow-3.4.2.tar.gz
-  md5: 09ebb92ec5cbba13ff1acf139caf6b66
+  fn: Pillow-4.0.0.tar.gz
+  url: https://pypi.python.org/packages/8d/80/eca7a2d1a3c2dafb960f32f844d570de988e609f5fd17de92e1cf6a01b0a/Pillow-4.0.0.tar.gz
+  md5: d5af224b0fa2c66dacc9814785fef9e7
   patches:
     - freetype_win_link.patch   [win]
 
@@ -17,15 +17,15 @@ requirements:
   build:
     - python
     - zlib 1.2.*
-    - libpng
+    - libpng 1.6.27
     - libtiff 4.0.6
-    - jpeg 8d
+    - jpeg 9b
     - freetype 2.5.*
     - setuptools
     - bzip2 1.0.6        [win]
   run:
     - python
-    - jpeg 8d
+    - jpeg 9*
     - zlib 1.2.*
     - freetype 2.5.*
     - libtiff 4.0.*

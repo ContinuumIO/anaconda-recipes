@@ -8,7 +8,7 @@ source:
   md5: 1309e9bc2454aa3434041f0a24ae4e11
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -26,10 +26,6 @@ test:
     - suds.transport
     - suds.umx
     - suds.xsd
-    - tests
-    - tests.external
-  requires:
-    - pytest
 
 about:
   home: http://bitbucket.org/jurko/suds
