@@ -27,7 +27,8 @@ requirements:
     - conda >=4.1
     - conda-verify
     - filelock
-    - futures       [py<3]
+    - enum34        [py<34]
+    - futures       [py<30]
     - jinja2
     - patchelf      [linux]
     - pycrypto

@@ -1,14 +1,15 @@
 package:
   name: libxslt
-  version: 1.1.28
+  version: 1.1.29
 
 source:
-  fn: libxslt-1.1.28.tar.gz
-  url: ftp://xmlsoft.org/libxml2/libxslt-1.1.28.tar.gz
-  md5: 9667bf6f9310b957254fdcf6596600b7
+  fn: libxslt-1.1.29.tar.gz
+  url: ftp://xmlsoft.org/libxml2/libxslt-1.1.29.tar.gz
+  md5: a129d3c44c022de3b9dcf6d6f288d72e
 
 build:
-  number: 3
+  number: 0
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:

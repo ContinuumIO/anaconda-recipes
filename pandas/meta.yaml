@@ -5,10 +5,9 @@ package:
 source:
   git_url: https://github.com/pydata/pandas.git
   git_tag: v0.19.2
-  patches:
-    - assert_cython.patch
 
 build:
+  number: 1
   detect_binary_files_with_prefix: False
 
 requirements:
@@ -16,7 +15,7 @@ requirements:
     - python
     - setuptools
     - numpy x.x
-    - cython
+    - cython >=0.25
     - python-dateutil
     - pytz
   run:

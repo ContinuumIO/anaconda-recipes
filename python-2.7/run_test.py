@@ -20,20 +20,20 @@ armv7l = bool(platform.machine() == 'armv7l')
 ppc64le = bool(platform.machine() == 'ppc64le')
 debug = int(os.getenv('DEBUG', 0))
 
-print('Python version:', platform.python_version())
+print 'Python version:', platform.python_version()
 assert platform.python_version() == '2.7.13'
 assert sys.version_info[:3] == (2, 7, 13)
 if sys.platform == 'win32':
     assert 'MSC v.1500' in sys.version
-print('max unicode:', sys.maxunicode)
-print('architecture:', platform.architecture())
-print('sys.version:', sys.version)
-print('platform.machine():', platform.machine())
-print('DEBUG:', debug)
+print 'max unicode:', sys.maxunicode
+print 'architecture:', platform.architecture()
+print 'sys.version:', sys.version
+print 'platform.machine():', platform.machine()
+print 'DEBUG:', debug
 
 assert hasattr(sys, 'gettotalrefcount') == bool(debug)
 if debug:
-    print('sys.gettotalrefcount:', sys.gettotalrefcount())
+    print 'sys.gettotalrefcount:', sys.gettotalrefcount()
 
 import _bisect
 import _codecs_cn
@@ -104,7 +104,6 @@ for mode, res in [
                'a538327af927da3e'),
     ]:
     h = hashlib.new(mode)
-    print mode, res
     assert h.hexdigest() == res
 
 a = 20 * 'Ilan'
@@ -141,18 +140,20 @@ if not (armv7l or ppc64le):
     import _tkinter
     import Tkinter
     import turtle
-    print('TK_VERSION:', _tkinter.TK_VERSION)
-    print('TCL_VERSION:', _tkinter.TCL_VERSION)
+    print 'TK_VERSION:', _tkinter.TK_VERSION
+    print 'TCL_VERSION:', _tkinter.TCL_VERSION
     assert _tkinter.TK_VERSION == _tkinter.TCL_VERSION == '8.5'
 
-print('OPENSSL_VERSION:', ssl.OPENSSL_VERSION)
+print 'OPENSSL_VERSION:', ssl.OPENSSL_VERSION
 if sys.platform != 'win32':
     assert '1.0.2j' in ssl.OPENSSL_VERSION
 
 pprint(platform._sys_version())
 sys.version = ('2.7.6 (#1, Jan  9 2013, 06:47:03)\n'
                '[GCC 4.1.2 20080704 (Red Hat 4.1.2-54)] on linux2')
-pprint(platform._sys_version())
+assert platform._sys_version() == ('CPython', '2.7.6', '', '', '1',
+                                   'Jan  9 2013 06:47:03',
+                                   'GCC 4.1.2 20080704 (Red Hat 4.1.2-54)')
 
 if int(os.getenv('GUI_TEST', 0)):
     turtle.forward(100)

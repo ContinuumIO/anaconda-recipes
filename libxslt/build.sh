@@ -6,6 +6,7 @@ fi
 
 ./configure $B \
     --with-libxml-prefix=$PREFIX \
+    --without-crypto \
     --prefix=$PREFIX
 make
 make install
