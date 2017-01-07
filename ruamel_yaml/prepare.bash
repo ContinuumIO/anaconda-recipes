@@ -4,7 +4,7 @@ env | sort
 RECIPE_DIR=${1-$RECIPE_DIR}
 SRC_DIR=${2-$SRC_DIR}
 
-VERSION=$(python $SRC_DIR/setup.py --version)
+VERSION=$(cd $SRC_DIR && python setup.py --version)
 echo "VERSION=$VERSION"
 
 patch -p1 < $RECIPE_DIR/ordereddict_test.patch
