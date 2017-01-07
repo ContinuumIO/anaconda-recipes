@@ -13,6 +13,7 @@ source:
 
 requirements:
   build:
+    - posix               # [win]
     - python
     - cython
     - yaml
