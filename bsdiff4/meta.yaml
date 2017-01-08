@@ -1,13 +1,12 @@
 package:
   name: bsdiff4
-  version: 1.1.4
+  version: 1.1.5
 
 source:
   git_url: https://github.com/ilanschnell/bsdiff4.git
-  git_tag: 1.1.4
+  git_tag: 1.1.5
 
 build:
-  number: 1            [win]
   detect_binary_files_with_prefix: False
   entry_points:
     - bsdiff4 = bsdiff4.cli:main_bsdiff4
