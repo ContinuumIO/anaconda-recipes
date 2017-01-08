@@ -13,7 +13,9 @@ source:
 
 requirements:
   build:
+    - posix               # [win]
     - python
+    - setuptools
     - cython
     - yaml
   run:

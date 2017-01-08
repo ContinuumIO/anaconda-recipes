@@ -1,7 +1,7 @@
 # coding: utf-8
 from __future__ import print_function, absolute_import
 
-__version__ = "0.11.7"
+__version__ = "$VERSION"
 __name__ = "ruamel_yaml"
 __author__ = "Anthon van der Neut"
 __author_email__ ="a.van.der.neut@ruamel.eu"
