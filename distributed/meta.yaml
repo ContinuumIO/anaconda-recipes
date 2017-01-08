@@ -1,11 +1,11 @@
 package:
   name: distributed
-  version: 1.14.3
+  version: 1.15.0
 
 source:
-  fn: distributed-1.14.3.tar.gz
-  url: https://pypi.python.org/packages/3e/57/08fb17995f9c9dc626d3f2adad37e45ff2c9ef392f9b0a968460c67ea8cc/distributed-1.14.3.tar.gz
-  md5: 9adacbd86aaa45e4a7ed89dc3238212d
+  fn: distributed-1.15.0.tar.gz
+  url: https://pypi.python.org/packages/79/1b/a5b755f32cf80491fceebce40a7671e841771def45f1403ba7574da8badb/distributed-1.15.0.tar.gz
+  md5: 8c51e48f152e0a615bee850d9210b6f4
 
 build:
   number: 0
@@ -25,14 +25,14 @@ requirements:
     - tornado >=4.2
     - toolz >=0.7.4
     - msgpack-python
-    - cloudpickle >=0.2.1
-    - dask >=0.12.0
+    - cloudpickle >=0.2.2
+    - dask >=0.13.0
     - click >=6.6
     - six
     - tblib
     - psutil
-    - locket
     - zict >=0.1.0
+    - sortedcollections
     - futures                     [py2k]
     - singledispatch              [py < 34]
 

@@ -1,10 +1,10 @@
 package:
   name: conda
-  version: 4.3.1
+  version: 4.3.2
 
 source:
   git_url: https://github.com/conda/conda.git
-  git_tag: 4.3.1
+  git_tag: 4.3.2
 
 build:
   # These are present when the new environment is created
@@ -31,8 +31,9 @@ requirements:
     - enum34               [py<34]
     - menuinst             [win]
     - pycosat >=0.6.1
-    - requests >=2.5.3
+    - requests >=2.12.4
     - ruamel_yaml >=0.11.14
+    - pyopenssl >=0.14
 
 test:
   imports:

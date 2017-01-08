@@ -965,6 +965,8 @@
   "snowballstemmer": "all", 
   "snuggs": "all", 
   "sockjs-tornado": "all", 
+  "sortedcollections": "all", 
+  "sortedcontainers": "all", 
   "spacy": [
     "linux-64:py27", 
     "linux-64:py35", 

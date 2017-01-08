@@ -1,11 +1,11 @@
 package:
   name: cloudpickle
-  version: 0.2.1
+  version: 0.2.2
 
 source:
-  fn: cloudpickle-0.2.1.tar.gz
-  url: https://pypi.python.org/packages/source/c/cloudpickle/cloudpickle-0.2.1.tar.gz
-  md5: d6c92acdfa253a50b2ef86a1b6443e39
+  fn: cloudpickle-0.2.2.tar.gz
+  url: https://pypi.python.org/packages/2e/6b/499a946697c4754ea4f919ad3e366505c31e90f6bcbc299563b16c493c1e/cloudpickle-0.2.2.tar.gz
+  md5: e1b0a9b3ed8cc941439a74e4dcaee408
 
 requirements:
   build:
