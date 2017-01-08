@@ -1,51 +1,43 @@
-# -*- coding: utf-8 -*-
-from __future__ import absolute_import, division, print_function
-from distutils.core import setup, Extension
 import os
 import sys
+from os.path import join
+from distutils.core import setup, Extension
 
 from Cython.Build import cythonize
 
-# When executing the setup.py, we need to be able to import ourselves, this
-# means that we need to add the src directory to the sys.path.
-here = os.path.abspath(os.path.dirname(__file__))
-src_dir = os.path.join(here, "ruamel_yaml")
-sys.path.insert(0, src_dir)
-import ruamel_yaml  # NOQA
+from cio_bt.replace import replace
 
 
-SP_DIR = os.getenv('SP_DIR', '.')
-PREFIX = os.getenv('PREFIX', '.')
-library_dirs = [os.path.join(SP_DIR, 'ruamel_yaml/ext'), os.path.join(PREFIX, 'lib')]
-extensions = [Extension("ruamel_yaml.ext._ruamel_yaml",
-                        ['ruamel_yaml/ext/_ruamel_yaml.pyx'],
-                        libraries=['yaml'],
-                        library_dirs=library_dirs,
-                        include_dirs=[os.path.join(PREFIX, 'include')],
-                        runtime_library_dirs=[] if sys.platform == 'win32' else library_dirs)]
+src_dir = os.getcwd()
+os.unlink(join(src_dir, 'ext', '_ruamel_yaml.c'))
+os.mkdir(join(src_dir, 'ruamel_yaml'))
+for fn in os.listdir(src_dir):
+    if not fn.endswith('.py'):
+        continue
+    dst = join(src_dir, 'ruamel_yaml', fn)
+    os.rename(join(src_dir, fn), dst)
+    replace([('ruamel.yaml', 'ruamel_yaml')],
+            dst, assert_change=False)
+
+replace([('__VERSION__', os.getenv('PKG_VERSION'))],
+        join(src_dir, 'ruamel_yaml', '__init__.py'))
+
+replace([('_ruamel_yaml', 'ruamel_yaml._ruamel_yaml')],
+        join(src_dir, 'ruamel_yaml', 'cyaml.py'))
+
+replace([('from ruamel.yaml', 'from ruamel_yaml')],
+        join(src_dir, 'ext', '_ruamel_yaml.pyx'))
+
+extensions = [Extension(
+    "ruamel_yaml._ruamel_yaml",
+    ['ext/_ruamel_yaml.pyx'],
+    libraries=['yaml'],
+    library_dirs=[os.path.join(sys.prefix, 'lib')],
+    include_dirs=[os.path.join(sys.prefix, 'include')],
+)]
 
 setup(
-    name=ruamel_yaml.__name__,
-    version=ruamel_yaml.__version__,
-    author=ruamel_yaml.__author__,
-    author_email=ruamel_yaml.__author_email__,
-    description=ruamel_yaml.__description__,
+    name='ruamel_yaml',
     ext_modules=cythonize(extensions),
-    classifiers=[
-        "Programming Language :: Python :: 2.6",
-        "Programming Language :: Python :: 2.7",
-        "Programming Language :: Python :: 3.3",
-        "Programming Language :: Python :: 3.4",
-        "Programming Language :: Python :: 3.5",
-        "Programming Language :: Python :: Implementation :: CPython",
-        "Programming Language :: Python :: Implementation :: PyPy",
-        "Programming Language :: Python :: Implementation :: Jython",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-        "Topic :: Text Processing :: Markup"
-    ],
-    packages=[
-        'ruamel_yaml',
-        'ruamel_yaml.ext',
-    ],
-    zip_safe=False,
+    packages=['ruamel_yaml'],
 )

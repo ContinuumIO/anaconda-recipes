@@ -4,9 +4,6 @@ env | sort
 RECIPE_DIR=${1-$RECIPE_DIR}
 SRC_DIR=${2-$SRC_DIR}
 
-VERSION=$(python $SRC_DIR/setup.py --version)
-echo "VERSION=$VERSION"
-
 patch -p1 < $RECIPE_DIR/ordereddict_test.patch
 
 rm -f $SRC_DIR/setup.py
@@ -25,4 +22,3 @@ touch $SRC_DIR/ruamel_yaml/ext/__init__.py
 
 cp $RECIPE_DIR/setup.py $SRC_DIR/
 cp $RECIPE_DIR/__init__.py $SRC_DIR/ruamel_yaml/
-sed -i -e 's/__version__.*/__version__ = "$VERSION"/' $SRC_DIR/ruamel_yaml/__init__.py
