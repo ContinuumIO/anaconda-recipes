@@ -1,11 +1,11 @@
 package:
   name: notebook
-  version: 4.3.0
+  version: 4.3.1
 
 source:
-  fn: notebook-4.3.0.tar.gz
-  url: https://pypi.python.org/packages/c4/f5/229d65cedb3da4ccf7bfaf5ad31241764174f3ac5ce1d2a646c397a91773/notebook-4.3.0.tar.gz
-  md5: 34f11dc3b36bdd40b9a3ea8cd38c4b48
+  fn: notebook-4.3.1.tar.gz
+  url: https://pypi.python.org/packages/d8/1f/2a79c0e0759421638287057276ce7d0f64baad5a50932da1ac963b54c9ab/notebook-4.3.1.tar.gz
+  md5: 70cc97ad19c0f9246ad295a653475e2a
 
 build:
   entry_points:

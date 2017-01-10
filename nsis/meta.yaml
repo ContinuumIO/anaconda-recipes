@@ -1,9 +1,6 @@
 package:
   name: nsis
-  version: 3.0
-
-build:
-  number: 2
+  version: 3.01
 
 about:
   home: http://nsis.sourceforge.net/Main_Page
