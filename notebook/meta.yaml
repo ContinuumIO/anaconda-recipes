@@ -8,6 +8,7 @@ source:
   md5: 70cc97ad19c0f9246ad295a653475e2a
 
 build:
+  number:  1                [win]
   entry_points:
     - jupyter-notebook = notebook.notebookapp:main
     - jupyter-nbextension = notebook.nbextensions:main

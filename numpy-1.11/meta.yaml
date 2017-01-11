@@ -1,11 +1,11 @@
 package:
   name: numpy
-  version: 1.11.2
+  version: 1.11.3
 
 source:
-  fn: numpy-1.11.2.tar.gz
-  url: https://pypi.python.org/packages/16/f5/b432f028134dd30cfbf6f21b8264a9938e5e0f75204e72453af08d67eb0b/numpy-1.11.2.tar.gz
-  md5: 03bd7927c314c43780271bf1ab795ebc
+  fn: numpy-1.11.3.zip
+  url: https://pypi.python.org/packages/e1/76/ff83c98f68bdc6917cebde954f7fc23e2ba30043590d5c3e0f5cd9033482/numpy-1.11.3.zip
+  md5: aa70cd5bba81b78382694d654ed10036
   patches:
     - dlopenflags.patch         [unix and not nomkl]
     - osx-dist.patch            [osx]
@@ -22,12 +22,12 @@ requirements:
   build:
     - python
     - setuptools
-    - mkl-devel 11.3.3        [not nomkl]
+    - mkl-devel 2017.0.1      [not nomkl]
     - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
     - cio-bt
   run:
     - python
-    - mkl 11.3.3              [not nomkl]
+    - mkl 2017.0.1            [not nomkl]
     - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
     - libgfortran 3.0.0       [linux and nomkl and (not ppc64le)]
 

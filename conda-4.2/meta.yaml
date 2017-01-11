@@ -1,10 +1,10 @@
 package:
   name: conda
-  version: 4.2.14
+  version: 4.2.15
 
 source:
   git_url: https://github.com/conda/conda.git
-  git_tag: eff1da62f3ba4cbe476b221b6b2ac55a3539d84f
+  git_tag: 4.2.15
 
 build:
   # These are present when the new environment is created
@@ -31,9 +31,9 @@ requirements:
     - enum34               [py<34]
     - menuinst             [win]
     - pycosat >=0.6.1
-    - requests >=2.12.4
     - ruamel_yaml >=0.11.14
-    - pyopenssl >=0.14
+    - requests >=2.12.4
+    - pyopenssl >=0.16.2
 
 test:
   imports:

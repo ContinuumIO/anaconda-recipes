@@ -8,7 +8,7 @@ source:
   md5: 5fb5fb7ccb113ab3a039702b6c2f3327
 
 build:
-  number: 0
+  number: 1
   detect_binary_files_with_prefix: False
   ignore_prefix_files: True   [win]
   features:
@@ -19,13 +19,13 @@ requirements:
     - python
     - setuptools
     - numpy x.x
-    - mkl-devel 11.3.3        [not nomkl]
+    - mkl-devel 2017.0.1      [not nomkl]
     - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
-    - cio-bt                  [unix]
+    - cio-bt
   run:
     - python
     - numpy x.x
-    - mkl 11.3.3              [not nomkl]
+    - mkl 2017.0.1            [not nomkl]
     - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
     - libgfortran 3.0.0       [linux]
     - vs2015_runtime          [win and py35]

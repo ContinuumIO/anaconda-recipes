@@ -8,12 +8,12 @@ source:
 
 build:
   detect_binary_files_with_prefix: False
-  number: 2
+  number: 3
 
 requirements:
   build:
     - python
-    - mkl-devel 11.3.3
+    - mkl-devel 2017.0.1
   run:
     - python
     - mkl >=11.0

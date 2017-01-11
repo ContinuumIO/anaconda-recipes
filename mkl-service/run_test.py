@@ -6,5 +6,5 @@ for s in ('mkl.get_max_threads()', 'mkl.get_cpu_clocks()', 'mkl.mem_stat()',
     print('%s=%r' % (s, eval(s)))
 
 assert mkl.test.run().wasSuccessful()
-assert 'Math Kernel Library Version 11.3.3 ' in mkl.get_version_string()
+assert 'Math Kernel Library Version 2017.0.1 ' in mkl.get_version_string()
 assert mkl.__version__ == '1.1.2'

@@ -11,7 +11,7 @@ fi
 
 if [ `uname` == Linux ]
 then
-    INTEL_DIR=/opt/intel/compilers_and_libraries_2016.3.210/linux
+    INTEL_DIR=/opt/intel/compilers_and_libraries_2017.1.132/linux
     COMP_LIB_DIR=$INTEL_DIR/compiler/lib/$INTEL_ARCH
     MKL_LIB_DIR=$INTEL_DIR/mkl/lib/$INTEL_ARCH
 

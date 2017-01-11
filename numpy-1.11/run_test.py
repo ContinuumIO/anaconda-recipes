@@ -2,7 +2,7 @@ import os
 import sys
 import numpy
 
-assert numpy.__version__ == '1.11.2'
+assert numpy.__version__ == '1.11.3'
 
 has_mkl = not int(os.getenv('NOMKL', 0))
 print('HAS MKL: %r' % has_mkl)

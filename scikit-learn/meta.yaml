@@ -7,6 +7,7 @@ source:
   git_tag: 0.18.1
 
 build:
+  number: 1
   detect_binary_files_with_prefix: False
   features:
     - nomkl                   [nomkl]
@@ -18,13 +19,13 @@ requirements:
     - cython
     - numpy x.x
     - scipy
-    - mkl-devel 11.3.3        [not nomkl]
+    - mkl-devel 2017.0.1      [not nomkl]
     - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
   run:
     - python
     - numpy x.x
     - scipy
-    - mkl 11.3.3              [not nomkl]
+    - mkl 2017.0.1            [not nomkl]
     - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
 
 test:

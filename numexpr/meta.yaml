@@ -9,7 +9,7 @@ source:
     - setup.patch
 
 build:
-  number: 1
+  number: 2
   detect_binary_files_with_prefix: False
   ignore_prefix_files: True   [win]
   features:
@@ -20,12 +20,12 @@ requirements:
     - python
     - setuptools              [py3k]
     - numpy x.x
-    - mkl-devel 11.3.3        [not nomkl]
+    - mkl-devel 2017.0.1      [not nomkl]
     - cio-bt                  [win]
   run:
     - python
     - numpy x.x
-    - mkl 11.3.3              [not nomkl]
+    - mkl 2017.0.1            [not nomkl]
 
 test:
   requires:
