@@ -33,7 +33,7 @@ requirements:
     - pycosat >=0.6.1
     - ruamel_yaml >=0.11.14
     - requests >=2.12.4
-    - pyopenssl >=0.16.2
+    - pyopenssl >=16.2
 
 test:
   imports:

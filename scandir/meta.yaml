@@ -1,0 +1,29 @@
+package:
+  name: scandir
+  version: 1.4
+
+source:
+  fn: scandir-1.4.tar.gz
+  url: https://pypi.python.org/packages/95/40/ddbcd295ee58d5c1126645890bcf87853e4075547308884e4f8ada27f195/scandir-1.4.tar.gz
+  md5: bdac33e1548a18598da6c141c84af407
+
+build:
+  detect_binary_files_with_prefix: False
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - scandir
+    - _scandir
+
+about:
+  home: https://github.com/benhoyt/scandir
+  license: BSD License
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: scandir, a better directory iterator and faster os.walk()

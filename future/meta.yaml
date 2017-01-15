@@ -7,6 +7,12 @@ source:
   url: https://pypi.python.org/packages/00/2b/8d082ddfed935f3608cc61140df6dcbf0edea1bc3ab52fb6c29ae3e81e85/future-0.16.0.tar.gz
   md5: 3e8e88a2bda48d54b1da7634d04760d7
 
+build:
+  number: 1
+  entry_points:
+    - futurize = libfuturize.main:main
+    - pasteurize = libpasteurize.main:main
+
 requirements:
   build:
     - python
@@ -14,6 +20,9 @@ requirements:
     - python
 
 test:
+  commands:
+    - futurize -h
+    - pasteurize -h
   imports:
     - future
 

@@ -22,13 +22,13 @@ requirements:
     - pkg-config
     - python
     - libffi >=3.2.1
-#    - gettext         [osx]
+    - gettext         [osx]
     - xz
     - zlib
     - pcre 8.39
   run:
     - libffi >=3.2.1
-#    - gettext         [osx]
+    - gettext         [osx]
     - zlib
     - pcre 8.39
 

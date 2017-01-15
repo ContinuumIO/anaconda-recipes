@@ -1,11 +1,11 @@
 package:
   name: path.py
-  version: 9.0.1
+  version: 10.0
 
 source:
-  fn: path.py-9.0.1.tar.gz
-  url: https://pypi.python.org/packages/01/10/7ae474c6203bc1734fd3ea5e224499e5c2780a4e2803bd58e4a22997f56c/path.py-9.0.1.tar.gz
-  md5: f566e9e0813a713c69e8311f621efd47
+  fn: path.py-10.0.tar.gz
+  url: https://pypi.python.org/packages/f3/4e/3bce93c0d9e20abc6ed3aa7866beb688e889828ca2666743df11d9a30050/path.py-10.0.tar.gz
+  md5: eb8469ad498d2e462bff8f3b2b5ea68d
   patches:
     - setup.patch
 

@@ -1,11 +1,11 @@
 package:
   name: distributed
-  version: 1.15.0
+  version: 1.15.1
 
 source:
-  fn: distributed-1.15.0.tar.gz
-  url: https://pypi.python.org/packages/79/1b/a5b755f32cf80491fceebce40a7671e841771def45f1403ba7574da8badb/distributed-1.15.0.tar.gz
-  md5: 8c51e48f152e0a615bee850d9210b6f4
+  fn: distributed-1.15.1.tar.gz
+  url: https://pypi.python.org/packages/54/84/20a0cae617f7907b8efae024c22e85f55d1293184a6f4783880a60f57c2c/distributed-1.15.1.tar.gz
+  md5: 4703ceb0e68d36c2661316ec2a8dfc96
 
 build:
   number: 0
@@ -31,9 +31,9 @@ requirements:
     - six
     - tblib
     - psutil
-    - zict >=0.1.0
+    - zict >=0.1.1
     - sortedcollections
-    - futures                     [py2k]
+    - futures                     [py < 30]
     - singledispatch              [py < 34]
 
 test:

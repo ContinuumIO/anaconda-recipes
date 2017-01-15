@@ -1,11 +1,11 @@
 package:
   name: gevent
-  version: 1.2.0
+  version: 1.2.1
 
 source:
-  fn: gevent-1.2.0.tar.gz
-  url: https://pypi.python.org/packages/52/17/fe47f6e565c7ac22886dbd15dc45f63707b76b255e8f41675043ba1db4a3/gevent-1.2.0.tar.gz
-  md5: c3cfdfc8d1e97a1b0e279ae8c7a0405a
+  fn: gevent-1.2.1.tar.gz
+  url: https://pypi.python.org/packages/54/dd/17dc7e899ac7c1de2d19b367b29d90fdb4cfe83bda8c2581464906c9399d/gevent-1.2.1.tar.gz
+  md5: 6700a2433c8e0635425e6798760efc81
 
 build:
   detect_binary_files_with_prefix: False
@@ -14,10 +14,10 @@ requirements:
   build:
     - python
     - setuptools
-    - greenlet >=0.4.9
+    - greenlet
   run:
     - python
-    - greenlet >=0.4.9
+    - greenlet >=0.4.10
 
 test:
   imports:
