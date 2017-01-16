@@ -1,11 +1,11 @@
 package:
   name: click
-  version: 6.6
+  version: 6.7
 
 source:
-  fn: click-6.6.tar.gz
-  url: https://pypi.python.org/packages/source/c/click/click-6.6.tar.gz
-  md5: d0b09582123605220ad6977175f3e51d
+  fn: click-6.7.tar.gz
+  url: https://pypi.python.org/packages/95/d9/c3336b6b5711c3ab9d1d3a80f1a3e2afeb9d8c02a7166462f6cc96570897/click-6.7.tar.gz
+  md5: fc4cc00c4863833230d3af92af48abd4
 
 requirements:
   build:

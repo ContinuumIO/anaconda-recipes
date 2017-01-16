@@ -1,11 +1,11 @@
 package:
   name: jinja2
-  version: 2.8.1
+  version: 2.9.4
 
 source:
-  fn: Jinja2-2.8.1.tar.gz
-  url: https://pypi.python.org/packages/5f/bd/5815d4d925a2b8cbbb4b4960f018441b0c65f24ba29f3bdcfb3c8218a307/Jinja2-2.8.1.tar.gz
-  md5: 150a8f1c180272753cf46dd3cdd6decf
+  fn: Jinja2-2.9.4.tar.gz
+  url: https://pypi.python.org/packages/f4/3f/28387a5bbc6883082c16784c6135440b94f9d5938fb156ff579798e18eda/Jinja2-2.9.4.tar.gz
+  md5: b151bfab6fb728fb7a06da4299161c74
 
 build:
   number: 0
@@ -18,7 +18,7 @@ requirements:
   run:
     - python
     - setuptools
-    - markupsafe
+    - markupsafe >=0.23
 
 test:
   imports:

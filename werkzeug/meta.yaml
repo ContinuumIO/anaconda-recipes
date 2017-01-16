@@ -1,14 +1,11 @@
 package:
   name: werkzeug
-  version: 0.11.13
+  version: 0.11.15
 
 source:
-  fn: Werkzeug-0.11.13.zip
-  url: https://pypi.python.org/packages/4a/4a/0e5f691c1e00d8b5678f35225cfc9e21dcebec794fb9702648b8fac716b1/Werkzeug-0.11.13.zip
-  md5: 9fc73626c72021b4497581340a92f8e3
-
-build:
-  number: 0
+  fn: Werkzeug-0.11.15.tar.gz
+  url: https://pypi.python.org/packages/fe/7f/6d70f765ce5484e07576313897793cb49333dd34e462488ee818d17244af/Werkzeug-0.11.15.tar.gz
+  md5: cb4010478dd33905f95920e4880204a2
 
 requirements:
   build:

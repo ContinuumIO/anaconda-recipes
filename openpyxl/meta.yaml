@@ -1,11 +1,11 @@
 package:
   name: openpyxl
-  version: 2.4.0
+  version: 2.4.1
 
 source:
-  fn: openpyxl-2.4.0.tar.gz
-  url: https://pypi.python.org/packages/7e/75/9bb309f80e4f75d139ecc55e9edf65c5844336b5a84966a609267255f961/openpyxl-2.4.0.tar.gz
-  md5: e3376d1fce0681fd0b4047ab89218af4
+  fn: openpyxl-2.4.1.tar.gz
+  url: https://pypi.python.org/packages/dc/f2/c57f9f00f8ae5e1a73cb096dbf600433724f037ffcbd51c456f89da5efd9/openpyxl-2.4.1.tar.gz
+  md5: 36a78e0ea7f056adadf3005b367e25ef
 
 requirements:
   build:
