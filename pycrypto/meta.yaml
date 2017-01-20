@@ -11,7 +11,8 @@ source:
     - python3-stdint-windows.patch
 
 build:
-  number: 4
+  number: 5  [win]
+  number: 4  [not win]
   detect_binary_files_with_prefix: False
 
 requirements:

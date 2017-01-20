@@ -4,7 +4,7 @@ package:
 
 source:
   fn: subversion-1.9.4.tar.bz2
-  url: http://www.trieuvan.com/apache/subversion/subversion-1.9.4.tar.bz2
+  url: https://archive.apache.org/dist/subversion/subversion-1.9.4.tar.bz2
   sha1: bc7d51fdda43bea01e1272dfe9d23d0a9d6cd11c
   patches:
     - py3_compat.patch        [py>30]

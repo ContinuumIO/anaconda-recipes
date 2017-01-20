@@ -11,4 +11,4 @@ $PYTHON conda.recipe/setup.py install
 mkdir -p $PREFIX/etc/fish/conf.d/
 cp $SRC_DIR/shell/conda.fish $PREFIX/etc/fish/conf.d/
 
-cp $RECIPE_DIR/cio_test.py $SP_DIR
+cp "$RECIPE_DIR"/cio_test.py $SP_DIR

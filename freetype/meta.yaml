@@ -29,7 +29,7 @@ requirements:
 
 test:
   commands:
-    - freetype-config --ftversion
+    - freetype-config --ftversion        [unix]
 
 about:
   home: http://freetype.sourceforge.net/index2.html
