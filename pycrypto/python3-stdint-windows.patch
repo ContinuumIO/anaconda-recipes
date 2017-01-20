@@ -1,0 +1,23 @@
+--- pycrypto-2.6.1/src/inc-msvc/stdint.h.orig	2017-01-18 17:57:43.686967500 -0600
++++ pycrypto-2.6.1/src/inc-msvc/stdint.h	2017-01-18 17:57:21.960294400 -0600
+@@ -24,6 +24,12 @@
+ #ifndef PYCRYPTO_MSVC_STDINT_H
+ #define PYCRYPTO_MSVC_STDINT_H
+ 
++#if _MSC_VER >= 1900
++/* This hack (simulated include_next) is from Boost via StackOverflow
++ * http://stackoverflow.com/a/17167292
++ */
++#include <../include/stdint.h>
++#else
+ typedef signed __int8  int8_t;
+ typedef signed __int16 int16_t;
+ typedef signed __int32 int32_t;
+@@ -37,6 +43,6 @@
+ #ifndef inline
+ # define inline __inline
+ #endif /* inline */
+-
++#endif /* _MSC_VER >= 1600 */
+ #endif /* PYCRYPTO_MSVC_STDINT_H */
+ /* vim:set ts=4 sw=4 sts=4 expandtab: */

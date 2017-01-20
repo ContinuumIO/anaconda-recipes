@@ -7,9 +7,14 @@ source:
   url: https://pypi.io/packages/source/i/ipywidgets/ipywidgets-5.2.2.tar.gz
   md5: 317e49cc76353352939c2527920f3ebe
 
+build:
+  number: 1
+
 requirements:
   build:
     - python
+    - notebook
+    - widgetsnbextension
   run:
     - python
     - ipython >=4.0.0

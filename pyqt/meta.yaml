@@ -11,19 +11,20 @@ source:
   sha1: 8920e4094470ff93f79e257c37c46f5cd0bff7ab  [unix]
 
 build:
-    number: 1
+  number: 1          [osx]
+  number: 2          [linux or win]
 
 requirements:
   build:
     - gcc    [linux]
     - jom    [win]
     - python
-    - qt 5.6*
+    - qt 5.6.*
     - sip >=4.18
   run:
     - libgcc    [linux]
     - python
-    - qt 5.6*
+    - qt 5.6.*
     - sip >=4.18
 
 test:

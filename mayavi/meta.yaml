@@ -15,16 +15,16 @@ build:
 requirements:
   build:
     - python
-    - numpy
     - setuptools
-    - vtk
+    - numpy
+    - vtk 6.3.0
     - traitsui
     - apptools
   run:
     - python
     - python.app             [osx]
     - numpy
-    - vtk
+    - vtk 6.3.0
     - traitsui >=5.1
     - apptools >=4.4
     - envisage >=4.5

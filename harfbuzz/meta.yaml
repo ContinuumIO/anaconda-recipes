@@ -7,17 +7,18 @@ source:
   fn: harfbuzz-0.9.39.tar.bz2
 
 build:
-  number: 1
+  number: 2
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:
-    - cairo
+    - cairo 1.14.*
     - glib >=2.33
-    - freetype
+    - freetype 2.5.*
   run:
-    - cairo
+    - cairo 1.14.*
     - glib >=2.33
-    - freetype
+    - freetype 2.5.*
 
 about:
   home: http://www.freedesktop.org/wiki/Software/HarfBuzz/

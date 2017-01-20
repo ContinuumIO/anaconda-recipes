@@ -6,7 +6,7 @@ diff -urN pywin32-220.orig/com/win32comext/axdebug/src/stdafx.h pywin32-220/com/
  #endif
  
 -#ifdef HAVE_SDK_ACTIVDBG
-+#if (_MSC_VER >= 1900) || defined(HAVE_SDK_ACTIVDBG)
++#if (_MSC_VER >= 1600) || defined(HAVE_SDK_ACTIVDBG)
  #include <activdbg.h>
  #else
  #include "activdbg.h"
@@ -67,15 +67,15 @@ diff -urN pywin32-220.orig/setup.py pywin32-220/setup.py
 -base_compiler = msvccompiler.MSVCCompiler
 +# Try the Python 3.5 version first as you need to use that to build UCRT-compatible
 +# modules, otherwise you need to provide the user with the exact UCRT that you built
-+# with. Also, if the UCRT-compatible compiler imports, then we definitely do not want
-+# to use sdk_dir (though in general, conda builds never want to use that anyway).
++# with. Also, sdk_dir is just plain wrong.  vcvars.bat is where INCLUDES and LIBRARY
++# are set and not the random registry key that this script decided to look at first.
 +try:
 +    from distutils import _msvccompiler as vccompiler
-+    sdk_dir = ''
 +except:
 +    from distutils import msvccompiler as vccompiler
 +base_compiler = vccompiler.MSVCCompiler
- 
++sdk_dir = ''
+
  class my_compiler(base_compiler):
      # Just one GUIDS.CPP and it gives trouble on mainwin too. Maybe I
 @@ -1476,7 +1492,7 @@

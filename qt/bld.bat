@@ -71,9 +71,22 @@ if DEFINED _BLDTMP (
   pushd "%_BLDTMP%"
 )
 
-:: set path to find resources shipped with qt-5 (and also Ruby for qtwebkit)
+:: set path to find resources shipped with qt-5 (Ruby comes from upstream MSYS2 for now, PATH set externally!)
 :: see http://doc-snapshot.qt-project.org/qt5-5.4/windows-building.html
-set "PATH=%CD%\qtbase\bin;%CD%\gnuwin32\bin;C:\Ruby23\bin;%PATH%"
+set "PATH=%CD%\qtbase\bin;%CD%\gnuwin32\bin;C:\StrawberryPerl%ARCH%\perl\bin;%PATH%"
+
+where ruby.exe
+if %ERRORLEVEL% neq 0 (
+  echo Could not find ruby.exe
+  exit /b 1
+)
+
+where perl.exe
+if %ERRORLEVEL% neq 0 (
+  echo Could not find perl.exe
+  exit /b 1
+)
+
 
 :: Install a custom python 27 environment for us, to use in building webengine, but avoid feature activation
 :: At present (5th July 2016) calling `conda create -y -n python27_qt5_build python=2.7` causes the build to
@@ -126,6 +139,14 @@ set SQLITE3SRCDIR=%CD%\qtbase\src\3rdparty\sqlite
 :: Patch does not apply cleanly.  Copy file.
 :: https://codereview.qt-project.org/#/c/141019/
 copy %RECIPE_DIR%\tst_compiler.cpp qtbase\tests\auto\other\compiler\
+
+:: A check here. We need to add msinttypes to defaults.
+if %VS_MAJOR% LSS 10 (
+  if not exist %PREFIX%/Library/include/stdint.h (
+    echo %PREFIX%/include/stdint.h does not exist, please use msinttypes
+    exit /b 1
+  )
+)
 
 goto SKIP_REBUILD_CONFIGURE_EXE
 :: If applying 0009-Win32-Re-permit-fontconfig-and-qt-freetype.patch (or

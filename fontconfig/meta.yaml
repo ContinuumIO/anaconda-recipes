@@ -9,18 +9,21 @@ source:
     - fcf.patch
     - patch-2.12.1-fccache.diff
 
+build:
+  number: 1
+
 requirements:
   build:
     - freetype 2.5.*
     - libxml2 2.9.*
-    - libpng 1.6.*
-    - libiconv 1.14.*
+    - libpng >=1.6.27,<1.7
+    - libiconv 1.14*
     - pkg-config
   run:
     - freetype 2.5.*
     - libxml2 2.9.*
-    - libpng 1.6.*
-    - libiconv 1.14.*
+    - libpng >=1.6.27,<1.7
+    - libiconv 1.14*
 
 test:
   commands:

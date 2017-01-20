@@ -26,8 +26,6 @@ requirements:
 test:
   commands:
     - iconv --help                                  [not win]
-    - env                                           [linux]
-    - conda inspect linkages -p ${PREFIX} libiconv  [linux]
 
 about:
   home: https://www.gnu.org/software/libiconv/

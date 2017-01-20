@@ -8,6 +8,7 @@ source:
   md5: 55a61a054aa66812daf5161a0d5d7eda
   patches:
     - python3-windows.patch
+    - python3-stdint-windows.patch
 
 build:
   number: 4

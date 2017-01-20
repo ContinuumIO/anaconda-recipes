@@ -1,0 +1,28 @@
+--- pywin32-220/win32/src/win32apimodule.cpp.orig	2017-01-15 02:07:03.184102100 +0000
++++ pywin32-220/win32/src/win32apimodule.cpp	2017-01-15 13:37:06.583806900 +0000
+@@ -6616,6 +6616,25 @@
+   PYWIN_MODULE_INIT_PREPARE(win32api, win32api_functions,
+                             "Wraps general API functions that are not subsumed in the more specific modules");
+ 
++  /* If you import 'win32api' without having imported 'pywintypes' first then '_win32sysloader' does not
++     get loaded and that means 'pywintypes36.dll' does not get loaded.  This bug seems to have been
++     around since version 205 (probably) and various workarounds have been attempted:
++
++     1. We (Continuum) used to copy 'pywintypes36.dll' and 'pythoncom36.dll' from 'site-packages/pywin32_system32'
++        to 'site-packages/win32' so that they would be found on the loader PATH. This is actually the advice of
++        Mark Hammond: https://sourceforge.net/p/pywin32/mailman/message/29498528/, but I believe that is not the
++        best way (otherwise why write all the logic in pywintypes.py and create _win32sysloader in the first
++        place?)
++     2. http://www.xavierdupre.fr/blog/2014-07-01_nojs.html
++  */
++
++  PyObject *pywintypes = PyImport_ImportModule("pywintypes");
++  if (pywintypes == NULL) {
++    PyErr_SetString(PyExc_ImportError, "pywintypes failed to import");
++    return NULL;
++  }
++  Py_DECREF(pywintypes);
++
+   PyDict_SetItemString(dict, "error", PyWinExc_ApiError);
+   PyDict_SetItemString(dict,"STD_INPUT_HANDLE",
+ 		       PyInt_FromLong(STD_INPUT_HANDLE));

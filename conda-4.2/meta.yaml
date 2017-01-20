@@ -27,7 +27,6 @@ requirements:
     - python
   run:
     - python
-    - conda-env >=2.6
     - enum34               [py<34]
     - menuinst             [win]
     - pycosat >=0.6.1

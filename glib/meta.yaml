@@ -10,11 +10,8 @@ source:
     - 0002-CentOS5-no-mkostemp-nor-O_CLOEXEC.patch
 
 build:
-  detect_binary_files_with_prefix: true
-  skip_compile_pyc:
-    - share/glib-2.0/codegen/*.py
-    - share/glib-2.0/*.py
-    - share/glib-2.0/gdb/*.py
+  number: 1
+  detect_binary_files_with_prefix: True
 
 requirements:
   build:
@@ -32,6 +29,10 @@ requirements:
     - zlib
     - pcre 8.39
 
+test:
+  commands:
+    - gio --version
+
 about:
   home: https://developer.gnome.org/glib/
   license: LGPL
@@ -44,4 +45,3 @@ about:
     functions for strings and common data structures.
   doc_url: https://developer.gnome.org/glib/unstable/
   dev_url: https://git.gnome.org/browse/glib/
-

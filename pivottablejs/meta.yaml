@@ -1,10 +1,10 @@
 package:
   name: pivottablejs
-  version: 2.1.0
+  version: 2.7.0
 
 source:
   git_url: https://github.com/ContinuumIO/pivottablejs.git
-  git_tag: 2.1.0
+  git_tag: 2.7.0
 
 requirements:
   build:
