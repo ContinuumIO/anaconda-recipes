@@ -131,7 +131,6 @@
     "win-64:py35"
   ], 
   "conda": "all", 
-  "conda-api": "all", 
   "conda-build": "all", 
   "conda-env": "all", 
   "conda-verify": "all", 

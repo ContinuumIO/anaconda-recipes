@@ -10,7 +10,10 @@ source:
     - patch-2.12.1-fccache.diff
 
 build:
-  number: 1
+  number: 2
+  binary_has_prefix_files:
+    - lib/libfontconfig.so.1.9.2  [linux]
+    - lib/libfontconfig.1.dylib   [osx]
 
 requirements:
   build:
