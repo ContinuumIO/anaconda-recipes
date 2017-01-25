@@ -1,11 +1,11 @@
 package:
   name: qtpy
-  version: 1.2.0
+  version: 1.2.1
 
 source:
-  fn: QtPy-1.2.0.tar.gz
-  url: https://pypi.python.org/packages/01/c8/0ad34631940702889cdaf0ab7c72f24f93fd1749ad9ebc56e252e3ab4715/QtPy-1.2.0.tar.gz
-  md5: c57f9ffe0a827a40ce632544ab494870
+  fn: QtPy-1.2.1.tar.gz
+  url: https://pypi.python.org/packages/0a/a8/31632a1c7cab273ac801da8b610d8659195853c099e1a26bfc08e78ddbe6/QtPy-1.2.1.tar.gz
+  md5: e2f783fb7f8e502815237bd8d30c6d11
 
 requirements:
   build:

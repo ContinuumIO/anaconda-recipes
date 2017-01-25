@@ -1,16 +1,8 @@
 diff --git setupext.py setupext.py
-old mode 100755
-new mode 100644
-index dd872fd..b92832a
+index 3819636..21aa897 100644
 --- setupext.py
 +++ setupext.py
-@@ -1,4 +1,4 @@
--from __future__ import print_function, absolute_import
-+from __future__ import print_function, absolute_import
- 
- from distutils import sysconfig
- from distutils import version
-@@ -149,7 +149,7 @@ def get_base_dirs():
+@@ -175,7 +175,7 @@ def get_base_dirs():
          return options['basedirlist']
  
      basedir_map = {
@@ -19,23 +11,12 @@ index dd872fd..b92832a
          'darwin': ['/usr/local/', '/usr', '/usr/X11',
                     '/opt/X11', '/opt/local'],
          'sunos5': [os.getenv('MPLIB_BASE') or '/usr/local', ],
-@@ -942,6 +942,9 @@ class FreeType(SetupPackage):
-                 return '.'.join([major, minor, patch])
+@@ -1021,7 +1021,7 @@ class FreeType(SetupPackage):
+                     'lib/freetype2/include/freetype2'],
+                 default_library_dirs=[
+                     'freetype2/lib'],
+-                default_libraries=['freetype', 'z'])
++                default_libraries=['freetype', 'z', 'libpng', 'bzip2'])
+             ext.define_macros.append(('FREETYPE_BUILD_TYPE', 'system'))
  
-     def add_flags(self, ext):
-+        libraries = ['freetype', 'z']
-+        if sys.platform == 'win32':
-+            libraries.extend(["libpng", "bzip2"])
-         pkg_config.setup_extension(
-             ext, 'freetype2',
-             default_include_dirs=[
-@@ -950,8 +953,7 @@ class FreeType(SetupPackage):
-                 'lib/freetype2/include/freetype2'],
-             default_library_dirs=[
-                 'freetype2/lib'],
--            default_libraries=['freetype', 'z'])
--
-+            default_libraries=libraries)
- 
- class FT2Font(SetupPackage):
-     name = 'ft2font'
+     def do_custom_build(self):

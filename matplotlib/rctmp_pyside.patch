@@ -1,19 +1,13 @@
 diff --git matplotlibrc.template matplotlibrc.template
-index fdbbf26..6902fe9 100644
+index f5dce98..5d3c2b4 100644
 --- matplotlibrc.template
 +++ matplotlibrc.template
-@@ -35,12 +35,12 @@
+@@ -35,7 +35,7 @@
  # You can also deploy your own backend outside of matplotlib by
  # referring to the module name (which must be in the PYTHONPATH) as
  # 'module://my_backend'.
--backend      : %(backend)s
+-backend      : $TEMPLATE_BACKEND
 +backend      : Qt5Agg
  
  # If you are using the Qt4Agg backend, you can choose here
  # to use the PyQt4 bindings or the newer PySide bindings to
- # the underlying Qt4 toolkit.
--#backend.qt4 : PyQt4        # PyQt4 | PySide
-+backend.qt5 : PyQt5
- 
- # Note that this can be overridden by the environment variable
- # QT_API used by Enthought Tool Suite (ETS); valid values are

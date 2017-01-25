@@ -2,7 +2,7 @@ diff --git src/_macosx.m src/_macosx.m
 index 58b78ac..45c2d71 100644
 --- src/_macosx.m
 +++ src/_macosx.m
-@@ -6348,13 +6348,6 @@ void init_macosx(void)
+@@ -3145,13 +3145,6 @@ void init_macosx(void)
  
      NSApp = [NSApplication sharedApplication];
  

@@ -10,7 +10,7 @@ source:
     - msvc_warnings.patch                     [win]
 
 build:
-  number: 1                                   [win]
+  number: 2
   detect_binary_files_with_prefix: False
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
     - openssl
   run:
     - python
-    - curl 7.49.*
+    - curl 7.52.*
     - zlib 1.2.*          [unix]
     - openssl 1.0.2*      [unix]
 
