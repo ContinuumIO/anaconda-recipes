@@ -1,0 +1,30 @@
+package:
+  name: subprocess32
+  version: 3.2.7
+
+source:
+  fn: subprocess32-3.2.7.tar.gz
+  url: https://pypi.python.org/packages/b8/2f/49e53b0d0e94611a2dc624a1ad24d41b6d94d0f1b0a078443407ea2214c2/subprocess32-3.2.7.tar.gz
+  md5: 824c801e479d3e916879aae3e9c15e16
+  patches:
+    - undef-pipe2.patch            [linux]
+
+build:
+  detect_binary_files_with_prefix: False
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - subprocess32
+    - _posixsubprocess             [unix]
+
+about:
+  home: https://github.com/google/python-subprocess32
+  license: Python Software Foundation License
+  license_family: PSF
+  summary: backport of the subprocess module from Python 3.2/3.3 for use on 2.x

@@ -8,6 +8,7 @@ source:
   md5: 66ba9c27e067568bdabcdd7c21303903
 
 build:
+  number: 1
   entry_points:
     - pylint = pylint:run_pylint           [win]
 
@@ -17,6 +18,8 @@ requirements:
   run:
     - python
     - astroid >=1.4.1,<1.5.0
+    - six
+    - isort >=4.2.5
 
 test:
   commands:

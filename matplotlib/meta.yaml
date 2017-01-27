@@ -52,6 +52,7 @@ requirements:
     - libpng >=1.6.27,<1.7
     - cycler >=0.10.0
     - functools32         [py2k]
+    - subprocess32        [py2k]
 
 test:
   requires:
