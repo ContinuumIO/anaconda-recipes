@@ -640,6 +640,7 @@
   "numpy": "all", 
   "numpydoc": "all", 
   "odo": "all", 
+  "olefile": "all", 
   "openblas": [
     "linux-64:py27", 
     "linux-64:py35"

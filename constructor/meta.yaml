@@ -18,7 +18,7 @@ requirements:
     - libconda
     - pycosat >=0.6.1
     - pillow >=3.1      [win]
-    - nsis              [win]
+    - nsis >=3.01       [win]
 
 test:
   commands:
