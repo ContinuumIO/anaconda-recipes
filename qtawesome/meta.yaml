@@ -1,11 +1,11 @@
 package:
   name: qtawesome
-  version: 0.4.3
+  version: 0.4.4
 
 source:
-  fn: QtAwesome-0.4.3.tar.gz
-  url: https://pypi.python.org/packages/51/0f/20fe16646549eb350c37afdbb86265f56a6ff68612201d8bf8ff0e21400f/QtAwesome-0.4.3.tar.gz
-  md5: 0aadbffda092a200322a24266f19551d
+  fn: QtAwesome-0.4.4.tar.gz
+  url: https://pypi.python.org/packages/28/be/cadd6e06a6219f31d6153eb43e9f17dadb7c968835b10180a7bca39ae8ab/QtAwesome-0.4.4.tar.gz
+  md5: 7e20208e11c15b24b771e5f989e16e91
 
 requirements:
   build:
