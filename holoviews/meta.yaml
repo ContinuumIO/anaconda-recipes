@@ -21,7 +21,7 @@ test:
     - holoviews
 
 about:
-  home: http://holoviews.org/
+  home: http://holoviews.org
   license: BSD
   license_file: LICENSE.txt
   summary: Analyze and visualize scientific or engineering data
