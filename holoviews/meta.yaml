@@ -24,7 +24,7 @@ about:
   home: http://holoviews.org
   license: BSD
   license_file: LICENSE.txt
-  summary: Analyze and visualize scientific or engineering data
+  summary: Stop plotting your data - annotate your data and let it visualize itself.
   description: |
     HoloViews is a Python library that makes analyzing and visualizing
     scientific or engineering data much simpler, more intuitive, and more
