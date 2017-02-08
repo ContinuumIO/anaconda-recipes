@@ -30,7 +30,7 @@ requirements:
     - hdf5 1.8.17    [unix]
     - eigen 3.*
     - zlib 1.2.*
-    - jpeg 9*
+    - jpeg 9b
     - libtiff 4.0.*
     - libpng >=1.6.21,<1.7
 #    - msinttypes            [win and py<35]
