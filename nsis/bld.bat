@@ -6,3 +6,7 @@ if errorlevel 1 exit 1
 
 %SYS_PYTHON% %RECIPE_DIR%\add_deps.py
 if errorlevel 1 exit 1
+
+rd /s /q %PREFIX%\NSIS\Contrib
+rd /s /q %PREFIX%\NSIS\Docs
+rd /s /q %PREFIX%\NSIS\Examples

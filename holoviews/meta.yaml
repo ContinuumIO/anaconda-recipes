@@ -21,13 +21,13 @@ test:
     - holoviews
 
 about:
-  home: http://holoviews.org
+  home: http://holoviews.org/
   license: BSD
   license_file: LICENSE.txt
-  summary: Stop plotting your data - annotate your data and let it visualize itself
+  summary: Analyze and visualize scientific or engineering data
   description: |
     HoloViews is a Python library that makes analyzing and visualizing
     scientific or engineering data much simpler, more intuitive, and more
     easily reproducible.
-  doc_url: http://holoviews.org
+  doc_url: http://holoviews.org/
   dev_url: https://github.com/ioam/holoviews
