@@ -1,0 +1,14 @@
+diff --git numpy/distutils/core.py numpy/distutils/core.py
+index 3f0fd46..77defde 100644
+--- numpy/distutils/core.py
++++ numpy/distutils/core.py
+@@ -127,9 +127,6 @@ def setup(**attr):
+         finally:
+             distutils.core._setup_distribution = old_dist
+             distutils.core._setup_stop_after = old_stop
+-        if dist.help or not _command_line_ok():
+-            # probably displayed help, skip running any commands
+-            return dist
+ 
+         # create setup dictionary and append to new_attr
+         config = configuration()
