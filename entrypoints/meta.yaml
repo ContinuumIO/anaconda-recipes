@@ -6,10 +6,12 @@ source:
   git_url: https://github.com/takluyver/entrypoints.git
   git_tag: 0.2.2
 
+build:
+  number: 1
+
 requirements:
   build:
     - python
-    - configparser           [py27]
   run:
     - python
     - configparser           [py27]

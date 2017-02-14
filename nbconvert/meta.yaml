@@ -1,24 +1,28 @@
 package:
   name: nbconvert
-  version: 4.2.0
+  version: 5.1.1
 
 source:
-  fn: nbconvert-4.2.0.tar.gz
-  url: https://pypi.python.org/packages/source/n/nbconvert/nbconvert-4.2.0.tar.gz
-  md5: 710e356c4effcfddd29a3c10f1d8c3e6
+  fn: nbconvert-5.1.1.tar.gz
+  url: https://pypi.python.org/packages/95/58/df1c91f1658ee5df19097f915a1e71c91fc824a708d82d2b2e35f8b80e9a/nbconvert-5.1.1.tar.gz
+  md5: d0263fb03a44db2f94eea09a608ed813
 
 requirements:
   build:
     - python
+    - setuptools
   run:
     - python
-    - mistune
+    - mistune !=0.6
     - jinja2
     - pygments
-    - traitlets
+    - traitlets >=4.2
     - jupyter_core
     - nbformat
-    - entrypoints
+    - entrypoints >=0.2.2
+    - bleach
+    - pandocfilters >=1.4.1
+    - testpath
 
 test:
   commands:
