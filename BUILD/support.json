@@ -659,6 +659,7 @@
   "pandas": "all", 
   "pandas-datareader": "all", 
   "pandasql": "all", 
+  "pandocfilters": "all", 
   "pango": [
     "linux-64:py27", 
     "linux-64:py35"
@@ -1028,6 +1029,7 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "testpath": "all", 
   "thinc": [
     "linux-64:py27", 
     "linux-64:py35", 

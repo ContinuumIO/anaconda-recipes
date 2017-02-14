@@ -1,0 +1,30 @@
+package:
+  name: testpath
+  version: 0.3
+
+source:
+  git_url: https://github.com/jupyter/testpath.git
+  git_tag: 0.3
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - pathlib2                   [py2k]
+
+test:
+  imports:
+    - testpath
+
+about:
+  home: https://testpath.readthedocs.io
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: collection of utilities for Python code working with files and commands
+  description: |
+    Testpath contains functions to check things on the filesystem,
+    and tools for mocking system commands and recording calls to those.
+  doc_url: https://testpath.readthedocs.io
+  dev_url: https://github.com/jupyter/testpath

@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/8a/f2/803cbcd073db393b846a518e87892c3610659bfc7b9689d99a0fd0fa63b5/dask-0.13.0.tar.gz
   md5: bf659ce0c637359912b9bcc03cb30ff9
 
+#build:
+#  number: 1
+
 requirements:
   build:
     - python
@@ -19,6 +22,7 @@ requirements:
     - numpy
     - pandas >=0.18.0
     - partd >=0.3.6
+#    - python-graphviz
     - toolz >=0.7.2
 
 test:
