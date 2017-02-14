@@ -1,11 +1,11 @@
 package:
   name: greenlet
-  version: 0.4.11
+  version: 0.4.12
 
 source:
-  fn: greenlet-0.4.11.tar.gz
-  url: https://pypi.python.org/packages/03/a6/8842d7215e1c54537eb5d0b8fd3e8562cc869b6d193317b11027ff7d8009/greenlet-0.4.11.tar.gz
-  md5: e7ed64ab93a6bd9f618d54631c9b484c
+  fn: greenlet-0.4.12.tar.gz
+  url: https://pypi.python.org/packages/be/76/82af375d98724054b7e273b5d9369346937324f9bcc20980b45b068ef0b0/greenlet-0.4.12.tar.gz
+  md5: e8637647d58a26c4a1f51ca393e53c00
 
 build:
   detect_binary_files_with_prefix: False

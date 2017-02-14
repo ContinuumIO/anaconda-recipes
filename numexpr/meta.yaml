@@ -1,15 +1,15 @@
 package:
   name: numexpr
-  version: 2.6.1
+  version: 2.6.2
 
 source:
   git_url: https://github.com/pydata/numexpr.git
-  git_tag: v2.6.1
+  git_tag: v2.6.2
   patches:
     - setup.patch
 
 build:
-  number: 2
+  number: 0
   detect_binary_files_with_prefix: False
   ignore_prefix_files: True   [win]
   features:
