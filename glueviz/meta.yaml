@@ -1,11 +1,11 @@
 package:
   name: glueviz
-  version: 0.9.1
+  version: 0.10.0
 
 source:
-  fn: glueviz-0.9.1.tar.gz
-  url: https://pypi.python.org/packages/0e/6e/f48564217d464c8dbb7a57090e1446dab888fe23721dd6b8b806b2103403/glueviz-0.9.1.tar.gz
-  md5: 365887017580e243fb008d8109f2bc16
+  fn: glueviz-0.10.0.tar.gz
+  url: https://pypi.python.org/packages/1c/d6/ae107202153af4718e0d5d2d677cda70cbab2722001a05d2ffa6b3be358a/glueviz-0.10.0.tar.gz
+  md5: 1bdd8b6925fb028938ee3affd7b95059
 
 build:
   entry_points:
@@ -21,19 +21,36 @@ requirements:
     # The following dependencies are defined in install_requires
     # and need to be included here otherwise setuptools tries to
     # download them
-    - numpy
-    - pandas
-    - astropy
-    - matplotlib
-    - qtpy
-  run:
-    - python
-    - setuptools
-    - numpy
+    - pyqt
+    - numpy >=1.9
     - pandas >=0.14
-    - astropy >=1.0
+    - astropy >=1.3
     - matplotlib >=1.4
     - qtpy >=1.1
+    - ipython >=4.0
+    - ipykernel
+    - qtconsole
+    - dill >=0.2
+    - glue-vispy-viewers >=0.6
+    - xlrd >=1.0
+    - h5py >=2.4
+
+  run:
+    - python
+    - setuptools >=1.0
+    - pyqt
+    - numpy >=1.9
+    - pandas >=0.14
+    - astropy >=1.3
+    - matplotlib >=1.4
+    - qtpy >=1.1
+    - ipython >=4.0
+    - ipykernel
+    - qtconsole
+    - dill >=0.2
+    - glue-vispy-viewers >=0.6
+    - xlrd >=1.0
+    - h5py >=2.4
 
     # The following is needed to make sure that the package works as a GUI
     # application (glue needs to be run with python.app, not python)
