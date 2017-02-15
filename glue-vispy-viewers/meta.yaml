@@ -1,0 +1,36 @@
+package:
+  name: glue-vispy-viewers
+  version: 0.7.2
+
+source:
+  fn: glue-vispy-viewers-0.7.2.tar.gz
+  url: https://pypi.io/packages/source/g/glue-vispy-viewers/glue-vispy-viewers-0.7.2.tar.gz
+  md5: 58cd60967ed1b80b965b0627b2d3bd77
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - numpy
+    - pyopengl
+    - glue-core >=0.10
+    - qtpy
+    - scipy
+    - astropy >=1.1
+
+test:
+  imports:
+    - glue_vispy_viewers
+    - glue_vispy_viewers.scatter
+    - glue_vispy_viewers.volume
+
+about:
+  home: https://github.com/glue-viz/glue-vispy-viewers
+  license: 3-clause BSD License
+  license_family: BSD
+  license_file: LICENSE
+  summary: 3D viewers for glue
+  doc_url: http://www.glueviz.org/
+  dev_url: https://github.com/glue-viz/glue-vispy-viewers
