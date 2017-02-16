@@ -1,0 +1,31 @@
+package:
+  name: pycodestyle
+  version: 2.3.1
+
+source:
+  fn: pycodestyle-2.3.1.tar.gz
+  url: https://pypi.python.org/packages/e1/88/0e2cbf412bd849ea6f1af1f97882add46a374f4ba1d2aea39353609150ad/pycodestyle-2.3.1.tar.gz
+  md5: 240e342756af30cae0983b16303a2055
+
+build:
+  entry_points:
+    - pycodestyle = pycodestyle:_main
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  commands:
+    - pycodestyle --help
+  imports:
+    - pycodestyle
+
+about:
+  home: https://pycodestyle.readthedocs.io/
+  license: MIT License
+  license_family: MIT
+  summary: Python style guide checker
