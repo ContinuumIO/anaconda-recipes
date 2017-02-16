@@ -11,7 +11,7 @@ source:
 
 build:
   detect_binary_files_with_prefix: False
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -29,6 +29,7 @@ requirements:
     - zlib 1.2.*
     - freetype 2.5.*
     - libtiff 4.0.*
+    - olefile
     - bzip2 1.0.6        [win]
 
 test:

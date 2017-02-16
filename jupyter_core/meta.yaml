@@ -1,11 +1,11 @@
 package:
   name: jupyter_core
-  version: 4.2.1
+  version: 4.3.0
 
 source:
-  fn: jupyter_core-4.2.1.tar.gz
-  url: https://pypi.python.org/packages/bc/d0/8f57f733913fbd4ce1a01991b008bace8dcf05158080821c6de76b4c5d01/jupyter_core-4.2.1.tar.gz
-  md5: f707f8693e537177341c4a89081fdac3
+  fn: jupyter_core-4.3.0.tar.gz
+  url: https://pypi.python.org/packages/2f/39/5138f975100ce14d150938df48a83cd852a3fd8e24b1244f4113848e69e2/jupyter_core-4.3.0.tar.gz
+  md5: 18819511a809afdeed9a995a9c27bcfb
 
 build:
   entry_points:
@@ -33,6 +33,7 @@ test:
 about:
   home: http://jupyter.org
   license: BSD
+  license_file: COPYING.md
   summary: core Jupyter functionality
   description: |
     This package defines the core common functionality of Jupyter projects.

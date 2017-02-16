@@ -775,6 +775,7 @@
   "pycairo": [
     "linux-64:py27"
   ], 
+  "pycodestyle": "all", 
   "pycosat": "all", 
   "pycparser": "all", 
   "pycrypto": "all", 

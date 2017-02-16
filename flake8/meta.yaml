@@ -1,32 +1,33 @@
 package:
   name: flake8
-  version: 2.5.1
+  version: 3.3.0
 
 source:
-  fn: flake8-2.5.1.tar.gz
-  url: https://pypi.python.org/packages/source/f/flake8/flake8-2.5.1.tar.gz
-  md5: 2704676fd2d39c7441a09ad69f3296b3
-  patches:
-    - setup.patch
+  fn: flake8-3.3.0.tar.gz
+  url: https://pypi.python.org/packages/47/64/382631de5fd8dab367bedeff6b5b55fd9a7c883daa44f4032636e2d203ca/flake8-3.3.0.tar.gz
+  md5: 3df622aac9bad27c04f34164609bbed8
 
 build:
   entry_points:
-    - flake8 = flake8.main:main
+    - flake8 = flake8.main.cli:main
   preserve_egg_dir: True
 
 requirements:
   build:
     - python
     - setuptools
-    - mccabe
-    - pep8
+    - pytest-runner
     - pyflakes
+    - pycodestyle
+    - mccabe
   run:
     - python
     - setuptools
-    - mccabe
-    - pep8
-    - pyflakes
+    - pyflakes >=1.5.0,<1.6.0
+    - pycodestyle >=2.0.0,<2.4.0
+    - mccabe >=0.6.0,<0.7.0
+    - configparser                       [py2k]
+    - enum34                             [py < 34]
 
 test:
   files:

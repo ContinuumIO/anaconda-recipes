@@ -1,11 +1,11 @@
 package:
   name: setuptools_scm
-  version: 1.9.0
+  version: 1.15.0
 
 source:
-  fn: setuptools_scm-1.9.0.tar.gz
-  url: https://pypi.python.org/packages/source/s/setuptools_scm/setuptools_scm-1.9.0.tar.gz
-  md5: 020e097756c4fd67a0f4518cac0ff190
+  fn: setuptools_scm-1.15.0.tar.gz
+  url: https://pypi.python.org/packages/80/b7/31b6ae5fcb188e37f7e31abe75f9be90490a5456a72860fa6e643f8a3cbc/setuptools_scm-1.15.0.tar.gz
+  md5: b6916c78ed6253d6602444fad4279c5b
 
 requirements:
   build:
