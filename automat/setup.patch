@@ -1,0 +1,15 @@
+diff --git setup.py setup.py
+index 5971d97..903155d 100644
+--- setup.py
++++ setup.py
+@@ -22,10 +22,6 @@ setup(
+     long_description=long_description,
+     packages=find_packages(exclude=[]),
+     package_dir={'automat': 'automat'},
+-    setup_requires=[
+-        'setuptools-scm',
+-        'm2r',
+-    ],
+     install_requires=[
+         "attrs",
+         "six",
