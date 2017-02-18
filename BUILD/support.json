@@ -37,6 +37,7 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "automat": "all", 
   "azure": "all", 
   "babel": "all", 
   "backports": "all", 
