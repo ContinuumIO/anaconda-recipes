@@ -3,7 +3,7 @@ package:
   version: 3.01
 
 build:
-  number: 2
+  number: 3
 
 about:
   home: http://nsis.sourceforge.net/Main_Page
