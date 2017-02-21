@@ -1,11 +1,11 @@
 package:
   name: btrees
-  version: 4.3.2
+  version: 4.4.1
 
 source:
-  fn: BTrees-4.3.2.tar.gz
-  url: https://pypi.python.org/packages/f5/4d/206c8b5799e319c0138952b8d18cb4b2288d7dcc583598761f65ed8e416d/BTrees-4.3.2.tar.gz
-  md5: df0979217597bf9a94e9e03c64124b0c
+  fn: BTrees-4.4.1.tar.gz
+  url: https://pypi.python.org/packages/6a/e2/d8c2a5b4cbc493b1ccb440d61bf0f62b8a0cb1c7b5aa403d5e18847545b3/BTrees-4.4.1.tar.gz
+  md5: 6a0178e30b94cf0cc44ae62e93187ecc
 
 build:
   detect_binary_files_with_prefix: False
