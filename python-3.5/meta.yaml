@@ -14,6 +14,9 @@ source:
     - win-library_bin.patch        [win]
     - win-msc_ver-1900.patch       [win]
     - fd_setsize.patch             [win]
+    # fix crash related to stack size and MACOSX_DEPLOYMENT_TARGET=10.7
+    # https://trac.macports.org/ticket/51736
+    - stack_size.patch             [osx]
 
 build:
   number: 0
