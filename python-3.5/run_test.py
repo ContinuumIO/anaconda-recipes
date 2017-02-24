@@ -1,8 +1,8 @@
 import os
 from os.path import dirname, isfile, join
 # make sure Grammar pickle files are present
-for fn in ('Grammar3.5.2.final.0.pickle',
-           'PatternGrammar3.5.2.final.0.pickle'):
+for fn in ('Grammar3.5.3.final.0.pickle',
+           'PatternGrammar3.5.3.final.0.pickle'):
     assert isfile(join(dirname(os.__file__), 'lib2to3', fn))
 
 import platform
@@ -27,8 +27,8 @@ if sys.platform == 'win32':
 print('sys.maxunicode:', sys.maxunicode)
 print('platform.architecture:', platform.architecture())
 print('platform.python_version:', platform.python_version())
-assert platform.python_version() == '3.5.2'
-assert sys.version_info[:3] == (3, 5, 2)
+assert platform.python_version() == '3.5.3'
+assert sys.version_info[:3] == (3, 5, 3)
 
 import _bisect
 import _codecs_cn

@@ -1,8 +1,13 @@
 #!/bin/bash
 
-sed s:'@PREFIX@':"$PREFIX":g -i src/fccfg.c
+sed -i.bak s:'@PREFIX@':"$PREFIX":g src/fccfg.c
+rm src/fccfg.c.bak
 chmod +x configure
-./configure --prefix $PREFIX --enable-libxml2 --disable-docs --disable-iconv
+./configure --prefix=${PREFIX}                     \
+            --enable-libxml2                       \
+            --disable-docs                         \
+            --disable-iconv                        \
+            --with-add-fonts=${PREFIX}/fonts
 
 if [[ $(uname) == Darwin ]]; then
     export DYLD_FALLBACK_LIBRARY_PATH=${PREFIX}/lib
