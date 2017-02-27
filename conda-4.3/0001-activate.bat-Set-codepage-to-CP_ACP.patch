@@ -1,0 +1,26 @@
+From 55e82c7b2ab36e7bbbef9e8271c697bacb13037a Mon Sep 17 00:00:00 2001
+From: Ray Donnelly <mingw.android@gmail.com>
+Date: Tue, 7 Feb 2017 16:23:00 +0000
+Subject: [PATCH] activate.bat: Set codepage to CP_ACP
+
+---
+ shell/activate.bat | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/shell/activate.bat b/shell/activate.bat
+index 0455fbb..38a9df5 100644
+--- a/shell/activate.bat
++++ b/shell/activate.bat
+@@ -3,6 +3,9 @@
+ @REM   For debugging, remove the @ on the section you need to study.
+ @setlocal enabledelayedexpansion
+ 
++@FOR /F "delims=" %%i IN ('@%~dp0..\python.exe -c "import ctypes; print(ctypes.cdll.kernel32.GetACP())"') DO @SET "PYTHONIOENCODING=%%i"
++@chcp !PYTHONIOENCODING! > NUL
++
+ @set "CONDA_NEW_ENV=%~1"
+ @SET "CONDA_EXE=%~dp0\..\Scripts\conda.exe"
+ 
+-- 
+2.9.3
+

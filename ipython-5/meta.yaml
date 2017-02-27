@@ -1,11 +1,11 @@
 package:
   name: ipython
-  version: 5.2.2
+  version: 5.3.0
 
 source:
-  fn: ipython-5.2.2.tar.gz
-  url: https://pypi.python.org/packages/6e/cf/c2a3ca5942e2d8084574157a8f818efafb7218204cd9e41166c92c452e07/ipython-5.2.2.tar.gz
-  md5: 19e4a46ec7d7a32d068de4c253c9b459
+  fn: ipython-5.3.0.tar.gz
+  url: https://pypi.python.org/packages/a4/70/d07a28ea595953acacc128a6efe25696be20b2e1d3e3c81ef4b55410b488/ipython-5.3.0.tar.gz
+  md5: 26c175feb92f1c9033968432a93845ea
 
 build:
   entry_points:

@@ -5,11 +5,14 @@ package:
 source:
   git_url: https://github.com/conda/conda.git
   git_tag: 4.3.13
+  patches:
+    -  0001-activate.bat-Set-codepage-to-CP_ACP.patch
 
 build:
   # These are present when the new environment is created
   # so we have to exempt them from the list of initial files
   # for conda-build to realize they should be included.
+  number: 1                     [win]
   always_include_files:
     - bin/conda                 [unix]
     - bin/activate              [unix]
