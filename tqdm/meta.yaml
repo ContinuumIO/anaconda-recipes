@@ -1,0 +1,33 @@
+package:
+  name: tqdm
+  version: 4.11.2
+
+source:
+  fn: tqdm-4.11.2.tar.gz
+  url: https://pypi.python.org/packages/46/b0/615b394ac0b25f1f1ef229e223c335558d69db97301c93e932fb7e5e4679/tqdm-4.11.2.tar.gz
+  md5: f1fdea742f527b0049850d261197eedf
+
+build:
+  entry_points:
+    - tqdm=tqdm._main:main
+  script: python setup.py install
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - tqdm
+  commands:
+    - tqdm --help
+    - tqdm -v
+
+about:
+  home: https://github.com/tqdm/tqdm
+  license: MPLv2.0, MIT
+  license_family: MIT
+  license_file: LICENCE
+  summary: a fast, extensible progress meter

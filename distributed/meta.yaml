@@ -1,20 +1,20 @@
 package:
   name: distributed
-  version: 1.15.2
+  version: 1.16.0
 
 source:
-  fn: distributed-1.15.2.tar.gz
-  url: https://pypi.python.org/packages/95/2b/98d9271efa8abea748c9ca820cb10544645faa250d0225a1f916f7f0917a/distributed-1.15.2.tar.gz
-  md5: f555baeda635d3815d81f7c02f67db6e
+  fn: distributed-1.16.0.tar.gz
+  url: https://pypi.python.org/packages/3d/b7/f31bb7b09b14a2a643c4e2b7c614964636daa7ccdffacb4293cc94c87fbc/distributed-1.16.0.tar.gz
+  md5: fd3c35f958b1ef4680ddd60591d1ff2f
 
 build:
   number: 0
   entry_points:
-    - dask-scheduler=distributed.cli.dask_scheduler:go
     - dask-ssh=distributed.cli.dask_ssh:go
-    - dask-worker=distributed.cli.dask_worker:go
-    - dask-remote=distributed.cli.dask_remote:go
     - dask-submit=distributed.cli.dask_submit:go
+    - dask-remote=distributed.cli.dask_remote:go
+    - dask-scheduler=distributed.cli.dask_scheduler:go
+    - dask-worker=distributed.cli.dask_worker:go
 
 requirements:
   build:

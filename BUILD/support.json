@@ -824,6 +824,7 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "pysocks": "all", 
   "pystan": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -1038,6 +1039,7 @@
   "tk": "all", 
   "toolz": "all", 
   "tornado": "all", 
+  "tqdm": "all", 
   "traitlets": "all", 
   "traits": "all", 
   "traitsui": "all", 
@@ -1097,6 +1099,10 @@
   ], 
   "whoosh": "all", 
   "widgetsnbextension": "all", 
+  "win_inet_pton": [
+    "win-64:py27", 
+    "win-64:py35"
+  ], 
   "win_unicode_console": [
     "win-64:py27", 
     "win-64:py35"

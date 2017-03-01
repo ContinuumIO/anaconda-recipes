@@ -1,0 +1,27 @@
+package:
+  name: pysocks
+  version: 1.6.6
+
+source:
+  fn: PySocks-1.6.6.tar.gz
+  url: https://pypi.python.org/packages/fd/70/ba9982cedc9b3ed3c06934f1f46a609e0f23c7bfdf567c52a09f1296b8cb/PySocks-1.6.6.tar.gz
+  md5: 571f4c23982fa86bf0e7a441f1b6c881
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - win_inet_pton              [win]
+
+test:
+  imports:
+    - socks
+    - sockshandler
+
+about:
+  home: https://github.com/Anorov/PySocks
+  license: BSD
+  license_file: LICENSE
+  license_family: BSD
+  summary: Python SOCKS client module
