@@ -1,11 +1,11 @@
 package:
   name: alabaster
-  version: 0.7.9
+  version: 0.7.10
 
 source:
-  fn: alabaster-0.7.9.tar.gz
-  url: https://pypi.python.org/packages/71/c3/70da7d8ac18a4f4c502887bd2549e05745fa403e2cd9d06a8a9910a762bc/alabaster-0.7.9.tar.gz
-  md5: b29646a8bbe7aa52830375b7d17b5d7a
+  fn: alabaster-0.7.10.tar.gz
+  url: https://pypi.python.org/packages/d0/a5/e3a9ad3ee86aceeff71908ae562580643b955ea1b1d4f08ed6f7e8396bd7/alabaster-0.7.10.tar.gz
+  md5: 7934dccf38801faa105f6e7b4784f493
 
 requirements:
   build:

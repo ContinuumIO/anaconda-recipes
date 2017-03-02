@@ -4,41 +4,12 @@ package:
 
 source:
   fn: mpi4py-2.0.0.tar.gz [unix]
-  url: https://pypi.python.org/packages/source/m/mpi4py/mpi4py-2.0.0.tar.gz [unix]
-  md5: 4f7d8126d7367c239fd67615680990e3    [unix]
-  fn: mpi4py-2.0.0-cp26-none-win32.whl     [win32 and py26]
-  url: https://pypi.python.org/packages/cp26/m/mpi4py/mpi4py-2.0.0-cp26-none-win32.whl        [win32 and py26]
-  md5: 656cd10d31b62491bb2d63a9c46e2d31    [win32 and py26]
-  fn: mpi4py-2.0.0-cp26-none-win_amd64.whl [win64 and py26]
-  url: https://pypi.python.org/packages/cp26/m/mpi4py/mpi4py-2.0.0-cp26-none-win_amd64.whl  [win64 and py26]
-  md5: 802828d941622190c79389814af73c34    [win64 and py26]
-  fn: mpi4py-2.0.0-cp27-none-win32.whl     [win32 and py27]
-  url: https://pypi.python.org/packages/cp27/m/mpi4py/mpi4py-2.0.0-cp27-none-win32.whl      [win32 and py27]
-  md5: 0dcce8a20d2ee422638ceef675cb15de    [win32 and py27]
-  fn: mpi4py-2.0.0-cp27-none-win_amd64.whl [win64 and py27]
-  url: https://pypi.python.org/packages/cp27/m/mpi4py/mpi4py-2.0.0-cp27-none-win_amd64.whl  [win64 and py27]
-  md5: bc03f2cb1b270634a19f767d0a77514b    [win64 and py27]
-  fn: mpi4py-2.0.0-cp33-none-win32.whl     [win32 and py33]
-  url: https://pypi.python.org/packages/cp33/m/mpi4py/mpi4py-2.0.0-cp33-none-win32.whl      [win32 and py33]
-  md5: 3b08cf2907400f706d01e7e43af76c22    [win32 and py33]
-  fn: mpi4py-2.0.0-cp33-none-win_amd64.whl [win64 and py33]
-  url: https://pypi.python.org/packages/cp33/m/mpi4py/mpi4py-2.0.0-cp33-none-win_amd64.whl  [win64 and py33]
-  md5: 9dfd210692a4869f4407d480e79d9198    [win64 and py33]
-  fn: mpi4py-2.0.0-cp34-none-win32.whl     [win32 and py34]
-  url: https://pypi.python.org/packages/cp34/m/mpi4py/mpi4py-2.0.0-cp34-none-win32.whl      [win32 and py34]
-  md5: a5c07403dbeaae2829b1d143df32e28c    [win32 and py34]
-  fn: mpi4py-2.0.0-cp34-none-win_amd64.whl [win64 and py34]
-  url: https://pypi.python.org/packages/cp34/m/mpi4py/mpi4py-2.0.0-cp34-none-win_amd64.whl  [win64 and py34]
-  md5: 66671076d979cc2b3cbe0b5aa1bb4619    [win64 and py34]
-  fn: mpi4py-2.0.0-cp35-none-win32.whl     [win32 and py35]
-  url: https://pypi.python.org/packages/cp35/m/mpi4py/mpi4py-2.0.0-cp35-none-win32.whl      [win32 and py35]
-  md5: 7824331e01e461ab4c9c07e624c226d8    [win32 and py35]
-  fn: mpi4py-2.0.0-cp35-none-win_amd64.whl [win64 and py35]
-  url: https://pypi.python.org/packages/cp35/m/mpi4py/mpi4py-2.0.0-cp35-none-win_amd64.whl  [win64 and py35]
-  md5: 14fbc25840874615a266954974b9a1ea    [win64 and py35]
+  url: https://pypi.python.org/packages/source/m/mpi4py/mpi4py-2.0.0.tar.gz
+  md5: 4f7d8126d7367c239fd67615680990e3
 
 build:
   number: 2          [linux]
+  number: 1          [win]
   detect_binary_files_with_prefix: True
 
 requirements:
