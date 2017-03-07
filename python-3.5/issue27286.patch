@@ -1,0 +1,178 @@
+From 6820a1c70313d2948510c4753c2e34dfeb2674d9 Mon Sep 17 00:00:00 2001
+From: Petr Viktorin <encukou@gmail.com>
+Date: Thu, 9 Feb 2017 16:48:14 +0100
+Subject: [PATCH] Workaround for issue27286 fallout - magic number bumped in
+ minor release
+
+CPython 3.5.3 has bumped the pyc-file magic number due to a bug in how
+BUILD_MAP_UNPACK_WITH_CALL was compiled, causing undefined behavior
+when calling a function with generalized kwarg unpacking (PEP 448)
+conflicting keyword names.
+
+Fedora packages are built with the old magic number, and we can't just
+rebuild all Python packages in a released system. Trying to load the
+system .pyc files using Python 3.5.3+ as an unprivileged user results
+in Python trying to update the .pyc's. Normally it fails when that's
+not possible, but the attempts are driving SELinux crazy.
+
+To work around that, accept the old magic number when loading .pyc's.
+
+Fedora packages with .pyc files that contain the BUILD_MAP_UNPACK_WITH_CALL
+opcode will be rebuilt.
+---
+ Lib/importlib/_bootstrap_external.py |  7 ++++++-
+ Lib/importlib/util.py                |  2 +-
+ Lib/pkgutil.py                       |  4 +++-
+ Lib/pydoc.py                         |  5 ++++-
+ Modules/zipimport.c                  |  6 +++++-
+ Python/import.c                      |  6 ++++++
+ Python/pythonrun.c                   | 12 ++++++++++--
+ 7 files changed, 35 insertions(+), 7 deletions(-)
+
+diff --git a/Lib/importlib/_bootstrap_external.py b/Lib/importlib/_bootstrap_external.py
+index e54d691..ecc1d70 100644
+--- Lib/importlib/_bootstrap_external.py
++++ Lib/importlib/_bootstrap_external.py
+@@ -242,6 +242,11 @@ def _write_atomic(path, data, mode=0o666):
+ MAGIC_NUMBER = (3351).to_bytes(2, 'little') + b'\r\n'
+ _RAW_MAGIC_NUMBER = int.from_bytes(MAGIC_NUMBER, 'little')  # For import.c
+ 
++# workaround for issue27286 fallout
++if _RAW_MAGIC_NUMBER != 168627479:
++    raise SystemError('Magic number mismatch (misapplied issue27286 workaround?)')
++_BACKCOMPAT_MAGIC_NUMBER = (3350).to_bytes(2, 'little') + b'\r\n'
++
+ _PYCACHE = '__pycache__'
+ _OPT = 'opt-'
+ 
+@@ -446,7 +451,7 @@ def _validate_bytecode_header(data, source_stats=None, name=None, path=None):
+     magic = data[:4]
+     raw_timestamp = data[4:8]
+     raw_size = data[8:12]
+-    if magic != MAGIC_NUMBER:
++    if magic not in (MAGIC_NUMBER, _BACKCOMPAT_MAGIC_NUMBER):
+         message = 'bad magic number in {!r}: {!r}'.format(name, magic)
+         _verbose_message('{}', message)
+         raise ImportError(message, **exc_details)
+diff --git a/Lib/importlib/util.py b/Lib/importlib/util.py
+index e1fa07a..a15cf00 100644
+--- Lib/importlib/util.py
++++ Lib/importlib/util.py
+@@ -4,7 +4,7 @@
+ from ._bootstrap import _resolve_name
+ from ._bootstrap import spec_from_loader
+ from ._bootstrap import _find_spec
+-from ._bootstrap_external import MAGIC_NUMBER
++from ._bootstrap_external import MAGIC_NUMBER, _BACKCOMPAT_MAGIC_NUMBER
+ from ._bootstrap_external import cache_from_source
+ from ._bootstrap_external import decode_source
+ from ._bootstrap_external import source_from_cache
+diff --git a/Lib/pkgutil.py b/Lib/pkgutil.py
+index 81d418d..318d982 100644
+--- Lib/pkgutil.py
++++ Lib/pkgutil.py
+@@ -37,7 +37,9 @@ def read_code(stream):
+     import marshal
+ 
+     magic = stream.read(4)
+-    if magic != importlib.util.MAGIC_NUMBER:
++    if (magic != importlib.util.MAGIC_NUMBER
++            # workaround for issue27286 fallout
++            and magic != importlib.util._BACKCOMPAT_MAGIC_NUMBER):
+         return None
+ 
+     stream.read(8) # Skip timestamp and size
+diff --git a/Lib/pydoc.py b/Lib/pydoc.py
+index 0d0d0ab..e06901f 100755
+--- Lib/pydoc.py
++++ Lib/pydoc.py
+@@ -289,7 +289,10 @@ def importfile(path):
+     """Import a Python source file or compiled file given its path."""
+     magic = importlib.util.MAGIC_NUMBER
+     with open(path, 'rb') as file:
+-        is_bytecode = magic == file.read(len(magic))
++        first_bytes = file.read(len(magic))
++        is_bytecode = first_bytes in (magic,
++                                      # workaround for issue27286 fallout
++                                      importlib.util._BACKCOMPAT_MAGIC_NUMBER)
+     filename = os.path.basename(path)
+     name, ext = os.path.splitext(filename)
+     if is_bytecode:
+diff --git a/Modules/zipimport.c b/Modules/zipimport.c
+index 7473a8f..51225b6 100644
+--- Modules/zipimport.c
++++ Modules/zipimport.c
+@@ -1274,6 +1274,7 @@ unmarshal_code(PyObject *pathname, PyObject *data, time_t mtime)
+     PyObject *code;
+     unsigned char *buf = (unsigned char *)PyBytes_AsString(data);
+     Py_ssize_t size = PyBytes_Size(data);
++    unsigned int magic;
+ 
+     if (size < 12) {
+         PyErr_SetString(ZipImportError,
+@@ -1281,7 +1282,10 @@ unmarshal_code(PyObject *pathname, PyObject *data, time_t mtime)
+         return NULL;
+     }
+ 
+-    if (get_uint32(buf) != (unsigned int)PyImport_GetMagicNumber()) {
++    magic = get_uint32(buf);
++    if (magic != (unsigned int)PyImport_GetMagicNumber()
++            // workaround for issue27286 fallout
++            && magic != 168627478) {
+         if (Py_VerboseFlag) {
+             PySys_FormatStderr("# %R has bad magic\n",
+                                pathname);
+diff --git a/Python/import.c b/Python/import.c
+index 3579273..cec0fd1 100644
+--- Python/import.c
++++ Python/import.c
+@@ -502,6 +502,12 @@ PyImport_GetMagicNumber(void)
+         return -1;
+     res = PyLong_AsLong(pyc_magic);
+     Py_DECREF(pyc_magic);
++    if (res != 168627479) {
++        // workaround for issue27286 fallout
++        PyErr_SetString(PyExc_SystemError,
++                        "Magic number mismatch (misapplied issue27286 workaround?)");
++        return -1;
++    }
+     return res;
+ }
+ 
+diff --git a/Python/pythonrun.c b/Python/pythonrun.c
+index 90cb2de..d1c38a2 100644
+--- Python/pythonrun.c
++++ Python/pythonrun.c
+@@ -263,6 +263,12 @@ PyRun_InteractiveOneFlags(FILE *fp, const char *filename_str, PyCompilerFlags *f
+    the file type, and, if we may close it, at the first few bytes. */
+ 
+ static int
++_check_half_magic(read_value, magic) {
++    // workaround for issue27286 fallout
++    return (read_value == magic || read_value == 3350);
++}
++
++static int
+ maybe_pyc_file(FILE *fp, const char* filename, const char* ext, int closeit)
+ {
+     if (strcmp(ext, ".pyc") == 0)
+@@ -290,7 +296,7 @@ maybe_pyc_file(FILE *fp, const char* filename, const char* ext, int closeit)
+         int ispyc = 0;
+         if (ftell(fp) == 0) {
+             if (fread(buf, 1, 2, fp) == 2 &&
+-                ((unsigned int)buf[1]<<8 | buf[0]) == halfmagic)
++                _check_half_magic(((unsigned int)buf[1]<<8 | buf[0]), halfmagic))
+                 ispyc = 1;
+             rewind(fp);
+         }
+@@ -988,7 +994,9 @@ run_pyc_file(FILE *fp, const char *filename, PyObject *globals,
+     long PyImport_GetMagicNumber(void);
+ 
+     magic = PyMarshal_ReadLongFromFile(fp);
+-    if (magic != PyImport_GetMagicNumber()) {
++    if (magic != PyImport_GetMagicNumber()
++            // workaround for issue27286 fallout
++            && magic != 168627478) {
+         if (!PyErr_Occurred())
+             PyErr_SetString(PyExc_RuntimeError,
+                        "Bad magic number in .pyc file");
