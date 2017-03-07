@@ -1,11 +1,11 @@
 package:
   name: pytest
-  version: 3.0.5
+  version: 3.0.6
 
 source:
-  fn: pytest-3.0.5.tar.gz
-  url: https://pypi.python.org/packages/a8/87/b7ca49efe52d2b4169f2bfc49aa5e384173c4619ea8e635f123a0dac5b75/pytest-3.0.5.tar.gz
-  md5: cefd527b59332688bf5db4a10aa8a7cb
+  fn: pytest-3.0.6.tar.gz
+  url: https://pypi.python.org/packages/68/9c/c06dc051b39b817efd31e4c589df7780f7b287d96fab67e90be1f614fc0a/pytest-3.0.6.tar.gz
+  md5: 6639592fa430567d024189f097fcdbd7
 
 build:
   entry_points:

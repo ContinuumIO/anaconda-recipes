@@ -7,6 +7,8 @@ source:
   url: https://www.python.org/ftp/python/3.5.3/Python-3.5.3.tgz
   md5: 6192f0e45f02575590760e68c621a488
   patches:
+    # Remove this patch after 3.5.3
+    - issue27286.patch             [unix]
     - version.patch
     - site.patch
     - osx64-dist.patch             [osx and x86_64]
@@ -19,7 +21,7 @@ source:
     - stack_size.patch             [osx]
 
 build:
-  number: 0
+  number: 1                        [unix]
   detect_binary_files_with_prefix: False
   no_link:
     - bin/python3.5         [unix]
