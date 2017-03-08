@@ -10,6 +10,8 @@ requirements:
     - python
 
 test:
+  requires:
+    - m2w64-toolchain
   files:
     - spam.c
 
