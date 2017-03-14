@@ -1,14 +1,13 @@
 package:
   name: notebook
-  version: 4.3.1
+  version: 4.4.1
 
 source:
-  fn: notebook-4.3.1.tar.gz
-  url: https://pypi.python.org/packages/d8/1f/2a79c0e0759421638287057276ce7d0f64baad5a50932da1ac963b54c9ab/notebook-4.3.1.tar.gz
-  md5: 70cc97ad19c0f9246ad295a653475e2a
+  fn: notebook-4.4.1.tar.gz
+  url: https://pypi.python.org/packages/07/67/4a75b35955bbbfac23f104d409235e77f771f84c4643053da773bebfd6b3/notebook-4.4.1.tar.gz
+  md5: 3f9074031258de895f12102379394dcd
 
 build:
-  number:  2                [win]
   entry_points:
     - jupyter-notebook = notebook.notebookapp:main
     - jupyter-nbextension = notebook.nbextensions:main

@@ -1,15 +1,14 @@
 package:
   name: mistune
-  version: 0.7.3
+  version: 0.7.4
 
 source:
-  fn: mistune-0.7.3.tar.gz
-  url: https://pypi.python.org/packages/88/1e/be99791262b3a794332fda598a07c2749a433b9378586361ba9d8e824607/mistune-0.7.3.tar.gz
-  md5: 4eba50bd121b83716fa4be6a4049004b
+  fn: mistune-0.7.4.tar.gz
+  url: https://pypi.python.org/packages/25/a4/12a584c0c59c9fed529f8b3c47ca8217c0cf8bcc5e1089d3256410cfbdbc/mistune-0.7.4.tar.gz
+  md5: 92d01cb717e9e74429e9bde9d29ac43b
 
 build:
   detect_binary_files_with_prefix: False
-  number: 1           [osx]
 
 requirements:
   build:

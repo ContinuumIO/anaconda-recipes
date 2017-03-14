@@ -4,7 +4,7 @@ package:
 
 source:
   git_url: https://github.com/conda/conda.git
-  git_tag: 0c4f1379218e2a81238c00633ab7de65174d41fd
+  git_tag: 4.3.14
 
 build:
   # These are present when the new environment is created

@@ -1,15 +1,17 @@
 package:
   name: werkzeug
-  version: 0.11.15
+  version: 0.12
 
 source:
-  fn: Werkzeug-0.11.15.tar.gz
-  url: https://pypi.python.org/packages/fe/7f/6d70f765ce5484e07576313897793cb49333dd34e462488ee818d17244af/Werkzeug-0.11.15.tar.gz
-  md5: cb4010478dd33905f95920e4880204a2
+  fn: Werkzeug-0.12.tar.gz
+  url: https://pypi.python.org/packages/13/a2/c4f2a1e1e9239cd979de00a2d7e0008559c46d920e9842e9b8063c5e6bf5/Werkzeug-0.12.tar.gz
+  md5: 1fd20c9dceed7d4ac279d3770277315e
 
 requirements:
   build:
     - python
+    # the reason we use setuptools here is because otherwise the package data
+    # files don't get installed
     - setuptools
   run:
     - python

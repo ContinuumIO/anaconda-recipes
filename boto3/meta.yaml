@@ -1,24 +1,24 @@
 package:
   name: boto3
-  version: 1.4.3
+  version: 1.4.4
 
 source:
-  fn: boto3-1.4.3.tar.gz
-  url: https://pypi.python.org/packages/90/fe/b941e83b5b9a0bdc6b1fd999302eeedd1bcb57c662927ab88427a6ed05cd/boto3-1.4.3.tar.gz
-  md5: 563f41c287a7ec83409280dc11222ac0
+  fn: boto3-1.4.4.tar.gz
+  url: https://pypi.python.org/packages/58/61/50d2e459049c5dbc963473a71fae928ac0e58ffe3fe7afd24c817ee210b9/boto3-1.4.4.tar.gz
+  md5: 3783681b144552724abb4c35152e8975
 
 requirements:
   build:
     - python
     - setuptools
-    - botocore >=1.4.1,<1.5.0
-    - jmespath >=0.7.1,<1.0.0
-    - s3transfer >=0.1.0,<0.2.0
+    - botocore
+    - jmespath
+    - s3transfer
   run:
     - python
-    - botocore >=1.4.1,<1.5.0
+    - botocore >=1.5.0,<1.6.0
     - jmespath >=0.7.1,<1.0.0
-    - s3transfer >=0.1.0,<0.2.0
+    - s3transfer >=0.1.10,<0.2.0
 
 test:
   imports:

@@ -1,11 +1,11 @@
 package:
   name: natsort
-  version: 5.0.1
+  version: 5.0.2
 
 source:
-  fn: natsort-5.0.1.tar.gz
-  url: https://pypi.python.org/packages/e1/33/b988f1035160cbc7d4fdd05f7aa6ffebb501926a32b527338218106a72e4/natsort-5.0.1.tar.gz
-  md5: e82b8f60b07c6906c2983c40790c6f46
+  fn: natsort-5.0.2.tar.gz
+  url: https://pypi.python.org/packages/b6/78/a63b7276eb7532400f1e4c7786f5d4b6a89fbe42c6ae15d35b3fa2f85914/natsort-5.0.2.tar.gz
+  md5: 14d5593c8320a547b71a0fe74a99247c
 
 build:
   entry_points:

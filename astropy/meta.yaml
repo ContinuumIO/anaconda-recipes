@@ -6,6 +6,8 @@ source:
   fn: astropy-1.3.tar.gz
   url: https://pypi.python.org/packages/51/88/c8c4355ff49f40cc538405e86af3395e76a8f9063a19cc5513a7c364d36d/astropy-1.3.tar.gz
   md5: bf4c8a033a7085fbc9ec604eebbdbdc5
+  patches:
+    - numpycompat.patch
 
 build:
   detect_binary_files_with_prefix: False

@@ -1,11 +1,11 @@
 package:
   name: gensim
-  version: 0.13.4.1
+  version: 1.0.1
 
 source:
-  fn: gensim-0.13.4.1.tar.gz
-  url: https://pypi.python.org/packages/3f/45/7ee51ecf36bae1fa27f6de4d392d5773d0184c0acf0f6780ebf167cbcd4a/gensim-0.13.4.1.tar.gz
-  md5: baa36f0b845162abeadd1bb66511a53c
+  fn: gensim-1.0.1.tar.gz
+  url: https://pypi.python.org/packages/5b/64/b9e6b002df3d33697e275b345cd91417ec2ddfc29b539e913db0a90bfe9a/gensim-1.0.1.tar.gz
+  md5: 9a0d7f4de10254bb1fcd3af502fe9693
 
 build:
   detect_binary_files_with_prefix: False
@@ -13,8 +13,8 @@ build:
 requirements:
   build:
     - python
-    - cython
     - setuptools
+    - cython
     - numpy x.x
     - scipy
     - six
