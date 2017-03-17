@@ -13,6 +13,7 @@ build:
     - glue-config = glue.config_gen:main
     - glue-deps = glue._deps:main
   osx_is_app: True
+  skip: true  # [win]
 
 requirements:
 
