@@ -1,26 +1,25 @@
 package:
   name: psycopg2
-  version: 2.6.2
+  version: 2.7.1
 
 source:
-  fn: psycopg2-2.6.2.tar.gz
-  url: https://pypi.python.org/packages/7b/a8/dc2d50a6f37c157459cd18bab381c8e6134b9381b50fbe969997b2ae7dbc/psycopg2-2.6.2.tar.gz
-  sha256: 70490e12ed9c5c818ecd85d185d363335cc8a8cbf7212e3c185431c79ff8c05c
+  fn: psycopg2-2.7.1.tar.gz
+  url: https://pypi.python.org/packages/f8/e9/5793369ce8a41bf5467623ded8d59a434dfef9c136351aca4e70c2657ba0/psycopg2-2.7.1.tar.gz
+  md5: 67848ac33af88336046802f6ef7081f3
   patches:
-  - have_openssl.patch
+    - have_openssl.patch
 
 build:
-  number: 0
   detect_binary_files_with_prefix: False
 
 requirements:
   build:
     - python
-    - setuptools           [win]
+    - setuptools             [win]
     - postgresql
   run:
     - python
-    - openssl
+    - openssl 1.0.2*
     - libpq
 
 test:

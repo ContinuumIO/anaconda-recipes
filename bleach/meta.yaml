@@ -27,3 +27,6 @@ about:
   license: Apache Software License
   license_family: Apache
   summary: easy whitelist-based HTML-sanitizing tool
+  description: |
+    Bleach is an allowed-list-based HTML sanitizing library that escapes or
+    strips markup and attributes.

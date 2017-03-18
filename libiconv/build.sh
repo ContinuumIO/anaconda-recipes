@@ -1,9 +1,12 @@
 #!/bin/sh
 
+if [ `uname -m` == ppc64le ]; then
+    B="--build=ppc64le-linux"
+fi
 
 export CFLAGS="-fPIC $CFLAGS"
 
-./configure --prefix=${PREFIX} \
+./configure --prefix=${PREFIX} $B \
             --enable-static \
             --disable-rpath
 

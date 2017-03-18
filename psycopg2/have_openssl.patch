@@ -1,13 +1,13 @@
 diff --git setup.cfg setup.cfg
-index 7318323..dccb173 100644
+index 6d1c282..f3e2889 100644
 --- setup.cfg
 +++ setup.cfg
-@@ -1,7 +1,7 @@
- [build_ext]
- define = 
+@@ -3,7 +3,7 @@ define =
+ pg_config = 
  use_pydatetime = 1
+ mx_include_dir = 
 -have_ssl = 0
 +have_ssl = 1
+ static_libpq = 0
+ libraries = 
  
- [egg_info]
- tag_build = 

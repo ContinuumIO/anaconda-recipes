@@ -31,3 +31,6 @@ about:
   license: BSD
   summary: binary diff and patch using the BSDIFF4-format
   dev_url: https://github.com/ilanschnell/bsdiff4
+  description: |
+    bsdiff4 is derived from bsdiff, a very simple Python extension module that
+    allows Python to perform the same tasks as the bsdiff utility

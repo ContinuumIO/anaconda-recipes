@@ -1,13 +1,12 @@
 package:
   name: pycosat
-  version: 0.6.1
+  version: 0.6.2
 
 source:
   git_url: https://github.com/ContinuumIO/pycosat.git
-  git_tag: 0.6.1
+  git_tag: 0.6.2
 
 build:
-  number: 1
   detect_binary_files_with_prefix: False
 
 requirements:
@@ -20,6 +19,7 @@ test:
   files:
     - qg3-08.cnf
     - uf20-098.cnf
+    - sudoku.py
   imports:
     - pycosat
 

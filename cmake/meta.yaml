@@ -25,14 +25,14 @@ requirements:
     - bzip2 1.0.*    [unix]
     - curl           [unix]
     - expat          [unix]
-    - ncurses 5.9*   [unix]
+    - ncurses 5.9*   [unix and not ppc64le]
     - xz 5.2.*       [unix]
     - zlib 1.2.*
   run:
     - bzip2 1.0.*    [unix]
     - curl           [unix]
     - expat          [unix]
-    - ncurses 5.9*   [unix]
+    - ncurses 5.9*   [unix and not ppc64le]
     - xz 5.2.*       [unix]
     - zlib 1.2.*
 

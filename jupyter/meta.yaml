@@ -16,7 +16,7 @@ requirements:
   run:
     - python
     - notebook
-    - qtconsole
+    - qtconsole           [not ppc64le]
     - jupyter_console
     - nbconvert
     - ipykernel

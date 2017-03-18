@@ -1,10 +1,10 @@
 package:
   name: conda-build
-  version: 2.1.6
+  version: 2.1.7
 
 source:
   git_url: https://github.com/conda/conda-build.git
-  git_tag: 2.1.6
+  git_tag: 2.1.7
 
 build:
   entry_points:
@@ -24,19 +24,19 @@ requirements:
     - setuptools
   run:
     - python
-    - conda >=4.1
+    - beautifulsoup4
+    - chardet
+    - conda >=4.1,<4.4
+    - contextlib2   [py<34]
     - conda-verify
-    - filelock
     - enum34        [py<34]
+    - filelock
     - futures       [py<30]
     - jinja2
     - patchelf      [linux]
+    - pkginfo
     - pycrypto
     - pyyaml
-    - pkginfo
-    - contextlib2   [py2k]
-    - chardet
-    - beautifulsoup4
 
 test:
   commands:

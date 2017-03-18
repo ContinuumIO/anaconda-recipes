@@ -1,6 +1,13 @@
 #!/bin/bash
 
-./configure --prefix=$PREFIX --with-libsodium=$PREFIX --without-documentation
+if [ `uname -m` == ppc64le ]; then
+    B="--build=ppc64le-linux"
+fi
+
+./configure $B \
+    --prefix=$PREFIX \
+    --with-libsodium=$PREFIX \
+    --without-documentation
 make
 make install
 

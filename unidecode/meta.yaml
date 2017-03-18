@@ -1,11 +1,11 @@
 package:
   name: unidecode
-  version: 0.04.19
+  version: 0.04.20
 
 source:
-  fn: Unidecode-0.04.19.tar.gz
-  url: https://pypi.python.org/packages/5a/73/053be0fafe387d41ce705585412808093f5a333aaa71cabbab641f677c11/Unidecode-0.04.19.tar.gz
-  md5: 9b3ab9bfe5a58124609840f0c2accfe4
+  fn: Unidecode-0.04.20.tar.gz
+  url: https://pypi.python.org/packages/ba/64/410af95d27f2a8824112d17ed41ea7ce6d2cbc8a4832c2e548d3408fad0a/Unidecode-0.04.20.tar.gz
+  md5: ec6905c68230b63f2cea8b982da07614
 
 build:
   entry_points:
@@ -26,6 +26,7 @@ test:
 
 about:
   home: https://pypi.python.org/pypi/Unidecode
-  license: GPL2
+  license: GNU General Public License v2 or later (GPL v2+)
+  license_family: GPL2
   license_file: LICENSE
   summary: ASCII transliterations of Unicode text
