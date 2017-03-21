@@ -1,0 +1,29 @@
+package:
+  name: smmap2
+  version: 2.0.1
+
+source:
+  fn: smmap2-2.0.1.tar.gz
+  url: https://pypi.python.org/packages/83/ce/e5b3aee7ca420b0ab24d4fcc2aa577f7aa6ea7e9306fafceabee3e8e4703/smmap2-2.0.1.tar.gz
+  md5: 71565e9c99ab64718e2a13c489767692
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - smmap
+    - smmap.test
+  requires:
+    - nose
+    - nosexcover
+
+about:
+  home: https://github.com/Byron/smmap
+  license: BSD License
+  license_family: BSD
+  summary: pure python implementation of a sliding window memory map manager

@@ -1,0 +1,30 @@
+package:
+  name: gitdb2
+  version: 2.0.0
+
+source:
+  fn: gitdb2-2.0.0.tar.gz
+  url: https://pypi.python.org/packages/5c/bb/ab74c6914e3b570ab2e960fda17a01aec93474426eecd3b34751ba1c3b38/gitdb2-2.0.0.tar.gz
+  md5: 78fdc7645665067862e3ba1e02db6884
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - smmap2 >=2.0.0
+  run:
+    - python
+    - smmap2 >=2.0.0
+
+test:
+  imports:
+    - gitdb
+    - gitdb.db
+    - gitdb.test
+    - gitdb.utils
+
+about:
+  home: https://github.com/gitpython-developers/gitdb
+  license: BSD License
+  license_family: BSD
+  summary: Git Object Database
