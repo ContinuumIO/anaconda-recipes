@@ -133,6 +133,7 @@
   ], 
   "conda": "all", 
   "conda-build": "all", 
+  "conda-build-all": "all", 
   "conda-env": "all", 
   "conda-verify": "all", 
   "configargparse": "all", 
@@ -309,6 +310,8 @@
     "linux-64:py35"
   ], 
   "git": "all", 
+  "gitdb2": "all", 
+  "gitpython": "all", 
   "glib": [
     "linux-64:py27", 
     "linux-64:py35"
@@ -958,6 +961,7 @@
   "sip": "all", 
   "six": "all", 
   "smart_open": "all", 
+  "smmap2": "all", 
   "snakebite": [
     "linux-64:py27"
   ], 

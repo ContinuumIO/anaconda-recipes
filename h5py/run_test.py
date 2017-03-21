@@ -1,4 +1,3 @@
-import h5py
 import h5py._conv
 import h5py._errors
 import h5py._objects
@@ -6,7 +5,9 @@ import h5py._proxy
 import h5py.defs
 import h5py.h5
 import h5py.h5a
+import h5py.h5ac
 import h5py.h5d
+import h5py.h5ds
 import h5py.h5f
 import h5py.h5fd
 import h5py.h5g

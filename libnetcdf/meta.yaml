@@ -23,11 +23,13 @@ requirements:
     - hdf4 4.2.*
     - hdf5 1.8.17
     - zlib 1.2.*
+    - jpeg 9b
   run:
     - curl 7.49.*
     - hdf4 4.2.*
     - hdf5 1.8.17
     - zlib 1.2.*
+    - jpeg 9*
 
 test:
   commands:

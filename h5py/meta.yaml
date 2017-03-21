@@ -1,16 +1,16 @@
 package:
   name: h5py
-  version: 2.6.0
+  version: 2.7.0
 
 source:
   git_url: https://github.com/h5py/h5py.git
-  git_tag: 2.6.0
+  git_tag: 2.7.0
   patches:
     - hdf5_win.patch      [win]
 
 build:
   detect_binary_files_with_prefix: False
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -29,10 +29,15 @@ requirements:
     - hdf5 1.8.15.1       [win]
     - six
 
+test:
+  imports:
+    - h5py
+
 about:
   home: http://www.h5py.org/
   license: 3-clause BSD
   license_family: BSD
+  license_file: docs/licenses.rst
   summary: Pythonic interface to the HDF5 binary data format
   description: |
     The h5py package is a Pythonic interface to the HDF5 binary data format.
