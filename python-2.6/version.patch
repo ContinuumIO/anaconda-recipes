@@ -1,0 +1,99 @@
+diff --git Include/pythonrun.h Include/pythonrun.h
+index 6bfc175..c428f54 100644
+--- Include/pythonrun.h
++++ Include/pythonrun.h
+@@ -106,6 +106,7 @@ PyAPI_FUNC(char *) Py_GetExecPrefix(void);
+ PyAPI_FUNC(char *) Py_GetPath(void);
+ 
+ /* In their own files */
++PyAPI_FUNC(const char *) Anaconda_GetVersion(void);
+ PyAPI_FUNC(const char *) Py_GetVersion(void);
+ PyAPI_FUNC(const char *) Py_GetPlatform(void);
+ PyAPI_FUNC(const char *) Py_GetCopyright(void);
+diff --git Lib/platform.py Lib/platform.py
+index d20c39d..98979fd 100755
+--- Lib/platform.py
++++ Lib/platform.py
+@@ -1324,6 +1324,7 @@ def processor():
+ 
+ _sys_version_parser = re.compile(
+     r'([\w.+]+)\s*'
++    '\|[^|]*\|\s*' # version extra
+     '\(#?([^,]+),\s*([\w ]+),\s*([\w :]+)\)\s*'
+     '\[([^\]]+)\]?')
+ 
+diff --git Modules/main.c Modules/main.c
+index 135ef6e..b9b9a5c 100644
+--- Modules/main.c
++++ Modules/main.c
+@@ -441,7 +441,8 @@ Py_Main(int argc, char **argv)
+         return usage(0, argv[0]);
+ 
+     if (version) {
+-        fprintf(stderr, "Python %s\n", PY_VERSION);
++        Py_SetProgramName(argv[0]);
++        fprintf(stderr, "Python %s :: %s\n", PY_VERSION, Anaconda_GetVersion());
+         return 0;
+     }
+ 
+diff --git Python/getversion.c Python/getversion.c
+index 7bd6efd..643c968 100644
+--- Python/getversion.c
++++ Python/getversion.c
+@@ -5,11 +5,52 @@
+ 
+ #include "patchlevel.h"
+ 
++
++#ifdef MS_WIN32
++#define STDLIB_DIR  "\\Lib\\"
++#else
++#define STDLIB_DIR  "/lib/python2.6/"
++#endif
++
++const char *
++Anaconda_GetVersion(void)
++{
++    static char res[128];
++    FILE *f;
++    char path[256];
++    int c, i;
++
++    PyOS_snprintf(path, sizeof(path), "%s" STDLIB_DIR "version.txt",
++                  Py_GetPrefix());
++
++    f = fopen(path, "rb");
++    if (f == NULL) {
++        strcpy(res, "Continuum Analytics, Inc.");
++    }
++    else {
++        i = 0;
++        while (i + 1 < sizeof(res)) {
++            c = fgetc(f);
++            if (c == EOF || c == '\n' || c == '\r')
++                break;
++            res[i++] = c;
++        }
++        fclose(f);
++        res[i] = '\0';
++    }
++    return res;
++}
++
++
+ const char *
+ Py_GetVersion(void)
+ {
+-	static char version[250];
+-	PyOS_snprintf(version, sizeof(version), "%.80s (%.80s) %.80s",
+-		      PY_VERSION, Py_GetBuildInfo(), Py_GetCompiler());
+-	return version;
++    static char version[250];
++
++    PyOS_snprintf(version, sizeof(version), "%.80s |%s| (%.80s) %.80s",
++                  PY_VERSION, Anaconda_GetVersion(),
++                  Py_GetBuildInfo(), Py_GetCompiler());
++    return version;
+ }
++
++#undef STDLIB_DIR

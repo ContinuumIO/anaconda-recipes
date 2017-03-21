@@ -1,0 +1,57 @@
+# This is legacy recipe, which has not been tested using conda-build.
+# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
+
+package:
+  name: python
+  version: 2.6.9
+
+source:
+  fn: Python-2.6.9.tgz
+  md5: bddbd64bf6f5344fc55bbe49a72fe4f3
+  patches:
+    - version.patch
+    - osx-site.patch      [osx]
+    - osx-dist.patch      [osx]
+    - win-find_exe.patch  [win]
+    - win-cygwin.patch    [win]
+
+build:
+  number: 1
+  no_softlink: bin/python
+
+requirements:
+  build:
+    - bzip2      [unix]
+    - zlib       [unix]
+    - sqlite     [unix]
+    - readline   [unix]
+    - tk         [unix]
+    - openssl    [unix]
+  run:
+    - zlib       [unix]
+    - sqlite     [unix]
+    - readline   [unix]
+    - tk         [unix]
+    - openssl    [unix]
+    - vs2008_runtime  [win]
+
+test:
+  commands:
+    - python -V              [unix]
+    - pydoc -h
+    - python-config --help   [unix]
+
+about:
+  home: http://www.python.org/
+  license: PSF
+  license_file: LICENSE
+  summary: General purpose programming language
+  description: |
+    Python is a widely used high-level, general-purpose, interpreted, dynamic
+    programming language. Its design philosophy emphasizes code
+    readability, and its syntax allows programmers to express concepts in
+    fewer lines of code than would be possible in languages such as C++ or
+    Java. The language provides constructs intended to enable clear programs
+    on both a small and large scale.
+  doc_url: https://www.python.org/doc/versions/
+  dev_url: https://docs.python.org/devguide/
