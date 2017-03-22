@@ -1,11 +1,11 @@
 package:
   name: distributed
-  version: 1.16.0
+  version: 1.16.1
 
 source:
-  fn: distributed-1.16.0.tar.gz
-  url: https://pypi.python.org/packages/3d/b7/f31bb7b09b14a2a643c4e2b7c614964636daa7ccdffacb4293cc94c87fbc/distributed-1.16.0.tar.gz
-  md5: fd3c35f958b1ef4680ddd60591d1ff2f
+  fn: distributed-1.16.1.tar.gz
+  url: https://pypi.python.org/packages/e2/d1/1affc4d0d98f6e06d83619cf71d960956d869aa371540d0334f7429b2520/distributed-1.16.1.tar.gz
+  md5: 3edacbd11f658d0796f8b2b866d87a99
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - toolz >=0.7.4
     - msgpack-python
     - cloudpickle >=0.2.2
-    - dask >=0.13.0
+    - dask >=0.14.0
     - click >=6.6
     - six
     - tblib

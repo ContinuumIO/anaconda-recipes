@@ -540,13 +540,7 @@
   "lockfile": "all", 
   "luigi": "all", 
   "lxml": "all", 
-  "lz4": [
-    "linux-64:py27", 
-    "linux-64:py35", 
-    "osx-64:py27", 
-    "osx-64:py35", 
-    "win-64:py35"
-  ], 
+  "lz4": "all", 
   "m4": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -653,7 +647,6 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
-  "openjdk": "all", 
   "openmpi": [
     "osx-64:py27", 
     "osx-64:py35"

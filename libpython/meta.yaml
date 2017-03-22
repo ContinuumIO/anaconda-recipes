@@ -5,7 +5,7 @@ package:
 requirements:
   build:
     - python
-#    - m2w64-toolchain
+    - m2w64-toolchain
   run:
     - python
 
