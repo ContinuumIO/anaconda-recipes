@@ -9,7 +9,7 @@ source:
   patches:
     - nodownload.patch
     - setup.patch
-    - 0001-Rework-patch_func-to-avoid-use-of-__module__-and-__n.patch
+    - 0001-Rework-patch_func-to-avoid-use-of-__module__-and-__n.patch   [win]
 
 build:
   number: 1                 [win]

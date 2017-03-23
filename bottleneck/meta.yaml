@@ -1,11 +1,14 @@
 package:
   name: bottleneck
-  version: 1.1.0
+  version: 1.2.0
 
 source:
-  fn: Bottleneck-1.1.0.tar.gz
-  url: https://pypi.python.org/packages/ee/03/87184554866dcbf9265782860047031b65cac807773903cf2d33d6f7348f/Bottleneck-1.1.0.tar.gz
-  md5: 0709af81bc0ef46276ee7bdcbf375659
+  fn: Bottleneck-1.2.0.tar.gz
+  url: https://pypi.python.org/packages/96/c0/fb8fbc6cfa22c8a898a4bcb6f31a823c8456c960a3f27d57359ac61a4c36/Bottleneck-1.2.0.tar.gz
+  md5: d9e019e4ec94d74077289c68a22dcfe8
+
+build:
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:

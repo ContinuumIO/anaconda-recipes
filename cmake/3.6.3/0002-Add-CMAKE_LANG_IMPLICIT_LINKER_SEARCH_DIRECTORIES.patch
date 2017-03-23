@@ -1,0 +1,253 @@
+From 7046b48590019bb0cf0ab61a91a6605b8f137343 Mon Sep 17 00:00:00 2001
+From: Ray Donnelly <mingw.android@gmail.com>
+Date: Wed, 26 Oct 2016 12:46:05 +0100
+Subject: [PATCH] Add CMAKE_LANG_IMPLICIT_LINKER_SEARCH_DIRECTORIES
+
+---
+ Help/manual/cmake-variables.7.rst                  |  1 +
+ ...AKE_LANG_IMPLICIT_LINKER_SEARCH_DIRECTORIES.rst | 21 +++++++++++++++
+ Modules/CMakeCCompiler.cmake.in                    |  1 +
+ Modules/CMakeCXXCompiler.cmake.in                  |  1 +
+ Modules/CMakeDetermineCompilerABI.cmake            | 30 ++++++++++++++++++----
+ Modules/CMakeParseImplicitLinkInfo.cmake           | 20 ++++++++++++---
+ Source/cmComputeLinkInformation.cxx                | 17 ++++++++++--
+ Source/cmComputeLinkInformation.h                  |  1 +
+ 8 files changed, 82 insertions(+), 10 deletions(-)
+ create mode 100644 Help/variable/CMAKE_LANG_IMPLICIT_LINKER_SEARCH_DIRECTORIES.rst
+
+diff --git a/Help/manual/cmake-variables.7.rst b/Help/manual/cmake-variables.7.rst
+index 85b8eae..21f1915 100644
+--- a/Help/manual/cmake-variables.7.rst
++++ b/Help/manual/cmake-variables.7.rst
+@@ -354,6 +354,7 @@ Variables for Languages
+    /variable/CMAKE_LANG_IGNORE_EXTENSIONS
+    /variable/CMAKE_LANG_IMPLICIT_INCLUDE_DIRECTORIES
+    /variable/CMAKE_LANG_IMPLICIT_LINK_DIRECTORIES
++   /variable/CMAKE_LANG_IMPLICIT_LINKER_SEARCH_DIRECTORIES
+    /variable/CMAKE_LANG_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES
+    /variable/CMAKE_LANG_IMPLICIT_LINK_LIBRARIES
+    /variable/CMAKE_LANG_LIBRARY_ARCHITECTURE
+diff --git a/Help/variable/CMAKE_LANG_IMPLICIT_LINKER_SEARCH_DIRECTORIES.rst b/Help/variable/CMAKE_LANG_IMPLICIT_LINKER_SEARCH_DIRECTORIES.rst
+new file mode 100644
+index 0000000..2bd8aec
+--- /dev/null
++++ b/Help/variable/CMAKE_LANG_IMPLICIT_LINKER_SEARCH_DIRECTORIES.rst
+@@ -0,0 +1,21 @@
++CMAKE_<LANG>_IMPLICIT_LINKER_SEARCH_DIRECTORIES
++-----------------------------------------------
++
++Implicit linker search directories detected for language ``<LANG>``.
++
++The paths searched by the linker for shared libraries referenced in
++other shared libraries can differ from the implicit link directories (which
++are a property of the compiler's specs, and not of the linker).
++
++This happens, for example, when using a custom compiler with the system
++linker.  In this instance, filtering out directories based on the contents
++of CMAKE_<LANG>_IMPLICIT_LINK_DIRECTORIES can lead to paths that need to
++be passed via (for example) -Wl,-rpath and -Wl,-rpath-link being dropped.
++Instead, CMake filters these linker-specific arguments using this variable.
++
++If the linker does not or cannot report values for this, it defaults to
++CMAKE_<LANG>_IMPLICIT_LINK_DIRECTORIES instead.
++
++When one of these directories is referenced in a linker-specific argument
++such as -Wl,-rpath and -Wl,-rpath-link, CMake will silently drop that
++argument or path from that argument.
+diff --git a/Modules/CMakeCCompiler.cmake.in b/Modules/CMakeCCompiler.cmake.in
+index f109a14..5e43223 100644
+--- a/Modules/CMakeCCompiler.cmake.in
++++ b/Modules/CMakeCCompiler.cmake.in
+@@ -64,4 +64,5 @@ endif()
+ 
+ set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "@CMAKE_C_IMPLICIT_LINK_LIBRARIES@")
+ set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "@CMAKE_C_IMPLICIT_LINK_DIRECTORIES@")
++set(CMAKE_C_IMPLICIT_LINKER_SEARCH_DIRECTORIES "@CMAKE_C_IMPLICIT_LINKER_SEARCH_DIRECTORIES@")
+ set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "@CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES@")
+diff --git a/Modules/CMakeCXXCompiler.cmake.in b/Modules/CMakeCXXCompiler.cmake.in
+index 9e90aea..7081cfe 100644
+--- a/Modules/CMakeCXXCompiler.cmake.in
++++ b/Modules/CMakeCXXCompiler.cmake.in
+@@ -65,4 +65,5 @@ endif()
+ 
+ set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "@CMAKE_CXX_IMPLICIT_LINK_LIBRARIES@")
+ set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "@CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES@")
++set(CMAKE_CXX_IMPLICIT_LINKER_SEARCH_DIRECTORIES "@CMAKE_CXX_IMPLICIT_LINKER_SEARCH_DIRECTORIES@")
+ set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "@CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES@")
+diff --git a/Modules/CMakeDetermineCompilerABI.cmake b/Modules/CMakeDetermineCompilerABI.cmake
+index 344ae47..6b7f9b9 100644
+--- a/Modules/CMakeDetermineCompilerABI.cmake
++++ b/Modules/CMakeDetermineCompilerABI.cmake
+@@ -25,8 +25,26 @@ function(CMAKE_DETERMINE_COMPILER_ABI lang src)
+     # Compile the ABI identification source.
+     set(BIN "${CMAKE_PLATFORM_INFO_DIR}/CMakeDetermineCompilerABI_${lang}.bin")
+     set(CMAKE_FLAGS )
+-    if(DEFINED CMAKE_${lang}_VERBOSE_FLAG)
+-      set(CMAKE_FLAGS "-DEXE_LINKER_FLAGS=${CMAKE_${lang}_VERBOSE_FLAG}")
++
++    # Many linkers do not support -Wl,--verbose, so test for it. When using one
++    # that does, we can figure out the implicit linker search directories.
++    message(STATUS "Checking if ${lang} linker supports --verbose")
++    try_compile(CMAKE_${lang}_LINKER_VERBOSE_WORKS
++      ${CMAKE_BINARY_DIR} ${src}
++      CMAKE_FLAGS ${CMAKE_FLAGS}
++                  "-DEXE_LINKER_FLAGS=-Wl,--verbose"
++      )
++
++    if(CMAKE_${lang}_LINKER_VERBOSE_WORKS)
++      message(STATUS "Checking if ${lang} linker supports --verbose - yes")
++      set(USED_VERBOSE_FLAG "${CMAKE_${lang}_VERBOSE_FLAG} -Wl,--verbose")
++    elseif(DEFINED CMAKE_${lang}_VERBOSE_FLAG)
++      message(STATUS "Checking if ${lang} linker supports --verbose - no")
++      set(USED_VERBOSE_FLAG "${CMAKE_${lang}_VERBOSE_FLAG}")
++    endif()
++
++    if(DEFINED USED_VERBOSE_FLAG)
++      set(CMAKE_FLAGS "-DEXE_LINKER_FLAGS=${USED_VERBOSE_FLAG}")
+     endif()
+     if(NOT "x${CMAKE_${lang}_COMPILER_ID}" STREQUAL "xMSVC")
+       # Avoid adding our own platform standard libraries for compilers
+@@ -75,10 +93,11 @@ function(CMAKE_DETERMINE_COMPILER_ABI lang src)
+       # Parse implicit linker information for this language, if available.
+       set(implicit_dirs "")
+       set(implicit_libs "")
++      set(implicit_linker_search_dirs "")
+       set(implicit_fwks "")
+-      if(CMAKE_${lang}_VERBOSE_FLAG)
+-        CMAKE_PARSE_IMPLICIT_LINK_INFO("${OUTPUT}" implicit_libs implicit_dirs implicit_fwks log
+-          "${CMAKE_${lang}_IMPLICIT_OBJECT_REGEX}")
++      if(DEFINED USED_VERBOSE_FLAG)
++        CMAKE_PARSE_IMPLICIT_LINK_INFO("${OUTPUT}" implicit_libs implicit_dirs implicit_linker_search_dirs
++          implicit_fwks log "${CMAKE_${lang}_IMPLICIT_OBJECT_REGEX}")
+         file(APPEND ${CMAKE_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/CMakeOutput.log
+           "Parsed ${lang} implicit link information from above output:\n${log}\n\n")
+       endif()
+@@ -115,6 +134,7 @@ function(CMAKE_DETERMINE_COMPILER_ABI lang src)
+ 
+       set(CMAKE_${lang}_IMPLICIT_LINK_LIBRARIES "${implicit_libs}" PARENT_SCOPE)
+       set(CMAKE_${lang}_IMPLICIT_LINK_DIRECTORIES "${implicit_dirs}" PARENT_SCOPE)
++      set(CMAKE_${lang}_IMPLICIT_LINKER_SEARCH_DIRECTORIES "${implicit_linker_search_dirs}" PARENT_SCOPE)
+       set(CMAKE_${lang}_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "${implicit_fwks}" PARENT_SCOPE)
+ 
+       # Detect library architecture directory name.
+diff --git a/Modules/CMakeParseImplicitLinkInfo.cmake b/Modules/CMakeParseImplicitLinkInfo.cmake
+index ef9a2eb..71046a8 100644
+--- a/Modules/CMakeParseImplicitLinkInfo.cmake
++++ b/Modules/CMakeParseImplicitLinkInfo.cmake
+@@ -16,9 +16,10 @@
+ # This is used internally by CMake and should not be included by user
+ # code.
+ 
+-function(CMAKE_PARSE_IMPLICIT_LINK_INFO text lib_var dir_var fwk_var log_var obj_regex)
++function(CMAKE_PARSE_IMPLICIT_LINK_INFO text lib_var dir_var linker_dir_var fwk_var log_var obj_regex)
+   set(implicit_libs_tmp "")
+   set(implicit_dirs_tmp)
++  set(implicit_linker_search_dirs_tmp)
+   set(implicit_fwks_tmp)
+   set(log "")
+ 
+@@ -31,6 +32,7 @@ function(CMAKE_PARSE_IMPLICIT_LINK_INFO text lib_var dir_var fwk_var log_var obj
+   # Construct a regex to match linker lines.  It must match both the
+   # whole line and just the command (argv[0]).
+   set(linker_regex "^( *|.*[/\\])(${linker}|([^/\\]+-)?ld|collect2)[^/\\]*( |$)")
++  set(linker_search_dir_regex "^ ?SEARCH_DIR\\(\"(.*)\"\\)$")
+   set(linker_exclude_regex "collect2 version |^[A-Za-z0-9_]+=|/ldfe ")
+   set(log "${log}  link line regex: [${linker_regex}]\n")
+   string(REGEX REPLACE "\r?\n" ";" output_lines "${text}")
+@@ -96,7 +98,10 @@ function(CMAKE_PARSE_IMPLICIT_LINK_INFO text lib_var dir_var fwk_var log_var obj
+           set(log "${log}    arg [${arg}] ==> ignore\n")
+         endif()
+       endforeach()
+-      break()
++    elseif("${line}" MATCHES "${linker_search_dir_regex}")
++      # Linker search directory
++      list(APPEND implicit_linker_search_dirs_tmp ${CMAKE_MATCH_1})
++      set(log "${log}    arg [${CMAKE_MATCH_1}] ==> dirs [${CMAKE_MATCH_1}]\n")
+     elseif("${line}" MATCHES "LPATH(=| is:? *)(.*)$")
+       set(log "${log}  LPATH line: [${line}]\n")
+       # HP search path.
+@@ -139,8 +144,9 @@ function(CMAKE_PARSE_IMPLICIT_LINK_INFO text lib_var dir_var fwk_var log_var obj
+ 
+   # Cleanup list of library and framework directories.
+   set(desc_dirs "library")
++  set(desc_linker_search_dirs "linker search dirs")
+   set(desc_fwks "framework")
+-  foreach(t dirs fwks)
++  foreach(t dirs linker_search_dirs fwks)
+     set(implicit_${t} "")
+     foreach(d IN LISTS implicit_${t}_tmp)
+       get_filename_component(dir "${d}" ABSOLUTE)
+@@ -156,14 +162,22 @@ function(CMAKE_PARSE_IMPLICIT_LINK_INFO text lib_var dir_var fwk_var log_var obj
+     list(REMOVE_DUPLICATES implicit_${t})
+   endforeach()
+ 
++  # If implicit_linker_search_dirs is empty replace with implicit_dirs.
++  if(NOT implicit_linker_search_dirs)
++      set(log "${log}  linker did not report search dirs, re-using implicit dirs\n")
++      set(implicit_linker_search_dirs ${implicit_dirs})
++  endif()
++
+   # Log results.
+   set(log "${log}  implicit libs: [${implicit_libs}]\n")
+   set(log "${log}  implicit dirs: [${implicit_dirs}]\n")
++  set(log "${log}  implicit linker search dirs: [${implicit_linker_search_dirs}]\n")
+   set(log "${log}  implicit fwks: [${implicit_fwks}]\n")
+ 
+   # Return results.
+   set(${lib_var} "${implicit_libs}" PARENT_SCOPE)
+   set(${dir_var} "${implicit_dirs}" PARENT_SCOPE)
++  set(${linker_dir_var} "${implicit_linker_search_dirs}" PARENT_SCOPE)
+   set(${fwk_var} "${implicit_fwks}" PARENT_SCOPE)
+   set(${log_var} "${log}" PARENT_SCOPE)
+ endfunction()
+diff --git a/Source/cmComputeLinkInformation.cxx b/Source/cmComputeLinkInformation.cxx
+index e1a7bee..3453352 100644
+--- a/Source/cmComputeLinkInformation.cxx
++++ b/Source/cmComputeLinkInformation.cxx
+@@ -371,9 +371,9 @@ cmComputeLinkInformation::cmComputeLinkInformation(
+   // Set up the implicit link directories.
+   this->LoadImplicitLinkInfo();
+   this->OrderLinkerSearchPath->SetImplicitDirectories(this->ImplicitLinkDirs);
+-  this->OrderRuntimeSearchPath->SetImplicitDirectories(this->ImplicitLinkDirs);
++  this->OrderRuntimeSearchPath->SetImplicitDirectories(this->ImplicitLinkerSearchDirs);
+   if (this->OrderDependentRPath) {
+-    this->OrderDependentRPath->SetImplicitDirectories(this->ImplicitLinkDirs);
++    this->OrderDependentRPath->SetImplicitDirectories(this->ImplicitLinkerSearchDirs);
+     this->OrderDependentRPath->AddLanguageDirectories(this->RuntimeLinkDirs);
+   }
+ 
+@@ -1546,6 +1546,19 @@ void cmComputeLinkInformation::LoadImplicitLinkInfo()
+   // Store implicit link directories.
+   this->ImplicitLinkDirs.insert(implicitDirVec.begin(), implicitDirVec.end());
+ 
++  implicitDirVec.clear();
++  // Get linker search directories.
++  implicitDirVar = "CMAKE_";
++  implicitDirVar += this->LinkLanguage;
++  implicitDirVar += "_IMPLICIT_LINKER_SEARCH_DIRECTORIES";
++  if (const char* implicitDirs =
++        this->Makefile->GetDefinition(implicitDirVar)) {
++    cmSystemTools::ExpandListArgument(implicitDirs, implicitDirVec);
++  }
++
++  // Store implicit linker search directories.
++  this->ImplicitLinkerSearchDirs.insert(implicitDirVec.begin(), implicitDirVec.end());
++
+   // Get language-specific implicit libraries.
+   std::vector<std::string> implicitLibVec;
+   std::string implicitLibVar = "CMAKE_";
+diff --git a/Source/cmComputeLinkInformation.h b/Source/cmComputeLinkInformation.h
+index c0ddc53..67e796f 100644
+--- a/Source/cmComputeLinkInformation.h
++++ b/Source/cmComputeLinkInformation.h
+@@ -174,6 +174,7 @@ private:
+   void AddImplicitLinkInfo();
+   void AddImplicitLinkInfo(std::string const& lang);
+   std::set<std::string> ImplicitLinkDirs;
++  std::set<std::string> ImplicitLinkerSearchDirs;
+   std::set<std::string> ImplicitLinkLibs;
+ 
+   // Additional paths configured by the runtime linker
+-- 
+2.9.3
+

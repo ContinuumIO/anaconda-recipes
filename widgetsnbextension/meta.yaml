@@ -1,20 +1,20 @@
 package:
   name: widgetsnbextension
-  version: 1.2.6
+  version: 2.0.0
 
 source:
-  fn: widgetsnbextension-1.2.6.tar.gz
-  url: https://pypi.io/packages/source/w/widgetsnbextension/widgetsnbextension-1.2.6.tar.gz
-  md5: 0aa4e152c9ba2d704389dc2453f448c7
+  fn: widgetsnbextension-2.0.0.tar.gz
+  url: https://pypi.python.org/packages/0a/09/083dbdbd6ba52004d6ee880877a7b3f6143f389743d20057e1eda3af3582/widgetsnbextension-2.0.0.tar.gz
+  md5: 4a20d3c3fee43dba15da2e7c1ad6bbf3
 
 requirements:
   build:
     - python
     - setuptools
-    - notebook >=4.2.0
+    - notebook >=4.4.1
   run:
     - python
-    - notebook >=4.2.0
+    - notebook >=4.4.1
 
 test:
   imports:

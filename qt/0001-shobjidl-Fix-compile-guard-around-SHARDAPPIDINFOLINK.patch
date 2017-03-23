@@ -1,4 +1,4 @@
-From c1c59225c94600d1acd0f0f0564005851147d7aa Mon Sep 17 00:00:00 2001
+From 84edfafefe10dd2d9a3ab93202050a551f023016 Mon Sep 17 00:00:00 2001
 From: Ray Donnelly <mingw.android@gmail.com>
 Date: Wed, 1 Jun 2016 14:34:42 +0100
 Subject: [PATCH] shobjidl: Fix compile-guard around SHARDAPPIDINFOLINK
@@ -12,11 +12,11 @@ Change-Id: I5bf297bfc5624d98838e48288c5139acf13fc431
  src/winextras/winshobjidl_p.h | 6 +-----
  1 file changed, 1 insertion(+), 5 deletions(-)
 
-diff --git a/src/winextras/winshobjidl_p.h b/src/winextras/winshobjidl_p.h
-index 93abea0..fba38a8 100644
+diff --git qtwinextras/src/winextras/winshobjidl_p.h qtwinextras/src/winextras/winshobjidl_p.h
+index 224150d..c0893f8 100644
 --- qtwinextras/src/winextras/winshobjidl_p.h
 +++ qtwinextras/src/winextras/winshobjidl_p.h
-@@ -229,9 +229,7 @@ public:
+@@ -223,9 +223,7 @@ public:
  
  #endif
  
@@ -27,7 +27,7 @@ index 93abea0..fba38a8 100644
  
  typedef struct SHARDAPPIDINFOLINK
  {
-@@ -241,8 +239,6 @@ typedef struct SHARDAPPIDINFOLINK
+@@ -235,8 +233,6 @@ typedef struct SHARDAPPIDINFOLINK
      PCWSTR pszAppID;        // The id of the application that should be associated with this recent doc.
  } SHARDAPPIDINFOLINK;
  
@@ -37,5 +37,5 @@ index 93abea0..fba38a8 100644
  
  #endif // WINSHOBJIDL_P_H
 -- 
-2.8.2
+2.10.2
 

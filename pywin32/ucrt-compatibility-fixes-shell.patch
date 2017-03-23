@@ -1,0 +1,14 @@
+diff -urN pywin32-220.orig/com/win32comext/shell/src/PyIAsyncOperation.h pywin32-220/com/win32comext/shell/src/PyIAsyncOperation.h
+--- pywin32-220.orig/com/win32comext/shell/src/PyIAsyncOperation.h	2017-01-13 16:41:06.837536800 -0600
++++ pywin32-220/com/win32comext/shell/src/PyIAsyncOperation.h	2017-01-13 16:45:45.009184400 -0600
+@@ -3,6 +3,10 @@
+ // ---------------------------------------------------
+ //
+ // Interface Declaration
++#if _MSC_VER >= 1900
++#define IAsyncOperation IDataObjectAsyncCapability
++#define IID_IAsyncOperation IID_IDataObjectAsyncCapability
++#endif
+ 
+ class PyIAsyncOperation : public PyIUnknown
+ {

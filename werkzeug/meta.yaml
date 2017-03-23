@@ -1,21 +1,26 @@
 package:
   name: werkzeug
-  version: 0.11.11
+  version: 0.12
 
 source:
-  fn: Werkzeug-0.11.11.tar.gz
-  url: https://pypi.python.org/packages/43/2e/d822b4a4216804519ace92e0368dcfc4b0b2887462d852fdd476b253ecc9/Werkzeug-0.11.11.tar.gz
-  md5: 1d34afa1f19abcef4c0da51ebc2c4ea7
+  fn: Werkzeug-0.12.tar.gz
+  url: https://pypi.python.org/packages/13/a2/c4f2a1e1e9239cd979de00a2d7e0008559c46d920e9842e9b8063c5e6bf5/Werkzeug-0.12.tar.gz
+  md5: 1fd20c9dceed7d4ac279d3770277315e
 
 requirements:
   build:
     - python
+    # the reason we use setuptools here is because otherwise the package data
+    # files don't get installed
+    - setuptools
   run:
     - python
 
 test:
   imports:
     - werkzeug
+    - werkzeug.debug
+    - werkzeug.contrib
 
 about:
   home: http://werkzeug.pocoo.org/

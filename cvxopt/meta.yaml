@@ -10,18 +10,19 @@ source:
     - setup.patch
 
 build:
-  number: 3
+  number: 4
+  detect_binary_files_with_prefix: False
   features:
     - nomkl                   [nomkl]
 
 requirements:
   build:
     - python
-    - mkl-devel 11.3.3
+    - mkl-devel 2017.0.1
     - libpython               [win]
   run:
     - python
-    - mkl 11.3.3
+    - mkl 2017.0.1
 
 test:
   requires:

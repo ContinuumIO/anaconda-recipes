@@ -1,20 +1,28 @@
 package:
   name: python
-  version: 3.5.2
+  version: 3.5.3
 
 source:
-  fn: Python-3.5.2.tgz
-  url: https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz
-  md5: 3fe8434643a78630c61c6464fe2e7e72
+  fn: Python-3.5.3.tgz
+  url: https://www.python.org/ftp/python/3.5.3/Python-3.5.3.tgz
+  md5: 6192f0e45f02575590760e68c621a488
   patches:
+    # Remove this patch after 3.5.3
+    - issue27286.patch             [unix]
     - version.patch
     - site.patch
-    - osx64-dist.patch      [osx and x86_64]
-    - win-find_exe.patch    [win]
-    - win-library_bin.patch [win]
+    - osx64-dist.patch             [osx and x86_64]
+    - win-find_exe.patch           [win]
+    - win-library_bin.patch        [win]
+    - win-msc_ver-1900.patch       [win]
+    - fd_setsize.patch             [win]
+    # fix crash related to stack size and MACOSX_DEPLOYMENT_TARGET=10.7
+    # https://trac.macports.org/ticket/51736
+    - stack_size.patch             [osx]
 
 build:
-  number: 0
+  number: 1                        [unix]
+  detect_binary_files_with_prefix: False
   no_link:
     - bin/python3.5         [unix]
     - DLLs/_ctypes.pyd      [win]

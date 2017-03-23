@@ -1,11 +1,14 @@
 package:
   name: reportlab
-  version: 3.3.0
+  version: 3.4.0
 
 source:
-  fn: reportlab-3.3.0.tar.gz
-  url: https://pypi.python.org/packages/source/r/reportlab/reportlab-3.3.0.tar.gz
-  md5: 8ad6181b69ec515d4f6d8bb894682d5d
+  fn: reportlab-3.4.0.tar.gz
+  url: https://pypi.python.org/packages/87/f9/53b34c58d3735a6df7d5c542bf4de60d699cfa6035e113ca08b3ecdcca3f/reportlab-3.4.0.tar.gz
+  md5: 3f2522cf3b69cd84426c216619bbff53
+
+build:
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:

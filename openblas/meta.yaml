@@ -1,17 +1,17 @@
 package:
   name: openblas
-  version: 0.2.14
+  version: 0.2.19
 
 source:
   git_url: https://github.com/xianyi/OpenBLAS.git
-  git_tag: v0.2.14
+  git_tag: v0.2.19
 
 build:
-  number: 4
+  number: 1                       [osx]
 
 requirements:
   run:
-    - libgfortran           [linux]
+    - libgfortran
 
 about:
   home: http://www.openblas.net/

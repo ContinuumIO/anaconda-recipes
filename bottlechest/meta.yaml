@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/source/B/Bottlechest/Bottlechest-0.7.1.tar.gz
   md5: 272a8d9e65ee6e8b072d5da5656337e8
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

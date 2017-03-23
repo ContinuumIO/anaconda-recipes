@@ -8,6 +8,10 @@ source:
   md5: 86a25c8d47147c872e42dc84cc66f97b
   patches:
     - req.patch
+    - 0001-Add-missing-SOURCELINK_SUFFIX.patch
+
+build:
+  number: 1
 
 requirements:
   build:

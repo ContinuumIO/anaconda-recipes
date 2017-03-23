@@ -1,11 +1,11 @@
 package:
   name: astroid
-  version: 1.4.7
+  version: 1.4.9
 
 source:
-  fn: astroid-1.4.7.tar.gz
-  url: https://pypi.python.org/packages/ac/bf/4d536d9fd3017eefb4cdef6f69d1253ee9a52309a8f325ab52c2fbc1ba94/astroid-1.4.7.tar.gz
-  md5: 40de5e153f7be37cd640bce6303d1754
+  fn: astroid-1.4.9.tar.gz
+  url: https://pypi.python.org/packages/55/14/be963877c2f336c6df8a77457f47163fd55427c0344bab2ba3f940d4edb8/astroid-1.4.9.tar.gz
+  md5: a57438971de05eb801b82eae59c05217
 
 requirements:
   build:

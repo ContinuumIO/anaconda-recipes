@@ -1,11 +1,11 @@
 package:
   name: munch
-  version: 2.0.4
+  version: 2.1.0
 
 source:
-  fn: munch-2.0.4.tar.gz
-  url: https://files.pythonhosted.org/packages/06/df/f8c11e662c80741240e48b701c6ee81723ecc6a4f81db63c664428d6f4da/munch-2.0.4.tar.gz
-  md5: 6fd6f748f5698c756e143f2be847d449
+  fn: munch-2.1.0.tar.gz
+  url: https://pypi.python.org/packages/9d/0e/b2f9d2171182a521e90fe077c924ced5cfdea42efb1fe8c394a1b6fd7511/munch-2.1.0.tar.gz
+  md5: 5e18d089bd6f149a5af8b75cea8b1fbd
 
 requirements:
   build:

@@ -1,7 +1,7 @@
-From 8b1ce12466d82e1ed865a48a4abe933ce3b137c6 Mon Sep 17 00:00:00 2001
+From 29adb732be53547587fcbb428a3f8abf81c05968 Mon Sep 17 00:00:00 2001
 From: Ray Donnelly <mingw.android@gmail.com>
 Date: Wed, 1 Jun 2016 11:51:15 +0100
-Subject: [PATCH] angle: Split DirectX headers and libraries out from
+Subject: [PATCH 1/9] angle: Split DirectX headers and libraries out from
  common.pri
 
 ... so translator.pro can use it.
@@ -22,11 +22,11 @@ Change-Id: I6b1dd5a4a6e98697732236fbf660e92a8354b6a4
  3 files changed, 35 insertions(+), 33 deletions(-)
  create mode 100644 src/angle/src/common/dx_common.pri
 
-diff --git a/src/angle/src/common/common.pri b/src/angle/src/common/common.pri
-index 50dde63..b00319f 100644
+diff --git qtbase/src/angle/src/common/common.pri qtbase/src/angle/src/common/common.pri
+index 83cd1e8..ad3320b 100644
 --- qtbase/src/angle/src/common/common.pri
 +++ qtbase/src/angle/src/common/common.pri
-@@ -14,39 +14,7 @@ lib_replace.replace = \$\$\$\$[QT_INSTALL_LIBS]
+@@ -20,38 +20,6 @@ lib_replace.replace = \$\$\$\$[QT_INSTALL_LIBS]
  lib_replace.CONFIG = path
  QMAKE_PRL_INSTALL_REPLACE += lib_replace
  
@@ -65,9 +65,8 @@ index 50dde63..b00319f 100644
 -}
 +include(dx_common.pri)
  
- # static builds should still link ANGLE dynamically when dynamic GL is enabled
- static:contains(QT_CONFIG, dynamicgl) {
-diff --git a/src/angle/src/common/dx_common.pri b/src/angle/src/common/dx_common.pri
+ static: DEFINES *= LIBGLESV2_EXPORT_H_ ANGLE_EXPORT=
+diff --git qtbase/src/angle/src/common/dx_common.pri qtbase/src/angle/src/common/dx_common.pri
 new file mode 100644
 index 0000000..f825cb5
 --- /dev/null
@@ -106,17 +105,18 @@ index 0000000..f825cb5
 +        LIBS_PRIVATE += -L$$DXLIB_DIR
 +    }
 +}
-diff --git a/src/angle/src/compiler/translator.pro b/src/angle/src/compiler/translator.pro
-index b40aa96..430a409 100644
+diff --git qtbase/src/angle/src/compiler/translator.pro qtbase/src/angle/src/compiler/translator.pro
+index 31aeae9..23260b1 100644
 --- qtbase/src/angle/src/compiler/translator.pro
 +++ qtbase/src/angle/src/compiler/translator.pro
-@@ -1,5 +1,6 @@
+@@ -1,6 +1,7 @@
  CONFIG += static
+ contains(QT_CONFIG, dynamicgl): CONFIG += not_installed
  include(../config.pri)
 +include(../common/dx_common.pri)
  
  INCLUDEPATH += \
      $$ANGLE_DIR/src \
 -- 
-2.8.2
+2.10.2
 

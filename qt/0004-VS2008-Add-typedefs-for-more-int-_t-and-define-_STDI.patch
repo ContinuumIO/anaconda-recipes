@@ -1,7 +1,7 @@
-From e645477f7c9a5ca3c30902b1b89290896bbc0847 Mon Sep 17 00:00:00 2001
+From 7389585c177b7159f20a73682531755052737c01 Mon Sep 17 00:00:00 2001
 From: Ray Donnelly <mingw.android@gmail.com>
 Date: Tue, 31 May 2016 20:23:24 +0100
-Subject: [PATCH 4/4] VS2008: Add typedefs for more ?int??_t and define _STDINT
+Subject: [PATCH 4/9] VS2008: Add typedefs for more ?int??_t and define _STDINT
 
 This allows us to detect later that it's already been done
 as we need to in:
@@ -18,7 +18,7 @@ Change-Id: Ic6b850f85fd620c2ae6232e35a230f9c1f9f8afd
  src/gui/opengl/qopenglext.h              | 42 +++++++++++++++++++++++++++++---
  2 files changed, 41 insertions(+), 3 deletions(-)
 
-diff --git a/src/3rdparty/harfbuzz-ng/src/hb-common.h b/src/3rdparty/harfbuzz-ng/src/hb-common.h
+diff --git qtbase/src/3rdparty/harfbuzz-ng/src/hb-common.h qtbase/src/3rdparty/harfbuzz-ng/src/hb-common.h
 index c291dbb..dc7879c 100644
 --- qtbase/src/3rdparty/harfbuzz-ng/src/hb-common.h
 +++ qtbase/src/3rdparty/harfbuzz-ng/src/hb-common.h
@@ -38,7 +38,7 @@ index c291dbb..dc7879c 100644
  #else
  #  include <stdint.h>
  #endif
-diff --git a/src/gui/opengl/qopenglext.h b/src/gui/opengl/qopenglext.h
+diff --git qtbase/src/gui/opengl/qopenglext.h qtbase/src/gui/opengl/qopenglext.h
 index 72316ca..e3d2f41 100644
 --- qtbase/src/gui/opengl/qopenglext.h
 +++ qtbase/src/gui/opengl/qopenglext.h
@@ -92,5 +92,5 @@ index 72316ca..e3d2f41 100644
  /* Fallback if nothing above works */
  #include <inttypes.h>
 -- 
-2.8.2
+2.10.2
 

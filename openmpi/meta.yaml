@@ -1,6 +1,3 @@
-# This is legacy recipe, which has not been tested using conda-build.
-# See: https://github.com/ContinuumIO/anaconda-recipes/blob/master/LEGACY.md
-
 package:
   name: openmpi
   version: 1.6.3
@@ -9,6 +6,10 @@ source:
   fn: openmpi-1.6.3.tar.bz2
   url: http://www.open-mpi.org/software/ompi/v1.6/downloads/openmpi-1.6.3.tar.bz2
   md5: eedb73155a7a40b0b07718494298fb25
+
+build:
+  detect_binary_files_with_prefix : True
+  number: 1
 
 about:
   home: http://www.open-mpi.org/
@@ -19,8 +20,7 @@ about:
   summary: An open source Message Passing Interface implementation
   description: |
     The Open MPI Project is an open source Message Passing Interface
-    implementation that is developed and maintained by a consortium of academic,
-    research, and industry partners.
+    implementation that is developed and maintained by a consortium of
+    academic, research, and industry partners.
   doc_url: https://www.open-mpi.org/doc/
   dev_url: https://github.com/open-mpi/ompi
-

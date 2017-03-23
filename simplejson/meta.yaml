@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/40/ad/52c1f3a562df3b210e8f165e1aa243a178c454ead65476a39fa3ce1847b6/simplejson-3.10.0.tar.gz
   md5: 426a9631d22851a7a970b1a677368b15
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

@@ -1,0 +1,26 @@
+package:
+  name: olefile
+  version: 0.44
+
+source:
+  fn: olefile-0.44.zip
+  url: https://pypi.python.org/packages/35/17/c15d41d5a8f8b98cc3df25eb00c5cee76193114c78e5674df6ef4ac92647/olefile-0.44.zip
+  md5: fc625554e4e7f0c2ddcd00baa3c74ff5
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - olefile
+    - OleFileIO_PL
+
+about:
+  home: https://www.decalage.info/python/olefileio
+  license: BSD License
+  license_family: BSD
+  license_file: doc/License.rst
+  summary: parse, read and write Microsoft OLE2 files

@@ -1,20 +1,20 @@
 package:
   name: distributed
-  version: 1.14.1
+  version: 1.16.1
 
 source:
-  fn: distributed-1.14.1.tar.gz
-  url: https://pypi.python.org/packages/a6/9a/96d4956bceee8090dc4ef49e3845a988ec7f632e7bfd093bd7334c6f34e2/distributed-1.14.1.tar.gz
-  md5: 48b366ef5df0541e7f2d82f0760e0d8f
+  fn: distributed-1.16.1.tar.gz
+  url: https://pypi.python.org/packages/e2/d1/1affc4d0d98f6e06d83619cf71d960956d869aa371540d0334f7429b2520/distributed-1.16.1.tar.gz
+  md5: 3edacbd11f658d0796f8b2b866d87a99
 
 build:
   number: 0
   entry_points:
-    - dask-scheduler=distributed.cli.dask_scheduler:go
     - dask-ssh=distributed.cli.dask_ssh:go
-    - dask-worker=distributed.cli.dask_worker:go
-    - dask-remote=distributed.cli.dask_remote:go
     - dask-submit=distributed.cli.dask_submit:go
+    - dask-remote=distributed.cli.dask_remote:go
+    - dask-scheduler=distributed.cli.dask_scheduler:go
+    - dask-worker=distributed.cli.dask_worker:go
 
 requirements:
   build:
@@ -25,15 +25,15 @@ requirements:
     - tornado >=4.2
     - toolz >=0.7.4
     - msgpack-python
-    - cloudpickle >=0.2.1
-    - dask >=0.12.0
+    - cloudpickle >=0.2.2
+    - dask >=0.14.0
     - click >=6.6
     - six
     - tblib
     - psutil
-    - locket
-    - zict >=0.1.0
-    - futures                     [py2k]
+    - zict >=0.1.1
+    - sortedcollections
+    - futures                     [py < 30]
     - singledispatch              [py < 34]
 
 test:

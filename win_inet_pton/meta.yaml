@@ -1,0 +1,25 @@
+package:
+  name: win_inet_pton
+  version: 1.0.1
+
+source:
+  fn: win_inet_pton-1.0.1.tar.gz
+  url: https://pypi.python.org/packages/a3/fb/bb181176a58f3d091aae10a360aa5aa945b9c4ec960dc713a32353665d26/win_inet_pton-1.0.1.tar.gz
+  md5: 3d20c5db5552c7e75dc08f140fd0e1a8
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - win_inet_pton
+
+about:
+  home: https://github.com/hickeroar/win_inet_pton
+  license: public domain
+  license_file: LICENSE
+  license_family: Public-Domain
+  summary: native inet_pton and inet_ntop implementation for Python on Windows

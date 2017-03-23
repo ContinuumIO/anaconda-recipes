@@ -1,11 +1,11 @@
 package:
   name: backports_abc
-  version: 0.4
+  version: 0.5
 
 source:
-  fn: backports_abc-0.4.tar.gz
-  url: https://pypi.python.org/packages/source/b/backports_abc/backports_abc-0.4.tar.gz
-  md5: 0b65a216ce9dc9c1a7e20a729dd7c05b
+  fn: backports_abc-0.5.tar.gz
+  url: https://pypi.python.org/packages/68/3c/1317a9113c377d1e33711ca8de1e80afbaf4a3c950dd0edfaf61f9bfe6d8/backports_abc-0.5.tar.gz
+  md5: 7d1936ec183a3586290adf60f6f96764
 
 requirements:
   build:
@@ -20,6 +20,7 @@ test:
 about:
   home: https://github.com/cython/backports_abc
   license: PSF
+  license_file: LICENSE
   summary: backport of recent additions to the 'collections.abc' module
   doc_url: https://pypi.python.org/pypi/backports_abc
   dev_url: https://github.com/cython/backports_abc

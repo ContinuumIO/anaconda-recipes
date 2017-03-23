@@ -14,7 +14,7 @@ build:
   features:
     - vc9     [win and py27]
     - vc10    [win and py34]
-    - vc14    [win and py35]
+    - vc14    [win and (py35 or py36)]
 
 requirements:
   build:
@@ -26,6 +26,7 @@ test:
     - python 2.7*    [win and py27]
     - python 3.4*    [win and py34]
     - python 3.5*    [win and py35]
+    - python 3.6*    [win and py36]
   commands:
     - sqlite3 --version
 

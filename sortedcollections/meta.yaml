@@ -1,0 +1,28 @@
+package:
+  name: sortedcollections
+  version: 0.4.2
+
+source:
+  fn: sortedcollections-0.4.2.tar.gz
+  url: https://pypi.python.org/packages/73/bc/dd4453078f8677c5969e328f6d51511798f4eab689f32c9f09723015edca/sortedcollections-0.4.2.tar.gz
+  md5: 3e398c052a903daa2fce386997e72b4d
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - sortedcontainers
+  run:
+    - python
+    - sortedcontainers
+
+test:
+  imports:
+    - sortedcollections
+
+about:
+  home: http://www.grantjenks.com/docs/sortedcollections/
+  license: Apache Software License
+  license_family: Apache
+  license_file: LICENSE
+  summary: Python Sorted Collections

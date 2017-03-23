@@ -1,0 +1,11 @@
+--- Lib/distutils/unixccompiler.py
++++ Lib/distutils/unixccompiler.py
+@@ -251,7 +251,8 @@
+                     linker[i] = self.compiler_cxx[i]
+ 
+                 if sys.platform == 'darwin':
+                     linker = _darwin_compiler_fixup(linker, ld_args)
++                    ld_args = ['-arch', @OSX_ARCH@] + ld_args
+ 
+                 self.spawn(linker + ld_args)
+             except DistutilsExecError, msg:

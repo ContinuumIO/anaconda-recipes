@@ -3,7 +3,7 @@
     "menu_items":[
     {
         "name": "Jupyter Notebook",
-        "pyscript": "${PYTHON_SCRIPTS}/jupyter-notebook-script.py",
+        "pyscript": "${PYTHON_SCRIPTS}/jupyter-notebook-script.py %USERPROFILE%",
         "icon": "${MENU_DIR}/jupyter.ico"
     }
     ]

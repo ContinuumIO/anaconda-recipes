@@ -1,11 +1,11 @@
 package:
   name: nbformat
-  version: 4.1.0
+  version: 4.3.0
 
 source:
-  fn: nbformat-4.1.0.tar.gz
-  url: https://pypi.python.org/packages/c5/b5/f38ceeeac63e9b4d7d630151be8875beb3d4a86eba5b5ad9d3dbefadadea/nbformat-4.1.0.tar.gz
-  md5: 9d71dd1aa7ce3cc04b191cce151d6645
+  fn: nbformat-4.3.0.tar.gz
+  url: https://pypi.python.org/packages/f9/c5/89df4abf906f766727f976e170caa85b4f1c1d1feb1f45d716016e68e19f/nbformat-4.3.0.tar.gz
+  md5: 9a00d20425914cd5ba5f97769d9963ca
 
 requirements:
   build:
@@ -13,19 +13,20 @@ requirements:
   run:
     - python
     - ipython_genutils
-    - traitlets
-    - jsonschema
+    - traitlets >=4.1
+    - jsonschema >=2.4,!=2.5.0
     - jupyter_core
 
 test:
   commands:
-    - jupyter-trust -h
+    - jupyter-trust -h        [not win]
   imports:
     - nbformat
 
 about:
   home: http://jupyter.org
   license: BSD
+  license_file: COPYING.md
   summary: The reference implementation of the Jupyter Notebook format
   description: |
     nbformat contains the reference implementation of the Jupyter Notebook

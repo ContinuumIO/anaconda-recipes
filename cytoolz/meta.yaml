@@ -1,13 +1,16 @@
 package:
   name: cytoolz
-  version: 0.8.0
+  version: 0.8.2
 
 source:
-  fn: cytoolz-0.8.0.tar.gz
-  url: https://pypi.python.org/packages/a3/68/c7f07c9087ec7c0c18fc1a7c6e253f2d4fc7acdd01aac4138f3e68b1e132/cytoolz-0.8.0.tar.gz
-  md5: 432f0a17e04223942ebb5312d8f895ad
+  fn: cytoolz-0.8.2.tar.gz
+  url: https://pypi.python.org/packages/0f/e6/ccc124714dcc1bd511e64ddafb4d5d20ada2533b92e3173a4cf09e0d0831/cytoolz-0.8.2.tar.gz
+  md5: 06bd40dbb1257131094ca819054eb492
   patches:
     - setup.patch
+
+build:
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:
@@ -25,6 +28,7 @@ test:
 about:
   home: https://github.com/pytoolz/cytoolz
   license: BSD
+  license_file: LICENSE.txt
   summary: Cython implementation of Toolz, high performance functional utilities
   description: |
     CyToolz is the Cython implementation of the toolz package, which provides

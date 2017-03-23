@@ -1,11 +1,14 @@
 package:
   name: mercurial
-  version: 3.9.2
+  version: 4.1.1
 
 source:
-  fn: mercurial-3.9.2.tar.gz
-  url: https://pypi.python.org/packages/b4/b0/fc44b98d2af4738d4d94b7609b89fcca7dca8408154f9d30453428075b28/mercurial-3.9.2.tar.gz
-  md5: aff8bce557988d8f27028972d63dd132
+  fn: mercurial-4.1.1.tar.gz
+  url: https://pypi.python.org/packages/53/62/73cabfea5e36a5c8be371d540d8376f208f523dfe125d45f30e77965a206/mercurial-4.1.1.tar.gz
+  md5: 7ed649e02aab5d5e532b4fe1617a2a26
+
+build:
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:

@@ -1,0 +1,34 @@
+diff --git pip/__init__.py pip/__init__.py
+index 9c1d8f9..919ab1a 100755
+--- pip/__init__.py
++++ pip/__init__.py
+@@ -206,6 +206,20 @@ def check_isolated(args):
+     return isolated
+ 
+ 
++def ensure_easy_pth():
++    from distutils.sysconfig import get_python_lib
++
++    path = os.path.join(get_python_lib(), 'easy-install.pth')
++    if os.path.exists(path):
++        return
++
++    try:
++        with open(path, 'w') as fo:
++            fo.write('')
++    except OSError:
++        pass
++
++
+ def main(args=None):
+     if args is None:
+         args = sys.argv[1:]
+@@ -222,6 +236,8 @@ def main(args=None):
+         sys.stderr.write(os.linesep)
+         sys.exit(1)
+ 
++    ensure_easy_pth()
++
+     # Needed for locale.getpreferredencoding(False) to work
+     # in pip.utils.encoding.auto_decode
+     try:

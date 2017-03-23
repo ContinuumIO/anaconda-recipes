@@ -1,0 +1,36 @@
+--- Lib/distutils/cygwinccompiler.py
++++ Lib/distutils/cygwinccompiler.py
+@@ -129,11 +129,11 @@ class CygwinCCompiler (UnixCCompiler):
+ 
+         # Hard-code GCC because that's what this is all about.
+         # XXX optimization, warnings etc. should be customizable.
+-        self.set_executables(compiler='gcc -mcygwin -O -Wall',
+-                             compiler_so='gcc -mcygwin -mdll -O -Wall',
+-                             compiler_cxx='g++ -mcygwin -O -Wall',
+-                             linker_exe='gcc -mcygwin',
+-                             linker_so=('%s -mcygwin %s' %
++        self.set_executables(compiler='gcc @DMSW@ -Wall',
++                             compiler_so='gcc @DMSW@ -mdll -O -Wall',
++                             compiler_cxx='g++ @DMSW@ -O -Wall',
++                             linker_exe='gcc',
++                             linker_so=('%s %s' %
+                                         (self.linker_dll, shared_option)))
+ 
+         # cygwin and mingw32 need different sets of libraries
+@@ -319,11 +319,11 @@ class Mingw32CCompiler (CygwinCCompiler):
+         else:
+             entry_point = ''
+ 
+-        self.set_executables(compiler='gcc -mno-cygwin -O -Wall',
+-                             compiler_so='gcc -mno-cygwin -mdll -O -Wall',
+-                             compiler_cxx='g++ -mno-cygwin -O -Wall',
+-                             linker_exe='gcc -mno-cygwin',
+-                             linker_so='%s -mno-cygwin %s %s'
++        self.set_executables(compiler='gcc @DMSW@ -O -Wall',
++                             compiler_so='gcc @DMSW@ -mdll -O -Wall',
++                             compiler_cxx='g++ @DMSW@ -O -Wall',
++                             linker_exe='gcc @DMSW@',
++                             linker_so='%s @DMSW@ %s %s'
+                                         % (self.linker_dll, shared_option,
+                                            entry_point))
+         # Maybe we should also append -mthreads, but then the finished

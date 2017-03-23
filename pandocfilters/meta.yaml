@@ -1,0 +1,25 @@
+package:
+  name: pandocfilters
+  version: 1.4.1
+
+source:
+  fn: pandocfilters-1.4.1.tar.gz
+  url: https://pypi.python.org/packages/e3/1f/21d1b7e8ca571e80b796c758d361fdf5554335ff138158654684bc5401d8/pandocfilters-1.4.1.tar.gz
+  md5: 7680d9f9ec07397dd17f380ee3818b9d
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - pandocfilters
+
+about:
+  home: http://github.com/jgm/pandocfilters
+  license: BSD License
+  license_family: BSD
+  license_file: LICENSE
+  summary: utilities for writing pandoc filters in python

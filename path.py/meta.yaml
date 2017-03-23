@@ -1,18 +1,17 @@
 package:
   name: path.py
-  version: 8.2.1
+  version: 10.1
 
 source:
-  fn: path.py-8.2.1.tar.gz
-  url: https://pypi.python.org/packages/source/p/path.py/path.py-8.2.1.tar.gz
-  md5: 7334796c9ed6036cb89bcd30d8409f91
-  patches:
-    - setup.patch
+  fn: path.py-10.1.tar.gz
+  url: https://pypi.python.org/packages/5d/54/4b2301e48a5889de9d121f6232e1833f19513fb24a93c0cbdb919eeec1dd/path.py-10.1.tar.gz
+  md5: f9d31317ceeb798f6b5eac8d3b8e5988
 
 requirements:
   build:
     - python
     - setuptools
+    - setuptools_scm >=1.15.0
   run:
     - python
 
@@ -23,7 +22,7 @@ test:
 about:
   home: http://github.com/jaraco/path.py
   license: MIT
-  summary: Module wrapper for os.path
+  summary: module wrapper for os.path
   description: |
     path.py implements a path objects as first-class entities, allowing common
     operations on files to be invoked on those path objects directly.

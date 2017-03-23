@@ -1,11 +1,11 @@
 package:
   name: pysal
-  version: 1.12.0
+  version: 1.13.0
 
 source:
-  fn: PySAL-1.12.0.tar.gz
-  url: https://pypi.python.org/packages/76/62/28e5b147e8281ca376f0bd1ce827637bbb1a0440d4b545dd2b703a7b071b/PySAL-1.12.0.tar.gz
-  md5: e7dee9d3628fcc97aa0dd58dd8cdbc2e
+  fn: PySAL-1.13.0.tar.gz
+  url: https://pypi.python.org/packages/e7/3b/af87cd60f03734897caa6dc3e840fc10458d0a2c060b3d71803dc56992db/PySAL-1.13.0.tar.gz
+  md5: 39ce1b8f77c527a8f6a21c48ff65a5f0
 
 requirements:
   build:

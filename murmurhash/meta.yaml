@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/ff/53/1f428861e59c2382e22b8839d03cc315e1a7633a827497b3d389b8d8772d/murmurhash-0.26.4.tar.gz
   md5: b5eb24ec4f9225566855e268da8421f5
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

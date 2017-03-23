@@ -1,11 +1,11 @@
 package:
   name: decorator
-  version: 4.0.10
+  version: 4.0.11
 
 source:
-  fn: decorator-4.0.10.tar.gz
-  url: https://pypi.python.org/packages/13/8a/4eed41e338e8dcc13ca41c94b142d4d20c0de684ee5065523fee406ce76f/decorator-4.0.10.tar.gz
-  md5: 434b57fdc3230c500716c5aff8896100
+  fn: decorator-4.0.11.tar.gz
+  url: https://pypi.python.org/packages/cc/ac/5a16f1fc0506ff72fcc8fd4e858e3a1c231f224ab79bb7c4c9b2094cc570/decorator-4.0.11.tar.gz
+  md5: 73644c8f0bd4983d1b6a34b49adec0ae
 
 requirements:
   build:

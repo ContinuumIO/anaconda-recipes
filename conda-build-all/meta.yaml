@@ -1,0 +1,36 @@
+package:
+  name: conda-build-all
+  version: 1.0.2
+
+source:
+  git_url: https://github.com/SciTools/conda-build-all.git
+  git_tag: v1.0.2
+
+build:
+  entry_points:
+    - conda-build-all = conda_build_all.cli:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - gitpython
+    - conda >4
+    - conda-build >=1.21.7
+    - anaconda-client
+    - mock                       [py2k]
+
+test:
+  imports:
+    - conda_build_all
+  commands:
+    - conda-build-all --version
+
+about:
+  home: https://github.com/scitools/conda-build-all
+  license: BSD 3-clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: conda build-all is a conda subcommand providing matrix building

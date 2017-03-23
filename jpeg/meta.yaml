@@ -1,18 +1,32 @@
 package:
   name: jpeg
-  version: 8d
+  version: 9b
 
 source:
-  fn: jpegsrc.v8d1.tar.gz
-  url: http://jpegclub.org/support/files/jpegsrc.v8d1.tar.gz
-  md5: 964d0dc8b4789acd32ec1431ca85171d
+  fn: jpegsrc.v9b.tar.gz
+  url: http://www.ijg.org/files/jpegsrc.v9b.tar.gz
+  md5: 6a9996ce116ec5c52b4870dbcd6d3ddb
+  patches:
+    - CMakeLists.txt.patch   [win]
 
 build:
-  number: 2
   features:
-    - vc9           [win and py27]
-    - vc10          [win and py34]
-    - vc14          [win and py35]
+    - vc9                    [win and py27]
+    - vc10                   [win and py34]
+    - vc14                   [win and (py35 or py36)]
+
+requirements:
+  build:
+    - python                 [win]
+    - cmake                  [win]
+
+test:
+  requires:
+    - python                 [win]
+  files:
+    - testorig.jpg
+  commands:
+    - djpeg -dct int -ppm -outfile testout.ppm testorig.jpg
 
 about:
   home: http://www.ijg.org/

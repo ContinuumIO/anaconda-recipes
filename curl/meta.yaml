@@ -1,23 +1,21 @@
 package:
   name: curl
-  version: 7.49.0
+  version: 7.52.1
 
 source:
-  fn: curl-7.49.0.tar.gz
-  url: https://curl.haxx.se/download/curl-7.49.0.tar.gz
-  md5: a50a3b683d7a785e3035e5ce611160e2
+  fn: curl-7.52.1.tar.gz
+  url: https://curl.haxx.se/download/curl-7.52.1.tar.gz
+  md5: 4e1ef056e117b4d25f4ec42ac609c0d4
 
 build:
-  number: 1     [unix]
   detect_binary_files_with_prefix: True
   features:
     - vc9       [win and py27]
     - vc10      [win and py34]
-    - vc14      [win and py35]
+    - vc14      [win and (py35 or py36)]
 
 requirements:
   build:
-    - python          [win]
     - pkg-config      [unix]
     - openssl         [unix]
     - zlib

@@ -3,7 +3,8 @@ package:
   version: 0.11.14
 
 build:
-  number: 0
+  number: 1
+  detect_binary_files_with_prefix: False
   no_link: .*\.(pyd|dll)                       [win]
 
 source:
@@ -13,6 +14,7 @@ source:
 requirements:
   build:
     - python
+    - cio-bt
     - cython
     - yaml
   run:
@@ -20,11 +22,9 @@ requirements:
     - yaml 0.1.6                               [unix]
 
 test:
-  requires:
-    - pytest
   imports:
     - ruamel_yaml
-    - ruamel_yaml.ext._ruamel_yaml
+    - ruamel_yaml._ruamel_yaml
 
 about:
   home: https://bitbucket.org/ruamel/yaml

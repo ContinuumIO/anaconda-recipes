@@ -1,6 +1,6 @@
 package:
   name: ecos
-  version: "2.0.4"
+  version: 2.0.4
 
 source:
   fn: ecos-2.0.4.tar.gz
@@ -8,6 +8,9 @@ source:
   md5: 39cc4c4a5598cc51ca4dc9aec810f41a
   patches:
     - win.patch       [win]
+
+build:
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:

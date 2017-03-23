@@ -1,0 +1,26 @@
+package:
+  name: sortedcontainers
+  version: 1.5.7
+
+source:
+  fn: sortedcontainers-1.5.7.tar.gz
+  url: https://pypi.python.org/packages/8d/aa/5369362d730728639ba434318df26b5c554804578d1c48381367ea5377c6/sortedcontainers-1.5.7.tar.gz
+  md5: ad4f00e377ad934954ac90fcac0b185f
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - sortedcontainers
+
+about:
+  home: http://www.grantjenks.com/docs/sortedcontainers/
+  license: Apache 2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: 'sorted Container Types: SortedList, SortedDict, and SortedSet'

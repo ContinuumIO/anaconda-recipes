@@ -1,11 +1,11 @@
 package:
   name: ply
-  version: "3.9"
+  version: "3.10"
 
 source:
-  fn: ply-3.9.tar.gz
-  url: http://www.dabeaz.com/ply/ply-3.9.tar.gz
-  md5: c5c5767376eff902617fd9874f0c76b7
+  fn: ply-3.10.tar.gz
+  url: https://pypi.python.org/packages/ce/3d/1f9ca69192025046f02a02ffc61bfbac2731aab06325a218370fd93e18df/ply-3.10.tar.gz
+  md5: 1d63c166ab250bab87d8dcc42dcca70e
 
 requirements:
   build:
@@ -20,7 +20,7 @@ test:
 about:
   home: http://www.dabeaz.com/ply/
   license: BSD
-  summary: Implementation of Lex and Yacc
+  summary: implementation of Lex and Yacc
   description: |
     In a nutshell, PLY is nothing more than a straightforward lex/yacc
     implementation.

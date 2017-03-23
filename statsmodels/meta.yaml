@@ -1,14 +1,15 @@
 package:
   name: statsmodels
-  version: 0.6.1
+  version: 0.8.0
 
 source:
-  fn: statsmodels-0.6.1.tar.gz
-  url: https://pypi.python.org/packages/source/s/statsmodels/statsmodels-0.6.1.tar.gz
-  md5: f7580ebf7d2a2c9b87abfad190dcb9a3
+  fn: statsmodels-0.8.0.tar.gz
+  url: https://pypi.python.org/packages/72/16/d7e7a70fc8ca3cc0d783a66e902a7adf80a810695c357cd48bb22c82451a/statsmodels-0.8.0.tar.gz
+  md5: b3e5911cc9b00b71228d5d39a880bba0
 
 build:
-  number: 1
+  number: 0
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:
@@ -29,9 +30,6 @@ requirements:
 test:
   imports:
     - statsmodels
-    - statsmodels.nonparametric._smoothers_lowess
-    - statsmodels.nonparametric.linbin
-    - statsmodels.tsa.kalmanf.kalman_loglike
 
 about:
   home: http://statsmodels.sourceforge.net/

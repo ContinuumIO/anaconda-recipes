@@ -10,21 +10,26 @@ source:
     - subpixel.patch
 
 build:
-  number: 1
+  number: 2
   features:
     - vc9     [win and py27]
     - vc10    [win and py34]
-    - vc14    [win and py35]
+    - vc14    [win and (py35 or py36)]
 
 requirements:
   build:
+    - python  [win]
     - cmake
     - zlib 1.2.*
-    - libpng 1.6.*
+    - libpng >=1.6.27,<1.7
     - bzip2 1.0.6
   run:
     - zlib 1.2.*
-    - libpng 1.6.*
+    - libpng >=1.6.27,<1.7
+
+test:
+  commands:
+    - freetype-config --ftversion        [unix]
 
 about:
   home: http://freetype.sourceforge.net/index2.html

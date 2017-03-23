@@ -1,11 +1,11 @@
 package:
   name: zict
-  version: 0.1.0
+  version: 0.1.1
 
 source:
-  fn: zict-0.1.0.tar.gz
-  url: https://pypi.python.org/packages/3c/14/3048c27d14174fac6add3ea1692c8377d0dfc71b325140c5c2db4e0758a9/zict-0.1.0.tar.gz
-  md5: 5936d57d9507e8616afcb9d1814dc6ca
+  fn: zict-0.1.1.tar.gz
+  url: https://pypi.python.org/packages/72/fe/3f35cd6dcc48356d25c4fcdc72772f7bd8777d7d74b755ee4fff6e55fdc4/zict-0.1.1.tar.gz
+  md5: 913525b1020b1be24eeb2737956c0fe6
 
 requirements:
   build:

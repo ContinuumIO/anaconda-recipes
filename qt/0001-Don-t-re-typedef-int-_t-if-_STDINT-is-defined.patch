@@ -1,4 +1,4 @@
-From e2ba7d7ecd72c4f3aea706482b96befa30253404 Mon Sep 17 00:00:00 2001
+From 24e1f6d28ac7c7b7dd948e3a9a2c7948427ffbbf Mon Sep 17 00:00:00 2001
 From: Ray Donnelly <mingw.android@gmail.com>
 Date: Wed, 1 Jun 2016 13:11:07 +0100
 Subject: [PATCH] Don't re-typedef ?int??_t if _STDINT is defined
@@ -11,7 +11,7 @@ Change-Id: Icfd220bfcddfa644923a720ada8d0b8a95d1c0c1
  src/3rdparty/assimp/include/assimp/Compiler/pstdint.h | 16 ++++++++++------
  1 file changed, 10 insertions(+), 6 deletions(-)
 
-diff --git a/src/3rdparty/assimp/include/assimp/Compiler/pstdint.h b/src/3rdparty/assimp/include/assimp/Compiler/pstdint.h
+diff --git qt3d/src/3rdparty/assimp/include/assimp/Compiler/pstdint.h qt3d/src/3rdparty/assimp/include/assimp/Compiler/pstdint.h
 index 5bc322f..dc5f9a2 100644
 --- qt3d/src/3rdparty/assimp/include/assimp/Compiler/pstdint.h
 +++ qt3d/src/3rdparty/assimp/include/assimp/Compiler/pstdint.h
@@ -80,5 +80,5 @@ index 5bc322f..dc5f9a2 100644
  #endif
  
 -- 
-2.8.2
+2.10.2
 

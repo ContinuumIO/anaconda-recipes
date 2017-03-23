@@ -1,17 +1,21 @@
 package:
   name: pandas
-  version: 0.19.1
+  version: 0.19.2
 
 source:
   git_url: https://github.com/pydata/pandas.git
-  git_tag: v0.19.1
+  git_tag: v0.19.2
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:
     - python
     - setuptools
     - numpy x.x
-    - cython
+    - cython >=0.25
     - python-dateutil
     - pytz
   run:

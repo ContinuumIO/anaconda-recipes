@@ -8,6 +8,9 @@ source:
   patches:
     - osx-geos.patch        [osx]
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

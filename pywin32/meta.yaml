@@ -8,9 +8,12 @@ source:
   sha256: 5f93adefdc1ab1da5ef23e832098c0decd65709f09b35f6343dfa378e2ede1cf
   patches:
     - scintilla_makefiles.patch
+    - ucrt-compatibility-fixes.patch
+    - ucrt-compatibility-fixes-shell.patch
+    - fix-mapi-compile-errors.patch
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:

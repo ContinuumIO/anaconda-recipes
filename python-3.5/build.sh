@@ -63,10 +63,6 @@ if [ `uname` == Darwin ]; then
     popd
 fi
 
-replace '-Werror=declaration-after-statement' '' \
-    $PREFIX/lib/python3.5/_sysconfigdata.py \
-    $PREFIX/lib/python3.5/config-3.5m/Makefile
-
 if [ `uname -m` == ppc64le ]; then
     cp $HOME/py35/readline.so $DYNLOAD_DIR/
 fi

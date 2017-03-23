@@ -1,0 +1,26 @@
+package:
+  name: libhs2client
+  version: 0.1
+
+source:
+  git_url: https://github.com/cloudera/hs2client
+  git_tag: 6794ba1
+
+requirements:
+  build:
+    - gcc 4.8.5
+    - cmake
+    - boost
+    - gtest
+    - libthrift
+
+test:
+  commands:
+    - test -f $PREFIX/lib/libhs2client.so     [linux]
+    - test -f $PREFIX/include/hs2client/api.h
+
+about:
+  home: http://github.com/cloudera/hs2client
+  license: Apache 2.0
+  license_family: Apache
+  summary: libraries for the hs2client, C++ HiveServer2 Thrift client

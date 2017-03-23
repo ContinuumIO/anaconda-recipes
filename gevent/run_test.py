@@ -1,3 +1,7 @@
+import sys
+
 import gevent._semaphore
-import gevent.ares
-import gevent.corecext
+import gevent.libev.corecext
+
+if sys.platform != 'win32':
+    import gevent.ares

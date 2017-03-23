@@ -1,11 +1,11 @@
 package:
   name: requests-file
-  version: 1.4
+  version: 1.4.1
 
 source:
-  fn: requests-file-1.4.tar.gz
-  url: https://pypi.python.org/packages/source/r/requests-file/requests-file-1.4.tar.gz
-  md5: fe475905d26986ee5fe77d9bcae3efcb
+  fn: requests-file-1.4.1.tar.gz
+  url: https://pypi.python.org/packages/d4/6a/3503eaf7b8c8b85fc07485234d914fd264b5e81bbb0c6bdf591ccb09972b/requests-file-1.4.1.tar.gz
+  md5: 8888bd39909cecb74d0fb9391195ffda
 
 requirements:
   build:

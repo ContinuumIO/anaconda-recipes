@@ -1,11 +1,11 @@
 package:
   name: partd
-  version: 0.3.6
+  version: 0.3.7
 
 source:
-  fn: partd-0.3.6.tar.gz
-  url: https://pypi.python.org/packages/68/41/f28699a7b91aac85a1d0e013a97788175088fab936cd67f265edec92e853/partd-0.3.6.tar.gz
-  md5: 4fe19796e22c85f7917e40f618f349fb
+  fn: partd-0.3.7.tar.gz
+  url: https://pypi.python.org/packages/1f/7e/43af21a5b399288946607ffecf412fd6fc7a354842b460eaefc28fd3f043/partd-0.3.7.tar.gz
+  md5: 7065f9ba12ba67463d16b2fde753a702
 
 requirements:
   build:

@@ -113,9 +113,9 @@ Then,
 #### OSX:
 
 Use a OSX VM with the following specifications: 
-  * Version 10.7.5
-  * gcc 4.2.1
-  * GNU Fortran (GCC) 4.2.3
+  * Version 10.9.5
+  * gcc 4.2.1 (LLVM version 6.0, clang-600.0.57)
+  * GNU Fortran (GCC) 4.2.3 (installed via homebrew)
 
 Then, 
  * Run “conda install mercurial”

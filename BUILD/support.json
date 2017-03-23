@@ -1,7 +1,6 @@
 {
   "affine": "all", 
   "alabaster": "all", 
-  "anaconda-build": "all", 
   "anaconda-clean": "all", 
   "anaconda-client": "all", 
   "anaconda-verify": "all", 
@@ -15,6 +14,7 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "apptools": "all", 
   "apr": "all", 
   "argcomplete": "all", 
   "astroid": "all", 
@@ -25,6 +25,19 @@
     "win-64:py27"
   ], 
   "attrs": "all", 
+  "autoconf": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
+  "automake": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
+  "automat": "all", 
   "azure": "all", 
   "babel": "all", 
   "backports": "all", 
@@ -46,6 +59,7 @@
   "biopython": "all", 
   "bitarray": "all", 
   "blaze": "all", 
+  "bleach": "all", 
   "blist": "all", 
   "bokeh": "all", 
   "boost": "all", 
@@ -61,12 +75,13 @@
   "bsdiff4": "all", 
   "btrees": "all", 
   "bz2file": "all", 
-  "bzip2": [
-    "win-64:py27", 
-    "win-64:py35"
-  ], 
+  "bzip2": "all", 
   "cachecontrol": "all", 
   "cached-property": "all", 
+  "caffe": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "cairo": [
     "linux-64:py27", 
     "linux-64:py35"
@@ -111,13 +126,14 @@
   ], 
   "colander": "all", 
   "colorama": "all", 
+  "colorcet": "all", 
   "comtypes": [
     "win-64:py27", 
     "win-64:py35"
   ], 
   "conda": "all", 
-  "conda-api": "all", 
   "conda-build": "all", 
+  "conda-build-all": "all", 
   "conda-env": "all", 
   "conda-verify": "all", 
   "configargparse": "all", 
@@ -178,13 +194,6 @@
   "dnspython": "all", 
   "docopt": "all", 
   "docutils": "all", 
-  "dynd-python": [
-    "linux-64:py27", 
-    "linux-64:py35", 
-    "osx-64:py27", 
-    "osx-64:py35", 
-    "win-64:py35"
-  ], 
   "ecdsa": "all", 
   "ecos": "all", 
   "entrypoints": "all", 
@@ -193,6 +202,7 @@
     "osx-64:py27", 
     "win-64:py27"
   ], 
+  "envisage": "all", 
   "ephem": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -295,8 +305,18 @@
     "osx-64:py27", 
     "win-64:py27"
   ], 
+  "gflags": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "git": "all", 
+  "gitdb2": "all", 
+  "gitpython": "all", 
   "glib": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
+  "glog": [
     "linux-64:py27", 
     "linux-64:py35"
   ], 
@@ -344,6 +364,10 @@
   ], 
   "heapdict": "all", 
   "holoviews": "all", 
+  "hs2client": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "html5lib": "all", 
   "hyde": [
     "linux-64:py27", 
@@ -369,6 +393,7 @@
   "ipython_genutils": "all", 
   "ipywidgets": "all", 
   "iso8601": "all", 
+  "isort": "all", 
   "itsdangerous": "all", 
   "javabridge": "all", 
   "jbig": [
@@ -408,13 +433,16 @@
   "lancet": "all", 
   "lazy-object-proxy": "all", 
   "ldap3": "all", 
+  "leveldb": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "libconda": "all", 
-  "libdynd": [
+  "libevent": [
     "linux-64:py27", 
     "linux-64:py35", 
     "osx-64:py27", 
-    "osx-64:py35", 
-    "win-64:py35"
+    "osx-64:py35"
   ], 
   "libffi": [
     "linux-64:py27", 
@@ -442,6 +470,16 @@
   "libhdfs3": [
     "linux-64:py27", 
     "linux-64:py35"
+  ], 
+  "libhs2client": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
+  "libiconv": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
   ], 
   "libnetcdf": "all", 
   "libntlm": [
@@ -494,17 +532,15 @@
   ], 
   "line_profiler": "all", 
   "llvmlite": "all", 
+  "lmdb": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "locket": "all", 
   "lockfile": "all", 
   "luigi": "all", 
   "lxml": "all", 
-  "lz4": [
-    "linux-64:py27", 
-    "linux-64:py35", 
-    "osx-64:py27", 
-    "osx-64:py35", 
-    "win-64:py35"
-  ], 
+  "lz4": "all", 
   "m4": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -515,8 +551,12 @@
   "markdown": "all", 
   "markdown2": "all", 
   "markupsafe": "all", 
-  "mathjax": "all", 
   "matplotlib": "all", 
+  "mayavi": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
   "mccabe": "all", 
   "mdp": "all", 
   "meld3": "all", 
@@ -567,6 +607,12 @@
   "natsort": "all", 
   "nbconvert": "all", 
   "nbformat": "all", 
+  "ncurses": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "ndg-httpsclient": [
     "linux-64:py27", 
     "osx-64:py27", 
@@ -592,7 +638,12 @@
   "numpy": "all", 
   "numpydoc": "all", 
   "odo": "all", 
+  "olefile": "all", 
   "openblas": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
+  "opencv": [
     "linux-64:py27", 
     "linux-64:py35"
   ], 
@@ -605,6 +656,7 @@
   "pandas": "all", 
   "pandas-datareader": "all", 
   "pandasql": "all", 
+  "pandocfilters": "all", 
   "pango": [
     "linux-64:py27", 
     "linux-64:py35"
@@ -720,13 +772,19 @@
   "pycairo": [
     "linux-64:py27"
   ], 
+  "pycodestyle": "all", 
   "pycosat": "all", 
   "pycparser": "all", 
   "pycrypto": "all", 
   "pycurl": "all", 
   "pydispatcher": "all", 
+  "pyface": "all", 
   "pyflakes": "all", 
   "pygments": "all", 
+  "pyhive": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "pykerberos": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -762,6 +820,7 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "pysocks": "all", 
   "pystan": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -785,6 +844,14 @@
   "python-gdbm": [
     "linux-64:py27", 
     "osx-64:py27"
+  ], 
+  "python-gflags": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
+  "python-leveldb": [
+    "linux-64:py27", 
+    "linux-64:py35"
   ], 
   "python-ntlm": [
     "linux-64:py27", 
@@ -847,6 +914,7 @@
   "s3fs": "all", 
   "s3transfer": "all", 
   "sas7bdat": "all", 
+  "scandir": "all", 
   "scikit-bio": [
     "linux-64:py35", 
     "osx-64:py35"
@@ -886,6 +954,7 @@
   "sip": "all", 
   "six": "all", 
   "smart_open": "all", 
+  "smmap2": "all", 
   "snakebite": [
     "linux-64:py27"
   ], 
@@ -899,6 +968,8 @@
   "snowballstemmer": "all", 
   "snuggs": "all", 
   "sockjs-tornado": "all", 
+  "sortedcollections": "all", 
+  "sortedcontainers": "all", 
   "spacy": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -906,6 +977,7 @@
     "osx-64:py35"
   ], 
   "sphinx": "all", 
+  "sphinx_rtd_theme": "all", 
   "sputnik": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -928,6 +1000,11 @@
   ], 
   "statsmodels": "all", 
   "stripe": "all", 
+  "subprocess32": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
   "suds-jurko": "all", 
   "supervisor": [
     "linux-64:py27", 
@@ -949,6 +1026,7 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "testpath": "all", 
   "thinc": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -958,7 +1036,10 @@
   "tk": "all", 
   "toolz": "all", 
   "tornado": "all", 
+  "tqdm": "all", 
   "traitlets": "all", 
+  "traits": "all", 
+  "traitsui": "all", 
   "transaction": "all", 
   "translationstring": "all", 
   "trollius": "all", 
@@ -968,7 +1049,9 @@
   "unidecode": "all", 
   "unixodbc": [
     "linux-64:py27", 
-    "linux-64:py35"
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
   ], 
   "unxutils": [
     "win-64:py27", 
@@ -1013,6 +1096,10 @@
   ], 
   "whoosh": "all", 
   "widgetsnbextension": "all", 
+  "win_inet_pton": [
+    "win-64:py27", 
+    "win-64:py35"
+  ], 
   "win_unicode_console": [
     "win-64:py27", 
     "win-64:py35"

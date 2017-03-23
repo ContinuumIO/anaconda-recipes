@@ -1,11 +1,11 @@
 package:
   name: dask
-  version: 0.12.0
+  version: 0.14.1
 
 source:
-  fn: dask-0.12.0.tar.gz
-  url: https://pypi.python.org/packages/46/3e/d55cfe683faebe1464f182d4bacd36a496e5a53aa857794778d2c7a012dd/dask-0.12.0.tar.gz
-  md5: c1660845ae12449837d9bce9758933a9
+  fn: dask-0.14.1.tar.gz
+  url: https://pypi.python.org/packages/0b/ed/4a448ee2d13e92a995b84e7a06acb55050b6843d8749835b5f3bab467d3d/dask-0.14.1.tar.gz
+  md5: 07d8a0e026f8e82a4d640878927c93cb
 
 requirements:
   build:
@@ -17,9 +17,10 @@ requirements:
     - chest
     - cloudpickle >=0.2.1
     - numpy
-    - pandas >=0.18.0
-    - partd >=0.3.6
+    - pandas >=0.19.0
+    - partd >=0.3.7
     - toolz >=0.7.2
+#    - python-graphviz
 
 test:
   imports:

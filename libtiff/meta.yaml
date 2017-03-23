@@ -10,21 +10,23 @@ source:
     - def_snprintf.patch
 
 build:
-  number: 2
+  number: 3
+  detect_binary_files_with_prefix: False
   features:
     - vc9         [win and py27]
     - vc10        [win and py34]
-    - vc14        [win and py35]
+    - vc14        [win and (py35 or py36)]
 
 requirements:
   build:
+    - python      [win]
     - zlib 1.2.*
-    - jpeg 8d
+    - jpeg 9b
     - xz 5.2.*    [not win]
     - jbig 2.1    [not win]
   run:
     - zlib 1.2.*
-    - jpeg 8d
+    - jpeg 9*
     - xz 5.2.*    [not win]
     - jbig 2.1    [not win]
 

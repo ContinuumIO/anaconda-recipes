@@ -8,6 +8,7 @@ source:
   md5: 579c3480334625b4495ba53310714394
 
 build:
+  detect_binary_files_with_prefix: False
   entry_points:
     - rio = rasterio.rio.main:main_group
 

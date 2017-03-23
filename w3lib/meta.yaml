@@ -1,11 +1,11 @@
 package:
   name: w3lib
-  version: 1.16.0
+  version: 1.17.0
 
 source:
-  fn: w3lib-1.16.0.tar.gz
-  url: https://pypi.python.org/packages/c8/4d/47d96235c171e456e711c0e5f14eb836e3215b838b064c1f2e5d336a7ca5/w3lib-1.16.0.tar.gz
-  md5: 09be7841a9f5c651bc9e759bed7c7dc5
+  fn: w3lib-1.17.0.tar.gz
+  url: https://pypi.python.org/packages/ac/b6/91ae356d48dd1d48732967eb79b2e41be4b2493b4e43a89be57b1f3be37d/w3lib-1.17.0.tar.gz
+  md5: 03f4d6160208c547e4c31a63486b9516
 
 requirements:
   build:

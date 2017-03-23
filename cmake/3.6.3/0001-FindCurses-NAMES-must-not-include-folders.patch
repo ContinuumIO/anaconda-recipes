@@ -1,0 +1,37 @@
+From 0773d9624ca32180ad20597a822a3010e224699a Mon Sep 17 00:00:00 2001
+From: Ray Donnelly <mingw.android@gmail.com>
+Date: Wed, 26 Oct 2016 22:06:23 +0100
+Subject: [PATCH 1/2] FindCurses: NAMES must not include folders
+
+As the folder prefix is not stored in VAR
+---
+ Modules/FindCurses.cmake | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/Modules/FindCurses.cmake b/Modules/FindCurses.cmake
+index e236c24..d38b295 100644
+--- a/Modules/FindCurses.cmake
++++ b/Modules/FindCurses.cmake
+@@ -107,15 +107,15 @@ if(CURSES_USE_NCURSES)
+   # Use CURSES_NCURSES_INCLUDE_PATH if set, for compatibility.
+   if(CURSES_NCURSES_INCLUDE_PATH)
+     find_path(CURSES_INCLUDE_PATH
+-      NAMES ncurses/ncurses.h ncurses/curses.h ncurses.h curses.h
+-      PATHS ${CURSES_NCURSES_INCLUDE_PATH}
++      NAMES ncurses.h curses.h
++      PATHS "${CURSES_NCURSES_INCLUDE_PATH}" "${CURSES_NCURSES_INCLUDE_PATH}/ncurses"
+       NO_DEFAULT_PATH
+       )
+   endif()
+ 
+   find_path(CURSES_INCLUDE_PATH
+-    NAMES ncurses/ncurses.h ncurses/curses.h ncurses.h curses.h
+-    HINTS "${_cursesParentDir}/include"
++    NAMES ncurses.h curses.h
++    HINTS "${_cursesParentDir}/include" "${CMAKE_PREFIX_PATH}/include/ncurses"
+     )
+ 
+   # Previous versions of FindCurses provided these values.
+-- 
+2.10.0
+

@@ -1,11 +1,11 @@
 package:
   name: notebook
-  version: 4.2.3
+  version: 4.4.1
 
 source:
-  fn: notebook-4.2.3.tar.gz
-  url: https://pypi.python.org/packages/81/a1/20af1a3ea6090343b029d31f882c7e4c061133e0c25808835b1b59a187f8/notebook-4.2.3.tar.gz
-  md5: c3501e6edaacd957ec651db016a4ce13
+  fn: notebook-4.4.1.tar.gz
+  url: https://pypi.python.org/packages/07/67/4a75b35955bbbfac23f104d409235e77f771f84c4643053da773bebfd6b3/notebook-4.4.1.tar.gz
+  md5: 3f9074031258de895f12102379394dcd
 
 build:
   entry_points:
@@ -27,7 +27,7 @@ requirements:
     - nbformat
     - nbconvert
     - ipykernel
-    - terminado          [unix]
+    - terminado >=0.3.3         [unix]
 
 app:
   entry: jupyter-notebook                         [not osx]
@@ -52,6 +52,7 @@ test:
 about:
   home: http://jupyter.org
   license: BSD
+  license_file: COPYING.md
   summary: web-based notebook environment for interactive computing
   description: |
     The Jupyter Notebook is a web application that allows you to create and

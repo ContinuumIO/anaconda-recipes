@@ -3,18 +3,20 @@
 
 package:
   name: lxml
-  version: 3.6.4
+  version: 3.7.3
 
 source:
-  fn: lxml-3.6.4.tar.gz                               [unix]
-  url: https://pypi.python.org/packages/4f/3f/cf6daac551fc36cddafa1a71ed48ea5fd642e5feabd3a0d83b8c3dfd0cb4/lxml-3.6.4.tar.gz          [unix]
-  md5: 6dd7314233029d9dab0156e7b1c7830b               [unix]
-  fn: lxml-3.6.4-cp27-cp27m-win32.whl                 [win32 and py27]
-  fn: lxml-3.6.4-cp27-cp27m-win_amd64.whl             [win64 and py27]
-  fn: lxml-3.6.4-cp34-cp34m-win32.whl                 [win32 and py34]
-  fn: lxml-3.6.4-cp34-cp34m-win_amd64.whl             [win64 and py34]
-  fn: lxml-3.6.4-cp35-cp35m-win32.whl                 [win32 and py35]
-  fn: lxml-3.6.4-cp35-cp35m-win_amd64.whl             [win64 and py35]
+  fn: lxml-3.7.3.tar.gz                              [unix]
+  url: https://pypi.python.org/packages/39/e8/a8e0b1fa65dd021d48fe21464f71783655f39a41f218293c1c590d54eb82/lxml-3.7.3.tar.gz        [unix]
+  md5: 075692ce442e69bbd604d44e21c02753              [unix]
+  fn: lxml-3.7.3-cp27-cp27m-win32.whl                [win32 and py27]
+  fn: lxml-3.7.3-cp27-cp27m-win_amd64.whl            [win64 and py27]
+  fn: lxml-3.7.3-cp34-cp34m-win32.whl                [win32 and py34]
+  fn: lxml-3.7.3-cp34-cp34m-win_amd64.whl            [win64 and py34]
+  fn: lxml-3.7.3-cp35-cp35m-win32.whl                [win32 and py35]
+  fn: lxml-3.7.3-cp35-cp35m-win_amd64.whl            [win64 and py35]
+  fn: lxml-3.7.3-cp36-cp36m-win32.whl                [win32 and py36]
+  fn: lxml-3.7.3-cp36-cp36m-win_amd64.whl            [win64 and py36]
 
 requirements:
   build:

@@ -1,0 +1,37 @@
+package:
+  name: hs2client
+  version: 0.1
+
+source:
+  git_url: https://github.com/cloudera/hs2client
+  git_tag: 6794ba1
+
+build:
+  detect_binary_files_with_prefix: False
+
+requirements:
+  build:
+    - python
+    - gcc 4.8.5
+    - libhs2client 0.1
+    - setuptools
+    - cython
+    - numpy
+    - pandas >=0.17.0
+  run:
+    - python
+    - libhs2client 0.1
+    - numpy
+    - pandas >=0.17.0
+    - six
+
+test:
+  imports:
+    - hs2client
+    - hs2client.ext
+
+about:
+  home: http://github.com/cloudera/hs2client
+  license: Apache 2.0
+  license_family: Apache
+  summary: Python bindings for the libhs2client C++ library

@@ -2,7 +2,7 @@ diff --git Modules/readline.c Modules/readline.c
 index 06ae7c6..3633c34 100644
 --- Modules/readline.c
 +++ Modules/readline.c
-@@ -614,8 +614,6 @@ PyDoc_STRVAR(doc_get_line_buffer,
+@@ -615,8 +615,6 @@ PyDoc_STRVAR(doc_get_line_buffer,
  return the current contents of the line buffer.");
  
  
@@ -11,7 +11,7 @@ index 06ae7c6..3633c34 100644
  /* Exported function to clear the current history */
  
  static PyObject *
-@@ -628,7 +626,6 @@ py_clear_history(PyObject *self, PyObject *noarg)
+@@ -629,7 +629,6 @@ py_clear_history(PyObject *self, PyObject *noarg)
  PyDoc_STRVAR(doc_clear_history,
  "clear_history() -> None\n\
  Clear the current readline history.");
@@ -19,7 +19,7 @@ index 06ae7c6..3633c34 100644
  
  
  /* Exported function to insert text into the line buffer */
-@@ -707,9 +704,7 @@ static struct PyMethodDef readline_methods[] =
+@@ -708,9 +708,7 @@ static struct PyMethodDef readline_methods[] =
      {"set_pre_input_hook", set_pre_input_hook,
       METH_VARARGS, doc_set_pre_input_hook},
  #endif

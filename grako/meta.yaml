@@ -8,6 +8,7 @@ source:
   md5: cfdffa30d0a84ad6f43749c2b3c1c03c
 
 build:
+  detect_binary_files_with_prefix: False
   entry_points:
     - grako = grako:main
 

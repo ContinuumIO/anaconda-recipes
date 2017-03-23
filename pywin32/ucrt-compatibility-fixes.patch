@@ -1,0 +1,106 @@
+diff -urN pywin32-220.orig/com/win32comext/axdebug/src/stdafx.h pywin32-220/com/win32comext/axdebug/src/stdafx.h
+--- pywin32-220.orig/com/win32comext/axdebug/src/stdafx.h	2017-01-13 10:15:40.301078900 -0600
++++ pywin32-220/com/win32comext/axdebug/src/stdafx.h	2017-01-13 12:50:15.725453700 -0600
+@@ -20,13 +20,13 @@
+ typedef BSTR UserBSTR;
+ #endif
+ 
+-#ifdef HAVE_SDK_ACTIVDBG
++#if (_MSC_VER >= 1600) || defined(HAVE_SDK_ACTIVDBG)
+ #include <activdbg.h>
+ #else
+ #include "activdbg.h"
+ #endif
+ 
+-#if defined(__REQUIRED_RPCNDR_H_VERSION__)
++#if defined(__REQUIRED_RPCNDR_H_VERSION__) && !WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)
+ // for some strange reason, these no longer exist in dbgprop.h !?!?
+ enum __MIDL___MIDL_itf_dbgprop_0000_0001
+     {	DBGPROP_ATTRIB_NO_ATTRIB	= 0,
+@@ -60,6 +60,9 @@
+     };
+ typedef DWORD DBGPROP_INFO_FLAGS;
+ 
++#endif
++
++#if defined(__REQUIRED_RPCNDR_H_VERSION__)
+ enum {
+    EX_DBGPROP_INFO_ID  =0x0100,
+    EX_DBGPROP_INFO_NTYPE  =0x0200,
+diff -urN pywin32-220.orig/setup.py pywin32-220/setup.py
+--- pywin32-220.orig/setup.py	2017-01-13 10:15:43.348417600 -0600
++++ pywin32-220/setup.py	2017-01-13 11:38:47.403013000 -0600
+@@ -229,7 +229,9 @@
+ # to prevent the extension from loading.  For more details, see
+ # http://bugs.python.org/issue7833 - that issue has a patch, but it is
+ # languishing and will probably never be fixed for Python 2.6...
+-if sys.version_info > (2,6):
++manifests_removed_via_hack = 0
++if sys.version_info > (2,6) and sys.version_info < (3,5):
++    manifests_removed_via_hack = 1
+     from distutils.spawn import spawn
+     from distutils.msvc9compiler import MSVCCompiler
+     MSVCCompiler._orig_spawn = MSVCCompiler.spawn
+@@ -300,7 +302,12 @@
+     MSVCCompiler.link = monkeypatched_link
+ 
+ 
+-sdk_dir = find_platform_sdk_dir()
++# normpath because if sdk_dir ends in a \ (which for some versions of the Windows SDK it will, we
++# end up with broken compiler flags because '\\"' becomes an escaped " rather than a string delim
++# An error message you might get in this case is:
++# cl : Command line warning D9024 : unrecognized source file type 'Files\\Microsoft', object file assumed
++# cl : Command line warning D9027 : source file 'Files\\Microsoft' ignored
++sdk_dir = os.path.normpath(find_platform_sdk_dir())
+ 
+ class WinExt (Extension):
+     # Base class for all win32 extensions, with some predefined
+@@ -1452,11 +1459,20 @@
+     return orig_new_compiler(**kw)
+ 
+ # No way to cleanly wedge our compiler sub-class in.
+-from distutils import ccompiler, msvccompiler
++from distutils import ccompiler
+ orig_new_compiler = ccompiler.new_compiler
+ ccompiler.new_compiler = my_new_compiler
+ 
+-base_compiler = msvccompiler.MSVCCompiler
++# Try the Python 3.5 version first as you need to use that to build UCRT-compatible
++# modules, otherwise you need to provide the user with the exact UCRT that you built
++# with. Also, sdk_dir is just plain wrong.  vcvars.bat is where INCLUDES and LIBRARY
++# are set and not the random registry key that this script decided to look at first.
++try:
++    from distutils import _msvccompiler as vccompiler
++except:
++    from distutils import msvccompiler as vccompiler
++base_compiler = vccompiler.MSVCCompiler
++sdk_dir = ''
+
+ class my_compiler(base_compiler):
+     # Just one GUIDS.CPP and it gives trouble on mainwin too. Maybe I
+@@ -1476,7 +1492,7 @@
+               runtime_library_dirs=None,
+               export_symbols=None,
+               debug=0, *args, **kw):
+-        msvccompiler.MSVCCompiler.link( self,
++        vccompiler.MSVCCompiler.link(   self,
+                                         target_desc,
+                                         objects,
+                                         output_filename,
+@@ -1710,7 +1726,7 @@
+                """.split(),
+            libraries="gdi32 user32 comdlg32 comctl32 shell32",
+            windows_h_version=0x0500,
+-           define_macros = [("WIN32GUI",None), ("WINXPGUI",None)],
++           define_macros = [("WIN32GUI",None), ("WINXPGUI",None), ("MANIFESTS_HACKED",manifests_removed_via_hack)],
+            extra_swig_commands=["-DWINXPGUI"],
+         ),
+     # winxptheme
+diff -urN pywin32-220.orig/win32/src/winxpgui.rc pywin32-220/win32/src/winxpgui.rc
+--- pywin32-220.orig/win32/src/winxpgui.rc	2017-01-13 10:15:44.004093800 -0600
++++ pywin32-220/win32/src/winxpgui.rc	2017-01-13 11:14:50.403200300 -0600
+@@ -1,2 +1,4 @@
+ #include "windows.h"
++#if (MANIFESTS_HACKED == 1)
+ ISOLATIONAWARE_MANIFEST_RESOURCE_ID RT_MANIFEST "winxpgui.manifest"
++#endif

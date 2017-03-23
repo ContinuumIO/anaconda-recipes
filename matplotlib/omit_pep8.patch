@@ -8,7 +8,7 @@ index 5c749ba..af52e5b 100644
  This is an object-oriented plotting library.
  
  A procedural interface is provided by the companion pyplot module,
-@@ -1435,7 +1435,6 @@ default_test_modules = [
+@@ -1486,7 +1486,6 @@ default_test_modules = [
      'matplotlib.tests.test_basic',
      'matplotlib.tests.test_bbox_tight',
      'matplotlib.tests.test_cbook',

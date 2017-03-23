@@ -10,6 +10,10 @@ source:
   url:  http://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.6/PyQt5_gpl-5.6.tar.gz   [unix]
   sha1: 8920e4094470ff93f79e257c37c46f5cd0bff7ab  [unix]
 
+build:
+  number: 1          [osx]
+  number: 2          [linux or win]
+
 requirements:
   build:
     - gcc    [linux]

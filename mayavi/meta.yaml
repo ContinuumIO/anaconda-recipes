@@ -1,0 +1,49 @@
+package:
+  name: mayavi
+  version: 4.5.0
+
+source:
+  git_url: https://github.com/enthought/mayavi.git
+  git_tag: 4.5.0
+
+build:
+  entry_points:
+    - mayavi2 = mayavi.scripts.mayavi2:main
+    - tvtk_doc = tvtk.tools.tvtk_doc:main
+  osx_is_app: True
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy
+    - vtk 6.3.0
+    - traitsui
+    - apptools
+  run:
+    - python
+    - python.app             [osx]
+    - numpy
+    - vtk 6.3.0
+    - traitsui >=5.1
+    - apptools >=4.4
+    - envisage >=4.5
+    - pyqt 4.*
+
+test:
+  commands:
+    - mayavi2 --help
+  imports:
+    - tvtk
+    - tvtk.array_ext
+    - mayavi
+
+about:
+  home: https://github.com/enthought/mayavi
+  license: BSD
+  license_file: LICENSE.txt
+  summary: The Mayavi scientific data 3-dimensional visualizers
+  description: |
+    MayaVi2 seeks to provide easy and interactive visualization of 3D data.
+  doc_url: http://docs.enthought.com/mayavi/mayavi/
+  dev_url: https://github.com/enthought/mayavi

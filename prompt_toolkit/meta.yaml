@@ -1,11 +1,11 @@
 package:
   name: prompt_toolkit
-  version: 1.0.9
+  version: 1.0.13
 
 source:
-  fn: prompt_toolkit-1.0.9.tar.gz
-  url: https://pypi.python.org/packages/83/14/5ac258da6c530eca02852ee25c7a9ff3ca78287bb4c198d0d0055845d856/prompt_toolkit-1.0.9.tar.gz
-  md5: a39f91a54308fb7446b1a421c11f227c
+  fn: prompt_toolkit-1.0.13.tar.gz
+  url: https://pypi.python.org/packages/23/be/4876b52d5cc159cbd4b0ff6e7aa419a26470849a43a8f647857a4a24467b/prompt_toolkit-1.0.13.tar.gz
+  md5: 427b496d2c147bd3819bc3a7f6e0d493
 
 requirements:
   build:

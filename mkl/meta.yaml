@@ -1,12 +1,10 @@
 package:
   name: mkl
-  version: 11.3.3
-
-build:
-  number: 1         [win]
+  version: 2017.0.1
 
 requirements:
   build:
+    - python        [osx]
     - cio-bt        [osx]
 
 about:

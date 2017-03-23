@@ -1,0 +1,106 @@
+{% set version = "3.1.0" %}
+
+package:
+  name: opencv
+  version: {{ version }}
+
+source:
+  fn: opencv-{{ version }}.tar.gz
+  url: https://github.com/opencv/opencv/archive/{{ version }}.tar.gz
+  sha256: f00b3c4f42acda07d89031a2ebb5ebe390764a133502c03a511f67b78bbd4fbf
+
+  patches:
+    # Fixed: https://github.com/opencv/opencv/blob/master/modules/videoio/src/cap_mjpeg_decoder.cpp#L793
+    - cap_mpjpeg_decoder.patch  [win]
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    # For sha256 comparisons of opencv_contrib
+    - openssl 1.0.*         [unix]
+    # For downloading opencv_contrib
+    - curl
+    # For applying patches
+    - git                   [win]
+    - cmake
+    - numpy x.x
+    - hdf5 1.8.17    [unix]
+    - eigen 3.*
+    - zlib 1.2.*
+    - jpeg 8*
+    - libtiff 4.0.*
+    - libpng >=1.6.21,<1.7
+#    - msinttypes            [win and py<35]
+
+  run:
+    - python
+    - numpy x.x
+    - hdf5 1.8.17    [unix]
+    - zlib 1.2.*
+    - jpeg 8*
+    - libtiff 4.0.*
+    - libpng >=1.6.21,<1.7
+
+test:
+    imports:
+      - cv2
+      - cv2.xfeatures2d
+
+    commands:
+        # Verify dynamic libraries.
+        # "bioinspired", Not working in 3.1.0
+        {% set opencv_libs = [
+             "xfeatures2d",
+             "ximgproc",
+             "xobjdetect",
+             "xphoto",
+             "aruco",
+             "bgsegm",
+             "calib3d",
+             "ccalib",
+             "core",
+             "datasets",
+             "dnn",
+             "dpm",
+             "face",
+             "features2d",
+             "flann",
+             "fuzzy",
+             "highgui",
+             "imgcodecs",
+             "imgproc",
+             "line_descriptor",
+             "ml",
+             "objdetect",
+             "optflow",
+             "photo",
+             "plot",
+             "reg",
+             "rgbd",
+             "saliency",
+             "shape",
+             "stereo",
+             "stitching",
+             "structured_light",
+             "superres",
+             "surface_matching",
+             "text",
+             "tracking",
+             "video",
+             "videoio",
+             "videostab"
+        ] %}
+        {% for each_opencv_lib in opencv_libs %}
+        - test -f $PREFIX/lib/libopencv_{{ each_opencv_lib }}.dylib                        [osx]
+        - test -f $PREFIX/lib/libopencv_{{ each_opencv_lib }}.so                           [linux]
+        - if not exist %PREFIX%\\Library\\bin\\opencv_{{ each_opencv_lib }}310.dll exit 1  [win]
+        {% endfor %}
+
+about:
+  home: http://opencv.org/
+  license: BSD 3-clause
+  license_family: BSD
+  summary: Computer vision and machine learning software library.

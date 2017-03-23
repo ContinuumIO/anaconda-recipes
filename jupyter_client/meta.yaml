@@ -1,20 +1,21 @@
 package:
   name: jupyter_client
-  version: 4.4.0
+  version: 5.0.0
 
 source:
-  fn: jupyter_client-4.4.0.tar.gz
-  url: https://pypi.python.org/packages/88/03/d8e218721af0b084d4fda5e3bb89dc201505780f96ae060bf5e3e67c7707/jupyter_client-4.4.0.tar.gz
-  md5: 8a428a07cbcd4f2e4ca7c2f728b718ea
+  fn: jupyter_client-5.0.0.tar.gz
+  url: https://pypi.python.org/packages/e5/6f/65412ed462202b90134b7e761b0b7e7f949e07a549c1755475333727b3d0/jupyter_client-5.0.0.tar.gz
+  md5: 1acd331b5c9fb4d79dae9939e79f2426
 
 requirements:
   build:
     - python
   run:
     - python
+    - traitlets
     - jupyter_core
     - pyzmq
-    - traitlets
+    - python-dateutil >=2.1
 
 test:
   commands:
@@ -25,6 +26,7 @@ test:
 about:
   home: http://jupyter.org
   license: BSD
+  license_file: COPYING.md
   summary: Jupyter protocol implementation and client libraries
   description: |
     jupyter_client contains the reference implementation of the Jupyter

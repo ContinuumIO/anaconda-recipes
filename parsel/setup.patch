@@ -2,9 +2,9 @@ diff --git setup.py setup.py
 index 0658743..d599b4f 100644
 --- setup.py
 +++ setup.py
-@@ -51,7 +51,6 @@ setup(
-         'Programming Language :: Python :: 3.3',
+@@ -52,7 +52,6 @@ setup(
          'Programming Language :: Python :: 3.4',
+         'Programming Language :: Python :: 3.5',
      ],
 -    setup_requires=['pytest-runner',],
      tests_require=['pytest',],

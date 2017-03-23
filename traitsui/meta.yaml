@@ -1,0 +1,35 @@
+package:
+  name: traitsui
+  version: 5.1.0
+
+source:
+  git_url: https://github.com/enthought/traitsui.git
+  git_tag: 5.1.0
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pyface
+  run:
+    - python
+    - pyface >=5.1
+
+test:
+  imports:
+    - traitsui
+
+about:
+  home: https://github.com/enthought/traitsui
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Traits-capable windowing framework
+  description: |
+    The TraitsUI project contains a toolkit-independent GUI abstraction layer,
+    which is used to support the "visualization" features of the Traits
+    package. Thus, you can write model in terms of the Traits API and specify
+    a GUI in terms of the primitives supplied by TraitsUI (views, items,
+    editors, etc.), and let TraitsUI and your selected toolkit and back-end
+    take care of the details of displaying them.
+  doc_url: http://docs.enthought.com/traitsui/
+  dev_url: https://github.com/enthought/traitsui

@@ -1,11 +1,11 @@
 package:
   name: pytest
-  version: 3.0.3
+  version: 3.0.7
 
 source:
-  fn: pytest-3.0.3.tar.gz
-  url: https://pypi.python.org/packages/a0/2f/076c816e2402c4911ccee4b93ba0475145b7cffd0320ca8efa0add7c469c/pytest-3.0.3.tar.gz
-  md5: b33b3b1f847d3745a78423762f6b7f6d
+  fn: pytest-3.0.7.tar.gz
+  url: https://pypi.python.org/packages/00/e9/f77dcd80bdb2e52760f38dbd904016da018ab4373898945da744e5e892e9/pytest-3.0.7.tar.gz
+  md5: 89c60546507dc7eb6e9e40a6e9f720bd
 
 build:
   entry_points:
@@ -15,8 +15,8 @@ build:
 requirements:
   build:
     - python
-    - py
     - setuptools
+    - py
     - colorama          [win]
   run:
     - python

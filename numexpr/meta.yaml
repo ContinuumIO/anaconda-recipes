@@ -1,30 +1,31 @@
 package:
   name: numexpr
-  version: 2.6.1
+  version: 2.6.2
 
 source:
   git_url: https://github.com/pydata/numexpr.git
-  git_tag: v2.6.1
+  git_tag: v2.6.2
   patches:
     - setup.patch
 
 build:
-  number: 1
+  number: 0
+  detect_binary_files_with_prefix: False
   ignore_prefix_files: True   [win]
   features:
-    - nomkl                   [nomkl]
+    - nomkl                   [x86 and nomkl]
 
 requirements:
   build:
     - python
     - setuptools              [py3k]
     - numpy x.x
-    - mkl-devel 11.3.3        [not nomkl]
+    - mkl-devel 2017.0.1      [not nomkl]
     - cio-bt                  [win]
   run:
     - python
     - numpy x.x
-    - mkl 11.3.3              [not nomkl]
+    - mkl 2017.0.1            [not nomkl]
 
 test:
   requires:

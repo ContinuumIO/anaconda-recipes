@@ -9,6 +9,7 @@ source:
 
 build:
   number: 2
+  detect_binary_files_with_prefix: False
   # Windows has issues updating stuff if conda is using files itself
   no_link:
     - .*/.(pyd|dll)                   [win]

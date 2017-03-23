@@ -1,18 +1,20 @@
 package:
   name: astropy
-  version: 1.2.1
+  version: 1.3.1
 
 source:
-  fn: astropy-1.2.1.tar.gz
-  url: https://pypi.python.org/packages/b8/c8/13f9744d361446ad56fc9b675688f13398648e9107796f43c0594d05bb25/astropy-1.2.1.tar.gz
-  md5: a3399f67897cdb75e0efa56c463b0497
+  fn: astropy-1.3.1.tar.gz
+  url: https://pypi.python.org/packages/85/32/b16639787ff22d6528fc0f4d96669c5e7249c550b547cf0d9f4747f83688/astropy-1.3.1.tar.gz
+  md5: f7cb71c4802f0b262d0cfffbc0098cce
 
 build:
+  detect_binary_files_with_prefix: False
   entry_points:
     - fits2bitmap = astropy.visualization.scripts.fits2bitmap:main
     - fitscheck = astropy.io.fits.scripts.fitscheck:main
     - fitsdiff = astropy.io.fits.scripts.fitsdiff:main
     - fitsheader = astropy.io.fits.scripts.fitsheader:main
+    - fitsinfo = astropy.io.fits.scripts.fitsinfo:main
     - samp_hub = astropy.vo.samp.hub_script:hub_script
     - volint = astropy.io.votable.volint:main
     - wcslint = astropy.wcs.wcslint:main
@@ -29,9 +31,14 @@ requirements:
 
 test:
   commands:
+    - fits2bitmap --help
     - fitscheck --help
     - fitsdiff --help
+    - fitsheader --help
+    - fitsinfo --help
+    - samp_hub --help
     - volint --help
+    - wcslint --help
   imports:
     - astropy
 

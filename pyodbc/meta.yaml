@@ -7,18 +7,19 @@ source:
   url: https://pypi.python.org/packages/source/p/pyodbc/pyodbc-3.0.10.tar.gz
   md5: 3f6f205c979a0fe5dee05d37121a7b92
   patches:
-    - linux.patch        [linux]
+    - setup.patch        [unix]
 
 build:
   number: 1
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:
     - python
-    - unixodbc 2.3.4     [linux]
+    - unixodbc 2.3.4     [unix]
   run:
     - python
-    - unixodbc 2.3.4     [linux]
+    - unixodbc 2.3.4     [unix]
 
 test:
   imports:

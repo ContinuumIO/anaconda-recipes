@@ -1,5 +1,5 @@
 #!/bin/bash
 
-$PYTHON setup.py install --single-version-externally-managed --root=/
+$PYTHON setup.py install --old-and-unmanageable
 
 rm -rf $SP_DIR/cryptography-*

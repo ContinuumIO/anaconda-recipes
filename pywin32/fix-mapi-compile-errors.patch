@@ -1,0 +1,51 @@
+diff -urN pywin32-220.orig/com/win32comext/mapi/src/PyIMAPISession.cpp pywin32-220/com/win32comext/mapi/src/PyIMAPISession.cpp
+--- pywin32-220.orig/com/win32comext/mapi/src/PyIMAPISession.cpp	2017-01-13 18:25:26.033944200 -0600
++++ pywin32-220/com/win32comext/mapi/src/PyIMAPISession.cpp	2017-01-13 18:32:17.776083900 -0600
+@@ -775,7 +775,11 @@
+ 	IMAPIAdviseSink *psink = NULL;
+ 	if (!PyCom_InterfaceFromPyObject(obSink, IID_IMAPIAdviseSink, (void **)&psink, FALSE))
+ 		return NULL;
+-	unsigned long connection;
++#if _MSC_VER >= 1900
++		ULONG_PTR connection;
++#else
++		ULONG connection;
++#endif
+ 	HRESULT _result;
+ 	PyObject *rc;
+ 	Py_BEGIN_ALLOW_THREADS
+diff -urN pywin32-220.orig/com/win32comext/mapi/src/PyIMAPITable.cpp pywin32-220/com/win32comext/mapi/src/PyIMAPITable.cpp
+--- pywin32-220.orig/com/win32comext/mapi/src/PyIMAPITable.cpp	2017-01-13 18:25:26.049611000 -0600
++++ pywin32-220/com/win32comext/mapi/src/PyIMAPITable.cpp	2017-01-13 18:40:10.354299900 -0600
+@@ -681,8 +681,13 @@
+     HRESULT  _result;
+     unsigned long  _arg0;
+     IMAPIAdviseSink * _arg1;
+-    unsigned long * _arg2;
+-    unsigned long  temp;
++#if _MSC_VER >= 1900
++    ULONG_PTR * _arg2;
++    ULONG_PTR  temp;
++#else
++    ULONG * _arg2;
++    ULONG  temp;
++#endif
+     PyObject * _obj1 = 0;
+ 
+ {
+@@ -1269,8 +1274,13 @@
+ PyObject *PyIMAPITable::CreateBookmark(PyObject *self, PyObject *args) {
+     PyObject * _resultobj;
+     HRESULT  _result;
+-    unsigned long * _arg0;
+-    unsigned long  temp;
++#if _MSC_VER >= 1900
++    ULONG_PTR * _arg0;
++    ULONG_PTR  temp;
++#else
++    ULONG * _arg0;
++    ULONG  temp;
++#endif
+ 
+ {
+   _arg0 = &temp;

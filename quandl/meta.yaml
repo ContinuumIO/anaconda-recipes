@@ -1,11 +1,11 @@
 package:
   name: quandl
-  version: 3.0.1
+  version: 3.1.0
 
 source:
-  fn: Quandl-3.0.1.tar.gz
-  url: https://pypi.python.org/packages/98/f4/a3f6ad4de5579b4ae7efaecc821a9254f1c5c2d3f3500596c961ffc88eae/Quandl-3.0.1.tar.gz
-  md5: c25c7121299e9d7d75622c224f12fe89
+  fn: Quandl-3.1.0.tar.gz
+  url: https://pypi.python.org/packages/84/68/877bcb3b0fd9c6a31ff8227c772b3d4c007cd23d918b78acdcb7fdf7d41e/Quandl-3.1.0.tar.gz
+  md5: 19d74e408c15d5ac529588f7849a1083
 
 requirements:
   build:
@@ -13,9 +13,9 @@ requirements:
   run:
     - python
     - numpy
-    - pandas
-    - requests
-    - inflection
+    - pandas >=0.14
+    - requests >=2.7.0
+    - inflection >=0.3.1
     - python-dateutil
     - six
     - more-itertools

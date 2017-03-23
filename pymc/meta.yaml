@@ -9,6 +9,7 @@ source:
 
 build:
   number: 2
+  detect_binary_files_with_prefix: False
   features:
     - nomkl                [nomkl]
 
@@ -17,7 +18,7 @@ requirements:
     - python
     - numpy x.x
     - libgfortran 3.0.0    [linux]
-    - mkl-devel 11.3.3     [not nomkl]
+    - mkl-devel 2017.0.1   [not nomkl]
   run:
     - python
     - numpy x.x

@@ -1,0 +1,12 @@
+diff --git _posixsubprocess.c _posixsubprocess.c
+index 012715e..7609a6a 100644
+--- _posixsubprocess.c
++++ _posixsubprocess.c
+@@ -4,6 +4,7 @@
+ #if defined(__linux__) && !defined(HAVE_PIPE2)
+ # define HAVE_PIPE2 1  /* From 3.2's configure script, undef if you don't. */
+ #endif
++#undef HAVE_PIPE2
+ #if defined(HAVE_PIPE2) && !defined(_GNU_SOURCE)
+ # define _GNU_SOURCE
+ #endif

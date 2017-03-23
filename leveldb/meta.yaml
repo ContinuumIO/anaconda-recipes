@@ -1,0 +1,31 @@
+{% set version = "1.19" %}
+
+package:
+  name: leveldb
+  version: {{ version }}
+
+source:
+  fn: v{{ version }}.tar.gz
+  url: https://github.com/google/leveldb/archive/v{{ version }}.tar.gz
+  sha256: 7d7a14ae825e66aabeb156c1c3fae9f9a76d640ef6b40ede74cc73da937e5202
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - snappy
+
+  run:
+    - snappy
+
+test:
+  commands:
+    - test -f ${PREFIX}/lib/libmemenv.a
+    - test -f ${PREFIX}/lib/libleveldb.dylib            [osx]
+    - test -f ${PREFIX}/lib/libleveldb.so               [linux]
+
+about:
+  home: https://github.com/google/leveldb
+  license: BSD
+  summary: A fast key-value storage library providing ordered mappings.

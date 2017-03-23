@@ -1,6 +1,6 @@
 package:
   name: javabridge
-  version: "1.0.14"
+  version: 1.0.14
 
 source:
   git_url: https://github.com/LeeKamentsky/python-javabridge.git
@@ -12,23 +12,8 @@ source:
     - 0004-OS-X-10.7-Look-for-the-jvm-dylib-in-more-files.patch
 
 build:
-  # noarch_python: True
+  detect_binary_files_with_prefix: True
   preserve_egg_dir: True
-  # entry_points:
-    # Put any entry points (scripts to be generated automatically) here. The
-    # syntax is module:function.  For example
-    #
-    # - javabridge = javabridge:main
-    #
-    # Would create an entry point called javabridge that calls javabridge.main()
-
-
-  # If this is a new build for the same version, increment the build
-  # number. If you do not include this key, it defaults to 0.
-  # number: 1
-#  script_env:        # [win]
-#    - JAVA_HOME      # [win]
-#    - JDK_HOME       # [win]
 
 requirements:
   build:
@@ -43,23 +28,12 @@ requirements:
     - numpy
 
 test:
-  # Python imports
   imports:
     - javabridge
     - javabridge.tests
-
-  # commands:
-    # You can put test commands to be run here.  Use this to test that the
-    # entry points work.
-
-
-  # You can also put a file called run_test.py in the recipe that will be run
-  # at test time.
-
+    - javabridge._javabridge
   requires:
     - nose
-    # Put any additional test requirements here.  For example
-    # - nose
 
 about:
   home: https://github.com/LeeKamentsky/python-javabridge
@@ -73,7 +47,3 @@ about:
   license_family: BSD
   doc_url: http://pythonhosted.org/javabridge/
   dev_url: https://github.com/LeeKamentsky/python-javabridge
-
-# See
-# http://docs.continuum.io/conda/build.html for
-# more information about meta.yaml

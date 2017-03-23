@@ -1,11 +1,11 @@
 package:
   name: ipyparallel
-  version: 5.2.0
+  version: 6.0.2
 
 source:
-  fn: ipyparallel-5.2.0.tar.gz
-  url: https://pypi.python.org/packages/e7/2f/ca9d68d3d9cf3594e2c53cf11227e67491572acd6f22d2bc910ae26af953/ipyparallel-5.2.0.tar.gz
-  md5: 8e6f826d6e2b714137efd9b3af3dcdb4
+  fn: ipyparallel-6.0.2.tar.gz
+  url: https://pypi.python.org/packages/59/58/77e0338a78d409722da2552d5657bd9cad02e23e7b83ef952def5839518d/ipyparallel-6.0.2.tar.gz
+  md5: f352068ba2fd4a538079f3523d1860a2
 
 build:
   entry_points:
@@ -25,7 +25,8 @@ requirements:
     - jupyter_client
     - ipykernel
     - tornado >=4.0
-    - futures            [py27]
+    - python-dateutil >=2.1
+    - futures                     [py27]
 
 test:
   commands:

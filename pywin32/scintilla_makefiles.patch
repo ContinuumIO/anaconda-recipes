@@ -1,33 +1,6 @@
-diff --git Pythonwin/Scintilla/win32/scintilla.mak Pythonwin/Scintilla/win32/scintilla.mak
-index 46c2aa0..21cb980 100644
---- Pythonwin/Scintilla/win32/scintilla.mak
-+++ Pythonwin/Scintilla/win32/scintilla.mak
-@@ -70,7 +70,7 @@ CXXFLAGS=$(CXXFLAGS) $(NOLOGO)
- LDFLAGS=$(LDFLAGS) $(NOLOGO)
- !ENDIF
- 
--!IFDEF DEBUG
-+!IF "$(DEBUG)"=="1"
- CXXFLAGS=$(CXXFLAGS) $(CXXDEBUG)
- LDFLAGS=$(LDDEBUG) $(LDFLAGS)
- !ELSE
-diff --git Pythonwin/Scintilla/win32/scintilla_vc6.mak Pythonwin/Scintilla/win32/scintilla_vc6.mak
-index cccef49..3517cc0 100644
---- Pythonwin/Scintilla/win32/scintilla_vc6.mak
-+++ Pythonwin/Scintilla/win32/scintilla_vc6.mak
-@@ -72,7 +72,7 @@ CXXFLAGS=$(CXXFLAGS) $(NOLOGO)
- LDFLAGS=$(LDFLAGS) $(NOLOGO)
- !ENDIF
- 
--!IFDEF DEBUG
-+!IF "$(DEBUG)"=="1"
- CXXFLAGS=$(CXXFLAGS) $(CXXDEBUG)
- LDFLAGS=$(LDDEBUG) $(LDFLAGS)
- !ELSE
-diff --git Pythonwin/Scintilla/makefile_pythonwin Pythonwin/Scintilla/makefile_pythonwin
-index 0fc9fc4..ae8f15b 100644
---- Pythonwin/Scintilla/makefile_pythonwin
-+++ Pythonwin/Scintilla/makefile_pythonwin
+diff -urN pywin32-220.orig/Pythonwin/Scintilla/makefile_pythonwin pywin32-220/Pythonwin/Scintilla/makefile_pythonwin
+--- pywin32-220.orig/Pythonwin/Scintilla/makefile_pythonwin	2017-01-13 12:24:30.866435900 -0600
++++ pywin32-220/Pythonwin/Scintilla/makefile_pythonwin	2017-01-13 12:29:10.428630700 -0600
 @@ -4,7 +4,7 @@
  # (but with special macros) and generates the .py
  # from the .h's
@@ -37,7 +10,7 @@ index 0fc9fc4..ae8f15b 100644
  DIR_O = ..\Build\Temp\Scintilla\Debug
  !ELSE
  DIR_O = ..\Build\Temp\Scintilla\Release
-@@ -22,7 +22,7 @@ SUB_DIR_BIN = ..\$(DIR_BIN)
+@@ -22,7 +22,7 @@
  SUB_DIR_O=..\$(DIR_O)
  !endif
  
@@ -46,7 +19,7 @@ index 0fc9fc4..ae8f15b 100644
  SCINTILLA_DLL = $(SUB_DIR_BIN)\Scintilla_d.dll
  !ELSE
  SCINTILLA_DLL = $(SUB_DIR_BIN)\Scintilla.dll
-@@ -44,8 +44,8 @@ Scintilla:
+@@ -44,8 +44,8 @@
  
  ..\pywin\scintilla\scintillacon.py: Include\Scintilla.h Include\SciLexer.h
  	@if not exist $(DIR_PYTHON)\tools\scripts\h2py.py echo ***** Can't find h2py.py in '$(DIR_PYTHON)\tools\scripts - please pass DIR_PYTHON to this script *******
@@ -57,3 +30,27 @@ index 0fc9fc4..ae8f15b 100644
      type scintilla.py > ..\pywin\scintilla\scintillacon.py
  	type scilexer.py >> ..\pywin\scintilla\scintillacon.py
  	del scintilla.py scilexer.py
+diff -urN pywin32-220.orig/Pythonwin/Scintilla/win32/scintilla.mak pywin32-220/Pythonwin/Scintilla/win32/scintilla.mak
+--- pywin32-220.orig/Pythonwin/Scintilla/win32/scintilla.mak	2017-01-13 12:24:30.475564400 -0600
++++ pywin32-220/Pythonwin/Scintilla/win32/scintilla.mak	2017-01-13 12:29:10.397305100 -0600
+@@ -70,7 +70,7 @@
+ LDFLAGS=$(LDFLAGS) $(NOLOGO)
+ !ENDIF
+ 
+-!IFDEF DEBUG
++!IF "$(DEBUG)"=="1"
+ CXXFLAGS=$(CXXFLAGS) $(CXXDEBUG)
+ LDFLAGS=$(LDDEBUG) $(LDFLAGS)
+ !ELSE
+diff -urN pywin32-220.orig/Pythonwin/Scintilla/win32/scintilla_vc6.mak pywin32-220/Pythonwin/Scintilla/win32/scintilla_vc6.mak
+--- pywin32-220.orig/Pythonwin/Scintilla/win32/scintilla_vc6.mak	2017-01-13 12:24:30.491381100 -0600
++++ pywin32-220/Pythonwin/Scintilla/win32/scintilla_vc6.mak	2017-01-13 12:29:10.413251300 -0600
+@@ -72,7 +72,7 @@
+ LDFLAGS=$(LDFLAGS) $(NOLOGO)
+ !ENDIF
+ 
+-!IFDEF DEBUG
++!IF "$(DEBUG)"=="1"
+ CXXFLAGS=$(CXXFLAGS) $(CXXDEBUG)
+ LDFLAGS=$(LDDEBUG) $(LDFLAGS)
+ !ELSE

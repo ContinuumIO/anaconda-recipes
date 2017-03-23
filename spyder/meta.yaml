@@ -1,11 +1,11 @@
 package:
   name: spyder
-  version: 3.0.1
+  version: 3.1.3
 
 source:
-  fn: spyder-3.0.1.tar.gz
-  url: https://pypi.python.org/packages/c1/88/98e21184f0fcb23cd879cb37353695eef8caa6c1cf0cdfcb46ef1fd47705/spyder-3.0.1.tar.gz
-  md5: 69c88f86394bfd45a22037c798b26c47
+  fn: spyder-3.1.3.tar.gz
+  url: https://pypi.python.org/packages/24/4e/cfd421f1ef92cd9edce4bf2bccc991f50bd8b2ad3730c2cda5a6a73a20f2/spyder-3.1.3.tar.gz
+  md5: 4b9b7c8c3e6dc00001e6e98473473c36
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - python
     - pyqt
     - qtpy >=1.1
-    - qtawesome
+    - qtawesome >=0.4.1
     - rope
     - pyflakes
     - jedi >=0.8
@@ -34,6 +34,8 @@ requirements:
     - psutil
     - pylint
     - pyzmq
+    - chardet >=2.0.0
+    - numpydoc
     - python.app     [osx]
 
 app:

@@ -1,12 +1,12 @@
 diff --git setup.cfg.template setup.cfg.template
-index 9d50b44..dbd5014 100644
+index d2e7db4..099ad47 100644
 --- setup.cfg.template
 +++ setup.cfg.template
-@@ -18,7 +18,7 @@
- # optional.  They are all installed by default, but they may be turned
- # off here.
+@@ -25,7 +25,7 @@
+ # optional. All except tests are installed by default, but that can
+ # be changed here.
  #
--#tests = True
+-#tests = False
 +tests = False
  #sample_data = True
  #toolkits = True

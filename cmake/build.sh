@@ -1,5 +1,16 @@
 #!/bin/bash
-CC=cc CXX=c++ ./configure --prefix=$PREFIX --parallel=${CPU_COUNT}
-make -j${CPU_COUNT}
-rm $SRC_DIR/Modules/CPack.OSXScriptLauncher.in
+
+LDFLAGS=$LDFLAGS" -Wl,-rpath,$PREFIX/lib" \
+  ./bootstrap \
+             --verbose \
+             --prefix="${PREFIX}" \
+             --system-libs \
+             --no-qt-gui \
+             --no-system-libarchive \
+             --no-system-jsoncpp \
+             -- \
+             -DCMAKE_BUILD_TYPE:STRING=Release \
+             -DCMAKE_FIND_ROOT_PATH="${PREFIX}"
+
+make
 make install

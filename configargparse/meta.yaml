@@ -1,11 +1,11 @@
 package:
   name: configargparse
-  version: 0.10.0
+  version: 0.11.0
 
 source:
-  fn: ConfigArgParse-0.10.0.tar.gz
-  url: https://pypi.io/packages/source/C/ConfigArgParse/ConfigArgParse-0.10.0.tar.gz
-  md5: 408ad7af06cd449420cecc19bee6f0c9
+  fn: ConfigArgParse-0.11.0.tar.gz
+  url: https://pypi.python.org/packages/45/87/a815edcdc867de0964e5f1efef6db956bbb6fe77dbe3f273f2aeab39cbe8/ConfigArgParse-0.11.0.tar.gz
+  md5: e8cb0b30e78ab5fd013a498be9cf22b4
 
 requirements:
   build:
@@ -21,8 +21,8 @@ test:
 about:
   home: https://github.com/zorro3/ConfigArgParse
   license: MIT
-  summary: allowing options to be set via config files and/or env vars
   license_family: MIT
   license_file: LICENSE
+  summary: allowing options to be set via config files and/or env vars
   dev_url: https://github.com/zorro3/ConfigArgParse
   doc_url: https://github.com/zorro3/ConfigArgParse

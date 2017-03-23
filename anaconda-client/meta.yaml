@@ -1,10 +1,10 @@
 package:
   name: anaconda-client
-  version: 1.5.4
+  version: 1.6.2
 
 source:
   git_url: https://github.com/Anaconda-Server/anaconda-client.git
-  git_tag: 1.5.4
+  git_tag: 1.6.2
 
 build:
   entry_points:
@@ -23,7 +23,7 @@ requirements:
     - python
     - setuptools
     - clyent
-    - requests
+    - requests >=2.9.1
     - pyyaml
     - python-dateutil
     - pytz
@@ -41,6 +41,7 @@ test:
 about:
   home: http://anaconda.org
   license: BSD
+  license_file: LICENSE.md
   summary: anaconda.org command line client library
   description: |
     Anaconda Client is a command line client that provides an

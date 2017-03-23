@@ -1,11 +1,11 @@
 package:
   name: traitlets
-  version: 4.3.1
+  version: 4.3.2
 
 source:
-  fn: traitlets-4.3.1.tar.gz
-  url: https://pypi.python.org/packages/b1/d6/5b5aa6d5c474691909b91493da1e8972e309c9f01ecfe4aeafd272eb3234/traitlets-4.3.1.tar.gz
-  md5: dd0b1b6e5d31ce446d55a4b5e5083c98
+  fn: traitlets-4.3.2.tar.gz
+  url: https://pypi.python.org/packages/a5/98/7f5ef2fe9e9e071813aaf9cb91d1a732e0a68b6c44a32b38cb8e14c3f069/traitlets-4.3.2.tar.gz
+  md5: 3068663f2f38fd939a9eb3a500ccc154
 
 requirements:
   build:
@@ -24,7 +24,9 @@ test:
 
 about:
   home: https://github.com/ipython/traitlets
-  license: BSD
+  license: Modified BSD
+  license_family: BSD
+  license_file: COPYING.md
   summary: Configuration system for Python applications
   description: |
     Traitlets is a framework that lets Python classes have attributes with

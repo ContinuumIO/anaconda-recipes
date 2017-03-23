@@ -1,17 +1,14 @@
-@echo off
 :: Set the right msvc version according to Python version
-REM write a temporary batch file to map cl.exe version to visual studio version
-echo @echo 15=9 > msvc_versions.bat
-echo @echo 16=10 >> msvc_versions.bat
-echo @echo 19=14 >> msvc_versions.bat
-
-REM Run cl.exe to find which version our compiler is
-for /f "delims=" %%A in ('cl /? 2^>^&1 ^| findstr /C:"Version"') do set "CL_TEXT=%%A"
-FOR /F "tokens=1,2 delims==" %%i IN ('msvc_versions.bat') DO echo %CL_TEXT% | findstr /C:"Version %%i" > nul && set VSTRING=%%j && goto FOUND
-EXIT 1
-:FOUND
-
-call :TRIM VSTRING %VSTRING%
+if "%PY_VER%"=="2.7" (
+    set MSVC_VER=9.0
+    set LIB_VER=90
+) else if "%PY_VER%"=="3.4" (
+    set MSVC_VER=10.0
+    set LIB_VER=100
+) else (
+    set MSVC_VER=14.0
+    set LIB_VER=140
+)
 
 :: Start with bootstrap
 call bootstrap.bat
@@ -21,27 +18,26 @@ if errorlevel 1 exit 1
 .\b2 install ^
     --build-dir=buildboost ^
     --prefix=%LIBRARY_PREFIX% ^
-    toolset=msvc-%VSTRING%.0 ^
+    toolset=msvc-%MSVC_VER% ^
     address-model=%ARCH% ^
     variant=release ^
     threading=multi ^
-    link=shared ^
+    link=static,shared ^
     -j%CPU_COUNT% ^
     -s ZLIB_INCLUDE="%LIBRARY_INC%" ^
     -s ZLIB_LIBPATH="%LIBRARY_LIB%"
 if errorlevel 1 exit 1
 
+for /F "tokens=1,2,3 delims=." %%a in ("%PKG_VERSION%") do (
+   set PKG_VERSION_MAJOR=%%a
+   set PKG_VERSION_MINOR=%%b
+   set PKG_VERSION_PATCH=%%c
+)
+
 :: Install fix-up for a non version-specific boost include
-move %LIBRARY_INC%\boost-1_60\boost %LIBRARY_INC%
+move %LIBRARY_INC%\boost-%PKG_VERSION_MAJOR%_%PKG_VERSION_MINOR%\boost %LIBRARY_INC%
 if errorlevel 1 exit 1
 
-:: Move dll's to LIBRARY_BIN
-move %LIBRARY_LIB%\*vc%VSTRING%0-mt-1_60.dll "%LIBRARY_BIN%"
+:: Move DLLs to LIBRARY_BIN
+move %LIBRARY_LIB%\*vc%LIB_VER%-mt-%PKG_VERSION_MAJOR%_%PKG_VERSION_MINOR%.dll "%LIBRARY_BIN%"
 if errorlevel 1 exit 1
-
-
-:TRIM
-  SetLocal EnableDelayedExpansion
-  set Params=%*
-  for /f "tokens=1*" %%a in ("!Params!") do EndLocal & set %1=%%b
-  exit /B

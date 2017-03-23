@@ -1,10 +1,10 @@
 package:
   name: constructor
-  version: 1.5.0
+  version: 1.5.4
 
 source:
   git_url: https://github.com/conda/constructor.git
-  git_tag: 1.5.0
+  git_tag: 1.5.4
 
 build:
   entry_points:
@@ -18,7 +18,7 @@ requirements:
     - libconda
     - pycosat >=0.6.1
     - pillow >=3.1      [win]
-    - nsis              [win]
+    - nsis >=3.01       [win]
 
 test:
   commands:

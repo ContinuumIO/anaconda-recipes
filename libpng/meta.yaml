@@ -1,20 +1,21 @@
 package:
   name: libpng
-  version: 1.6.22
+  version: 1.6.27
 
 source:
-  fn: libpng-1.6.22.tar.gz
-  url: http://prdownloads.sourceforge.net/libpng/libpng-1.6.22.tar.gz
-  md5: 4a84ef93939d18d589e8314ac742423a
+  fn: libpng-1.6.27.tar.gz
+  url: http://prdownloads.sourceforge.net/libpng/libpng-1.6.27.tar.gz
+  md5: 58698519e9f6126c1caeefc28dbcbd5f
 
 build:
   features:
-    - vc9     [win and py27]
-    - vc10    [win and py34]
-    - vc14    [win and py35]
+    - vc9          [win and py27]
+    - vc10         [win and py34]
+    - vc14         [win and (py35 or py36)]
 
 requirements:
   build:
+    - python       [win]
     - cmake
     - zlib 1.2.*
   run:
@@ -26,7 +27,7 @@ about:
   license_url: http://www.libpng.org/pub/png/src/libpng-LICENSE.txt
   license_family: Other
   license_file: LICENSE
-  summary: The official PNG reference library
+  summary: official PNG reference library
   description: |
     libpng is the official PNG reference library. It supports almost all PNG
     features, is extensible, and has been extensively tested for over 20 years.

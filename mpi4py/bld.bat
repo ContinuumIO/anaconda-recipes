@@ -1,5 +1,4 @@
-move %SRC_DIR%\mpi4py %SP_DIR%
-move %SRC_DIR%\mpi4py-%PKG_VERSION%.dist-info %SP_DIR%
+python setup.py install
 
 mkdir %SCRIPTS%
 copy %RECIPE_DIR%\pre-link.bat %SCRIPTS%\.mpi4py-pre-link.bat

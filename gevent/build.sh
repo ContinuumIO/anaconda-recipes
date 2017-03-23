@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$PYTHON setup.py install
+$PYTHON setup.py install --old-and-unmanageable
 
 if [ $PY3K == 0 ]
 then

@@ -3,15 +3,23 @@ import sys
 
 import matplotlib
 import matplotlib.pyplot
+
+# C extensions:
 import matplotlib._cntr
+import matplotlib._contour
 import matplotlib._delaunay
 import matplotlib._image
 import matplotlib._path
 import matplotlib._png
+import matplotlib._qhull
 import matplotlib._tri
 import matplotlib.backends._backend_agg
 import matplotlib.ft2font
 import matplotlib.ttconv
+
+if sys.platform == 'darwin':
+    import matplotlib.backends._macosx
+
 if sys.platform != 'win32':
     import matplotlib.backends._tkagg
 

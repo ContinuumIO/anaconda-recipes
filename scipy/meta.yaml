@@ -1,14 +1,15 @@
 package:
   name: scipy
-  version: 0.18.1
+  version: 0.19.0
 
 source:
-  fn: scipy-0.18.1.tar.gz
-  url: https://pypi.python.org/packages/22/41/b1538a75309ae4913cdbbdc8d1cc54cae6d37981d2759532c1aa37a41121/scipy-0.18.1.tar.gz
-  md5: 5fb5fb7ccb113ab3a039702b6c2f3327
+  fn: scipy-0.19.0.zip
+  url: https://pypi.python.org/packages/e5/93/9a8290e7eb5d4f7cb53b9a7ad7b92b9827ecceaddfd04c2a83f195d8767d/scipy-0.19.0.zip
+  md5: 91b8396231eec780222a57703d3ec550
 
 build:
   number: 0
+  detect_binary_files_with_prefix: False
   ignore_prefix_files: True   [win]
   features:
     - nomkl                   [nomkl]
@@ -18,14 +19,14 @@ requirements:
     - python
     - setuptools
     - numpy x.x
-    - mkl-devel 11.3.3        [not nomkl]
-    - openblas 0.2.14         [linux and nomkl and (not ppc64le)]
-    - cio-bt                  [unix]
+    - mkl-devel 2017.0.1      [not nomkl]
+    - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
+    - cio-bt
   run:
     - python
     - numpy x.x
-    - mkl 11.3.3              [not nomkl]
-    - openblas 0.2.14         [linux and nomkl and (not ppc64le)]
+    - mkl 2017.0.1            [not nomkl]
+    - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
     - libgfortran 3.0.0       [linux]
     - vs2015_runtime          [win and py35]
     - vs2010_runtime          [win and py34]

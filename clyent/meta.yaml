@@ -3,7 +3,7 @@ package:
   version: 1.2.2
 
 source:
-  git_url: git@github.com:Anaconda-Server/clyent.git
+  git_url: https://github.com/Anaconda-Server/clyent.git
   git_tag: 1.2.2
 
 requirements:

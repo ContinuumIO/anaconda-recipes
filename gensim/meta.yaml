@@ -1,17 +1,20 @@
 package:
   name: gensim
-  version: 0.12.4
+  version: 1.0.1
 
 source:
-  fn: gensim-0.12.4.tar.gz
-  url: https://pypi.python.org/packages/source/g/gensim/gensim-0.12.4.tar.gz
-  md5: 7369a2d1f50904320e60b5ef490c1ca6
+  fn: gensim-1.0.1.tar.gz
+  url: https://pypi.python.org/packages/5b/64/b9e6b002df3d33697e275b345cd91417ec2ddfc29b539e913db0a90bfe9a/gensim-1.0.1.tar.gz
+  md5: 9a0d7f4de10254bb1fcd3af502fe9693
+
+build:
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:
     - python
-    - cython
     - setuptools
+    - cython
     - numpy x.x
     - scipy
     - six
@@ -30,7 +33,8 @@ test:
 
 about:
   home: http://radimrehurek.com/gensim
-  license: LGPL
+  license: GNU Lesser General Public License v2 or later
+  license_family: LGPL
   license_file: COPYING
   summary: Topic Modelling in Python
   description: |

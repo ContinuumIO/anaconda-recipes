@@ -1,20 +1,25 @@
 package:
   name: btrees
-  version: 4.3.1
+  version: 4.4.1
 
 source:
-  fn: BTrees-4.3.1.tar.gz
-  url: https://pypi.python.org/packages/24/76/cd6f225f2180c22af5cdb6656f51aec5fca45e45bdc4fa75c0a32f161a61/BTrees-4.3.1.tar.gz
-  md5: cf6a994b54df253de2a74e05904534c9
+  fn: BTrees-4.4.1.tar.gz
+  url: https://pypi.python.org/packages/6a/e2/d8c2a5b4cbc493b1ccb440d61bf0f62b8a0cb1c7b5aa403d5e18847545b3/BTrees-4.4.1.tar.gz
+  md5: 6a0178e30b94cf0cc44ae62e93187ecc
+
+build:
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:
     - python
     - setuptools
     - persistent
+    - zope.interface
   run:
     - python
     - persistent
+    - zope.interface
 
 test:
   imports:

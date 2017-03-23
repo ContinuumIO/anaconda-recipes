@@ -1,0 +1,18 @@
+diff --git numpy/fft/__init__.py numpy/fft/__init__.py
+index 96809a9..53ca160 100644
+--- numpy/fft/__init__.py
++++ numpy/fft/__init__.py
+@@ -3,7 +3,12 @@ from __future__ import division, absolute_import, print_function
+ # To get sub-modules
+ from .info import __doc__
+ 
+-from .fftpack import *
++try:
++    from mklfft.fftpack import *
++    using_mklfft = True
++except ImportError:
++    from .fftpack import *
++    using_mklfft = False
+ from .helper import *
+ 
+ from numpy.testing.nosetester import _numpy_tester

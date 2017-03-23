@@ -1,11 +1,11 @@
 package:
   name: pexpect
-  version: 4.0.1
+  version: 4.2.1
 
 source:
-  fn: pexpect-4.0.1.tar.gz
-  url: https://pypi.python.org/packages/source/p/pexpect/pexpect-4.0.1.tar.gz
-  md5: 056df81e6ca7081f1015b4b147b977b7
+  fn: pexpect-4.2.1.tar.gz
+  url: https://pypi.python.org/packages/e8/13/d0b0599099d6cd23663043a2a0bb7c61e58c6ba359b2656e6fb000ef5b98/pexpect-4.2.1.tar.gz
+  md5: 3694410001a99dff83f0b500a1ca1c95
 
 requirements:
   build:

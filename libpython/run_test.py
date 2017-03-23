@@ -19,3 +19,9 @@ setup(name="spam", ext_modules=[Extension("spam", ["spam.c"])])
 import spam
 
 assert spam.sqr(7) == 49
+
+# Cleanup spam.o
+try:
+    os.remove("spam.o")
+except:
+    pass

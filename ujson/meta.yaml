@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/source/u/ujson/ujson-1.35.tar.gz
   md5: 42f77b0cce686dfa4da2e68480b1dd24
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

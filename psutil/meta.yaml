@@ -1,11 +1,14 @@
 package:
   name: psutil
-  version: 5.0.0
+  version: 5.2.0
 
 source:
-  fn: psutil-5.0.0.zip
-  url: https://pypi.python.org/packages/93/7f/347309562d30c688299727e65f4d76ef34180c406dfb6f2c7b6c8d746e13/psutil-5.0.0.zip
-  md5: 362a03686ce36940d22a548ecb47d7e0
+  fn: psutil-5.2.0.tar.gz
+  url: https://pypi.python.org/packages/3c/2f/f3ab91349c666f009077157b12057e613a3152a46a6c3be883777546b6de/psutil-5.2.0.tar.gz
+  md5: c9aa2599dcd9e5b59d71b6660d396062
+
+build:
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:
@@ -25,7 +28,7 @@ about:
   home: https://github.com/giampaolo/psutil
   license: BSD
   license_file: LICENSE
-  summary: A cross-platform process and system utilities module for Python
+  summary: cross-platform process and system utilities module for Python
   description: |
     psutil (process and system utilities) is a cross-platform library for
     retrieving information on running processes and system utilization (CPU,

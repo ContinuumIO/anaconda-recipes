@@ -1,14 +1,14 @@
-From c1cb1127ba96a3a9df6f0e14b1317a4c58e71131 Mon Sep 17 00:00:00 2001
+From a15fe4726e1db6b35843608bd932961e73a6c4ee Mon Sep 17 00:00:00 2001
 From: Ray Donnelly <mingw.android@gmail.com>
 Date: Tue, 31 May 2016 11:04:16 +0100
-Subject: [PATCH 2/4] angle: Add Scott Meyer's nullptr emulation
+Subject: [PATCH 2/9] angle: Add Scott Meyer's nullptr emulation
 
 Change-Id: Idefa6507dc01d5b2cbc0adf94bb3629cc8f58655
 ---
  src/3rdparty/angle/src/common/platform.h | 20 ++++++++++++++++++++
  1 file changed, 20 insertions(+)
 
-diff --git a/src/3rdparty/angle/src/common/platform.h b/src/3rdparty/angle/src/common/platform.h
+diff --git qtbase/src/3rdparty/angle/src/common/platform.h qtbase/src/3rdparty/angle/src/common/platform.h
 index 3a2aa91..38174bd 100644
 --- qtbase/src/3rdparty/angle/src/common/platform.h
 +++ qtbase/src/3rdparty/angle/src/common/platform.h
@@ -40,5 +40,5 @@ index 3a2aa91..38174bd 100644
  #   undef far
  #endif
 -- 
-2.8.2
+2.10.2
 

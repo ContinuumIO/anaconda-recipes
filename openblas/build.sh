@@ -1,15 +1,17 @@
 #!/bin/bash
 
-case `uname -m` in
-  'armv7l' )
-    TARGET=ARMV7
-    ;;
-  * )
-    TARGET=NEHALEM
-    ;;
-esac
+if [ `uname -m` == armv7l ]; then
+    export TARGET=ARMV7
+else
+    export TARGET=NEHALEM
+fi
 
-OPTS="USE_THREAD=1 NUM_THREADS=128 TARGET=$TARGET NO_STATIC=1"
+make USE_THREAD=1 NUM_THREADS=128 NO_STATIC=1 FC=gfortran TARGET=$TARGET
+make install
 
-make FC=gfortran $OPTS
-make PREFIX=$PREFIX $OPTS install
+if [ `uname` == Darwin ]
+then
+    install_name_tool \
+	-change /usr/local/lib/libgfortran.2.dylib @rpath/libgfortran.2.dylib \
+	$PREFIX/lib/libopenblas.dylib
+fi

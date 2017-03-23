@@ -1,11 +1,11 @@
 package:
   name: requests
-  version: 2.11.1
+  version: 2.13.0
 
 source:
-  fn: requests-2.11.1.tar.gz
-  url: https://pypi.python.org/packages/2e/ad/e627446492cc374c284e82381215dcd9a0a87c4f6e90e9789afefe6da0ad/requests-2.11.1.tar.gz
-  md5: ad5f9c47b5c5dfdb28363ad7546b0763
+  fn: requests-2.13.0.tar.gz
+  url: https://pypi.python.org/packages/16/09/37b69de7c924d318e51ece1c4ceb679bf93be9d05973bb30c35babd596e2/requests-2.13.0.tar.gz
+  md5: 921ec6b48f2ddafc8bb6160957baf444
 
 requirements:
   build:
@@ -20,7 +20,8 @@ test:
 
 about:
   home: http://docs.python-requests.org/en/latest/index.html
-  license: Apache
+  license: Apache Software License
+  license_family: Apache
   license_file: LICENSE
   summary: Python HTTP for Humans
   description: |

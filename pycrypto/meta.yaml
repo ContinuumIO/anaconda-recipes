@@ -8,9 +8,12 @@ source:
   md5: 55a61a054aa66812daf5161a0d5d7eda
   patches:
     - python3-windows.patch
+    - python3-stdint-windows.patch
 
 build:
-  number: 4
+  number: 5  [win]
+  number: 4  [not win]
+  detect_binary_files_with_prefix: False
 
 requirements:
   build:

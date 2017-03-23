@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/ed/f8/96cdfd0badba82b589f5913565e67a0db4d93282a86e0cb2dd786fdd69be/preshed-0.46.4.tar.gz
   md5: 1044e5cf3460fe6a813f0606059ea92d
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

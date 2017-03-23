@@ -5,14 +5,14 @@ from bt.source import SRC_URL
 from ll.utils import download
 
 
-BASE_URL = SRC_URL + '/nsis/ansi/'
-DST_DIR = join(os.environ['PREFIX'], 'NSIS', 'Plugins', 'x86-ansi')
+BASE_URL = SRC_URL + '/nsis/unicode/'
+DST_DIR = join(os.environ['PREFIX'], 'NSIS', 'Plugins', 'x86-unicode')
 
 for line in [
-    '431e5b960aa15af5d153bae6ba6b7e87 UAC.dll',
-    '6f7a35da92ba3ebe04a4fc9abe9d6255 untgz.dll',
+    'c71733d8ef33afcc99050ba2b0c56614 UAC.dll',
+    '832c58ba1567ab9dec35e115f0b50e8f untgz.dll',
     '7178d69ded53b7683dd52cd1ca0a20ff elevate.exe',
-    '7597202a271542d50e9d1e305a96e485 nsPython.dll',
+    'b3e663aa6134473eaf3e40ab1bee992b UnicodePathTest.dll'
     ]:
     md5, fn = line.split()
     download(BASE_URL + fn, join(DST_DIR, fn), md5, verbose=True)
