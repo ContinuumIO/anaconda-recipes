@@ -1,5 +1,6 @@
 import os
 import sys
+import platform
 
 import matplotlib
 import matplotlib.pyplot
@@ -20,7 +21,7 @@ import matplotlib.ttconv
 if sys.platform == 'darwin':
     import matplotlib.backends._macosx
 
-if sys.platform != 'win32':
+if sys.platform != 'win32' and platform.machine() != 'ppc64le':
     import matplotlib.backends._tkagg
 
 import pylab

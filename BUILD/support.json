@@ -78,10 +78,6 @@
   "bzip2": "all", 
   "cachecontrol": "all", 
   "cached-property": "all", 
-  "caffe": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
   "cairo": [
     "linux-64:py27", 
     "linux-64:py35"
@@ -305,18 +301,10 @@
     "osx-64:py27", 
     "win-64:py27"
   ], 
-  "gflags": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
   "git": "all", 
   "gitdb2": "all", 
   "gitpython": "all", 
   "glib": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
-  "glog": [
     "linux-64:py27", 
     "linux-64:py35"
   ], 
@@ -358,10 +346,6 @@
   ], 
   "hdf4": "all", 
   "hdf5": "all", 
-  "hdfs3": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
   "heapdict": "all", 
   "holoviews": "all", 
   "hs2client": [
@@ -433,10 +417,6 @@
   "lancet": "all", 
   "lazy-object-proxy": "all", 
   "ldap3": "all", 
-  "leveldb": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
   "libconda": "all", 
   "libevent": [
     "linux-64:py27", 
@@ -463,14 +443,6 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
-  "libgsasl": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
-  "libhdfs3": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
   "libhs2client": [
     "linux-64:py27", 
     "linux-64:py35"
@@ -482,16 +454,8 @@
     "osx-64:py35"
   ], 
   "libnetcdf": "all", 
-  "libntlm": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
   "libpng": "all", 
   "libpq": "all", 
-  "libprotobuf": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
   "libpython": [
     "win-64:py27"
   ], 
@@ -501,10 +465,6 @@
   ], 
   "libtiff": "all", 
   "libtool": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
-  "libuuid": [
     "linux-64:py27", 
     "linux-64:py35"
   ], 
@@ -532,10 +492,6 @@
   ], 
   "line_profiler": "all", 
   "llvmlite": "all", 
-  "lmdb": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
   "locket": "all", 
   "lockfile": "all", 
   "luigi": "all", 
@@ -643,10 +599,6 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
-  "opencv": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
   "openmpi": [
     "osx-64:py27", 
     "osx-64:py35"
@@ -746,10 +698,6 @@
   ], 
   "proj4": "all", 
   "prompt_toolkit": "all", 
-  "protobuf": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
   "psutil": "all", 
   "psycopg2": "all", 
   "ptyprocess": [
@@ -844,14 +792,6 @@
   "python-gdbm": [
     "linux-64:py27", 
     "osx-64:py27"
-  ], 
-  "python-gflags": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
-  "python-leveldb": [
-    "linux-64:py27", 
-    "linux-64:py35"
   ], 
   "python-ntlm": [
     "linux-64:py27", 
@@ -955,9 +895,6 @@
   "six": "all", 
   "smart_open": "all", 
   "smmap2": "all", 
-  "snakebite": [
-    "linux-64:py27"
-  ], 
   "snakeviz": "all", 
   "snappy": [
     "linux-64:py27", 

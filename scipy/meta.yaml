@@ -12,7 +12,7 @@ build:
   detect_binary_files_with_prefix: False
   ignore_prefix_files: True   [win]
   features:
-    - nomkl                   [nomkl]
+    - nomkl                   [x86 and nomkl]
 
 requirements:
   build:
@@ -20,14 +20,14 @@ requirements:
     - setuptools
     - numpy x.x
     - mkl-devel 2017.0.1      [not nomkl]
-    - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
+    - openblas 0.2.19         [linux and nomkl]
     - cio-bt
   run:
     - python
     - numpy x.x
     - mkl 2017.0.1            [not nomkl]
-    - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
-    - libgfortran 3.0.0       [linux]
+    - openblas 0.2.19         [linux and nomkl]
+    - libgfortran 3.0.0       [linux and not ppc64le]
     - vs2015_runtime          [win and py35]
     - vs2010_runtime          [win and py34]
     - vs2008_runtime          [win and py27]

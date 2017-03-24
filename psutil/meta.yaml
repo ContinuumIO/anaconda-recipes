@@ -1,11 +1,11 @@
 package:
   name: psutil
-  version: 5.2.0
+  version: 5.2.1
 
 source:
-  fn: psutil-5.2.0.tar.gz
-  url: https://pypi.python.org/packages/3c/2f/f3ab91349c666f009077157b12057e613a3152a46a6c3be883777546b6de/psutil-5.2.0.tar.gz
-  md5: c9aa2599dcd9e5b59d71b6660d396062
+  fn: psutil-5.2.1.tar.gz
+  url: https://pypi.python.org/packages/b8/47/c85fbcd23f40892db6ecc88782beb6ee66d22008c2f9821d777cb1984240/psutil-5.2.1.tar.gz
+  md5: ed731bcbb5737486a60807a1dc6183eb
 
 build:
   detect_binary_files_with_prefix: False

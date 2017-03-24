@@ -11,8 +11,11 @@ if [ `uname` == Darwin ]; then
    export XWIN_ARGS="--disable-xlib -disable-xcb --disable-glitz"
 fi
 
+if [ `uname -m` == ppc64le ]; then
+    B="--build=ppc64le-linux"
+fi
 
-./configure                 \
+./configure $B              \
     --prefix=$PREFIX        \
     --disable-static        \
     --disable-gobject       \

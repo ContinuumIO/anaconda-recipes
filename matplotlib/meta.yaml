@@ -9,8 +9,8 @@ source:
   patches:
     - cfg.patch
     - cfg_notests.patch
-    - cfg_qt4agg.patch           [not osx]
-    - rctmp_pyside.patch         [not osx]
+    - cfg_qt4agg.patch           [not (osx or ppc64le)]
+    - rctmp_pyside.patch         [not (osx or ppc64le)]
     - osx-frame.patch            [osx]
     - win_library_path.patch     [win]
     - omit_pep8.patch            [win]
@@ -34,7 +34,7 @@ requirements:
     - libpng 1.6.27
     - zlib 1.2.*          [win]
     - bzip2 1.0.*         [win]
-    - pyqt                [not osx]
+    - pyqt                [not (osx or ppc64le)]
     - tk 8.5.*            [win]
     - cycler
     - nose
@@ -46,7 +46,7 @@ requirements:
     - pytz
     - pyparsing
     - pycairo             [linux and py2k]
-    - pyqt 5.*
+    - pyqt 5.*            [not ppc64le]
     - zlib 1.2.*          [win]
     - tk 8.5.*            [win]
     - libpng >=1.6.27,<1.7

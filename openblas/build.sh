@@ -1,7 +1,9 @@
 #!/bin/bash
 
-if [ `uname -m` == armv7l ]; then
+if [ `uname -m` == 'armv7l' ]; then
     export TARGET=ARMV7
+elif [ `uname -m` == 'ppc64le' ]; then
+    export TARGET=POWER8
 else
     export TARGET=NEHALEM
 fi

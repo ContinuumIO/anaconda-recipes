@@ -90,5 +90,7 @@ import scipy.stats
 import scipy.special
 
 import sys
-if sys.platform.startswith('linux'):
+import platform
+
+if sys.platform.startswith('linux') and platform.machine() != 'ppc64le':
     scipy.test('full')

@@ -10,7 +10,7 @@ build:
   number: 1
   detect_binary_files_with_prefix: False
   features:
-    - nomkl                   [nomkl]
+    - nomkl                   [x86 and nomkl]
 
 requirements:
   build:
@@ -20,13 +20,13 @@ requirements:
     - numpy x.x
     - scipy
     - mkl-devel 2017.0.1      [not nomkl]
-    - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
+    - openblas 0.2.19         [linux and nomkl]
   run:
     - python
     - numpy x.x
     - scipy
     - mkl 2017.0.1            [not nomkl]
-    - openblas 0.2.19         [linux and nomkl and (not ppc64le)]
+    - openblas 0.2.19         [linux and nomkl]
 
 test:
   requires:

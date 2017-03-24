@@ -1,11 +1,11 @@
 package:
   name: paramiko
-  version: 2.0.2
+  version: 2.1.2
 
 source:
-  fn: paramiko-2.0.2.tar.gz
-  url: https://pypi.python.org/packages/6b/4e/971b8c917456a2ec9666311f7e695493002a64022397cd668150b5efd2a8/paramiko-2.0.2.tar.gz
-  md5: 6312aee79892801cf5a624eb4f8fd864
+  fn: paramiko-2.1.2.tar.gz
+  url: https://pypi.python.org/packages/64/79/5e8baeedb6baf1d5879efa8cd012f801efc232e56a068550ba00d7e82625/paramiko-2.1.2.tar.gz
+  md5: 41a8ea0e8abb03a6bf59870670d4f46c
 
 requirements:
   build:

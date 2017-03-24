@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ `uname` == Linux ]
+if [[ (`uname` == Linux) && (`uname -m` != ppc64le) ]]
 then
     pushd $PREFIX/lib
     ln -s libtcl8.5.so libtcl.so
