@@ -1,14 +1,13 @@
 package:
   name: python
-  version: 3.6.0
+  version: 3.6.1
 
 source:
-  fn: Python-3.6.0.tgz
-  url: https://www.python.org/ftp/python/3.6.0/Python-3.6.0.tgz
-  md5: 3f7062ccf8be76491884d0e47ac8b251
+  fn: Python-3.6.1.tgz
+  url: https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tgz
+  md5: 2d0fc9f3a5940707590e07f03ecb08b9
   patches:
     - version.patch
-    - site.patch
     - osx64-dist.patch      [osx and x86_64]
     - win-find_exe.patch    [win]
     - win-library_bin.patch [win]
