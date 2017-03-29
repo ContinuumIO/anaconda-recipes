@@ -8,6 +8,7 @@ source:
   md5: 8f62b1c920a7ab862b0615395d5e4c78
 
 build:
+  detect_binary_files_with_prefix: False
   number: 1
 
 requirements:

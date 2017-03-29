@@ -8,6 +8,9 @@ source:
   patches:
     - setup.patch
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

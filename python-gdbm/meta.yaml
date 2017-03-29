@@ -7,6 +7,9 @@ source:
   url: https://www.python.org/ftp/python/2.7.12/Python-2.7.12.tgz
   md5: 88d61f82e3616a4be952828b3694109d
 
+build:
+  detect_binary_files_with_prefix: False
+
 requirements:
   build:
     - python

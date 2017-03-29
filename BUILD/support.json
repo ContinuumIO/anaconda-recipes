@@ -353,10 +353,6 @@
     "linux-64:py35"
   ], 
   "html5lib": "all", 
-  "hyde": [
-    "linux-64:py27", 
-    "osx-64:py27"
-  ], 
   "icu": "all", 
   "idna": "all", 
   "imagesize": "all", 
@@ -691,11 +687,6 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
-  "progressbar": [
-    "linux-64:py27", 
-    "osx-64:py27", 
-    "win-64:py27"
-  ], 
   "proj4": "all", 
   "prompt_toolkit": "all", 
   "psutil": "all", 
@@ -729,10 +720,6 @@
   "pyface": "all", 
   "pyflakes": "all", 
   "pygments": "all", 
-  "pyhive": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
   "pykerberos": [
     "linux-64:py27", 
     "linux-64:py35", 

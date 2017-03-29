@@ -1,11 +1,11 @@
 package:
   name: persistent
-  version: 4.2.2
+  version: 4.2.4
 
 source:
-  fn: persistent-4.2.2.tar.gz
-  url: https://pypi.python.org/packages/3d/71/3302512282b606ec4d054e09be24c065915518903b29380b6573bff79c24/persistent-4.2.2.tar.gz
-  md5: 3d66070799c6422ffd8d44cef3c22985
+  fn: persistent-4.2.4.tar.gz
+  url: https://pypi.python.org/packages/c4/b5/af6d9224e61fb15bde140923e3ffb401902751e6104c286045f207347c89/persistent-4.2.4.tar.gz
+  md5: e9791cb9c053203abea40e2adb0020fc
 
 build:
   detect_binary_files_with_prefix: False

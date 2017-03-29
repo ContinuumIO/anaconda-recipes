@@ -12,10 +12,13 @@ else
     export LD_LIBRARY_PATH=$PREFIX/lib
 fi
 
-chmod +x configure
-#    --enable-linux-lfs \
+if [ `uname -m` == ppc64le ]; then
+    B="--build=ppc64le-linux"
+fi
 
-./configure \
+chmod +x configure
+
+./configure $B \
     --disable-static \
     --enable-shared \
     --with-ssl \

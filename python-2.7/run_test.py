@@ -20,20 +20,20 @@ armv7l = bool(platform.machine() == 'armv7l')
 ppc64le = bool(platform.machine() == 'ppc64le')
 debug = int(os.getenv('DEBUG', 0))
 
-print 'Python version:', platform.python_version()
+print('Python version: %s' % platform.python_version())
 assert platform.python_version() == '2.7.13'
 assert sys.version_info[:3] == (2, 7, 13)
 if sys.platform == 'win32':
     assert 'MSC v.1500' in sys.version
-print 'max unicode:', sys.maxunicode
-print 'architecture:', platform.architecture()
-print 'sys.version:', sys.version
-print 'platform.machine():', platform.machine()
-print 'DEBUG:', debug
+print('max unicode: %d' % sys.maxunicode)
+print('architecture: %s' % repr(platform.architecture()))
+print('sys.version: %s' % sys.version)
+print('platform.machine(): %s' % platform.machine())
+print('DEBUG: %s' % debug)
 
 assert hasattr(sys, 'gettotalrefcount') == bool(debug)
 if debug:
-    print 'sys.gettotalrefcount:', sys.gettotalrefcount()
+    print('sys.gettotalrefcount: %d' % sys.gettotalrefcount())
 
 import _bisect
 import _codecs_cn
@@ -140,11 +140,11 @@ if not (armv7l or ppc64le):
     import _tkinter
     import Tkinter
     import turtle
-    print 'TK_VERSION:', _tkinter.TK_VERSION
-    print 'TCL_VERSION:', _tkinter.TCL_VERSION
+    print('TK_VERSION: %s' % _tkinter.TK_VERSION)
+    print('TCL_VERSION: %s' % _tkinter.TCL_VERSION)
     assert _tkinter.TK_VERSION == _tkinter.TCL_VERSION == '8.5'
 
-print 'OPENSSL_VERSION:', ssl.OPENSSL_VERSION
+print('OPENSSL_VERSION: %s' % ssl.OPENSSL_VERSION)
 if sys.platform != 'win32':
     assert '1.0.2k' in ssl.OPENSSL_VERSION
 
