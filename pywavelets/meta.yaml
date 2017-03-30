@@ -1,0 +1,32 @@
+package:
+  name: pywavelets
+  version: 0.5.2
+
+source:
+  fn: PyWavelets-0.5.2.tar.gz
+  url: https://pypi.python.org/packages/4b/df/3fff2a8b96ef7df6e4e8642fb7569c3717ae562dd76afe0f96525c0af784/PyWavelets-0.5.2.tar.gz
+  md5: aedda732f064cf9395f03d37f1003d1a
+
+build:
+  detect_binary_files_with_prefix: False
+
+requirements:
+  build:
+    - python
+    - cython
+    - setuptools
+    - numpy x.x
+  run:
+    - python
+    - numpy x.x
+
+test:
+  imports:
+    - pywt
+    - pywt._extensions
+    - pywt.data
+
+about:
+  home: https://github.com/PyWavelets/pywt
+  license: MIT
+  summary: wavelet transform module

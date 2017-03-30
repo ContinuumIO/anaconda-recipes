@@ -790,6 +790,7 @@
     "osx-64:py35"
   ], 
   "pytz": "all", 
+  "pywavelets": "all", 
   "pywget": "all", 
   "pywin32": [
     "win-64:py27", 
