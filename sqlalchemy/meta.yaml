@@ -1,11 +1,11 @@
 package:
   name: sqlalchemy
-  version: 1.1.6
+  version: 1.1.7
 
 source:
-  fn: SQLAlchemy-1.1.6.tar.gz
-  url: https://pypi.python.org/packages/24/de/66d96cbad7a91443af1399469e9aa0aec8a41669ba6d0faae8b8411ddb27/SQLAlchemy-1.1.6.tar.gz
-  md5: cdd2f57967c67e174dd99342111a7db1
+  fn: SQLAlchemy-1.1.7.tar.gz
+  url: https://pypi.python.org/packages/29/18/a78469bc449d9f92f6269cc62d0d6fbe6bf394d1031b447ad5e54463c3a0/SQLAlchemy-1.1.7.tar.gz
+  md5: 888fd3fd50a03714d9b30b023d2a0f29
 
 build:
   detect_binary_files_with_prefix: False

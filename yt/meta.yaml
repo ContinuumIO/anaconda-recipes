@@ -1,11 +1,11 @@
 package:
   name: yt
-  version: 3.3.2
+  version: 3.3.5
 
 source:
-  fn: yt-3.3.2.tar.gz
-  url: https://pypi.python.org/packages/98/b5/9285b3634d26841103f21fbdaec9dfd80c7a215dfbd7c9312ba710f13a2a/yt-3.3.2.tar.gz
-  md5: 405211ea89a0d40eb289363055a54291
+  fn: yt-3.3.5.tar.gz
+  url: https://pypi.python.org/packages/93/23/0a211d87f0344ff110e0dbe5561ec497aa651f44b3037b7618118e60b7fe/yt-3.3.5.tar.gz
+  md5: e943019a099bea560d9c6f3be5b44dec
 
 build:
   detect_binary_files_with_prefix: False
@@ -15,14 +15,13 @@ build:
 requirements:
   build:
     - python
+    - setuptools >=19.6
     - numpy
     - cython >=0.24.0
-    - setuptools >=19.6
   run:
     - python
     - setuptools
     - numpy
-    - h5py
     - sympy
     - matplotlib
 
