@@ -1,16 +1,15 @@
 package:
   name: conda
-  version: 4.3.15
+  version: 4.3.16
 
 source:
   git_url: https://github.com/conda/conda.git
-  git_tag: 4.3.15
+  git_tag: 4.3.16
 
 build:
   # These are present when the new environment is created
   # so we have to exempt them from the list of initial files
   # for conda-build to realize they should be included.
-  number: 1                     [win]
   always_include_files:
     - bin/conda                 [unix]
     - bin/activate              [unix]

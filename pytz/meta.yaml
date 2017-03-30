@@ -1,11 +1,11 @@
 package:
   name: pytz
-  version: "2016.10"
+  version: 2017.2
 
 source:
-  fn: pytz-2016.10.tar.bz2
-  url: https://pypi.python.org/packages/d0/e1/aca6ef73a7bd322a7fc73fd99631ee3454d4fc67dc2bee463e2adf6bb3d3/pytz-2016.10.tar.bz2
-  md5: 88b1d6c50c764579292edce3493c8a3a
+  fn: pytz-2017.2.zip
+  url: https://pypi.python.org/packages/a4/09/c47e57fc9c7062b4e83b075d418800d322caa87ec0ac21e6308bd3a2d519/pytz-2017.2.zip
+  md5: f89bde8a811c8a1a5bac17eaaa94383c
 
 requirements:
   build:
