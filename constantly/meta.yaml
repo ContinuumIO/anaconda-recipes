@@ -24,3 +24,5 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: symbolic constants in Python
+  description: |
+    A library that provides symbolic constant support.

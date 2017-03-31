@@ -22,5 +22,7 @@ about:
   license: PSF
   license_file: LICENSE
   summary: backport of recent additions to the 'collections.abc' module
+  description: |
+    Backport of recent additions to the "collections.abc" stdlib module (Py3.5)
   doc_url: https://pypi.python.org/pypi/backports_abc
   dev_url: https://github.com/cython/backports_abc

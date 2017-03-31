@@ -36,3 +36,6 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: self-service finite-state machines for the programmer on the go
+  description: |
+    Automat is a library for concise, idiomatic Python expression of
+    finite-state automata (particularly deterministic finite-state transducers).

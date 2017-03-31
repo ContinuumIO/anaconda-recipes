@@ -22,6 +22,9 @@ about:
   home: http://github.com/ActiveState/appdirs
   license: MIT
   summary: Python module for determining appropriate platform-specific dirs
+  description: |
+    A small Python module for determining appropriate platform-specific dirs,
+    e.g. a "user data dir".
   license_family: MIT
   license_file: LICENSE.txt
   dev_url: https://github.com/ActiveState/appdirs

@@ -34,3 +34,14 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: conda build-all is a conda subcommand providing matrix building
+  description: |
+    conda build-all is a conda subcommand which allows multiple distributions
+    to be built (and uploaded) in a single command.
+
+# extra:
+#   recipe-maintainers:
+#     - jakirkham
+#     - pelson
+#     - ocefpaf
+#     - marqh
+

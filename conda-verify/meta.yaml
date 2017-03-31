@@ -28,3 +28,6 @@ about:
   license: BSD
   license_file: LICENSE.txt
   summary: tool for (passively) verifying conda recipes and conda packages
+  description: |
+    conda-verify is a tool for (passively) verifying conda recipes and conda
+    packages.

@@ -13,4 +13,5 @@ test:
     - backports
 
 about:
+  home: https://bitbucket.org/brandon/backports
   license: BSD

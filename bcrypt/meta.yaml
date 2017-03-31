@@ -32,3 +32,5 @@ about:
   license_family: Apache
   license_file: LICENSE
   summary: modern password hashing for your software and your servers
+  description: |
+    Modern password hashing for your software and your servers

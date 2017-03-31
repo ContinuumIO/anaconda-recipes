@@ -26,4 +26,7 @@ about:
   home: https://github.com/ContinuumIO/anaconda-clean
   license: BSD
   summary: Delete Anaconda configuration files
+  description: |
+    This module removes configuration files that are left behind when
+    uninstalling Anaconda.
   dev_url: https://github.com/ContinuumIO/anaconda-clean

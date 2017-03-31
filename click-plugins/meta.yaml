@@ -24,3 +24,5 @@ about:
   home: https://github.com/click-contrib/click-plugins
   license: BSD
   summary: extension module for click to enable registering CLI commands
+  description: |
+    Register CLI commands via setuptools entry-points.

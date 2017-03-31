@@ -23,3 +23,5 @@ about:
   license_family: Other
   license_file: LICENSE.txt
   summary: collection of perceptually uniform colormaps
+  description: |
+    A set of useful perceptually uniform colormaps for plotting scientific data

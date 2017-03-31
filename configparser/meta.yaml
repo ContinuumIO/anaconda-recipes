@@ -25,3 +25,7 @@ about:
   home: http://docs.python.org/3/library/configparser.html
   license: MIT
   summary: brings the updated configparser from Python 3.5 to Python 2.6-3.5
+  description: |
+    This module provides the ConfigParser class which implements a basic
+    configuration language which provides a structure similar to what's
+    found in Microsoft Windows INI files.
