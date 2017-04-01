@@ -1,15 +1,13 @@
 package:
   name: qtconsole
-  version: 4.2.1
+  version: 4.3.0
 
 source:
-  fn: qtconsole-4.2.1.tar.gz
-  url: https://pypi.python.org/packages/source/q/qtconsole/qtconsole-4.2.1.tar.gz
-  md5: c08ebebc7a60629ebadf685361ca0798
+  fn: qtconsole-4.3.0.tar.gz
+  url: https://pypi.python.org/packages/cc/97/41fb735c918bfb3d9bac3fa8347addc2ffc82fd06084940a1821cf333ac8/qtconsole-4.3.0.tar.gz
+  md5: e8fb599d209e3e55aa593c5b25d898ac
 
 build:
-  number: 1          [unix]
-  number: 2          [win]
   entry_points:
     - jupyter-qtconsole = qtconsole.qtconsoleapp:main
 
@@ -20,6 +18,7 @@ requirements:
     - python
     - pyqt 5.*
     - traitlets
+    - ipython_genutils
     - jupyter_core
     - jupyter_client >=4.1
     - pygments
@@ -37,7 +36,9 @@ test:
 
 about:
   home: http://jupyter.org
-  license: BSD
+  license: Modified BSD License
+  license_family: BSD
+  license_file: COPYING.md
   summary: Jupyter Qt Console
   description: |
     A rich Qt-based console for working with Jupyter kernels, supporting rich
