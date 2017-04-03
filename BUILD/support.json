@@ -452,6 +452,10 @@
   "libnetcdf": "all", 
   "libpng": "all", 
   "libpq": "all", 
+  "libprotobuf": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "libpython": [
     "win-64:py27"
   ], 
@@ -689,6 +693,10 @@
   ], 
   "proj4": "all", 
   "prompt_toolkit": "all", 
+  "protobuf": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "psutil": "all", 
   "psycopg2": "all", 
   "ptyprocess": [

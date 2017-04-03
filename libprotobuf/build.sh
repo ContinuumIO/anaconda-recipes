@@ -11,8 +11,8 @@ then
     export LIBS="-lc++"
 elif [ "$(uname)" == "Linux" ];
 then
-    export CC=gcc
-    export CXX=g++
+    export CC="$GCC"
+    export CXX="$GXX"
 fi
 
 # Doesn't include gmock or gtest. So, need to get these ourselves for `make check`.

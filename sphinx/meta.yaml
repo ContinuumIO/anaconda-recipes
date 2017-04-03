@@ -1,11 +1,11 @@
 package:
   name: sphinx
-  version: 1.5.1
+  version: 1.5.4
 
 source:
-  fn: Sphinx-1.5.1.tar.gz
-  url: https://pypi.python.org/packages/b2/d5/bb4bf7fbc2e6b85d1e3832716546ecd434632d9d434a01efe87053fe5f25/Sphinx-1.5.1.tar.gz
-  md5: 1abb725861037e13cbc49eb84cd8cef3
+  fn: Sphinx-1.5.4.tar.gz
+  url: https://pypi.python.org/packages/c8/c8/7abbccf8276b7e2a02f416198ade475c5d7f79be7f817abc4cb5f3ba0044/Sphinx-1.5.4.tar.gz
+  md5: b4c2b44259cf113e953e7d3603153c5f
 
 build:
   entry_points:
@@ -40,7 +40,7 @@ requirements:
     - babel >=1.3,!=2.0
     - alabaster >=0.7,<0.8
     - imagesize
-    - requests
+    - requests >=2.0.0
     - colorama >=0.3.5              [win]
 
 test:

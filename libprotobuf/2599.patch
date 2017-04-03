@@ -1,0 +1,30 @@
+commit a83ac8663fb8042a881bc60b12a8bd3a0c03a3ff
+Author: michaelpengcn <michaelpengcn@gmail.com>
+Date:   Sat Jan 28 08:40:53 2017 +0800
+
+    fix compile error on centos in metadata.h for constructors. (#2599)
+
+diff --git src/google/protobuf/metadata.h src/google/protobuf/metadata.h
+index f925753..dca1fa4 100644
+--- src/google/protobuf/metadata.h
++++ src/google/protobuf/metadata.h
+@@ -172,7 +172,8 @@ class InternalMetadataWithArena
+  public:
+   InternalMetadataWithArena() {}
+   explicit InternalMetadataWithArena(Arena* arena)
+-      : InternalMetadataWithArenaBase(arena) {}
++      : InternalMetadataWithArenaBase<UnknownFieldSet,
++                                           InternalMetadataWithArena>(arena) {}
+ 
+   void DoSwap(UnknownFieldSet* other) {
+     mutable_unknown_fields()->Swap(other);
+@@ -201,7 +202,8 @@ class InternalMetadataWithArenaLite
+   InternalMetadataWithArenaLite() {}
+ 
+   explicit InternalMetadataWithArenaLite(Arena* arena)
+-      : InternalMetadataWithArenaBase(arena) {}
++      : InternalMetadataWithArenaBase<string,
++                                           InternalMetadataWithArenaLite>(arena) {}
+ 
+   void DoSwap(string* other) {
+     mutable_unknown_fields()->swap(*other);

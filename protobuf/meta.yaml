@@ -1,23 +1,23 @@
 package:
   name: protobuf
-  version: 3.0.0
+  version: 3.2.0
 
 source:
   git_url: https://github.com/google/protobuf.git
-  git_tag: v3.0.0
+  git_tag: v3.2.0
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
     - python
     - setuptools
-    - libprotobuf 3.0.0
+    - libprotobuf 3.2.0
     - six
   run:
     - python
-    - libprotobuf 3.0.0
+    - libprotobuf 3.2.0
     - six
 
 test:
