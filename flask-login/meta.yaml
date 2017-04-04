@@ -1,11 +1,11 @@
 package:
   name: flask-login
-  version: 0.3.2
+  version: 0.4.0
 
 source:
-  fn: Flask-Login-0.3.2.tar.gz
-  url: https://pypi.python.org/packages/06/e6/61ed90ed8ce6752b745ed13fac3ba407dc9db95dfa2906edc8dd55dde454/Flask-Login-0.3.2.tar.gz
-  md5: d95c2275d3e1c755145910077366dc45
+  fn: Flask-Login-0.4.0.tar.gz
+  url: https://pypi.python.org/packages/70/96/20cae731ef27084dcb183f3a6e3073d0232f10c1fd7be76729bd7bd4b994/Flask-Login-0.4.0.tar.gz
+  md5: e050efaa2c4dbc2d97f480a70f4d44aa
 
 requirements:
   build:

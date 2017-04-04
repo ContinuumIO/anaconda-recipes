@@ -1,11 +1,11 @@
 package:
   name: tblib
-  version: 1.3.0
+  version: 1.3.1
 
 source:
-  fn: tblib-1.3.0.tar.gz
-  url: https://pypi.python.org/packages/source/t/tblib/tblib-1.3.0.tar.gz
-  md5: 0dbc13ffc624aa1603ab125404fa7b7d
+  fn: tblib-1.3.1.tar.gz
+  url: https://pypi.python.org/packages/a0/7b/c96c10fe290187b46833a2307e233ecbe27f3e34f1ec6c32d42ce021ca8b/tblib-1.3.1.tar.gz
+  md5: 4abe56fcd915f3d8d90be033465d8e35
 
 requirements:
   build:

@@ -1,23 +1,21 @@
 package:
   name: flask-wtf
-  version: 0.12
+  version: 0.14.2
 
 source:
-  fn: Flask-WTF-0.12.tar.gz
-  url: https://pypi.python.org/packages/f6/fe/9fe6a8a4edcc39f8ec365dc16d292d659f7a77a0ed596947f29c0c5c9dc1/Flask-WTF-0.12.tar.gz
-  md5: c53a74e8ba481bf53405fd5efdf0339e
+  fn: Flask-WTF-0.14.2.tar.gz
+  url: https://pypi.python.org/packages/ba/15/00a9693180f214225a2c0b1bb9077f3b0b21f2e86522cbba22e8ad6e570c/Flask-WTF-0.14.2.tar.gz
+  md5: 586f50f233926cade42e3d744aca3e8f
 
 requirements:
   build:
     - python
     - setuptools
     - flask
-    - werkzeug
     - wtforms
   run:
     - python
     - flask
-    - werkzeug
     - wtforms
 
 test:

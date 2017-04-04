@@ -1,15 +1,17 @@
 package:
   name: ipykernel
-  version: 4.5.2
+  version: 4.6.0
 
 source:
-  fn: ipykernel-4.5.2.tar.gz
-  url: https://pypi.python.org/packages/2d/1b/eee47b5cd8b2fcdde587cad1e8d3f7eae7bdfa1d36a94ad316fc5fbee833/ipykernel-4.5.2.tar.gz
-  md5: 4048987076b85814202cd29b1dd3fc7b
+  fn: ipykernel-4.6.0.tar.gz
+  url: https://pypi.python.org/packages/2f/21/bd49c4e3a448dd2ffa7ae8cba3cd4911d3c9faff8a2e299881de36d6a3d8/ipykernel-4.6.0.tar.gz
+  md5: 0ece8acd7866261b07c3eb58e134b510
 
 requirements:
   build:
     - python
+    - ipython
+    - jupyter_client
   run:
     - python
     - ipython >=4.0.0
