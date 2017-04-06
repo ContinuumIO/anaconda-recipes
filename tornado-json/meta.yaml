@@ -1,0 +1,27 @@
+package:
+  name: tornado-json
+  version: 1.3.2
+
+source:
+  fn: Tornado-JSON-1.3.2.tar.gz
+  url: https://pypi.python.org/packages/3f/81/48c7e054c547cff1b61048c2eaffa6a42c28a62fbddb9fa9e47e2a294807/Tornado-JSON-1.3.2.tar.gz
+  md5: 908ebe073b16582023f0142cc9cf9fa5
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - tornado >=3.1.1
+    - jsonschema >=2.3.0
+
+test:
+  imports:
+    - tornado_json
+
+about:
+  home: https://github.com/hfaran/Tornado-JSON
+  license: MIT
+  license_file: LICENSE
+  summary: simple JSON API framework based on Tornado

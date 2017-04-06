@@ -1,0 +1,40 @@
+package:
+  name: tabpy-server
+  version: 0.2
+
+source:
+  fn: tabpy-server-0.2.tar.gz
+  url: https://pypi.python.org/packages/f1/1f/7ab687d56ce7629c2697e7d80d2d3a8da8e1a52abd5fdacb1da9b65307f0/tabpy-server-0.2.tar.gz
+  md5: 89061d3557a9c89df0437fb0546d80ff
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - future
+    - futures                 [py2k]
+    - requests
+    - simplejson
+    - tornado-json
+    - tornado
+    - cloudpickle
+    - decorator
+    - python-dateutil
+    - genson
+    - jsonschema
+    - tabpy-client
+    - numpy
+
+test:
+  imports:
+    - tabpy_server
+    - tabpy_server.common
+    - tabpy_server.management
+    - tabpy_server.psws
+
+about:
+  home: https://github.com/tableau/TabPy
+  license: MIT
+  summary: Web server Tableau uses to run Python scripts

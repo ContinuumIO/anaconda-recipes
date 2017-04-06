@@ -17,6 +17,7 @@ requirements:
     - jinja2
     - pygments
     - traitlets >=4.2
+    - jupyter_client
     - jupyter_core
     - nbformat
     - entrypoints >=0.2.2

@@ -1,0 +1,32 @@
+package:
+  name: genson
+  version: 0.2.1
+
+source:
+  fn: genson-0.2.1.tar.gz
+  url: https://pypi.python.org/packages/cb/3c/977e0d79f1133e9a58af3cf4d69cbea6d88dd6f4dfeac398a93ce2348347/genson-0.2.1.tar.gz
+  md5: b2fe31b7736371d79e96f248d6debd84
+
+build:
+  entry_points:
+    - genson = genson.genson:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - jsonschema >=2.5.1
+
+test:
+  commands:
+    - genson --help
+  imports:
+    - genson
+
+about:
+  home: https://github.com/wolverdude/genson/
+  license: MIT
+  license_file: LICENSE
+  summary: powerful, user-friendly JSON Schema generator

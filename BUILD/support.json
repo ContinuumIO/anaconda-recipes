@@ -281,6 +281,7 @@
     "osx-64:py27"
   ], 
   "gensim": "all", 
+  "genson": "all", 
   "geos": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -946,6 +947,8 @@
   "svn": "all", 
   "swig": "all", 
   "sympy": "all", 
+  "tabpy-client": "all", 
+  "tabpy-server": "all", 
   "tblib": "all", 
   "tempita": "all", 
   "teradata": "all", 
@@ -965,6 +968,7 @@
   "tk": "all", 
   "toolz": "all", 
   "tornado": "all", 
+  "tornado-json": "all", 
   "tqdm": "all", 
   "traitlets": "all", 
   "traits": "all", 

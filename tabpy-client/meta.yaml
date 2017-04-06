@@ -1,0 +1,30 @@
+package:
+  name: tabpy-client
+  version: 0.2
+
+source:
+  fn: tabpy-client-0.2.tar.gz
+  url: https://pypi.python.org/packages/0e/09/4456e5a1522688116ae86e2a0e5fe5c4169b23c1d6d2f83373545e0d7e12/tabpy-client-0.2.tar.gz
+  md5: 13a4b722c4fca91e34467faef6726d3c
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - cloudpickle
+    - decorator
+    - python-dateutil
+    - requests
+    - genson
+    - jsonschema
+    - future
+
+test:
+  imports:
+    - tabpy_client
+
+about:
+  home: https://github.com/tableau/TabPy
+  license: MIT
+  summary: Python client library to manage Tableau Python Server

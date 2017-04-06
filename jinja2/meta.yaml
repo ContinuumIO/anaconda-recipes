@@ -1,14 +1,11 @@
 package:
   name: jinja2
-  version: 2.9.5
+  version: 2.9.6
 
 source:
-  fn: Jinja2-2.9.5.tar.gz
-  url: https://pypi.python.org/packages/71/59/d7423bd5e7ddaf3a1ce299ab4490e9044e8dfd195420fc83a24de9e60726/Jinja2-2.9.5.tar.gz
-  md5: 9e55f0db6620dd99a1b366183a94270d
-
-build:
-  number: 0
+  fn: Jinja2-2.9.6.tar.gz
+  url: https://pypi.python.org/packages/90/61/f820ff0076a2599dd39406dcb858ecb239438c02ce706c8e91131ab9c7f1/Jinja2-2.9.6.tar.gz
+  md5: 6411537324b4dba0956aaa8109f3c77b
 
 requirements:
   build:
