@@ -1,11 +1,11 @@
 package:
   name: notebook
-  version: 4.4.1
+  version: 5.0.0
 
 source:
-  fn: notebook-4.4.1.tar.gz
-  url: https://pypi.python.org/packages/07/67/4a75b35955bbbfac23f104d409235e77f771f84c4643053da773bebfd6b3/notebook-4.4.1.tar.gz
-  md5: 3f9074031258de895f12102379394dcd
+  fn: notebook-5.0.0.tar.gz
+  url: https://pypi.python.org/packages/e2/71/49a6be47ffa566d925387ba4db1a353824e789cd785c12d2d6e3e2f30892/notebook-5.0.0.tar.gz
+  md5: c2aa6847f5a2c8a7ed497748f0fc220c
 
 build:
   entry_points:
@@ -21,7 +21,7 @@ requirements:
     - jinja2
     - tornado >=4.0
     - ipython_genutils
-    - traitlets
+    - traitlets >=4.2.1
     - jupyter_core
     - jupyter_client
     - nbformat

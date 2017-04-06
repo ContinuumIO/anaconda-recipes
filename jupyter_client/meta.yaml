@@ -1,11 +1,11 @@
 package:
   name: jupyter_client
-  version: 5.0.0
+  version: 5.0.1
 
 source:
-  fn: jupyter_client-5.0.0.tar.gz
-  url: https://pypi.python.org/packages/e5/6f/65412ed462202b90134b7e761b0b7e7f949e07a549c1755475333727b3d0/jupyter_client-5.0.0.tar.gz
-  md5: 1acd331b5c9fb4d79dae9939e79f2426
+  fn: jupyter_client-5.0.1.tar.gz
+  url: https://pypi.python.org/packages/01/6d/1566172f3497c79741774971df80db44e10d3c692801e59f9cd3ea64b19a/jupyter_client-5.0.1.tar.gz
+  md5: 73852317f98b85d4ffc6565040c04dd6
 
 requirements:
   build:
@@ -14,7 +14,7 @@ requirements:
     - python
     - traitlets
     - jupyter_core
-    - pyzmq
+    - pyzmq >=13.0
     - python-dateutil >=2.1
 
 test:

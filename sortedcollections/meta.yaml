@@ -1,11 +1,11 @@
 package:
   name: sortedcollections
-  version: 0.4.2
+  version: 0.5.3
 
 source:
-  fn: sortedcollections-0.4.2.tar.gz
-  url: https://pypi.python.org/packages/73/bc/dd4453078f8677c5969e328f6d51511798f4eab689f32c9f09723015edca/sortedcollections-0.4.2.tar.gz
-  md5: 3e398c052a903daa2fce386997e72b4d
+  fn: sortedcollections-0.5.3.tar.gz
+  url: https://pypi.python.org/packages/c4/c3/a3883c9d5ef499e61bf0f7c5561ee13447d00a58392dcd81354ab04d4cf1/sortedcollections-0.5.3.tar.gz
+  md5: 24cee977cdb25e7851f9e35a05a13560
 
 requirements:
   build:

@@ -1,11 +1,13 @@
 package:
   name: bokeh
-  version: 0.12.4
+  version: 0.12.5
 
 source:
-  fn: bokeh-0.12.4.tar.gz
-  url: https://pypi.python.org/packages/6c/f5/6a4b75f5f7c35771b172994c5b5642dd0f923d781b8eb7a9167339eb63b4/bokeh-0.12.4.tar.gz
-  md5: 82eb8e8b7a5fe7ce727b8a6ab1e4b5da
+  fn: bokeh-0.12.5.tar.gz
+  url: https://pypi.python.org/packages/e3/e2/b379c5bfe337746ebd7919df14a68c35e5d78e31689adb96b32067d51362/bokeh-0.12.5.tar.gz
+  md5: 53bb53b852e5c323051bc42ed7fdbb12
+  patches:
+    - setup.patch
 
 build:
   entry_points:

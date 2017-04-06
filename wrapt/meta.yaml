@@ -1,14 +1,13 @@
 package:
   name: wrapt
-  version: 1.10.8
+  version: 1.10.10
 
 source:
-  fn: wrapt-1.10.8.tar.gz
-  url: https://pypi.python.org/packages/00/dd/dc22f8d06ee1f16788131954fc69bc4438f8d0125dd62419a43b86383458/wrapt-1.10.8.tar.gz
-  md5: 7c2a7e6262acc396ef6528b3d66bd047
+  fn: wrapt-1.10.10.tar.gz
+  url: https://pypi.python.org/packages/a3/bb/525e9de0a220060394f4aa34fdf6200853581803d92714ae41fc3556e7d7/wrapt-1.10.10.tar.gz
+  md5: 97365e906afa8b431f266866ec4e2e18
 
 build:
-  script: python setup.py install
   detect_binary_files_with_prefix: False
 
 requirements:

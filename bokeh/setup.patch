@@ -1,0 +1,73 @@
+diff --git setup.py setup.py
+index b16efe4..a277e80 100644
+--- setup.py
++++ setup.py
+@@ -63,7 +63,7 @@ from os.path import join
+ from shutil import copy
+ import sys
+ 
+-from setuptools import find_packages, setup
++from distutils.core import setup
+ 
+ from _setup_support import (build_or_install_bokehjs, fixup_building_sdist,
+                             fixup_for_packaged, fixup_old_jsargs, get_cmdclass,
+@@ -107,6 +107,50 @@ if "conda-build" not in sys.argv[0]:
+ 
+     bokehjs_action = build_or_install_bokehjs()
+ 
++PACKAGES = [
++  'bokeh',
++  'bokeh.server',
++  'bokeh.core',
++  'bokeh.models',
++  'bokeh.client',
++  'bokeh.plotting',
++  'bokeh.application',
++  'bokeh.sampledata',
++  'bokeh.sphinxext',
++  'bokeh.charts',
++  'bokeh.command',
++  'bokeh.util',
++  'bokeh.tests',
++  'bokeh.themes',
++  'bokeh.server.views',
++  'bokeh.server.protocol',
++  'bokeh.server.tests',
++  'bokeh.core.validation',
++  'bokeh.core.compat',
++  'bokeh.core.property',
++  'bokeh.core.tests',
++  'bokeh.models.widgets',
++  'bokeh.models.tests',
++  'bokeh.plotting.tests',
++  'bokeh.application.tests',
++  'bokeh.application.handlers',
++  'bokeh.charts.builders',
++  'bokeh.charts.tests',
++  'bokeh.command.subcommands',
++  'bokeh.command.tests',
++  'bokeh.util.tests',
++  'bokeh.server.protocol.messages',
++  'bokeh.server.protocol.tests',
++  'bokeh.core.compat.mplexporter',
++  'bokeh.core.property.tests',
++  'bokeh.models.tests.utils',
++  'bokeh.application.handlers.tests',
++  'bokeh.charts.builders.tests',
++  'bokeh.command.subcommands.tests',
++  'bokeh.server.protocol.messages.tests',
++  'bokeh.core.compat.mplexporter.renderers',
++]
++
+ # configuration to include all the special or non-python files in the package
+ # directory that need to also be installed or included in a build
+ sampledata_pats = ('.csv', '.conf', '.gz', '.json', '.png', '.ics', '.geojson')
+@@ -154,7 +198,7 @@ setup(
+ 
+     # details needed by setup
+     install_requires=REQUIRES,
+-    packages=find_packages(),
++    packages=PACKAGES,
+     package_data=get_package_data(),
+     entry_points={'console_scripts': ['bokeh = bokeh.__main__:main',], },
+     zip_safe=False,
