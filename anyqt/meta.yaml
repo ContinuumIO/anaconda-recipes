@@ -1,0 +1,38 @@
+{% set name = "AnyQt" %}
+{% set version = "0.0.8" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 7f1f71ce744e940fb49da0a302d972a9561c0844ab67df77091d631c6f2687b6
+
+build:
+  script: python setup.py install --old-and-unmanageable
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - pyqt
+
+test:
+  imports:
+    - AnyQt.QtCore
+    - AnyQt.QtGui
+    - AnyQt.QtWidgets
+    - AnyQt.QtNetwork
+    - AnyQt.QtSvg
+
+about:
+  home: https://github.com/ales-erjavec/anyqt
+  license: GPL-3.0
+  license_family: GPL3
+  summary: PyQt4/PyQt5 compatibility layer.
+  doc_url: http://anyqt.readthedocs.io/en/0.0.7/
+  dev_url: https://github.com/ales-erjavec/anyqt

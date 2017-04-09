@@ -5,6 +5,7 @@
   "anaconda-client": "all", 
   "anaconda-verify": "all", 
   "ansi2html": "all", 
+  "anyqt": "all", 
   "appdirs": "all", 
   "appnope": [
     "osx-64:py27", 
@@ -606,6 +607,11 @@
   ], 
   "openpyxl": "all", 
   "openssl": "all", 
+  "orange3": [
+    "linux-64:py35", 
+    "osx-64:py35", 
+    "win-64:py35"
+  ], 
   "pandas": "all", 
   "pandas-datareader": "all", 
   "pandasql": "all", 

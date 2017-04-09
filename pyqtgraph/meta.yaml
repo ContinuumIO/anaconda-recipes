@@ -1,14 +1,11 @@
 package:
   name: pyqtgraph
-  version: 0.9.10
+  version: 0.10.0
 
 source:
-  fn: pyqtgraph-0.9.10.tar.gz
-  url: https://pypi.python.org/packages/source/p/pyqtgraph/pyqtgraph-0.9.10.tar.gz
-  md5: bd84bf7537c43cf38db81cc1ad4f743a
-
-build:
-  number: 1
+  fn: pyqtgraph-0.10.0.tar.gz
+  url: http://www.pyqtgraph.org/downloads/0.10.0/pyqtgraph-0.10.0.tar.gz
+  md5: 3f191f724a3f9d829094af6237f1db5a
 
 requirements:
   build:
