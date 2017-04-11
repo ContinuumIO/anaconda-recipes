@@ -1,14 +1,14 @@
 package:
   name: gevent-websocket
-  version: 0.9.5
+  version: 0.10.1
 
 source:
-  fn: gevent-websocket-0.9.5.tar.gz
-  url: https://pypi.python.org/packages/source/g/gevent-websocket/gevent-websocket-0.9.5.tar.gz
-  md5: 03a8473b9a61426b0ef6094319141389
+  fn: gevent-websocket-0.10.1.tar.gz
+  url: https://pypi.python.org/packages/98/d2/6fa19239ff1ab072af40ebf339acd91fb97f34617c2ee625b8e34bf42393/gevent-websocket-0.10.1.tar.gz
+  md5: e095bf3358175489a956949c1b4de9ff
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:

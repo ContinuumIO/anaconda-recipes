@@ -298,11 +298,7 @@
   ], 
   "get_terminal_size": "all", 
   "gevent": "all", 
-  "gevent-websocket": [
-    "linux-64:py27", 
-    "osx-64:py27", 
-    "win-64:py27"
-  ], 
+  "gevent-websocket": "all", 
   "git": "all", 
   "gitdb2": "all", 
   "gitpython": "all", 
