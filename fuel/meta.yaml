@@ -1,0 +1,64 @@
+package:
+  name: fuel
+  version: 0.2.0
+
+source:
+  git_url: https://github.com/mila-udem/fuel.git
+  git_tag: 0.2.0
+
+build:
+  detect_binary_files_with_prefix: False
+  entry_points:
+    - fuel-convert = fuel.bin.fuel_convert:main
+    - fuel-download = fuel.bin.fuel_download:main
+    - fuel-info = fuel.bin.fuel_info:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy
+    - six
+    - picklable-itertools
+    - pyyaml
+    - h5py
+    - pytables
+    - progressbar2
+    - pyzmq
+    - scipy
+    - pillow
+    - requests
+  run:
+    - python
+    - numpy
+    - six
+    - picklable-itertools
+    - pyyaml
+    - h5py
+    - pytables
+    - progressbar2
+    - pyzmq
+    - scipy
+    - pillow
+    - requests
+
+test:
+  imports:
+    - fuel
+    - fuel.bin
+    - fuel.converters
+    - fuel.datasets
+    - fuel.downloaders
+    - fuel.transformers
+    - fuel.transformers._image
+  commands:
+    - fuel-convert --help
+    - fuel-download --help
+    - fuel-info --help
+
+about:
+  home: https://github.com/mila-udem/fuel.git
+  license: MIT License
+  license_family: MIT
+  license_file: LICENSE
+  summary: data pipeline framework for machine learning

@@ -249,6 +249,7 @@
   ], 
   "freeimage": "all", 
   "freetype": "all", 
+  "fuel": "all", 
   "funcsigs": [
     "linux-64:py27", 
     "osx-64:py27", 
@@ -666,6 +667,7 @@
     "win-64:py27", 
     "win-64:py35"
   ], 
+  "picklable-itertools": "all", 
   "pickleshare": "all", 
   "pillow": "all", 
   "pip": "all", 
@@ -694,6 +696,7 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "progressbar2": "all", 
   "proj4": "all", 
   "prompt_toolkit": "all", 
   "protobuf": [
@@ -778,6 +781,7 @@
   "pytest-cache": "all", 
   "pytest-cov": "all", 
   "pytest-pep8": "all", 
+  "pytest-runner": "all", 
   "pytest-timeout": "all", 
   "python": "all", 
   "python-daemon": [
@@ -796,6 +800,7 @@
     "osx-64:py27", 
     "win-64:py27"
   ], 
+  "python-utils": "all", 
   "python.app": [
     "osx-64:py27", 
     "osx-64:py35"
@@ -1007,6 +1012,7 @@
     "win-64:py27"
   ], 
   "vs2015_runtime": [
+    "win-64:py27", 
     "win-64:py35"
   ], 
   "vtk": [

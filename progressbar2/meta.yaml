@@ -1,0 +1,35 @@
+package:
+  name: progressbar2
+  version: 3.10.0
+
+source:
+  fn: progressbar2-3.10.0.tar.gz
+  url: https://files.pythonhosted.org/packages/91/91/25303ce6fe685a2c800424a042638f7d420a69657a4c1e977a87cb41ef15/progressbar2-3.10.0.tar.gz
+  md5: 301bd35188f4a85147c4d3492aab1185
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - python-utils >=2.0.0
+    - pytest
+    - pytest-runner
+  run:
+    - python
+    - python-utils >=2.0.0
+    - pytest
+    - pytest-runner
+
+test:
+  imports:
+    - progressbar
+
+  requires:
+    - pytest
+    - pytest-runner
+
+about:
+  home: https://github.com/WoLpH/python-progressbar
+  license: BSD License
+  license_family: BSD
+  summary: progressbar library to provide visual progress to\nlong running operations

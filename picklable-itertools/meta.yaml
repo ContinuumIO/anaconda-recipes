@@ -1,0 +1,28 @@
+package:
+  name: picklable-itertools
+  version: 0.1.1
+
+source:
+  fn: picklable-itertools-0.1.1.tar.gz
+  url: https://files.pythonhosted.org/packages/75/bc/cda9191f0c92960ede6aa95e364443965246385faf62775cc30749931c2c/picklable-itertools-0.1.1.tar.gz
+  md5: 1bcfa6cd575a833fed253766aeb584a5
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - six
+  run:
+    - python
+    - setuptools
+    - six
+
+test:
+  imports:
+    - picklable_itertools
+
+about:
+  home: https://github.com/mila-udem/picklable-itertools
+  license: MIT License
+  license_family: MIT
+  summary: itertools, but picklable
