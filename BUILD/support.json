@@ -680,6 +680,7 @@
   "plac": "all", 
   "plotly": "all", 
   "ply": "all", 
+  "pomegranate": "all", 
   "posix_ipc": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -794,6 +795,12 @@
   "python-gdbm": [
     "linux-64:py27", 
     "osx-64:py27"
+  ], 
+  "python-graphviz": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
   ], 
   "python-ntlm": [
     "linux-64:py27", 

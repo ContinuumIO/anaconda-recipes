@@ -1,11 +1,11 @@
 package:
   name: joblib
-  version: 0.9.4
+  version: 0.11
 
 source:
-  fn: joblib-0.9.4.tar.gz
-  url: https://pypi.python.org/packages/source/j/joblib/joblib-0.9.4.tar.gz
-  md5: 31d29b22fcf00cd1a1358828ba67376f
+  fn: joblib-0.11.tar.gz
+  url: https://pypi.python.org/packages/cc/ec/538d50a72046e733b91a5c1fc9456d33e5cb830355317348775fa73f1ac4/joblib-0.11.tar.gz
+  md5: 034f4361227eddef0b9eadd9b53cd492
 
 requirements:
   build:
@@ -20,6 +20,7 @@ test:
 about:
   home: http://packages.python.org/joblib/
   license: BSD
+  license_file: LICENSE.txt
   summary: Lightweight pipelining in Python
   description: |
     Joblib is a set of tools to provide lightweight pipelining in Python.

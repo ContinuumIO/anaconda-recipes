@@ -1,11 +1,11 @@
 package:
   name: progressbar2
-  version: 3.10.0
+  version: 3.18.0
 
 source:
-  fn: progressbar2-3.10.0.tar.gz
-  url: https://files.pythonhosted.org/packages/91/91/25303ce6fe685a2c800424a042638f7d420a69657a4c1e977a87cb41ef15/progressbar2-3.10.0.tar.gz
-  md5: 301bd35188f4a85147c4d3492aab1185
+  fn: progressbar2-3.18.0.tar.gz
+  url: https://pypi.python.org/packages/0a/a1/c47f1d345525f965b391a9dbba296d2022423c1dfcb1523e2d4efc9bed34/progressbar2-3.18.0.tar.gz
+  md5: 7fb528d14f8cacd37ff1ccb2a63dcf25
 
 requirements:
   build:
@@ -32,4 +32,5 @@ about:
   home: https://github.com/WoLpH/python-progressbar
   license: BSD License
   license_family: BSD
+  license_file: LICENSE
   summary: progressbar library to provide visual progress to\nlong running operations
