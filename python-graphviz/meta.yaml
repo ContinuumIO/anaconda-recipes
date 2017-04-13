@@ -1,0 +1,39 @@
+package:
+  name: python-graphviz
+  version: 0.5.2
+
+source:
+  fn: python-graphviz-0.5.2.zip
+  url: https://pypi.io/packages/source/g/graphviz/graphviz-0.5.2.zip
+  sha256: 60ea67b383e3feb71fd0cb3137c02f8c4a76935996cf06a9e77d6150a90d034a
+
+build:
+  number: 0
+  script: python setup.py install --old-and-unmanageable
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - graphviz
+
+test:
+  imports:
+    - graphviz
+  requires:
+    - dask
+
+about:
+  home: http://github.com/xflr6/graphviz
+  doc_url: http://graphviz.readthedocs.io
+  dev_url: https://github.com/xflr6/graphviz
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Simple Python interface for Graphviz
+  description: |
+    This package facilitates the creation and rendering of graph
+    descriptions in the DOT language of the Graphviz graph
+    drawing software (repo) from Python.

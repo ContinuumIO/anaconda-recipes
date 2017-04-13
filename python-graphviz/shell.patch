@@ -1,0 +1,14 @@
+diff --git graphviz/backend.py graphviz/backend.py
+index 0c01df4..c5a172a 100644
+--- graphviz/backend.py
++++ graphviz/backend.py
+@@ -120,7 +120,8 @@ def pipe(engine, format, data):
+ 
+     try:
+         proc = subprocess.Popen(args, stdin=subprocess.PIPE,
+-            stdout=subprocess.PIPE, startupinfo=STARTUPINFO)
++            stdout=subprocess.PIPE, startupinfo=STARTUPINFO,
++            shell=True)
+     except OSError as e:
+         if e.errno == errno.ENOENT:
+             raise RuntimeError('failed to execute %r, '
