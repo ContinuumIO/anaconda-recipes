@@ -1,20 +1,21 @@
 package:
   name: chardet
-  version: 2.3.0
+  version: 3.0.2
 
 source:
-  fn: chardet-2.3.0.tar.gz
-  url: https://pypi.python.org/packages/source/c/chardet/chardet-2.3.0.tar.gz
-  md5: 25274d664ccb5130adae08047416e1a8
+  fn: chardet-3.0.2.tar.gz
+  url: https://pypi.python.org/packages/91/05/28f23094cdf1410fb03533f0d71e6b4aad3c504100e83b8cea6fc899552c/chardet-3.0.2.tar.gz
+  md5: 96e364abdbde20b5f6dbbe2ad9d54d04
 
 build:
   entry_points:
-    - chardetect = chardet.chardetect:main
+    - chardetect = chardet.cli.chardetect:main
 
 requirements:
   build:
     - python
     - setuptools
+    - pytest-runner
   run:
     - python
 
@@ -26,8 +27,8 @@ test:
 
 about:
   home: https://github.com/chardet/chardet
-  license: GNU Library or Lesser General Public License
-  license_family: GPL2
+  license: GNU Lesser General Public License
+  license_family: LGPL
   license_file: LICENSE
   summary: Universal character encoding detector
   description: |
