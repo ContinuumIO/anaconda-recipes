@@ -1,0 +1,25 @@
+package:
+  name: humanize
+  version: 0.5.1
+
+source:
+  fn: humanize-0.5.1.tar.gz
+  url: https://pypi.python.org/packages/8c/e0/e512e4ac6d091fc990bbe13f9e0378f34cf6eecd1c6c268c9e598dcf5bb9/humanize-0.5.1.tar.gz
+  md5: e8473d9dc1b220911cac2edd53b1d973
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - humanize
+
+about:
+  home: http://github.com/jmoiron/humanize
+  license: MIT
+  license_file: LICENCE
+  summary: python humanize utilities

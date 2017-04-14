@@ -1,11 +1,11 @@
 package:
   name: smart_open
-  version: 1.4.0
+  version: 1.5.2
 
 source:
-  fn: smart_open-1.4.0.tar.gz
-  url: https://pypi.python.org/packages/5a/2b/31ab8a2ded303c5278948fdfe0fa53b4da73ed920dd9f802762319314277/smart_open-1.4.0.tar.gz
-  md5: 369e129872a09c59a1b688774fe77f96
+  fn: smart_open-1.5.2.tar.gz
+  url: https://pypi.python.org/packages/b3/f4/17b0a41471ee8e9009c260f214b66cf166dc2d7f18ddb82450e09724f663/smart_open-1.5.2.tar.gz
+  md5: 1ae4eae45c13eed4336a60ba24192578
 
 requirements:
   build:

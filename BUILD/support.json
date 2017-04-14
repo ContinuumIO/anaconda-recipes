@@ -352,6 +352,7 @@
     "linux-64:py35"
   ], 
   "html5lib": "all", 
+  "humanize": "all", 
   "icu": "all", 
   "idna": "all", 
   "imagesize": "all", 
