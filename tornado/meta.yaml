@@ -1,11 +1,11 @@
 package:
   name: tornado
-  version: 4.4.2
+  version: 4.5
 
 source:
-  fn: tornado-4.4.2.tar.gz
-  url: https://pypi.python.org/packages/1e/7c/ea047f7bbd1ff22a7f69fe55e7561040e3e54d6f31da6267ef9748321f98/tornado-4.4.2.tar.gz
-  md5: b4816ea209118667ffc52ce9ff06ac85
+  fn: tornado-4.5.tar.gz
+  url: https://pypi.python.org/packages/db/a5/c8057b0725b8aa43d6aaefe323820aac867986d2e4ce751afaa7fab0b776/tornado-4.5.tar.gz
+  md5: d6c7e25ff4a26885a1da9ba085f28c9d
 
 build:
   number: 0
@@ -28,7 +28,10 @@ test:
 
 about:
   home: http://www.tornadoweb.org/
-  license: Apache
+  license: Apache 2.0
+  license_family: Apache
+  license_file: LICENSE
+  license_url: http://www.apache.org/licenses/LICENSE-2.0
   summary: A Python web framework and asynchronous networking library
   description: |
     Tornado is a Python web framework and asynchronous networking library.

@@ -1,10 +1,10 @@
 package:
   name: xarray
-  version: 0.9.2
+  version: 0.9.3
 
 source:
   git_url: https://github.com/pydata/xarray.git
-  git_tag: v0.9.2
+  git_tag: v0.9.3
 
 requirements:
   build:
