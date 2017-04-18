@@ -1,11 +1,11 @@
 package:
   name: path.py
-  version: 10.1
+  version: 10.3.1
 
 source:
-  fn: path.py-10.1.tar.gz
-  url: https://pypi.python.org/packages/5d/54/4b2301e48a5889de9d121f6232e1833f19513fb24a93c0cbdb919eeec1dd/path.py-10.1.tar.gz
-  md5: f9d31317ceeb798f6b5eac8d3b8e5988
+  fn: path.py-10.3.1.tar.gz
+  url: https://pypi.python.org/packages/00/79/b1e5a02d156be8eedc1e60e5ce700edfb1d43992ec23f47da05fe5abe3a7/path.py-10.3.1.tar.gz
+  md5: 9c130bc6c1fd04365a3dac010f07b8f2
 
 requirements:
   build:
@@ -16,8 +16,11 @@ requirements:
     - python
 
 test:
+  requires:
+    - pytest
   imports:
     - path
+    - test_path
 
 about:
   home: http://github.com/jaraco/path.py

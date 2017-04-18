@@ -1,11 +1,11 @@
 package:
   name: cssselect
-  version: 1.0.0
+  version: 1.0.1
 
 source:
-  fn: cssselect-1.0.0.tar.gz
-  url: https://pypi.python.org/packages/a1/19/a65236b0cc4b497a62bb6bd93c53f58814ab2540403b1994ea859d77c96b/cssselect-1.0.0.tar.gz
-  md5: 9776aa9f552d830fac45aa979610b406
+  fn: cssselect-1.0.1.tar.gz
+  url: https://pypi.python.org/packages/77/ff/9c865275cd19290feba56344eba570e719efb7ca5b34d67ed12b22ebbb0d/cssselect-1.0.1.tar.gz
+  md5: 3fa03bf82a9f0b1223c0f1eb1369e139
 
 requirements:
   build:

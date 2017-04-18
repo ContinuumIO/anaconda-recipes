@@ -1,11 +1,11 @@
 package:
   name: more-itertools
-  version: 2.5.0
+  version: 3.0.0
 
 source:
-  fn: more-itertools-2.5.0.tar.gz
-  url: https://pypi.python.org/packages/fb/71/08177b2d12587e40ffa4e17736e1b697966aa08f855221059c7f420e056f/more-itertools-2.5.0.tar.gz
-  md5: c9919a8105e121f5bd59d1dc27e503b1
+  fn: more-itertools-3.0.0.tar.gz
+  url: https://pypi.python.org/packages/a5/06/f75faf76ec1f7c663a7588bb6d952a02e29db533f86cd280b6b1046a90eb/more-itertools-3.0.0.tar.gz
+  md5: a31181a86fe72e8cd9bac9c33afd446a
 
 requirements:
   build:

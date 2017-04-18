@@ -1,11 +1,11 @@
 package:
   name: progressbar2
-  version: 3.18.0
+  version: 3.18.1
 
 source:
-  fn: progressbar2-3.18.0.tar.gz
-  url: https://pypi.python.org/packages/0a/a1/c47f1d345525f965b391a9dbba296d2022423c1dfcb1523e2d4efc9bed34/progressbar2-3.18.0.tar.gz
-  md5: 7fb528d14f8cacd37ff1ccb2a63dcf25
+  fn: progressbar2-3.18.1.tar.gz
+  url: https://pypi.python.org/packages/1e/94/c97b5c090edee457c455fcfd19bc9e4baa8b12abf0621d0f19125bea23eb/progressbar2-3.18.1.tar.gz
+  md5: d8abdefb0d7c7f1cfeefc28a542807be
 
 requirements:
   build:
