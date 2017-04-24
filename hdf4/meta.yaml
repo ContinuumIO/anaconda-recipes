@@ -5,7 +5,7 @@ package:
 source:
   fn: hdf-4.2.12.tar.bz2
   url: http://www.hdfgroup.org/ftp/HDF/HDF_Current/src/hdf-4.2.12.tar.gz
-  md5: 79fd1454c899c05e34a3da0456ab0c1c
+  sha256: 2d224a57a711d853d71b92ef0875d295b410454b005144ebd3dd4b3d4c811208
   patches:
     - 0001-Win32-Disable-test_longfilename-due-to-MAX_PATH.patch
 
