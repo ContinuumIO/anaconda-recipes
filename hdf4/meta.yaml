@@ -10,6 +10,7 @@ source:
     - 0001-Win32-Disable-test_longfilename-due-to-MAX_PATH.patch
 
 build:
+  number: 1
   features:
     - vc9                 [win and py27]
     - vc10                [win and py34]
@@ -21,11 +22,11 @@ requirements:
     - vc 10               [win and py34]
     - vc 14               [win and (py35 or py36)]
     - cmake               [win]
-    - jpeg 8d
+    - jpeg 9b
     - openssl 1.0.2*      [unix]
     - zlib 1.2.*
   run:
-    - jpeg 8d
+    - jpeg 9*
     - openssl 1.0.2*      [unix]
     - zlib 1.2.*
 
