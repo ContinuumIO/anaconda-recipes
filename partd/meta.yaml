@@ -1,11 +1,11 @@
 package:
   name: partd
-  version: 0.3.7
+  version: 0.3.8
 
 source:
-  fn: partd-0.3.7.tar.gz
-  url: https://pypi.python.org/packages/1f/7e/43af21a5b399288946607ffecf412fd6fc7a354842b460eaefc28fd3f043/partd-0.3.7.tar.gz
-  md5: 7065f9ba12ba67463d16b2fde753a702
+  fn: partd-0.3.8.tar.gz
+  url: https://pypi.python.org/packages/e7/0c/b257648852230acf169c60283e59475727b156ee1a0a3a6b5527af745f15/partd-0.3.8.tar.gz
+  md5: 554d0e6511c0df4c907f034858be847f
 
 requirements:
   build:
@@ -25,6 +25,7 @@ test:
 about:
   home: https://github.com/dask/partd
   license: BSD
+  license_file: LICENSE.txt
   summary: Appendable key-value byte store
   description: |
     Key-value byte store with appendable values. Partd excels at shuffling
