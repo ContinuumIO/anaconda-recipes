@@ -1,11 +1,11 @@
 package:
   name: zope.interface
-  version: 4.3.3
+  version: 4.4.0
 
 source:
-  fn: zope.interface-4.3.3.tar.gz
-  url: https://pypi.python.org/packages/44/af/cea1e18bc0d3be0e0824762d3236f0e61088eeed75287e7b854d65ec9916/zope.interface-4.3.3.tar.gz
-  md5: ba3f32eacaea66094b7e2ae2788cec89
+  fn: zope.interface-4.4.0.tar.gz
+  url: https://pypi.python.org/packages/36/f6/1c2d593acb13562831631c281d75bd0091c50b0c004106d9823da784c3af/zope.interface-4.4.0.tar.gz
+  md5: cdc6b9b5e1f53e8ff018d357f44c789e
 
 build:
   detect_binary_files_with_prefix: False

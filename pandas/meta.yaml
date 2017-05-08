@@ -1,13 +1,13 @@
 package:
   name: pandas
-  version: 0.19.2
+  version: 0.20.1
 
 source:
   git_url: https://github.com/pydata/pandas.git
-  git_tag: v0.19.2
+  git_tag: v0.20.1
 
 build:
-  number: 1
+  number: 0
   detect_binary_files_with_prefix: False
 
 requirements:
