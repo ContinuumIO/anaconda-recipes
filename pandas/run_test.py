@@ -1,18 +1,22 @@
-import pandas._join
-import pandas._period
-import pandas._sparse
-import pandas._testing
-import pandas._window
-import pandas.algos
-import pandas.hashtable
-import pandas.index
-import pandas.io.sas.saslib
-import pandas.json
-import pandas.lib
-import pandas.msgpack._packer
-import pandas.msgpack._unpacker
-import pandas.parser
-import pandas.tslib
+import pandas._libs.algos
+import pandas._libs.groupby
+import pandas._libs.hashing
+import pandas._libs.hashtable
+import pandas._libs.index
+import pandas._libs.interval
+import pandas._libs.join
+import pandas._libs.json
+import pandas._libs.lib
+import pandas._libs.parsers
+import pandas._libs.period
+import pandas._libs.reshape
+import pandas._libs.sparse
+import pandas._libs.testing
+import pandas._libs.tslib
+import pandas._libs.window
+import pandas.io.msgpack._packer
+import pandas.io.msgpack._unpacker
+import pandas.io.sas._sas
 import pandas.util._move
 
 import os
@@ -22,7 +26,7 @@ if sys.version_info >= (2, 7):
 
 import pandas
 print("pandas.__version__ = %r" % pandas.__version__)
-assert pandas.__version__ == '0.19.2'
+assert pandas.__version__ == '0.20.1'
 
 if int(os.getenv('GUI_TEST', 0)):
     pandas.test()
