@@ -1,13 +1,13 @@
 diff --git setup.py setup.py
-index 012f897..cc887ea 100644
+index 2844bad..04f6431 100755
 --- setup.py
 +++ setup.py
-@@ -118,7 +118,7 @@ def get_compiler_settings(version_str):
-     settings = { 
+@@ -117,7 +117,7 @@ def get_compiler_settings(version_str):
+     settings = {
          'extra_compile_args' : [],
          'libraries': [],
 -        'include_dirs': [],
 +        'include_dirs': [join(sys.prefix, 'include')],
-         'define_macros' : [ ('PYODBC_VERSION', version_str) ] 
+         'define_macros' : [ ('PYODBC_VERSION', version_str) ]
      }
  

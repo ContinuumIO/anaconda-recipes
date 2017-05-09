@@ -1,16 +1,16 @@
 package:
   name: pyodbc
-  version: 3.0.10
+  version: 4.0.16
 
 source:
-  fn: pyodbc-3.0.10.tar.gz
-  url: https://pypi.python.org/packages/source/p/pyodbc/pyodbc-3.0.10.tar.gz
-  md5: 3f6f205c979a0fe5dee05d37121a7b92
+  fn: pyodbc-4.0.16.tar.gz
+  url: https://pypi.python.org/packages/1a/a1/5d98f9ce7e13d94d379d0f1f7137c7d537330027b912188311b12ef44018/pyodbc-4.0.16.tar.gz
+  md5: 4a97e3fe0110495f1a29114690747d91
   patches:
     - setup.patch        [unix]
 
 build:
-  number: 1
+  number: 0
   detect_binary_files_with_prefix: False
 
 requirements:

@@ -13,9 +13,9 @@ build:
 
 requirements:
   build:
-    - git            [unix]
-    - libtool        [unix]
-    - automake       [unix]
+    - git            [unix and x86]
+    - libtool        [unix and x86]
+    - automake       [unix and x86]
     - pkg-config     [unix]
     - m2-git         [win]
     - m2-filesystem  [win]
