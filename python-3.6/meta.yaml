@@ -8,9 +8,10 @@ source:
   md5: 2d0fc9f3a5940707590e07f03ecb08b9
   patches:
     - version.patch
-    - osx64-dist.patch      [osx and x86_64]
-    - win-find_exe.patch    [win]
-    - win-library_bin.patch [win]
+    - osx64-dist.patch        [osx and x86_64]
+    - win-find_exe.patch      [win]
+    - win-library_bin.patch   [win]
+    - win-msc_ver-1900.patch  [win]
 
 build:
   number: 0

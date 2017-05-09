@@ -1,11 +1,10 @@
 package:
   name: matplotlib
-  version: 2.0.0
+  version: 2.0.1
 
 source:
-  fn: matplotlib-2.0.0.tar.gz
-  url: https://pypi.python.org/packages/79/a9/db688816150a6ef91fd9ce284c828467f7271c7dd5982753a73a8e1aaafa/matplotlib-2.0.0.tar.gz
-  md5: 7aa54b06327f0e1c4f3877fc2f7d6b17
+  url: https://pypi.python.org/packages/8f/d5/1488c5d7690fd95f91934cdce74292473e760a8dd0d8bf263fd9305728f1/matplotlib-2.0.1.tar.gz
+  md5: 055407dc168a12c736bb65943c0d0368
   patches:
     - cfg.patch
     - cfg_notests.patch
@@ -38,6 +37,7 @@ requirements:
     - tk 8.5.*            [win]
     - cycler
     - nose
+    - msinttypes          [win and py2k]
   run:
     - python
     - numpy x.x
