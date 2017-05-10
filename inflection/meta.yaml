@@ -23,3 +23,7 @@ about:
   license: MIT
   license_file: LICENSE
   summary: port of Ruby on Rails inflector to Python
+  description: |
+    Inflection is a string transformation library. It singularizes and
+    pluralizes English words, and transforms strings from CamelCase to
+    underscored string

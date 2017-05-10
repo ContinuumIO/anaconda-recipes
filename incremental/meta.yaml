@@ -24,3 +24,5 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: library that versions your Python projects
+  description: |
+    A library for versioning your Python projects.

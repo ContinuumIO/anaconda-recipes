@@ -35,3 +35,5 @@ about:
   license: Apache 2.0
   license_family: Apache
   summary: Python bindings for the libhs2client C++ library
+  description: |
+    C++ native client for Impala and Hive, with Python / pandas bindings

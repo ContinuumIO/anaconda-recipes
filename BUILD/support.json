@@ -17,7 +17,6 @@
   ], 
   "apptools": "all", 
   "apr": "all", 
-  "argcomplete": "all", 
   "astroid": "all", 
   "astropy": "all", 
   "atom": [
@@ -561,6 +560,7 @@
     "win-64:py27"
   ], 
   "natsort": "all", 
+  "navigator-updater": "all", 
   "nbconvert": "all", 
   "nbformat": "all", 
   "ncurses": [

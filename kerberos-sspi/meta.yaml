@@ -24,3 +24,5 @@ about:
   home: https://github.com/may-day/kerberos-sspi
   license: Apache
   summary: Kerberos high-level windows interface
+  description: |
+    API level equivalent with kerberos package but uses windows sspi (through pywin32)

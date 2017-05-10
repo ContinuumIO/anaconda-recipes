@@ -28,3 +28,9 @@ about:
   home: https://github.com/timothycrosley/isort
   license: MIT
   summary: Python utility / library to sort Python imports
+  description: |
+    isort is a Python utility / library to sort imports alphabetically, and
+    automatically separated into sections. It provides a command line utility,
+    Python library and plugins for various editors to quickly sort all your
+    imports. It currently cleanly supports Python 2.6 - 3.5 without any
+    dependencies.

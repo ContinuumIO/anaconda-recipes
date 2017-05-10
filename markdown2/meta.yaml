@@ -1,11 +1,11 @@
 package:
   name: markdown2
-  version: 2.3.3
+  version: 2.3.4
 
 source:
-  fn: markdown2-2.3.3.zip
-  url: https://pypi.python.org/packages/2f/c0/6da6f0caec68c99dd4bd4661b0ac16a50bdad89b1bbeb5a40686826762dc/markdown2-2.3.3.zip
-  md5: e2a40825c74471af24999c9265c102a7
+  fn: markdown2-2.3.4.zip
+  url: https://pypi.python.org/packages/f2/3e/8836dd370419e928ac9856ab582d92e46292e09bfa9917bec81ca7444e3a/markdown2-2.3.4.zip
+  md5: fa89c7d410df789866dcf471d321ec5f
 
 build:
   entry_points:

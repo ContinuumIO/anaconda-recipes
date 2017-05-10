@@ -28,9 +28,12 @@ test:
     - jsonschema
 
 about:
-  home: https://python-jsonschema.readthedocs.orga
+  home: https://python-jsonschema.readthedocs.org
   license: MIT
   license_file: COPYING
   summary: An implementation of JSON Schema validation for Python
+  description: |
+    jsonschema is an implementation of JSON Schema for Python
+    (supporting 2.7+ including Python 3)
   doc_url: https://python-jsonschema.readthedocs.org
   dev_url: https://github.com/Julian/jsonschema/
