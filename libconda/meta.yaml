@@ -11,12 +11,11 @@ requirements:
     - python
   run:
     - python
+    - pycosat >=0.6.1
     - pyyaml
     - requests
 
 test:
-  requires:
-    - pycosat
   imports:
     - libconda
 
