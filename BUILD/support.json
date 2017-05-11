@@ -560,7 +560,6 @@
     "win-64:py27"
   ], 
   "natsort": "all", 
-  "navigator-updater": "all", 
   "nbconvert": "all", 
   "nbformat": "all", 
   "ncurses": [

@@ -35,9 +35,10 @@ if errorlevel 1 exit 1
 
 del %PREFIX%\libs\libpython*.a
 
-set STDLIB_DIR=%PREFIX%\Lib\
+set STDLIB_DIR=%PREFIX%\Lib
+set SCRIPTS=%PREFIX%\Scripts
 
-xcopy /s /y %SRC_DIR%\Lib %STDLIB_DIR%
+xcopy /s /y %SRC_DIR%\Lib %STDLIB_DIR%\
 if errorlevel 1 exit 1
 
 REM ========== bytecode compile standard library
@@ -45,7 +46,7 @@ REM ========== bytecode compile standard library
 rd /s /q %STDLIB_DIR%\lib2to3\tests\
 if errorlevel 1 exit 1
 
-%PREFIX%\python.exe -Wi %STDLIB_DIR%\compileall.py -f -q -x "bad_coding|badsyntax|py2_" %STDLIB_DIR%
+%PREFIX%\python.exe -Wi %STDLIB_DIR%\compileall.py -f -q -x "bad_coding|badsyntax|py2_" %STDLIB_DIR%\
 if errorlevel 1 exit 1
 
 REM ========== add scripts

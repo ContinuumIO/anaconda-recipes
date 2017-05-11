@@ -1,10 +1,11 @@
 package:
   name: matplotlib
-  version: 2.0.1
+  version: 2.0.2
 
 source:
-  url: https://pypi.python.org/packages/8f/d5/1488c5d7690fd95f91934cdce74292473e760a8dd0d8bf263fd9305728f1/matplotlib-2.0.1.tar.gz
-  md5: 055407dc168a12c736bb65943c0d0368
+  fn: matplotlib-2.0.2.tar.gz
+  url: https://pypi.python.org/packages/f5/f0/9da3ef24ea7eb0ccd12430a261b66eca36b924aeef06e17147f9f9d7d310/matplotlib-2.0.2.tar.gz
+  md5: 061111784278bde89b5d4987014be4ca
   patches:
     - cfg.patch
     - cfg_notests.patch

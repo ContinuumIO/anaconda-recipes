@@ -53,7 +53,7 @@ if [ `uname` == Darwin ]; then
     pushd Modules
     rm -rf build
     cp $RECIPE_DIR/setup_misc.py .
-    $PYTHON setup_misc.py build
+    $PREFIX/bin/python setup_misc.py build
     cp build/lib.macosx-*/_hashlib.cpython-36m-darwin.so \
        build/lib.macosx-*/_ssl.cpython-36m-darwin.so \
            $DYNLOAD_DIR

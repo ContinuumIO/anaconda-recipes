@@ -1,0 +1,13 @@
+diff -urN Include.orig/Python.h Include/Python.h
+--- Include.orig/Python.h	2017-05-10 11:18:29.350735100 +0100
++++ Include/Python.h	2017-05-10 11:23:09.476298600 +0100
+@@ -133,4 +133,9 @@
+ #include "fileutils.h"
+ #include "pyfpe.h"
+ 
++/* 'Fix' breakage reported at https://bugs.python.org/issue29943 */
++#if PY_VERSION_HEX < 0x03070000 && defined(PySlice_GetIndicesEx)
++#undef PySlice_GetIndicesEx
++#endif
++
+ #endif /* !Py_PYTHON_H */

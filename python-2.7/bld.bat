@@ -2,15 +2,12 @@ REM ========== prepare source
 
 if "%ARCH%"=="64" (
     set PLATFORM=x64
-    set DMSW=-DMS_WIN64
     curl https://www.python.org/ftp/python/%PKG_VERSION%/python-%PKG_VERSION%.amd64-pdb.zip -o pdbs.zip
 ) else (
     set PLATFORM=Win32
-    set DMSW=
     curl https://www.python.org/ftp/python/%PKG_VERSION%/python-%PKG_VERSION%-pdb.zip -o pdbs.zip
 )
 
-%SYS_PREFIX%\Scripts\replace.exe "@DMSW@" "%DMSW%" Lib\distutils\cygwinccompiler.py
 if errorlevel 1 exit 1
 
 REM ========== actual compile step
@@ -59,6 +56,9 @@ if errorlevel 1 exit 1
 copy %PCB%\w9xpopen.exe %PREFIX%\
 if errorlevel 1 exit 1
 
+set SCRIPTS=%PREFIX%\Scripts
+set STDLIB_DIR=%PREFIX%\Lib
+
 xcopy /s %SRC_DIR%\Lib %STDLIB_DIR%\
 if errorlevel 1 exit 1
 rd /s /q %PREFIX%\Lib\test
@@ -68,7 +68,7 @@ if errorlevel 1 exit 1
 
 REM ========== bytecode compile standard library
 
-%PYTHON% -Wi %STDLIB_DIR%\compileall.py -f -q -x "bad_coding|badsyntax|py3_" %STDLIB_DIR%
+%PREFIX%\python.exe -Wi %STDLIB_DIR%\compileall.py -f -q -x "bad_coding|badsyntax|py3_" %STDLIB_DIR%
 if errorlevel 1 exit 1
 
 REM ========== add scripts
@@ -85,4 +85,4 @@ for %%x in (idle 2to3 pydoc) do (
 )
 
 REM ========== generate grammar files for 2to3
-%PYTHON% %SCRIPTS%\2to3-script.py -l
+%PREFIX%\python.exe %SCRIPTS%\2to3-script.py -l

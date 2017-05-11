@@ -8,7 +8,7 @@ source:
   md5: 6192f0e45f02575590760e68c621a488
   patches:
     # Remove this patch after 3.5.3
-    - issue27286.patch             [unix]
+    - issue27286.patch             [not win]
     - version.patch
     - site.patch
     - osx64-dist.patch             [osx and x86_64]
@@ -19,9 +19,11 @@ source:
     # fix crash related to stack size and MACOSX_DEPLOYMENT_TARGET=10.7
     # https://trac.macports.org/ticket/51736
     - stack_size.patch             [osx]
+    - mingw-w64-DMS_WINXX.patch    [win]
 
 build:
-  number: 1                        [unix]
+  number: 1                        [not win]
+  number: 2                        [win]
   detect_binary_files_with_prefix: False
   no_link:
     - bin/python3.5         [unix]

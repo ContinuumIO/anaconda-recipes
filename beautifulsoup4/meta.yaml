@@ -1,11 +1,11 @@
 package:
   name: beautifulsoup4
-  version: 4.5.3
+  version: 4.6.0
 
 source:
-  fn: beautifulsoup4-4.5.3.tar.gz
-  url: https://pypi.python.org/packages/9b/a5/c6fa2d08e6c671103f9508816588e0fb9cec40444e8e72993f3d4c325936/beautifulsoup4-4.5.3.tar.gz
-  md5: 937e0df0d699a1237646f38fd567f0c6
+  fn: beautifulsoup4-4.6.0.tar.gz
+  url: https://pypi.python.org/packages/fa/8d/1d14391fdaed5abada4e0f63543fef49b8331a34ca60c88bd521bcf7f782/beautifulsoup4-4.6.0.tar.gz
+  md5: c17714d0f91a23b708a592cb3c697728
 
 requirements:
   build:
