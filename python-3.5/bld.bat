@@ -3,11 +3,22 @@ REM ========== actual compile step
 if "%ARCH%"=="64" (
    set PLATFORM=x64
    set VC_PATH=x64
+   set BUILD_PATH=amd64
 ) else (
    set PLATFORM=Win32
    set VC_PATH=x86
+   set BUILD_PATH=win32
 )
 
+:: We've changed importlib (_BACKCOMPAT_MAGIC_NUMBER) so must rebuild importlib.h
+copy /Y Python\importlib.h Python\importlib.h.orig
+copy /Y Python\importlib_external.h Python\importlib_external.h.orig
+
+msbuild PCbuild\pcbuild.sln /t:_freeze_importlib /p:Configuration=Release /p:Platform=%PLATFORM% /m /p:OutDir=%SRC_DIR%\PCBuild\
+:: It is important not to exit upon error here as a deliberate error is caused when importlib*.h are changed.
+copy /Y PCbuild\obj\%BUILD_PATH%_Release\_freeze_importlib\importlib.g.h Python\importlib.h
+copy /Y PCbuild\obj\%BUILD_PATH%_Release\_freeze_importlib\importlib_external.g.h Python\importlib_external.h
+msbuild PCbuild\pcbuild.sln /t:clean
 msbuild PCbuild\pcbuild.sln /t:python;pythoncore;pythonw;python3dll /p:Configuration=Release /p:Platform=%PLATFORM% /m /p:OutDir=%SRC_DIR%\PCBuild\
 
 REM ========== add stuff from official python.org installer

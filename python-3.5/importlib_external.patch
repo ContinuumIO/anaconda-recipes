@@ -1,0 +1,115 @@
+From d9245eefb0c4bfdc0c3bfc0c1ffa9edc42e5b5d8 Mon Sep 17 00:00:00 2001
+From: Steve Dower <steve.dower@microsoft.com>
+Date: Mon, 12 Dec 2016 11:17:59 -0800
+Subject: [PATCH] Rebuild importlib_external.h in _freeze_importlib too.
+
+This change is a portion of:
+
+https://github.com/python/cpython/commit/10beb3cfef97d162b49b95c538c69c17a20bc910
+
+Issue #28896: Disable WindowsRegistryFinder by default.
+---
+ PCbuild/_freeze_importlib.vcxproj | 37 +++++++++++++++++++++++++------------
+ PCbuild/pcbuild.proj              | 10 ++++------
+ 2 files changed, 29 insertions(+), 18 deletions(-)
+
+diff --git a/PCbuild/_freeze_importlib.vcxproj b/PCbuild/_freeze_importlib.vcxproj
+index f7714c0..c732663 100644
+--- a/PCbuild/_freeze_importlib.vcxproj
++++ b/PCbuild/_freeze_importlib.vcxproj
+@@ -76,31 +76,44 @@
+     </ProjectReference>
+   </ItemGroup>
+   <ItemGroup>
+-    <None Include="..\Lib\importlib\_bootstrap.py" />
++    <None Include="..\Lib\importlib\_bootstrap.py">
++      <IntFile>$(IntDir)importlib.g.h</IntFile>
++      <OutFile>$(PySourcePath)Python\importlib.h</OutFile>
++    </None>
++    <None Include="..\Lib\importlib\_bootstrap_external.py">
++      <IntFile>$(IntDir)importlib_external.g.h</IntFile>
++      <OutFile>$(PySourcePath)Python\importlib_external.h</OutFile>
++    </None>
+   </ItemGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+   <ImportGroup Label="ExtensionTargets">
+   </ImportGroup>
+-  <Target Name="RebuildImportLib" AfterTargets="AfterBuild" Condition="$(Configuration) == 'Debug' or $(Configuration) == 'Release'">
+-    <Exec Command='"$(TargetPath)" "$(PySourcePath)Lib\importlib\_bootstrap.py" "$(IntDir)importlib.g.h"' />
++  <Target Name="_RebuildImportLib">
++    <Exec Command='"$(TargetPath)" "%(None.FullPath)" "%(None.IntFile)"' />
+     
+     <PropertyGroup>
+-      <_OldContent Condition="Exists('$(PySourcePath)Python\importlib.h')">$([System.IO.File]::ReadAllText('$(PySourcePath)Python\importlib.h').Replace(`&#x0D;&#x0A;`, `&#x0A;`))</_OldContent>
+-      <_NewContent Condition="Exists('$(IntDir)importlib.g.h')">$([System.IO.File]::ReadAllText('$(IntDir)importlib.g.h').Replace(`&#x0D;&#x0A;`, `&#x0A;`))</_NewContent>
++      <_OldContent Condition="Exists($(OutTargetPath))"></_OldContent>
++      <_NewContent Condition="Exists($(IntTargetPath))">$([System.IO.File]::ReadAllText($(IntTargetPath)).Replace(`&#x0D;&#x0A;`, `&#x0A;`))</_NewContent>
+     </PropertyGroup>
+     
+-    <Copy SourceFiles="$(IntDir)importlib.g.h"
+-          DestinationFiles="$(PySourcePath)Python\importlib.h"
+-          Condition="Exists('$(IntDir)importlib.g.h') and '$(_OldContent)' != '$(_NewContent)'" />
++    <Copy SourceFiles="%(None.IntFile)"
++          DestinationFiles="%(None.OutFile)"
++          Condition="!Exists(%(None.OutFile)) or (Exists(%(None.IntFile)) and '$([System.IO.File]::ReadAllText(%(None.OutFile)).Replace(`&#x0D;&#x0A;`, `&#x0A;`))' != '$([System.IO.File]::ReadAllText(%(None.IntFile)).Replace(`&#x0D;&#x0A;`, `&#x0A;`))')">
++      <Output TaskParameter="CopiedFiles" ItemName="_Updated" />
++    </Copy>
+     
+-    <Warning Text="importlib.h has been updated. You will need to rebuild pythoncore to see the changes."
+-             Condition="Exists('$(IntDir)importlib.g.h') and '$(_OldContent)' != '$(_NewContent)' and $(Configuration) == 'Debug'" />
+-    <Error Text="importlib.h has been updated. You will need to rebuild pythoncore to see the changes."
+-           Condition="Exists('$(IntDir)importlib.g.h') and '$(_OldContent)' != '$(_NewContent)' and $(Configuration) == 'Release'" />
++    <Warning Text="@(_Updated->'%(Filename)%(Extension)',', ') updated. You will need to rebuild pythoncore to see the changes."
++             Condition="'@(_Updated)' != '' and $(Configuration) == 'Debug'" />
++    <Error Text="@(_Updated->'%(Filename)%(Extension)',', ') updated. You will need to rebuild pythoncore to see the changes."
++           Condition="'@(_Updated)' != '' and $(Configuration) == 'Release'" />
++  </Target>
++  <Target Name="RebuildImportLib" AfterTargets="AfterBuild" Condition="$(Configuration) == 'Debug' or $(Configuration) == 'Release'"
++          DependsOnTargets="_RebuildImportLib">
+   </Target>
+   <Target Name="_CleanImportLib" BeforeTargets="CoreClean">
+     <ItemGroup>
+       <Clean Include="$(IntDir)importlib.g.h" />
++      <Clean Include="$(IntDir)importlib_external.g.h" />
+     </ItemGroup>
+   </Target>
+ </Project>
+diff --git a/PCbuild/pcbuild.proj b/PCbuild/pcbuild.proj
+index c320434..1cf29d7 100644
+--- a/PCbuild/pcbuild.proj
++++ b/PCbuild/pcbuild.proj
+@@ -28,7 +28,7 @@
+       <BuildTarget>Build</BuildTarget>
+       <CleanTarget>Clean</CleanTarget>
+       <CleanAllTarget>CleanAll</CleanAllTarget>
+-      <BuildInParallel>true</BuildInParallel>
++      <BuildInParallel>false</BuildInParallel>
+     </Projects2>
+   </ItemDefinitionGroup>
+   <ItemGroup>
+@@ -48,8 +48,6 @@
+     <Projects Include="pylauncher.vcxproj;pywlauncher.vcxproj" />
+     <!-- pyshellext.dll -->
+     <Projects Include="pyshellext.vcxproj" />
+-    <!-- _freeze_importlib -->
+-    <Projects Include="_freeze_importlib.vcxproj" />
+     <!-- Extension modules -->
+     <ExtensionModules Include="_ctypes;_decimal;_elementtree;_msi;_multiprocessing;_overlapped;pyexpat;select;unicodedata;winsound" />
+     <!-- Extension modules that require external sources -->
+@@ -68,10 +66,10 @@
+       <BuildInParallel>false</BuildInParallel>
+     </Projects>
+     
++    <!-- _freeze_importlib -->
++    <Projects2 Include="_freeze_importlib.vcxproj" />
+     <!-- python[w].exe -->
+-    <Projects2 Include="python.vcxproj;pythonw.vcxproj">
+-      <BuildInParallel>false</BuildInParallel>
+-    </Projects2>
++    <Projects2 Include="python.vcxproj;pythonw.vcxproj" />
+   </ItemGroup>
+ 
+   <Target Name="Build">
+-- 
+2.10.1
+
