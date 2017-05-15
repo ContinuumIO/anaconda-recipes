@@ -1,0 +1,12 @@
+package:
+  name: vs2010
+  version: "10.00.40219.1"
+
+
+build:
+  impose_run_requirements:
+    - vc 10
+
+about:
+  summary: Activation and version verification of MSVC 10 (VS 2010) compiler
+  license: BSD 3-clause
