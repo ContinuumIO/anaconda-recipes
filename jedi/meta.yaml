@@ -1,18 +1,19 @@
 package:
   name: jedi
-  version: 0.9.0
+  version: 0.10.2
 
 source:
-  fn: jedi-0.9.0.tar.gz
-  url: https://pypi.python.org/packages/source/j/jedi/jedi-0.9.0.tar.gz
-  md5: 2fee93d273622527ef8c97ac736e92bd
+  fn: v0.10.2.tar.gz
+  url: https://github.com/davidhalter/jedi/archive/v0.10.2.tar.gz
+  md5: 878b95a8d03496253fbd96da8bc540c4
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
     - python
+    - setuptools
   run:
     - python
 
@@ -23,6 +24,8 @@ test:
     - jedi.evaluate
     - jedi.evaluate.compiled
     - jedi.parser
+    - jedi.parser.pgen2
+    - jedi.parser.python
 
 about:
   home: http://jedi.jedidjah.ch/

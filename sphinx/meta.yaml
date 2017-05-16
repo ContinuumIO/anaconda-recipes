@@ -1,11 +1,11 @@
 package:
   name: sphinx
-  version: 1.5.4
+  version: 1.5.6
 
 source:
-  fn: Sphinx-1.5.4.tar.gz
-  url: https://pypi.python.org/packages/c8/c8/7abbccf8276b7e2a02f416198ade475c5d7f79be7f817abc4cb5f3ba0044/Sphinx-1.5.4.tar.gz
-  md5: b4c2b44259cf113e953e7d3603153c5f
+  fn: Sphinx-1.5.6.tar.gz
+  url: https://pypi.python.org/packages/95/d2/811beb24fa68afeb673e7a069aa3dbb95f57b426075d734ed913b47ca2ec/Sphinx-1.5.6.tar.gz
+  md5: e5f3f34401f9658d6d28a8cce5191384
 
 build:
   entry_points:
