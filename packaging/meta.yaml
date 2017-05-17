@@ -1,0 +1,27 @@
+package:
+  name: packaging
+  version: 16.8
+
+source:
+  fn: packaging-16.8.tar.gz
+  url: https://pypi.python.org/packages/c6/70/bb32913de251017e266c5114d0a645f262fb10ebc9bf6de894966d124e35/packaging-16.8.tar.gz
+  md5: 53895cdca04ecff80b54128e475b5d3b
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - pyparsing
+    - six
+
+test:
+  imports:
+    - packaging
+
+about:
+  home: https://github.com/pypa/packaging
+  license: BSD or Apache 2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: core utilities for Python packages

@@ -1,11 +1,11 @@
 package:
   name: idna
-  version: 2.2
+  version: 2.5
 
 source:
-  fn: idna-2.2.tar.gz
-  url: https://pypi.python.org/packages/94/fe/efb1cb6f505e1a560b3d080ae6b9fddc11e7c542d694ce4635c49b1ccdcb/idna-2.2.tar.gz
-  md5: e2d3f8a45d3d048a653eb186896e9e3e
+  fn: idna-2.5.tar.gz
+  url: https://pypi.python.org/packages/d8/82/28a51052215014efc07feac7330ed758702fc0581347098a81699b5281cb/idna-2.5.tar.gz
+  md5: fc1d992bef73e8824db411bb5d21f012
 
 requirements:
   build:
@@ -17,6 +17,7 @@ requirements:
 test:
   imports:
     - idna
+    - idna.codec
 
 about:
   home: https://github.com/kjd/idna

@@ -17,6 +17,7 @@
   ], 
   "apptools": "all", 
   "apr": "all", 
+  "asn1crypto": "all", 
   "astroid": "all", 
   "astropy": "all", 
   "atom": [
@@ -609,6 +610,7 @@
     "osx-64:py35", 
     "win-64:py35"
   ], 
+  "packaging": "all", 
   "pandas": "all", 
   "pandas-datareader": "all", 
   "pandasql": "all", 

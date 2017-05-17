@@ -1,5 +1,3 @@
-diff --git setup.py setup.py
-index 40921b8..3f0f35f 100644
 --- setup.py
 +++ setup.py
 @@ -5,10 +5,9 @@ import errno

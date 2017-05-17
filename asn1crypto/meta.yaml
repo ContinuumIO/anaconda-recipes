@@ -1,0 +1,24 @@
+package:
+  name: asn1crypto
+  version: 0.22.0
+
+source:
+  fn: asn1crypto-0.22.0.tar.gz
+  url: https://pypi.python.org/packages/67/14/5d66588868c4304f804ebaff9397255f6ec5559e46724c2496e0f26e68d6/asn1crypto-0.22.0.tar.gz
+  md5: 74a8b9402625b38ef19cf3fa69ef8470
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - asn1crypto
+
+about:
+  home: https://github.com/wbond/asn1crypto
+  license: MIT
+  summary: ASN.1 parser and serializer

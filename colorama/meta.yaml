@@ -1,11 +1,11 @@
 package:
   name: colorama
-  version: 0.3.7
+  version: 0.3.9
 
 source:
-  fn: colorama-0.3.7.tar.gz
-  url: https://pypi.python.org/packages/source/c/colorama/colorama-0.3.7.tar.gz
-  md5: 349d2b02618d3d39e5c6aede36fe3c1a
+  fn: colorama-0.3.9.tar.gz
+  url: https://pypi.python.org/packages/e6/76/257b53926889e2835355d74fec73d82662100135293e17d382e2b74d1669/colorama-0.3.9.tar.gz
+  md5: 3a0e415259690f4dd7455c2683ee5850
 
 requirements:
   build:

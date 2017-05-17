@@ -1,11 +1,11 @@
 package:
   name: lz4
-  version: 0.9.0
+  version: 0.9.1
 
 source:
-  fn: lz4-0.9.0.tar.gz
-  url: https://pypi.python.org/packages/da/9c/a00d5a3f47c5339471938ed826a536ed0a3313a512ef8ec329c6477adc6f/lz4-0.9.0.tar.gz
-  md5: 6e471cf32af1592ec0e439ad1c8bea16
+  fn: lz4-0.9.1.tar.gz
+  url: https://pypi.python.org/packages/63/30/e05274f250106a7a3c0a84ff261c18b78d4d9ece655af05660959d3e5b14/lz4-0.9.1.tar.gz
+  md5: 5455f33963794c8d65f64e9d347c7aa7
 
 build:
   detect_binary_files_with_prefix: False
