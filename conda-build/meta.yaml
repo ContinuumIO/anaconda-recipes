@@ -1,10 +1,10 @@
 package:
   name: conda-build
-  version: 2.1.13
+  version: 2.1.14
 
 source:
   git_url: https://github.com/conda/conda-build.git
-  git_tag: 2.1.13
+  git_tag: 2.1.14
 
 build:
   entry_points:

@@ -1,11 +1,11 @@
 package:
   name: contextlib2
-  version: 0.5.4
+  version: 0.5.5
 
 source:
-  fn: contextlib2-0.5.4.tar.gz
-  url: https://pypi.python.org/packages/cc/19/0bee3b2ea499f7fb2480b6b3f4ae7951e111d6b73785ba53c6afeba55672/contextlib2-0.5.4.tar.gz
-  md5: 2d66215f9902c8b857688d4e3b527b3f
+  fn: contextlib2-0.5.5.tar.gz
+  url: https://pypi.python.org/packages/6e/db/41233498c210b03ab8b072c8ee49b1cd63b3b0c76f8ea0a0e5d02df06898/contextlib2-0.5.5.tar.gz
+  md5: 95fe420941ebc64951cd9d89edc41870
 
 requirements:
   build:

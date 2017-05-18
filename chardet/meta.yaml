@@ -1,11 +1,11 @@
 package:
   name: chardet
-  version: 3.0.2
+  version: 3.0.3
 
 source:
-  fn: chardet-3.0.2.tar.gz
-  url: https://pypi.python.org/packages/91/05/28f23094cdf1410fb03533f0d71e6b4aad3c504100e83b8cea6fc899552c/chardet-3.0.2.tar.gz
-  md5: 96e364abdbde20b5f6dbbe2ad9d54d04
+  fn: chardet-3.0.3.tar.gz
+  url: https://pypi.python.org/packages/fc/f9/3963ae8e196ceb4a09e0d7906f511fdf62a631f05d9288dc4905a93a1f52/chardet-3.0.3.tar.gz
+  md5: d92908d1b0b61dbbd63fb18d33c6493a
 
 build:
   entry_points:

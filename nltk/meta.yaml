@@ -1,11 +1,11 @@
 package:
   name: nltk
-  version: 3.2.2
+  version: 3.2.3
 
 source:
-  fn: nltk-3.2.2.tar.gz
-  url: https://pypi.python.org/packages/13/ce/cba8bf82c8ab538d444ea4ab6f4eb1d80340c7b737d7a8d1f08b429fccae/nltk-3.2.2.tar.gz
-  md5: 4cbb8fd444402cf1847c47ff79dcd917
+  fn: nltk-3.2.3.tar.gz
+  url: https://pypi.python.org/packages/af/db/04baa1b45cd141f1a867a95f7766a0bbda00590cdea9b695010f92682b26/nltk-3.2.3.tar.gz
+  md5: ab49de67fc7abc801208194f35ddb977
 
 requirements:
   build:
@@ -13,6 +13,7 @@ requirements:
     - setuptools
   run:
     - python
+    - requests
     - six
 
 test:
@@ -21,7 +22,8 @@ test:
 
 about:
   home: http://nltk.org/
-  license: Apache
+  license: Apache Software License
+  license_family: Apache 
   license_file: LICENSE.txt
   summary: Build Python programs to work with human language data
   description: |

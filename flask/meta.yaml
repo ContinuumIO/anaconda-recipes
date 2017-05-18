@@ -1,11 +1,11 @@
 package:
   name: flask
-  version: 0.12.1
+  version: 0.12.2
 
 source:
-  fn: Flask-0.12.1.tar.gz
-  url: https://pypi.python.org/packages/24/6e/11b9c57e46f276a8a8dfda85a2fa7ada62b0463b68693616c7ab5df356fa/Flask-0.12.1.tar.gz
-  md5: 76e9fee5c3afcf4634b9baf96c578207
+  fn: Flask-0.12.2.tar.gz
+  url: https://pypi.python.org/packages/eb/12/1c7bd06fcbd08ba544f25bf2c6612e305a70ea51ca0eda8007344ec3f123/Flask-0.12.2.tar.gz
+  md5: 97278dfdafda98ba7902e890b0289177
 
 build:
   entry_points:
