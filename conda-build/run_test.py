@@ -1,4 +1,4 @@
 import conda_build
 
 print('conda_build.__version__: %s' % conda_build.__version__)
-assert conda_build.__version__ == '2.1.14'
+assert conda_build.__version__ == '2.1.15'

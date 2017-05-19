@@ -4,6 +4,7 @@ package:
 
 build:
   number: 1
+  binary_relocation: false           [ppc64le]
 
 about:
   home: https://gcc.gnu.org/fortran/

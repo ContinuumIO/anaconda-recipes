@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cp $RECIPE_DIR/LICENSE.txt $SRC_DIR
+
 LIB=$PREFIX/lib
 mkdir -p $LIB
 

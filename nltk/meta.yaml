@@ -23,7 +23,7 @@ test:
 about:
   home: http://nltk.org/
   license: Apache Software License
-  license_family: Apache 
+  license_family: Apache
   license_file: LICENSE.txt
   summary: Build Python programs to work with human language data
   description: |

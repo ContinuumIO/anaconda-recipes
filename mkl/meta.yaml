@@ -11,6 +11,7 @@ about:
   home: http://software.intel.com/en-us/articles/intel-mkl/
   license: proprietary - Intel
   license_family: Proprietary
+  license_file: LICENSE.txt
   summary: Math library for Intel and compatible processors
   description: |
     Intel Math Kernel Library (Intel MKL) accelerates math processing routines

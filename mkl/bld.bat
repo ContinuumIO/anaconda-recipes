@@ -1,3 +1,6 @@
+copy %RECIPE_DIR%\LICENSE.txt %SRC_DIR%
+if errorlevel 1 exit 1
+
 if "%ARCH%"=="64" (
     set INTEL_ARCH=intel64
 ) else (

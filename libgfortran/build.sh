@@ -1,10 +1,5 @@
 #!/bin/bash
 
-if [ `uname -m` == 'ppc64le' ]; then
-    echo "============= ERROR ======== recipe not for POWER8 ================="
-    exit 1
-fi
-
 LIB=$PREFIX/lib
 mkdir $LIB
 cd $LIB
@@ -19,10 +14,16 @@ then
 	ln -s libgfortran.so.3.0.0 libgfortran.so.3
     fi
 
-    if [ `uname -m` == 'armv7l' ]; then
-	cp /usr/lib/arm-linux-gnueabihf/libgfortran.so.3.0.0 .
+    if [ `uname -m` == 'ppc64le' ]; then
+	cp /usr/lib/powerpc64le-linux-gnu/libgfortran.so.3.0.0 .
 	ln -s libgfortran.so.3.0.0 libgfortran.so.3
     fi
+
+    if [ `uname -m` == 'armv7l' ]; then
+        cp /usr/lib/arm-linux-gnueabihf/libgfortran.so.3.0.0 .
+        ln -s libgfortran.so.3.0.0 libgfortran.so.3
+    fi
+
 fi
 
 if [ `uname` == "Darwin" ]
