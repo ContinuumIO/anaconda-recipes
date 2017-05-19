@@ -8,8 +8,12 @@ source:
   md5: 53bb53b852e5c323051bc42ed7fdbb12
   patches:
     - setup.patch
+    # Include a patch for newer tornado versions.
+    # ref: https://github.com/bokeh/bokeh/pull/6155
+    - PR_6155.patch
 
 build:
+  number: 1
   entry_points:
     - bokeh = bokeh.__main__:main
 

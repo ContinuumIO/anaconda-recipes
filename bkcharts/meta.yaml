@@ -1,0 +1,27 @@
+package:
+  name: bkcharts
+  version: 0.1
+
+source:
+  git_url: https://github.com/bokeh/bkcharts.git
+  git_tag: 0.1
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - six >=1.5.2
+    - numpy >=1.7.1
+
+#test:
+#  imports:
+#    - bkcharts
+
+about:
+  home: https://github.com/bokeh/bkcharts
+  license: New BSD
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: optional High Level charts API built on top of Bokeh
