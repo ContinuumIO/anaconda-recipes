@@ -19,8 +19,6 @@ test:
   imports:
     - graphviz
     - graphviz.backend
-  requires:
-    - dask
 
 about:
   home: http://github.com/xflr6/graphviz

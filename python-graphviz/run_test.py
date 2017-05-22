@@ -1,9 +1,15 @@
 #!/usr/bin/env python
 
-# Dask test
+from graphviz import Digraph
 
-import dask.array as da
+dot = Digraph(comment='The Round Table')
 
-x = da.ones(4, chunks=(2,))
-for fmt in ['pdf', 'png', 'dot', 'svg']:
-    (x + 1).sum().visualize(filename='graph.%s' % fmt)
+dot.node('A', 'King Arthur')
+dot.node('B', 'Sir Bedevere the Wise')
+dot.node('L', 'Sir Lancelot the Brave')
+
+dot.edges(['AB', 'AL'])
+dot.edge('B', 'L', constraint='false')
+
+print(dot.source)
+#dot.render('test.png')
