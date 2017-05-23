@@ -444,6 +444,7 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "libgpuarray": "all", 
   "libhs2client": [
     "linux-64:py27", 
     "linux-64:py35"
@@ -741,6 +742,7 @@
   "pyface": "all", 
   "pyflakes": "all", 
   "pygments": "all", 
+  "pygpu": "all", 
   "pykerberos": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -801,7 +803,12 @@
     "linux-64:py27", 
     "osx-64:py27"
   ], 
-  "python-graphviz": "all", 
+  "python-graphviz": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "python-ntlm": [
     "linux-64:py27", 
     "osx-64:py27", 

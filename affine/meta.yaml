@@ -19,11 +19,13 @@ test:
 
 about:
   home: https://github.com/sgillies/affine
-  license: BSD
+  license: BSD 3-clause
+  license_family: BSD
   license_file: LICENSE.txt
   summary: Matrices describing affine transformation of the plane.
   description: |
     The Affine package is used to produce the affine transformation
     matrix.
   doc_url: https://anaconda.org/anaconda/affine
+  doc_source_url: https://github.com/sgillies/affine/blob/master/README.rst
   dev_url: https://github.com/ContinuumIO/anaconda/tree/master/packages/affine

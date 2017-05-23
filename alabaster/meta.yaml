@@ -19,14 +19,12 @@ test:
     - alabaster
 
 about:
-  home: http://www.sphinx-doc.org/en/stable/index.html
+  home: https://github.com/bitprophet/alabaster
   license: BSD
   license_file: LICENSE
   summary: Configurable, Python 2+3 compatible Sphinx theme
   description: |
-    Alabaster is a visually clean, responsive, and configurable Sphinx
-    theme. It is sidebar-enabled and easy to install/use as a Python
-    package. As of Sphinx 1.3, Alabaster is selected as the default
-    theme for Sphinx.
-  doc_url: https://anaconda.org/anaconda/alabaster
+    Alabaster is a visually (c)lean, responsive, configurable theme for the Sphinx documentation system.
+  doc_url: http://alabaster.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/bitprophet/alabaster/blob/master/docs/index.rst
   dev_url: https://github.com/bitprophet/alabaster

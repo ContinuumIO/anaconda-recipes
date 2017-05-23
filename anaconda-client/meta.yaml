@@ -40,11 +40,13 @@ test:
 
 about:
   home: http://anaconda.org
-  license: BSD
+  license: BSD 3-clause
+  license_family: BSD
   license_file: LICENSE.md
   summary: anaconda.org command line client library
   description: |
-    Anaconda Client is a command line client that provides an
-    interface to Anaconda cloud.
-  doc_url: https://anaconda.org/anaconda/anaconda-client
+    Anaconda-client is used to connect to and manage your Anaconda Cloud account, upload packages you have created
+    and generate access tokens to allow access to private packages.
+  doc_url: https://docs.continuum.io/anaconda-cloud/cli
+  doc_source_url: https://github.com/Anaconda-Platform/anaconda-client/blob/develop/README.md
   dev_url: https://github.com/Anaconda-Server/anaconda-client
