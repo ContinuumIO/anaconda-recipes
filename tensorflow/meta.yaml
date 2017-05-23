@@ -1,37 +1,40 @@
 package:
   name: tensorflow
-  version: 0.10.0rc0
+  version: "1.0.1"
 
 source:
-  url: https://github.com/tensorflow/tensorflow/archive/v0.10.0rc0.tar.gz
-  sha256: df28bbe5470171eb0199905423902a96fe370052f8458a28d40c294c662d614b
+  fn: tensorflow-1.0.1.tar.gz
+  url: https://github.com/tensorflow/tensorflow/archive/v1.0.1.tar.gz
+  sha256: deea3c65e0703da96d9c3f1162e464c51d37659dd129396af134e9e8f1ea8c05
+  patches:
+    # Add -lrt to the link options list
+    # https://github.com/tensorflow/tensorflow/issues/121
+    - rt_link_arg.patch
 
 build:
+  number: 0
   entry_points:
     - tensorboard = tensorflow.tensorboard.tensorboard:main
 
 requirements:
   build:
-    - bazel
-    - setuptools
-    - swig
-    - python
+    - bazel >=0.4.5
+    - numpy x.x
     - perl
     - pip
-    - numpy x.x
-    - six >=1.10.0
-    - zlib
-    - wheel ==0.29
-  run:
     - python
-    - numpy x.x
     - six >=1.10.0
-    - mock
+    - swig
+    - wheel >=0.26
     - zlib
+  run:
+    - mock >=2.0.0       [py2k]
+    - numpy x.x
+    - protobuf >=3.1.0
+    - python
+    - six >=1.10.0
 
 test:
-  requires:
-    - scipy  >=0.15.1
   imports:
     - tensorflow
 
@@ -41,4 +44,4 @@ about:
   license_family: Apache
   summary: TensorFlow is a machine learning library
   dev_url: https://github.com/tensorflow/tensorflow
-  doc_url: https://www.tensorflow.org/versions/r0.10/get_started/index.html
+  doc_url: https://www.tensorflow.org/get_started/get_started
