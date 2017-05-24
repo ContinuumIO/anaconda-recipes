@@ -38,4 +38,5 @@ about:
     internationalizing and localizing Python applications, with an emphasis
     on web-base applications.
   doc_url: http://babel.pocoo.org/en/latest/#user-documentation
+  doc_source_url: https://github.com/python-babel/babel/blob/master/docs/index.rst
   dev_url: https://github.com/python-babel/babel

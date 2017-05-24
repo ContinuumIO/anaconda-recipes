@@ -42,8 +42,9 @@ about:
   license_file: LICENSE                                            [unix]
   summary: C Foreign Function Interface for Python
   description: |
-    Cffi aims to allow users to call C code from Python without having to
-    learn a 3rd language. It provides a convenient and reliable way to call
-    compiled C code from Python using interface declarations written in C.
+    cffi is a C Foreign Function Interface for Python.
+    It interacts with almost any C code from Python,
+    based on C-like declarations that you can often copy-paste from header files or documentation.
   doc_url: http://cffi.readthedocs.org
+  doc_source_url: https://bitbucket.org/cffi/release-doc/src/default/doc/source/index.rst
   dev_url: https://bitbucket.org/cffi/cffi/overview

@@ -25,7 +25,7 @@ about:
   summary: Command line interface creation kit
   description: |
     Click is a Python package for creating beautiful command line interfaces
-    in a composable way with as little code as necessary. It aims to make
-    the process of writing command line tools quick and fun.
+    in a composable way with as little code as necessary.
   doc_url: http://click.pocoo.org/
+  doc_source_url: https://github.com/pallets/click/blob/master/docs/index.rst
   dev_url: https://github.com/mitsuhiko/click

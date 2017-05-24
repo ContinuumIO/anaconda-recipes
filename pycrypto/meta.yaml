@@ -4,15 +4,15 @@ package:
 
 source:
   fn: pycrypto-2.6.1.tar.gz
-  url: http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/pycrypto-2.6.1.tar.gz
+  url: https://pypi.io/packages/source/p/pycrypto/pycrypto-2.6.1.tar.gz
   md5: 55a61a054aa66812daf5161a0d5d7eda
   patches:
     - python3-windows.patch
     - python3-stdint-windows.patch
+    - CVE-2013-7459.patch
 
 build:
-  number: 5  [win]
-  number: 4  [not win]
+  number: 6
   detect_binary_files_with_prefix: False
 
 requirements:

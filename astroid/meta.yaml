@@ -30,9 +30,7 @@ about:
   license_file: COPYING
   summary: abstract syntax tree for Python with inference support
   description: |
-    Asteroid provides a common base representation of Python
-    source code for various projects. It provides a compatible representation
-    which comes from the _ast module. It includes support for static inference
-    and local name scopes.
-  doc_url: https://pypi.python.org/pypi/astroid/1.4.7
+    Astroid provide a common base representation of python source code for projects such as pychecker, pyreverse, pylint.
+  doc_url: http://astroid.readthedocs.io/en/latest/?badge=latest
+  doc_source_url: https://github.com/PyCQA/astroid/blob/master/doc/index.rst
   dev_url: https://github.com/pycqa/astroid

@@ -32,8 +32,8 @@ about:
   license: MIT
   summary: Monitor and control a number of processes on any operating system
   description: |
-    Chalmers allows you to monitor and control a number of processes. This
-    includes process control, system init, keeping your programs alive, and
-    logging.
-  doc_url: https://pypi.python.org/pypi/chalmers
+    Chalmers is an application that allows its users to monitor and control a number of processes on *any* operating
+    system (Posix and Win32 included)
+  doc_url: https://media.readthedocs.org/pdf/chalmers/latest/chalmers.pdf
+  doc_source_url: https://github.com/Anaconda-Platform/chalmers/blob/master/docs/index.rst
   dev_url: https://github.com/Anaconda-Server/chalmers

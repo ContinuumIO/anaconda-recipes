@@ -54,4 +54,5 @@ about:
     Linux, OS X and Windows, and was created for Python programs but can
     package and distribute any software.
   doc_url: http://conda.pydata.org/docs/
+  doc_source_url: https://github.com/conda/conda-docs/blob/master/docs/source/index.rst
   dev_url: https://github.com/conda/conda

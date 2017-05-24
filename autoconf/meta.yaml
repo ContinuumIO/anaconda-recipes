@@ -22,6 +22,6 @@ about:
   license_file: COPYING
   summary: M4 Macros to automatically configure software source code
   description: |
-    Autoconf is an extensible package of M4 macros that produce shell
-    scripts to automatically configure software source code packages.
-  doc_url: http://www.gnu.org/software/autoconf/manual/index.html
+    Autoconf is a tool for producing shell scripts that automatically configure software source code packages to adapt to many kinds of Posix-like systems.
+    The configuration scripts produced by Autoconf are independent of Autoconf when they are run, so their users do not need to have Autoconf.
+  doc_url: https://www.gnu.org/software/autoconf/manual/autoconf.html

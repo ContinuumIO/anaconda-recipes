@@ -37,4 +37,5 @@ about:
     ZODB's "optimistic currency" paradigm, and include explicit resolution of
     conflicts detected by that mechanism.
   doc_url: http://pythonhosted.org/BTrees
+  doc_source_url: https://github.com/zopefoundation/BTrees/blob/master/docs/index.rst
   dev_url: https://github.com/zopefoundation/BTrees

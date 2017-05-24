@@ -24,7 +24,8 @@ about:
   license_file: COPYING
   summary: Tool to automatically generate Makefile.in files
   description: |
-    Automake automatically generates Makefile.in files compliant with
-    the GNU Coding Standards. Note: Automake requires the use of Autoconf.
-  doc_url: https://www.gnu.org/software/automake/#documentation
+    Automake is a tool for automatically generating Makefile.ins from files called Makefile.am.
+    It assumes that the project uses Autoconf and enforces certain restrictions on the configure.ac contents.
+  doc_url: https://www.gnu.org/software/automake/manual/automake.html
+  doc_source_url: http://savannah.gnu.org/git/?group=automake#
   dev_url: http://savannah.gnu.org/git/?group=automake

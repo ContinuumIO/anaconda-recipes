@@ -21,7 +21,8 @@ about:
   license_family: Apache
   summary: Maintains a consistent API with predictable behaviour
   description: |
-    Apache Portable Runtime (APR) maintains software libraries
-    that provides a consistent interface regardless of the platform on which
-    software is built.
+    Apache Portable Run-time libraries have been designed to provide a common
+    interface to low level routines across any platform.The original goal of APR
+    was to combine all code in Apache to one common code base.
   doc_url: https://apr.apache.org/docs/apr/1.5/index.html
+  doc_source_url: https://github.com/apache/apr/tree/trunk/docs

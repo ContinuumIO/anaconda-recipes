@@ -25,13 +25,13 @@ test:
 
 about:
   home: http://biopython.org/
-  license: BSD-like
+  license: Biopython or BSD 3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Freely available tools for biological computation
   description: |
-    Biopython is a set of freely available Python tools for computational
-    molecular biology. Biopython makes it easy to use Python for bionformatics
-    with high-quality, reusable modules and classes.
+    Biopython Project is an international association of developers of freely
+    available Python tools for computational molecular biology.
   doc_url: http://biopython.org/wiki/Documentation
+  doc_source_url: https://github.com/biopython/biopython.github.io/edit/master/index.md
   dev_url: https://github.com/biopython/biopython

@@ -33,8 +33,7 @@ about:
   license_family: Other
   summary: Boost provides free peer-reviewed portable C++ source libraries.
   description: |
-    Boost contains free C++ source libraries that work well with the C++
-    standard library. The libraries are intended to be widely useful across
-    a broad spectrum of applications.
+    Boost, a C++ library which enables seamless interoperability between C++ and the Python programming language.
   doc_url: http://www.boost.org/doc/
+  doc_source_url: https://github.com/boostorg/python/blob/develop/README.md
   dev_url: http://www.boost.org/development/

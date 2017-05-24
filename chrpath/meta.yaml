@@ -21,4 +21,5 @@ about:
     chrpath is a command line tool to adjust the RPATH or RUNPATH of ELF
     binaries.
   doc_url: https://alioth.debian.org/projects/chrpath/
+  doc_source_url: https://github.com/conda-forge/chrpath-feedstock/blob/master/README.md
   dev_url: https://www.openhub.net/p/chrpath

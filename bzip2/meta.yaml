@@ -25,3 +25,4 @@ about:
     whilst being around twice as fast at compression and six times faster
     at decompression.
   doc_url: http://www.bzip.org/docs.html
+  doc_source_url: https://github.com/larzconwell/bzip2/blob/master/README.md

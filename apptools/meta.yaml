@@ -27,7 +27,8 @@ about:
   license_file: LICENSE.txt
   summary: Includes packages useful for creating applications
   description: |
-    Apptools includes a set of useful packages that implement
-    commonly needed functionality for many applications.
+    apptools project includes a set of packages that are useful in creating a number of applications.
+    They implement functionality that is commonly needed by many applications
   doc_url: http://docs.enthought.com/apptools/
+  doc_source_url: https://github.com/enthought/apptools/blob/master/docs/source/index.rst
   dev_url: https://github.com/enthought/apptools

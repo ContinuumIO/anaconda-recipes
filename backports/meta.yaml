@@ -15,3 +15,7 @@ test:
 about:
   home: https://bitbucket.org/brandon/backports
   license: BSD
+  description: |
+    Namespace for backported Python features.
+  doc_url: https://pypi.python.org/pypi/backports/
+  doc_source_url: https://bitbucket.org/brandon/backports/src/931d2c348a93313413e444c0724db7ac5030a496/setup.py?at=default&fileviewer=file-view-default

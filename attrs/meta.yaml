@@ -24,7 +24,8 @@ about:
   license_file: LICENSE
   summary: Implement attribute-related object protocols without boilerplate
   description: |
-    Attrs eases the chores of implementing the most common
-    attribute-related object protocols.
-  doc_url: https://attrs.readthedocs.org
+    attrs is the Python package that will bring back the joy of writing classes by relieving you from the drudgery of implementing object protocols.
+    Its main goal is to help you to write concise and correct software without slowing down your code.
+  doc_url: https://attrs.readthedocs.io/en/stable/#user-s-guide
+  doc_source_url: https://github.com/python-attrs/attrs/blob/master/docs/index.rst
   dev_url: https://github.com/hynek/attrs

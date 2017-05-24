@@ -27,6 +27,7 @@ about:
   summary: Control AppleScriptable applications from Python
   description: |
     Appscript is a user-friendly Apple event bridge that allows
-    users to control Applescriptable Mac OS X applications from Python. This allows
-    Python to be a serious alternative to using Apple's AppleScript language.
+    users to control scriptable Mac OS X applications from Python, Ruby and Objective-C.
+    Appscript makes these languages serious alternatives to Apple's own AppleScript language for automating your Mac.
   doc_url: https://pypi.python.org/pypi/appscript
+  doc_source_url: https://sourceforge.net/projects/appscript/?source=navbar

@@ -28,4 +28,5 @@ about:
   license_family: MIT
   license_file: LICENSE.txt
   dev_url: https://github.com/ActiveState/appdirs
-  doc_url: https://github.com/ActiveState/appdirs
+  doc_url: https://pypi.python.org/pypi/appdirs/1.4.3
+  doc_source_url: https://github.com/ActiveState/appdirs/blob/master/README.rst

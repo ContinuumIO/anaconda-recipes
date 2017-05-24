@@ -32,5 +32,6 @@ about:
   description: |
    Azure provides Python packages that make it easy to access Microsoft
    Azure components.
-  doc_url: https://azure.microsoft.com/en-us/documentation
+  doc_url: https://docs.microsoft.com/en-us/azure/
+  doc_source_url: https://github.com/Azure/azure-quickstart-templates
   dev_url: https://github.com/Azure

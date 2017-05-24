@@ -30,9 +30,9 @@ about:
   license_file: LICENSE.txt
   summary: A serialization, deserialization, and validation library
   description: |
-    Colander is a serialization/deserialization/validation library for
-    strings, mappings, and lists. It is useful as a system for validating
-    and deserializing data obtained via XML, JSON, an HTML form post, or any
-    other equally simple data serialization.
+    Colander is useful as a system for validating and deserializing data
+    obtained via XML, JSON, an HTML form post or any other equally simple
+    data serialization.
   doc_url: http://docs.pylonsproject.org/projects/colander/
+  doc_source_url: https://github.com/Pylons/colander/blob/master/docs/index.rst
   dev_url: https://github.com/Pylons/colander

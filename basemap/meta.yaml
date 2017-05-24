@@ -34,7 +34,7 @@ about:
   license: PSF
   summary: Plot data on map projections with matplotlib
   description: |
-    Basemap is a toolkit for matplotlib that allows you to plot 2D data on
-    maps in Python. Basemap is geared toward the needs of Earth
-    scientists, particularly oceanographers and meteorologists.
+    Basemap toolkit is a library for plotting 2D data on maps in Python.
+    It is similar in functionality to the matlab mapping toolbox, the IDL mapping facilities, GrADS, or the Generic Mapping Tools.
   doc_url: http://matplotlib.org/basemap/
+  doc_source_url: https://github.com/matplotlib/basemap/blob/master/doc/index.rst

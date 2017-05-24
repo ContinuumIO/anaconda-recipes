@@ -30,8 +30,10 @@ about:
   license: BSD
   summary: Pythonic, object-oriented web framework
   description: |
-    Cherrypy allows developers to build web applications in much the same way
-    they would build any other object-oriented Python program. This results
-    in smaller source code developed in less time.
+    CherryPy is a pythonic, object-oriented web framework.
+    It allows developers to build web applications in much the same way they would
+    build any other object-oriented Python program. This results in smaller source
+    code developed in less time.
   doc_url: http://docs.cherrypy.org/
+  doc_source_url: https://github.com/cherrypy/cherrypy/blob/master/docs/index.rst
   dev_url: https://bitbucket.org/cherrypy/

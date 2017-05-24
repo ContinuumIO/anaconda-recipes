@@ -24,4 +24,7 @@ about:
   license_file: LICENSE.txt
   summary: collection of perceptually uniform colormaps
   description: |
-    A set of useful perceptually uniform colormaps for plotting scientific data
+    colorcet is a collection of perceptually uniform colormaps for use
+    with Python plotting programs like bokeh, matplotlib, holoviews, and datashader.
+  doc_url: https://pypi.python.org/pypi/colorcet/0.9.1
+  doc_source_url: https://github.com/bokeh/colorcet/blob/master/README.md

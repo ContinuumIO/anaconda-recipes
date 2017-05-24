@@ -26,5 +26,6 @@ about:
   description: |
     Beautiful Soup is a library for pulling data out of HTML and XML files.
     It provides ways of navigating, searching, and modifying parse trees.
-  doc_url: http://www.crummy.com/software/BeautifulSoup/bs4/doc/
+  doc_url: http://beautiful-soup-4.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/newvem/beautifulsoup4/blob/master/doc/source/index.rst
   dev_url: https://code.launchpad.net/beautifulsoup

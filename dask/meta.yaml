@@ -7,6 +7,9 @@ source:
   url: https://pypi.python.org/packages/a3/76/9dbbea3d9cf13bce2ed535142545bf2db259ebd809fe7017bb863be2cf5a/dask-0.14.3.tar.gz
   md5: 059ff19c01b93c2781b6fff09182dfce
 
+build:
+  number: 1
+
 requirements:
   build:
     - python
@@ -14,7 +17,6 @@ requirements:
   run:
     - python
     - bokeh
-    - chest
     - cloudpickle >=0.2.1
     - numpy
     - pandas >=0.19.0

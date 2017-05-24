@@ -38,8 +38,9 @@ about:
   license_file: COPYING
   summary: A 2D graphics library with support for multiple output devices
   description: |
-    Cairo is a 2D graphics library with support for multiple output devices.
-    It is designed to produce consistent output on all output media while
-    taking advantage of display hardware acceleration when available.
+    Cairo is a powerful 2d graphics library with support for multiple output devices.
+    It is implemented as a library written in the C programming language,
+    but bindings are available for several different programming languages.
   doc_url: http://cairographics.org/documentation/
+  doc_source_url: https://github.com/bonzini/cairo/tree/master/doc
   dev_url: https://cgit.freedesktop.org/cairo/

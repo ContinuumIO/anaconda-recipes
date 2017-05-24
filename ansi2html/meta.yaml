@@ -32,7 +32,7 @@ test:
 
 about:
   home: https://pypi.python.org/pypi/ansi2html
-  license: GPLv3+
+  license: General Public License v3.0
   license_family: GPL3
   license_file: LICENSE
   summary: Convert text with ANSI color codes to HTML or to LaTeX.
@@ -40,4 +40,5 @@ about:
     ansi2html allows users to convert text with ANSI color codes
     to HTML or to Latex.
   doc_url: https://pypi.python.org/pypi/ansi2html/
+  doc_source_url: https://github.com/ralphbean/ansi2html/blob/develop/README.rst
   dev_url: https://github.com/ralphbean/ansi2html/

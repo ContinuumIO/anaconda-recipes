@@ -29,5 +29,6 @@ about:
     Boto aims to support the full breadth and depth of Amazon Web Services.
     NOTE: Boto3, the next version of Boto, is stable and recommended for
     general use.
-  doc_url: http://docs.pythonboto.org/
+  doc_url: http://docs.pythonboto.org/en/latest/
+  doc_source_url: https://github.com/boto/boto/blob/develop/docs/source/index.rst
   dev_url: https://github.com/boto/boto/

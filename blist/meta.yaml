@@ -25,15 +25,13 @@ test:
 
 about:
   home: http://stutzbachenterprises.com/blist/
-  license: BSD
+  license: BSD 3-clause
+  license_family: BSD
   license_file: LICENSE
   summary: Replacement for Python lists with better performance
   description: |
-    Blist is a drop-in replacement for the Python list that provides
-    better performance for large lists and virtually identical performance for
-    small lists. The blist uses a flexible, hybrid array/tree structure to
-    minimize the number of items in memory that are moved. The blist package
-    also provides sortedlist, sortedset, weaksortedlist, weaksortedset,
-    sorteddict, and btuple.
+    Blist is a drop-in replacement for the Python list that provides better performance when modifying large lists.
+    Blist package also provides sortedlist, sortedset, weaksortedlist, weaksortedset, sorteddict, and btuple types.
   doc_url: http://stutzbachenterprises.com/blist/
+  doc_source_url: https://github.com/DanielStutzbach/blist/blob/master/doc/index.rst
   dev_url: https://github.com/DanielStutzbach/blist

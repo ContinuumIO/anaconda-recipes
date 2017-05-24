@@ -32,4 +32,5 @@ about:
     booleans. Bitarrays are sequence types that behave very similarly
     to usual lists. All functionality is implemented in C.
   doc_url: https://pypi.python.org/pypi/bitarray/0.8.1
+  doc_source_url: https://github.com/ilanschnell/bitarray/blob/master/README.rst
   dev_url: https://github.com/ilanschnell/bitarray

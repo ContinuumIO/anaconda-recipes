@@ -32,6 +32,7 @@ about:
   license_file: LICENSE
   summary: Universal character encoding detector
   description: |
-    Chardet is the Universal Character Encoding Detector for Python 2 and 3.
+    chardet is a character encoding auto-detector in Python.
   doc_url: http://chardet.readthedocs.org/
+  doc_source_url: https://github.com/chardet/chardet/blob/master/docs/index.rst
   dev_url: https://github.com/chardet/chardet

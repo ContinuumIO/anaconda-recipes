@@ -29,4 +29,5 @@ about:
    geospatial data. Cligj allows you to quickly build consistent, well-tested
    and interoperable CLIs for handling GeoJSON.
   doc_url: https://pypi.python.org/pypi/cligj/0.4.0
+  doc_source_url: https://github.com/mapbox/cligj/blob/master/README.rst
   dev_url: https://github.com/mapbox/cligj

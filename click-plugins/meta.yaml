@@ -25,4 +25,6 @@ about:
   license: BSD
   summary: extension module for click to enable registering CLI commands
   description: |
-    Register CLI commands via setuptools entry-points.
+    click-plugins is an extension module for click to register external CLI commands via setuptools entry-points.
+  doc_url: https://pypi.python.org/pypi/click-plugins
+  doc_source_url: https://pypi.python.org/pypi/click-plugins

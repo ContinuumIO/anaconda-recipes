@@ -29,3 +29,4 @@ about:
    trustworthiness of SSL certificates while verifying the identity of TLS
    hosts.
   doc_url: https://pypi.python.org/pypi/certifi
+  doc_source_url: https://github.com/certifi/certifi.io/blob/master/README.rst

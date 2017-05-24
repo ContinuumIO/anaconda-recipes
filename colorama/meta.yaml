@@ -23,7 +23,9 @@ about:
   license_file: LICENSE.txt
   summary: Cross-platform colored terminal text in Python
   description: |
-    Makes ANSI escape character sequences (for producing colored terminal
-    text and cursor positioning) work under MS Windows.
+    colorama is a cross-platform colored terminal text.It makes
+    ANSI escape character sequences (for producing colored terminal text
+    and cursor positioning) work under MS Windows.
   doc_url: http://pypi.python.org/pypi/colorama
+  doc_source_url: https://github.com/tartley/colorama/blob/master/README.rst
   dev_url: https://github.com/tartley/colorama

@@ -53,8 +53,8 @@ about:
   license_file: LICENSE.txt
   summary: NumPy and Pandas interface to big data
   description: |
-     The Blaze Ecosystem provides high-level access to efficient computation
-     on large data. It contains a set of libraries that help users store,
-     describe, query, and process data.
-  doc_url: http://blaze.readthedocs.org/
+     Blaze Ecosystem provides Python users high-level access to efficient computation on inconveniently large data.
+     Blaze can refer to both a particular library as well as an ecosystem of related projects that have spun off of Blaze development.
+  doc_url: http://blaze.readthedocs.io/en/latest/index.html
+  doc_source_url: https://github.com/blaze/blaze/blob/master/docs/source/index.rst
   dev_url: https://github.com/blaze

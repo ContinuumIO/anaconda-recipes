@@ -47,8 +47,8 @@ about:
   license: BSD
   summary: Community-developed Python Library for Astronomy
   description: |
-    The Astropy Project is a community effort to develop a single package for
-    Astronomy in Python. It contains core functionality and common tools
-    needed for performing astronomy and astrophysics research with Python.
+    Astropy is a community-driven package intended to contain much of the core functionality and
+    some common tools needed for performing astronomy and astrophysics with Python.
   doc_url: http://docs.astropy.org/en/stable/
+  doc_source_url: https://github.com/astropy/astropy/blob/master/docs/index.rst
   dev_url: https://github.com/astropy/astropy

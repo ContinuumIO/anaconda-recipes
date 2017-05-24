@@ -35,8 +35,9 @@ about:
   license: BSD
   summary: provides columnar, chunked and compressable data containers.
   description: |
-    bcolz provides columnar, chunked data containers that can be
-    compressed in-memory or on-disk. It is based in NumPy but also comes with
-    support for HDF5/PyTables tables and Pandas dataframes.
-  doc_url: http://bcolz.blosc.org/
+    bcolz provides columnar and compressed data containers.
+    Column storage allows for efficiently querying tables with a large number of columns.
+    It also allows for cheap addition and removal of column.
+  doc_url: http://bcolz.blosc.org/en/latest/
+  doc_source_url: https://github.com/Blosc/bcolz/blob/master/docs/index.rst
   dev_url: https://github.com/Blosc/bcolz

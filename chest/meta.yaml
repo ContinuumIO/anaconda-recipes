@@ -26,8 +26,9 @@ about:
   license_file: LICENSE.txt
   summary: A dictionary that writes its contents to disk
   description: |
-    Chest acts like a dictionary, but it can write its contents to disk.
+    Chest acts like a dictionary but it can write its contents to disk.
     This is useful because Chest can then hold datasets that are larger than
-    memory, and Chest persists and so can be saved and loaded for later use.
+    memory and Chest persists and so can be saved and loaded for later use.
   doc_url: https://pypi.python.org/pypi/chest/
+  doc_source_url: https://github.com/blaze/chest/blob/master/README.rst
   dev_url: https://github.com/blaze/chest

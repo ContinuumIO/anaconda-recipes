@@ -25,7 +25,7 @@ about:
   license_file: LICENSE
   summary: Disable App Nap on OS X 10.9
   description: |
-    Appnope is an easy way to disable and re-enable App Nap, a
-    potentially problematic energy feature, in OS X 10.9.
+    appnope is a simple package for disabling App Nap on OS X 10.9, which can be problematic.
   doc_url: https://pypi.python.org/pypi/appnope/0.1.0
+  doc_source_url: https://github.com/minrk/appnope/blob/master/README.md
   dev_url: https://github.com/minrk/appnope

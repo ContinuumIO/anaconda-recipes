@@ -25,4 +25,5 @@ about:
   description: |
     Backport of recent additions to the "collections.abc" stdlib module (Py3.5)
   doc_url: https://pypi.python.org/pypi/backports_abc
+  doc_source_url: https://github.com/cython/backports_abc/blob/master/README.rst
   dev_url: https://github.com/cython/backports_abc
