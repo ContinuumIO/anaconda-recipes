@@ -4,12 +4,12 @@
 
 package:
   name: glueviz
-  version: 0.10.1
+  version: 0.10.4
 
 source:
-  fn: glueviz-0.10.1.tar.gz
-  url: https://pypi.io/packages/source/g/glueviz/glueviz-0.10.1.tar.gz
-  md5: abcb117e102ae9cb00c5dd1bd784c5f3
+  fn: glueviz-0.10.4.tar.gz
+  url: https://pypi.io/packages/source/g/glueviz/glueviz-0.10.4.tar.gz
+  md5: 94f1774e3c379403966ca217bbe36d7a
 
 requirements:
 
@@ -18,7 +18,7 @@ requirements:
     - setuptools
 
   run:
-    - glue-core >=0.10.1
+    - glue-core >=0.10.4
     - glue-vispy-viewers >=0.7.2
 
 app:
@@ -40,8 +40,7 @@ about:
   home: http://glueviz.org/
   license: 3-clause BSD License
   license_family: BSD
-  # TMP: license file is missing in 0.10.1
-  #license_file: LICENSE
+  license_file: LICENSE
   summary: Multi-dimensional linked data exploration
   description: |
     Glue is a Python library to explore relationships within and among related

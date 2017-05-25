@@ -1,11 +1,12 @@
 package:
   name: glue-core
-  version: 0.10.1
+  version: 0.10.4
 
 source:
-  fn: glue-core-0.10.1.tar.gz
-  url: https://pypi.io/packages/source/g/glue-core/glue-core-0.10.1.tar.gz
-  md5: bf0d8d2c2fba069d554aadb9acce5292
+  fn: glue-core-0.10.4.tar.gz
+  url: https://pypi.io/packages/source/g/glue-core/glue-core-0.10.4.tar.gz
+  md5: def1af4db51dc6e0a79bb24539f4c633
+
 
 build:
   entry_points:
