@@ -70,7 +70,8 @@ about:
   license: MIT
   summary: utilities for working with CSV, the king of tabular file formats
   description: |
-    Csvkit is a suite of utilities for converting to and working with CSV,
+    Csvkit is a suite of command-line tools for converting to and working with CSV,
     the king of tabular file formats.
-  doc_url: http://csvkit.rtfd.org/
+  doc_url: http://csvkit.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/wireservice/csvkit/blob/1.0.1/docs/index.rst
   dev_url: https://github.com/onyxfish/csvkit

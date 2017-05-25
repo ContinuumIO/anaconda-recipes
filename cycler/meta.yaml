@@ -28,4 +28,5 @@ about:
   description: |
     Cycler is a package used to create composable style cycles.
   doc_url: http://matplotlib.org/cycler/
+  doc_source_url: https://github.com/matplotlib/cycler/blob/master/doc/source/index.rst
   dev_url: https://github.com/matplotlib/cycler

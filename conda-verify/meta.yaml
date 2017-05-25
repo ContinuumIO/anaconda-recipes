@@ -30,4 +30,6 @@ about:
   summary: tool for (passively) verifying conda recipes and conda packages
   description: |
     conda-verify is a tool for (passively) verifying conda recipes and conda
-    packages.
+    packages.The purpose of this verification process is to ensure that
+    recipes don't contain obvious bugs
+  doc_source_url: https://github.com/conda/conda-verify/blob/master/README.md

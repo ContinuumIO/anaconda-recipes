@@ -25,4 +25,9 @@ about:
   license_file: LICENSE
   summary: symbolic constants in Python
   description: |
-    A library that provides symbolic constant support.
+    It is often useful to define names which will be treated as constants.
+    constantly provides APIs for defining such symbolic constants
+    with minimal overhead and some useful features beyond those afforded by
+    the common Python idioms for this task.
+  doc_url: http://constantly.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/twisted/constantly/blob/master/docs/index.rst

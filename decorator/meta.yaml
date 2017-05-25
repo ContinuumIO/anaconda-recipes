@@ -26,5 +26,6 @@ about:
   description: |
     Preserve the signature of decorated functions in a consistent way
     across Python releases.
-  doc_url: http://pythonhosted.org/decorator/
+  doc_url: http://pythonhosted.org/decorator/documentation.html
+  doc_source_url: https://github.com/micheles/decorator/tree/master/docs
   dev_url: https://github.com/micheles/decorator

@@ -36,8 +36,9 @@ about:
   license_file: LICENSE.txt
   summary: The Cython compiler for writing C extensions for the Python language
   description: |
-    Cython is an optimising static compiler for both the Python programming
-    language and the extended Cython programming language. It makes writing C
-    extensions for Python as easy as Python itself.
-  doc_url: http://cython.org/#documentation
+    Cython is a programming language that makes writing C extensions for the Python language as easy as Python itself.
+    It aims to become a superset of the Python language which gives it high-level, object-oriented, functional
+    and dynamic programming.
+  doc_url: http://docs.cython.org/en/latest/
+  doc_source_url: https://github.com/cython/cython/blob/master/docs/index.rst
   dev_url: https://github.com/cython/cython

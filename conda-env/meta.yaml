@@ -4,3 +4,5 @@ package:
 
 about:
   license: BSD
+  doc_url: https://conda.io/docs/using/envs.html
+  doc_source_url: https://github.com/conda/conda-docs/blob/master/docs/source/using/envs.rst

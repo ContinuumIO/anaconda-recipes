@@ -23,8 +23,5 @@ about:
   license: BSD
   summary: Reading/writing dBase, FoxPro, and Visual FoxPro .dbf files
   description: |
-    Dbf is a pure Python package for reading/writing dBase, FoxPro, and
-    Visual FoxPro .dbf files. Currently supports dBase III, Clipper, FoxPro,
-    and Visual FoxPro tables. Text is returned as unicode, and codepage settings
-    in tables are honored.
+    Dbf is a pure Python package for reading/writing dBase,VFP tables and memos.
   doc_url: http://pythonhosted.org/dbf/

@@ -61,5 +61,6 @@ about:
   description: |
     Conda-build contains commands and tools to allow you to build your own
     packages for conda.
-  doc_url: http://conda.pydata.org/docs/
+  doc_url: http://conda-test.pydata.org/docs/build_tutorials/pkgs.html
+  doc_source_url: https://github.com/conda/conda-docs/tree/master/docs/source
   dev_url: https://github.com/conda/conda-build

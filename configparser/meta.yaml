@@ -29,3 +29,5 @@ about:
     This module provides the ConfigParser class which implements a basic
     configuration language which provides a structure similar to what's
     found in Microsoft Windows INI files.
+  doc_url: https://docs.python.org/3/library/configparser.html#interpolation-of-values
+  doc_source_url: https://github.com/python/cpython/blob/3.6/Doc/library/configparser.rst

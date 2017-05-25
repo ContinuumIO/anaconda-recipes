@@ -32,7 +32,8 @@ about:
   license_file: LICENSE.txt
   summary: Tool for  creating installers for conda packages
   description: |
-    Constructor is a tool for constructing an installer for a collection of
-    conda packages. It creates an Anaconda-like installer consisting of
+    Constructor is a tool which allows constructing an installer for a collection of
+    conda packages. It creates an Anaconda-like installer consisting of conda
     packages.
   dev_url: https://github.com/conda/constructor
+  doc_source_url: https://github.com/conda/constructor/blob/master/README.md

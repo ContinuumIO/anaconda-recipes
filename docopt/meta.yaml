@@ -23,8 +23,8 @@ about:
   license: MIT
   summary: Command-line interface description language
   description: |
-    Docopt helps you create beautiful command-line interfaces easily. Docopt
-    will help you define interface for your command-line app and automatically
-    generate a parser for it.
+    Docopt helps you create beautiful command-line interfaces easily. It is a
+    pythonic argument parser.
   doc_url: https://pypi.python.org/pypi/docopt
+  doc_source_url: https://github.com/docopt/docopt/blob/master/README.rst
   dev_url: https://github.com/docopt/docopt

@@ -34,3 +34,9 @@ about:
   license_family: BSD
   license_file: LICENSE.txt
   summary: graphics pipeline system for creating representations of large amounts
+  description: |
+    Datashader is a graphics pipeline system for creating meaningful representations of
+    large datasets quickly and flexibly.
+  doc_url: http://datashader.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/bokeh/datashader/blob/master/docs/index.rst
+  dev_url: https://github.com/dask/dask

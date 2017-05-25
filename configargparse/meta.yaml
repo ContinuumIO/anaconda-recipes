@@ -25,7 +25,8 @@ about:
   license_file: LICENSE
   summary: allowing options to be set via config files and/or env vars
   description: |
-    A drop-in replacement for argparse that allows options to also be set via
+    ConfigArgParse is a drop-in replacement for argparse that allows options to also be set via
     config files and/or environment variables.
   dev_url: https://github.com/zorro3/ConfigArgParse
-  doc_url: https://github.com/zorro3/ConfigArgParse
+  doc_url: https://pypi.python.org/pypi/ConfigArgParse
+  doc_source_url: https://github.com/bw2/ConfigArgParse/blob/master/README.rst

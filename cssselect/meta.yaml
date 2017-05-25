@@ -26,5 +26,6 @@ about:
     Cssselect parses CSS3 Selectors and translate them to XPath 1.0
     expressions. Such expressions can be used in lxml or another XPath engine
     to find the matching elements in an XML or HTML document.
-  doc_url: https://pythonhosted.org/cssselect/
+  doc_url: https://cssselect.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/scrapy/cssselect/blob/master/README.rst
   dev_url: https://github.com/SimonSapin/cssselect

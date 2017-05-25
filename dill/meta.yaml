@@ -26,8 +26,7 @@ about:
   summary: Serialize all of python (almost)
   description: |
     Dill extends Python's 'pickle' module for serializing and de-serializing
-    Python objects to he majority of the built-in python types. Serialization
-    is the process of converting an object to a byte stream, and the inverse of
-    which is converting a byte stream back to on python object hierarchy.
-  doc_url: https://docs.python.org/2/library/pickle.html
+    Python objects to he majority of the built-in python types.
+  doc_url: http://trac.mystic.cacr.caltech.edu/project/pathos/wiki/dill.html
+  doc_source_url: https://github.com/uqfoundation/dill/blob/master/README.md
   dev_url: https://github.com/uqfoundation/dill

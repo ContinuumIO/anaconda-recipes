@@ -29,7 +29,7 @@ about:
   description: |
     Docutils is an open-source text processing system for processing plaintext
     documentation into useful formats, such as HTML, LaTeX, man-pages, open-
-    document, or XML. It includes reStructuredText, the easy to read, easy to
-    use, what-you-see-is-what-you-get plaintext markup language.
+    document, or XML.
   doc_url: http://docutils.sourceforge.net/docs/index.html
+  doc_source_url: https://sourceforge.net/p/docutils/code/HEAD/tree/trunk/docutils/docs/index.txt
   dev_url: http://repo.or.cz/w/docutils.git

@@ -29,4 +29,5 @@ about:
     serves as a real world proving ground for potential future enhancements
     to that module.
   doc_url: http://contextlib2.readthedocs.org/
+  doc_source_url: https://github.com/jazzband/contextlib2/blob/d533028739d643830af03bf23255b5d4f8535108/docs/index.rst
   dev_url: https://bitbucket.org/ncoghlan/contextlib2

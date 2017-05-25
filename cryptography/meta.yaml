@@ -47,4 +47,5 @@ about:
     Cryptography is a Python library which exposes cryptographic recipes and
     primitives. The goal is for it to be your "cryptographic standard library".
   doc_url: https://cryptography.io
+  doc_source_url: https://github.com/pyca/cryptography/blob/master/docs/index.rst
   dev_url: https://github.com/pyca/cryptography

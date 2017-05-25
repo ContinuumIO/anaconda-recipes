@@ -17,8 +17,6 @@ about:
   license_file: LICENSE
   summary: Embeddable Databases
   description: |
-    Oracle Berkeley DB provides the best open source embeddable databases
-    allowing developers the choice of SQL, Key/Value, XML/XQuery, or Java
-    Object storage for their data model. At its core is a fast, scalable
-    transactional database engine with proven reliability and availability.
-  doc_url: http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/documentation/index.htmlx
+    a db package which makes easier to interact with your databases.
+  doc_url: https://pypi.python.org/pypi/db.py#what-is-it
+  doc_source_url: https://github.com/yhat/db.py/blob/master/README.rst

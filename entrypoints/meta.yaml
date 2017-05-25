@@ -24,3 +24,9 @@ about:
   home: https://github.com/takluyver/entrypoints
   license: MIT
   license_file: LICENSE
+  description: |
+    Entry points are a way for Python packages to advertise objects
+    with some common interface.
+  doc_url: http://entrypoints.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/takluyver/entrypoints/blob/master/doc/index.rst
+  dev_url: https://github.com/embotech/ecos

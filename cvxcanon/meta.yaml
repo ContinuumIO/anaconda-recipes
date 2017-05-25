@@ -31,10 +31,8 @@ about:
   license: GPL3
   summary: Low-level library to perform the matrix building step in CVXPY
   description: |
-    Convex optimization modeling tools like CVX, CVXPY, and Convex.Jl translate
-    high-level problem descriptions into low-level, canonical forms that are
-    then passed to an backend solver. CVXcanon is a software package that
-    factors out the common operations that all such modeling systems perform
-    into a single library with a simple C++ interface.
-  doc_url: https://pypi.python.org/pypi/CVXcanon
+    CVXcanon  is a low-level library to perform the matrix building step in cvxpy,
+    a convex optimization modeling software.
+  doc_url: https://pypi.python.org/pypi/CVXcanon/0.0.21
+  doc_source_url: https://github.com/cvxgrp/CVXcanon/blob/master/README.md
   dev_url: https://github.com/cvxgrp/CVXcanon

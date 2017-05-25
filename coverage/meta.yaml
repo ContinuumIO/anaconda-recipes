@@ -40,4 +40,5 @@ about:
     effectiveness of tests. It can show which parts of your code are being
     exercised by tests, and which are not.
   doc_url: http://coverage.readthedocs.org
+  doc_source_url: https://bitbucket.org/ned/coveragepy/src/coverage-4.3.4/doc/index.rst?fileviewer=file-view-default
   dev_url: https://bitbucket.org/ned/coveragepy

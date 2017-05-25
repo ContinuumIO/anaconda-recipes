@@ -38,7 +38,8 @@ about:
   license: MIT
   summary: A light-weight Python OLAP framework for data warehouses
   description: Cubes is a light-weight Python framework and set of tools for
-    Online Analytical Processing (OLAP), multidimensional analysis, and
-    browsing of aggregated data.
-  doc_url: http://cubes.databrewery.org/documentation.html
+    development of reporting and analytical applications,Online Analytical Processing (OLAP),
+    multidimensional analysis, and browsing of aggregated data.It is part of Data Brewery.
+  doc_url: http://cubes.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/DataBrewery/cubes/blob/master/doc/index.rst
   dev_url: https://github.com/DataBrewery/cubes

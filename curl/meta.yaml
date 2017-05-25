@@ -37,7 +37,7 @@ about:
   license_file: COPYING
   summary: Tool and library for transferring data with URL syntax
   description: |
-    Curl is an open source command line tool and library for transferring data
-    with URL syntax. It is used in command lines or scripts to transfer data.
+    Curl is an open source software which is used in command lines or scripts to transfer data.
   doc_url: https://curl.haxx.se/docs/
+  doc_source_url: https://github.com/curl/curl/tree/master/docs
   dev_url: https://github.com/curl/curl

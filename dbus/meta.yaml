@@ -26,3 +26,5 @@ about:
   summary: message bus system, a simple way for applications to talk to one another
   license: GPL2
   home: http://www.freedesktop.org/wiki/Software/dbus/
+  doc_url: https://www.freedesktop.org/wiki/IntroductionToDBus/
+  doc_source_url: https://github.com/posborne/dbus-python/tree/master/doc
