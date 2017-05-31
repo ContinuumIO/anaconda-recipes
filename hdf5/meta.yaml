@@ -31,6 +31,6 @@ about:
   summary:  A data model, library, and file format for storing and managing data
   description: |
     HDF5 supports an unlimited variety of datatypes, and is designed for
-    flexible and efficient I/O and for high volume and complex data. 
+    flexible and efficient I/O and for high volume and complex data.
   doc_url: https://www.hdfgroup.org/HDF5/doc/
   dev_url: https://www.hdfgroup.org/HDF5/release/obtain5.html

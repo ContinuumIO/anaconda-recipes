@@ -27,7 +27,7 @@ about:
   description: |
     Envisage is a Python-based framework for building extensible applications,
     that is, applications whose functionality can be extended by adding
-    "plug-ins". 
+    "plug-ins".
   doc_url: http://docs.enthought.com/envisage/index.html
   doc_source_url: https://github.com/enthought/envisage/blob/master/docs/source/index.rst
   dev_url: https://github.com/enthought/envisage

@@ -68,7 +68,7 @@ about:
     As a framework,its primary job is to make it easier for a developer to create an arbitrary
     web application. The type of application being created isn't really
     important; it could be a spreadsheet, a corporate intranet, or a social
-    networking platform. 
+    networking platform.
   doc_url: http://docs.pylonsproject.org/projects/pyramid/en/1.9-branch/
   doc_source_url: https://github.com/Pylons/pyramid/blob/master/README.rst
   dev_url: https://github.com/Pylons/pyramid

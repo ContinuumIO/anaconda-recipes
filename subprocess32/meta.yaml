@@ -29,7 +29,7 @@ about:
   license_family: PSF
   summary: backport of the subprocess module from Python 3.2/3.3 for use on 2.x
   description: |
-    subprocess32 includes bugfixes and some new features. On POSIX systems it is 
+    subprocess32 includes bugfixes and some new features. On POSIX systems it is
     guaranteed to be reliable when used in threaded applications.
   doc_url: https://pypi.python.org/pypi/subprocess32/
   doc_source_url: https://github.com/google/python-subprocess32

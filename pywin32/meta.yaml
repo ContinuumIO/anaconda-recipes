@@ -32,6 +32,6 @@ about:
   license: PSF
   summary: Python extensions for Windows
   description: |
-    A set of extension modules that provides access to many of the Windows API functions. 
+    A set of extension modules that provides access to many of the Windows API functions.
   doc_url: https://pypi.python.org/pypi/pywin32
   doc_source_url: https://sourceforge.net/projects/pywin32/

@@ -19,7 +19,7 @@ about:
   summary: Modify the dynamic linker and RPATH of ELF executables
   description: |
     Dynamically linked ELF executables always specify a dynamic linker or interpreter,
-    which is a program that actually loads the executable along with all its dynamically linked libraries. 
+    which is a program that actually loads the executable along with all its dynamically linked libraries.
   doc_url: http://nixos.org/patchelf.html
   doc_source_url: https://github.com/NixOS/patchelf/blob/master/README
   dev_url: https://github.com/NixOS/patchelf

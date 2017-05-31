@@ -40,6 +40,6 @@ about:
   license_file: docs/licenses.rst
   summary: Pythonic interface to the HDF5 binary data format
   description: |
-    H5py uses straightforward NumPy and Python metaphors, like dictionary and NumPy array syntax. 
+    H5py uses straightforward NumPy and Python metaphors, like dictionary and NumPy array syntax.
   doc_url: http://docs.h5py.org
   dev_url: https://github.com/h5py/h5py

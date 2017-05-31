@@ -35,6 +35,6 @@ about:
   summary: takes variation of EBNF as input, and outputs parser in Python
   description: |
     Grako is different from other PEG parser generators in that the generated
-    parsers use Python's very efficient exception-handling system to backtrack. 
+    parsers use Python's very efficient exception-handling system to backtrack.
   doc_url: https://pypi.python.org/pypi/grako/3.10.1
   doc_source_url: https://github.com/swayf/grako/blob/master/README.rst

@@ -36,7 +36,7 @@ about:
   license_file: COPYING
   summary: Manipulate, view, and analyze data in HDF files
   description: |
-    hdf is a multiobject file format for sharing scientific data in a distributed environment. 
+    hdf is a multiobject file format for sharing scientific data in a distributed environment.
   doc_url: https://support.hdfgroup.org/release4/doc/index.html
   doc_source_url: https://support.hdfgroup.org/ftp/HDF/HDF_Current/src/
   dev_url: https://www.hdfgroup.org/ftp/HDF/HDF_Current/

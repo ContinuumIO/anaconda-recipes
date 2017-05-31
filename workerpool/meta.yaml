@@ -28,7 +28,7 @@ about:
   license: MIT
   summary: Module for distributing jobs to a pool of worker threads
   description: |
-    workerpool module facilitates distributing simple operations into jobs 
+    workerpool module facilitates distributing simple operations into jobs
     that are sent to worker threads, maintained by a pool object.
   doc_url: https://pypi.python.org/pypi/workerpool
   doc_source_url: https://github.com/shazow/workerpool/blob/master/README.md
