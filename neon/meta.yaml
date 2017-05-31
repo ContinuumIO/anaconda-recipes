@@ -39,5 +39,9 @@ about:
   license: Apache 2.0
   license_family: Apache
   license_file: LICENSE
+  description: |
+    neon is committed to best performance on all hardware.
+    Designed for ease-of-use and extensibility.
+  doc_url: http://neon.nervanasys.com/docs/latest/
+  doc_source_url: https://github.com/NervanaSystems/neon/blob/master/doc/source/index.rst
   dev_url: https://github.com/NervanaSystems/neon
-  doc_url: https://github.com/NervanaSystems/neon

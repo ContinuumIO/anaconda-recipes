@@ -28,4 +28,5 @@ about:
     recent data to degrade into lower resolutions for long-term retention of
     historical data.
   doc_url: http://graphite.readthedocs.org/en/latest/whisper.html
+  doc_source_url: https://github.com/graphite-project/graphite-web/blob/master/docs/index.rst
   dev_url: https://github.com/graphite-project/whisper

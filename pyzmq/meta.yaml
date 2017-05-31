@@ -31,4 +31,5 @@ about:
     PyZMQ contains Python bindings for 0MQ. 0MQ is a lightweight and fast
     messaging implementation.
   doc_url: https://pyzmq.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/zeromq/pyzmq/blob/master/docs/source/index.rst
   dev_url: https://github.com/zeromq/pyzmq

@@ -27,5 +27,10 @@ about:
   license: BSD
   license_file: LICENSE
   summary: Bindings for the lz4 compression library
-  doc_url: https://pypi.python.org/pypi/lz4
+  description: |
+    Provides a Python interface for the LZ4 compression library.
+    LZ4 library provides support for three specifications-
+    frame format,block format and stream format.
+  doc_url: http://python-lz4.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/python-lz4/python-lz4/blob/master/docs/index.rst
   dev_url: https://github.com/steeve/python-lz4

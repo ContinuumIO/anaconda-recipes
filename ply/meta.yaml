@@ -22,7 +22,8 @@ about:
   license: BSD
   summary: implementation of Lex and Yacc
   description: |
-    In a nutshell, PLY is nothing more than a straightforward lex/yacc
-    implementation.
+    PLY is a pure-Python implementation of the popular compiler construction tools lex and yacc.
+    The main goal of PLY is to stay fairly faithful to the way in which traditional lex/yacc tools work.
   doc_url: http://www.dabeaz.com/ply
+  doc_source_url: https://github.com/dabeaz/ply/blob/master/doc/internal.htmls
   dev_url: https://github.com/dabeaz/ply

@@ -35,4 +35,5 @@ about:
     Quandl helps data analysts save time, effort and money by delivering
     high-quality financial and economic data in the precise format they need.
   doc_url: https://www.quandl.com/docs/api
+  doc_source_url: https://github.com/quandl/quandl-python
   dev_url: https://github.com/quandl

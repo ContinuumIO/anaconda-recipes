@@ -28,5 +28,6 @@ about:
   description: |
     The Repoze project is a collection of technologies which bridges the WSGI
     and Zope worlds.
-  doc_url: http://docs.repoze.org/
+  doc_url: http://repoze.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/repoze/repoze_docs/blob/master/index.rst
   dev_url: https://github.com/repoze/

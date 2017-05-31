@@ -27,10 +27,9 @@ about:
   license_file: LICENSE.txt
   summary: Traits-capable windowing framework
   description: |
-    The pyface project contains a toolkit-independent GUI abstraction layer,
+    pyface project contains a toolkit-independent GUI abstraction layer,
     which is used to support the "visualization" features of the Traits
-    package. Thus, you can write code in terms of the Traits API (views,
-    items, editors, etc.), and let pyface and your selected toolkit and
-    back-end take care of the details of displaying them.
+    package.
   doc_url: http://docs.enthought.com/pyface/
+  doc_source_url: https://github.com/enthought/pyface/blob/master/docs/source/index.rst
   dev_url: https://github.com/enthought/pyface

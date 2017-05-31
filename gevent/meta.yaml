@@ -29,7 +29,7 @@ about:
   license_file: LICENSE
   summary: Coroutine-based Python network library
   description: |
-    Gevent is a coroutine -based Python networking library that uses greenlet
-    to provide a high-level synchronous API on top of the libev event loop.
+    Gevent uses greenlet to provide a high-level synchronous API on top of the libev event loop.
   doc_url: http://www.gevent.org/contents.html
+  doc_source_url: https://github.com/gevent/gevent/blob/master/doc/contents.rst
   dev_url: https://github.com/gevent/gevent

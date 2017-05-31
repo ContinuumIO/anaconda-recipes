@@ -38,4 +38,5 @@ about:
     string escaping. It is used by Jinja 2, the Mako templating engine, the
     Pylons web framework and many more.
   doc_url: https://pypi.python.org/pypi/MarkupSafe
+  doc_source_url: https://github.com/pallets/markupsafe
   dev_url: https://github.com/pallets/markupsafe

@@ -28,4 +28,5 @@ about:
     UltraJSON is an ultra fast JSON encoder and decoder written in pure C
     with bindings for Python 2.5+ and 3.
   doc_url: https://pypi.python.org/pypi/ujson
+  doc_source_url: https://github.com/esnme/ultrajson
   dev_url: https://github.com/esnme/ultrajson

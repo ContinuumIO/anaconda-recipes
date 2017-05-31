@@ -24,3 +24,7 @@ about:
   license: MIT
   license_file: LICENSE
   summary: more routines for operating on iterables, beyond itertools
+  description: |
+    more-itertools, additional building blocks, recipes, and routines for working with Python iterables.
+  doc_url: http://more-itertools.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/erikrose/more-itertools/blob/master/docs/index.rst

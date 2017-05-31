@@ -26,9 +26,10 @@ test:
 about:
   home: http://github.com/shazow/workerpool
   license: MIT
-  summary: Python multithreaded job distribution module
+  summary: Module for distributing jobs to a pool of worker threads
   description: |
-    The workerpool module is a simple framework for easily distributing jobs
-    into multiple worker threads.
+    workerpool module facilitates distributing simple operations into jobs 
+    that are sent to worker threads, maintained by a pool object.
+  doc_url: https://pypi.python.org/pypi/workerpool
+  doc_source_url: https://github.com/shazow/workerpool/blob/master/README.md
   dev_url: https://github.com/shazow/workerpool
-

@@ -23,8 +23,8 @@ about:
   license_file: LICENSE
   summary: Various helpers to pass trusted data to untrusted environments
   description: |
-    Sometimes you just want to send some data to untrusted environments. But how to do this safely? The trick involves signing. Given a key only you know, you can cryptographically sign your data and hand it over to
-    someone else. When you get the data back you can easily ensure that nobody
-    tampered with it.
+    Internally itsdangerous uses HMAC and SHA1 for signing data and bases the implementation on the Django signing module.
+    It also however supports JSON Web Signatures (JWS).
   doc_url: https://pythonhosted.org/itsdangerous/
+  doc_source_url: https://github.com/pallets/itsdangerous/blob/master/docs/index.rst
   dev_url: https://github.com/pallets/itsdangerous

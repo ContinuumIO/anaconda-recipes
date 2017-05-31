@@ -34,3 +34,5 @@ about:
   summary: Widgets for the Jupyter Notebook
   description: |
     ipywidgets are interactive HTML widgets for Jupyter notebooks and the IPython kernel.
+  doc_url: https://ipywidgets.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/jupyter-widgets/ipywidgets/blob/master/docs/source/index.rst

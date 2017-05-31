@@ -31,4 +31,5 @@ about:
     conform to the WHATWG HTML specification, as is implemented by all major
     web browsers.
   doc_url: http://html5lib.readthedocs.org/
+  doc_source_url: https://github.com/html5lib/html5lib-python/blob/master/doc/index.rst
   dev_url: https://github.com/html5lib/html5lib-python

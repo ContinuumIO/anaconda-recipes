@@ -27,4 +27,5 @@ about:
     Xlwt is a library for developers to use to generate spreadsheet files
     compatible with Microsoft Excel versions 95 to 2003.
   doc_url: http://xlwt.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/python-excel/xlwt/blob/master/docs/index.rst
   dev_url: https://github.com/python-excel/xlwt

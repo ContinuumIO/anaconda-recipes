@@ -30,11 +30,11 @@ about:
   home: https://launchpad.net/pyflakes
   license: MIT
   license_file: LICENSE
-  summary: Checks Python source files for errors
+  summary: passive checker of Python programs
   description: |
-    Pyflakes is similar to PyChecker in scope, but differs in that it does not
-    execute the modules to check them. This is both safer and faster, although
-    it does not perform as many checks. Unlike PyLint, Pyflakes checks only
-    for logical errors in programs; it does not perform any check on style.
+    Pyflakes analyzes programs and detects various errors. It works by parsing
+    the source file, not importing it, so it is safe to use on modules with side
+    effects. It is also much faster.
   doc_url: https://pypi.python.org/pypi/pyflakes
+  doc_source_url: https://github.com/PyCQA/pyflakes/blob/master/README.rst
   dev_url: https://github.com/pyflakes/pyflakes

@@ -36,4 +36,5 @@ about:
     NOTE: pytest-cache is no longer maintained since its functionality was
     integrated into pytest core starting with pytest-2.8.0.
   doc_url: http://pythonhosted.org/pytest-cache/
+  doc_source_url: https://bitbucket.org/hpk42/pytest-cache/src/7875468588d60b46efd5fe3be2fa6676f6061486/doc/index.rst
   dev_url: https://bitbucket.org/hpk42/pytest-cache/

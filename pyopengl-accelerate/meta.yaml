@@ -29,10 +29,9 @@ about:
   home: http://pyopengl.sourceforge.net
   license: BSD
   license_file: license.txt
-  summary: Standard OpenGL bindings for Python
+  summary: Acceleration code for PyOpenGL
   description: |
-    PyOpenGL is the most common cross platform Python binding to OpenGL and
-    related APIs. The binding is created using the standard ctypes library.
+    This set of C (Cython) extensions provides acceleration of common operations for slow points in PyOpenGL .
   doc_url: http://pyopengl.sourceforge.net/documentation/index.html
+  doc_source_url: https://sourceforge.net/projects/pyopengl/
   dev_url: https://github.com/mcfletch/pyopengl
-

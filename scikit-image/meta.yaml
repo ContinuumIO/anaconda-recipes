@@ -48,4 +48,5 @@ about:
     The scikit-image SciKit (toolkit for SciPy) extends scipy.ndimage to
     provide a versatile set of image processing routines.
   doc_url: http://scikit-image.org/docs/dev/
+  doc_source_url: https://github.com/scikit-image/scikit-image/blob/master/doc/source/index.rst
   dev_url: https://github.com/scikit-image/scikit-image

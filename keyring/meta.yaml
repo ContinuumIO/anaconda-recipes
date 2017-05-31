@@ -33,4 +33,5 @@ about:
     The Python keyring lib provides a easy way to access the system keyring
     service from python.  It can be used in any application that needs safe
     password storage.
-  doc_url: http://pythonhosted.org/keyring/
+  doc_url: https://pypi.org/project/keyring/
+  doc_source_url: https://github.com/jaraco/keyring/blob/master/README.rst

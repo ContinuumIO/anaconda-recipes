@@ -30,7 +30,9 @@ about:
   license_file: LICENSE.txt
   summary: Python bindings to MKL service functions
   description: |
-    This package exposes a few functions which are declared in mkl_service.h.
-    The main purpose of the package is to allow the user to change the number
+    mkl-service exposes a few functions which are declared in mkl_service.h.
+    It's main purpose is to allow the user to change the number
     of CPU's MKL is using at runtime.
+  doc_url: https://docs.continuum.io/mkl-service/
+  doc_source_url: https://github.com/ContinuumIO/mkl-service/blob/master/docs/index.rst
   dev_url: https://github.com/ContinuumIO/mkl-service

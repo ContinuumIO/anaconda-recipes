@@ -17,4 +17,9 @@ about:
   home: http://unxutils.sourceforge.net/
   license: GPL3
   summary: Ports of common GNU utilities to native Win32
+  description: |
+    native means the executables do only depend on the Microsoft C-runtime
+    (msvcrt.dll) and not an emulation layer like that provided by Cygwin tools.
+  doc_url: http://unxutils.sourceforge.net/
+  doc_source_url: https://sourceforge.net/projects/unxutils/?source=navbar
   dev_url: https://sourceforge.net/projects/unxutils/

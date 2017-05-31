@@ -23,9 +23,9 @@ about:
   license: MIT
   summary: WSGI request and response object
   description: |
-    WebOb is a Python library that provides wrappers around the WSGI request
-    environment, and an object to help create WSGI responses. The objects map
-    much of the specified behavior of HTTP, including header parsing, content
-    negotiation and correct handling of conditional and range requests.
+    WebOb provides objects for HTTP requests and responses. Specifically it does
+    this by wrapping the WSGI request environment and response
+    status/headers/app_iter(body).
   doc_url: http://docs.webob.org/en/stable/
+  doc_source_url: https://github.com/Pylons/webob/blob/master/docs/index.txt
   dev_url: https://github.com/Pylons/webob

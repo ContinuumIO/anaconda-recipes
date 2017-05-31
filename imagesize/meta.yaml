@@ -23,4 +23,6 @@ about:
   license: MIT
   summary: getting image size from png/jpeg/jpeg2000/gif file
   description: |
-    This module analyzes jpeg/jpeg2000/png/gif image header and return image size.
+    imagesize parses jpeg/jpeg2000/png/gif image file's header and return image size.
+  doc_url: https://pypi.python.org/pypi/imagesize
+  doc_source_url: https://github.com/shibukawa/imagesize_py/blob/master/README.rst

@@ -39,9 +39,8 @@ about:
   license_family: LGPL
   summary: Core application building blocks for libraries and applications in C
   description: |
-    GLib provides the core application building blocks for libraries and
-    applications written in C. It provides the core object system used in
-    GNOME, the main loop implementation, and a large set of utility functions
-    functions for strings and common data structures.
+    GLib provides the core object system used in GNOME, t
+    he main loop implementation, and a large set of utility functions
+    for strings and common data structures.
   doc_url: https://developer.gnome.org/glib/unstable/
   dev_url: https://git.gnome.org/browse/glib/

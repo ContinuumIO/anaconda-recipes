@@ -34,7 +34,7 @@ about:
   license_file: LICENSE
   summary: Template library written in Python
   description: |
-    Mako is a template library written in Python. It provides a familiar,
-    non-XML syntax which compiles into Python modules for maximum performance.
+    Mako provides a familiar,non-XML syntax which compiles into Python modules for maximum performance.
   doc_url: http://docs.makotemplates.org/en/latest/
+  doc_source_url: https://github.com/zzzeek/mako/blob/master/doc/build/index.rst
   dev_url: https://bitbucket.org/zzzeek/mako/

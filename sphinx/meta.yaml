@@ -62,4 +62,5 @@ about:
     Sphinx is a tool that makes it easy to create intelligent and beautiful
     documentation.
   doc_url: http://www.sphinx-doc.org/en/stable/contents.html
+  doc_source_url: https://github.com/sphinx-doc/sphinx/blob/master/doc/contents.rst
   dev_url: https://github.com/sphinx-doc/sphinx/

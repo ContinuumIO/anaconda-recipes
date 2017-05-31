@@ -27,10 +27,9 @@ about:
   license_file: COPYING
   summary: Basic astronomical computations for Python
   description: |
-    PyEphem provides basic astronomical computations for the Python programming
-    language. Given a date and location on the Earth's surface, it can compute
-    the positions of the Sun and Moon, of the planets and their moons, and of
-    any asteroids, comets, or earth satellites whose orbital elements the user
-    can provide.
+    Given a date and location on the Earth's surface, ephem can compute
+    the positions of any asteroids,comets or earth satellites whose orbital
+    elements the user can provide.
   doc_url: http://rhodesmill.org/pyephem/
+  doc_source_url: https://github.com/brandon-rhodes/pyephem/blob/master/ephem/doc/index.rst
   dev_url: https://github.com/brandon-rhodes/pyephem

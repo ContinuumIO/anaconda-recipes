@@ -43,4 +43,5 @@ about:
     multi-resolution data from astrophysical simulations, radio telescopes,
     and a burgeoning interdisciplinary community.
   doc_url: http://yt-project.org/doc/
+  doc_source_url: https://bitbucket.org/yt_analysis/yt/src/00f28d0dd2a446c30cf8ed7cd91fa699bb0cb135/doc/source/index.rst
   dev_url: https://bitbucket.org/yt_analysis/yt/

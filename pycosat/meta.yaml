@@ -33,4 +33,6 @@ about:
     package provides efficient Python bindings to picosat on the C level, i.e.
     when importing pycosat, the picosat solver becomes part of the Python
     process itself.
+  doc_url: https://github.com/ContinuumIO/pycosat/blob/master/README.rst
+  doc_source_url: https://github.com/ContinuumIO/pycosat/blob/master/README.rst
   dev_url: https://github.com/ContinuumIO/pycosat

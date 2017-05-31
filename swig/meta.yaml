@@ -36,4 +36,5 @@ about:
     generate the wrapper code that scripting languages need to access the
     underlying C/C++ code.
   doc_url: http://www.swig.org/doc.html
+  doc_source_url: https://github.com/swig/swig/tree/master/Doc
   dev_url: https://github.com/swig/swig

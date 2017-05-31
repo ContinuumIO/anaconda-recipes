@@ -39,5 +39,6 @@ about:
   description: |
     The pytest framework makes it easy to write small tests, yet scales to
     support complex functional testing for applications and libraries.
-  doc_url: http://pytest.org/latest/contents.html#toc
+  doc_url: https://docs.pytest.org/en/latest/contents.html#toc
+  doc_source_url: https://github.com/pytest-dev/pytest/blob/master/doc/en/contents.rst
   dev_url: https://github.com/pytest-dev/pytest/

@@ -30,4 +30,5 @@ about:
     compliant with the reference implementation, though there are a few known
     issues.
   doc_url: https://pythonhosted.org/Markdown/
+  doc_source_url: https://github.com/waylan/Python-Markdown/blob/master/docs/index.txt
   dev_url: https://github.com/waylan/Python-Markdown

@@ -28,4 +28,5 @@ about:
     higher. It also solves the issue of ambiguous times at the end of daylight
     saving time.
   doc_url: http://pytz.sourceforge.net/
+  doc_source_url: https://github.com/newvem/pytz/blob/master/README.txt
   dev_url: https://github.com/newvem/pytz

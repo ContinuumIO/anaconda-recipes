@@ -33,3 +33,7 @@ about:
   home: https://plot.ly/python/
   license: MIT
   summary: plotting library for collaborative, interactive, publication-quality graphs
+  description: |
+    Plotly is the collaboration platform for modern data science.
+  doc_url: https://plot.ly/api/
+  doc_source_url: https://github.com/plotly/documentation/blob/master/README.md

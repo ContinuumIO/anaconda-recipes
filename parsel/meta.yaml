@@ -29,3 +29,8 @@ about:
   license: BSD
   license_file: LICENSE
   summary: library to extract data from HTML and XML using XPath and CSS selectors
+  description: |
+    Features of parcel are, Extract text using CSS or XPath selectors and
+    Regular expression helper methods.
+  doc_url: https://parsel.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/scrapy/parsel/blob/master/docs/index.rst

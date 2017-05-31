@@ -35,10 +35,10 @@ about:
   home: http://flask.pocoo.org/
   license: BSD
   license_file: LICENSE
-  summary: A microframework based on Werkzeug, Jinja2 and good intentions
+  summary: Microframework for Python based on Werkzeug, Jinja2.
   description: |
-    Flask is a microframework for Python based on Werkzeug and Jinja2. It's
-    intended for getting started very quickly and was developed with best
-    intentions in mind.
+    Flask depends on two external libraries, the Jinja2 template engine and
+    the Werkzeug WSGI toolkit.
   doc_url: http://flask.pocoo.org/docs/0.10/
+  doc_source_url: https://github.com/pallets/flask/blob/master/docs/index.rst
   dev_url: https://github.com/mitsuhiko/flask

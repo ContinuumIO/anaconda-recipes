@@ -33,5 +33,6 @@ about:
   description: |
     mpmath is a free Python library for real and complex floating-point
     arithmetic with arbitrary precision.
-  doc_url: http://mpmath.org/doc/current/
+  doc_url: http://mpmath.org/doc/0.19/
+  doc_source_url: https://github.com/fredrik-johansson/mpmath/blob/master/doc/source/index.txt
   dev_url: https://github.com/fredrik-johansson/mpmath

@@ -25,4 +25,9 @@ about:
   license: BSD
   license_family: BSD
   license_file: LICENSE.txt
-  summary: mutable mapping tools
+  summary: Composable Mutable Mapping tools
+  description: |
+    The dictionary / mutable mapping interface is powerful and multi-faceted.
+  doc_url: http://zict.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/dask/zict/blob/master/doc/source/index.rst
+  

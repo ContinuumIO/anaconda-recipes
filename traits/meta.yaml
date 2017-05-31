@@ -31,4 +31,5 @@ about:
     definition called a trait, which gives object attributes some additional
     characteristics.
   doc_url: http://docs.enthought.com/traits/
+  doc_source_url: https://github.com/enthought/traitsui/blob/master/docs/source/index.rst
   dev_url: https://github.com/enthought/traits

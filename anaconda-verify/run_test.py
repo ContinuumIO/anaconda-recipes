@@ -2,4 +2,4 @@ from anaconda_verify import __version__
 from anaconda_verify.package import CondaPackageCheck
 
 assert CondaPackageCheck.no_easy_install_script
-assert __version__ == '1.3.6', __version__
+assert __version__ == '1.3.7', __version__

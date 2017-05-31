@@ -26,3 +26,5 @@ about:
   summary: Kerberos high-level windows interface
   description: |
     API level equivalent with kerberos package but uses windows sspi (through pywin32)
+  doc_url: https://pypi.python.org/pypi/kerberos-sspi/0.2
+  doc_source_url: https://github.com/may-day/kerberos-sspi/blob/master/README.rsts

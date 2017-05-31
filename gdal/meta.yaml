@@ -34,10 +34,8 @@ about:
   license: MIT
   summary: Geospatial Data Abstraction Library
   description: |
-    GDAL is a translator library for raster and vector geospatial data formats
-    that is released under an X/MIT style Open Source license by the Open
-    Source Geospatial Foundation. As a library, it presents a single raster
-    abstract data model and vector abstract data model to the calling
+    gdal presents a single raster abstract data model and vector abstract data model to the calling
     application for all supported formats.
-  doc_url: http://trac.osgeo.org/gdal/
+  doc_url: http://gdal.org/1.11/index.html
+  doc_source_url: https://github.com/OSGeo/gdal/blob/trunk/gdal/doc/index.dox
   dev_url: https://github.com/OSGeo/gdal

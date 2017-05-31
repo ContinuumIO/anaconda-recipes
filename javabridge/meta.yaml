@@ -46,4 +46,5 @@ about:
     high-level API.
   license_family: BSD
   doc_url: http://pythonhosted.org/javabridge/
+  doc_source_url: https://github.com/LeeKamentsky/python-javabridge/blob/master/docs/index.rst
   dev_url: https://github.com/LeeKamentsky/python-javabridge

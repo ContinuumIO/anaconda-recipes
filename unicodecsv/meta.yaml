@@ -29,4 +29,5 @@ about:
     supports unicode strings without a hassle. Supported versions are python
     2.6, 2.7, 3.3, 3.4, 3.5, and pypy 2.4.0.
   doc_url: https://pypi.python.org/pypi/unicodecsv/0.14.1
+  doc_source_url: https://github.com/jdunck/python-unicodecsv
   dev_url: https://github.com/jdunck/python-unicodecsv

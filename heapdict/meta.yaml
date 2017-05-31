@@ -31,4 +31,5 @@ about:
     heapdict implements the MutableMapping ABC, meaning it works pretty much
     like a regular Python dict. It's designed to be used as a priority queue.
   doc_url: https://pypi.python.org/pypi/HeapDict
+  doc_source_url: https://github.com/DanielStutzbach/heapdict/blob/master/README.rst
   dev_url: https://github.com/DanielStutzbach/heapdict

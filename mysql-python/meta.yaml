@@ -35,4 +35,5 @@ about:
     This is the legacy (1.x) version of MySQLdb. While it is still being
     maintained, there will not be a lot of new feature development.
   doc_url: https://sourceforge.net/projects/mysql-python/
+  doc_source_url: https://github.com/farcepest/MySQLdb1
   dev_url: https://github.com/farcepest/MySQLdb1

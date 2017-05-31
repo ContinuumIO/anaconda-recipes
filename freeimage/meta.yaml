@@ -33,11 +33,9 @@ about:
   license_family: GPL2
   summary: Supports popular graphics image formats like PNG, BMP, JPEG, TIFF
   description: |
-    FreeImage is an Open Source library project for developers who would like
-    to support popular graphics image formats like PNG, BMP, JPEG, TIFF and
-    others as needed by today's multimedia applications. FreeImage is easy to
-    use, fast, multithreading safe, compatible with all 32-bit or 64-bit
-    versions of Windows, and cross-platform (works both with Linux and Mac
+    FreeImage is easy to use, fast, multithreading safe, compatible with all 32-bit
+    or 64-bit versions of Windows, and cross-platform (works both with Linux and Mac
     OS X).
   doc_url: http://freeimage.sourceforge.net/documentation.html
+  doc_source_url: https://sourceforge.net/projects/freeimage/
   dev_url: http://freeimage.sourceforge.net/sourcecode.html

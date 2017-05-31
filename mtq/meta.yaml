@@ -42,8 +42,7 @@ about:
   license: BSD
   summary: Library for queuing jobs and processing them in background
   description: |
-    mtq is a simple Python library for queueing jobs and processing them in
-    the background with workers. It is backed by Mongodb and it is designed
-    to have a low barrier to entry. It should be integrated in your web stack
-    easily.
+    mtq is backed by Mongodb and it is designed to have a low barrier to entry.
+    It should be integrated in your web stack easily.
+  doc_source_url: https://github.com/Anaconda-Platform/mtq/tree/master/docs
   dev_url: https://github.com/Anaconda-Server/mtq

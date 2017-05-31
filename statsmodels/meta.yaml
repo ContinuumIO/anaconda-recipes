@@ -45,4 +45,5 @@ about:
     Researchers across fields may find that statsmodels fully meets their
     needs for statistical computing and data analysis in Python.
   doc_url: http://statsmodels.sourceforge.net/documentation.html
+  doc_source_url: https://github.com/statsmodels/statsmodels/blob/master/docs/source/index.rst
   dev_url: https://github.com/statsmodels/statsmodels/

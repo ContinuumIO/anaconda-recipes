@@ -56,4 +56,5 @@ about:
     is built on top of the HDF5 library, using the Python language and the
     NumPy package.
   doc_url: http://www.pytables.org/
+  doc_source_url: https://github.com/PyTables/PyTables/blob/develop/doc/source/index.rst
   dev_url: https://github.com/PyTables

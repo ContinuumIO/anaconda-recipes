@@ -30,5 +30,6 @@ about:
     nested to build web applications. Each piece of middleware uses the WSGI
     (PEP 333) interface, and should be compatible with other middleware based
     on those interfaces.
-  doc_url: http://pythonpaste.org/
+  doc_url: https://paste.readthedocs.io/en/latest/
+  doc_source_url: https://bitbucket.org/ianb/paste/src/default/docs/index.txt
   dev_url: https://bitbucket.org/ianb/paste

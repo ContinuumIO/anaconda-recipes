@@ -23,4 +23,9 @@ test:
 about:
   home: https://github.com/spyder-ide/qtpy
   license: MIT
-  summary: uniform layer to support PyQt4, PyQt5 and PySide with a single codebase
+  summary: Abtraction layer for PyQt5/PyQt4/PySide
+  description: |
+    QtPy is a small abstraction layer that lets you write applications using a
+    single api call to either PyQt or PySide.
+  doc_url: https://pypi.python.org/pypi/QtPy
+  doc_source_url: https://github.com/spyder-ide/qtpy

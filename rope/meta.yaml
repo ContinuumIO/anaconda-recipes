@@ -32,5 +32,6 @@ about:
   license_family: GPL2
   license_file: COPYING
   summary: A Python refactoring library
-  doc_url: https://github.com/python-rope/rope
+  doc_url: https://pypi.python.org/pypi/rope
+  doc_source_url: https://github.com/python-rope/rope/tree/master/docs
   dev_url: https://github.com/python-rope/rope

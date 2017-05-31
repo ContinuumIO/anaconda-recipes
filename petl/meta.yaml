@@ -31,3 +31,7 @@ about:
   home: https://github.com/alimanfoo/petl
   license: MIT
   license_file: LICENSE.txt
+  description: |
+    A Python package for extracting, transforming and loading tables of data.
+  doc_url: http://persistent.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/alimanfoo/petl/blob/master/docs/index.rst

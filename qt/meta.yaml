@@ -105,4 +105,5 @@ about:
       Qt helps you create connected devices, UIs & applications that run
       anywhere on any device, on any operating system at any time.
     doc_url: http://doc.qt.io/
+    doc_source_url: http://code.qt.io/cgit/qt/qtdoc.git/tree/
     dev_url: https://github.com/qtproject

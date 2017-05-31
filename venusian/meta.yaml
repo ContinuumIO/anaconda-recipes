@@ -30,4 +30,5 @@ about:
     is executed at import time, you can defer the action usually taken by the
     decorator until a separate "scan" phase.
   doc_url: http://docs.pylonsproject.org/projects/venusian/en/latest/
+  doc_source_url: https://github.com/Pylons/venusian/blob/master/docs/index.rst
   dev_url: https://github.com/Pylons/venusian

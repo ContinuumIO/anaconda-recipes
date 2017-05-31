@@ -26,3 +26,8 @@ about:
   license: Apache
   license_file: LICENSE
   summary: file transport adapter for Requests
+  description: |
+    Requests-File is a transport adapter for use with the Requests Python
+    library to allow local filesystem access via file:// URLs.
+  doc_url: https://pypi.python.org/pypi/requests-file
+  doc_source_url: https://github.com/dashea/requests-file/blob/master/README.rst

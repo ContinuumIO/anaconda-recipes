@@ -29,4 +29,5 @@ about:
     other data processing units that can be combined into data processing
     sequences and more complex feed-forward network architectures.
   doc_url: http://mdp-toolkit.sourceforge.net/documentation.html
+  doc_source_url: https://github.com/mdp-toolkit/mdp-docs/tree/master/source
   dev_url: https://github.com/mdp-toolkit

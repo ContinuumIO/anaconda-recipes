@@ -29,4 +29,5 @@ about:
     sh is a full-fledged subprocess interface for Python that allows you to
     call any program as if it were a function.
   doc_url: http://amoffat.github.io/sh/
+  doc_source_url: https://github.com/amoffat/sh/blob/master/README.rst
   dev_url: https://github.com/amoffat/sh

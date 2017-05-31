@@ -40,3 +40,7 @@ about:
   license_family: BSD
   license_file: COPYING
   summary: set of python modules for machine learning and data mining
+  description: |
+    scikit-learn is built on NumPy, SciPy, and matplotlib.
+  doc_url: http://scikit-learn.org/stable/documentation.html
+  doc_source_url: https://github.com/scikit-learn/scikit-learn/tree/master/doc

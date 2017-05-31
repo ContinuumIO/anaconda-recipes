@@ -26,10 +26,10 @@ about:
   home: https://github.com/SethMMorton/natsort
   license: MIT
   license_file: LICENSE
-  summary: Sort lists naturally
+  summary: Simple yet flexible natural sorting in Python.
   description: |
-    natsort provides a function natsorted that helps sort lists "naturally",
-    either as real numbers (i.e. signed/unsigned floats or ints), or as
-    versions.
-  doc_url: http://pythonhosted.org/natsort/
+    natsort is a general utility for sorting lists naturally either as numbers
+    or as versions.
+  doc_url: http://natsort.readthedocs.io/en/stable/
+  doc_source_url: https://github.com/SethMMorton/natsort/blob/master/docs/source/index.rst
   dev_url: https://github.com/SethMMorton/natsort

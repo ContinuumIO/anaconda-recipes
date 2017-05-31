@@ -22,10 +22,11 @@ about:
   home: http://trac.osgeo.org/geos/
   license: LGPL
   license_file: COPYING
-  summary: A C++ port of the Java Topology Suite (JTS)
+  summary: Geometry Engine, Open Source
   description: |
-    GEOS (Geometry Engine - Open Source) is a C++ port of the Java Topology
-    Suite (JTS). As such, it aims to contain the complete functionality of
+    GEOS is a C++ port of the Java Topology Suite (JTS).
+    As such, it aims to contain the complete functionality of
     JTS in C++.
   doc_url: http://trac.osgeo.org/geos/
+  doc_source_url: https://trac.osgeo.org/geos/browser/git/doc?order=name
   dev_url: https://github.com/libgeos/libgeos

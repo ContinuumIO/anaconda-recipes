@@ -32,4 +32,5 @@ about:
     PyOpenGL is the most common cross platform Python binding to OpenGL and
     related APIs. The binding is created using the standard ctypes library.
   doc_url: http://pyopengl.sourceforge.net/documentation/index.html
+  doc_source_url: https://sourceforge.net/projects/pyopengl/
   dev_url: https://github.com/mcfletch/pyopengl

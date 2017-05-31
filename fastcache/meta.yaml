@@ -27,7 +27,8 @@ about:
   license: MIT
   summary: C implementation of Python 3 functools.lru_cache
   description: |
-    C implementation of Python 3 functools.lru_cache. Provides speedup of 10-
-    30x over standard library.
+    fastcache provides speedup of 10-30x over standard library.
+    It passes test suite from standard library for lru_cache.
   doc_url: https://pypi.python.org/pypi/fastcache/1.0.2
+  doc_source_url: https://github.com/pbrady/fastcache/blob/master/README.md
   dev_url: https://github.com/pbrady/fastcache

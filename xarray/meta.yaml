@@ -35,4 +35,5 @@ about:
     the labeled data power of pandas to the physical sciences, by providing
     N-dimensional variants of the core pandas data structures.
   doc_url: http://xarray.pydata.org/en/stable/
+  doc_source_url: https://github.com/pydata/xarray/blob/stable/doc/index.rst
   dev_url: https://github.com/pydata/xarray

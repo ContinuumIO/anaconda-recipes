@@ -28,7 +28,8 @@ about:
   license_file: LICENSE
   summary: Simple integration of Flask and WTForms
   description: |
-    Flask-WTF is a simple integration of Flask and WTForms, including CSRF,
-    file upload, and Recaptcha integration.
+    Flask-WTF is a simple integration of Flask and WTForms including CSRF,
+    file upload and reCAPTCHA.
   doc_url: https://flask-wtf.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/lepture/flask-wtf/blob/master/docs/index.rst
   dev_url: https://github.com/lepture/flask-wtf

@@ -24,10 +24,9 @@ about:
   home: https://github.com/pysam-developers/pysam
   license: MIT
   license_file: COPYING
-  summary: Python module for reading and manipulating Samfiles
+  summary: htslib interface for python
   description: |
-    Pysam is a python module for reading and manipulating Samfiles. It's a
-    lightweight wrapper of the samtools C-API. Pysam also includes an interface
-    for tabix.
+    Pysam is a python module for reading, manipulating and writing genomic data sets.
   doc_url: http://pysam.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/pysam-developers/pysam/blob/master/doc/index.rst
   dev_url: https://github.com/pysam-developers/pysam

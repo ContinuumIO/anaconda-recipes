@@ -39,4 +39,5 @@ about:
     -Extensive error-handling mechanism, mirroring OpenSSL's error codes
     and much more.
   doc_url: https://pyopenssl.readthedocs.org/en/stable/
+  doc_source_url: https://github.com/pyca/pyopenssl/blob/master/doc/index.rst
   dev_url: https://github.com/pyca/pyopenssl

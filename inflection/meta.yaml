@@ -26,4 +26,6 @@ about:
   description: |
     Inflection is a string transformation library. It singularizes and
     pluralizes English words, and transforms strings from CamelCase to
-    underscored string
+    underscored string.
+  doc_url: https://inflection.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/jpvanhal/inflection/blob/master/docs/index.rst

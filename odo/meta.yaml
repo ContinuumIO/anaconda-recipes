@@ -41,4 +41,5 @@ about:
     Odo is data migration for the Blaze Project. t efficiently migrates data
     from the source to the target through a network of conversions.
   doc_url: http://odo.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/blaze/odo/blob/master/docs/source/index.rst
   dev_url: https://github.com/blaze/odo

@@ -24,8 +24,8 @@ about:
   license: MIT
   summary: Low memory library for creating large XML files
   description: |
-    Et_xmlfile is a low memory streaming XML generator developed for
-    compatibility with lxml.etree.xmlfile where this is not available. It is
-    pure Python and about twice as slow than lxml or other solutions.
+    Et_xmlfile, XML generator developed for compatibility with lxml.etree.xmlfile
+    where this is not available.It is pure Python and about twice as slow than lxml or other solutions.
   doc_url: http://et-xmlfile.readthedocs.org/en/stable/
+  doc_source_url: https://bitbucket.org/openpyxl/et_xmlfile/src/8c7ad6904ebe0ff98c204a3e77d7e78528b10ffe/doc/index.rst?at=default&fileviewer=file-view-default
   dev_url: https://bitbucket.org/openpyxl/et_xmlfile

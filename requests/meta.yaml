@@ -27,5 +27,6 @@ about:
   description: |
     Requests is the only Non-GMO HTTP library for Python, safe for human
     consumption.
-  doc_url: http://docs.python-requests.org/
+  doc_url: http://docs.python-requests.org/en/latest/index.html
+  doc_source_url: https://github.com/kennethreitz/requests/blob/master/docs/index.rst
   dev_url: https://github.com/kennethreitz/requests

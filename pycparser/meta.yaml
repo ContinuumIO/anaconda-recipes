@@ -22,9 +22,10 @@ about:
   license: BSD
   license_family: BSD
   license_file: LICENSE
-  summary: complete C99 parser in pure Python
+  summary: C parser in Python
   description: |
-    pycparser is a parser for the C language, written in pure Python. It is a
-    module designed to be easily integrated into applications that need to
-    parse C source code.
-  dev_url: https://github.com/eliben/pycparser#what-is-pycparser
+    pycparser is written in pure Python using the PLY parsing library.
+    It parses C code into an AST and can serve as a front-end for C compilers
+    or analysis tools.
+  doc_url: https://pypi.python.org/pypi/pycparser
+  doc_source_url: https://github.com/eliben/pycparser

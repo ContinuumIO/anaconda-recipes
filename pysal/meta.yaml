@@ -29,8 +29,8 @@ about:
   license_file: LICENSE.txt
   summary: library of spatial analysis functions
   description: |
-    PySAL(Python Spatial Analysis Library) is an open source library of
-    spatial analysis functions written in Python intended to support the
+    PySAL(Python Spatial Analysis Library) is written in Python intended to support the
     development of high level applications.
-  doc_url: http://pysal.readthedocs.org/en/latest/users/index.html
+  doc_url: http://pysal.readthedocs.io/en/latest/index.html
+  doc_source_url: https://github.com/pysal/pysal/blob/master/doc/source/index.rst
   dev_url: https://github.com/pysal

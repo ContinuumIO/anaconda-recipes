@@ -23,5 +23,8 @@ about:
   license: ISC
   license_family: Other
   summary: take version numbers from version control
-  doc_url: https://github.com/habnabit/vcversioner
+  description: |
+    vcversioner installs itself as a setuptools hook, which makes its use exceedingly simple.
+  doc_url: https://pypi.python.org/pypi/vcversioner
+  doc_source_url: https://github.com/habnabit/vcversioner
   dev_url: https://github.com/habnabit/vcversioner

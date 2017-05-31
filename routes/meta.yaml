@@ -33,4 +33,5 @@ about:
     it easy to create pretty and concise URL's that are RESTful with little
     effort.
   doc_url: https://routes.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/bbangert/routes/blob/master/docs/index.rst
   dev_url: https://github.com/bbangert/routes

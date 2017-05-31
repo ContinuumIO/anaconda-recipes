@@ -30,5 +30,6 @@ about:
     Jinja2 is a full featured template engine for Python. It has full unicode
     support, an optional integrated sandboxed execution environment, widely
     used and BSD licensed.
-  doc_url: http://jinja.pocoo.org/docs/dev/
+  doc_url: http://jinja.pocoo.org/docs/2.9/
+  doc_source_url: https://github.com/pallets/jinja/blob/master/docs/index.rst
   dev_url: https://github.com/pallets/jinja

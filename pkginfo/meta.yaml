@@ -28,3 +28,7 @@ about:
   license: PSF
   license_file: LICENSE.txt
   summary: query metadatdata from sdists or bdists installed packages
+  description: |
+    pkginfo provides an API for querying the distutils metadata written in the PKG-INFO
+    file inside a source distriubtion (an sdist) or a binary distribution.
+  doc_url: http://pythonhosted.org/pkginfo/

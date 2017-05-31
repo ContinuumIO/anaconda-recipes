@@ -24,8 +24,8 @@ about:
   license_file: LICENSE
   summary: Password hashing library for Python
   description: |
-    Passlib is a password hashing library for Python 2 & 3, which provides
-    cross-platform implementations of over 30 password hashing algorithms, as
+    Passlib provides cross-platform implementations of over 30 password hashing algorithms, as
     well as a framework for managing existing password hashes.
-  doc_url: http://pythonhosted.org/passlib/
+  doc_url: https://passlib.readthedocs.io/en/stable/
+  doc_source_url: https://bitbucket.org/ecollins/passlib/src/849ab1e6b5d4ace4c727a63d4adec928d6d72c13/docs/index.rst
   dev_url: https://bitbucket.org/ecollins/passlib/wiki/Home

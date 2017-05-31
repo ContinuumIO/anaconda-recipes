@@ -28,4 +28,5 @@ about:
     Pexpect is a pure Python module for spawning child applications;
     controlling them; and responding to expected patterns in their output.
   doc_url: http://pexpect.readthedocs.org/
+  doc_source_url: https://github.com/pexpect/pexpect/blob/master/doc/index.rst
   dev_url: https://github.com/pexpect/pexpect

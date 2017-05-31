@@ -27,3 +27,5 @@ about:
   license_family: Apache
   license_file: LICENSE
   summary: utility library for mocking out the 'requests' Python library
+  doc_url: https://pypi.python.org/pypi/responses
+  doc_source_url: https://github.com/getsentry/responses/blob/master/README.rst

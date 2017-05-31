@@ -70,10 +70,10 @@ about:
   license_file: LICENSE/LICENSE
   summary: Python 2D plotting library
   description: |
-    matplotlib is a python 2D plotting library which produces publication
-    quality figures in a variety of hardcopy formats and interactive
-    environments across platforms. matplotlib can be used in Python scripts,
+    matplotlib produces publication quality figures in a variety of hardcopy formats and interactive
+    environments across platforms.It can be used in Python scripts,
     the Python and IPython shell (ala MATLAB or Mathematica), web
     application servers, and six graphical user interface toolkits.
   doc_url: http://matplotlib.org/contents.html#
+  doc_source_url: https://github.com/matplotlib/matplotlib/blob/master/doc/contents.rst
   dev_url: https://github.com/matplotlib/matplotlib

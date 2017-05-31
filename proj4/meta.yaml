@@ -18,3 +18,8 @@ about:
   license: MIT
   license_file: COPYING
   summary:  PROJ.4 Cartographic Projections library
+  description: |
+    proj.4 is a standard UNIX filter function which converts geographic longitude a
+    nd latitude coordinates into cartesian coordinates (and vice versa).
+  doc_url: http://proj4.org/#
+  doc_source_url: https://github.com/OSGeo/proj.4/blob/master/docs/source/index.rst

@@ -32,4 +32,5 @@ about:
     functionality to their applications and websites. Every part of how Whoosh
     works can be extended or replaced to meet your needs exactly.
   doc_url: http://whoosh.readthedocs.org/en/latest/
+  doc_source_url: https://bitbucket.org/mchaput/whoosh/src/default/docs/source/index.rst?fileviewer=file-view-default
   dev_url: https://bitbucket.org/mchaput/whoosh/wiki/Home

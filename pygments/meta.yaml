@@ -33,7 +33,8 @@ about:
   license_file: LICENSE
   summary: Generic syntax highlighting package
   description: |
-    Pygments is a generic syntax highlighter suitable for use in code hosting,
-    forums, wikis or other applications that need to prettify source code.
+    Pygments is suitable for use in code hosting, forums, wikis or other a
+    pplications that need to prettify source code.
   doc_url: http://pygments.org/docs/
+  doc_source_url: https://bitbucket.org/birkenfeld/pygments-main/src/7941677dc77d4f2bf0bbd6140ade85a9454b8b80/doc/docs/
   dev_url: https://bitbucket.org/birkenfeld/pygments-main

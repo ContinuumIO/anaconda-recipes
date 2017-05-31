@@ -35,7 +35,7 @@ about:
   license_file: LICENSE.txt
   summary: Interact with Excel from Python and vice versa
   description: |
-     Replace your VBA code with Python, a powerful yet easy-to-use programming
-     language that is highly suited for numerical analysis.
+     xlwings is a BSD-licensed Python library that makes it easy to call Python from Excel and vice versa.
   doc_url: http://docs.xlwings.org/en/stable/index.html
+  doc_source_url: https://github.com/ZoomerAnalytics/xlwings/blob/4f6801bba410df7483102d287af41ca92c84d3a2/docs/quickstart.rst
   dev_url: https://github.com/ZoomerAnalytics/xlwings

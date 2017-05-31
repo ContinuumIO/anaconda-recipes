@@ -34,4 +34,5 @@ about:
     Unify the plethora of existing packages integrating SQLAlchemy with Zope's
     transaction management.
   doc_url: https://pypi.python.org/pypi/zope.sqlalchemy
+  doc_source_url: https://github.com/zopefoundation/zope.sqlalchemy/blob/master/src/zope/sqlalchemy/README.txt
   dev_url: https://github.com/zopefoundation/zope.sqlalchemy

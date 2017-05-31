@@ -29,4 +29,5 @@ about:
   license: Academic Free License
   license_family: Other
   summary: Mirroring tool that implements the client (mirror) side of PEP 381
-  doc_url: https://bitbucket.org/loewis/pep381client/
+  doc_url: https://pypi.python.org/pypi/pep381client/
+  doc_source_url: https://bitbucket.org/loewis/pep381client/overview

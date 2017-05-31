@@ -24,3 +24,5 @@ about:
   home: http://databrewery.org
   license: MIT
   summary: extensible arithmetic expression parser and compiler
+  doc_url: https://pypi.python.org/pypi/expressions
+  doc_source_url: https://github.com/DataBrewery/expressions

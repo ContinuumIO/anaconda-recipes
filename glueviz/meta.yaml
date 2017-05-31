@@ -63,6 +63,7 @@ about:
   description: |
     Glue is a Python library to explore relationships within and among related
     datasets. Its main features include Linked Statistical Graphics, flexible
-    linking across data, and full scripting capability.
+    linking across data and full scripting capability.
   doc_url: http://www.glueviz.org/
+  doc_source_url: https://github.com/glue-viz/glue/blob/stable/doc/index.rst
   dev_url: https://github.com/glue-viz/glue

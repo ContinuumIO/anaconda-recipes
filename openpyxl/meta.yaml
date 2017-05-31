@@ -28,8 +28,8 @@ about:
   license_file: README.rst
   summary: A Python library to read/write Excel 2010 xlsx/xlsm files
   description: |
-    Openpyxl is a Python library for reading and writing Excel 2010
-    xlsx/xlsm/xltx/xltm files. It was born from lack of existing library to
+    Openpyxl was born from lack of existing library to
     read/write natively from Python the Office Open XML format.
   doc_url: http://openpyxl.readthedocs.org
+  doc_source_url: https://bitbucket.org/openpyxl/openpyxl/src/6785c41288228c6f2a94698e9c3bf36c9527c730/doc/index.rst
   dev_url: https://bitbucket.org/openpyxl/openpyxl/src

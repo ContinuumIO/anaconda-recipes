@@ -41,8 +41,8 @@ about:
   license_file: LICENSE.txt
   summary: Fast numerical expression evaluator for NumPy
   description: |
-    Numexpr is a fast numerical expression evaluator for NumPy. With it,
-    expressions that operate on arrays (like "3*a+4*b") are accelerated and use
+    With Numexpr,expressions that operate on arrays (like "3*a+4*b") are accelerated and use
     less memory than doing the same calculation in Python.
-  doc_url: https://github.com/pydata/numexpr/wiki/Numexpr-Users-Guide
+  doc_url: https://pypi.python.org/pypi/numexpr
+  doc_source_url: https://pypi.python.org/pypi/numexpr
   dev_url: https://github.com/pydata/numexpr

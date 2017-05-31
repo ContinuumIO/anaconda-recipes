@@ -27,3 +27,9 @@ about:
   home: https://github.com/google/snappy
   license: Other
   license_family: Other
+  summary: fast compressor/decompressor
+  description: |
+    snappy does not aim for maximum compression, or compatibility with any other 
+    compression library.Instead, it aims for very high speeds and reasonable compression.
+  doc_url: http://google.github.io/snappy/
+  doc_source_url: https://github.com/google/snappy

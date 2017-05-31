@@ -25,3 +25,6 @@ about:
   license: BSD 3-clause
   license_family: BSD
   summary: IPython HTML widgets for Jupyter
+  description: |
+    Interactive HTML widgets for Jupyter notebooks.
+  doc_url: https://pypi.python.org/pypi/widgetsnbextension

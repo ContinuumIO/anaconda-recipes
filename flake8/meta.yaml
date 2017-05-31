@@ -44,8 +44,8 @@ about:
   license_file: LICENSE
   summary: Modular source code checker for pep8, pyflakes and co
   description: |
-    Flake8 is a wrapper around Pyflakes, pep8, and Ned Batchelder's McCabe
-    script. Flake8 runs all the tools by launching the single flake8 script.
-    It displays the warnings in a per-file, merged output.
+    Flake8 is a Tool For Style Guide Enforcement. It is a wrapper around
+    Pyflakes, pep8, and Ned Batchelder's McCabe script.
   doc_url: http://flake8.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/pycqa/flake8/blob/master/docs/source/index.rst
   dev_url: https://gitlab.com/pycqa/flake8

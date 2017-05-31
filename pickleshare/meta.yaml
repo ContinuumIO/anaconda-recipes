@@ -31,4 +31,5 @@ about:
     value in database is immediately visible to other processes accessing the
     same database.
   doc_url: https://pypi.python.org/pypi/pickleshare
+  doc_source_url: https://github.com/pickleshare/pickleshare/blob/master/README.md
   dev_url: https://github.com/pickleshare/pickleshare

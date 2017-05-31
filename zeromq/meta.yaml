@@ -22,4 +22,5 @@ about:
     ZeroMQ s a high-performance asynchronous messaging library, aimed at use
     in distributed or concurrent applications.
   doc_url: http://zeromq.org/intro:read-the-manual
+  doc_source_url: https://github.com/zeromq/zeromq4-1/tree/master/doc
   dev_url: https://github.com/zeromq

@@ -27,9 +27,8 @@ about:
   license_file: COPYING
   summary: The XML C parser and toolkit of Gnome
   description: |
-     Libxml2 is the XML C parser and toolkit developed for the
-     Gnome project (but usable outside of the Gnome platform).
-     Though the library is written in C a variety of language
+     Though libxml2 is written in C a variety of language
      bindings make it available in other environments.
-  doc_url: http://xmlsoft.org/docs.html
+  doc_url: http://xmlsoft.org/html/index.html
+  doc_source_url: https://github.com/GNOME/libxml2/blob/master/doc/index.html
   dev_url: https://git.gnome.org/browse/libxml2/

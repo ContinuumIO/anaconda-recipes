@@ -34,6 +34,7 @@ about:
   license_file: LICENSE
   summary: High performance C-based HTTP client library
   description: |
-    The serf library is a high performance C-based HTTP client library built
-    upon the Apache Portable Runtime (APR) library.
+    Serf is a simple web server. It is a development tool to be used during the
+    development of rich internet applications.It is not intended for deployment.
+  doc_url: https://pythonhosted.org/serf/
   dev_url: https://www.openhub.net/p/serf

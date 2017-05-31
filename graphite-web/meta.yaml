@@ -32,4 +32,5 @@ about:
     Graphite-web is a highly scalable real-time graphing system. It is a
     Django-based web application that renders graphs and dashboards.
   doc_url: http://graphite.readthedocs.org/
+  doc_source_url: https://github.com/graphite-project/graphite-web/blob/master/docs/index.rst
   dev_url: https://github.com/graphite-project/graphite-web

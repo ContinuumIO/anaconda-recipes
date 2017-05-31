@@ -45,5 +45,8 @@ about:
   summary: The Mayavi scientific data 3-dimensional visualizers
   description: |
     MayaVi2 seeks to provide easy and interactive visualization of 3D data.
+    It may also be used as a plotting engine, in scripts, like with matplotlib or gnuplot,
+    as well as a library for interactive visualizations in any other application.
   doc_url: http://docs.enthought.com/mayavi/mayavi/
+  doc_source_url: https://github.com/enthought/mayavi/blob/master/docs/source/mayavi/index.rst
   dev_url: https://github.com/enthought/mayavi

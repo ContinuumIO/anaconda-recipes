@@ -32,4 +32,5 @@ about:
     editors, etc.), and let TraitsUI and your selected toolkit and back-end
     take care of the details of displaying them.
   doc_url: http://docs.enthought.com/traitsui/
+  doc_source_url: https://github.com/enthought/traitsui/blob/master/docs/source/index.rst
   dev_url: https://github.com/enthought/traitsui

@@ -54,8 +54,8 @@ about:
   license_family: Other
   summary: Open Source graph visualization software.
   description: |
-    Graphviz is an open source graph visualization software.
     Graph visualization is a way of representing structural information as
     diagrams of abstract graphs and networks.
   doc_url: http://www.graphviz.org/Documentation.php
+  doc_source_url: https://github.com/ellson/graphviz/tree/master/doc
   dev_url: https://github.com/ellson/graphviz

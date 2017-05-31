@@ -23,4 +23,9 @@ about:
   home: http://github.com/cloudera/hs2client
   license: Apache 2.0
   license_family: Apache
-  summary: libraries for the hs2client, C++ HiveServer2 Thrift client
+  summary: libraries for the hs2client,C++ Thrift client for Impala and Hive
+  description: |
+    In addition to being a useful component for other C++ projects needing to communicate
+    with Hive, Impala, and any systems using the HiveServer2 protocol, we can also
+    create CPU- and memory-efficient bindings for other languages,like Python and R.
+  doc_source_url: https://github.com/cloudera/hs2client/blob/master/README.md

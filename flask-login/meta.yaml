@@ -26,8 +26,8 @@ about:
   license_file: LICENSE
   summary: User session management for Flask
   description: |
-    Flask-Login provides user session management for Flask. It handles the
-    common tasks  of logging in, logging out, and remembering your users'
+    flask-login handles the common tasks  of logging in, logging out, and remembering your users'
     sessions over extended periods of time.
   doc_url: http://flask-login.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/maxcountryman/flask-login/blob/master/docs/index.rst
   dev_url: https://github.com/maxcountryman/flask-login

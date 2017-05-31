@@ -27,4 +27,5 @@ about:
     performs static analysis to avoid conflicts, and provides optional
     namespace support.
   doc_url: http://multiple-dispatch.readthedocs.org/
+  doc_source_url: https://github.com/mrocklin/multipledispatch/blob/master/docs/source/index.rst
   dev_url: https://github.com/mrocklin/multipledispatch/

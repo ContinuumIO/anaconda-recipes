@@ -26,3 +26,7 @@ about:
   license_family: Apache
   license_file: LICENSE
   summary: Python Sorted Collections
+  description: |
+    SortedCollections is a Pure-Python library.It depends on the SortedContainers module.
+  doc_url: http://www.grantjenks.com/docs/sortedcollections/
+  doc_source_url: https://github.com/grantjenks/sortedcollections/blob/master/docs/index.rst

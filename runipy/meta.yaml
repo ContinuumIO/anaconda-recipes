@@ -41,4 +41,5 @@ about:
     runipy allows you to run IPython notebooks as command-line scripts,
     generate HTML reports, and automate data pipelines.
   doc_url: https://pypi.python.org/pypi/runipy
+  doc_source_url: https://github.com/paulgb/runipy/blob/master/README.rst
   dev_url: https://github.com/paulgb/runipy

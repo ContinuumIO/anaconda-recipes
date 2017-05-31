@@ -46,9 +46,8 @@ about:
   license_file: LICENSE.txt
   summary: Read and write geospatial raster datasets
   description: |
-    Rasterio employs GDAL under the hood for file I/O and raster formatting.
-    Its functions typically accept and return Numpy ndarrays. Rasterio is
-    designed to make working with geospatial raster data more productive and
-    more fun.
-  doc_url: https://github.com/mapbox/rasterio/tree/master/docs
+    Rasterio reads and writes GEOTIFF and other formats and provides a Python API based on
+    Numpy N-dimensional arrays and GeoJSON.
+  doc_url: https://mapbox.github.io/rasterio/
+  doc_source_url: https://github.com/mapbox/rasterio/blob/master/docs/index.rst
   dev_url: https://github.com/mapbox/rasterio

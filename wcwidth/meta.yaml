@@ -22,3 +22,8 @@ about:
   home: https://github.com/jquast/wcwidth
   license: MIT
   summary: measures number of Terminal column cells of wide-character codes
+  description: |
+    wcwidth is mainly for those implementing a Terminal Emulator, or programs
+    that carefully produce output to be interpreted by one.
+  doc_url: https://pypi.python.org/pypi/wcwidth
+  doc_source_url: https://github.com/jquast/wcwidth/blob/master/README.rst

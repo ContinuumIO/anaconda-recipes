@@ -35,4 +35,5 @@ about:
     This application is used by Conda to create shortcuts on a wide variety of
     systems.
   doc_url: https://pypi.python.org/pypi/menuinst/
+  doc_source_url: https://github.com/ContinuumIO/menuinst
   dev_url: https://github.com/ContinuumIO/menuinst

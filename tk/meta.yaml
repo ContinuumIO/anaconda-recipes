@@ -26,4 +26,5 @@ about:
     web and desktop applications, networking, administration, testing and many
     more.
   doc_url: http://www.tcl.tk/doc/
+  doc_source_url: https://github.com/tcltk/tk/tree/master/doc
   dev_url: http://core.tcl.tk/

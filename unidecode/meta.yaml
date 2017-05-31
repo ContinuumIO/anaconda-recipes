@@ -30,3 +30,7 @@ about:
   license_family: GPL2
   license_file: LICENSE
   summary: ASCII transliterations of Unicode text
+  description: |
+    function unidecode() takes Unicode data and tries to represent it in ASCII characters.
+  doc_url: https://pypi.python.org/pypi/Unidecode
+  

@@ -31,4 +31,5 @@ about:
     you program declaratively in Python, by just stating facts about each of
     your parameters, and then using them throughout your code.
   doc_url: http://ioam.github.io/param/
+  doc_source_url: https://github.com/ioam/param/blob/master/doc/index.rst
   dev_url: https://github.com/ioam/param

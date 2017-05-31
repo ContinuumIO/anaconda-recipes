@@ -25,4 +25,8 @@ test:
 about:
   home: https://github.com/spyder-ide/qtawesome
   license: MIT
-  summary: FontAwesome icons in PyQt and PySide applications
+  summary: Iconic Fonts for PyQt
+  description: |
+    QtAwesome enables iconic fonts such as Font Awesome and Elusive Icons in PyQt and PySide applications.
+  doc_url: http://qtawesome.readthedocs.io/en/latest/?badge=latest
+  doc_source_url: https://github.com/spyder-ide/qtawesome/blob/master/docs/source/index.rst

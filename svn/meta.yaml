@@ -43,7 +43,9 @@ about:
   license: Apache Software License V.2
   license_family: Apache
   license_file: LICENSE
-  summary: Enterprise-class centralized version control for the masses
+  summary: Intuitive Subversion wrapper
   description: |
-    Subversion is an open source, centralized version control system.
-  doc_url: https://subversion.apache.org/docs/
+    svn is a simple Subversion library for Python.The library wraps the svn
+    commandline client, which should consequently be installed on the local system.
+  doc_url: https://pypi.python.org/pypi/svn
+  doc_source_url: https://github.com/dsoprea/PySvn

@@ -146,7 +146,7 @@ if not (armv7l or ppc64le):
 
 print('OPENSSL_VERSION: %s' % ssl.OPENSSL_VERSION)
 if sys.platform != 'win32':
-    assert '1.0.2k' in ssl.OPENSSL_VERSION
+    assert '1.0.2l' in ssl.OPENSSL_VERSION
 
 pprint(platform._sys_version())
 sys.version = ('2.7.6 (#1, Jan  9 2013, 06:47:03)\n'

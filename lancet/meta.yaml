@@ -27,10 +27,9 @@ about:
   license: BSD
   summary: Launch jobs, organize the output, and dissect the results
   description: |
-    Lancet is designed to help you organize the output of your research tools,
-    store it, and dissect the data you have collected. The output of a single
-    simulation run or analysis rarely contains all the data you need; Lancet
-    helps you generate data from many runs and analyse it using your own
-    Python code.
+    Lancet is pure, platform-independent Python with minimal dependencies, and supports both Python 2 and Python 3.
+    It is designed to be extremely flexible and lightweight,allowing researchers to use only the
+    components they need without having to understand the whole design or all the component available.
   doc_url: http://ioam.github.io/lancet/#documentation
+  doc_source_url: https://github.com/ioam/lancet/blob/master/doc/index.rst
   dev_url: https://github.com/ioam/lancet

@@ -37,9 +37,10 @@ about:
   license: BSD-derived
   license_url: http://www.repoze.org/LICENSE.txt
   license_family: BSD
-  summary: A system for controlling process state under UNIX
+  summary: A Process Control System
   description: |
     Supervisor is a client/server system that allows its users to monitor and
     control a number of processes on UNIX-like operating systems.
   doc_url: http://supervisord.org/
+  doc_source_url: https://github.com/Supervisor/supervisor
   dev_url: https://github.com/Supervisor/supervisor

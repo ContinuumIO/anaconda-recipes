@@ -38,5 +38,8 @@ about:
   license_file: docs/license.rst
   summary: Utilities for working with Excel files
   description: |
-    Python packages to work with Excel files that will run on any Python
-    platform and that do not require either Windows or Excel to be used.
+    xlutils provides a collection of utilities for working with Excel files.
+    Since these utilities may require either or both of the xlrd and xlwt packages,
+    they are collected together here, separate from either package.
+  doc_url: http://xlutils.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/python-excel/xlutils/blob/master/docs/index.rst

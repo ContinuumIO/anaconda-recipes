@@ -28,7 +28,7 @@ about:
   license_file: LICENSE
   summary: McCabe complexity checker for Python
   description: |
-    Script to check McCabe complexity. This module provides a plugin for
-    flake8, the Python code checker.
+    mccabe module provides a plugin for flake8, the Python code checker.
   doc_url: https://pypi.python.org/pypi/mccabe
+  doc_source_url: https://github.com/PyCQA/mccabe/blob/master/README.rst
   dev_url: https://github.com/PyCQA/mccabe

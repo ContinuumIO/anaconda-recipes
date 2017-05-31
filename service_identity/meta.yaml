@@ -31,4 +31,5 @@ about:
     service_identity aspires to give you all the tools you need for verifying
     whether a certificate is valid for the intended purposes.
   doc_url: https://service-identity.readthedocs.org/en/stable/
+  doc_source_url: https://github.com/pyca/service_identity/blob/master/docs/index.rst
   dev_url: https://github.com/pyca/service_identity

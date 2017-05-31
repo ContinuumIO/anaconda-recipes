@@ -45,4 +45,5 @@ about:
     IPython enables all types of parallel applications to be developed,
     executed, debugged and monitored interactively.
   doc_url: http://ipyparallel.readthedocs.org/
+  doc_source_url: https://github.com/ipython/ipyparallel/blob/master/docs/source/index.rst
   dev_url: https://github.com/ipython/ipyparallel

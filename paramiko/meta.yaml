@@ -26,7 +26,8 @@ about:
   license_file: LICENSE
   summary: Native Python SSH2 protocol library
   description: |
-    Paramiko is  module for Python 2.6+ that implements the SSH2 protocol for
-    secure (encrypted and authenticated) connections to remote machines.
+    Paramiko is a Python (2.6+, 3.3+) implementation of the SSHv2 protocol,
+    providing both client and server functionality.
   doc_url: http://docs.paramiko.org/en/1.16/
+  doc_source_url: https://github.com/paramiko/paramiko/blob/master/sites/docs/index.rst
   dev_url: https://github.com/paramiko/paramiko/

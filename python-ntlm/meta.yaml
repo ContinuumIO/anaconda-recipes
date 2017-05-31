@@ -27,4 +27,6 @@ about:
     urllib2.  This library allows you to retrieve content from (usually
     corporate) servers protected with windows authentication (NTLM) using the
     Python urllib2.
+  doc_url: https://code.google.com/archive/p/python-ntlm/
+  doc_source_url: https://github.com/mullender/python-ntlm/blob/master/README.md
   dev_url: https://github.com/mullender/python-ntlm

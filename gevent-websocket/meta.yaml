@@ -27,8 +27,9 @@ about:
   home: https://bitbucket.org/noppo/gevent-websocket
   license: Apache
   license_file: LICENSE
-  summary: A WebSocket library for the gevent networking library
+  summary: Websocket handler for the gevent pywsgi server, a Python network library
   description: |
-    Gevent-websocket is a WebSocket library for the gevent networking library.
+    Gevent-websocket is a framework for WebSocket servers and WebSocket subprotocols.
   doc_url: https://pypi.python.org/pypi/gevent-websocket/
+  doc_source_url: https://gitlab.com/noppo/gevent-websocket/blob/master/docs/index.rst
   dev_url: https://bitbucket.org/noppo/gevent-websocket

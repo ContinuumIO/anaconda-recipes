@@ -24,3 +24,8 @@ about:
   home: http://bitbucket.org/pytest-dev/pytest-timeout/
   license: MIT
   summary: py.test plugin to abort hanging tests
+  description: |
+    pytest-timeout is a plugin which will terminate tests after a certain timeout.
+    When doing so it will show a stack dump of all threads running at the time.
+  doc_url: https://pypi.python.org/pypi/pytest-timeout
+  doc_source_url: https://bitbucket.org/pytest-dev/pytest-timeout/

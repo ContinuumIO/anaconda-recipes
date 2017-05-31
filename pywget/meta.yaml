@@ -24,5 +24,8 @@ about:
   home: http://bitbucket.org/techtonik/python-wget/
   license: Public-Domain
   summary: Pure Python download utility
+  description: |
+    Wget package contains a utility useful for non-interactive downloading of files from the Web.
   doc_url: https://pypi.python.org/pypi/wget
+  doc_source_url: https://bitbucket.org/techtonik/python-wget/overview
   dev_url: https://bitbucket.org/techtonik/python-wget/src

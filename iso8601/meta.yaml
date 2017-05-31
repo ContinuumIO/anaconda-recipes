@@ -26,3 +26,5 @@ about:
   description: |
     This module parses the most common forms of ISO 8601 date strings
     (e.g. 2007-01-14T20:34:22+00:00) into datetime objects.
+  doc_url: https://pypi.python.org/pypi/iso8601
+  doc_source_url: https://bitbucket.org/micktwomey/pyiso8601/src/43c6749d06c4aac6b1156911e85a0b952ca8a324/docs/index.rst

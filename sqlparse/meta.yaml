@@ -22,10 +22,10 @@ about:
   home: https://github.com/andialbrecht/sqlparse
   license: BSD
   license_file: COPYING
-  summary: A non-validating SQL parser module for Python
+  summary: python-sqlparse
   description: |
     sqlparse is a non-validating SQL parser for Python. It provides support
     for parsing, splitting and formatting SQL statements.
   doc_url: https://sqlparse.readthedocs.org
+  doc_source_url: https://github.com/andialbrecht/sqlparse/blob/master/docs/source/index.rst
   dev_url: https://github.com/andialbrecht/sqlparse
-

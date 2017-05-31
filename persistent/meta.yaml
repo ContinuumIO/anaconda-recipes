@@ -31,9 +31,10 @@ about:
   license: ZPL 2.1
   license_family: Other
   license_file: LICENSE.txt
-  summary: translucent persistent objects
+  summary: automatic persistence for Python objects
   description: |
     Persistent contains a generic persistence implementation for Python. It
     forms the core protocol for making objects interact "transparently" with
     a database such as the ZODB.
-  doc_url: https://pypi.python.org/pypi/persistent
+  doc_url: http://persistent.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/zopefoundation/persistent/blob/master/docs/index.rst

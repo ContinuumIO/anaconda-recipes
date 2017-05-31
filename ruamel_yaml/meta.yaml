@@ -31,3 +31,8 @@ about:
   license: MIT
   license_file: LICENSE
   summary: patched copy of ruamel.yaml (a yaml parser)
+  description: |
+    ruamel.yaml is a YAML parser/emitter that supports roundtrip preservation of
+    comments, seq/map flow style, and map key order.
+  doc_url: https://pypi.python.org/pypi/ruamel.yaml
+  doc_source_url: https://bitbucket.org/ruamel/yaml/overview

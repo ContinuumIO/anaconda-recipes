@@ -24,7 +24,6 @@ about:
   license_file: LICENSE
   summary: Platform-independent file locking module
   description: |
-    Warning: This package is deprecated. It is highly preferred that instead of
-    using this code base (where appropriate) that instead fasteners is used
-    instead.
+    lockfile exports a LockFile class which provides a simple API for locking files.
   doc_url: http://docs.openstack.org/developer/pylockfile/
+  doc_source_url: http://git.openstack.org/cgit/openstack/pylockfile/tree/doc/source/index.rst

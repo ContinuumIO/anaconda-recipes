@@ -37,4 +37,5 @@ about:
     Up to date remote data access for pandas, works for multiple versions
     of pandas.
   doc_url: http://pandas-datareader.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/pydata/pandas-datareader/blob/master/docs/source/index.rst
   dev_url: https://github.com/pydata/pandas-datareader

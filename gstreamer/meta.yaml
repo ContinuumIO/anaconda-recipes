@@ -30,3 +30,8 @@ about:
     license: LGPL2
     license_family: LGPL
     summary: library for constructing graphs of media-handling components
+    description: |
+      GStreamer is a development framework for creating applications like media players,
+      video editors, streaming media broadcasters and so on.
+    doc_url: https://gstreamer.freedesktop.org/documentation/
+    

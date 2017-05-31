@@ -28,5 +28,8 @@ about:
   license: MIT
   license_file: LICENSE
   summary: S-expressions for NumPy
+  description: |
+    Snuggs makes simple calculator programs possible.
   doc_url: https://pypi.python.org/pypi/snuggs
+  doc_source_url: https://github.com/mapbox/snuggs
   dev_url: https://github.com/mapbox/snuggs

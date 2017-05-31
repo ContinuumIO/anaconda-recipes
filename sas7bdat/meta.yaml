@@ -26,4 +26,5 @@ about:
     sas7bdat will read sas7bdat files using pure Python (2.6+, 3+). No SAS
     software required!
   doc_url: https://pypi.python.org/pypi/sas7bdat
+  doc_source_url: https://bitbucket.org/jaredhobbs/sas7bdat
   dev_url: https://bitbucket.org/jaredhobbs/sas7bdat

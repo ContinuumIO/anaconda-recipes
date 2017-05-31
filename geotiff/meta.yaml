@@ -19,3 +19,6 @@ about:
   home: http://trac.osgeo.org/geotiff
   license: MIT
   license_file: COPYING
+  description: |
+    Read (geospatial) metadata and raw array data from a wide variety of different (Geo)TIFF files types.
+  doc_url: https://www.npmjs.com/package/geotiff

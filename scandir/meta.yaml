@@ -27,3 +27,9 @@ about:
   license_family: BSD
   license_file: LICENSE.txt
   summary: scandir, a better directory iterator and faster os.walk()
+  description: |
+    scandir is a directory iteration function like os.listdir(), except that
+    instead of returning a list of bare filenames, it yields DirEntry objects
+    that include file type and stat information along with the name.
+  doc_url: https://pypi.python.org/pypi/scandir
+  doc_source_url: https://github.com/benhoyt/scandir/blob/master/README.rst

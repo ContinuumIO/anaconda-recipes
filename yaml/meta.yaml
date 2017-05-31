@@ -14,9 +14,9 @@ about:
   home: http://www.yaml.org/
   license: MIT
   license_file: LICENSE
-  summary: A human friendly data serialization standard
+  summary: YAML Ain't Markup Language
   description: |
-    YAML (YAML Ain't Markup Language) is a human friendly data serialization
-    standard for all programming languages.
-  doc_url: http://yaml.org/
+    YAML is a human friendly data serialization standard for all programming languages.
+  doc_url: http://www.yaml.org/spec/1.2/spec.html
+  doc_source_url: https://github.com/yaml/www.yaml.org/tree/master/docs
   dev_url: https://github.com/yaml

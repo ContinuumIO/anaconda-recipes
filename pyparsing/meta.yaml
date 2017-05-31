@@ -28,5 +28,6 @@ about:
     simple grammars, vs. the traditional lex/yacc approach, or the use of
     regular expressions. The pyparsing module provides a library of classes
     that client code uses to construct the grammar directly in Python code.
-  doc_url: http://pyparsing.wikispaces.com/Documentation
+  doc_url: https://readthedocs.org/projects/pyparsing/
+  doc_source_url: https://svn.code.sf.net/p/pyparsing/code/branches/pyparsing_1.5.x/src/
   dev_url: https://svn.code.sf.net/p/pyparsing/code/

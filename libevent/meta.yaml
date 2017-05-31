@@ -18,5 +18,5 @@ about:
     a specific event occurs on a file descriptor or after a timeout has been
     reached. Furthermore, libevent also supports callbacks due to signals or
     regular timeouts.
-  doc_url: http://libevent.org/
+  doc_url: http://www.wangafu.net/~nickm/libevent-1.4/doxygen/html/
   dev_url: https://github.com/libevent/libevent

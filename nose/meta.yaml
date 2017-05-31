@@ -30,9 +30,8 @@ about:
   license: LGPL
   summary: Nose extends unittest to make testing easier
   description: |
-    NOTE: Nose has been in maintenance mode for the past several years and will
-    likely cease without a new person/team to take over maintainership. New
-    projects should consider using Nose2, py.test, or just plain
-    unittest/unittest2.
+    Nose has been in maintenance mode for the past several years and will
+    likely cease without a new person/team to take over maintainership.
   doc_url: https://nose.readthedocs.org
+  doc_source_url: https://github.com/nose-devs/nose/blob/master/doc/index.rst
   dev_url: https://github.com/nose-devs/nose/

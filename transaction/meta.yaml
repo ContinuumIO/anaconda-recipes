@@ -34,3 +34,4 @@ about:
     object represents a running transaction that can be committed or aborted
     in the end.
   doc_url: http://zodb.readthedocs.org/en/latest/transactions.html
+  doc_source_url: https://github.com/cguardia/ZODB-Documentation/blob/master/book/transactions.rst

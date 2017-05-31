@@ -27,6 +27,7 @@ about:
   license_file: LICENSE
   summary: A non-cryptographic hash function
   description: |
-    MurmurHash is a non-cryptographic hash function suitable for general
-    hash-based lookup.
+    MurmurHash is a Cython bindings for MurmurHash2.
+  doc_url: https://pypi.python.org/pypi/murmurhash
+  doc_source_url: https://github.com/explosion/murmurhash/blob/master/README.rst
   dev_url: https://github.com/aappleby/smhasher

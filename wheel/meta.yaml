@@ -38,4 +38,5 @@ about:
     preserves enough information to "Spread" (copy data and scripts to their
     final locations) at any later time.
   doc_url: http://wheel.readthedocs.org/en/latest/
+  doc_source_url: https://bitbucket.org/pypa/wheel/src/default/docs/
   dev_url: https://bitbucket.org/pypa/wheel/

@@ -28,4 +28,5 @@ about:
   license_file: LICENSE
   summary: Fast and thorough lazy object proxy
   doc_url: https://python-lazy-object-proxy.readthedocs.org
+  doc_source_url: https://github.com/ionelmc/python-lazy-object-proxy/blob/master/docs/index.rst
   dev_url: https://github.com/ionelmc/python-lazy-object-proxy

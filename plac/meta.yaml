@@ -24,4 +24,5 @@ about:
   summary: smart command line arguments parser
   description: |
     Plac is a tool to write command-line interfaces for Python applications.
-  doc_url: https://pypi.python.org/pypi/plac
+  doc_url: https://github.com/micheles/plac/blob/0.9.6/doc/plac.pdf
+  doc_source_url: https://github.com/micheles/plac/blob/0.9.6/doc/plac.pdf

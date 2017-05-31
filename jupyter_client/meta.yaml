@@ -29,8 +29,9 @@ about:
   license_file: COPYING.md
   summary: Jupyter protocol implementation and client libraries
   description: |
-    jupyter_client contains the reference implementation of the Jupyter
-    protocol. It also provides client and kernel management APIs for working
-    with kernels.
+    jupyter client contains the reference implementation of the Jupyter
+    protocol.It also provides Python API for starting, managing and
+    communicating with Jupyter kernels.
   doc_url: http://jupyter-client.readthedocs.org/
+  doc_source_url: https://github.com/jupyter/jupyter_client/blob/master/docs/index.rst
   dev_url: https://github.com/jupyter/jupyter_client

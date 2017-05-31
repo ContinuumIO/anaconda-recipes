@@ -39,4 +39,5 @@ about:
     The SIP Python module provides support functions to the automatically
     generated code.
   doc_url: http://pyqt.sourceforge.net/Docs/sip4/
+  doc_source_url: https://github.com/ifwe/sip/tree/master/doc
   dev_url: https://github.com/ifwe/sip

@@ -24,12 +24,13 @@ test:
 about:
   home: http://phantomjs.org/
   license: BSD
-  summary: A headless WebKit scriptable with a JavaScript API
+  summary: Scriptable Headless WebKit
   description: |
     PhantomJS is a headless WebKit scriptable with a JavaScript API. It has
     fast and native support for various web standards: DOM handling, CSS
     selector, JSON, Canvas, and SVG.
   doc_url: http://phantomjs.org/documentation/
+  doc_source_url: https://github.com/ariya/phantomjs/blob/master/README.md
   dev_url: https://github.com/ariya/phantomjs
 
 # vim:set ts=8 sw=2 sts=2 tw=78 et:

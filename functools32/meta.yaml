@@ -21,10 +21,10 @@ about:
   home: https://github.com/MiCHiLU/python-functools32
   license: PSF
   license_file: LICENSE
-  summary: backport of the functools module from Python 3.2.3 for use on 2.7
+  summary: backport of the functools module from Python 3.2.3 for use on 2.7 and PyPy.
   description: |
-    Functools32 is a backport of the Python 3.2 functools module for use on
-    Python versions 2.7 and PyPy. It includes new features lru_cache
+    functools32 includes new features lru_cache
     (Least-recently-used cache decorator).
-  doc_url: http://docs.python.org/3.2/library/functools.html
+  doc_url: https://pypi.python.org/pypi/functools32
+  doc_source_url: https://github.com/MiCHiLU/python-functools32/blob/master/README.rst
   dev_url: https://github.com/MiCHiLU/python-functools32

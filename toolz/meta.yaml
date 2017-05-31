@@ -29,4 +29,5 @@ about:
     libraries itertools and functools and borrow heavily from the standard
     libraries of contemporary functional languages.
   doc_url: http://toolz.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/pytoolz/toolz/blob/master/doc/source/index.rst
   dev_url: https://github.com/pytoolz/toolz

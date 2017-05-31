@@ -29,5 +29,6 @@ about:
   description: |
     Seaborn is a Python visualization library based on matplotlib. It
     provides a high-level interface for drawing attractive statistical graphics.
-  doc_url: http://stanford.edu/~mwaskom/software/seaborn/
+  doc_url: http://seaborn.pydata.org/index.html
+  doc_source_url: https://github.com/mwaskom/seaborn/blob/master/doc/index.rst
   dev_url: https://github.com/mwaskom/seaborn

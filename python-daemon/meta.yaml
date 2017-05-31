@@ -31,3 +31,4 @@ about:
     Python-daemon implements the well-behaved daemon specification of PEP
     3143, "Standard daemon process library".
   doc_url: https://pypi.python.org/pypi/python-daemon/
+  doc_source_url: https://alioth.debian.org/projects/python-daemon/

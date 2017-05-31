@@ -27,10 +27,10 @@ about:
   home: http://packages.python.org/Markdown/
   license: MIT
   license_file: LICENSE.txt
-  summary: Python implementation of Markdown
+  summary: fast and complete Python implementation of Markdown
   description: |
-    A Python implementation of John Gruber's Markdown. It is almost completely
-    compliant with the reference implementation, though there are a few known
-    issues.
-  doc_url: https://pythonhosted.org/Markdown/
+    Markdown is a text-to-HTML filter; it translates an easy-to-read / easy-to-write structured
+    text format into HTML.
+  doc_url: https://pypi.python.org/pypi/markdown2
+  doc_source_url: https://github.com/trentm/python-markdown2/blob/master/README.md
   dev_url: https://github.com/waylan/Python-Markdown

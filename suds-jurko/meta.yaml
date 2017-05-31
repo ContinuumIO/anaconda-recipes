@@ -32,3 +32,8 @@ about:
   license: GNU Library or Lesser General Public License LGPL
   license_family: GPL3
   summary: Lightweight SOAP client (Jurko's fork)
+  description: |
+     Suds is a lightweight SOAP-based web service client for Python.
+     It is based on the original 'suds' project by Jeff Ortel.
+  doc_url: https://pypi.python.org/pypi/suds-jurko/0.6
+  doc_source_url: https://bitbucket.org/jurko/suds/src

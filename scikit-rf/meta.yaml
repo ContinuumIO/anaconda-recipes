@@ -44,4 +44,5 @@ about:
     engineering implemented in the Python programming language. It provides
     a modern, object-oriented library which is both flexible and scalable.
   doc_url: http://scikit-rf.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/scikit-rf/scikit-rf/blob/master/doc/source/index.rst
   dev_url: https://github.com/scikit-rf/scikit-rf

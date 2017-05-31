@@ -32,6 +32,7 @@ about:
   description: |
     Execnet provides a share-nothing model with channel-send/receive
     communication for distributing execution across many Python interpreters
-    across ersion, platform and network barriers.
-  doc_url: https://pypi.python.org/pypi/execnet
+    across version, platform and network barriers.
+  doc_url: http://codespeak.net/execnet/
+  doc_source_url: https://bitbucket.org/hpk42/execnet/src/50f88cb892de2a85de79ca0cebcb14e33fa354b3/doc/index.txt?at=default&fileviewer=file-view-default
   dev_url: https://bitbucket.org/hpk42/execnet

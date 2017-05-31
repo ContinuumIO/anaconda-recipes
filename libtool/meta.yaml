@@ -25,4 +25,5 @@ about:
     complexity of using shared libraries behind a consistent, portable
     interface.
   doc_url: http://www.gnu.org/software/libtool/manual/
+  doc_source_url: https://github.com/frida/libtool/tree/master/doc
   dev_url: http://git.savannah.gnu.org/cgit/libtool.git

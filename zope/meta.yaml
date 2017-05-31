@@ -14,3 +14,8 @@ test:
 
 about:
   license: BSD
+  summary: web application server
+  description: |
+    Zope is an open-source web application server.
+  doc_url: https://zope.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/zopefoundation/Zope/blob/master/docs/index.rst

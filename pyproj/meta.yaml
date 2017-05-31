@@ -27,10 +27,11 @@ about:
   home: http://jswhit.github.io/pyproj/
   license: MIT
   license_file: LICENSE
-  summary: Python interface to PROJ4 library for cartographic transformations
+  summary: Python interface to PROJ4 library
   description: |
     Pyproj is a Cython wrapper to provide python interfaces to PROJ.4
     functions. It performs cartographic transformations and geodetic
     computations.
-  doc_url: http://jswhit.github.io/pyproj/
+  doc_url: https://pypi.python.org/pypi/pyproj
+  doc_source_url: https://github.com/jswhit/pyproj
   dev_url: https://github.com/jswhit/pyproj

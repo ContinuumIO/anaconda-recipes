@@ -51,9 +51,8 @@ about:
   license_family: Other
   summary: A powerful, open source object-relational database system
   description: |
-    PostgreSQL is a powerful, open source object-relational database system.
-    It has more than 15 years of active development and a proven architecture
-    that has earned it a strong reputation for reliability, data integrity,
-    and correctness.
-  doc_url: http://www.postgresql.org/docs/manuals/
+    PostgreSQL based on POSTGRES.It has more than 15 years of active development and a proven architecture
+    that has earned it a strong reputation for reliability, data integrity and correctness.
+  doc_url: https://wiki.postgresql.org/wiki/Main_Page
+  doc_source_url: https://github.com/postgres/postgres/tree/master/doc/src/sgml
   dev_url: http://git.postgresql.org/gitweb/?p=postgresql.git

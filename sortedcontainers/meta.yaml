@@ -24,3 +24,7 @@ about:
   license_family: Apache
   license_file: LICENSE
   summary: 'sorted Container Types: SortedList, SortedDict, and SortedSet'
+  description: |
+    SortedContainers is a sorted collections library, written in pure-Python and fast as C-extensions.
+  doc_url: http://www.grantjenks.com/docs/sortedcontainers/
+  doc_source_url: https://github.com/grantjenks/sorted_containers/blob/master/docs/index.rst

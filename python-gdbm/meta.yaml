@@ -32,4 +32,5 @@ about:
     behave like mappings (dictionaries), except that keys and values are
     always strings.
   doc_url: https://docs.python.org/2/library/gdbm.html
+  doc_source_url: https://github.com/python/cpython/blob/2.7/Doc/library/gdbm.rst
   dev_url: http://git.gnu.org.ua/cgit/gdbm.git/

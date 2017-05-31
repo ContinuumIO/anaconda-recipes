@@ -30,6 +30,7 @@ about:
   license_file: COPYING.md
   summary: Jupyter terminal console
   description: |
-    A terminal-based console frontend for Jupyter kernels.
+    Jupyter console is a terminal frontend for kernels using the Jupyter protocol.
   doc_url: http://jupyter-console.readthedocs.org/
+  doc_source_url: https://github.com/jupyter/jupyter_console/blob/master/docs/index.rst
   dev_url: https://github.com/jupyter/jupyter_console

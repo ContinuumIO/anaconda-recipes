@@ -32,8 +32,9 @@ about:
   license: BSD
   summary: Enhanced HTTPS support for httplib and urllib2 using PyOpenSSL
   description: |
-    A HTTPS client implementation for httplib and urllib2 based on PyOpenSSL.
-    PyOpenSSL provides a more fully featured SSL implementation over the default provided with Python and importantly enables full verification of the
-    SSL peer.
+    A HTTPS client implementation for httplib, http.client and urllib2 based on PyOpenSSL.
+    PyOpenSSL provides a more fully featured SSL implementation over the default provided
+    with Python and importantly enables full verification of the SSL peer.
+  doc_url: https://pypi.python.org/pypi/ndg-httpsclient
+  doc_source_url: https://github.com/cedadev/ndg_httpsclient/blob/master/README.md
   dev_url: https://github.com/cedadev/ndg_httpsclient/
-

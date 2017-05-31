@@ -9,7 +9,7 @@ build:
 about:
   home: https://gcc.gnu.org/fortran/
   license: GPL3
-  summary: GNU Fortran runtime library
+  summary: the GNU Fortran compiler, part of GCC
   description: |
     The purpose of the GNU Fortran (GFortran) project is to develop the Fortran
     compiler front end and run-time libraries for GCC, the GNU Compiler

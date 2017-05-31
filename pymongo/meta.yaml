@@ -31,9 +31,8 @@ about:
   license_file: LICENSE
   summary: Python driver for MongoDB
   description: |
-    The PyMongo distribution contains tools for interacting with MongoDB
-    database from Python. The bson package is an implementation of the BSON
-    format for Python. The pymongo package is a native Python driver for
-    MongoDB. The gridfs package is a gridfs implementation on top of pymongo.
+    PyMongo is a Python distribution containing tools for working with MongoDB
+    and is the recommended way to work with MongoDB from Python. 
   doc_url: http://api.mongodb.org/python/
+  doc_source_url: https://github.com/mongodb/mongo-python-driver/blob/master/doc/index.rst
   dev_url: https://github.com/mongodb/mongo-python-driver

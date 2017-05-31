@@ -55,9 +55,9 @@ about:
   license_file: COPYING.md
   summary: web-based notebook environment for interactive computing
   description: |
-    The Jupyter Notebook is a web application that allows you to create and
-    share documents that contain live code, equations, visualizations and
-    explanatory text. Uses include: data cleaning and transformation, numerical
-    simulation, statistical modeling, machine learning and much more.
+    Jupyter Notebook is a web application, a browser-based tool for interactive
+    authoring of documents which combine explanatory text, mathematics, computations
+    and their rich media output.
   doc_url: https://jupyter-notebook.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/jupyter/notebook/blob/master/docs/source/index.rst
   dev_url: https://github.com/jupyter/notebook

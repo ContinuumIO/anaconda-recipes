@@ -28,4 +28,5 @@ about:
     execution, and transparent disk-caching of the output values and lazy
     re-evaluation.
   doc_url: http://pythonhosted.org/joblib/
+  doc_source_url: https://github.com/joblib/joblib/blob/master/doc/index.rst
   dev_url: https://github.com/joblib/joblib

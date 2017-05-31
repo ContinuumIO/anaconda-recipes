@@ -38,4 +38,5 @@ about:
     Shapely is a Python package for manipulation and analysis of geometric
     objects in the Cartesian plane.
   doc_url: http://toblerity.org/shapely/
+  doc_source_url: https://github.com/Toblerity/Shapely/blob/master/docs/index.rst
   dev_url: https://github.com/Toblerity/Shapely

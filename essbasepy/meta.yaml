@@ -24,8 +24,7 @@ about:
   license: MIT
   summary: access to Oracle Essbase multi-dimensional databases using MaxL
   description: |
-    The MaxL Python Module, Essbase.py, provides access to Hyperion Essbase
-    multi-dimensional databases from Python programs through MaxL. It is
-    similar in function and usage to the Perl module Essbase.pm.
+    Essbase is similar in function and usage to the Oracle Perl module Essbase.pm.
   doc_url: https://pypi.python.org/pypi/Essbase.Py/11.1.2012.0514
+  doc_source_url: https://sourceforge.net/projects/essbasepy/?source=navbar
   dev_url: https://github.com/jasonwjones/essbasepy

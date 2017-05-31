@@ -41,9 +41,9 @@ about:
   license_file: LICENSE
   summary: Python WSGI HTTP Server for UNIX
   description: |
-    Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX. It's a
-    pre-fork worker model ported from Ruby's Unicorn project. The Gunicorn
-    server is broadly compatible with various web frameworks, simply
-    implemented, light on server resources, and fairly speedy.
-  doc_url: http://docs.gunicorn.org
+    Gunicorn pre-fork worker model ported from Ruby's Unicorn project.Gunicorn
+    server is broadly compatible with various web frameworks,simply
+    implemented,light on server resources and fairly speedy.
+  doc_url: http://docs.gunicorn.org/en/stable/
+  doc_source_url: https://github.com/benoitc/gunicorn/blob/master/docs/source/index.rst
   dev_url: https://github.com/benoitc/gunicorn

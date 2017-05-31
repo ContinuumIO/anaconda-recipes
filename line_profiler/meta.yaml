@@ -34,6 +34,8 @@ about:
   license_file: LICENSE.txt
   summary: Line-by-line profiling for Python
   description: |
-    line_profiler is a module for doing line-by-line profiling of functions.
+    line_profiler will profile the time individual lines of code take to execute.
+    The profiler is implemented in C via Cython in order to reduce the overhead of profiling.
   doc_url: https://pypi.python.org/pypi/line_profiler
+  doc_source_url: https://github.com/rkern/line_profiler
   dev_url: https://github.com/rkern/line_profiler

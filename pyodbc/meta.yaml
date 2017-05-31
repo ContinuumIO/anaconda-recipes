@@ -31,7 +31,8 @@ about:
   license_file: LICENSE.txt
   summary: DB API Module for ODBC
   description: |
-    pyodbc is a Python 2.x and 3.x module that allows you to use ODBC to
-    connect to almost any database from Windows, Linux, OS/X, and more.
+    pyodbc is a Python DB API 2 module for ODBC. This project provides an up-to-date,
+    convenient interface to ODBC using native data types like datetime and decimal.
   doc_url: http://mkleehammer.github.io/pyodbc/
+  doc_source_url: https://github.com/mkleehammer/pyodbc/blob/master/docs/index.md
   dev_url: https://github.com/mkleehammer/pyodbc

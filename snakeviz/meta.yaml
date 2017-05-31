@@ -35,4 +35,5 @@ about:
     SnakeViz is a browser based graphical viewer for the output of Python's
     cProfile module.
   doc_url: http://jiffyclub.github.io/snakeviz/
+  doc_source_url: https://github.com/jiffyclub/snakeviz/tree/master/docs/docs
   dev_url: https://github.com/jiffyclub/snakeviz

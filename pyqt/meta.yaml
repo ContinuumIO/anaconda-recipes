@@ -44,4 +44,5 @@ about:
     will build against Qt v5. The bindings are implemented as a set of Python
     modules and contain over 1,000 classes.
   doc_url: https://www.riverbankcomputing.com/software/pyqt/
+  doc_source_url: https://github.com/pyqt
   dev_url: https://github.com/pyqt

@@ -23,7 +23,7 @@ about:
   license_file: LICENSE.rst
   summary: Offline IP address to Autonomous System Number lookup module
   description: |
-    ASN.1 types and codecs (BER, CER, DER) implementation in Python programming
-    language.
+    Pure-Python implementation of ASN.1 types and DER/BER/CER codecs (X.208)
   doc_url: http://pyasn1.sourceforge.net/
+  doc_source_url: https://github.com/etingof/pyasn1/blob/master/doc/source/contents.rst
   dev_url: https://github.com/etingof/pyasn1

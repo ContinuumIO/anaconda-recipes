@@ -27,7 +27,7 @@ about:
   license_file: LICENSE
   summary: Python Build Reasonableness
   description: |
-    PBR is a library to automatically do a bunch of standard things you want
-    in your setup.py without you having to repeat them every time.
+    PBR is a library for managing setuptools packaging needs in a consistent manner.
   doc_url: http://docs.openstack.org/developer/pbr/
+  doc_source_url: https://github.com/openstack-dev/pbr/blob/master/doc/source/index.rst
   dev_url: http://git.openstack.org/cgit/openstack-dev/pbr

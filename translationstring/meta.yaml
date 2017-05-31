@@ -27,4 +27,5 @@ about:
     A library used by various Pylons Project packages for internationalization
     (i18n) duties related to translation.
   doc_url: http://docs.pylonsproject.org/projects/translationstring/en/latest/
+  doc_source_url: https://github.com/Pylons/translationstring/blob/master/docs/index.rst
   dev_url: https://github.com/Pylons/translationstring

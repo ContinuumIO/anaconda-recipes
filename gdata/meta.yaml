@@ -31,5 +31,5 @@ about:
     The Google data Python client library makes it easy to interact with
     Google services through the Google Data APIs.
   doc_url: http://pythonhosted.org/gdata/
+  doc_source_url: https://github.com/google/gdata-python-client/tree/master/pydocs
   dev_url: https://github.com/google/gdata-python-client
-

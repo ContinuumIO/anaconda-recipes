@@ -35,9 +35,10 @@ about:
   license: Public-Domain
   license_url: http://www.sqlite.org/copyright.html
   license_family: Public-Domain
-  summary: Self-contained, zero-configuration, SQL database engine
+  summary: SQL database engine
   description: |
-    SQLite is a software library that implements a self-contained, serverless,
-    zero-configuration, transactional SQL database engine.
+    SQLite is a self-contained, high-reliability, embedded, full-featured,
+    public-domain, SQL database engine.It is the most used database engine in the world.
   doc_url: http://www.sqlite.org/docs.html
+  doc_source_url: https://github.com/mackyle/sqlite/tree/master/doc
   dev_url: https://github.com/mackyle/sqlite

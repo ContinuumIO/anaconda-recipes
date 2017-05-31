@@ -26,4 +26,5 @@ about:
     Snowball stemmer provides 16 stemmer algorithms generated from
     Snowball algorithms.
   doc_url: https://pypi.python.org/pypi/snowballstemmer
+  doc_source_url: https://github.com/shibukawa/snowball_py
   dev_url: https://github.com/shibukawa/snowball_py

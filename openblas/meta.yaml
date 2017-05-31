@@ -19,8 +19,9 @@ about:
   home: http://www.openblas.net/
   license: BSD
   license_file: LICENSE
-  summary: Optimized BLAS library based on GotoBLAS2
+  summary: An Optimized BLAS library
   description: |
-    OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version.
-  doc_url: https://github.com/xianyi/OpenBLAS/wiki
+    OpenBLAS is based on GotoBLAS2 1.13 BSD version.
+  doc_url: http://www.openblas.net/
+  doc_source_url: https://github.com/xianyi/OpenBLAS/blob/develop/README.md
   dev_url: https://github.com/xianyi/OpenBLAS

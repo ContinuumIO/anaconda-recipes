@@ -25,7 +25,8 @@ about:
   summary: Python function signatures from PEP362 for Python 2.6, 2.7 and 3.2+
   description: |
     Funcsigs is a backport of the PEP 362 function signature features from
-    Python 3.3's inspect module. The backport is also compatible with Python
+    Python 3.3's inspect module. The backport is compatible with Python
     2.6, 2.7, and 3.2 and up.
   doc_url: http://funcsigs.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/aliles/funcsigs/blob/master/docs/index.rst
   dev_url: https://github.com/aliles/funcsigs

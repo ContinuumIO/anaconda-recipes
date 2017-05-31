@@ -28,3 +28,9 @@ about:
   license: Apache
   license_file: COPYING
   summary: port of the Tulip project (asyncio module, PEP 3156)
+  description: |
+    Trollius provides infrastructure for writing single-threaded concurrent code
+    using coroutines, multiplexing I/O access over sockets and other resources,
+    running network clients and servers, and other related primitives.
+  doc_url: http://trollius.readthedocs.io/
+  doc_source_url: https://github.com/haypo/trollius/blob/trollius/doc/index.rst

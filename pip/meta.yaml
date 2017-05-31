@@ -36,5 +36,8 @@ about:
   license: MIT
   license_file: LICENSE.txt
   summary: PyPA recommended tool for installing Python packages
+  description: |
+    pip supports installing from PyPI, version control, local projects, and directly from distribution files.
   doc_url: https://pip.pypa.io/en/stable/
+  doc_source_url: https://github.com/pypa/pip/blob/master/docs/index.rst
   dev_url: https://github.com/pypa/pip

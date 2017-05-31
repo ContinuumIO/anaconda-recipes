@@ -35,8 +35,7 @@ about:
   summary: Python code static checker
   description: |
     Pylint is a tool that checks for errors in Python code, tries to enforce a
-    coding standard and looks for bad code smells. This is similar but
-    nevertheless different from what pychecker provides, especially since
-    pychecker explicitly does not bother with coding style.
-  doc_url: https://docs.pylint.org/
+    coding standard and looks for code smells. 
+  doc_url: https://pylint.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/PyCQA/pylint/blob/master/doc/index.rst
   dev_url: https://github.com/PyCQA/pylint/

@@ -32,4 +32,5 @@ about:
     about Operational requirements such as external configuration, query
     banding, and logging.
   doc_url: https://developer.teradata.com/tools/reference/teradata-python-module
+  doc_source_url: https://github.com/Teradata/PyTd/blob/master/README.md
   dev_url: https://github.com/teradata/PyTd

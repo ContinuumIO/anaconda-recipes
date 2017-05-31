@@ -38,8 +38,8 @@ about:
   license_file: LICENSE
   summary: event-driven networking engine
   description: |
-    Twisted is an event-based framework for internet applications, supporting
-    Python 2.7 and Python 3.3+. It includes modules for many different
-    purposes.
+    Twisted is an event-driven networking engine written in Python.
+    It runs on Python 2 and an ever growing subset also works with Python 3.
   doc_url: http://twistedmatrix.com/documents/current/
+  doc_source_url: https://github.com/twisted/twisted/blob/trunk/docs/index.rst
   dev_url: https://github.com/twisted/twisted

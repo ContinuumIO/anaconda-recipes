@@ -22,3 +22,9 @@ about:
   license: BSD
   license_file: license.txt
   summary: multi-producer-multi-consumer signal dispatching mechanism
+  description: |
+    pydispatcher provides the Python programmer with a robust mechanism for
+    event routing within various application contexts.Its a Dispatcher mechanism
+    for creating event models.
+  doc_url: https://pypi.python.org/pypi/PyDispatcher
+  doc_source_url: http://pydispatcher.sourceforge.net/

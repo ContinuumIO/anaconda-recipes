@@ -35,3 +35,8 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: Protocol Buffers - Google's data interchange format
+  description: |
+    Protocol buffers are Google's language-neutral, platform-neutral, extensible
+    mechanism for serializing structured data,think XML, but smaller, faster, and simpler.
+  doc_url: https://developers.google.com/protocol-buffers/docs/tutorials
+  doc_source_url: https://github.com/google/protobuf/blob/master/README.md

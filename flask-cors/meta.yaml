@@ -35,4 +35,5 @@ about:
     which by default enables CORS support on all routes, for all origins and
     methods.
   doc_url: http://flask-cors.corydolphin.com/en/latest/api.html#extension
+  doc_source_url: https://github.com/corydolphin/flask-cors/blob/master/docs/index.rst
   dev_url: https://github.com/corydolphin/flask-cors

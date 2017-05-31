@@ -32,8 +32,9 @@ about:
   home: http://www.ijg.org/
   license: Custom free software license
   license_family: Other
-  summary: Read and write jpeg COM, EXIF, IPTC medata
+  summary: Read and write jpeg files
   description: |
-    IJG is an informal group that writes and distributes a widely used free
-    library for JPEG image compression.
-  doc_url: http://www.ijg.org/files
+    jpeg provides access to the jpeg compressor and decompressor written by the
+    Independent JPEG Group (IJG).It is a standard for compressing pictures.
+  doc_url: https://docs.python.org/2/library/jpeg.html
+  doc_source_url: https://github.com/python/cpython/blob/2.7/Doc/library/jpeg.rst

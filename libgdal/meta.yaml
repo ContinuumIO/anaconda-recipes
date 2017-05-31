@@ -65,4 +65,5 @@ about:
     It also comes with a variety of useful command line utilities for data
     translation and processing.
   doc_url: http://www.gdal.org/
+  doc_source_url: https://github.com/OSGeo/gdal/tree/trunk/gdal/doc
   dev_url: https://github.com/OSGeo/gdal

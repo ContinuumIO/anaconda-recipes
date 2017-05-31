@@ -25,10 +25,9 @@ about:
   license_family: BSD
   summary: A set of functions that implement regular expression pattern matching
   description: |
-    The PCRE library is a set of functions that implement regular expression
-    pattern matching using the same syntax and semantics as Perl 5. PCRE has
-    its own native API, as well as a set of wrapper functions that correspond
-    to the POSIX regular expression API. The PCRE library is free, even for
-    building proprietary software.
+    PCRE implement regular expression pattern matching using the same syntax and
+    semantics as Perl 5. PCRE has its own native API, as well as a set of wrapper
+    functions that correspond to the POSIX regular expression API.
   doc_url: http://www.pcre.org/original/doc/html/
+  doc_source_url: https://vcs.pcre.org/pcre2/code/trunk/doc/?sortdir=down
   dev_url: http://vcs.pcre.org/pcre2/

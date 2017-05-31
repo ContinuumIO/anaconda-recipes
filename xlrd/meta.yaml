@@ -23,7 +23,8 @@ about:
   license: BSD
   summary: Extract data from Microsoft Excel spreadsheet files
   description: |
-    Xlrd provides a library or developers to use to extract information from
-    Microsoft Excel (tm) spreadsheet files
+    xlrd is a library for reading data and formatting information from Excel files,
+    whether they are .xls or .xlsx files.
   doc_url: https://pypi.python.org/pypi/xlrd
+  doc_source_url: https://github.com/python-excel/xlrd/blob/master/docs/index.rst
   dev_url: https://github.com/python-excel/xlrd

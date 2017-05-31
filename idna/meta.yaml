@@ -25,6 +25,8 @@ about:
   license_file: LICENSE.rst
   summary: Internationalized Domain Names in Applications
   description: |
-    A library to support the Internationalised Domain Names in Applications
-    (IDNA) protocol as specified in RFC 5891. This version of the protocol is
-    often referred to as "IDNA2008".
+    This acts as a suitable replacement
+    for the encodings.idna module that comes with the Python standard library,
+    but only supports the old, deprecated IDNA specification (RFC 3490).
+  doc_url: https://pypi.python.org/pypi/idna/2.5
+  doc_source_url: https://github.com/kjd/idna/blob/master/README.rst

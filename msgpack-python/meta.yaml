@@ -30,10 +30,10 @@ about:
   license_file: COPYING
   summary: An efficient binary serialization format
   description: |
-    MessagePack is an efficient binary serialization format. It lets you
-    exchange data among multiple languages like JSON. But it's faster and
-    smaller. Small integers are encoded into a single byte, and typical
-    short strings require only one extra byte in addition to the strings
+    MessagePack lets you exchange data among multiple languages like JSON.
+    But it's faster and smaller. Small integers are encoded into a single byte
+    and typical short strings require only one extra byte in addition to the strings
     themselves.
-  doc_url: https://github.com/msgpack/msgpack/blob/master/spec.md
+  doc_url: http://msgpack-python.readthedocs.io/en/latest/?badge=latest
+  doc_source_url: https://github.com/msgpack/msgpack-python/blob/master/docs/index.rst
   dev_url: https://github.com/msgpack/msgpack

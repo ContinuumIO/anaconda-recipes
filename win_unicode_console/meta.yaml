@@ -22,3 +22,7 @@ about:
   home: https://github.com/Drekin/win-unicode-console
   license: MIT
   summary: enable Unicode input and display when running Python from Windows console
+  description: |
+    A Python package to enable Unicode input and display when running Python from Windows console.
+  doc_url: https://pypi.python.org/pypi/win_unicode_console/0.5
+  doc_source_url: https://github.com/Drekin/win-unicode-console/blob/master/README.rst

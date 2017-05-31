@@ -36,11 +36,12 @@ about:
   license_family: Apache
   license_file: LICENSE
   license_url: http://www.apache.org/licenses/LICENSE-2.0
-  summary: A Python web framework and asynchronous networking library
+  summary: Tornado Web Server
   description: |
     Tornado is a Python web framework and asynchronous networking library.
     By using non-blocking network I/O, Tornado can scale to tens of thousands
     of open connections, making it ideal for long polling, WebSockets, and
     other applications that require a long-lived connection to each user.
   doc_url: http://www.tornadoweb.org/en/stable/
+  doc_source_url: https://github.com/tornadoweb/tornado/blob/stable/docs/index.rst
   dev_url: https://github.com/tornadoweb/tornado

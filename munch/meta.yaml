@@ -23,3 +23,7 @@ about:
   home: http://github.com/Infinidat/munch
   license: MIT
   summary: dot-accessible dictionary (a la JavaScript objects).
+  description: |
+    Munch is a dictionary that supports attribute-style access, a la JavaScript.
+  doc_url: https://pypi.python.org/pypi/munch/
+  doc_source_url: https://github.com/Infinidat/munch/blob/master/README.md

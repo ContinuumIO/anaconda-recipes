@@ -24,3 +24,7 @@ about:
   license_family: BSD
   license_file: doc/License.rst
   summary: parse, read and write Microsoft OLE2 files
+  description: |
+    olefile can be used as an independent module or with PIL / Pillow.
+  doc_url: http://olefile.readthedocs.io/en/latest/index.html
+  doc_source_url: https://github.com/decalage2/olefile/blob/master/doc/index.rst

@@ -33,4 +33,5 @@ about:
     Provides a simple function called deprecated(names, reason) to mark
     deprecated modules, classes, functions, methods and properties.
   doc_url: http://docs.zope.org/zope.deprecation/
+  doc_source_url: https://github.com/zopefoundation/zope.deprecation//blob/master/docs/index.rst
   dev_url: https://github.com/zopefoundation/zope.deprecation

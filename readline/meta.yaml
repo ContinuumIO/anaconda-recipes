@@ -26,10 +26,6 @@ about:
   license_file: COPYING
   summary: Line-editing for programs with a command-line interface
   description: |
-    The GNU Readline library provides a set of functions for use by
-    applications that allow users to edit command lines as they are typed in.
-    Both Emacs and vi editing modes are available. The Readline library
-    includes additional functions to maintain a list of previously-entered
-    command lines, to recall and perhaps reedit those lines, and perform
-    csh-like history expansion on previous commands.
-  doc_url: http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html#Documentation
+    The standard Python readline extension statically linked against the GNU readline library.
+  doc_url: https://pypi.python.org/pypi/readline
+  doc_source_url: https://github.com/ludwigschwardt/python-gnureadline

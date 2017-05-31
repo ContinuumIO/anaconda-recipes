@@ -30,5 +30,6 @@ about:
     for Python running on Windows, OSX, Linux, BSD (possibly any POSIX
     compliant system) and IronPython. The module named "serial" automatically
     selects the appropriate backend.
-  doc_url: https://pythonhosted.org/pyserial/
+  doc_url: https://pyserial.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/pyserial/pyserial/blob/master/documentation/index.rst
   dev_url: https://github.com/pyserial/pyserial

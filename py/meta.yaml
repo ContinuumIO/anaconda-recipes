@@ -30,5 +30,6 @@ about:
     py.apipkg: explicit API control and lazy-importing
     py.iniconfig: easy parsing of .ini files
     py.code: dynamic code generation and introspection
-  doc_url: http://pylib.readthedocs.org/en/latest/
+  doc_url: http://py.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/pytest-dev/py/blob/master/doc/index.txt
   dev_url: https://bitbucket.org/pytest-dev/py

@@ -29,3 +29,4 @@ about:
   summary: Websocket implementation for gevent
   description: |
     gevent-websocket is a WebSocket library for the gevent networking library.
+  doc_url: https://pypi.python.org/pypi/websocket

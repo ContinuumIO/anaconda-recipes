@@ -41,7 +41,8 @@ about:
   license_file: LICENSE
   summary: A high-level Python Screen Scraping framework
   description: |
-    Scrapy is an open source and collaborative framework for extracting the
-    data you need from websites in a fast, simple, yet extensible way.
-  doc_url: http://scrapy.org/doc/
+    Scrapy is a fast high-level web crawling and web scraping framework, used to
+    crawl websites and extract structured data from their pages.
+  doc_url: https://docs.scrapy.org/en/latest/
+  doc_source_url: https://github.com/scrapy/scrapy/blob/master/docs/index.rst
   dev_url: https://github.com/scrapy/scrapy

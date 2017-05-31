@@ -30,4 +30,5 @@ about:
     inter-process semaphores, shared memory and message queues on systems that
     support the POSIX Realtime Extensions.
   doc_url: http://semanchuk.com/philip/posix_ipc/
+  doc_source_url: https://bitbucket.org/philip_semanchuk/posix_ipc
   dev_url: https://bitbucket.org/philip_semanchuk/posix_ipc

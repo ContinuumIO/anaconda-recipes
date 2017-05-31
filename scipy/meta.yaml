@@ -45,7 +45,8 @@ about:
   license_file: LICENSE.txt
   summary: Scientific Library for Python
   description: |
-    SciPy is a Python-based ecosystem of open-source software for mathematics,
-    science, and engineering.
-  doc_url: http://www.scipy.org/docs.html
+    SciPy is a collection of mathematical algorithms and convenience functions
+    built on the Numpy extension of Python.
+  doc_url: https://docs.scipy.org/doc/scipy/reference/
+  doc_source_url: https://github.com/scipy/scipy/blob/master/doc/source/index.rst
   dev_url: https://github.com/scipy/scipy

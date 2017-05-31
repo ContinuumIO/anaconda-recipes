@@ -39,4 +39,5 @@ about:
     spaCy is a library for advanced natural language processing in Python and
     Cython.
   doc_url: https://spacy.io/docs
+  doc_source_url: https://github.com/explosion/spaCy
   dev_url: https://github.com/spacy-io/spaCy

@@ -27,3 +27,9 @@ about:
   license: BSD
   license_file: LICENSE
   summary: 'Pytest plugin for measuring coverage.'
+  description: |
+    pytest-cov produces coverage reports.It supports centralised testing and
+    distributed testing in both load and each modes.It also supports coverage
+    of subprocesses.
+  doc_url: https://pytest-cov.readthedocs.io/en/latest/
+  doc_source_url: https://github.com/pytest-dev/pytest-cov/blob/master/docs/index.rst

@@ -29,4 +29,6 @@ about:
     Numpy's documentation uses several custom extensions to Sphinx. These are
     shipped in this numpydoc package, in case you want to make use of them
     in third-party projects.
+  doc_url: https://pypi.python.org/pypi/numpydoc
+  doc_source_url: https://github.com/numpy/numpydoc/blob/master/README.rst
   dev_url: https://github.com/numpy/numpydoc

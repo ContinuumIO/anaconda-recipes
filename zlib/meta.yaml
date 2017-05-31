@@ -25,7 +25,8 @@ about:
   license_family: Other
   summary: Unobtrusive compression library
   description: |
-    zlib is designed to be a free, general-purpose, lossless data-compression
-    library for use on virtually any computer hardware and operating system.
+    The zlib compression library provides in-memory compression and decompression
+    functions, including integrity checks of the uncompressed data.
   doc_url: http://zlib.net/manual.html
+  doc_source_url: https://github.com/madler/zlib/tree/master/doc
   dev_url: https://github.com/madler/zlib

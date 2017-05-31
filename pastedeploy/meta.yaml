@@ -30,12 +30,9 @@ about:
   license: MIT
   summary: Load, configure, and compose WSGI applications and servers
   description: |
-    Paste Deployment is a system for finding and configuring WSGI applications
-    and servers. For WSGI application consumers it provides a single, simple
+    For WSGI application consumers Paste Deployment provides a single, simple
     function (loadapp) for loading a WSGI application from a configuration file
-    or a Python Egg. For WSGI application providers it only asks for a single,
-    simple entry point to your application, so that application users don't
-    need to be exposed to the implementation details of your application.
-  doc_url: http://pythonpaste.org/deploy/
+    or a Python Egg.
+  doc_url: http://pastedeploy.readthedocs.io/en/latest/
+  doc_source_url: https://bitbucket.org/ianb/pastedeploy/src/default/docs/index.txt
   dev_url: https://bitbucket.org/ianb/pastedeploy
-

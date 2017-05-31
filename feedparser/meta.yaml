@@ -28,4 +28,5 @@ about:
     Feedparser is a Universal Feed Parser for Python. It is used to download
     and parse syndicated feeds.
   doc_url: https://pythonhosted.org/feedparser/
+  doc_source_url: https://github.com/kurtmckee/feedparser/blob/develop/docs/index.rst
   dev_url: https://github.com/kurtmckee/feedparser

@@ -23,5 +23,8 @@ about:
   license: MIT
   license_file: LICENSE
   summary: Stripe python bindings
+  description: |
+    Stripe is the best software platform for running an internet business.
   doc_url: https://stripe.com/docs/api/python#intro
+  doc_source_url: https://github.com/stripe/stripe-python
   dev_url: https://github.com/stripe/stripe-python

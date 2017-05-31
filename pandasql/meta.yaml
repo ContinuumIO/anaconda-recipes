@@ -34,4 +34,5 @@ about:
     similarly to sqldf in R. pandasql seeks to provide a more familiar way
     of manipulating and cleaning data for people new to Python or pandas.
   doc_url: https://pypi.python.org/pypi/pandasql
+  doc_source_url: https://github.com/yhat/pandasql/blob/master/README.rst
   dev_url: https://github.com/yhat/pandasql

@@ -70,4 +70,5 @@ about:
     Java. The language provides constructs intended to enable clear programs
     on both a small and large scale.
   doc_url: https://www.python.org/doc/versions/
+  doc_source_url: https://github.com/python/pythondotorg/blob/master/docs/source/index.rst
   dev_url: https://docs.python.org/devguide/

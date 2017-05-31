@@ -26,4 +26,5 @@ about:
   description: |
     This small python library provides a few tools to handle SemVer in Python.
   doc_url: https://python-semanticversion.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/rbarrois/python-semanticversion/blob/master/README.rst
   dev_url: https://github.com/rbarrois/python-semanticversion

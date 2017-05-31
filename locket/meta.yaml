@@ -28,5 +28,6 @@ about:
   description: |
     Locket implements a lock that can be used by multiple processes provided
     they use the same path.
-  doc_url: https://github.com/mwilliamson/locket.py
+  doc_url: https://pypi.python.org/pypi/locket
+  doc_source_url: https://github.com/mwilliamson/locket.py/blob/master/README.rst
   dev_url: https://github.com/mwilliamson/locket.py

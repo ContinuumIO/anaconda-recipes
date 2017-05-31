@@ -38,8 +38,8 @@ about:
   license_file: COPYING
   summary: Topic Modelling in Python
   description: |
-    Gensim is a Python library for topic modelling, document indexing and
-    similarity retrieval with large corpora. Target audience is the natural
-    language processing (NLP) and information retrieval (IR) community.
+    Gensim is a free Python library designed to automatically extract semantic
+    topics from documents, as efficiently (computer-wise) and painlessly (human-wise) as possible.
   doc_url: http://radimrehurek.com/gensim/tutorial.html
+  doc_source_url: https://github.com/RaRe-Technologies/gensim/blob/develop/docs/src/tutorial.rst
   dev_url: https://github.com/piskvorky/gensim

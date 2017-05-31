@@ -30,4 +30,5 @@ about:
     the cpu-load, and an advanced feature set, lighttpd is the perfect
     solution for every server that is suffering load problems.
   doc_url: http://redmine.lighttpd.net/projects/lighttpd/wiki
+  doc_source_url: http://redmine.lighttpd.net/projects/lighttpd/repository/revisions/master/show/doc
   dev_url: https://github.com/lighttpd

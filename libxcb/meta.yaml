@@ -21,3 +21,8 @@ about:
     license: MIT
     license_file: COPYING
     summary: "This is the C-language Bindings package to the X Window System protocol"
+    description: |
+      libxcb package provides an interface to the X Window System protocol, which replaces the current Xlib interface.
+      Xlib can also use XCB as a transport layer, allowing software to make requests and receive responses with both.
+    doc_url: http://www.linuxfromscratch.org/blfs/view/svn/x/libxcb.html
+    doc_source_url: https://github.com/stapelberg/libxcb/tree/master/doc

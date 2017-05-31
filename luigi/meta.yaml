@@ -49,9 +49,9 @@ about:
   license_file: LICENSE
   summary: Build complex pipelines of batch jobs
   description: |
-    Luigi is a Python module that helps you build complex pipelines of batch
-    jobs. It handles dependency resolution, workflow management, visualization,
+    Luigi handles dependency resolution, workflow management, visualization,
     handling failures, command line integration, and much more. It also comes
     with Hadoop support built in.
   doc_url: http://luigi.readthedocs.org/
+  doc_source_url: https://github.com/spotify/luigi/blob/b26ce627e65d36b455724fcb53872866055c431f/doc/index.rst
   dev_url: https://github.com/spotify/luigi

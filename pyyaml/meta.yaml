@@ -31,8 +31,8 @@ about:
   license_file: LICENSE
   summary: YAML parser and emitter for Python
   description: |
-    PyYAML is a YAML parser and emitter for Python. YAML is a data
-    serialization format designed for human readability and interaction with
+    YAML is a data serialization format designed for human readability and interaction with
     scripting languages.
-  doc_url: http://pyyaml.org/
+  doc_url: http://pyyaml.org/wiki/PyYAMLDocumentation
+  doc_source_url: http://pyyaml.org/browser/pyyaml/trunk/README
   dev_url: http://pyyaml.org/browser

@@ -28,11 +28,8 @@ about:
   license_file: LICENSE
   summary: A WSGI utility library for Python
   description: |
-    Werkzeug started as simple collection of various utilities for WSGI
-    applications and has become one of the most advanced WSGI utility modules.
-    It includes a powerful debugger, full-featured request and response
-    objects, HTTP utilities to handle entity tags, cache control headers,
-    HTTP dates, cookie handling, file uploads, a powerful URL routing system
-    and a bunch of community-contributed addon modules.
+    WSGI itself is a protocol or convention that ensures that your web application
+    can speak with the webserver and more importantly that web applications work nicely together.
   doc_url: http://werkzeug.pocoo.org/docs/0.11/
+  doc_source_url: https://github.com/pallets/werkzeug/tree/master/docs
   dev_url: https://github.com/pallets/werkzeug

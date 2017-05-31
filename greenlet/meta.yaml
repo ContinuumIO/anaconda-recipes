@@ -26,8 +26,8 @@ about:
   license_file: LICENSE
   summary: Lightweight in-process concurrent programming
   description: |
-    A "greenlet" is a still more primitive notion of micro-thread with no
-    implicit scheduling; coroutines, in other words. This is useful when you
-    want to control exactly when your code runs.
+    greenlet is a spin-off of Stackless, a version of CPython that supports micro-threads called "tasklets".
+    Tasklets run pseudo-concurrently and are synchronized with data exchanges on "channels".
   doc_url: http://greenlet.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/python-greenlet/greenlet/blob/master/doc/index.txt
   dev_url: https://github.com/python-greenlet/greenlet

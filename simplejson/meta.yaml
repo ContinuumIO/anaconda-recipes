@@ -32,4 +32,5 @@ about:
     code with no dependencies, but includes an optional C extension for a
     serious speed boost.
   doc_url: http://simplejson.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/simplejson/simplejson/blob/master/index.rst
   dev_url: https://github.com/simplejson/simplejson

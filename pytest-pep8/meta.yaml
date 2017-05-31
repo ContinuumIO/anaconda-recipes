@@ -36,5 +36,8 @@ about:
   license: MIT
   license_file: LICENSE
   summary: pytest plugin to check PEP8 requirements
+  description: |
+    py.test plugin for efficiently checking PEP8 compliance.
   doc_url: https://pypi.python.org/pypi/pytest-pep8
+  doc_source_url: https://bitbucket.org/pytest-dev/pytest-pep8/src
   dev_url: https://bitbucket.org/pytest-dev/pytest-pep8

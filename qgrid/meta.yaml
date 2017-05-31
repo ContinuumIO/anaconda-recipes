@@ -35,4 +35,5 @@ about:
     DataFrames with intuitive scrolling, sorting, and filtering controls, as
     well as edit your DataFrames by double clicking a cell.
   doc_url: http://qgrid.readthedocs.org/en/latest/
+  doc_source_url: https://github.com/quantopian/qgrid/blob/master/docs/index.rst
   dev_url: https://github.com/quantopian/qgrid

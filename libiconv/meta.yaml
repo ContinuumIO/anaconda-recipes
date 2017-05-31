@@ -32,3 +32,8 @@ about:
   license: GPL and LGPL
   license_family: GPL2
   summary: Provides iconv for systems which don't have one
+  description: |
+    libiconv is for you if your application needs to support multiple character encodings,
+    but that support lacks from your system.
+  doc_url: https://www.npmjs.com/package/iconv
+  doc_source_url: https://github.com/bnoordhuis/node-iconv/blob/master/README.md

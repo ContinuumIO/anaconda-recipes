@@ -24,7 +24,9 @@ about:
   license: BSD
   summary: Robust enumerated type support in Python
   description: |
-    This module defines two enumeration classes that can be used to define
-    unique sets of names and values. It also defines one decorator.
+    enumeration is a set of symbolic names bound to unique,constant values.
+    Within it,the members can be compared by identity
+    and the enumeration itself can be iterated over.
   doc_url: https://pypi.python.org/pypi/enum34
+  doc_source_url: https://bitbucket.org/stoneleaf/enum34/src/f24487b45cd041fc9406d67441d2186ac70772b7/enum/doc/enum.rst?at=default&fileviewer=file-view-default
   dev_url: https://github.com/certik/enum34

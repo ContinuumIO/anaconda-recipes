@@ -32,11 +32,11 @@ about:
   license: LGPL, BSD-like, ZPL
   license_family: LGPL
   license_file: LICENSE
-  summary: Python-PostgreSQL Database Adapter
+  summary: PostgreSQL database adapter for Python
   description: |
     Psycopg is the most popular PostgreSQL adapter for the Python programming
-    language. At its core it fully implements the Python DB API 2.0
-    specifications. Several extensions allow access to many of the features
-    offered by PostgreSQL.
+    language. Its main features are the complete implementation of the Python DB
+    API 2.0 specification and the thread safety.
   doc_url: http://initd.org/psycopg/docs/
+  doc_source_url: https://github.com/psycopg/psycopg2/blob/master/doc/src/index.rst
   dev_url: https://github.com/psycopg/psycopg2/

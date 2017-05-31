@@ -27,3 +27,9 @@ about:
   license: MIT
   license_file: LICENSE.rst
   summary: object-oriented filesystem paths
+  description: |
+    The goal of pathlib2 is to provide a backport of standard pathlib module which
+    tracks the standard library module, so all the newest features of the standard
+    pathlib can be used also on older Python versions.
+  doc_url: https://pypi.python.org/pypi/pathlib2/
+  doc_source_url: https://github.com/mcmtroffaes/pathlib2/blob/develop/README.rst

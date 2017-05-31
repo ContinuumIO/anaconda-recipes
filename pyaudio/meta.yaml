@@ -24,9 +24,9 @@ about:
   license: MIT
   summary: Bindings for PortAudio v19, the cross-platform audio stream library
   description: |
-    PyAudio provides Python bindings for PortAudio, the cross-platform audio
-    I/O library. With PyAudio, you can easily use Python to play and record
+    With PyAudio, you can easily use Python to play and record
     audio on a variety of platforms, such as GNU/Linux, Microsoft Windows, and
     Apple Mac OS X.
   doc_url: http://people.csail.mit.edu/hubert/pyaudio/docs/
+  doc_source_url: https://github.com/jleb/pyaudio/blob/master/sphinx/index.rst
   dev_url: http://people.csail.mit.edu/hubert/git/?p=pyaudio.git

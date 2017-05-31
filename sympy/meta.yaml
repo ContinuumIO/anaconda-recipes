@@ -32,4 +32,5 @@ about:
     full-featured computer algebra system (CAS) while keeping the code as
     simple as possible in order to be comprehensible and easily extensible.
   doc_url: http://docs.sympy.org/latest/index.html
+  doc_source_url: https://github.com/sympy/sympy/blob/master/doc/src/index.rst
   dev_url: https://github.com/sympy/sympy

@@ -15,10 +15,9 @@ about:
   license_file: COPYING
   summary: An alternative to the OpenGL Utility Toolkit (GLUT) library
   description: |
-    FreeGLUT is a free-software/open-source alternative to the OpenGL Utility
-    Toolkit (GLUT) library. GLUT (and hence FreeGLUT) takes care of all the
-    system-specific chores required for creating windows, initializing OpenGL
-    contexts, and handling input events, to allow for trully portable OpenGL
+    GLUT takes care of all the system-specific chores required for creating windows,
+    initializing OpenGL contexts, and handling input events, to allow for trully portable OpenGL
     programs.
   doc_url: http://freeglut.sourceforge.net/docs/api.php
+  doc_source_url: https://github.com/dcnieho/FreeGLUT/tree/git_master/freeglut/freeglut/doc
   dev_url: https://github.com/dcnieho/FreeGLUT
