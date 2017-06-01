@@ -863,6 +863,7 @@
   "repoze.lru": "all", 
   "requests": "all", 
   "requests-file": "all", 
+  "requests-ftp": "all", 
   "requests-kerberos": "all", 
   "responses": "all", 
   "rope": "all", 

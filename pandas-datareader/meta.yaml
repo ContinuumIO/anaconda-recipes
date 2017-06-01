@@ -1,11 +1,11 @@
 package:
   name: pandas-datareader
-  version: 0.2.1
+  version: 0.4.0
 
 source:
-  fn: pandas-datareader-0.2.1.tar.gz
-  url: https://pypi.python.org/packages/source/p/pandas-datareader/pandas-datareader-0.2.1.tar.gz
-  md5: 24554e0abc30c1f9dad6c4acb4bd84bb
+  fn: pandas-datareader-0.4.0.tar.gz
+  url: https://pypi.python.org/packages/e5/ed/2baf33e80db8791614c9a680cea0ab839e00448070becb7198f8a3c80629/pandas-datareader-0.4.0.tar.gz
+  md5: 3ee5c5e16c040f00b658d2e1db45ed0e
 
 requirements:
   build:
@@ -16,16 +16,17 @@ requirements:
     - requests-file
   run:
     - python
-    - pandas
-    - requests
+    - pandas >=0.17.0
+    - requests >=2.3.0
     - requests-file
+    - requests-ftp
 
 test:
   imports:
     - pandas_datareader
     - pandas_datareader.google
     - pandas_datareader.io
-    - pandas_datareader.io.tests
+    - pandas_datareader.tests
     - pandas_datareader.yahoo
 
 about:

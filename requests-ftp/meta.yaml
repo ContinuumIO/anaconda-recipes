@@ -1,0 +1,26 @@
+package:
+  name: requests-ftp
+  version: 0.3.1
+
+source:
+  fn: requests-ftp-0.3.1.tar.gz
+  url: https://pypi.python.org/packages/3d/ca/14b2ad1e93b5195eeaf56b86b7ecfd5ea2d5754a68d17aeb1e5b9f95b3cf/requests-ftp-0.3.1.tar.gz
+  md5: 1a52ad1219e696b5abd5449d1ccc0294
+
+requirements:
+  build:
+    - python
+    - requests
+  run:
+    - python
+    - requests
+
+test:
+  imports:
+    - requests_ftp
+
+about:
+  home: http://github.com/Lukasa/requests-ftp
+  license: Apache Software License
+  license_family: Apache
+  summary: FTP Transport Adapter for Requests
