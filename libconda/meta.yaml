@@ -26,6 +26,6 @@ about:
   license_file: LICENSE.txt
   summary: conda 4.0 based library
   description: |
-     libconda was created to allow conda to undergo more refactoring without breaking projects which depend on conda.
+     libconda was created to allow conda to undergo more refactoring
+     without breaking projects which depend on conda.
   doc_source_url: https://github.com/conda/libconda/blob/master/README.md
-
