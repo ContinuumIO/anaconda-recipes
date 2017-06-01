@@ -1,11 +1,11 @@
 package:
   name: fabric
-  version: 1.13.1
+  version: 1.13.2
 
 source:
-  fn: Fabric-1.13.1.tar.gz
-  url: https://pypi.python.org/packages/de/cd/ad1ebe31ea8143b4f1458283971a7806f7a6062ca26b01c956c6c176597a/Fabric-1.13.1.tar.gz
-  md5: 4c5795c6c27a3c97a71e25e38c096913
+  fn: Fabric-1.13.2.tar.gz
+  url: https://pypi.python.org/packages/2d/f8/8d847b77164b73e70a728f536c805adfe69a3f04772ee7b7dd917763a1c4/Fabric-1.13.2.tar.gz
+  md5: e8a954f72abe0e9cf779b8c2e975b7b6
 
 build:
   entry_points:

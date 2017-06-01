@@ -1,11 +1,11 @@
 package:
   name: semver
-  version: 2.7.6
+  version: 2.7.7
 
 source:
-  fn: semver-2.7.6.tar.gz
-  url: https://pypi.python.org/packages/f4/03/9a0285f0c3a63202794616df78e9702a1bb170a467abe31df1c65b939042/semver-2.7.6.tar.gz
-  md5: 0d8c6532f227ba77e21fea7acf8a1fc6
+  fn: semver-2.7.7.tar.gz
+  url: https://pypi.python.org/packages/a3/30/dc388e483165014d03e34b9c4cd5e0d5d30794d396225d0cb78b59d86d95/semver-2.7.7.tar.gz
+  md5: d28bdd6052914f1495225deef8ed310d
 
 requirements:
   build:
@@ -23,6 +23,7 @@ about:
   license: BSD
   summary: Python package to work with Semantic Versioning
   description: |
-    semver is a Python module for semantic versioning. Simplifies comparing versions.
+    semver is a Python module for semantic versioning. Simplifies comparing
+    versions.
   doc_url: https://pypi.python.org/pypi/semver
   doc_source_url: https://github.com/k-bx/python-semver/blob/master/README.rst

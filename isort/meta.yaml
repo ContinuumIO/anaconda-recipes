@@ -1,11 +1,11 @@
 package:
   name: isort
-  version: 4.2.5
+  version: 4.2.9
 
 source:
-  fn: isort-4.2.5.tar.gz
-  url: https://pypi.python.org/packages/70/65/49f66364f4ac551ec414e88537b02be439d1d9ea7e1fdd6d526fb8796bf9/isort-4.2.5.tar.gz
-  md5: 71489ebd936429d5bda2af7ae662ed78
+  fn: isort-4.2.9.tar.gz
+  url: https://pypi.python.org/packages/ec/62/568f9fb2163947242406aab8d12197437e32863bdc18126f826adcef549c/isort-4.2.9.tar.gz
+  md5: 0a6b1f57d1b60ee87b83a3735f62e28b
 
 build:
   entry_points:
@@ -29,8 +29,8 @@ about:
   license: MIT
   summary: Python utility / library to sort Python imports
   description: |
-    isort sort imports alphabetically and automatically separated into sections. It provides a command line utility,
-    library and plugins for various editors to quickly sort all your
-    imports.
-  doc_url: https://pypi.python.org/pypi/isort/4.2.5
+    isort sort imports alphabetically and automatically separated into sections.
+    It provides a command line utility, library and plugins for various editors
+    to quickly sort all your imports.
+  doc_url: https://pypi.python.org/pypi/isort/4.2.9
   doc_source_url: https://github.com/timothycrosley/isort/blob/develop/README.rst
