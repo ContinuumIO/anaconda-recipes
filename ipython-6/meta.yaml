@@ -1,14 +1,13 @@
 package:
   name: ipython
-  version: "6.0.0"
+  version: 6.1.0
 
 source:
-  fn: ipython-6.0.0.tar.gz
-  url: https://pypi.python.org/packages/75/03/bb1ce0cf9f8a86f52b34090708e1806bc11e2d29b193e7d6fe0afe9a61e5/ipython-6.0.0.tar.gz
-  md5: 4169cfe24253c342d7a0b966f5c76281
+  fn: ipython-6.1.0.tar.gz
+  url: https://pypi.python.org/packages/79/63/b671fc2bf0051739e87a7478a207bbeb45cfae3c328d38ccdd063d9e0074/ipython-6.1.0.tar.gz
+  md5: 1e15e1ce3f3f722da6935d7ac0e51346
 
 build:
-  number: 1
   entry_points:
     - ipython = IPython:start_ipython
     - ipython3 = IPython:start_ipython   [py3k]

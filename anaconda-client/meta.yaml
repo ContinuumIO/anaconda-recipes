@@ -3,7 +3,7 @@ package:
   version: 1.6.3
 
 source:
-  git_url: https://github.com/Anaconda-Server/anaconda-client.git
+  git_url: https://github.com/Anaconda-Platform/anaconda-client.git
   git_tag: 1.6.3
 
 build:
@@ -49,4 +49,4 @@ about:
     and generate access tokens to allow access to private packages.
   doc_url: https://docs.continuum.io/anaconda-cloud/cli
   doc_source_url: https://github.com/Anaconda-Platform/anaconda-client/blob/develop/README.md
-  dev_url: https://github.com/Anaconda-Server/anaconda-client
+  dev_url: https://github.com/Anaconda-Platform/anaconda-client
