@@ -1,13 +1,12 @@
 package:
   name: pandas
-  version: 0.20.1
+  version: 0.20.2
 
 source:
   git_url: https://github.com/pydata/pandas.git
-  git_tag: v0.20.1
+  git_tag: v0.20.2
 
 build:
-  number: 0
   detect_binary_files_with_prefix: False
 
 requirements:
@@ -36,8 +35,9 @@ about:
   license_file: LICENSE
   summary: Powerful Python data analysis toolkit
   description: |
-    pandas is a Python package providing fast, flexible, and expressive data structures
-    designed to make working with relational or labeled data both easy and intuitive.
+    pandas is a Python package providing fast, flexible, and expressive data
+    structures designed to make working with relational or labeled data both
+    easy and intuitive.
   doc_url: http://pandas.pydata.org/pandas-docs/stable/
   doc_source_url: https://github.com/pandas-dev/pandas/tree/master/doc/source
   dev_url: https://github.com/pydata/pandas

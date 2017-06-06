@@ -1,11 +1,11 @@
 package:
   name: py
-  version: 1.4.33
+  version: 1.4.34
 
 source:
-  fn: py-1.4.33.tar.gz
-  url: https://pypi.python.org/packages/2a/a5/139ca93a9ffffd9fc1d3f14be375af3085f53cc490c508cf1c988b886baa/py-1.4.33.tar.gz
-  md5: 15d7107cbb8b86593bf9afa16e56da65
+  fn: py-1.4.34.tar.gz
+  url: https://pypi.python.org/packages/68/35/58572278f1c097b403879c1e9369069633d1cbad5239b9057944bb764782/py-1.4.34.tar.gz
+  md5: d9c3d8f734b0819ff48e355d77bf1730
 
 requirements:
   build:

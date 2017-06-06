@@ -26,7 +26,7 @@ if sys.version_info >= (2, 7):
 
 import pandas
 print("pandas.__version__ = %r" % pandas.__version__)
-assert pandas.__version__ == '0.20.1'
+assert pandas.__version__ == '0.20.2'
 
 if int(os.getenv('GUI_TEST', 0)):
     pandas.test()
