@@ -1,43 +1,25 @@
+# NOTE: this is a meta-package that includes the core glue code as well as stable
+# plugins. This is the main conda package we want in the Navigator, so we add the
+# app: entry here and not in the glue-core package.
+
 package:
   name: glueviz
-  version: 0.9.1
+  version: 0.10.4
 
 source:
-  fn: glueviz-0.9.1.tar.gz
-  url: https://pypi.python.org/packages/0e/6e/f48564217d464c8dbb7a57090e1446dab888fe23721dd6b8b806b2103403/glueviz-0.9.1.tar.gz
-  md5: 365887017580e243fb008d8109f2bc16
-
-build:
-  entry_points:
-    - glue = glue.main:main
-    - glue-config = glue.config_gen:main
-    - glue-deps = glue._deps:main
-  osx_is_app: True
+  fn: glueviz-0.10.4.tar.gz
+  url: https://pypi.io/packages/source/g/glueviz/glueviz-0.10.4.tar.gz
+  md5: 94f1774e3c379403966ca217bbe36d7a
 
 requirements:
+
   build:
     - python
     - setuptools
-    # The following dependencies are defined in install_requires
-    # and need to be included here otherwise setuptools tries to
-    # download them
-    - numpy
-    - pandas
-    - astropy
-    - matplotlib
-    - qtpy
-  run:
-    - python
-    - setuptools
-    - numpy
-    - pandas >=0.14
-    - astropy >=1.0
-    - matplotlib >=1.4
-    - qtpy >=1.1
 
-    # The following is needed to make sure that the package works as a GUI
-    # application (glue needs to be run with python.app, not python)
-    - python.app     [osx]
+  run:
+    - glue-core >=0.10.4
+    - glue-vispy-viewers >=0.7.2
 
 app:
   entry: glue
@@ -65,5 +47,4 @@ about:
     datasets. Its main features include Linked Statistical Graphics, flexible
     linking across data and full scripting capability.
   doc_url: http://www.glueviz.org/
-  doc_source_url: https://github.com/glue-viz/glue/blob/stable/doc/index.rst
-  dev_url: https://github.com/glue-viz/glue
+  dev_url: https://github.com/glue-viz/glueviz-meta
