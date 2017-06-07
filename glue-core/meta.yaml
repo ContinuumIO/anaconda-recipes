@@ -14,15 +14,12 @@ build:
     - glue-config = glue.config_gen:main
     - glue-deps = glue._deps:main
   osx_is_app: True
-  skip: true  # [win]
 
 requirements:
-
   build:
     - python
     - setuptools
     - pyqt
-
   run:
     - python
     - setuptools >=1.0
@@ -44,20 +41,22 @@ requirements:
     - python.app     [osx]
 
     # Temporary: the scikit-image conda package is missing the dask dependency
-    # so we add it here for now, otherwise we run into issues with pkg_resources
+    # so we add it here for now, otherwise we run into issues with
+    # pkg_resources
     - dask
 
-# NOTE: we deliberatey do NOT include an app entry here, because we instead do this
-# in the glueviz meta-package (we don't want glue to appear twice in the navigator)
+# NOTE: we deliberatey do NOT include an app entry here, because we
+# instead do this in the glueviz meta-package (we don't want glue to
+# appear twice in the navigator)
 
 test:
   imports:
     - glue
     - glue.core
-    - glue.app.qt
+    - glue.app.qt           [not win]
   commands:
     - glue --version
-    - glue-deps list
+    - glue-deps list        [not win]
 
 about:
   home: http://glueviz.org/

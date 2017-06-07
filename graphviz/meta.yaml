@@ -15,7 +15,8 @@ source:
     - gvconfig_libdir.patch               [unix]
 
 build:
-  number: 4
+  number: 4                               [not linux]
+  number: 5                               [linux]
   detect_binary_files_with_prefix: True   [unix]
 
 requirements:
@@ -30,6 +31,7 @@ requirements:
     - pango                               [linux]
     - pkg-config                          [osx]
     - zlib 1.2.*                          [unix]
+    - libiconv                            [linux]
   run:
     - cairo                               [linux]
     - expat                               [linux]
@@ -40,6 +42,7 @@ requirements:
     - jpeg 9*                             [unix]
     - pango                               [linux]
     - zlib 1.2.*                          [unix]
+    - libiconv                            [linux]
 
 test:
   commands:

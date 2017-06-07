@@ -1,0 +1,29 @@
+From 8c0c9c150f841cb27ded0f445099e72764e2a0c7 Mon Sep 17 00:00:00 2001
+From: Jonathan Helmus <jjhelmus@gmail.com>
+Date: Wed, 31 May 2017 15:44:38 -0500
+Subject: [PATCH] no expunge
+
+---
+ configure | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/configure b/configure
+index 470f3ba..ed1ffdd 100755
+--- a/configure
++++ b/configure
+@@ -39,9 +39,9 @@ function is_windows() {
+ }
+ 
+ function bazel_clean_and_fetch() {
+-  if ! is_windows; then
+-    bazel clean --expunge
+-  fi
++  #if ! is_windows; then
++  #  bazel clean --expunge
++  #fi
+ 
+   if [ -z "$TF_BAZEL_TARGETS" ]; then
+     bazel fetch "//tensorflow/... -//tensorflow/contrib/nccl/... -//tensorflow/examples/android/..."
+-- 
+2.11.1
+

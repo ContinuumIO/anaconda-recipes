@@ -7,3 +7,4 @@ if %PY3K%==1 (
     rd /s /q %SP_DIR%\__pycache__
     rd /s /q %SP_DIR%\PyQt5
 )
+echo "Done"

@@ -1,6 +1,6 @@
-# NOTE: this is a meta-package that includes the core glue code as well as stable
-# plugins. This is the main conda package we want in the Navigator, so we add the
-# app: entry here and not in the glue-core package.
+# NOTE: this is a meta-package that includes the core glue code as well
+# as stable plugins. This is the main conda package we want in the Navigator,
+# so we add the app: entry here and not in the glue-core package.
 
 package:
   name: glueviz
@@ -12,13 +12,12 @@ source:
   md5: 94f1774e3c379403966ca217bbe36d7a
 
 requirements:
-
   build:
     - python
     - setuptools
-
   run:
-    - glue-core >=0.10.4
+    - python
+    - glue-core >=0.10.4             [not win]
     - glue-vispy-viewers >=0.7.2
 
 app:
@@ -31,10 +30,10 @@ test:
   imports:
     - glue
     - glue.core
-    - glue.app.qt
+    - glue.app.qt            [not win]
   commands:
     - glue --version
-    - glue-deps list
+    - glue-deps list         [not win]
 
 about:
   home: http://glueviz.org/

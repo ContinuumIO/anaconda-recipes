@@ -11,7 +11,11 @@ source:
   patches:
     # Add -lrt to the link options list
     # https://github.com/tensorflow/tensorflow/issues/121
-    - rt_link_arg.patch  [not ppc64le]
+    - rt_link_arg.patch  [not ppc64le and not osx]
+    # http://goo.gl/bVHSa8
+    - xcode_tflow_{{ version }}.patch [osx]
+    - xcode_tflow_tests_{{ version }}.patch [osx]
+    - 0001-no-expunge.patch
 
 build:
   number: 0
@@ -21,14 +25,20 @@ build:
 requirements:
   build:
     - bazel >=0.4.5
+    - mock >=2.0.0       [py2k]
     - numpy x.x
-    - perl  [not ppc64le]
+    - perl  [not ppc64le and not osx]
     - pip
     - python
     - six >=1.10.0
     - swig
     - wheel >=0.26
     - zlib
+    - protobuf >=3.2.0
+    - werkzeug >=0.11.10
+    - portpicker
+    - scipy
+    - scikit-learn
   run:
     - mock >=2.0.0       [py2k]
     - numpy x.x
