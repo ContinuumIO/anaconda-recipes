@@ -16,7 +16,7 @@ requirements:
   run:
     - python
     - libconda
-    - pycosat >=0.6.1
+    - pyyaml
     - pillow >=3.1      [win]
     - nsis >=3.01       [win]
 
