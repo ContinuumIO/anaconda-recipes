@@ -1,0 +1,25 @@
+diff --git numpy/__init__.py numpy/__init__.py
+index 6220269..7ddf6d7 100644
+--- numpy/__init__.py
++++ numpy/__init__.py
+@@ -109,6 +109,10 @@ from __future__ import division, absolute_import, print_function
+ import sys
+ import warnings
+ 
++import ctypes
++_old_rtld = sys.getdlopenflags()
++sys.setdlopenflags(_old_rtld | ctypes.RTLD_GLOBAL)
++
+ from ._globals import ModuleDeprecationWarning, VisibleDeprecationWarning
+ from ._globals import _NoValue
+ 
+@@ -197,3 +201,9 @@ else:
+     # but do not use them, we define them here for backward compatibility.
+     oldnumeric = 'removed'
+     numarray = 'removed'
++
++sys.setdlopenflags(_old_rtld)
++del _old_rtld
++del sys
++del ctypes
++__mkl_version__ = "__MKL_VERSION__"

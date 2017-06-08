@@ -1,0 +1,48 @@
+package:
+  name: numpy
+  version: 1.13.0
+
+source:
+  fn: numpy-1.13.0.zip
+  url: https://pypi.python.org/packages/05/84/0feb999c05f252af50a5fbc463268044feda92cdaad8cb0d0a6073d76057/numpy-1.13.0.zip
+  md5: fd044f0b8079abeaf5e6d2e93b2c1d03
+  patches:
+    - dlopenflags.patch         [unix and not nomkl]
+    - osx-dist.patch            [osx]
+    - win-setup.patch           [win]
+    - win-dist.patch            [win]
+    - mklfft.patch
+
+build:
+  detect_binary_files_with_prefix: False
+  features:
+    - nomkl                   [x86 and nomkl]
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - mkl-devel 2017.0.1      [not nomkl]
+    - openblas 0.2.19         [linux and nomkl]
+    - cio-bt
+  run:
+    - python
+    - mkl 2017.0.1            [not nomkl]
+    - openblas 0.2.19         [linux and nomkl]
+    - libgfortran 3.0.0       [linux and nomkl and (not ppc64le)]
+
+test:
+  requires:
+    - nose
+    - cio-bt
+  commands:
+    - f2py -h                 [unix]
+  imports:
+    - numpy
+    - numpy.linalg.lapack_lite
+
+about:
+  home: http://numpy.scipy.org/
+  license: BSD
+  license_file: LICENSE.txt
+  summary: array processing for numbers, strings, records, and objects

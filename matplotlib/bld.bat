@@ -6,6 +6,8 @@ if errorlevel 1 exit 1
 
 set INCLUDE=%LIBRARY_INC%;%LIBRARY_INC%\freetype2;%INCLUDE%
 
+chcp 437
+
 %PYTHON% setup.py install --old-and-unmanageable
 if errorlevel 1 exit 1
 

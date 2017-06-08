@@ -1,5 +1,10 @@
 {
   "affine": "all", 
+  "aiohttp": [
+    "linux-64:py35", 
+    "osx-64:py35", 
+    "win-64:py35"
+  ], 
   "alabaster": "all", 
   "anaconda-clean": "all", 
   "anaconda-client": "all", 

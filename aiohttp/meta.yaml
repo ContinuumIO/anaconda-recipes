@@ -1,0 +1,39 @@
+{% set version = "2.1.0" %}
+
+package:
+  name: aiohttp
+  version: {{ version }}
+
+source:
+  fn: aiohttp-{{ version }}.tar.gz
+  url: https://pypi.python.org/packages/cf/4a/bec3705f07294d9a4057fe5abd93ca89f52149931301674e1e6a9dd66366/aiohttp-2.1.0.tar.gz
+  md5: 52c94bf1735485d9e02fd097ff7d7db9
+
+build:
+  detect_binary_files_with_prefix: False
+  script: python setup.py install --old-and-unmanageable
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - chardet
+    - multidict >=2.1.4
+    - async-timeout >=1.2.0
+    - yarl >=0.10.0,<0.11
+
+test:
+  imports:
+    - aiohttp
+
+about:
+  home: https://github.com/aio-libs/aiohttp
+  license: Apache 2.0
+  license_family: Apache
+  license_file: LICENSE.txt
+  summary: Async http client/server framework (asyncio)
+  doc_url: http://aiohttp.readthedocs.io/
+  dev_url: https://github.com/aio-libs/aiohttp
+  doc_source_url: https://github.com/aio-libs/aiohttp/tree/master/docs
