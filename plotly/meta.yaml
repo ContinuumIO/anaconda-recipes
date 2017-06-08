@@ -1,11 +1,11 @@
 package:
   name: plotly
-  version: 1.12.9
+  version: 2.0.9
 
 source:
-  fn: plotly-1.12.9.tar.gz
-  url: https://pypi.python.org/packages/ce/4b/1b7c4bb89b7708d4127b4ebcb2b6e5961c9e1bc3847b4705d57fdc66212f/plotly-1.12.9.tar.gz
-  md5: b124b7f0198df5afcee010d2374757b6
+  fn: plotly-2.0.9.tar.gz
+  url: https://pypi.python.org/packages/36/29/bda764086e27dacc61ef5b038b9b179a1c7791b5304f5c7b83f5b8c007ce/plotly-2.0.9.tar.gz
+  md5: 8890f487f0cdd448e390c68f0dc69ba3
 
 requirements:
   build:
@@ -18,6 +18,8 @@ requirements:
     - python
     - setuptools
     - requests
+    - decorator >=4.0.6
+    - nbformat >=4.2
     - six
     - pytz
 

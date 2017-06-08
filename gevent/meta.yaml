@@ -1,11 +1,11 @@
 package:
   name: gevent
-  version: 1.2.1
+  version: 1.2.2
 
 source:
-  fn: gevent-1.2.1.tar.gz
-  url: https://pypi.python.org/packages/54/dd/17dc7e899ac7c1de2d19b367b29d90fdb4cfe83bda8c2581464906c9399d/gevent-1.2.1.tar.gz
-  md5: 6700a2433c8e0635425e6798760efc81
+  fn: gevent-1.2.2.tar.gz
+  url: https://pypi.python.org/packages/1b/92/b111f76e54d2be11375b47b213b56687214f258fd9dae703546d30b837be/gevent-1.2.2.tar.gz
+  md5: 7f0baf355384fe5ff2ecf66853422554
 
 build:
   detect_binary_files_with_prefix: False

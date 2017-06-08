@@ -20,6 +20,11 @@
   "asn1crypto": "all", 
   "astroid": "all", 
   "astropy": "all", 
+  "async-timeout": [
+    "linux-64:py35", 
+    "osx-64:py35", 
+    "win-64:py35"
+  ], 
   "atom": [
     "linux-64:py27", 
     "osx-64:py27", 
@@ -551,6 +556,11 @@
     "osx-64:py27", 
     "win-64:py27"
   ], 
+  "multidict": [
+    "linux-64:py35", 
+    "osx-64:py35", 
+    "win-64:py35"
+  ], 
   "multipledispatch": "all", 
   "munch": "all", 
   "murmurhash": [
@@ -786,6 +796,7 @@
   "pytest": "all", 
   "pytest-cache": "all", 
   "pytest-cov": "all", 
+  "pytest-mock": "all", 
   "pytest-pep8": "all", 
   "pytest-runner": "all", 
   "pytest-timeout": "all", 
@@ -833,12 +844,6 @@
   "qtpy": "all", 
   "quandl": "all", 
   "queuelib": "all", 
-  "rasterio": [
-    "linux-64:py27", 
-    "linux-64:py35", 
-    "osx-64:py27", 
-    "osx-64:py35"
-  ], 
   "readline": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -1088,6 +1093,11 @@
     "linux-64:py35", 
     "osx-64:py27", 
     "osx-64:py35"
+  ], 
+  "yarl": [
+    "linux-64:py35", 
+    "osx-64:py35", 
+    "win-64:py35"
   ], 
   "yt": [
     "linux-64:py27", 
