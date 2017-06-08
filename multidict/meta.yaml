@@ -1,0 +1,45 @@
+{% set name = "multidict" %}
+{% set version = "2.1.6" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/e5/04/b272ba67ed896c5e9ac05cac916da6508855352524aae00f99938bdf9dc6/multidict-2.1.6.tar.gz
+  sha256: 9ec33a1da4d2096949e29ddd66a352aae57fad6b5483087d54566a2f6345ae10
+
+build:
+  detect_binary_files_with_prefix: False
+  script: python setup.py install --old-and-unmanageable
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  source_files:
+    - tests
+  requires:
+    - pytest
+  commands:
+    - py.test tests          [not win32]
+  imports:
+    - multidict
+    - multidict._multidict
+
+about:
+  home: http://github.com/aio-libs/multidict
+  license: Apache 2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: multidict implementation
+  description: |
+    Multidicts are useful for working with HTTP headers, URL query args etc.
+  doc_url: http://multidict.readthedocs.io/
+  doc_source_url: https://github.com/aio-libs/multidict/tree/master/docs
+  dev_url: http://github.com/aio-libs/multidict

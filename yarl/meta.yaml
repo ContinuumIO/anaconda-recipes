@@ -1,0 +1,43 @@
+{% set name = "yarl" %}
+{% set version = "0.10.2" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.python.org/packages/83/cd/c9d2c92f12de6bbb8ab025a6a9488d64e75f8650e52232b4718124d28279/yarl-0.10.2.tar.gz
+  md5: a8bdba0b60e8c1fd8922e2ae9dd2b02e
+
+build:
+  detect_binary_files_with_prefix: False
+  script: python setup.py install --old-and-unmanageable
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - multidict >=2.0
+
+test:
+  source_files:
+    - tests
+  requires:
+    - pytest
+  commands:
+    - py.test tests
+  imports:
+    - yarl
+    - yarl._quoting
+
+about:
+  home: https://github.com/aio-libs/yarl
+  license: Apache 2.0
+  license_family: Apache
+  summary: Yet another URL library
+  doc_url: http://yarl.readthedocs.io/
+  dev_url: https://github.com/aio-libs/yarl
+  doc_source_url: https://github.com/aio-libs/yarl/tree/master/docs

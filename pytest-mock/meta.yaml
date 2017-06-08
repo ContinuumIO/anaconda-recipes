@@ -1,0 +1,35 @@
+{% set name = "pytest-mock" %}
+{% set version = "1.6.0" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.python.org/packages/59/2a/18c5a08809b6383e6b1026d0307fa49f8eac1eaf9657bcd3446c7822cffd/pytest-mock-1.6.0.tar.gz
+  md5: eb08666c1b445b40495364e4cd10cdf4
+
+build:
+  script: python setup.py install --old-and-unmanageable
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - setuptools_scm
+  run:
+    - python
+    - pytest
+    - mock               [py27]
+
+test:
+  imports:
+    - pytest_mock
+
+about:
+  home: https://github.com/pytest-dev/pytest-mock
+  license: MIT
+  license_file: LICENSE
+  summary: Thin-wrapper around the mock package for easier use with py.test
+  dev_url: https://github.com/pytest-dev/pytest-mock

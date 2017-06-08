@@ -1,0 +1,33 @@
+{% set name = "async-timeout" %}
+{% set version = "1.2.1" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://github.com/aio-libs/async-timeout/archive/v{{ version }}.tar.gz
+  sha256: 840ca2fb8237faa2251ecccdd8b5180d6f9f2d92df6068e77ea823642fcc75d4
+
+build:
+  script: python setup.py install --old-and-unmanageable
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - async_timeout
+
+about:
+  home: http://github.com/aio-libs/async_timeout
+  license: Apache 2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: Timeout context manager for asyncio programs
+  dev_url: http://github.com/aio-libs/async_timeout
