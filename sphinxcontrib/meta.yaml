@@ -1,0 +1,17 @@
+package:
+  name: sphinxcontrib
+  version: 1.0
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - sphinxcontrib
+
+about:
+  license: BSD
+  summary: Python namespace for sphinxcontrib

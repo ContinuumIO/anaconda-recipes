@@ -942,6 +942,8 @@
   ], 
   "sphinx": "all", 
   "sphinx_rtd_theme": "all", 
+  "sphinxcontrib": "all", 
+  "sphinxcontrib-websupport": "all", 
   "sputnik": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -1011,6 +1013,7 @@
   "translationstring": "all", 
   "trollius": "all", 
   "twisted": "all", 
+  "typing": "all", 
   "ujson": "all", 
   "unicodecsv": "all", 
   "unidecode": "all", 

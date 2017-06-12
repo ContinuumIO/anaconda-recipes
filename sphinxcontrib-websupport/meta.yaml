@@ -1,0 +1,33 @@
+package:
+  name: sphinxcontrib-websupport
+  version: 1.0.1
+
+source:
+  fn: sphinxcontrib-websupport-1.0.1.tar.gz
+  url: https://pypi.python.org/packages/c5/6b/f0630436b931ad4f8331a9399ca18a7d447f0fcc0c7178fb56b1aee68d01/sphinxcontrib-websupport-1.0.1.tar.gz
+  md5: 84df26463b1ba65b07f926dbe2055665
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - sphinxcontrib
+  run:
+    - python
+    - sphinxcontrib
+
+test:
+  imports:
+    - sphinxcontrib
+
+about:
+  home: https://pypi.python.org/pypi/sphinxcontrib-websupport
+  license: BSD-2-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Sphinx API for Web Apps
+  description: |
+    sphinxcontrib-websupport provides a Python API to easily integrate
+    Sphinx documentation into your Web application
+  doc_url: http://www.sphinx-doc.org/en/stable/
+  dev_url: https://github.com/sphinx-doc/sphinxcontrib-websupport

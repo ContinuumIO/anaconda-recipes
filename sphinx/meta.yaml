@@ -1,11 +1,11 @@
 package:
   name: sphinx
-  version: 1.5.6
+  version: 1.6.2
 
 source:
-  fn: Sphinx-1.5.6.tar.gz
-  url: https://pypi.python.org/packages/95/d2/811beb24fa68afeb673e7a069aa3dbb95f57b426075d734ed913b47ca2ec/Sphinx-1.5.6.tar.gz
-  md5: e5f3f34401f9658d6d28a8cce5191384
+  fn: Sphinx-1.6.2.tar.gz
+  url: https://pypi.python.org/packages/72/68/ad424cd0caf5ea9d3b53b0ed5653eb09c4abde99b0c0ec84141935281775/Sphinx-1.6.2.tar.gz
+  md5: a5f613e2b807c1f8c6cdd985a3d909f1
 
 build:
   entry_points:
@@ -29,6 +29,8 @@ requirements:
     - sphinx_rtd_theme
     - imagesize
     - requests
+    - sphinxcontrib-websupport
+    - typing                        [py < 35]
     - colorama                      [win]
   run:
     - python
@@ -41,6 +43,8 @@ requirements:
     - alabaster >=0.7,<0.8
     - imagesize
     - requests >=2.0.0
+    - sphinxcontrib-websupport
+    - typing                        [py < 35]
     - colorama >=0.3.5              [win]
 
 test:

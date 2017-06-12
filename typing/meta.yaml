@@ -1,0 +1,27 @@
+package:
+  name: typing
+  version: 3.6.1
+
+source:
+  fn: typing-3.6.1.tar.gz
+  url: https://pypi.io/packages/source/t/typing/typing-3.6.1.tar.gz
+  sha256: c36dec260238e7464213dcd50d4b5ef63a507972f5780652e835d0228d0edace
+
+build:
+  script: python setup.py install
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - typing
+
+about:
+  home: https://docs.python.org/3.5/library/typing.html
+  license: PSF
+  license_file: LICENSE
+  summary: backport of the standard library typing module to Python versions older than 3.6
