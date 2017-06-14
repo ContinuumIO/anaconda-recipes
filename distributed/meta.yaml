@@ -1,11 +1,11 @@
 package:
   name: distributed
-  version: 1.16.3
+  version: 1.17.0
 
 source:
-  fn: distributed-1.16.3.tar.gz
-  url: https://pypi.python.org/packages/5d/88/8ca90404213c1023902b37a60bd83f8a391e4823bca8675c72ee34df17fb/distributed-1.16.3.tar.gz
-  md5: 45a156973f234c3c77cc970b3371a47c
+  fn: distributed-1.17.0.tar.gz
+  url: https://pypi.python.org/packages/f2/08/2ad9df887967df791a66ccc5eb01b76275f7b4b1d62dc64cdd0f35ebe95d/distributed-1.17.0.tar.gz
+  md5: a4936ca77935149cf323e80d67f2a40e
 
 build:
   number: 0
@@ -44,8 +44,6 @@ test:
   imports:
     - distributed
     - distributed.bokeh
-    - distributed.bokeh.status
-    - distributed.bokeh.tasks
     - distributed.cli
     - distributed.diagnostics
     - distributed.http

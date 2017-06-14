@@ -366,6 +366,7 @@
   ], 
   "html5lib": "all", 
   "humanize": "all", 
+  "hyperlink": "all", 
   "icu": "all", 
   "idna": "all", 
   "imagesize": "all", 
@@ -1074,6 +1075,12 @@
   "win_unicode_console": [
     "win-64:py27", 
     "win-64:py35"
+  ], 
+  "word2vec": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
   ], 
   "workerpool": "all", 
   "wrapt": "all", 

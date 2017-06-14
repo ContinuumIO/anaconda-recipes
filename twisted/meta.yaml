@@ -1,11 +1,11 @@
 package:
   name: twisted
-  version: 17.1.0
+  version: 17.5.0
 
 source:
-  fn: Twisted-17.1.0.tar.bz2
-  url: https://pypi.python.org/packages/d2/5d/ed5071740be94da625535f4333793d6fd238f9012f0fee189d0c5d00bd74/Twisted-17.1.0.tar.bz2
-  md5: 5b4b9ea5a480bec9c1449ffb57b2052a
+  fn: Twisted-17.5.0.tar.bz2
+  url: https://pypi.python.org/packages/31/bf/7f86a8f8b9778e90d8b2921e9f442a8c8aa33fd2489fc10f236bc8af1749/Twisted-17.5.0.tar.bz2
+  md5: cd5c287802dcbaf7be15cf937c922b71
 
 build:
   detect_binary_files_with_prefix: False
@@ -22,6 +22,7 @@ requirements:
     - constantly >=15.1
     - incremental >=16.10.1
     - automat >=0.3.0
+    - hyperlink >=17.1.1
     - pywin32                                    [win]
 
 test:
@@ -29,7 +30,6 @@ test:
     - twisted
     - twisted.test.raiser
     - twisted.python.sendmsg                     [unix and py2k]
-    - twisted.runner.portmap                     [unix and py2k]
     - twisted.internet.iocpreactor.iocpsupport   [win]
 
 about:
