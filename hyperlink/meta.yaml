@@ -1,0 +1,24 @@
+package:
+  name: hyperlink
+  version: 17.1.1
+
+source:
+  git_url: https://github.com/python-hyper/hyperlink.git
+  git_tag: v17.1.1
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - hyperlink
+
+about:
+  home: https://github.com/python-hyper/hyperlink
+  license: BSD
+  license_file: LICENSE
+  summary: Immutable, Pythonic, correct URLs

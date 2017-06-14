@@ -1,0 +1,38 @@
+package:
+  name: word2vec
+  version: 0.9.1
+
+source:
+  fn: word2vec-v0.9.1.tar.gz
+  url: https://github.com/danielfrg/word2vec/archive/v0.9.1.tar.gz
+  sha256: 0d94b4f906bd3faeb6c3941ed14790c21758bd35abfd18aa1ce961477693d7a8
+
+build:
+  detect_binary_files_with_prefix: False
+  script: python setup.py install
+
+requirements:
+  build:
+    - python
+    - cython
+    - pytest
+    - ipython
+    - numpy
+  run:
+    - numpy
+    - python
+
+test:
+  imports:
+    - word2vec
+    - word2vec.word2vec_noop
+
+about:
+  home: https://github.com/danielfrg/word2vec
+  license: Apache-2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: Python interface to Google word2vec
+  description: Python interface to Google word2vec.
+  doc_url: https://github.com/danielfrg/word2vec
+  dev_url: https://github.com/danielfrg/word2vec
