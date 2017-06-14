@@ -984,10 +984,6 @@
   "tabpy-server": "all", 
   "tblib": "all", 
   "tempita": "all", 
-  "tensorflow": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
   "teradata": "all", 
   "terminado": [
     "linux-64:py27", 
