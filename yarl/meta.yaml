@@ -1,14 +1,11 @@
-{% set name = "yarl" %}
-{% set version = "0.10.2" %}
-
 package:
-  name: {{ name }}
-  version: {{ version }}
+  name: yarl
+  version: 0.10.3
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/83/cd/c9d2c92f12de6bbb8ab025a6a9488d64e75f8650e52232b4718124d28279/yarl-0.10.2.tar.gz
-  md5: a8bdba0b60e8c1fd8922e2ae9dd2b02e
+  fn: yarl-0.10.3.tar.gz
+  url: https://pypi.python.org/packages/e6/fc/9b3820c47aa66924c38841f1766bf3b4857161b3c53e8548dd7a6dc0b226/yarl-0.10.3.tar.gz
+  md5: c10a2eb1e3474c0f84994d537313d246
 
 build:
   detect_binary_files_with_prefix: False
