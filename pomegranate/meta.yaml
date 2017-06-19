@@ -1,10 +1,11 @@
 package:
   name: pomegranate
-  version: 0.4.0
+  version: 0.7.3
 
 source:
-  git_url: https://github.com/jmschrei/pomegranate.git
-  git_tag: 0.4.0
+  fn: pomegranate-0.7.3.tar.gz
+  url: https://pypi.python.org/packages/8e/4d/3341d7be88236012667c2f303fd0bce7d78404e6eb98b30d14e35fe15425/pomegranate-0.7.3.tar.gz
+  md5: 391d8146038d0c022be6cced24cd663e
 
 build:
   detect_binary_files_with_prefix: False
@@ -12,13 +13,15 @@ build:
 requirements:
   build:
     - python
+    - setuptools
     - cython
     - numpy x.x
+    - scipy
   run:
     - python
     - cython
     - numpy x.x
-    - scipy
+    - scipy >=0.17.0
     - joblib >=0.9.4
     - networkx >=1.8.1
 
@@ -29,5 +32,4 @@ test:
 about:
   home: https://github.com/jmschrei/pomegranate
   license: MIT
-  license_file: LICENSE
   summary: probabilistic and graphical models for Python

@@ -1,11 +1,11 @@
 package:
   name: lazy-object-proxy
-  version: 1.2.2
+  version: 1.3.1
 
 source:
-  fn: lazy-object-proxy-1.2.2.tar.gz
-  url: https://pypi.python.org/packages/65/63/b6061968b0f3c7c52887456dfccbd07bec2303296911757d8c1cc228afe6/lazy-object-proxy-1.2.2.tar.gz
-  md5: 841b5592bc12c6ef7e48ed1d7a5f9066
+  fn: lazy-object-proxy-1.3.1.tar.gz
+  url: https://pypi.python.org/packages/55/08/23c0753599bdec1aec273e322f277c4e875150325f565017f6280549f554/lazy-object-proxy-1.3.1.tar.gz
+  md5: e128152b76eb5b9ba759504936139fd0
 
 build:
   detect_binary_files_with_prefix: False

@@ -1,20 +1,23 @@
+{% set version = "1.17.1" %}
+
 package:
   name: distributed
-  version: 1.17.0
+  version: "{{ version }}"
 
 source:
-  fn: distributed-1.17.0.tar.gz
-  url: https://pypi.python.org/packages/f2/08/2ad9df887967df791a66ccc5eb01b76275f7b4b1d62dc64cdd0f35ebe95d/distributed-1.17.0.tar.gz
-  md5: a4936ca77935149cf323e80d67f2a40e
+  fn: distributed-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/d/distributed/distributed-{{ version }}.tar.gz
+  sha256: 9c4f8b511ddb8d13851701deec1a15f64e75394dc6ae361fa8f6c41c9eeca0f1
 
 build:
-  number: 0
+  detect_binary_files_with_prefix: False
   entry_points:
-    - dask-ssh=distributed.cli.dask_ssh:go
-    - dask-submit=distributed.cli.dask_submit:go
-    - dask-remote=distributed.cli.dask_remote:go
     - dask-scheduler=distributed.cli.dask_scheduler:go
+    - dask-ssh=distributed.cli.dask_ssh:go
     - dask-worker=distributed.cli.dask_worker:go
+    - dask-remote=distributed.cli.dask_remote:go
+    - dask-submit=distributed.cli.dask_submit:go
+  script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
   build:
@@ -22,38 +25,38 @@ requirements:
     - setuptools
   run:
     - python
-    - tornado >=4.2
-    - toolz >=0.7.4
-    - msgpack-python
-    - cloudpickle >=0.2.2
-    - dask >=0.14.1
+    - bokeh >=0.12.3
     - click >=6.6
+    - cloudpickle >=0.2.2
+    - msgpack-python
+    - psutil
     - six
     - tblib
-    - psutil
-    - zict >=0.1.1
-    - sortedcollections
-    - futures                     [py < 30]
-    - singledispatch              [py < 34]
+    - toolz >=0.7.4
+    - tornado >=4.2
+    - zict >=0.1.2
+    - sortedcontainers
 
 test:
-  commands:
-    - dask-ssh --help
-    - dask-scheduler --help
-    - dask-worker --help
+  requires:
+    - dask >=0.14.1
   imports:
     - distributed
     - distributed.bokeh
     - distributed.cli
     - distributed.diagnostics
     - distributed.http
+  commands:
+    - dask-scheduler --help
+    - dask-ssh --help
+    - dask-worker --help
 
 about:
-  home: http://distributed.readthedocs.org/en/latest/
+  home: http://distributed.readthedocs.io/en/latest/
   license: BSD 3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: Lightweight library for distributed computing in Python
+  summary: 'Distributed computing'
   description: |
     Distributed is a lightweight library for distributed computing in Python.
     It extends both the concurrent.futures and dask APIs to moderate sized
@@ -61,3 +64,11 @@ about:
   doc_url: http://distributed.readthedocs.org
   doc_source_url: https://github.com/dask/distributed/blob/master/docs/source/index.rst
   dev_url: https://github.com/dask/distributed
+
+extra:
+  recipe-maintainers:
+    - mrocklin
+    - koverholt
+    - pitrou
+    - jcrist
+    - martindurant

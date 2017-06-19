@@ -3,9 +3,8 @@ package:
   version: 3.1.0
 
 source:
-  fn: Quandl-3.1.0.tar.gz
-  url: https://pypi.python.org/packages/84/68/877bcb3b0fd9c6a31ff8227c772b3d4c007cd23d918b78acdcb7fdf7d41e/Quandl-3.1.0.tar.gz
-  md5: 19d74e408c15d5ac529588f7849a1083
+  git_url: https://github.com/quandl/quandl-python.git
+  git_tag: v3.1.0
 
 requirements:
   build:
@@ -14,7 +13,7 @@ requirements:
     - python
     - numpy
     - pandas >=0.14
-    - requests >=2.7.0
+    - requests >=2.7.0,<2.18
     - inflection >=0.3.1
     - python-dateutil
     - six
