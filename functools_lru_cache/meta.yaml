@@ -1,0 +1,26 @@
+package:
+  name: functools_lru_cache
+  version: 1.4
+
+source:
+  fn: backports.functools_lru_cache-1.4.tar.gz
+  url: https://pypi.python.org/packages/4e/91/0e93d9455254b7b630fb3ebe30cc57cab518660c5fad6a08aac7908a4431/backports.functools_lru_cache-1.4.tar.gz
+  md5: b954e7d5e2ca0f0f66ad2ed12ba800e5
+
+requirements:
+  build:
+    - python
+    - setuptools_scm
+    - backports
+  run:
+    - python
+    - backports
+
+test:
+  imports:
+    - backports.functools_lru_cache
+
+about:
+  home: https://github.com/jaraco/backports.functools_lru_cache
+  license: MIT
+  summary: backport of functools.lru_cache from Python 3.3
