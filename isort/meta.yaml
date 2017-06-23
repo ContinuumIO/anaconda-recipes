@@ -1,11 +1,11 @@
 package:
   name: isort
-  version: 4.2.14
+  version: 4.2.15
 
 source:
-  fn: isort-4.2.14.tar.gz
-  url: https://pypi.python.org/packages/11/70/0fcf646c3f3a524d1bd2b445c73e9e8396db708f13d144de94b395656d7f/isort-4.2.14.tar.gz
-  md5: 555938e24911062b2febab248b419788
+  fn: isort-4.2.15.tar.gz
+  url: https://pypi.python.org/packages/4d/d5/7c8657126a43bcd3b0173e880407f48be4ac91b4957b51303eab744824cf/isort-4.2.15.tar.gz
+  md5: 34915a2ce60e6fe3dbcbf5982deef9b4
 
 build:
   entry_points:

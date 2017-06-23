@@ -1,11 +1,11 @@
 package:
   name: gensim
-  version: 2.1.0
+  version: 2.2.0
 
 source:
-  fn: gensim-2.1.0.tar.gz
-  url: https://pypi.python.org/packages/0c/35/0e2dbd6ff005d021ab89bcb35baeeff19bf7a3f30f75f98820f1d2876b39/gensim-2.1.0.tar.gz
-  md5: c860c86fba481cc1b78792f87ef3c259
+  fn: gensim-2.2.0.tar.gz
+  url: https://pypi.python.org/packages/fe/66/81322796cb00b5ce9ad7e12a89f57879125c5c64539dbb84c413a3c518ea/gensim-2.2.0.tar.gz
+  md5: 5655142e7df7f33fe1f484df82c35d64
 
 build:
   detect_binary_files_with_prefix: False
@@ -21,9 +21,9 @@ requirements:
   run:
     - python
     - numpy x.x
-    - scipy
+    - scipy >=0.19.0
     - six
-    - smart_open
+    - smart_open >=1.2.1
 
 test:
   imports:
