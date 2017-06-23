@@ -271,6 +271,11 @@
     "osx-64:py27", 
     "win-64:py27"
   ], 
+  "functools_lru_cache": [
+    "linux-64:py27", 
+    "osx-64:py27", 
+    "win-64:py27"
+  ], 
   "future": "all", 
   "futures": [
     "linux-64:py27", 
@@ -600,6 +605,7 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "netcdf4": "all", 
   "networkx": "all", 
   "nltk": "all", 
   "nose": "all", 

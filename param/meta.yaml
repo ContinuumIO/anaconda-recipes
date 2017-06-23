@@ -1,11 +1,11 @@
 package:
   name: param
-  version: 1.5.0
+  version: 1.5.1
 
 source:
-  fn: param-1.5.0.tar.gz
-  url: https://pypi.python.org/packages/d4/2f/6a9b9d53c1f64f774a9da5083fab8ec8bf95c795e6a70640f7ff3336fb68/param-1.5.0.tar.gz
-  md5: f7654efeb945f14c6607519e628873e3
+  fn: param-1.5.1.tar.gz
+  url: https://pypi.python.org/packages/0e/df/3e8f25141ff084505318aa6647224536c75813a2370d4f8aec957fbf08e7/param-1.5.1.tar.gz
+  md5: 2a8ac0e86eb20431cf8fd203af0a3709
 
 requirements:
   build:

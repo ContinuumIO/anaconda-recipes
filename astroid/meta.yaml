@@ -1,11 +1,11 @@
 package:
   name: astroid
-  version: 1.4.9
+  version: 1.5.3
 
 source:
-  fn: astroid-1.4.9.tar.gz
-  url: https://pypi.python.org/packages/55/14/be963877c2f336c6df8a77457f47163fd55427c0344bab2ba3f940d4edb8/astroid-1.4.9.tar.gz
-  md5: a57438971de05eb801b82eae59c05217
+  fn: astroid-1.5.3.tar.gz
+  url: https://pypi.python.org/packages/d7/b7/112288f75293d6f12b1e41bac1e822fd0f29b0f88e2c4378cdd295b9d838/astroid-1.5.3.tar.gz
+  md5: 6f65e4ea8290ec032320460905afb828
 
 requirements:
   build:
@@ -19,6 +19,10 @@ requirements:
     - six
     - wrapt
     - lazy-object-proxy
+    - setuptools
+    - singledispatch
+    - enum34                 [py < 34]
+    - functools_lru_cache    [py < 33]
 
 test:
   imports:
@@ -26,7 +30,8 @@ test:
 
 about:
   home: https://www.astroid.org/
-  license: LGPL
+  license: LGPL version 2.1
+  license_family: LGPL
   license_file: COPYING
   summary: abstract syntax tree for Python with inference support
   description: |

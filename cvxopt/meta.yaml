@@ -22,7 +22,7 @@ requirements:
     - libpython               [win]
   run:
     - python
-    - mkl 2017.0.1
+    - mkl 2017.0.*
 
 test:
   requires:

@@ -25,7 +25,7 @@ requirements:
   run:
     - python
     - numpy x.x
-    - mkl 2017.0.1            [not nomkl]
+    - mkl 2017.0.*            [not nomkl]
 
 test:
   requires:

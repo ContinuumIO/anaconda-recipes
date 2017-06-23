@@ -23,4 +23,4 @@ from libconda.resolve import Package
 
 
 print('libconda.__version__: %s' % libconda.__version__)
-assert libconda.__version__ == '4.0.0'
+assert libconda.__version__ == '4.0.1'

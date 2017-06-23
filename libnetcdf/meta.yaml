@@ -9,6 +9,7 @@ source:
     - redefine.patch
 
 build:
+  number: 1
   features:
     - vc9                 [win and py27]
     - vc10                [win and py34]

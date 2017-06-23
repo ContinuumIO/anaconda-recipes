@@ -27,7 +27,7 @@ requirements:
     - cio-bt
   run:
     - python
-    - mkl 2017.0.1            [not nomkl]
+    - mkl 2017.0.*            [not nomkl]
     - openblas 0.2.19         [linux and nomkl]
     - libgfortran 3.0.0       [linux and nomkl and (not ppc64le)]
 

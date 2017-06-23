@@ -50,6 +50,8 @@ about:
   license_file: COPYING
   summary: Python/numpy interface to netCDF library
   description: |
-    netcdf4-python is a Python interface to the netCDF C library.
+        netCDF version 4 has many features not found in earlier versions of the library
+        and is implemented on top of HDF5.
   doc_url: http://unidata.github.io/netcdf4-python/
+  doc_source_url: https://github.com/Unidata/netcdf4-python/blob/master/docs/netCDF4/index.html
   dev_url: https://github.com/Unidata/netcdf4-python
