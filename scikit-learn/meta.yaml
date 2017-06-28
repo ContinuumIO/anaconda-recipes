@@ -1,13 +1,13 @@
 package:
   name: scikit-learn
-  version: 0.18.1
+  version: 0.18.2
 
 source:
   git_url: https://github.com/scikit-learn/scikit-learn.git
-  git_tag: 0.18.1
+  git_tag: 0.18.2
 
 build:
-  number: 1
+  number: 0
   detect_binary_files_with_prefix: False
   features:
     - nomkl                   [x86 and nomkl]
@@ -19,7 +19,7 @@ requirements:
     - cython
     - numpy x.x
     - scipy
-    - mkl-devel 2017.0.1      [not nomkl]
+    - mkl-devel 2017.0.*      [not nomkl]
     - openblas 0.2.19         [linux and nomkl]
   run:
     - python

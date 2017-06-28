@@ -551,7 +551,6 @@
     "win-64:py35"
   ], 
   "mistune": "all", 
-  "mkl": "all", 
   "mkl-service": "all", 
   "mock": "all", 
   "more-itertools": "all", 

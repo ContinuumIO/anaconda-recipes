@@ -1,7 +1,7 @@
 import sklearn
 
 print("sklearn.__version__: %s" % sklearn.__version__)
-assert sklearn.__version__ == '0.18.1'
+assert sklearn.__version__ == '0.18.2'
 
 import sklearn.__check_build._check_build
 import sklearn._isotonic

@@ -1,4 +1,5 @@
 :: Doesn't include gmock or gtest. So, need to get these ourselves for `make check`.
+:: https://github.com/google/protobuf/issues/547 - Have autocrlf=false in your gitconfig
 git clone -b release-1.7.0 git://github.com/google/googlemock.git gmock
 if errorlevel 1 exit 1
 
@@ -27,6 +28,8 @@ cmake -G "NMake Makefiles" ^
          -DCMAKE_PREFIX_PATH=%LIBRARY_PREFIX% ^
          -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
          -Dprotobuf_WITH_ZLIB=ON ^
+         -Dprotobuf_BUILD_SHARED_LIBS=ON ^
+         -Dprotobuf_MSVC_STATIC_RUNTIME=OFF ^
          ../..
 if errorlevel 1 exit 1
 

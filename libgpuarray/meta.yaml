@@ -1,10 +1,10 @@
 package:
   name: libgpuarray
-  version: "0.6.4"
+  version: "0.6.8"
 
 source:
   git_url: https://github.com/Theano/libgpuarray.git
-  git_tag: v0.6.4
+  git_tag: v0.6.8
 
 build:
   features:
@@ -21,6 +21,7 @@ requirements:
     - msinttypes      [win and py<34]
     - cmake
     - mako
+    - python          [win]
   run:
     - vs2008_runtime  [win and py27]
     - vs2010_runtime  [win and py34]

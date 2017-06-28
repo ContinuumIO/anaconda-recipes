@@ -1,7 +1,7 @@
 package:
   name: vs2015_runtime
   # version is the update version reported from the registry
-  version: "14.0.25123"
+  version: "14.0.25420"
 
 build:
   number: 0

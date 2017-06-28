@@ -1,0 +1,23 @@
+From a101fa52895fc2ad83d8b5d610243531b1608a08 Mon Sep 17 00:00:00 2001
+From: Adam Cozzette <acozzette@google.com>
+Date: Fri, 20 Jan 2017 15:39:34 -0800
+Subject: [PATCH] Set LIBPROTOBUF_EXPORT on GzipOutputStream::Options
+
+This fixes issue #2610.
+---
+ src/google/protobuf/io/gzip_stream.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/google/protobuf/io/gzip_stream.h b/src/google/protobuf/io/gzip_stream.h
+index 15b02fe3d7..df1a446ebc 100644
+--- a/src/google/protobuf/io/gzip_stream.h
++++ b/src/google/protobuf/io/gzip_stream.h
+@@ -118,7 +118,7 @@ class LIBPROTOBUF_EXPORT GzipOutputStream : public ZeroCopyOutputStream {
+     ZLIB = 2,
+   };
+ 
+-  struct Options {
++  struct LIBPROTOBUF_EXPORT Options {
+     // Defaults to GZIP.
+     Format format;
+ 
