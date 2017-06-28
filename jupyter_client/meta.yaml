@@ -1,11 +1,16 @@
 package:
   name: jupyter_client
-  version: 5.0.1
+  version: 5.1.0
 
 source:
-  fn: jupyter_client-5.0.1.tar.gz
-  url: https://pypi.python.org/packages/01/6d/1566172f3497c79741774971df80db44e10d3c692801e59f9cd3ea64b19a/jupyter_client-5.0.1.tar.gz
-  md5: 73852317f98b85d4ffc6565040c04dd6
+  fn: jupyter_client-5.1.0.tar.gz
+  url: https://pypi.python.org/packages/d4/51/09da9a18cd858b28cee596a628660a8cbf9830bdd89fe94361bfe18a0bb4/jupyter_client-5.1.0.tar.gz
+  md5: 990ab28f63861cc29f90585d3f725b10
+
+build:
+  entry_points:
+    - jupyter-kernelspec = jupyter_client.kernelspecapp:KernelSpecApp.launch_instance
+    - jupyter-run = jupyter_client.runapp:RunApp.launch_instance
 
 requirements:
   build:
@@ -20,6 +25,7 @@ requirements:
 test:
   commands:
     - jupyter-kernelspec -h
+    - jupyter-run -h
   imports:
     - jupyter_client
 
