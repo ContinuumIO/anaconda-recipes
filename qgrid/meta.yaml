@@ -1,24 +1,24 @@
 package:
   name: qgrid
-  version: 0.3.2
+  version: 0.3.3
 
 source:
-  fn: qgrid-0.3.2.tar.gz
-  url: https://pypi.python.org/packages/80/ae/89dfb52b93a62ace8821172ffde518d480c3700648ee4a428ff45537de0f/qgrid-0.3.2.tar.gz
-  md5: d67be966d98b2aa9ef32fe37fd29c7ab
+  fn: qgrid-0.3.3.tar.gz
+  url: https://pypi.python.org/packages/e6/bd/b826df322ffb3b315ceb01d1d13710d83854b4dee34026828db26cbbe3ec/qgrid-0.3.3.tar.gz
+  md5: c31bf1c7cd89792d737b2009da2579a7
 
 requirements:
   build:
     - python
     - setuptools
-    - notebook >=4.1.0
-    - pandas >=0.17.1
-    - ipywidgets >=4.1.1
+    - notebook
+    - pandas
+    - ipywidgets
   run:
     - python
-    - notebook >=4.1.0
-    - pandas >=0.17.1
-    - ipywidgets >=4.1.1
+    - notebook >=4.0.0
+    - pandas >=0.16.2
+    - ipywidgets >=4.0.0
 
 test:
   imports:
@@ -27,7 +27,8 @@ test:
 
 about:
   home: https://github.com/quantopian/qgrid
-  license: Apache
+  license: Apache 2.0
+  license_family: Apache
   summary: Pandas DataFrame viewer for IPython Notebook
   description: |
     Qgrid is an IPython widget which uses SlickGrid to render pandas
