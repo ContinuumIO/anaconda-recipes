@@ -1,0 +1,32 @@
+package:
+  name: msgpack-numpy
+  version: 0.4.0
+
+source:
+  fn: msgpack-numpy-0.4.0.tar.gz
+  url: https://pypi.python.org/packages/01/43/4419898fca6ed5e062170bcaaa442d3f45c506bd95dd2d82679befbd2b6d/msgpack-numpy-0.4.0.tar.gz
+  md5: ecb2b961918cf42c0424513d4d787696
+
+build:
+  detect_binary_files_with_prefix: False
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy
+    - msgpack-python
+  run:
+    - python
+    - numpy
+    - msgpack-python
+
+test:
+  imports:
+    - msgpack_numpy
+
+about:
+  home: https://github.com/lebedov/msgpack-numpy
+  license: Apache
+  license_file: LICENSE.rst
+  summary: Numpy data serialization using msgpack
