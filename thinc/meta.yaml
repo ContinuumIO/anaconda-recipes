@@ -1,11 +1,11 @@
 package:
   name: thinc
-  version: 5.0.8
+  version: 6.7.3
 
 source:
-  fn: thinc-5.0.8.tar.gz
-  url: https://pypi.python.org/packages/d3/1e/15cdaf6b7e93f1b6d1b008960520ede5efe31f843c45feff31700c625c8f/thinc-5.0.8.tar.gz
-  md5: df1a9231b7849336496a91afb56aff26
+  fn: thinc-6.7.3.tar.gz
+  url: https://pypi.python.org/packages/17/d6/2e54a1abe6688fcda3faa81222a5a1bcdffa286124769f11b3e3d4be9443/thinc-6.7.3.tar.gz
+  md5: 549ecb152330d96a679e03a744eda5a3
 
 build:
   detect_binary_files_with_prefix: False
@@ -13,26 +13,50 @@ build:
 requirements:
   build:
     - python
+    - setuptools
     - cython
+    - numpy
+    - wrapt
+    - murmurhash >=0.28,<0.29
+    - cymem >=1.30,<1.32
+    - preshed >=1.0.0,<2.0.0
+    - chainer ==1.24.0
+    - tqdm >=4.10.0,<5.0.0
+    - cytoolz >=0.8,<0.9
+    - plac >=0.9.6,<1.0.0
+    - six >=1.10.0,<2.0.0
+    - dill
+    - termcolor
+    - pathlib >=1.0.0,<2.0.0
+    - msgpack-python
+    - msgpack-numpy
   run:
     - python
     - numpy
-    - murmurhash >=0.26,<0.27
+    - wrapt
+    - murmurhash >=0.28,<0.29
     - cymem >=1.30,<1.32
-    - preshed >=0.46,<0.47
+    - preshed >=1.0.0,<2.0.0
+    - chainer ==1.24.0
+    - tqdm >=4.10.0,<5.0.0
+    - cytoolz >=0.8,<0.9
+    - plac >=0.9.6,<1.0.0
+    - six >=1.10.0,<2.0.0
+    - dill
+    - termcolor
+    - pathlib >=1.0.0,<2.0.0
+    - msgpack-python
+    - msgpack-numpy
 
 test:
   imports:
     - thinc
 
 about:
-  home: http://github.com/syllog1sm/thinc
+  home: https://github.com/explosion/thinc
   license: MIT
   license_file: LICENSE
   summary: Learn sparse linear models
   description: |
     thinc is a Cython library for learning models with millions of parameters
     and dozens of classes.
-  doc_url: https://pypi.python.org/pypi/thinc/5.0.6
-  doc_source_url: https://github.com/explosion/thinc
-  dev_url: https://github.com/syllog1sm/thinc

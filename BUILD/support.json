@@ -106,6 +106,7 @@
   ], 
   "certifi": "all", 
   "cffi": "all", 
+  "chainer": "all", 
   "chalmers": "all", 
   "chameleon": "all", 
   "chardet": "all", 
@@ -472,10 +473,7 @@
   "libnetcdf": "all", 
   "libpng": "all", 
   "libpq": "all", 
-  "libprotobuf": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
+  "libprotobuf": "all", 
   "libpython": [
     "win-64:py27"
   ], 
@@ -560,6 +558,12 @@
     "linux-64:py35"
   ], 
   "mpmath": "all", 
+  "msgpack-numpy": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "msgpack-python": "all", 
   "mtq": [
     "linux-64:py27", 
@@ -659,6 +663,7 @@
     "linux-64:py35"
   ], 
   "path.py": "all", 
+  "pathlib": "all", 
   "pathlib2": "all", 
   "patsy": "all", 
   "pbr": "all", 
@@ -726,10 +731,7 @@
   "progressbar2": "all", 
   "proj4": "all", 
   "prompt_toolkit": "all", 
-  "protobuf": [
-    "linux-64:py27", 
-    "linux-64:py35"
-  ], 
+  "protobuf": "all", 
   "psutil": "all", 
   "psycopg2": "all", 
   "ptyprocess": [
@@ -990,6 +992,7 @@
   "tblib": "all", 
   "tempita": "all", 
   "teradata": "all", 
+  "termcolor": "all", 
   "terminado": [
     "linux-64:py27", 
     "linux-64:py35", 

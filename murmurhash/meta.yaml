@@ -1,11 +1,11 @@
 package:
   name: murmurhash
-  version: 0.26.4
+  version: 0.28.0
 
 source:
-  fn: murmurhash-0.26.4.tar.gz
-  url: https://pypi.python.org/packages/ff/53/1f428861e59c2382e22b8839d03cc315e1a7633a827497b3d389b8d8772d/murmurhash-0.26.4.tar.gz
-  md5: b5eb24ec4f9225566855e268da8421f5
+  fn: murmurhash-0.28.0.tar.gz
+  url: https://pypi.python.org/packages/5e/31/c8c1ecafa44db30579c8c457ac7a0f819e8b1dbc3e58308394fff5ff9ba7/murmurhash-0.28.0.tar.gz
+  md5: 737ae33abb691dd498753e576059806f
 
 build:
   detect_binary_files_with_prefix: False

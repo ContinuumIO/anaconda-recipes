@@ -1,11 +1,11 @@
 package:
   name: yarl
-  version: 0.10.3
+  version: 0.11.0
 
 source:
-  fn: yarl-0.10.3.tar.gz
-  url: https://pypi.python.org/packages/e6/fc/9b3820c47aa66924c38841f1766bf3b4857161b3c53e8548dd7a6dc0b226/yarl-0.10.3.tar.gz
-  md5: c10a2eb1e3474c0f84994d537313d246
+  fn: yarl-0.11.0.tar.gz
+  url: https://pypi.python.org/packages/cc/b6/14db4c96244fa47cf63db62177dd97739d505c90515c83479660ea6d9439/yarl-0.11.0.tar.gz
+  md5: a5a21f6ba05b62d34a32b3bbe50493bf
 
 build:
   detect_binary_files_with_prefix: False
@@ -34,6 +34,7 @@ about:
   home: https://github.com/aio-libs/yarl
   license: Apache 2.0
   license_family: Apache
+  license_file: LICENSE
   summary: Yet another URL library
   doc_url: http://yarl.readthedocs.io/
   dev_url: https://github.com/aio-libs/yarl

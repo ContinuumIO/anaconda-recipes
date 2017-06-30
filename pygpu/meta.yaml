@@ -1,13 +1,13 @@
 package:
   name: pygpu
-  version: "0.6.4"
+  version: "0.6.8"
 
 source:
   git_url: https://github.com/Theano/libgpuarray.git
-  git_tag: v0.6.4
+  git_tag: v0.6.8
 
 build:
-  number:  1    [linux]
+  number:  0
   detect_binary_files_with_prefix: False
 
 requirements:
@@ -19,11 +19,11 @@ requirements:
     - cython
     - numpy
     - mako
-    - libgpuarray ==0.6.4
+    - libgpuarray ==0.6.8
     - setuptools
   run:
     - python
-    - libgpuarray ==0.6.4
+    - libgpuarray ==0.6.8
     - numpy
     - mako
     - nose

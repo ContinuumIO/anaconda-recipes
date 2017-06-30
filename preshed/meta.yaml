@@ -1,11 +1,11 @@
 package:
   name: preshed
-  version: 0.46.4
+  version: 1.0.0
 
 source:
-  fn: preshed-0.46.4.tar.gz
-  url: https://pypi.python.org/packages/ed/f8/96cdfd0badba82b589f5913565e67a0db4d93282a86e0cb2dd786fdd69be/preshed-0.46.4.tar.gz
-  md5: 1044e5cf3460fe6a813f0606059ea92d
+  fn: preshed-1.0.0.tar.gz
+  url: https://pypi.python.org/packages/1b/ac/7c17b1fd54b60972785b646d37da2826311cca70842c011c4ff84fbe95e0/preshed-1.0.0.tar.gz
+  md5: 55c285d61175391b05d168e4cf3b28a8
 
 build:
   detect_binary_files_with_prefix: False
