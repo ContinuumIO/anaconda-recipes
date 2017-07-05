@@ -6,6 +6,7 @@ import spacy.matcher
 import spacy.morphology
 import spacy.orth
 import spacy.parts_of_speech
+import spacy.pipeline
 import spacy.serialize.bits
 import spacy.serialize.huffman
 import spacy.serialize.packer
@@ -14,6 +15,7 @@ import spacy.symbols
 import spacy.syntax._parse_features
 import spacy.syntax._state
 import spacy.syntax.arc_eager
+import spacy.syntax.beam_parser
 import spacy.syntax.iterators
 import spacy.syntax.ner
 import spacy.syntax.nonproj

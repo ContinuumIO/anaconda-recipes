@@ -261,6 +261,12 @@
   ], 
   "freeimage": "all", 
   "freetype": "all", 
+  "ftfy": [
+    "linux-64:py27", 
+    "linux-64:py35", 
+    "osx-64:py27", 
+    "osx-64:py35"
+  ], 
   "fuel": "all", 
   "funcsigs": [
     "linux-64:py27", 
@@ -481,6 +487,7 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "libssh2": "all", 
   "libtiff": "all", 
   "libtool": [
     "linux-64:py27", 
@@ -558,12 +565,6 @@
     "linux-64:py35"
   ], 
   "mpmath": "all", 
-  "msgpack-numpy": [
-    "linux-64:py27", 
-    "linux-64:py35", 
-    "osx-64:py27", 
-    "osx-64:py35"
-  ], 
   "msgpack-python": "all", 
   "mtq": [
     "linux-64:py27", 
@@ -875,6 +876,7 @@
     "osx-64:py27", 
     "osx-64:py35"
   ], 
+  "regex": "all", 
   "reportlab": "all", 
   "repoze.lru": "all", 
   "requests": "all", 
@@ -901,12 +903,6 @@
   "scrapy": "all", 
   "seaborn": "all", 
   "semantic_version": "all", 
-  "semver": [
-    "linux-64:py27", 
-    "linux-64:py35", 
-    "osx-64:py27", 
-    "osx-64:py35"
-  ], 
   "serf": "all", 
   "service_identity": "all", 
   "setuptools": "all", 
@@ -952,12 +948,6 @@
   "sphinx_rtd_theme": "all", 
   "sphinxcontrib": "all", 
   "sphinxcontrib-websupport": "all", 
-  "sputnik": [
-    "linux-64:py27", 
-    "linux-64:py35", 
-    "osx-64:py27", 
-    "osx-64:py35"
-  ], 
   "spyder": "all", 
   "sqlalchemy": "all", 
   "sqlite": "all", 

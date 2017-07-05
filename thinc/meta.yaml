@@ -1,11 +1,11 @@
 package:
   name: thinc
-  version: 6.7.3
+  version: 6.5.2
 
 source:
-  fn: thinc-6.7.3.tar.gz
-  url: https://pypi.python.org/packages/17/d6/2e54a1abe6688fcda3faa81222a5a1bcdffa286124769f11b3e3d4be9443/thinc-6.7.3.tar.gz
-  md5: 549ecb152330d96a679e03a744eda5a3
+  fn: thinc-6.5.2.tar.gz
+  url: https://pypi.python.org/packages/f7/9b/78fab962e0c8b55e3a745ebf2458708dfc7922c55eca3a9bff0233b25294/thinc-6.5.2.tar.gz
+  md5: 6424d805ec572c881135cd634af59a7e
 
 build:
   detect_binary_files_with_prefix: False
@@ -17,10 +17,9 @@ requirements:
     - cython
     - numpy
     - wrapt
-    - murmurhash >=0.28,<0.29
+    - murmurhash >=0.26,<0.27
     - cymem >=1.30,<1.32
     - preshed >=1.0.0,<2.0.0
-    - chainer ==1.24.0
     - tqdm >=4.10.0,<5.0.0
     - cytoolz >=0.8,<0.9
     - plac >=0.9.6,<1.0.0
@@ -28,16 +27,13 @@ requirements:
     - dill
     - termcolor
     - pathlib >=1.0.0,<2.0.0
-    - msgpack-python
-    - msgpack-numpy
   run:
     - python
     - numpy
     - wrapt
-    - murmurhash >=0.28,<0.29
+    - murmurhash >=0.26,<0.27
     - cymem >=1.30,<1.32
     - preshed >=1.0.0,<2.0.0
-    - chainer ==1.24.0
     - tqdm >=4.10.0,<5.0.0
     - cytoolz >=0.8,<0.9
     - plac >=0.9.6,<1.0.0
@@ -45,8 +41,6 @@ requirements:
     - dill
     - termcolor
     - pathlib >=1.0.0,<2.0.0
-    - msgpack-python
-    - msgpack-numpy
 
 test:
   imports:

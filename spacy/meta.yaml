@@ -1,11 +1,11 @@
 package:
   name: spacy
-  version: 0.101.0
+  version: 1.8.2
 
 source:
-  fn: spacy-0.101.0.tar.gz
-  url: https://pypi.python.org/packages/4c/e7/efb7268aceca6d1bf50fc2b6b433d3f4bbe222a8b26616d5f2ddfc2c7c43/spacy-0.101.0.tar.gz
-  md5: 5a51a8519c4eaa9f907445be42f5fe93
+  fn: spacy-1.8.2.tar.gz
+  url: https://pypi.python.org/packages/4a/aa/755943184fbde85b77f52f1f9f52621fdcdda67f74db4f60880e3468ee8b/spacy-1.8.2.tar.gz
+  md5: cf2c3dcffac5ba84288d1a76dd04c77a
 
 build:
   detect_binary_files_with_prefix: False
@@ -17,14 +17,18 @@ requirements:
     - python
     - numpy
     - murmurhash >=0.26,<0.27
-    - cymem >=1.30,<1.32.0
-    - preshed >=0.46.1,<0.47
-    - thinc >=5.0.0,<5.1.0
-    - plac
+    - cymem >=1.30,<1.32
+    - preshed >=1.0.0,<2.0.0
+    - thinc >=6.5.0,<6.6.0
+    - plac <1.0.0,>=0.9.6
     - six
-    - ujson
-    - cloudpickle
-    - sputnik >=0.9.2,<0.10.0
+    - pathlib
+    - ujson >=1.35
+    - dill >=0.2,<0.3
+    - requests >=2.13.0,<3.0.0
+    - regex ==2017.4.5
+    - ftfy >=4.4.2,<5.0.0
+    - pip
 
 test:
   imports:
