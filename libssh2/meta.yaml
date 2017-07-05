@@ -1,0 +1,57 @@
+{% set name = "libssh2" %}
+{% set version = "1.8.0" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://www.libssh2.org/download/{{ name }}-{{ version }}.tar.gz
+  sha256: 39f34e2f6835f4b992cafe8625073a88e5a28ba78f83e8099610a7b3af4676d4
+
+build:
+  number: 0
+  features:
+      - vc9    [win and py27]
+      - vc14   [win and py>34]
+
+requirements:
+  build:
+    - cmake >2.8
+    - openssl 1.0.*
+    - zlib 1.2.*
+    - python   [win]
+  run:
+    - openssl 1.0.*
+    - zlib 1.2.*
+#    - vc 9     [win and py27]
+#    - vc 14    [win and py>34]
+
+test:
+  commands:
+    - test -f $PREFIX/include/libssh2.h              [not win]
+    - test -f $PREFIX/include/libssh2_publickey.h    [not win]
+    - test -f $PREFIX/include/libssh2_sftp.h         [not win]
+
+    - test -f $PREFIX/lib/libssh2.a                  [not win]
+    - test -f $PREFIX/lib/libssh2.so                 [linux]
+    - test -f $PREFIX/lib/libssh2.dylib              [osx]
+
+    - if not exist %LIBRARY_INC%\\libssh2.h           exit 1  [win]
+    - if not exist %LIBRARY_INC%\\libssh2_publickey.h exit 1  [win]
+    - if not exist %LIBRARY_INC%\\libssh2_sftp.h      exit 1  [win]
+    - if not exist %LIBRARY_LIB%\\libssh2.lib         exit 1  [win]
+    - if not exist %LIBRARY_BIN%\\libssh2.dll         exit 1  [win]
+
+about:
+  home: https://www.libssh2.org/
+  license: BSD 3-Clause
+  license_family: BSD
+  license_file: COPYING
+  summary: the SSH library
+  description: |
+    libssh2 is a library implementing the SSH2 protocol, available under the revised BSD license.
+  dev_url: https://github.com/libssh2/libssh2
+  doc_url: https://www.libssh2.org/docs.html
+  doc_source_url: https://github.com/libssh2/libssh2/tree/master/docs

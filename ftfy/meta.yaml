@@ -1,0 +1,37 @@
+package:
+  name: ftfy
+  version: 4.4.3
+
+source:
+  fn: ftfy-4.4.3.tar.gz
+  url: https://pypi.python.org/packages/21/5d/9385540977b00df1f3a0c0f07b7e6c15b5e7a3109d7f6ae78a0a764dab22/ftfy-4.4.3.tar.gz
+  md5: 9b5cf81002f0a385526f209bd5e39005
+
+build:
+  entry_points:
+    - ftfy = ftfy.cli:main
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - html5lib
+    - wcwidth
+  run:
+    - python
+    - setuptools
+    - html5lib
+    - wcwidth
+
+test:
+  commands:
+    - ftfy -h
+  imports:
+    - ftfy
+    - ftfy.bad_codecs
+
+about:
+  home: http://github.com/LuminosoInsight/python-ftfy
+  license: MIT
+  license_file: LICENSE.txt
+  summary: fixes some problems with Unicode text after the fact
