@@ -5,11 +5,12 @@ if [ `uname -m` == ppc64le ]; then
 fi
 
 ./configure $B --prefix=$PREFIX --disable-static \
-    --enable-linux-lfs --with-zlib --with-ssl \
+    --enable-linux-lfs --with-ssl \
     --enable-threadsafe --with-pthread=yes \
     --enable-production --enable-cxx \
+    --with-zlib="$PREFIX" \
     --enable-unsupported
-make
+make -j${CPU_COUNT}
 make install
 
 rm -rf $PREFIX/share/hdf5_examples
