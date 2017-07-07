@@ -1,11 +1,11 @@
 package:
   name: astropy
-  version: 1.3.3
+  version: 2.0
 
 source:
-  fn: astropy-1.3.3.tar.gz
-  url: https://pypi.python.org/packages/f2/ad/110f13061ca68f3397216c2716b6687efab4d85e59366d94414c92274554/astropy-1.3.3.tar.gz
-  md5: adeb46f1686417f897fc16dd5d8955ac
+  fn: astropy-2.0.tar.gz
+  url: https://pypi.python.org/packages/fc/f9/1d9004730fac3df5ba6c8909817fb3842f9e6f5e0a333226683fe71b76f7/astropy-2.0.tar.gz
+  md5: 5b8d4191ea210423826d4a254e984e5d
 
 build:
   detect_binary_files_with_prefix: False
@@ -15,7 +15,7 @@ build:
     - fitsdiff = astropy.io.fits.scripts.fitsdiff:main
     - fitsheader = astropy.io.fits.scripts.fitsheader:main
     - fitsinfo = astropy.io.fits.scripts.fitsinfo:main
-    - samp_hub = astropy.vo.samp.hub_script:hub_script
+    - samp_hub = astropy.samp.hub_script:hub_script
     - volint = astropy.io.votable.volint:main
     - wcslint = astropy.wcs.wcslint:main
 
@@ -28,6 +28,7 @@ requirements:
     - python
     - numpy x.x
     - argparse          [py26]
+    - pytest >=2.8
 
 test:
   commands:
