@@ -1,11 +1,11 @@
 package:
   name: service_identity
-  version: 16.0.0
+  version: 17.0.0
 
 source:
-  fn: service_identity-16.0.0.tar.gz
-  url: https://pypi.python.org/packages/source/s/service_identity/service_identity-16.0.0.tar.gz
-  md5: d52392597b9c44a740abf322bfdb21e6
+  fn: service_identity-17.0.0.tar.gz
+  url: https://pypi.python.org/packages/de/2a/cab6e30be82c8fcd2339ef618036720eda954cf05daef514e386661c9221/service_identity-17.0.0.tar.gz
+  md5: f509cb41ca2f8420bd8496291136d6cc
 
 requirements:
   build:
