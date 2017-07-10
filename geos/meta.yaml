@@ -1,11 +1,11 @@
 package:
   name: geos
-  version: 3.5.0
+  version: 3.5.1
 
 source:
-  fn: geos-3.5.0.tar.bz2
-  url: http://download.osgeo.org/geos/geos-3.5.0.tar.bz2
-  md5: 136842690be7f504fba46b3c539438dd
+  fn: geos-{{ version }}.tar.bz2
+  url: http://download.osgeo.org/geos/geos-{{ version }}.tar.bz2
+  md5: 2e3e1ccbd42fee9ec427106b65e43dc0
 
 build:
   features:
