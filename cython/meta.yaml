@@ -1,11 +1,11 @@
 package:
   name: cython
-  version: 0.25.2
+  version: 0.26
 
 source:
-  fn: Cython-0.25.2.tar.gz
-  url: https://pypi.python.org/packages/b7/67/7e2a817f9e9c773ee3995c1e15204f5d01c8da71882016cac10342ef031b/Cython-0.25.2.tar.gz
-  md5: 642c81285e1bb833b14ab3f439964086
+  fn: Cython-0.26.tar.gz
+  url: https://pypi.python.org/packages/10/d5/753d2cb5073a9f4329d1ffed1de30b0458821780af8fdd8ba1ad5adb6f62/Cython-0.26.tar.gz
+  md5: 2fa7ea73eb9944fdad3989adbfd22088
 
 build:
   detect_binary_files_with_prefix: False

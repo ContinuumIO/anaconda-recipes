@@ -1,11 +1,11 @@
 package:
   name: numpy
-  version: 1.13.0
+  version: 1.13.1
 
 source:
-  fn: numpy-1.13.0.zip
-  url: https://pypi.python.org/packages/05/84/0feb999c05f252af50a5fbc463268044feda92cdaad8cb0d0a6073d76057/numpy-1.13.0.zip
-  md5: fd044f0b8079abeaf5e6d2e93b2c1d03
+  fn: numpy-1.13.1.zip
+  url: https://pypi.python.org/packages/c0/3a/40967d9f5675fbb097ffec170f59c2ba19fc96373e73ad47c2cae9a30aed/numpy-1.13.1.zip
+  md5: 2c3c0f4edf720c3a7b525dacc825b9ae
   patches:
     - dlopenflags.patch         [unix and not nomkl]
     - osx-dist.patch            [osx]

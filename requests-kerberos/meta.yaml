@@ -1,23 +1,20 @@
 package:
   name: requests-kerberos
-  version: 0.8.0
+  version: 0.11.0
 
 source:
-  fn: requests-kerberos-0.8.0.tar.gz
-  url: https://pypi.python.org/packages/source/r/requests-kerberos/requests-kerberos-0.8.0.tar.gz
-  md5: ff763a1cd59d95500802213f0eeba70b
+  fn: requests-kerberos-0.11.0.tar.gz
+  url: https://pypi.io/packages/source/r/requests-kerberos/requests-kerberos-0.11.0.tar.gz
+  md5: 8882186877e474c568e4f85aacbdbdca
 
 requirements:
   build:
     - python
     - setuptools
-    - requests >=1.1.0
-    - kerberos-sspi >=0.2         [win]
-    - pykerberos >=1.1.8,<2.0.0   [not win]
   run:
     - python
     - requests >=1.1.0
-    - kerberos-sspi >=0.2         [win]
+    - winkerberos >=0.5           [win]
     - pykerberos >=1.1.8,<2.0.0   [not win]
 
 test:

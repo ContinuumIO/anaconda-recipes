@@ -39,7 +39,8 @@ source:
 
 build:
   number: 2   [osx]
-  number: 4   [win or linux]
+  number: 4   [linux]
+  number: 5   [win]
   detect_binary_files_with_prefix: true   [unix]
   features:
     - vc9     [win and py27]

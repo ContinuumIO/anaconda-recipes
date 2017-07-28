@@ -1,11 +1,11 @@
 package:
   name: spyder
-  version: 3.1.4
+  version: 3.2.0
 
 source:
-  fn: spyder-3.1.4.tar.gz
-  url: https://pypi.python.org/packages/26/8d/110cdf96a6ed0d1bc38e9dc15fa7263a5b601f27951bb09cc080f11024f1/spyder-3.1.4.tar.gz
-  md5: 3244c9ef044ddd23f7d3a6e338df1a75
+  fn: spyder-3.2.0.tar.gz
+  url: https://pypi.io/packages/source/s/spyder/spyder-3.2.0.tar.gz
+  sha256: 6bce198134122f494d657a84d42fe36c92a833a94eee706bea883f3213008ffb
 
 build:
   number: 0
@@ -24,13 +24,13 @@ requirements:
     - qtawesome >=0.4.1
     - rope
     - pyflakes
-    - jedi >=0.8
+    - jedi >=0.9
     - qtconsole >=4.2
     - pickleshare
     - nbconvert
     - pygments >=2.0
     - sphinx
-    - pep8
+    - pycodestyle
     - psutil
     - pylint
     - pyzmq

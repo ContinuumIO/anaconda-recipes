@@ -17,7 +17,7 @@ requirements:
     - m2-git          [win]
     - m2-filesystem   [win]
     - jom             [win]
-    - git             [not win]
+    - git             [not win and not ppc64le]
     - msinttypes      [win and py<34]
     - cmake
     - mako

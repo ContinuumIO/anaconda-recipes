@@ -43,6 +43,19 @@ if [ "$(uname)" == "Darwin" ]; then
 fi
 
 if [ "$(uname)" == "Linux" ]; then
+    if [ $ARCH == 32]; then
+        ADDRESS_MODEL="32"
+        ARCHITECTURE="x86"
+    fi
+    if [ $ARCH == 64 ]; then
+        ADDRESS_MODEL="64"
+        ARCHITECTURE="x86"
+    fi
+    if [ $ARCH == 'ppc64le' ]; then
+        ADDRESS_MODEL="64"
+        ARCHITECTURE="power"
+    fi
+
     ./bootstrap.sh \
         --prefix="${PREFIX}" \
         --with-python="${PYTHON}" \
@@ -52,8 +65,8 @@ if [ "$(uname)" == "Linux" ]; then
 
     ./b2 -q \
         variant=release \
-        address-model="${ARCH}" \
-        architecture=x86 \
+        address-model="${ADDRESS_MODEL}" \
+        architecture="${ARCHITECTURE}" \
         debug-symbols=off \
         threading=multi \
         runtime-link=shared \

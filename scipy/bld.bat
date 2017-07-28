@@ -36,5 +36,5 @@ set "MKLROOT=%LIBRARY_PREFIX%"
 %PYTHON% -c "import cio_bt.check_msvs"
 if errorlevel 1 exit 1
 
-%PYTHON% setup.py install
+%PYTHON% setup.py install --old-and-unmanageable
 if errorlevel 1 exit 1

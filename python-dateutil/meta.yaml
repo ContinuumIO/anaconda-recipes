@@ -1,11 +1,11 @@
 package:
   name: python-dateutil
-  version: 2.6.0
+  version: 2.6.1
 
 source:
-  fn: python-dateutil-2.6.0.tar.gz
-  url: https://pypi.python.org/packages/51/fc/39a3fbde6864942e8bb24c93663734b74e281b984d1b8c4f95d64b0c21f6/python-dateutil-2.6.0.tar.gz
-  md5: 6e38f91e8c94c15a79ce22768dfeca87
+  fn: python-dateutil-2.6.1.tar.gz
+  url: https://pypi.python.org/packages/54/bb/f1db86504f7a49e1d9b9301531181b00a1c7325dc85a29160ee3eaa73a54/python-dateutil-2.6.1.tar.gz
+  md5: db38f6b4511cefd76014745bb0cc45a4
 
 requirements:
   build:
@@ -23,7 +23,8 @@ test:
 
 about:
   home: https://dateutil.readthedocs.org/
-  license: BSD
+  license: Simplified BSD
+  license_family: BSD
   license_file: LICENSE
   summary: extensions to the standard Python datetime module
   description: |

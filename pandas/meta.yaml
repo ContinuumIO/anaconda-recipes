@@ -1,10 +1,10 @@
 package:
   name: pandas
-  version: 0.20.2
+  version: 0.20.3
 
 source:
-  git_url: https://github.com/pydata/pandas.git
-  git_tag: v0.20.2
+  git_url: https://github.com/pandas-dev/pandas.git
+  git_tag: v0.20.3
 
 build:
   detect_binary_files_with_prefix: False
@@ -13,21 +13,33 @@ requirements:
   build:
     - python
     - setuptools
-    - numpy x.x
+    - git
     - cython >=0.25
+    - numpy 1.12.*
     - python-dateutil
     - pytz
   run:
     - python
-    - numpy x.x
+    - numpy >=1.12
     - python-dateutil
     - pytz
 
 test:
+# We cannot test outside of SP_DIR so using source_files is pointless
+#  source_files:
+#    - pandas/tests
+#    - pandas/conftest.py
+#    - test_fast.bat       [win]
+#    - test_fast.sh        [unix]
   requires:
     - nose >=1.0.0
+#    - pytest-xdist
   imports:
     - pandas
+# These tests take too long on our build machines
+#  commands:
+#    - pytest --skip-slow --skip-network -m "not single" -n %CPU_COUNT% %SP_DIR%\pandas  [win]
+#    - pytest --skip-slow --skip-network -m "not single" -n $CPU_COUNT $SP_DIR/pandas    [unix]
 
 about:
   home: http://pandas.pydata.org/

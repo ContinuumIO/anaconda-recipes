@@ -24,6 +24,8 @@ requirements:
     - python
     - setuptools
     - numpy x.x
+    - cython >=0.21
+    - jinja2 >=2.7
   run:
     - python
     - numpy x.x
@@ -46,6 +48,7 @@ test:
 about:
   home: http://www.astropy.org/
   license: BSD
+  license_file: LICENSE.rst
   summary: Community-developed Python Library for Astronomy
   description: |
     Astropy is a community-driven package intended to contain much of the core functionality and

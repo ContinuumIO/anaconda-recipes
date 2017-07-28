@@ -1,11 +1,11 @@
 package:
   name: gensim
-  version: 2.2.0
+  version: 2.3.0
 
 source:
-  fn: gensim-2.2.0.tar.gz
-  url: https://pypi.python.org/packages/fe/66/81322796cb00b5ce9ad7e12a89f57879125c5c64539dbb84c413a3c518ea/gensim-2.2.0.tar.gz
-  md5: 5655142e7df7f33fe1f484df82c35d64
+  fn: gensim-2.3.0.tar.gz
+  url: https://pypi.python.org/packages/bc/ed/fbbb2cc3f37a39cc4ff8e5f667374478fb852b384840aa7feb9608144290/gensim-2.3.0.tar.gz
+  md5: bbe21a252916f154253ae6be625ae802
 
 build:
   detect_binary_files_with_prefix: False

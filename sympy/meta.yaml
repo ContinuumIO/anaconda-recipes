@@ -1,11 +1,11 @@
 package:
   name: sympy
-  version: "1.0"
+  version: 1.1.1
 
 source:
-  fn: sympy-1.0.tar.gz
-  url: https://pypi.python.org/packages/source/s/sympy/sympy-1.0.tar.gz
-  md5: 43e797de799f00f9e8fd2307dba9fab1
+  fn: sympy-1.1.1.tar.gz
+  url: https://pypi.python.org/packages/91/26/4e477dbd1f9260eb743d9f221af3044648a8fb2fcf3f2f23daee4dc831a4/sympy-1.1.1.tar.gz
+  md5: c410a9c2346878716d16ec873d72e72a
 
 requirements:
   build:

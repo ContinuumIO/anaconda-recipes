@@ -14,7 +14,7 @@ requirements:
   build:
     - m2-git         [win]
     - m2-filesystem  [win]
-    - git            [not win]
+    - git            [not win and not ppc64le]
     - python
     - cython
     - numpy

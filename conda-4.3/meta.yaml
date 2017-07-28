@@ -1,10 +1,10 @@
 package:
   name: conda
-  version: 4.3.22
+  version: 4.3.23
 
 source:
   git_url: https://github.com/conda/conda.git
-  git_tag: 4.3.22
+  git_tag: 4.3.23
 
 build:
   # These are present when the new environment is created

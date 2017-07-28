@@ -1,4 +1,4 @@
-@echo on
+@echo off
 setlocal enabledelayedexpansion
 :: This file should be run after installing the qt package into any
 :: environment.  It makes it so Qt knows where to look for includes and
@@ -7,6 +7,8 @@ setlocal enabledelayedexpansion
 :: the correct path for whatever Conda env you install Qt to.
 pushd "%~dp0\..\"
 set "FORWARD_SLASHED_PREFIX=%CD:\=/%"
+for /f "delims=" %%A in ('chcp') do set _TMP_CHCP_RESULT=%%A
+for %%A in (%_TMP_CHCP_RESULT%) do set _TMP_OLD_CHCP=%%A
 chcp 65001 > NUL
 if not exist "%CD%\Library" mkdir "%CD%\Library"
 if not exist "%CD%\Library\bin" mkdir "%CD%\Library\bin"
@@ -19,5 +21,5 @@ echo Libraries = %FORWARD_SLASHED_PREFIX%/Library/lib>> "%CD%\Library\bin\qt.con
 echo Headers = %FORWARD_SLASHED_PREFIX%/Library/include/qt>> "%CD%\Library\bin\qt.conf"
 :: Some things go looking in the prefix root (pyqt, for example)
 copy "%CD%\Library\bin\qt.conf" "%CD%\qt.conf"
+chcp %_TMP_OLD_CHCP%
 @echo on
-

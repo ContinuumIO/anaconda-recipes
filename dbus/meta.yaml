@@ -1,10 +1,10 @@
 package:
   name: dbus
-  version: 1.10.10
+  version: 1.10.20
 
 source:
-  url: http://dbus.freedesktop.org/releases/dbus/dbus-1.10.10.tar.gz
-  md5: 495676d240eb982921b3ad1343526849
+  url: http://dbus.freedesktop.org/releases/dbus/dbus-1.10.20.tar.gz
+  md5: 94c991e763d4f9f13690416b2dcd9411
 
 build:
   number: 0

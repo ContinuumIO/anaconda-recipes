@@ -1,10 +1,12 @@
+{% set version="3.0.8" %}
+
 package:
   name: conda-build
-  version: 2.1.17
+  version: {{ version }}
 
 source:
   git_url: https://github.com/conda/conda-build.git
-  git_tag: 2.1.17
+  git_tag: {{ version }}
 
 build:
   entry_points:
@@ -15,27 +17,29 @@ build:
     - conda-inspect = conda_build.cli.main_inspect:main
     - conda-metapackage = conda_build.cli.main_metapackage:main
     - conda-render = conda_build.cli.main_render:main
-    - conda-sign = conda_build.cli.main_sign:main
     - conda-skeleton = conda_build.cli.main_skeleton:main
 
 requirements:
   build:
     - python
     - setuptools
+    - git           [not win]
+    - m2-git        [win]
+    - m2-filesystem [win]
   run:
     - python
     - beautifulsoup4
     - chardet
-    - conda >=4.1,<4.4
+    - conda >=4.3
     - contextlib2   [py<34]
     - conda-verify
     - enum34        [py<34]
     - filelock
     - futures       [py<30]
+    - glob2
     - jinja2
     - patchelf      [linux]
     - pkginfo
-    - pycrypto
     - pyyaml
 
 test:
@@ -47,7 +51,6 @@ test:
     - conda-inspect -h
     - conda-metapackage -h
     - conda-render -h
-    - conda-sign -h
     - conda-skeleton -h
   imports:
     - conda_build

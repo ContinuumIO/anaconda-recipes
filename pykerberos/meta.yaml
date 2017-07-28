@@ -1,14 +1,14 @@
 package:
   name: pykerberos
-  version: 1.1.10
+  version: 1.1.14
 
 source:
-  fn: pykerberos-1.1.10.tar.gz
-  url: https://pypi.python.org/packages/source/p/pykerberos/pykerberos-1.1.10.tar.gz
-  md5: 9f18109b73e3f42eba0b70c18073883f
+  fn: pykerberos-1.1.14.tar.gz
+  url: https://pypi.org/packages/source/p/pykerberos/pykerberos-1.1.14.tar.gz
+  md5: 81dcebd0135a1cf7c9d1b3def616535f
 
 build:
-  number: 1           [osx]
+  number: 0
   detect_binary_files_with_prefix: False
 
 requirements:

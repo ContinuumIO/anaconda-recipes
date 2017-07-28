@@ -330,6 +330,7 @@
     "linux-64:py27", 
     "linux-64:py35"
   ], 
+  "glob2": "all", 
   "glue-core": "all", 
   "glue-vispy-viewers": "all", 
   "glueviz": "all", 
@@ -420,10 +421,6 @@
   "jupyter_console": "all", 
   "jupyter_core": "all", 
   "kealib": "all", 
-  "kerberos-sspi": [
-    "win-64:py27", 
-    "win-64:py35"
-  ], 
   "keyring": "all", 
   "kiwisolver": [
     "linux-64:py27", 
@@ -1067,6 +1064,10 @@
     "win-64:py35"
   ], 
   "win_unicode_console": [
+    "win-64:py27", 
+    "win-64:py35"
+  ], 
+  "winkerberos": [
     "win-64:py27", 
     "win-64:py35"
   ], 

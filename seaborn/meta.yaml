@@ -1,21 +1,27 @@
 package:
   name: seaborn
-  version: 0.7.1
+  version: 0.8
 
 source:
-  fn: seaborn-0.7.1.tar.gz
-  url: https://pypi.python.org/packages/ed/dc/f168ff9db34f8c03c568987b4f81603cd3df40dd8043722d526026381a91/seaborn-0.7.1.tar.gz
-  md5: ef07e29e0f8a1f2726abe506c1a36e93
+  fn: seaborn-0.8.tar.gz
+  url: https://pypi.python.org/packages/d6/13/dd3da2cd6e03e522bbd389735d3adcb47d7a4470a968ebc3348fbac8eddd/seaborn-0.8.tar.gz
+  md5: f3fc1e2687705f6dfe9b98c441dbf619
+
+build:
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
     - python
+    - setuptools
   run:
     - python
     - numpy
     - matplotlib
     - scipy
     - pandas
+    - statsmodels
 
 test:
   imports:

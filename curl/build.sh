@@ -15,7 +15,9 @@ fi
     --prefix=${PREFIX} \
     --with-ca-bundle=${PREFIX}/ssl/cacert.pem \
     --with-ssl=${PREFIX} \
-    --with-zlib=${PREFIX}
+    --with-zlib=${PREFIX} \
+    --with-gssapi=${PREFIX} \
+    --with-libssh2=${PREFIX}
 
 make
 make install

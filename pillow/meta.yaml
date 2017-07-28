@@ -1,11 +1,11 @@
 package:
   name: pillow
-  version: 4.2.0
+  version: 4.2.1
 
 source:
-  fn: Pillow-4.2.0.tar.gz
-  url: https://pypi.python.org/packages/cb/00/eaa6243b4ad43b1a54754c728b4a00efe3b1d49c7c1fa3d4955863609fcd/Pillow-4.2.0.tar.gz
-  md5: 4645d99b8fae72bced38d77ca6324fd9
+  fn: Pillow-4.2.1.tar.gz
+  url: https://pypi.python.org/packages/55/aa/f7f983fb72710a9daa4b3374b7c160091d3f94f5c09221f9336ade9027f3/Pillow-4.2.1.tar.gz
+  md5: 11e5e2046cf41586716a6042d89abeeb
   patches:
     - freetype_win_link.patch   [win]
 
