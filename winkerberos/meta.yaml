@@ -1,0 +1,30 @@
+package:
+  name: winkerberos
+  version: "0.6.0"
+
+source:
+  fn: winkerberos-0.6.0.zip
+  url: https://pypi.org/packages/source/w/winkerberos/winkerberos-0.6.0.zip
+  md5: 44a76df51f9a80543ab26b255ff8578b
+
+build:
+  number: 0
+  script: python setup.py install --old-and-unmanageable
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+
+test:
+  imports:
+    - winkerberos
+
+about:
+  home: https://github.com/mongodb-labs/winkerberos
+  license: Apache-2.0
+  summary: High level interface to SSPI for Kerberos client auth
+  license_family: Apache

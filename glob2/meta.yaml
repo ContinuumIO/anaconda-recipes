@@ -1,0 +1,33 @@
+{% set name = "glob2" %}
+{% set version = "0.5" %}
+{% set sha256 = "8f944b87ac4deaf39b0dce419665b40a3acb66a9ad3b07945e109246bb66fe9f" %}
+
+package:
+  name: glob2
+  version: "0.5"
+
+source:
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - glob2
+
+about:
+  home: http://github.com/miracle2k/python-glob2/
+  license: BSD License
+  summary: 'Enhanced glob that can capture patterns and supports recursive wildcards'
+  license_family: BSD
