@@ -1,11 +1,11 @@
 package:
   name: astropy
-  version: 2.0
+  version: 2.0.1
 
 source:
-  fn: astropy-2.0.tar.gz
-  url: https://pypi.python.org/packages/fc/f9/1d9004730fac3df5ba6c8909817fb3842f9e6f5e0a333226683fe71b76f7/astropy-2.0.tar.gz
-  md5: 5b8d4191ea210423826d4a254e984e5d
+  fn: astropy-2.0.1.tar.gz
+  url: https://pypi.python.org/packages/ba/ff/56cec98f5bfc6cbfa4cd235b151bc6810b68d82de260a4b5966793c18b00/astropy-2.0.1.tar.gz
+  md5: f7bc6ff800575705d8ad0214a89ba489
 
 build:
   detect_binary_files_with_prefix: False
