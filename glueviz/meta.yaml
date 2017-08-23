@@ -4,12 +4,12 @@
 
 package:
   name: glueviz
-  version: 0.10.4
+  version: 0.11.0
 
 source:
-  fn: glueviz-0.10.4.tar.gz
-  url: https://pypi.io/packages/source/g/glueviz/glueviz-0.10.4.tar.gz
-  md5: 94f1774e3c379403966ca217bbe36d7a
+  fn: glueviz-0.11.0.tar.gz
+  url: https://pypi.io/packages/source/g/glueviz/glueviz-0.11.0.tar.gz
+  md5: 03954cd633bd7be25472d529034cb8fb
 
 requirements:
   build:
@@ -17,8 +17,8 @@ requirements:
     - setuptools
   run:
     - python
-    - glue-core >=0.10.4             [not win]
-    - glue-vispy-viewers >=0.7.2
+    - glue-core >=0.11             [not win]
+    - glue-vispy-viewers >=0.8
 
 app:
   entry: glue
