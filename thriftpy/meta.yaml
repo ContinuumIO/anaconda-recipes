@@ -1,0 +1,42 @@
+package:
+  name: thriftpy
+  version: 0.3.9
+
+source:
+  fn: thriftpy-0.3.9.tar.gz
+  url: https://pypi.python.org/packages/f4/19/cca118cf7d2087310dbc8bd70dc7df0c1320f2652873a93d06d7ba356d4a/thriftpy-0.3.9.tar.gz
+  md5: 5d349bf1b7d1649ea3dd52d12ba7c4e2
+
+build:
+  detect_binary_files_with_prefix: False
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - ply >=3.4,<4.0
+    - cython
+  run:
+    - python
+    - ply >=3.4,<4.0
+
+test:
+  imports:
+    - thriftpy
+    - thriftpy.contrib
+    - thriftpy.contrib.tracking
+    - thriftpy.parser
+    - thriftpy.protocol
+    - thriftpy.transport
+    - thriftpy.transport.buffered
+    - thriftpy.transport.framed
+    - thriftpy.transport.memory
+  requires:
+    - tornado >=4.0,<5.0
+    - toro >=0.6
+
+about:
+  home: https://thriftpy.readthedocs.org/
+  license: MIT License
+  license_family: MIT
+  summary: pure python implementation of Apache Thrift.

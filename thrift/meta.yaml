@@ -1,0 +1,33 @@
+package:
+  name: thrift
+  version: 0.10.0
+
+source:
+  fn: thrift-0.10.0.zip
+  url: https://pypi.python.org/packages/a3/ea/84a41e03f1ab14fb314c8bcf1c451090efa14c5cdfb9797d1079f502b54e/thrift-0.10.0.zip
+  md5: 76bb768a210257dd203923110042e560
+
+build:
+  detect_binary_files_with_prefix: False
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - six
+  run:
+    - python
+    - six
+
+test:
+  imports:
+    - thrift
+    - thrift.protocol
+    - thrift.server
+    - thrift.transport
+
+about:
+  home: http://thrift.apache.org
+  license: Apache License 2.0
+  license_family: Apache
+  summary: Python bindings for the Apache Thrift RPC system
