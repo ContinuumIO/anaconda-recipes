@@ -1,7 +1,7 @@
 import sklearn
 
 print("sklearn.__version__: %s" % sklearn.__version__)
-assert sklearn.__version__ == '0.18.2'
+assert sklearn.__version__ == '0.19.0'
 
 import sklearn.__check_build._check_build
 import sklearn._isotonic
@@ -24,6 +24,7 @@ import sklearn.metrics.pairwise_fast
 import sklearn.neighbors.ball_tree
 import sklearn.neighbors.dist_metrics
 import sklearn.neighbors.kd_tree
+import sklearn.neighbors.quad_tree
 import sklearn.neighbors.typedefs
 import sklearn.svm.liblinear
 import sklearn.svm.libsvm
@@ -41,8 +42,6 @@ import sklearn.utils.lgamma
 import sklearn.utils.murmurhash
 import sklearn.utils.seq_dataset
 import sklearn.utils.sparsefuncs_fast
-import sklearn.utils.sparsetools._graph_tools
-import sklearn.utils.sparsetools._traversal
 import sklearn.utils.weight_vector
 
 from cio_bt.mkl_link import test_modules

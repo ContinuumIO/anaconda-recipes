@@ -26,7 +26,7 @@ diff --git Modules/main.c Modules/main.c
 index e4c955e..dea19f2 100644
 --- Modules/main.c
 +++ Modules/main.c
-@@ -502,7 +502,8 @@ Py_Main(int argc, wchar_t **argv)
+@@ -512,7 +512,8 @@ Py_Main(int argc, wchar_t **argv)
          return usage(0, argv[0]);
  
      if (version) {

@@ -1,11 +1,11 @@
 package:
   name: qtconsole
-  version: 4.3.0
+  version: 4.3.1
 
 source:
-  fn: qtconsole-4.3.0.tar.gz
-  url: https://pypi.python.org/packages/cc/97/41fb735c918bfb3d9bac3fa8347addc2ffc82fd06084940a1821cf333ac8/qtconsole-4.3.0.tar.gz
-  md5: e8fb599d209e3e55aa593c5b25d898ac
+  fn: qtconsole-4.3.1.tar.gz
+  url: https://pypi.python.org/packages/68/48/ed0e8989b7376704ecb8faa782384de98cc108de522ad8d21f449484de9a/qtconsole-4.3.1.tar.gz
+  md5: 42df4f81f0b78706d87f759e5c8d6b39
 
 build:
   entry_points:

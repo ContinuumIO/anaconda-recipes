@@ -1,11 +1,11 @@
 package:
   name: pathlib2
-  version: 2.2.1
+  version: 2.3.0
 
 source:
-  fn: pathlib2-2.2.1.tar.gz
-  url: https://pypi.python.org/packages/ab/d8/ac7489d50146f29d0a14f65545698f4545d8a6b739b24b05859942048b56/pathlib2-2.2.1.tar.gz
-  md5: 6c75bfde898b6c88627621a48ee8de14
+  fn: pathlib2-2.3.0.tar.gz
+  url: https://pypi.python.org/packages/a1/14/df0deb867c2733f7d857523c10942b3d6612a1b222502fdffa9439943dfb/pathlib2-2.3.0.tar.gz
+  md5: 89c90409d11fd5947966b6a30a47d18c
 
 requirements:
   build:

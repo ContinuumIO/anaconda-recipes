@@ -1,11 +1,11 @@
 package:
   name: xlwings
-  version: 0.10.4
+  version: 0.11.4
 
 source:
-  fn: xlwings-0.10.4.tar.gz
-  url: https://pypi.python.org/packages/13/c8/c9a3b0108793cc6afe4505a6c50326e9b3989d50502079e44f48e7303ebf/xlwings-0.10.4.tar.gz
-  md5: 5c8e18b4a09e99cfffb27e9f70633969
+  fn: xlwings-0.11.4.tar.gz
+  url: https://pypi.python.org/packages/ab/48/28bc7a2ce803edb5dc4b265a03f10e9fa4634ac3550623d0d6d3a3929cf1/xlwings-0.11.4.tar.gz
+  md5: 40ba4a716b909c6d00f877488400c1ed
 
 build:
   entry_points:
@@ -14,6 +14,7 @@ build:
 requirements:
   build:
     - python
+    - setuptools
   run:
     - python
     - pytz

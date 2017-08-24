@@ -1,13 +1,10 @@
 package:
   name: odo
-  version: 0.5.0
+  version: 0.5.1
 
 source:
   git_url: https://github.com/blaze/odo.git
-  git_tag: 0.5.0
-
-build:
-  number: 1
+  git_tag: 0.5.1
 
 requirements:
   build:
@@ -19,6 +16,7 @@ requirements:
     - toolz
     - multipledispatch
     - networkx
+    - dask
   run:
     - python
     - datashape >=0.5
@@ -27,6 +25,7 @@ requirements:
     - toolz >=0.7.3
     - multipledispatch >=0.4.7
     - networkx
+    - dask
 
 test:
   imports:

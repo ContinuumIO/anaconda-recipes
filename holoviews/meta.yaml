@@ -1,10 +1,10 @@
 package:
   name: holoviews
-  version: 1.8.1
+  version: 1.8.2
 
 source:
   git_url: https://github.com/ioam/holoviews.git
-  git_tag: v1.8.1
+  git_tag: v1.8.2
 
 build:
   entry_points:
@@ -30,7 +30,7 @@ about:
   home: http://holoviews.org/
   license: BSD
   license_file: LICENSE.txt
-  summary: Stop plotting your data - annotate your data and let it visualize itself.
+  summary: stop plotting your data - annotate your data and let it visualize itself
   description: |
     HoloViews is a Python library that makes analyzing and visualizing
     scientific or engineering data much simpler, more intuitive, and more

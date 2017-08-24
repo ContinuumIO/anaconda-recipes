@@ -1,10 +1,11 @@
 package:
   name: pyhive
-  version: 0.2.1
+  version: 0.4.0
 
 source:
-  git_url: https://github.com/dropbox/PyHive.git
-  git_tag: v0.2.1
+  fn: PyHive-0.4.0.tar.gz
+  url: https://pypi.python.org/packages/5f/84/ce9e22679cbe6e40e2b9a341ec69cc188f08abf441216f8993fa6b048903/PyHive-0.4.0.tar.gz
+  md5: def868d3c04e6f1b84bf6f6d4be3ea67
 
 requirements:
   build:
@@ -13,6 +14,8 @@ requirements:
   run:
     - python
     - future
+    - thrift >=0.10.0
+    - thrift_sasl >=0.1.0
 
 test:
   imports:
@@ -23,5 +26,8 @@ about:
   home: https://github.com/dropbox/PyHive
   license: Apache License, Version 2.0
   license_family: Apache
-  license_file: LICENSE
-  summary: Python interface to Hive and Presto.
+  summary: Python interface to Hive
+  description: |
+    PyHive is a collection of Python DB-API and SQLAlchemy interfaces for Presto and Hive.
+  doc_url: https://pypi.python.org/pypi/PyHive
+  doc_source_url: https://github.com/dropbox/PyHive/blob/master/README.rst

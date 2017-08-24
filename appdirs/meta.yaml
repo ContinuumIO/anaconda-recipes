@@ -1,11 +1,11 @@
 package:
   name: appdirs
-  version: 1.4.0
+  version: 1.4.3
 
 source:
-  fn: appdirs-1.4.0.tar.gz
-  url: https://pypi.io/packages/source/a/appdirs/appdirs-1.4.0.tar.gz
-  md5: 1d17b4c9694ab84794e228f28dc3275b
+  fn: appdirs-1.4.3.tar.gz
+  url: https://pypi.io/packages/source/a/appdirs/appdirs-1.4.3.tar.gz
+  md5: 44c679904082a2133f5566c8a0d3ab42
 
 requirements:
   build:

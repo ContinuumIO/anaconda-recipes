@@ -1,14 +1,12 @@
 package:
   name: python
-  version: 3.5.3
+  version: 3.5.4
 
 source:
-  fn: Python-3.5.3.tgz
-  url: https://www.python.org/ftp/python/3.5.3/Python-3.5.3.tgz
-  md5: 6192f0e45f02575590760e68c621a488
+  fn: Python-3.5.4.tgz
+  url: https://www.python.org/ftp/python/3.5.4/Python-3.5.4.tgz
+  md5: 2ed4802b7a2a7e40d2e797272bf388ec
   patches:
-    # Remove this patch after 3.5.3
-    - issue27286.patch
     - version.patch
     - site.patch
     - osx64-dist.patch             [osx and x86_64]
@@ -20,11 +18,8 @@ source:
     # https://trac.macports.org/ticket/51736
     - stack_size.patch             [osx]
     - mingw-w64-DMS_WINXX.patch    [win]
-    - importlib_external.patch     [win]
 
 build:
-  number: 1                        [not win]
-  number: 3                        [win]
   detect_binary_files_with_prefix: False
   no_link:
     - bin/python3.5         [unix]

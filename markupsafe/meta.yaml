@@ -1,14 +1,13 @@
 package:
   name: markupsafe
-  version: 0.23
+  version: 1.0
 
 source:
-  fn: MarkupSafe-0.23.tar.gz
-  url: https://pypi.python.org/packages/source/M/MarkupSafe/MarkupSafe-0.23.tar.gz
-  md5: f5ab3deee4c37cd6a922fb81e730da6e
+  fn: MarkupSafe-1.0.tar.gz
+  url: https://pypi.python.org/packages/4d/de/32d741db316d8fdb7680822dd37001ef7a448255de9699ab4bfcbdf4172b/MarkupSafe-1.0.tar.gz
+  md5: 2fcedc9284d50e577b5192e8e3578355
 
 build:
-  number: 2
   detect_binary_files_with_prefix: False
   # Windows has issues updating stuff if conda is using files itself
   no_link:

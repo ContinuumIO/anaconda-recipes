@@ -1,10 +1,10 @@
 package:
   name: pytables
-  version: 3.3.0
+  version: 3.4.2
 
 source:
   git_url: https://github.com/PyTables/PyTables.git
-  git_tag: v3.3.0
+  git_tag: v3.4.2
 
 build:
   number: 0
@@ -27,6 +27,7 @@ requirements:
     - numexpr
     - hdf5 1.8.17
     - zlib 1.2.*               [win]
+    - msinttypes               [win and py2k]
   run:
     - python
     - six
@@ -39,6 +40,7 @@ requirements:
 test:
   requires:
     - setuptools
+    - mock
   commands:
     - pt2to3 -h
     - ptdump -h

@@ -1,11 +1,11 @@
 package:
   name: boto3
-  version: 1.4.4
+  version: 1.4.5
 
 source:
-  fn: boto3-1.4.4.tar.gz
-  url: https://pypi.python.org/packages/58/61/50d2e459049c5dbc963473a71fae928ac0e58ffe3fe7afd24c817ee210b9/boto3-1.4.4.tar.gz
-  md5: 3783681b144552724abb4c35152e8975
+  fn: boto3-1.4.5.tar.gz
+  url: https://pypi.python.org/packages/c7/ba/37e3657129590191ab2a8fade26355d56b8811bbac8bf446ef6d6bc6f0c8/boto3-1.4.5.tar.gz
+  md5: c066c59b424a8810c244d32a16d91068
 
 requirements:
   build:
@@ -26,7 +26,8 @@ test:
 
 about:
   home: http://aws.amazon.com/sdk-for-python/
-  license: Apache
+  license: Apache 2.0
+  license_family: Apache
   license_file: LICENSE
   summary: Amazon Web Services SDK for Python
   description: |

@@ -40,7 +40,8 @@ test:
 
 about:
   home: https://cryptography.io
-  license: Apache
+  license: Apache and BSD
+  license_family: Apache
   license_file: LICENSE
   summary: Provides cryptographic recipes and primitives to Python developers
   description: |

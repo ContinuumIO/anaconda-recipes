@@ -1,15 +1,15 @@
 package:
   name: tqdm
-  version: 4.14.0
+  version: 4.15.0
 
 source:
-  fn: tqdm-4.14.0.tar.gz
-  url: https://pypi.python.org/packages/67/7c/95e5425871bf314e484aea5f8ec65b49ab006944309b496cd53c47646155/tqdm-4.14.0.tar.gz
-  md5: 132f85f0f2ffad4226a2156b9b100653
+  fn: tqdm-4.15.0.tar.gz
+  url: https://pypi.python.org/packages/01/f7/2058bd94a903f445e8ff19c0af64b9456187acab41090ff2da21c7c7e193/tqdm-4.15.0.tar.gz
+  md5: 78da94992ee52742da2cfd9e0545cc5c
 
 build:
   entry_points:
-    - tqdm=tqdm._main:main
+    - tqdm = tqdm._main:main
   script: python setup.py install
 
 requirements:

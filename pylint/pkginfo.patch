@@ -1,0 +1,23 @@
+diff --git pylint/__pkginfo__.py pylint/__pkginfo__.py
+index 099da4b..a480e9b 100644
+--- pylint/__pkginfo__.py
++++ pylint/__pkginfo__.py
+@@ -13,9 +13,6 @@ from __future__ import absolute_import
+ from os.path import join
+ from sys import version_info as py_version
+ 
+-from pkg_resources import parse_version
+-from setuptools import __version__ as setuptools_version
+-
+ modname = distname = 'pylint'
+ 
+ numversion = (1, 7, 2)
+@@ -40,7 +37,7 @@ def has_environment_marker_range_operators_support():
+     The first known release to support environment marker with range operators
+     it is 17.1, see: https://setuptools.readthedocs.io/en/latest/history.html#id113
+     """
+-    return parse_version(setuptools_version) >= parse_version('17.1')
++    return False
+ 
+ 
+ if has_environment_marker_range_operators_support():

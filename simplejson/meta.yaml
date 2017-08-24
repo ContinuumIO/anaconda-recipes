@@ -1,11 +1,11 @@
 package:
   name: simplejson
-  version: 3.10.0
+  version: 3.11.1
 
 source:
-  fn: simplejson-3.10.0.tar.gz
-  url: https://pypi.python.org/packages/40/ad/52c1f3a562df3b210e8f165e1aa243a178c454ead65476a39fa3ce1847b6/simplejson-3.10.0.tar.gz
-  md5: 426a9631d22851a7a970b1a677368b15
+  fn: simplejson-3.11.1.tar.gz
+  url: https://pypi.io/packages/source/s/simplejson/simplejson-3.11.1.tar.gz
+  md5: 6e2f1bd5fb0a926facf5d89d217a7183
 
 build:
   detect_binary_files_with_prefix: False
@@ -20,6 +20,7 @@ test:
   imports:
     - simplejson
     - simplejson._speedups
+    - simplejson.tests
 
 about:
   home: https://github.com/simplejson/simplejson

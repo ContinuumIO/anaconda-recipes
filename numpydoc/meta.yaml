@@ -1,20 +1,22 @@
 package:
   name: numpydoc
-  version: 0.6.0
+  version: 0.7.0
 
 source:
-  fn: numpydoc-0.6.0.tar.gz
-  url: https://pypi.python.org/packages/9a/b0/f84d0d2521686e93c7ee86fdd79142250d1ea965283ef8b31733f8a2d5f7/numpydoc-0.6.0.tar.gz
-  md5: 5f1763c44e613850d56ba1b1cf1cb146
+  fn: numpydoc-0.7.0.tar.gz
+  url: https://pypi.python.org/packages/21/94/0e087bd669bb69da3b0996acfee97cee9f7d91c825991ad76eb863dc020d/numpydoc-0.7.0.tar.gz
+  md5: 727b7c87d5a8e4e7576af475c20b9c55
 
 requirements:
   build:
     - python
     - setuptools
     - sphinx
+    - jinja2 >=2.3
   run:
     - python
     - sphinx
+    - jinja2 >=2.3
 
 test:
   imports:

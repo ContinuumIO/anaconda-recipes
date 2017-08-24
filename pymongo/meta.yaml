@@ -1,11 +1,11 @@
 package:
   name: pymongo
-  version: 3.3.0
+  version: 3.4.0
 
 source:
-  fn: pymongo-3.3.0.tar.gz
-  url: https://pypi.python.org/packages/31/63/5a7826bdee88db6d49ef1737a17de63cf6f50f8cb04f2a0339f048cb33b5/pymongo-3.3.0.tar.gz
-  md5: 42cd12a5014fb7d3e1987ca04f5c651f
+  fn: pymongo-3.4.0.tar.gz
+  url: https://pypi.io/packages/source/p/pymongo/pymongo-3.4.0.tar.gz
+  md5: aa77f88e51e281c9f328cea701bb6f3e
 
 build:
   detect_binary_files_with_prefix: False

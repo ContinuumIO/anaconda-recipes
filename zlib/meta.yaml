@@ -1,22 +1,17 @@
 package:
   name: zlib
-  version: 1.2.8
+  version: 1.2.11
 
 source:
-  fn: zlib-1.2.8.tar.gz
-  url: http://pkgs.fedoraproject.org/repo/pkgs/mingw-zlib/zlib-1.2.8.tar.gz/44d667c142d7cda120332623eab69f40/zlib-1.2.8.tar.gz
-  md5: 44d667c142d7cda120332623eab69f40
+  fn: zlib-1.2.11.tar.gz
+  url: https://zlib.net/zlib-1.2.11.tar.gz
+  sha256: c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1
 
 build:
-  number: 3
   features:
     - vc9        [win and py27]
     - vc10       [win and py34]
     - vc14       [win and (py35 or py36)]
-
-requirements:
-  build:
-    - cmake      [win]
 
 about:
   home: http://zlib.net/

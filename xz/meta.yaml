@@ -1,14 +1,11 @@
 package:
   name: xz
-  version: 5.2.2
+  version: 5.2.3
 
 source:
-  fn: xz-5.2.2.tar.xz
-  url: http://tukaani.org/xz/xz-5.2.2.tar.xz
-  sha256: f341b1906ebcdde291dd619399ae944600edc9193619dd0c0110a5f05bfcc89e
-
-build:
-  number: 1
+  fn: xz-5.2.3.tar.gz
+  url: http://tukaani.org/xz/xz-5.2.3.tar.gz
+  sha256: 71928b357d0a09a12a4b4c5fafca8c31c19b0e7d3b8ebb19622e96f26dbf28cb
 
 test:
   commands:

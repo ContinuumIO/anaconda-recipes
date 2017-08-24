@@ -8,6 +8,7 @@
   "alabaster": "all", 
   "anaconda-clean": "all", 
   "anaconda-client": "all", 
+  "anaconda-project": "all", 
   "anaconda-verify": "all", 
   "ansi2html": "all", 
   "anyqt": "all", 
@@ -762,6 +763,10 @@
   "pyflakes": "all", 
   "pygments": "all", 
   "pygpu": "all", 
+  "pyhive": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "pykerberos": [
     "linux-64:py27", 
     "linux-64:py35", 
@@ -888,6 +893,10 @@
   "s3fs": "all", 
   "s3transfer": "all", 
   "sas7bdat": "all", 
+  "sasl": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
   "scandir": "all", 
   "scikit-bio": [
     "linux-64:py35", 
@@ -992,6 +1001,17 @@
     "linux-64:py35", 
     "osx-64:py27", 
     "osx-64:py35"
+  ], 
+  "thrift": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
+  "thrift_sasl": [
+    "linux-64:py27", 
+    "linux-64:py35"
+  ], 
+  "thriftpy": [
+    "linux-64:py35"
   ], 
   "tk": "all", 
   "toolz": "all", 

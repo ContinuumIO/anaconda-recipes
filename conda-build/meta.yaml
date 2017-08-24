@@ -1,4 +1,4 @@
-{% set version="3.0.8" %}
+{% set version="3.0.9" %}
 
 package:
   name: conda-build
@@ -23,9 +23,9 @@ requirements:
   build:
     - python
     - setuptools
-    - git           [not win]
-    - m2-git        [win]
-    - m2-filesystem [win]
+    - git
+    # - m2-git        [win]
+    # - m2-filesystem [win]
   run:
     - python
     - beautifulsoup4

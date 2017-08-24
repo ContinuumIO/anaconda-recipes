@@ -1,14 +1,11 @@
 package:
   name: zope.deprecation
-  version: 4.2.0
+  version: 4.3.0
 
 source:
-  fn: zope.deprecation-4.2.0.tar.gz
-  url: https://pypi.python.org/packages/51/85/b9d2fdcaf38ce3271ad759c7e8f0e9a28f6d900c1ad495085e4ab1de3795/zope.deprecation-4.2.0.tar.gz
-  md5: 5d110c34ab7b313490c1a8533bbdc7a0
-
-build:
-  number: 0
+  fn: zope.deprecation-4.3.0.tar.gz
+  url: https://pypi.python.org/packages/a1/18/2dc5e6bfe64fdc3b79411b67464c55bb0b43b127051a20f7f492ab767758/zope.deprecation-4.3.0.tar.gz
+  md5: 2166b2cb7e0e96a21104e6f8f9b696bb
 
 requirements:
   build:

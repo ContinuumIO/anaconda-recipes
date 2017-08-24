@@ -1,11 +1,11 @@
 package:
   name: pandas-datareader
-  version: 0.4.0
+  version: 0.5.0
 
 source:
-  fn: pandas-datareader-0.4.0.tar.gz
-  url: https://pypi.python.org/packages/e5/ed/2baf33e80db8791614c9a680cea0ab839e00448070becb7198f8a3c80629/pandas-datareader-0.4.0.tar.gz
-  md5: 3ee5c5e16c040f00b658d2e1db45ed0e
+  fn: pandas-datareader-0.5.0.tar.gz
+  url: https://pypi.python.org/packages/9b/3b/5fae1f4ba5889468fefbadcefda0389f60f2780eead3a1166415bda4509c/pandas-datareader-0.5.0.tar.gz
+  md5: 77cc22b08b5cac46eb974ac6687d4555
 
 requirements:
   build:

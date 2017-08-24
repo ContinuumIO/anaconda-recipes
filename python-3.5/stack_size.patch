@@ -1,6 +1,6 @@
 --- configure~	2016-12-13 13:07:45.000000000 +0300
 +++ configure	2016-12-13 13:08:32.000000000 +0300
-@@ -9417,7 +9417,7 @@
+@@ -9416,7 +9416,7 @@
  		# Issue #18075: the default maximum stack size (8MBytes) is too
  		# small for the default recursion limit. Increase the stack size
  		# to ensure that tests don't crash

@@ -1,13 +1,11 @@
-{% set version = "1.17.1" %}
-
 package:
   name: distributed
-  version: "{{ version }}"
+  version: 1.18.0
 
 source:
-  fn: distributed-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/d/distributed/distributed-{{ version }}.tar.gz
-  sha256: 9c4f8b511ddb8d13851701deec1a15f64e75394dc6ae361fa8f6c41c9eeca0f1
+  fn: distributed-1.18.0.tar.gz
+  url: https://pypi.python.org/packages/f2/67/abb4d8f8dd1a6b3f6027752134689933c22b32469f35c1b587410ee43b2c/distributed-1.18.0.tar.gz
+  md5: c8b76e1de141d5ca57d026d61fc7a666
 
 build:
   detect_binary_files_with_prefix: False
@@ -33,9 +31,11 @@ requirements:
     - six
     - tblib
     - toolz >=0.7.4
-    - tornado >=4.2
+    - tornado >=4.4
     - zict >=0.1.2
     - sortedcontainers
+    - futures                   [py < 30]
+    - singledispatch            [py < 34]
 
 test:
   requires:

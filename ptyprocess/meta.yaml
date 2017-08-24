@@ -1,11 +1,11 @@
 package:
   name: ptyprocess
-  version: 0.5.1
+  version: 0.5.2
 
 source:
-  fn: ptyprocess-0.5.1.tar.gz
-  url: https://pypi.python.org/packages/db/d7/b465161910f3d1cef593c5e002bff67e0384898f597f1a7fdc8db4c02bf6/ptyprocess-0.5.1.tar.gz
-  md5: 94e537122914cc9ec9c1eadcd36e73a1
+  fn: ptyprocess-0.5.2.tar.gz
+  url: https://pypi.io/packages/source/p/ptyprocess/ptyprocess-0.5.2.tar.gz
+  md5: d3b8febae1b8c53b054bd818d0bb8665
 
 requirements:
   build:

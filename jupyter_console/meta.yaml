@@ -1,11 +1,11 @@
 package:
   name: jupyter_console
-  version: 5.1.0
+  version: 5.2.0
 
 source:
-  fn: jupyter_console-5.1.0.tar.gz
-  url: https://pypi.python.org/packages/cb/83/f96e41ddb29ad76f806d6412e87e64af3120482dc0d8b5decf5eb8d82b99/jupyter_console-5.1.0.tar.gz
-  md5: 20eff10b4cd93f081207bfa0cc5a3b0e
+  fn: jupyter_console-5.2.0.tar.gz
+  url: https://pypi.python.org/packages/cd/bb/fa8901715c009a00ea4c42897da8585189d4781c64f4617a8bd65ca01a3a/jupyter_console-5.2.0.tar.gz
+  md5: 175953df3c76ffa6d4d5cb23198ab324
 
 requirements:
   build:

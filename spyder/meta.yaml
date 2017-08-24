@@ -1,11 +1,11 @@
 package:
   name: spyder
-  version: 3.2.0
+  version: 3.2.1
 
 source:
-  fn: spyder-3.2.0.tar.gz
-  url: https://pypi.io/packages/source/s/spyder/spyder-3.2.0.tar.gz
-  sha256: 6bce198134122f494d657a84d42fe36c92a833a94eee706bea883f3213008ffb
+  fn: spyder-3.2.1.tar.gz
+  url: https://pypi.io/packages/source/s/spyder/spyder-3.2.1.tar.gz
+  sha256: fb888ca28391153055c57d9a3e4edebe53b323bc8b785b1fa5696d405d107ce0
 
 build:
   number: 0
