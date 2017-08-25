@@ -8,6 +8,7 @@ source:
   md5: eafaa5ae36898da07a3dac1ad08f8ecc
 
 build:
+  number: 1
   features:
     - vc9          [win and py27]
     - vc10         [win and py34]
@@ -17,7 +18,7 @@ requirements:
   build:
     - python       [win]
     - cmake
-    - zlib 1.2.*
+    - zlib 1.2.7
   run:
     - zlib 1.2.*
 
