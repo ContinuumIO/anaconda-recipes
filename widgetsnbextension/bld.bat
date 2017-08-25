@@ -1,4 +1,4 @@
-%PYTHON% setup.py install --single-version-externally-managed --record=record.txt
+%PYTHON% setup.py install --old-and-unmanageable
 if errorlevel 1 exit 1
 
 jupyter-nbextension.exe install widgetsnbextension --py --sys-prefix --overwrite

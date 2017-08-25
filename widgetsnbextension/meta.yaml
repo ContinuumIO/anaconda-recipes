@@ -1,11 +1,11 @@
 package:
   name: widgetsnbextension
-  version: 2.0.0
+  version: 3.0.1
 
 source:
-  fn: widgetsnbextension-2.0.0.tar.gz
-  url: https://pypi.python.org/packages/0a/09/083dbdbd6ba52004d6ee880877a7b3f6143f389743d20057e1eda3af3582/widgetsnbextension-2.0.0.tar.gz
-  md5: 4a20d3c3fee43dba15da2e7c1ad6bbf3
+  fn: widgetsnbextension-3.0.1.tar.gz
+  url: https://pypi.python.org/packages/46/30/23d7d7460ab19d40bb89e0b0a1905910009cd92494c7a0dc8f24f87d8a3b/widgetsnbextension-3.0.1.tar.gz
+  md5: 098464f4cf1e009f59ad3e6d2c8c2331
 
 requirements:
   build:

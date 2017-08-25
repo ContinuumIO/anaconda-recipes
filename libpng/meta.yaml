@@ -1,11 +1,11 @@
 package:
   name: libpng
-  version: 1.6.27
+  version: 1.6.30
 
 source:
-  fn: libpng-1.6.27.tar.gz
-  url: http://prdownloads.sourceforge.net/libpng/libpng-1.6.27.tar.gz
-  md5: 58698519e9f6126c1caeefc28dbcbd5f
+  fn: libpng-1.6.30.tar.gz
+  url: http://prdownloads.sourceforge.net/libpng/libpng-1.6.30.tar.gz
+  md5: eafaa5ae36898da07a3dac1ad08f8ecc
 
 build:
   features:
