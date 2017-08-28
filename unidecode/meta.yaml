@@ -1,11 +1,11 @@
 package:
   name: unidecode
-  version: 0.04.20
+  version: 0.04.21
 
 source:
-  fn: Unidecode-0.04.20.tar.gz
-  url: https://pypi.python.org/packages/ba/64/410af95d27f2a8824112d17ed41ea7ce6d2cbc8a4832c2e548d3408fad0a/Unidecode-0.04.20.tar.gz
-  md5: ec6905c68230b63f2cea8b982da07614
+  fn: Unidecode-0.04.21.tar.gz
+  url: https://pypi.python.org/packages/0e/26/6a4295c494e381d56bba986893382b5dd5e82e2643fc72e4e49b6c99ce15/Unidecode-0.04.21.tar.gz
+  md5: 089031ed00637d7078f33dad9d6a3c12
 
 build:
   entry_points:
@@ -33,4 +33,3 @@ about:
   description: |
     function unidecode() takes Unicode data and tries to represent it in ASCII characters.
   doc_url: https://pypi.python.org/pypi/Unidecode
-

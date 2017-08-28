@@ -1,11 +1,11 @@
 package:
   name: dask
-  version: 0.15.1
+  version: 0.15.2
 
 source:
-  fn: dask-0.15.1.tar.gz
-  url: https://pypi.python.org/packages/78/0b/3d4e3cefe36e84e2e35b9ab9f45c570b7a358fa8a319e36bf12add73c64c/dask-0.15.1.tar.gz
-  md5: 275d8ad0c5c6460ef022d06aa77f4bb2
+  fn: dask-0.15.2.tar.gz
+  url: https://pypi.python.org/packages/b3/eb/39a0d4c4fc0e34cad9d82c5b6a6dcf150f6d6b93b3c1201045eb4fbb8090/dask-0.15.2.tar.gz
+  md5: 2a5df0e7ab9942515f948f648982b7db
 
 requirements:
   build:

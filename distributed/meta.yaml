@@ -1,11 +1,11 @@
 package:
   name: distributed
-  version: 1.18.0
+  version: 1.18.1
 
 source:
-  fn: distributed-1.18.0.tar.gz
-  url: https://pypi.python.org/packages/f2/67/abb4d8f8dd1a6b3f6027752134689933c22b32469f35c1b587410ee43b2c/distributed-1.18.0.tar.gz
-  md5: c8b76e1de141d5ca57d026d61fc7a666
+  fn: distributed-1.18.1.tar.gz
+  url: https://pypi.python.org/packages/e6/19/cf94157ff6155678f31fcdfe5ac340fafd335e16346752b367ea82c775a9/distributed-1.18.1.tar.gz
+  md5: 6fe1042626fc2c6cfbf13bdb5d175bc6
 
 build:
   detect_binary_files_with_prefix: False
@@ -31,7 +31,7 @@ requirements:
     - six
     - tblib
     - toolz >=0.7.4
-    - tornado >=4.4
+    - tornado >=4.4.3
     - zict >=0.1.2
     - sortedcontainers
     - futures                   [py < 30]
