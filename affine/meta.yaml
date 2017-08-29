@@ -1,10 +1,10 @@
 package:
   name: affine
-  version: 2.0.0
+  version: 2.1.0
 
 source:
   git_url: https://github.com/sgillies/affine.git
-  git_tag: 2.0.0
+  git_tag: 2.1.0
 
 requirements:
   build:
@@ -22,7 +22,7 @@ about:
   license: BSD 3-clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: Matrices describing affine transformation of the plane.
+  summary: matrices describing affine transformation of the plane
   description: |
     The Affine package is used to produce the affine transformation
     matrix.
