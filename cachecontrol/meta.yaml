@@ -1,11 +1,15 @@
 package:
   name: cachecontrol
-  version: 0.11.7
+  version: 0.12.3
 
 source:
-  fn: CacheControl-0.11.7.tar.gz
-  url: https://pypi.python.org/packages/c5/cb/7a78039c1e0d4e5fd9d8e9edf7ae34df469267e1c58873ca11af16e96bd8/CacheControl-0.11.7.tar.gz
-  md5: 7fba1637e772b380ba1fb27c9398de02
+  fn: CacheControl-0.12.3.tar.gz
+  url: https://pypi.python.org/packages/a3/b3/6bb6c1535a283f01fe0c4e9644784756fee2ec080e2a6097f1c59325609e/CacheControl-0.12.3.tar.gz
+  md5: 45bf98a2e3435438dcee89e519b34195
+
+build:
+  entry_points:
+    - doesitcache = cachecontrol._cmd:main
 
 requirements:
   build:
@@ -15,8 +19,11 @@ requirements:
   run:
     - python
     - requests
+    - msgpack-python
 
 test:
+  commands:
+    - doesitcache -h
   imports:
     - cachecontrol
 
