@@ -16,7 +16,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ compiler('fortran') }}
-    - libgcc-ng
+    - libgcc-ng # c compiler doesn't pull this in automatically causes 'cannot find -lquadmath'
 
 about:
   home: http://www.mpich.org/
