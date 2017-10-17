@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./configure --enable-shared --prefix=$PREFIX
+./configure --enable-shared --prefix=$PREFIX "F77=$FC" "FCFLAGS=$FFLAGS"
 make
 make install
 
