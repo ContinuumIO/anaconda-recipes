@@ -1,10 +1,10 @@
 package:
   name: orange3
-  version: 3.4.1
+  version: 3.7.1
 
 source:
   git_url: https://github.com/biolab/orange3.git
-  git_tag: 3.4.1
+  git_tag: 3.7.1
 
 build:
   entry_points:
