@@ -12,6 +12,7 @@ build:
     - jupyter-notebook = notebook.notebookapp:main
     - jupyter-nbextension = notebook.nbextensions:main
     - jupyter-serverextension = notebook.serverextensions:main
+    - jupyter-bundlerextension = notebook.bundler.bundlerextensions:main
 
 requirements:
   build:
@@ -46,6 +47,7 @@ test:
     - jupyter-notebook -h
     - jupyter-nbextension -h
     - jupyter-serverextension -h
+    - jupyter-bundlerextension -h
   imports:
     - notebook
 
