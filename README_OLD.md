@@ -1,3 +1,14 @@
+**This repository is deprecated.**
+
+Recipes used in the free 
+[Anaconda Python distribution](https://www.continuum.io/downloads) are hosted 
+in the Anaconda, Inc managed 
+[AnacondaRecipes/aggregate](https://github.com/AnacondaRecipes/aggregate)
+repository. This repository holds recipes used in older versions of the distribution.
+
+The following instructions are **outdated** and **unsupported**. 
+They are included for historical reference.
+
 Anaconda Recipes
 ================
 
