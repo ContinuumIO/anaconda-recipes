@@ -1,11 +1,11 @@
 package:
   name: redis
-  version: 3.2.0
+  version: 3.2.8
 
 source:
-  fn: redis-3.2.0.tar.gz
-  url: http://download.redis.io/releases/redis-3.2.0.tar.gz
-  md5: 9ec99ff912f35946fdb56fe273140483
+  fn: redis-3.2.8.tar.gz
+  url: http://download.redis.io/releases/redis-3.2.8.tar.gz
+  md5: c91867a18ae0c5f7bb61a7c1120d80b4
 
 test:
   commands:
