@@ -1,11 +1,11 @@
 package:
   name: proj4
-  version: 4.9.2
+  version: 4.9.3
 
 source:
-  fn: proj-4.9.2.tar.gz
-  url: http://download.osgeo.org/proj/proj-4.9.2.tar.gz
-  md5: 9843131676e31bbd903d60ae7dc76cf9
+  fn: proj-{{ version }}.tar.gz
+  url: http://download.osgeo.org/proj/proj-{{ version }}.tar.gz
+  md5: d598336ca834742735137c5674b214a1
 
 build:
   features:
